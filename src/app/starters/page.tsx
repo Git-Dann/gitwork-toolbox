@@ -19,6 +19,8 @@ const listItems: StarterListItem[] = starters.map((starter) => ({
   typeLabel: starter.typeLabel,
   tags: starter.tags,
   featured: starter.featured,
+  recommended: starter.recommended,
+  approved: starter.approved,
 }));
 
 export default function StartersPage() {
@@ -31,14 +33,14 @@ export default function StartersPage() {
         meta={
           <>
             <Badge>{counts.prompts} prompts</Badge>
-            <Badge tone="signal">{counts.skills} skills</Badge>
-            <Badge tone="signal">{counts.kits} kits</Badge>
-            <Badge tone="signal">{counts.plugins} plugins</Badge>
+            <Badge tone="accent">{counts.skills} skills</Badge>
+            <Badge tone="accent">{counts.kits} kits</Badge>
+            <Badge tone="accent">{counts.plugins} plugins</Badge>
             <Badge>{counts.starterCollections} collections</Badge>
           </>
         }
       />
-      <Container className="py-8 sm:py-12">
+      <Container className="py-10">
         <Suspense
           fallback={<p className="label py-12 text-center text-mute">Loading the library…</p>}
         >

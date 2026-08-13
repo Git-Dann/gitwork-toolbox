@@ -3,7 +3,14 @@ export type LinkStatus = "ok" | "reviewed" | "warn" | "dead" | "unknown";
 export type Usefulness = "High" | "Medium" | "Low" | "None" | "Unknown" | "Not assessed";
 export type StarterType = "PROMPT" | "SKILL" | "KIT" | "COLLECTION" | "PLUGIN";
 
-export type Tool = {
+/** Flags set by Dan or Harry in the admin portal. */
+export type AdminFlags = {
+  recommended: boolean;
+  approved: boolean;
+  adminNote: string;
+};
+
+export type Tool = AdminFlags & {
   slug: string;
   name: string;
   pricing: Pricing;
@@ -18,11 +25,9 @@ export type Tool = {
   notes: string[];
   website: string;
   domain: string;
-  source: "gitwork" | "directory";
-  assessed: boolean;
 };
 
-export type Resource = {
+export type Resource = AdminFlags & {
   slug: string;
   name: string;
   resourceType: string;
@@ -37,7 +42,7 @@ export type Resource = {
   domain: string;
 };
 
-export type Starter = {
+export type Starter = AdminFlags & {
   slug: string;
   name: string;
   summary: string;
@@ -97,13 +102,11 @@ export type Meta = {
   groups: Group[];
   categories: Category[];
   tags: Tag[];
-  readme: { term: string; detail: string }[];
-  dataQuality: { measure: string; count: string; note: string }[];
-  duplicatePairs: { kept: string; removed: string; website: string }[];
   types: Record<StarterType, { slug: string; singular: string; plural: string }>;
+  overrides: { updatedAt: string | null; updatedBy: string | null };
 };
 
-/** The trimmed shape the client-side browser and cards work with. */
+/** The trimmed shape the client-side browsers and cards work with. */
 export type ToolListItem = Pick<
   Tool,
   | "slug"
@@ -116,10 +119,30 @@ export type ToolListItem = Pick<
   | "linkStatus"
   | "linkLabel"
   | "domain"
-  | "assessed"
+  | "recommended"
+  | "approved"
 >;
 
 export type StarterListItem = Pick<
   Starter,
-  "slug" | "name" | "summary" | "type" | "typeLabel" | "tags" | "featured"
+  | "slug"
+  | "name"
+  | "summary"
+  | "type"
+  | "typeLabel"
+  | "tags"
+  | "featured"
+  | "recommended"
+  | "approved"
 >;
+
+/** One row in the admin portal's editing table. */
+export type AdminItem = {
+  kind: "tools" | "resources" | "starters";
+  slug: string;
+  name: string;
+  meta: string;
+  recommended: boolean;
+  approved: boolean;
+  note: string;
+};

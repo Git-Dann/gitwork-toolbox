@@ -3,10 +3,11 @@ import { CollectionCard, StarterCard } from "@/components/cards";
 import { Container, PageHeader, Section } from "@/components/page-shell";
 import { SectionHeading } from "@/components/ui";
 import {
-  assessedTools,
   counts,
   groups,
   picks,
+  rankedTools,
+  recommended,
   starterCollections,
   toolkits,
   tools,
@@ -16,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "Collections",
   description:
-    "Curated sets: Foundry starter collections, the ten tool areas, and the editorial cuts worth keeping — picks, free tools, and everything we assessed.",
+    "Curated sets: Foundry starter collections, the tool areas, and the editorial cuts worth keeping.",
 };
 
 export default function CollectionsPage() {
@@ -24,20 +25,22 @@ export default function CollectionsPage() {
 
   const editorial = [
     {
-      href: "/tools?picks=1",
-      title: "Gitwork picks",
-      blurb: "Rated high value after we fetched and read the thing properly.",
+      href: "/tools?recommended=1",
+      title: "Recommended",
+      blurb: "Flagged by hand in the admin portal — the ones we would put on a client project.",
+      count: recommended.tools.length,
+      countLabel: "tools",
+      samples: recommended.tools.length
+        ? recommended.tools.map((tool) => tool.name)
+        : rankedTools.slice(0, 4).map((tool) => tool.name),
+    },
+    {
+      href: "/tools",
+      title: "Worth your time",
+      blurb: "Recommended, or rated high value at assessment. Best verdict first.",
       count: picks.tools.length,
       countLabel: "tools",
       samples: picks.tools.map((tool) => tool.name),
-    },
-    {
-      href: "/tools?assessed=1",
-      title: "Everything we assessed",
-      blurb: "Every link Gitwork reviewed in detail, best verdict first — including the duds.",
-      count: assessedTools.length,
-      countLabel: "tools",
-      samples: assessedTools.map((tool) => tool.name),
     },
     {
       href: "/tools?price=Free",
@@ -50,7 +53,7 @@ export default function CollectionsPage() {
     {
       href: "/shortlist#potential-to-build-ourselves",
       title: "Build candidates",
-      blurb: "The seven things on this list worth building instead of buying — ranked, with a verdict.",
+      blurb: "The seven things worth building instead of buying — ranked, with a verdict.",
       count: 7,
       countLabel: "candidates",
       samples: ["Design token extractor", "Generative UI", "Enquiry triage", "Diff abridger"],
@@ -78,7 +81,7 @@ export default function CollectionsPage() {
       <PageHeader
         eyebrow="Curated sets"
         title="Collections"
-        lead="Ways into the list that are more useful than alphabetical: Foundry's own starter collections, the ten tool areas, and the editorial cuts."
+        lead="Ways into the list that are more useful than alphabetical: Foundry's own starter collections, the tool areas, and the editorial cuts."
       />
 
       <Container>
@@ -89,34 +92,33 @@ export default function CollectionsPage() {
             blurb="Each one is an index in its own right — what exists in the library and which stage of a build it serves."
             action={{ href: "/starters?type=COLLECTION", label: "In the library" }}
           />
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
             {starterCollections.map((collection) => (
               <StarterCard key={collection.slug} starter={collection} />
             ))}
           </div>
         </Section>
 
-        <Section className="border-t border-line/10">
+        <Section className="border-t border-hair">
           <SectionHeading
             eyebrow="Editorial"
             title="Cuts worth keeping"
             blurb="Filtered views of the same data, saved as links you can paste to someone."
           />
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {editorial.map((item) => (
               <CollectionCard key={item.href} {...item} />
             ))}
           </div>
         </Section>
 
-        <Section className="border-t border-line/10">
+        <Section className="border-t border-hair">
           <SectionHeading
             eyebrow={`${groups.length} areas`}
             title="Tool areas"
-            blurb="Both source lists folded into one set of areas, since neither agreed on category names."
             action={{ href: "/tools", label: "All tools" }}
           />
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {groups.map((group) => (
               <CollectionCard
                 key={group.slug}

@@ -5,22 +5,27 @@ import { Eyebrow } from "@/components/ui";
 export default function NotFound() {
   return (
     <Container className="py-24 text-center">
-      <Eyebrow>404</Eyebrow>
-      <h1 className="mt-4 font-display text-4xl">That one isn't on the list.</h1>
-      <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-mute">
+      <Eyebrow accent>404</Eyebrow>
+      <h1 className="display mt-5 text-4xl">
+        That one isn&apos;t on the list
+        <span className="text-accent">.</span>
+      </h1>
+      <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-soft">
         The page may have been renamed when the workbook was last rebuilt. Search with ⌘K, or start
-        from the tools list.
+        from the starter library.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <Link
-          href="/tools"
-          className="rounded-full bg-ink px-5 py-2.5 text-sm text-paper transition-opacity hover:opacity-85"
+          href="/starters"
+          className="rounded-full px-5 py-2.5 text-sm"
+          style={{ background: "var(--accent)", color: "var(--on-accent)" }}
         >
-          All tools
+          Starter library
         </Link>
         <Link
           href="/"
-          className="hairline rounded-full border bg-white px-5 py-2.5 text-sm transition-colors hover:border-signal/50 hover:text-signal"
+          className="rounded-full border px-5 py-2.5 text-sm transition-colors hover:border-[var(--accent)]"
+          style={{ borderColor: "var(--border-strong)" }}
         >
           Home
         </Link>

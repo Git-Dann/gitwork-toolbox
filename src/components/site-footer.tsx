@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { OutboundLink } from "@/components/cards";
-import { counts, groups, meta } from "@/lib/data";
+import { Container } from "@/components/page-shell";
+import { counts, groups } from "@/lib/data";
 
 const YEAR = 2026;
 
@@ -9,34 +10,31 @@ export function SiteFooter() {
     { href: "/starters?type=PROMPT", label: `Prompts (${counts.prompts})` },
     { href: "/starters?type=SKILL", label: `Skills (${counts.skills})` },
     { href: "/starters?type=KIT", label: `Kits (${counts.kits})` },
-    { href: "/starters?type=COLLECTION", label: `Collections (${counts.starterCollections})` },
     { href: "/starters?type=PLUGIN", label: `Plugins (${counts.plugins})` },
+    { href: "/starters?type=COLLECTION", label: `Collections (${counts.starterCollections})` },
   ];
 
   return (
-    <footer className="mt-20 border-t border-line/10 bg-white/50">
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <footer className="mt-16 border-t border-hair">
+      <Container className="py-12">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="flex items-baseline gap-2">
-              <span className="font-semibold tracking-tight">Gitwork</span>
-              <span className="h-1.5 w-1.5 translate-y-[-3px] bg-signal" />
-              <span className="label text-mute">Toolbox</span>
-            </div>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-mute">
-              The studio's working reference: {counts.tools} tools, {counts.starters} Foundry
-              starters and {counts.resources} resources, with Gitwork's own verdict where we have
-              one.
+            <p className="display text-lg">
+              Gitwork<span className="text-accent">.</span> Toolbox
+            </p>
+            <p className="mt-3 max-w-xs text-sm leading-relaxed text-soft">
+              {counts.entries} entries: {counts.tools} assessed tools, {counts.starters} Foundry
+              starters and {counts.resources} resources, each with our own verdict attached.
             </p>
             <OutboundLink
               href="https://gitwork.co.uk"
-              className="label mt-4 text-ink transition-colors hover:text-signal"
+              className="label mt-4 transition-colors hover:text-[var(--accent)]"
             >
               gitwork.co.uk
             </OutboundLink>
           </div>
 
-          <FooterColumn title="Browse tools">
+          <FooterColumn title="Browse">
             {groups.map((group) => (
               <FooterLink key={group.slug} href={`/tools?group=${group.slug}`}>
                 {group.name}
@@ -57,24 +55,15 @@ export function SiteFooter() {
             <FooterLink href="/collections">Collections</FooterLink>
             <FooterLink href="/resources">Resources</FooterLink>
             <FooterLink href="/about">How this is built</FooterLink>
-            <li>
-              <OutboundLink
-                href="https://toolkit.dailyprompting.com/"
-                className="text-sm text-mute transition-colors hover:text-signal"
-              >
-                700 AI Toolkit
-              </OutboundLink>
-            </li>
+            <FooterLink href="/admin">Admin portal</FooterLink>
           </FooterColumn>
         </div>
 
-        <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-line/10 pt-6">
+        <div className="mt-12 flex flex-wrap items-center justify-between gap-3 border-t border-hair pt-6">
           <p className="label text-mute">© {YEAR} Gitwork — from prompt to production</p>
-          <p className="label text-mute">
-            {meta.dataQuality.length ? "Internal reference · not indexed" : ""}
-          </p>
+          <p className="label text-mute">Internal reference · not indexed</p>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 }
@@ -82,8 +71,8 @@ export function SiteFooter() {
 function FooterColumn({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
-      <p className="label text-ink">{title}</p>
-      <ul className="mt-3 space-y-2">{children}</ul>
+      <p className="label">{title}</p>
+      <ul className="mt-3.5 space-y-2.5">{children}</ul>
     </div>
   );
 }
@@ -91,7 +80,7 @@ function FooterColumn({ title, children }: { title: string; children: React.Reac
 function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
     <li>
-      <Link href={href} className="text-sm text-mute transition-colors hover:text-signal">
+      <Link href={href} className="text-sm text-soft transition-colors hover:text-[var(--accent)]">
         {children}
       </Link>
     </li>

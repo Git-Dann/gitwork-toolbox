@@ -1,12 +1,17 @@
 /**
- * Turns the two raw sources in data/source into the typed JSON the app imports.
+ * Turns the sources in data/ into the typed JSON the app imports.
  *
  *   data/source/workbook-sheets.json   (from scripts/extract-workbook.py)
  *   data/source/foundry-starters.json  (Foundry Starters export)
+ *   data/overrides.json                (flags set in the admin portal)
  *        ->  src/data/generated/*.json
  *
  * Run with `npm run data`. It also runs as the first half of `npm run build`,
  * so a deploy can never ship stale data.
+ *
+ * Only rows Gitwork assessed itself are published. The 684 rows imported from
+ * the 700 AI Toolkit directory are dropped here — unread listings with someone
+ * else's unverified pricing labels are not worth browsing.
  */
 
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
@@ -19,6 +24,7 @@ const OUT_DIR = join(ROOT, "src", "data", "generated");
 const read = (p) => JSON.parse(readFileSync(join(ROOT, p), "utf8"));
 const sheets = read("data/source/workbook-sheets.json");
 const starterExport = read("data/source/foundry-starters.json");
+const overrides = read("data/overrides.json");
 
 /* ------------------------------------------------------------------ helpers */
 
@@ -27,7 +33,7 @@ const PARA = /\s*\|\|\s*/; // the workbook's in-cell paragraph separator
 const clean = (v) =>
   (v ?? "")
     .toString()
-    .replace(/ /g, " ")
+    .replace(/ /g, " ")
     .trim();
 
 const paragraphs = (v) =>
@@ -76,11 +82,20 @@ function table(tabName) {
   });
 }
 
+/** Admin flags for one item, defaulted. */
+function flagsFor(kind, slug) {
+  const entry = overrides?.[kind]?.[slug] ?? {};
+  return {
+    recommended: Boolean(entry.recommended),
+    approved: Boolean(entry.approved),
+    adminNote: clean(entry.note),
+  };
+}
+
 /* --------------------------------------------------------------- categories */
 
-// The workbook mixes two naming conventions: the directory's tidy single-word
-// categories and Dan's compound ones ("Design engineering / motion"). Both get
-// folded into one browsable set of groups.
+// Our own rows use compound categories ("Design engineering / motion"), so they
+// fold into a smaller set of areas for browsing.
 const GROUPS = [
   {
     slug: "design-engineering",
@@ -100,104 +115,52 @@ const GROUPS = [
       "Generative UI / AI interfaces",
       "Motion / AI-generated animation",
       "Portfolio tooling / personal sites",
-    ],
-  },
-  {
-    slug: "design-and-creative",
-    name: "Design & Creative",
-    blurb: "Design tools, image generation and editing, avatars and 3D.",
-    categories: [
-      "Design",
-      "Image",
-      "Image Editing",
-      "Avatars",
-      "3D & Game",
-      "AI asset generation",
       "Design inspiration / reference management",
     ],
   },
   {
-    slug: "coding-and-dev",
-    name: "Coding & Dev",
-    blurb: "Coding agents, model infrastructure, no-code and mobile.",
+    slug: "ai-coding",
+    name: "AI Coding",
+    blurb: "Coding agents, code review, model plumbing and agency practice.",
     categories: [
-      "Coding",
       "AI coding",
       "AI coding / code review",
       "AI coding / agency ops",
       "AI coding / developer news",
-      "Models & Infra",
-      "No-code",
       "Infra & graphics",
-      "Mobile & app dev",
-      "Mobile & app dev / Apple APIs",
     ],
   },
   {
-    slug: "writing-and-content",
-    name: "Writing & Content",
-    blurb: "Drafting, editing, presentations and long-form content.",
-    categories: ["Writing", "Presentations"],
+    slug: "mobile-and-apple",
+    name: "Mobile & Apple",
+    blurb: "App toolchains and platform APIs worth knowing about.",
+    categories: ["Mobile & app dev", "Mobile & app dev / Apple APIs"],
   },
   {
-    slug: "video-and-audio",
-    name: "Video & Audio",
-    blurb: "Generation, editing, voice, transcription and streaming.",
-    categories: ["Video", "Audio & Voice", "Transcription", "Video & streaming"],
+    slug: "creative-and-assets",
+    name: "Creative & Assets",
+    blurb: "Asset generation, imagery and creative output.",
+    categories: ["AI asset generation", "Video & streaming"],
   },
   {
-    slug: "marketing-and-sales",
-    name: "Marketing & Sales",
-    blurb: "Campaigns, social, outreach, email and e-commerce.",
-    categories: ["Marketing", "Social Media", "Sales & Outreach", "Email", "E-commerce"],
-  },
-  {
-    slug: "productivity-and-ops",
-    name: "Productivity & Ops",
-    blurb: "Assistants, agents, automation, meetings and notes.",
+    slug: "workflow-and-mac",
+    name: "Workflow & Mac",
+    blurb: "Daily notes, launchers, remote control and desk hardware.",
     categories: [
-      "Productivity",
       "Productivity / daily notes",
-      "Automation",
-      "Meetings & Notes",
-      "Chat & Assistants",
-      "Chatbots & Agents",
       "Personal AI assistant",
       "Mac software / remote control",
       "Mac software / launcher utility",
       "Mac software / tool discovery",
+      "Mac software & hardware curation",
       "AI hardware side project",
-    ],
-  },
-  {
-    slug: "research-and-data",
-    name: "Research & Data",
-    blurb: "Search, research, analytics and learning.",
-    categories: ["Research", "Search & Research", "Data & Analytics", "Education"],
-  },
-  {
-    slug: "business-and-people",
-    name: "Business & People",
-    blurb: "Finance, legal, recruiting, support, health and property.",
-    categories: [
-      "Finance & Legal",
-      "HR & Recruiting",
-      "Customer Support",
-      "Healthcare",
-      "Real Estate",
     ],
   },
   {
     slug: "discovery-and-reference",
     name: "Discovery & Reference",
-    blurb: "Directories, docs, funding and other people's curation.",
-    categories: [
-      "Tool discovery",
-      "Mac software & hardware curation",
-      "Funding & credits",
-      "Newsletter lead magnet",
-      "Unknown",
-    ],
+    blurb: "Other people's directories, docs, funding and curation.",
+    categories: ["Tool discovery", "Funding & credits", "Newsletter lead magnet", "Unknown"],
   },
 ];
 
@@ -212,18 +175,13 @@ function groupFor(category) {
   const exact = GROUP_BY_CATEGORY.get(category);
   if (exact) return exact;
 
-  // Keyword fallback so a new category from a re-export still lands somewhere.
   const c = category.toLowerCase();
   const rules = [
-    [/design engineering|design system|generative ui|motion|portfolio/, "design-engineering"],
-    [/design|image|avatar|3d|asset/, "design-and-creative"],
-    [/coding|dev|infra|model|no-?code|mobile/, "coding-and-dev"],
-    [/writing|content|presentation/, "writing-and-content"],
-    [/video|audio|voice|transcri|stream/, "video-and-audio"],
-    [/marketing|social|sales|email|commerce/, "marketing-and-sales"],
-    [/productiv|automation|meeting|note|assistant|agent|mac software|hardware/, "productivity-and-ops"],
-    [/research|data|analytic|education|search/, "research-and-data"],
-    [/finance|legal|hr|recruit|support|health|estate/, "business-and-people"],
+    [/design|motion|generative ui|portfolio|ui reference/, "design-engineering"],
+    [/coding|code|infra|model|agent/, "ai-coding"],
+    [/mobile|ios|android|apple/, "mobile-and-apple"],
+    [/asset|image|video|audio|stream/, "creative-and-assets"],
+    [/productiv|note|mac software|hardware|assistant|launcher/, "workflow-and-mac"],
     [/director|discovery|curation|funding|reference|docs|unknown/, "discovery-and-reference"],
   ];
   for (const [pattern, slug] of rules) if (pattern.test(c)) return slug;
@@ -251,22 +209,25 @@ const PRICING_TABS = [
   ["Paid tools", "Paid"],
 ];
 
+// Rows imported from the directory are dropped; only our own assessments ship.
+const KEEP_SOURCE = "Dan's links";
+
 const toolSlugs = new Set();
 const tools = [];
 
 for (const [tab, pricing] of PRICING_TABS) {
   for (const row of table(tab)) {
     const name = row["Tool"];
-    if (!name) continue;
+    if (!name || row["Source"] !== KEEP_SOURCE) continue;
 
     const category = row["Category"] || "Unknown";
-    const source = row["Source"] === "Dan's links" ? "gitwork" : "directory";
     const linkRaw = row["Link check"];
     const link = LINK_STATUS[linkRaw] ?? { status: "unknown", label: linkRaw || "Unchecked" };
     const website = row["Website"];
+    const slug = uniqueSlug(slugify(name), toolSlugs);
 
     tools.push({
-      slug: uniqueSlug(slugify(name), toolSlugs),
+      slug,
       name,
       pricing,
       category,
@@ -280,17 +241,16 @@ for (const [tab, pricing] of PRICING_TABS) {
       notes: paragraphs(row["Notes / watch out for"]),
       website,
       domain: domainOf(website),
-      source,
-      assessed: source === "gitwork",
+      ...flagsFor("tools", slug),
     });
   }
 }
 
 /* ---------------------------------------------------------------- resources */
 
-// Three rows on the Resources tab are flagged "NOT A TOOL - file elsewhere":
-// a private billing page, a private Notion page and a photography business that
-// belongs in the CRM. They stay out of the published site.
+// Three rows are flagged "NOT A TOOL - file elsewhere": a private billing page, a
+// private Notion page and a photography business that belongs in the CRM. They
+// stay out of the published site.
 const EXCLUDED_CATEGORY = "NOT A TOOL - file elsewhere";
 
 const resourceSlugs = new Set();
@@ -299,8 +259,9 @@ const resources = table("Resources")
   .map((row) => {
     const category = row["Category"] || "Unknown";
     const link = row["Link"];
+    const slug = uniqueSlug(slugify(row["Item"]), resourceSlugs);
     return {
-      slug: uniqueSlug(slugify(row["Item"]), resourceSlugs),
+      slug,
       name: row["Item"],
       resourceType: row["Resource type"] || "Reference",
       category,
@@ -312,6 +273,7 @@ const resources = table("Resources")
       cost: row["Cost"] || "—",
       link,
       domain: domainOf(link),
+      ...flagsFor("resources", slug),
     };
   });
 
@@ -329,8 +291,9 @@ const starterSlugs = new Set();
 const starters = starterExport.map((item) => {
   const content = item.content ?? {};
   const promptText = clean(content.promptText);
+  const slug = uniqueSlug(item.slug || slugify(item.name), starterSlugs);
   return {
-    slug: uniqueSlug(item.slug || slugify(item.name), starterSlugs),
+    slug,
     name: item.name,
     summary: item.summary ?? "",
     description: item.description ?? "",
@@ -344,6 +307,7 @@ const starters = starterExport.map((item) => {
     keywords: content.keywords ?? [],
     promptText,
     promptWords: promptText ? promptText.split(/\s+/).length : 0,
+    ...flagsFor("starters", slug),
   };
 });
 
@@ -363,7 +327,7 @@ const tags = [...tagCounts.entries()]
 
 // The "Shortlist & actions" tab is the decision view: numbered sections, each
 // with a lead line, a header row and rows of the same width. Section 6 lists the
-// private links that are excluded above, so it is dropped here too.
+// private links excluded above, so it is dropped here too.
 function parseShortlist() {
   const rows = sheets["Shortlist & actions"].map((row) => row.map(clean).slice(1));
   const sections = [];
@@ -405,33 +369,6 @@ function parseShortlist() {
 
 const shortlist = parseShortlist();
 
-/* -------------------------------------------------- editorial: read me etc */
-
-function keyedRows(tabName, { headingCells = 1 } = {}) {
-  return sheets[tabName]
-    .map((row) => row.map(clean).filter(Boolean))
-    .filter((row) => row.length > headingCells);
-}
-
-const readme = keyedRows("Read me").map(([term, detail]) => ({ term, detail }));
-
-// The Data quality tab holds a measures table, then a table of the duplicate
-// pairs that were collapsed. They are split apart here.
-const dataQualityRows = keyedRows("Data quality").filter((row) => row.length === 3);
-const dupeHeader = dataQualityRows.findIndex(([first]) => first === "Kept");
-const dataQuality = dataQualityRows
-  .slice(0, dupeHeader === -1 ? undefined : dupeHeader)
-  .filter(([measure]) => measure !== "Measure")
-  .map(([measure, count, note]) => ({ measure, count: count.replace(/\.0$/, ""), note }));
-const duplicatePairs =
-  dupeHeader === -1
-    ? []
-    : dataQualityRows.slice(dupeHeader + 1).map(([kept, removed, website]) => ({
-        kept,
-        removed,
-        website,
-      }));
-
 /* -------------------------------------------------------------- collections */
 
 const groupCounts = new Map();
@@ -445,7 +382,7 @@ const groups = GROUPS.map(({ slug, name, blurb }) => ({
   name,
   blurb,
   count: groupCounts.get(slug) ?? 0,
-}));
+})).filter((group) => group.count > 0);
 
 const categoryCounts = new Map();
 for (const tool of tools) {
@@ -462,6 +399,8 @@ const shorten = (value, max = 130) => {
   return text.length > max ? `${text.slice(0, max - 1).trimEnd()}…` : text;
 };
 
+const isPick = (item) => item.recommended || item.usefulness === "High";
+
 const searchIndex = [
   ...tools.map((t) => ({
     kind: "tool",
@@ -470,7 +409,7 @@ const searchIndex = [
     blurb: shorten(t.what),
     meta: t.category,
     badge: t.pricing,
-    pick: t.assessed && t.usefulness === "High",
+    pick: isPick(t),
   })),
   ...starters.map((s) => ({
     kind: "starter",
@@ -479,7 +418,7 @@ const searchIndex = [
     blurb: shorten(s.summary),
     meta: s.typeLabel,
     badge: s.typeLabel,
-    pick: s.featured,
+    pick: s.recommended || s.featured,
   })),
   ...resources.map((r) => ({
     kind: "resource",
@@ -488,7 +427,7 @@ const searchIndex = [
     blurb: shorten(r.takeaway),
     meta: r.resourceType,
     badge: "Resource",
-    pick: r.usefulness === "High",
+    pick: isPick(r),
   })),
 ];
 
@@ -499,8 +438,15 @@ const counts = {
   free: tools.filter((t) => t.pricing === "Free").length,
   freemium: tools.filter((t) => t.pricing === "Freemium").length,
   paid: tools.filter((t) => t.pricing === "Paid").length,
-  assessed: tools.filter((t) => t.assessed).length + resources.length,
-  picks: tools.filter((t) => t.assessed && t.usefulness === "High").length,
+  picks: tools.filter(isPick).length + resources.filter(isPick).length,
+  recommended:
+    tools.filter((t) => t.recommended).length +
+    resources.filter((r) => r.recommended).length +
+    starters.filter((s) => s.recommended).length,
+  approved:
+    tools.filter((t) => t.approved).length +
+    resources.filter((r) => r.approved).length +
+    starters.filter((s) => s.approved).length,
   starters: starters.length,
   prompts: starters.filter((s) => s.type === "PROMPT").length,
   skills: starters.filter((s) => s.type === "SKILL").length,
@@ -509,6 +455,7 @@ const counts = {
   plugins: starters.filter((s) => s.type === "PLUGIN").length,
   resources: resources.length,
   categories: categories.length,
+  entries: tools.length + resources.length + starters.length,
 };
 
 mkdirSync(OUT_DIR, { recursive: true });
@@ -523,10 +470,8 @@ const files = {
     groups,
     categories,
     tags,
-    readme,
-    dataQuality,
-    duplicatePairs,
     types: TYPE_META,
+    overrides: { updatedAt: overrides.updatedAt ?? null, updatedBy: overrides.updatedBy ?? null },
   },
   "shortlist.json": shortlist,
 };
@@ -545,5 +490,5 @@ if (unmapped.size) {
 }
 console.log(
   `data: ${counts.tools} tools · ${counts.resources} resources · ${counts.starters} starters · ` +
-    `${counts.categories} categories · ${shortlist.length} shortlist sections`,
+    `${counts.recommended} recommended · ${counts.approved} approved`,
 );

@@ -8,15 +8,15 @@ import type { ToolListItem } from "@/lib/types";
 
 export const metadata: Metadata = {
   title: "All tools",
-  description: `Browse ${counts.tools} AI tools by area, category, pricing and whether Gitwork has assessed them.`,
+  description: `The ${counts.tools} tools Gitwork fetched, read and assessed, with the verdict on each.`,
 };
 
 // The browser filters in the client, so it gets a trimmed record rather than the
-// full row — descriptions are cut to a card's worth of text.
+// full row.
 const listItems: ToolListItem[] = tools.map((tool) => ({
   slug: tool.slug,
   name: tool.name,
-  what: tool.what.length > 180 ? `${tool.what.slice(0, 179).trimEnd()}…` : tool.what,
+  what: tool.what.length > 200 ? `${tool.what.slice(0, 199).trimEnd()}…` : tool.what,
   category: tool.category,
   group: tool.group,
   pricing: tool.pricing,
@@ -24,30 +24,29 @@ const listItems: ToolListItem[] = tools.map((tool) => ({
   linkStatus: tool.linkStatus,
   linkLabel: tool.linkLabel,
   domain: tool.domain,
-  assessed: tool.assessed,
+  recommended: tool.recommended,
+  approved: tool.approved,
 }));
 
 export default function ToolsPage() {
   return (
     <>
       <PageHeader
-        eyebrow={`${counts.tools} tools · ${counts.categories} categories`}
+        eyebrow={`${counts.tools} tools · ${meta.groups.length} areas`}
         title="The tools list"
-        lead="Two sources in one place: the links Gitwork fetched and assessed individually, and a 684-tool directory we imported wholesale. The filters tell you which is which."
+        lead="Every link we fetched and read individually, with a real verdict: what it does, what it costs, whether to use it or build it, and what to watch out for."
         meta={
           <>
             <Badge tone="green">{counts.free} free</Badge>
-            <Badge tone="signal">{counts.freemium} freemium</Badge>
+            <Badge tone="accent">{counts.freemium} freemium</Badge>
             <Badge>{counts.paid} paid</Badge>
-            <Badge tone="solid">{counts.picks} picks</Badge>
+            {counts.recommended ? <Badge tone="solid">{counts.recommended} recommended</Badge> : null}
           </>
         }
       />
-      <Container className="py-8 sm:py-12">
-        <Suspense
-          fallback={<p className="label py-12 text-center text-mute">Loading the list…</p>}
-        >
-          <ToolBrowser tools={listItems} groups={meta.groups} categories={meta.categories} />
+      <Container className="py-10">
+        <Suspense fallback={<p className="label py-12 text-center text-mute">Loading the list…</p>}>
+          <ToolBrowser tools={listItems} groups={meta.groups} />
         </Suspense>
       </Container>
     </>

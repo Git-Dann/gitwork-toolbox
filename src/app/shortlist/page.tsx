@@ -23,7 +23,8 @@ export default function ShortlistPage() {
             <a
               key={section.slug}
               href={`#${section.slug}`}
-              className="label hairline rounded-full border bg-white px-3 py-1.5 text-ink/70 transition-colors hover:border-signal/40 hover:text-signal"
+              className="label rounded-full border px-3 py-1.5 text-soft transition-colors hover:border-[var(--accent)] hover:text-[var(--accent-soft)]"
+              style={{ borderColor: "var(--border)" }}
             >
               {section.number}. {section.title}
             </a>
@@ -48,13 +49,16 @@ function SectionBlock({ section }: { section: ShortlistSection }) {
   const labels = restColumns.map((column) => column.split(/\s*\|\|\s*/).map((part) => part.trim()));
 
   return (
-    <Section id={section.slug} className="scroll-mt-40 border-b border-line/10 last:border-0">
+    <Section id={section.slug} className="scroll-mt-24 border-b border-hair last:border-0">
       <div className="mb-6 max-w-2xl">
-        <Eyebrow>
+        <Eyebrow accent>
           {section.number} of {shortlist.length}
         </Eyebrow>
-        <h2 className="mt-2 font-display text-3xl leading-tight">{section.title}</h2>
-        {section.lead ? <p className="mt-3 text-[0.95rem] text-mute">{section.lead}</p> : null}
+        <h2 className="display mt-3 text-3xl">
+          {section.title}
+          <span className="text-accent">.</span>
+        </h2>
+        {section.lead ? <p className="mt-3.5 text-[0.95rem] leading-relaxed text-soft">{section.lead}</p> : null}
       </div>
 
       <div className="space-y-3">
@@ -62,7 +66,7 @@ function SectionBlock({ section }: { section: ShortlistSection }) {
           const [nameCell, ...cells] = row;
           const name = nameCell.join(" ");
           return (
-            <article key={name} className="card p-5">
+            <article key={name} className="surface p-5">
               <div className="flex flex-wrap items-baseline justify-between gap-3">
                 <h3 className="font-medium">{name}</h3>
                 {/* "Item" says nothing; "What to build" does. */}
@@ -82,7 +86,7 @@ function SectionBlock({ section }: { section: ShortlistSection }) {
                       <dt className="label pt-0.5 text-mute">
                         {paired ? columnLabels[0] : columnLabels.join(" / ")}
                       </dt>
-                      <dd className="space-y-2 text-sm leading-relaxed text-ink/80">
+                      <dd className="space-y-2 text-sm leading-relaxed text-soft">
                         {paragraphs.map((paragraph, pIndex) => (
                           <div key={pIndex}>
                             {paired && pIndex > 0 ? (

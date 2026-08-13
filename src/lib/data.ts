@@ -4,7 +4,6 @@ import shortlistJson from "@/data/generated/shortlist.json";
 import startersJson from "@/data/generated/starters.json";
 import toolsJson from "@/data/generated/tools.json";
 import type {
-  Group,
   Meta,
   Resource,
   ShortlistSection,
@@ -35,27 +34,37 @@ export const getStarter = (slug: string) => starterIndex.get(slug);
 export const getResource = (slug: string) => resourceIndex.get(slug);
 export const getGroup = (slug: string) => groupIndex.get(slug);
 
-/** Tools and resources Gitwork assessed and rated High — the honest front page. */
+/** A pick is anything flagged Recommended in the portal, or rated High in the workbook. */
+export const isPick = (item: { recommended: boolean; usefulness: string }) =>
+  item.recommended || item.usefulness === "High";
+
 export const picks = {
-  tools: tools.filter((tool) => tool.assessed && tool.usefulness === "High"),
-  resources: resources.filter((resource) => resource.usefulness === "High"),
+  tools: tools.filter(isPick),
+  resources: resources.filter(isPick),
 };
 
-/** Everything Gitwork actually looked at, best rating first. */
+export const recommended = {
+  tools: tools.filter((tool) => tool.recommended),
+  resources: resources.filter((resource) => resource.recommended),
+  starters: starters.filter((starter) => starter.recommended),
+};
+
 const USEFULNESS_ORDER = ["High", "Medium", "Low", "None", "Unknown", "Not assessed"];
 
-export const assessedTools = tools
-  .filter((tool) => tool.assessed)
-  .sort(
-    (a, b) =>
-      USEFULNESS_ORDER.indexOf(a.usefulness) - USEFULNESS_ORDER.indexOf(b.usefulness) ||
-      a.name.localeCompare(b.name),
-  );
+/** Every tool, best verdict first — recommended ones lead. */
+export const rankedTools = [...tools].sort(
+  (a, b) =>
+    Number(b.recommended) - Number(a.recommended) ||
+    USEFULNESS_ORDER.indexOf(a.usefulness) - USEFULNESS_ORDER.indexOf(b.usefulness) ||
+    a.name.localeCompare(b.name),
+);
 
 export const startersByType = (type: StarterType) =>
   starters.filter((starter) => starter.type === type);
 
-export const featuredStarters = starters.filter((starter) => starter.featured);
+export const featuredStarters = starters.filter(
+  (starter) => starter.recommended || starter.featured,
+);
 
 export const starterCollections = startersByType("COLLECTION");
 
@@ -67,7 +76,7 @@ export const toolsInGroup = (groupSlug: string) =>
 export const resourcesInGroup = (groupSlug: string) =>
   resources.filter((resource) => resource.group === groupSlug);
 
-/** Same category first, then same group, capped — used on detail pages. */
+/** Same category first, then same area — used on detail pages. */
 export function relatedTools(tool: Tool, limit = 6) {
   const sameCategory = tools.filter(
     (other) => other.slug !== tool.slug && other.category === tool.category,
@@ -76,10 +85,9 @@ export function relatedTools(tool: Tool, limit = 6) {
     (other) =>
       other.slug !== tool.slug && other.category !== tool.category && other.group === tool.group,
   );
-  const ranked = [...sameCategory, ...sameGroup].sort(
-    (a, b) => Number(b.assessed) - Number(a.assessed),
-  );
-  return ranked.slice(0, limit);
+  return [...sameCategory, ...sameGroup]
+    .sort((a, b) => Number(b.recommended) - Number(a.recommended))
+    .slice(0, limit);
 }
 
 export function relatedStarters(starter: Starter, limit = 6) {
@@ -94,19 +102,7 @@ export function relatedStarters(starter: Starter, limit = 6) {
     .map((entry) => entry.other);
 }
 
-/** Tags worth showing as filters: the model/topic families, not the catch-alls. */
-export const starterTags = meta.tags.filter((tag) => tag.count >= 4 && tag.tag !== "prompt-library");
-
-export const groupsWithCounts: Group[] = groups.filter((group) => group.count > 0);
-
-export const sources = {
-  directory: {
-    name: "700 AI Toolkit",
-    url: "https://toolkit.dailyprompting.com/",
-    count: tools.filter((tool) => tool.source === "directory").length,
-  },
-  gitwork: {
-    name: "Gitwork assessed",
-    count: tools.filter((tool) => tool.assessed).length + resources.length,
-  },
-};
+/** Tags worth showing as filters: the model and topic families, not the catch-alls. */
+export const starterTags = meta.tags.filter(
+  (tag) => tag.count >= 4 && tag.tag !== "prompt-library",
+);

@@ -4,15 +4,15 @@ import type { LinkStatus, Pricing, Usefulness } from "@/lib/types";
 
 /* ------------------------------------------------------------------ monogram */
 
-// No logo assets exist for 700-odd tools, so each one gets a typographic tile
-// with a deterministic tint from the brand palette instead of a broken image.
+// No logo assets exist for these tools, so each gets a typographic tile with a
+// deterministic violet-family tint rather than a broken image.
 const TINTS = [
-  "bg-signal-soft text-signal-deep",
-  "bg-[#ece8dd] text-ink",
-  "bg-[#dcebe2] text-[#14663a]",
-  "bg-[#dde6ff] text-[#173a8f]",
-  "bg-[#f2e5d9] text-[#7a4a22]",
-  "bg-[#e6e3f5] text-signal-deep",
+  { bg: "rgb(107 82 255 / 0.18)", fg: "#a99bff" },
+  { bg: "rgb(143 125 255 / 0.14)", fg: "#b6a9ff" },
+  { bg: "rgb(62 207 142 / 0.14)", fg: "#6fdcac" },
+  { bg: "rgb(232 176 75 / 0.14)", fg: "#e8c07a" },
+  { bg: "rgb(242 237 228 / 0.10)", fg: "#d7d3ca" },
+  { bg: "rgb(68 54 201 / 0.20)", fg: "#9c92ff" },
 ];
 
 function hash(value: string) {
@@ -43,14 +43,16 @@ export function Monogram({
 }) {
   const dimensions = {
     sm: "h-8 w-8 text-[11px] rounded-md",
-    md: "h-10 w-10 text-[13px] rounded-lg",
-    lg: "h-14 w-14 text-lg rounded-xl",
+    md: "h-11 w-11 text-[13px] rounded-lg",
+    lg: "h-16 w-16 text-lg rounded-xl",
   }[size];
+  const tint = TINTS[hash(name) % TINTS.length];
 
   return (
     <span
       aria-hidden
-      className={`grid shrink-0 place-items-center font-mono font-medium tracking-tight ${TINTS[hash(name) % TINTS.length]} ${dimensions} ${className}`}
+      className={`grid shrink-0 place-items-center font-mono font-medium tracking-tight ${dimensions} ${className}`}
+      style={{ background: tint.bg, color: tint.fg }}
     >
       {initialsOf(name)}
     </span>
@@ -59,29 +61,31 @@ export function Monogram({
 
 /* -------------------------------------------------------------------- badges */
 
+type Tone = "neutral" | "accent" | "green" | "flag" | "amber" | "solid";
+
+const TONES: Record<Tone, { border: string; bg: string; color: string }> = {
+  neutral: { border: "var(--border)", bg: "transparent", color: "var(--text-mute)" },
+  accent: { border: "rgb(107 82 255 / 0.35)", bg: "var(--accent-wash)", color: "var(--accent-soft)" },
+  green: { border: "rgb(62 207 142 / 0.3)", bg: "rgb(62 207 142 / 0.1)", color: "#5bd6a0" },
+  flag: { border: "rgb(255 107 107 / 0.3)", bg: "rgb(255 107 107 / 0.1)", color: "#ff8f8f" },
+  amber: { border: "rgb(232 176 75 / 0.3)", bg: "rgb(232 176 75 / 0.1)", color: "#e8c07a" },
+  solid: { border: "var(--accent)", bg: "var(--accent)", color: "var(--on-accent)" },
+};
+
 export function Badge({
   children,
   tone = "neutral",
   className = "",
 }: {
   children: ReactNode;
-  tone?: "neutral" | "signal" | "green" | "flag" | "amber" | "solid";
+  tone?: Tone;
   className?: string;
 }) {
-  const tones = {
-    neutral: "border-line/15 text-mute",
-    signal: "border-signal/25 bg-signal-soft/50 text-signal-deep",
-    green: "border-green/25 bg-green/8 text-green",
-    flag: "border-flag/25 bg-flag/8 text-flag",
-    amber: "border-[#b4741c]/25 bg-[#b4741c]/8 text-[#8a5714]",
-    solid: "border-ink bg-ink text-paper",
-  }[tone];
-
-  // Compound categories ("Design engineering / UI reference") are long enough to
-  // break a pill, so a badge never wraps — it ellipsises inside its container.
+  const t = TONES[tone];
   return (
     <span
-      className={`label inline-flex min-w-0 max-w-full items-center gap-1 whitespace-nowrap rounded-full border px-2 py-1 ${tones} ${className}`}
+      className={`label inline-flex min-w-0 max-w-full items-center gap-1 whitespace-nowrap rounded-full border px-2 py-1 ${className}`}
+      style={{ borderColor: t.border, background: t.bg, color: t.color }}
     >
       <span className="truncate">{children}</span>
     </span>
@@ -89,23 +93,28 @@ export function Badge({
 }
 
 export function PricingBadge({ pricing }: { pricing: Pricing }) {
-  const tone = pricing === "Free" ? "green" : pricing === "Freemium" ? "signal" : "neutral";
+  const tone: Tone = pricing === "Free" ? "green" : pricing === "Freemium" ? "accent" : "neutral";
   return <Badge tone={tone}>{pricing}</Badge>;
 }
 
-export function PickBadge() {
-  return <Badge tone="solid">Gitwork pick</Badge>;
+/** Set in the admin portal: actively recommended for studio work. */
+export function RecommendedBadge() {
+  return <Badge tone="solid">★ Recommended</Badge>;
+}
+
+/** Set in the admin portal: checked over and cleared for client work. */
+export function ApprovedBadge() {
+  return <Badge tone="accent">✓ Gitwork approved</Badge>;
 }
 
 export function LinkHealth({ status, label }: { status: LinkStatus; label: string }) {
   if (status === "ok" || status === "reviewed") return null;
-  const tone = status === "dead" ? "flag" : "amber";
-  return <Badge tone={tone}>{label}</Badge>;
+  return <Badge tone={status === "dead" ? "flag" : "amber"}>{label}</Badge>;
 }
 
-const USEFULNESS_TONE: Record<Usefulness, "solid" | "signal" | "neutral"> = {
-  High: "solid",
-  Medium: "signal",
+const USEFULNESS_TONE: Record<Usefulness, Tone> = {
+  High: "accent",
+  Medium: "neutral",
   Low: "neutral",
   None: "neutral",
   Unknown: "neutral",
@@ -119,8 +128,18 @@ export function UsefulnessBadge({ usefulness }: { usefulness: Usefulness }) {
 
 /* ------------------------------------------------------------------ headings */
 
-export function Eyebrow({ children, className = "" }: { children: ReactNode; className?: string }) {
-  return <p className={`label text-mute ${className}`}>{children}</p>;
+export function Eyebrow({
+  children,
+  className = "",
+  accent = false,
+}: {
+  children: ReactNode;
+  className?: string;
+  accent?: boolean;
+}) {
+  return (
+    <p className={`label ${accent ? "text-accent" : "text-mute"} ${className}`}>{children}</p>
+  );
 }
 
 export function SectionHeading({
@@ -137,14 +156,18 @@ export function SectionHeading({
   return (
     <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
       <div className="max-w-2xl">
-        {eyebrow ? <Eyebrow className="mb-2">{eyebrow}</Eyebrow> : null}
-        <h2 className="font-display text-2xl leading-tight sm:text-3xl">{title}</h2>
-        {blurb ? <p className="mt-2 text-sm text-mute sm:text-[0.95rem]">{blurb}</p> : null}
+        {eyebrow ? <Eyebrow accent className="mb-2.5">{eyebrow}</Eyebrow> : null}
+        <h2 className="display text-2xl sm:text-[1.75rem]">
+          {title}
+          <span className="text-accent">.</span>
+        </h2>
+        {blurb ? <p className="mt-2.5 text-sm leading-relaxed text-soft">{blurb}</p> : null}
       </div>
       {action ? (
         <Link
           href={action.href}
-          className="label shrink-0 border-b border-ink/20 pb-1 text-ink transition-colors hover:border-signal hover:text-signal"
+          className="label shrink-0 border-b pb-1 transition-colors hover:text-[var(--accent)]"
+          style={{ borderColor: "var(--border-strong)" }}
         >
           {action.label} →
         </Link>
@@ -177,12 +200,29 @@ export function ExternalIcon({ className = "" }: { className?: string }) {
 export function Stat({ value, label }: { value: string | number; label: string }) {
   return (
     <div>
-      <p className="font-display text-3xl leading-none sm:text-4xl">{value}</p>
+      <p className="display text-3xl sm:text-4xl">
+        {value}
+        <span className="text-accent">.</span>
+      </p>
       <p className="label mt-2 text-mute">{label}</p>
     </div>
   );
 }
 
 export function Divider({ className = "" }: { className?: string }) {
-  return <hr className={`hairline border-t ${className}`} />;
+  return <hr className={`border-t ${className}`} style={{ borderColor: "var(--border)" }} />;
+}
+
+/** The violet arrow bullet used through the studio's documents. */
+export function ArrowList({ items }: { items: string[] }) {
+  return (
+    <ul className="space-y-2.5">
+      {items.map((item) => (
+        <li key={item} className="flex gap-3 text-sm leading-relaxed text-soft">
+          <span className="mt-0.5 shrink-0 text-accent">→</span>
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+  );
 }

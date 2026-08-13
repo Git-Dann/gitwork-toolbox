@@ -27,7 +27,8 @@ export function CopyButton({
     <button
       type="button"
       onClick={copy}
-      className={`label inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2.5 text-paper transition-opacity hover:opacity-85 ${className}`}
+      className={`label inline-flex items-center gap-2 rounded-full px-4 py-2.5 transition-opacity hover:opacity-85 ${className}`}
+      style={{ background: "var(--accent)", color: "var(--on-accent)" }}
     >
       {state === "copied" ? (
         <>

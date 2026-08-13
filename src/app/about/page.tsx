@@ -1,172 +1,125 @@
 import type { Metadata } from "next";
-import { OutboundLink } from "@/components/cards";
 import { Container, PageHeader, Panel, Section } from "@/components/page-shell";
-import { Eyebrow, SectionHeading, Stat } from "@/components/ui";
+import { ArrowList, Eyebrow, SectionHeading, Stat } from "@/components/ui";
 import { counts, meta } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "How this is built",
   description:
-    "Where the data comes from, what was deduplicated, what could not be verified, and how much of it to trust.",
+    "Where the data comes from, what was left out, and how the recommended and approved flags are set.",
 };
 
 export default function AboutPage() {
+  const updated = meta.overrides.updatedAt
+    ? new Date(meta.overrides.updatedAt).toLocaleString("en-GB", {
+        dateStyle: "medium",
+        timeStyle: "short",
+      })
+    : null;
+
   return (
     <>
       <PageHeader
         eyebrow="Provenance"
         title="How this is built"
-        lead="Two sources with very different reliability, kept apart on purpose. This page is the audit trail: what came from where, what was collapsed, and what nobody has checked."
+        lead="Two sources, both ours: the tools we assessed by hand, and the Foundry starter library. Nothing is padded out with third-party listings."
       />
 
       <Container>
         <Section>
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
-            <Stat value={counts.tools} label="Tools" />
-            <Stat value={counts.assessed} label="Assessed by us" />
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
+            <Stat value={counts.tools} label="Tools assessed" />
             <Stat value={counts.starters} label="Foundry starters" />
             <Stat value={counts.resources} label="Resources" />
+            <Stat value={counts.entries} label="Entries in total" />
           </div>
         </Section>
 
-        <Section className="border-t border-line/10">
+        <Section className="border-t border-hair">
           <SectionHeading
             eyebrow="Sources"
             title="Where each row came from"
-            blurb="Filter by source anywhere on the tools page. Nothing is merged across the two."
+            blurb="Both sources are committed to the repository, so the site can always be rebuilt from scratch."
           />
-          <div className="grid gap-4 sm:grid-cols-2">
-            <Panel tone="signal" title="Gitwork assessed">
-              <p className="text-sm leading-relaxed text-ink/85">
-                41 links fetched and read individually, each with a real verdict in the “Useful to
-                Gitwork” and “Build ourselves?” fields. Assessed 5 and 13 August 2026. These are the
-                rows worth acting on.
+          <div className="grid gap-4 lg:grid-cols-2">
+            <Panel tone="accent" title="The assessed tools list">
+              <p className="text-sm leading-relaxed text-soft">
+                {counts.tools} tools and {counts.resources} resources, each one fetched and read
+                individually on 5 and 13 August 2026, with a real verdict in the “Useful to Gitwork”
+                and “Build ourselves?” fields. It comes from a Google Sheet, exported as .xlsx and
+                extracted by a stdlib Python script.
               </p>
             </Panel>
-            <Panel title="700 AI Toolkit">
-              <p className="text-sm leading-relaxed text-ink/85">
-                684 tools extracted from{" "}
-                <OutboundLink
-                  href="https://toolkit.dailyprompting.com/"
-                  className="text-signal hover:underline"
-                >
-                  toolkit.dailyprompting.com
-                </OutboundLink>{" "}
-                on 5 August 2026, carrying the directory's own one-line description and pricing
-                label. Marked “Not assessed” because nobody has evaluated them — including the
-                directory, in most cases.
+            <Panel title="Foundry starters">
+              <p className="text-sm leading-relaxed text-soft">
+                {counts.starters} starters exported from Foundry: {counts.prompts} prompts,{" "}
+                {counts.skills} skills, {counts.kits} kits, {counts.plugins} plugins and{" "}
+                {counts.starterCollections} collections. Each carries its full prompt text, so the
+                page you read is the thing you paste.
               </p>
             </Panel>
           </div>
         </Section>
 
-        <Section className="border-t border-line/10">
+        <Section className="border-t border-hair">
           <SectionHeading
-            eyebrow="The workbook"
-            title="How it is organised"
-            blurb="Straight from the source spreadsheet's read-me, so this page and the workbook cannot drift apart."
+            eyebrow="Editorial rules"
+            title="What is deliberately not here"
           />
-          <dl className="card divide-y divide-line/8 px-5">
-            {meta.readme.map((entry, index) => (
-              <div key={`${entry.term}-${index}`} className="grid gap-1 py-4 sm:grid-cols-[13rem_1fr] sm:gap-6">
-                <dt className="text-sm font-medium">{entry.term}</dt>
-                <dd className="text-sm leading-relaxed text-ink/75">{entry.detail}</dd>
-              </div>
-            ))}
-          </dl>
-        </Section>
-
-        <Section className="border-t border-line/10">
-          <SectionHeading
-            eyebrow="Data quality"
-            title="What was cleaned, and what could not be verified"
-          />
-          <div className="card overflow-x-auto">
-            <table className="w-full min-w-[36rem] text-sm">
-              <thead>
-                <tr className="border-b border-line/10">
-                  <th className="label px-5 py-3 text-left text-mute">Measure</th>
-                  <th className="label px-5 py-3 text-right text-mute">Count</th>
-                  <th className="label px-5 py-3 text-left text-mute">Note</th>
-                </tr>
-              </thead>
-              <tbody>
-                {meta.dataQuality.map((row) => (
-                  <tr key={row.measure} className="border-b border-line/8 last:border-0">
-                    <td className="px-5 py-3 align-top font-medium">{row.measure}</td>
-                    <td className="px-5 py-3 text-right align-top font-mono text-[0.8rem]">
-                      {row.count}
-                    </td>
-                    <td className="px-5 py-3 align-top leading-relaxed text-ink/75">{row.note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="grid gap-8 lg:grid-cols-[1.2fr_1fr]">
+            <Panel>
+              <ArrowList
+                items={[
+                  "The 684-tool 700 AI Toolkit import was dropped. Unread listings carrying someone else's unverified pricing labels are noise, not a reference.",
+                  "Three rows from the Resources tab are filtered out in the build script: a private billing page, a private Notion page, and a live client site that belongs in the CRM.",
+                  "No logins, accounts or favourites on the public side. The only authenticated surface is the admin portal.",
+                  "The site carries a noindex tag and a robots.txt disallow, because the verdicts here are written for internal use.",
+                ]}
+              />
+            </Panel>
+            <Panel title="Recommended vs approved">
+              <p className="text-sm leading-relaxed text-soft">
+                <strong className="text-[var(--text)]">Recommended</strong> means someone at Gitwork
+                would actively reach for it. <strong className="text-[var(--text)]">Gitwork
+                approved</strong> means it has been checked over and cleared for client work. Both
+                are set by hand by Dan or Harry in the admin portal — never inferred from the data.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-soft">
+                {counts.recommended} recommended, {counts.approved} approved.
+                {updated ? ` Last changed ${updated} by ${meta.overrides.updatedBy}.` : ""}
+              </p>
+            </Panel>
           </div>
         </Section>
 
-        <Section className="border-t border-line/10">
-          <SectionHeading
-            eyebrow={`${meta.duplicatePairs.length} pairs`}
-            title="Duplicates collapsed out of the directory"
-            blurb="Almost all of them the same product entered twice with “AI” appended to the name."
-          />
-          <div className="card overflow-x-auto">
-            <table className="w-full min-w-[32rem] text-sm">
-              <thead>
-                <tr className="border-b border-line/10">
-                  <th className="label px-5 py-3 text-left text-mute">Kept</th>
-                  <th className="label px-5 py-3 text-left text-mute">Removed</th>
-                  <th className="label px-5 py-3 text-left text-mute">Site</th>
-                </tr>
-              </thead>
-              <tbody>
-                {meta.duplicatePairs.map((pair) => (
-                  <tr key={pair.removed} className="border-b border-line/8 last:border-0">
-                    <td className="px-5 py-2.5 font-medium">{pair.kept}</td>
-                    <td className="px-5 py-2.5 text-mute line-through">{pair.removed}</td>
-                    <td className="px-5 py-2.5">
-                      <OutboundLink
-                        href={pair.website}
-                        className="text-xs text-signal hover:underline"
-                      >
-                        {pair.website.replace(/^https?:\/\//, "")}
-                      </OutboundLink>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </Section>
-
-        <Section className="border-t border-line/10">
+        <Section className="border-t border-hair">
           <SectionHeading eyebrow="This site" title="How it is put together" />
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-4 lg:grid-cols-2">
             <Panel title="Build">
-              <p className="text-sm leading-relaxed text-ink/85">
-                Next.js on Vercel, statically generated. The workbook is committed as an .xlsx and
-                extracted with a stdlib Python script; the Foundry starters are committed as their
-                raw export. A build step turns both into typed JSON, so re-exporting a source and
-                rebuilding is the whole update process. No database, no logins, no accounts.
+              <p className="text-sm leading-relaxed text-soft">
+                Next.js on Vercel, statically generated, no database. A build step compiles the two
+                source files plus the admin flags into typed JSON, so re-exporting a source and
+                rebuilding is the whole update process.
               </p>
             </Panel>
-            <Panel title="Scope">
-              <p className="text-sm leading-relaxed text-ink/85">
-                Three rows on the Resources tab were left out of the site: a private billing page, a
-                private Notion page, and a live client site that belongs in the CRM. The pages carry
-                a noindex tag, since the verdicts here are written for internal use.
-              </p>
+            <Panel title="Updating the content">
+              <div className="prose-tight text-sm leading-relaxed">
+                <p>
+                  Re-export the sheet over <code>data/source/ai-tools-and-links.xlsx</code>, run{" "}
+                  <code>python3 scripts/extract-workbook.py</code>, then <code>npm run data</code>.
+                  Same for the Foundry export. Flags set in the portal are stored in{" "}
+                  <code>data/overrides.json</code> and committed, so every change is versioned.
+                </p>
+              </div>
             </Panel>
           </div>
-          <div className="mt-6 max-w-2xl text-sm leading-relaxed text-mute">
-            <Eyebrow className="mb-2">Updating it</Eyebrow>
-            Re-export the sheet as .xlsx over{" "}
-            <code className="font-mono text-[0.8rem]">data/source/ai-tools-and-links.xlsx</code>, run{" "}
-            <code className="font-mono text-[0.8rem]">python3 scripts/extract-workbook.py</code>, then{" "}
-            <code className="font-mono text-[0.8rem]">npm run data</code>. Same for the Foundry
-            starters export. Everything on the site — counts, categories, collections, this page —
-            regenerates from those two files.
+          <div className="mt-8 max-w-2xl text-sm leading-relaxed text-mute">
+            <Eyebrow accent className="mb-2">
+              One caveat worth repeating
+            </Eyebrow>
+            Prices are what was published on the day we looked, and nothing on the list carries an
+            added date — so staleness cannot be judged from the data. Re-check anything before you
+            spend money on it.
           </div>
         </Section>
       </Container>

@@ -9,7 +9,7 @@ export function Container({
   children: ReactNode;
   className?: string;
 }) {
-  return <div className={`mx-auto max-w-6xl px-4 sm:px-6 ${className}`}>{children}</div>;
+  return <div className={`mx-auto w-full max-w-[92rem] px-5 sm:px-8 ${className}`}>{children}</div>;
 }
 
 export function PageHeader({
@@ -26,12 +26,17 @@ export function PageHeader({
   children?: ReactNode;
 }) {
   return (
-    <div className="border-b border-line/10 bg-white/40">
+    <div className="border-b" style={{ borderColor: "var(--border)" }}>
       <Container className="py-10 sm:py-14">
-        <Eyebrow>{eyebrow}</Eyebrow>
-        <h1 className="mt-3 max-w-3xl font-display text-4xl leading-[1.05] sm:text-5xl">{title}</h1>
-        {lead ? <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink/70">{lead}</p> : null}
-        {meta ? <div className="mt-5 flex flex-wrap items-center gap-2">{meta}</div> : null}
+        <Eyebrow accent>{eyebrow}</Eyebrow>
+        <h1 className="display mt-4 max-w-4xl text-4xl sm:text-[3.25rem]">
+          {title}
+          <span className="text-accent">.</span>
+        </h1>
+        {lead ? (
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-soft">{lead}</p>
+        ) : null}
+        {meta ? <div className="mt-6 flex flex-wrap items-center gap-2">{meta}</div> : null}
         {children}
       </Container>
     </div>
@@ -42,7 +47,7 @@ export function BackLink({ href, children }: { href: string; children: ReactNode
   return (
     <Link
       href={href}
-      className="label inline-flex items-center gap-1.5 text-mute transition-colors hover:text-signal"
+      className="label inline-flex items-center gap-1.5 text-mute transition-colors hover:text-[var(--accent)]"
     >
       ← {children}
     </Link>
@@ -72,18 +77,22 @@ export function Panel({
   children,
 }: {
   title?: string;
-  tone?: "plain" | "signal" | "flag";
+  tone?: "plain" | "accent" | "flag";
   children: ReactNode;
 }) {
   const tones = {
-    plain: "border-line/10 bg-white",
-    signal: "border-signal/20 bg-signal-soft/35",
-    flag: "border-flag/20 bg-flag/5",
+    plain: { borderColor: "var(--border)", background: "var(--bg-card)" },
+    accent: { borderColor: "rgb(107 82 255 / 0.3)", background: "var(--accent-wash)" },
+    flag: { borderColor: "rgb(255 107 107 / 0.28)", background: "rgb(255 107 107 / 0.07)" },
   }[tone];
 
   return (
-    <div className={`rounded-[var(--radius-card)] border p-5 ${tones}`}>
-      {title ? <p className="label mb-3 text-ink">{title}</p> : null}
+    <div className="rounded-[var(--radius-card)] border p-5" style={tones}>
+      {title ? (
+        <p className="label mb-3" style={{ color: tone === "accent" ? "var(--accent-soft)" : "var(--text)" }}>
+          {title}
+        </p>
+      ) : null}
       {children}
     </div>
   );
@@ -91,9 +100,12 @@ export function Panel({
 
 export function DefinitionRow({ term, children }: { term: string; children: ReactNode }) {
   return (
-    <div className="flex flex-col gap-1 border-b border-line/8 py-3 last:border-0 sm:flex-row sm:gap-6">
-      <dt className="label w-40 shrink-0 pt-0.5 text-mute">{term}</dt>
-      <dd className="flex-1 text-sm leading-relaxed">{children}</dd>
+    <div
+      className="flex flex-col gap-1 border-b py-3.5 last:border-0 sm:flex-row sm:gap-6"
+      style={{ borderColor: "var(--border)" }}
+    >
+      <dt className="label w-44 shrink-0 pt-0.5 text-mute">{term}</dt>
+      <dd className="flex-1 text-sm leading-relaxed text-soft">{children}</dd>
     </div>
   );
 }

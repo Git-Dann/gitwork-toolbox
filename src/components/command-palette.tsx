@@ -26,7 +26,7 @@ function score(entry: SearchEntry, query: string) {
   return 0;
 }
 
-export function CommandPalette() {
+export function CommandPalette({ variant = "sidebar" }: { variant?: "sidebar" | "icon" }) {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
@@ -35,7 +35,7 @@ export function CommandPalette() {
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
 
-  // The index is ~160KB, so it loads on first open instead of on every page.
+  // The index loads on first open instead of shipping in every page payload.
   useEffect(() => {
     if (!open || entries) return;
     let cancelled = false;
@@ -56,7 +56,8 @@ export function CommandPalette() {
     const onKeyDown = (event: KeyboardEvent) => {
       const target = event.target as HTMLElement | null;
       const typing =
-        target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable);
+        target &&
+        (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable);
 
       if ((event.key === "k" || event.key === "K") && (event.metaKey || event.ctrlKey)) {
         event.preventDefault();
@@ -75,23 +76,20 @@ export function CommandPalette() {
   }, [open]);
 
   useEffect(() => {
-    if (open) {
-      setActive(0);
-      const frame = requestAnimationFrame(() => inputRef.current?.focus());
-      document.body.style.overflow = "hidden";
-      return () => {
-        cancelAnimationFrame(frame);
-        document.body.style.overflow = "";
-      };
-    }
+    if (!open) return;
+    setActive(0);
+    const frame = requestAnimationFrame(() => inputRef.current?.focus());
+    document.body.style.overflow = "hidden";
+    return () => {
+      cancelAnimationFrame(frame);
+      document.body.style.overflow = "";
+    };
   }, [open]);
 
   const results = useMemo(() => {
     if (!entries) return [];
     const q = query.trim().toLowerCase();
-    if (!q) {
-      return entries.filter((entry) => entry.pick).slice(0, 12);
-    }
+    if (!q) return entries.filter((entry) => entry.pick).slice(0, 12);
     return entries
       .map((entry) => ({ entry, value: score(entry, q) }))
       .filter((row) => row.value > 0)
@@ -128,30 +126,56 @@ export function CommandPalette() {
 
   return (
     <>
-      <button
-        type="button"
-        onClick={() => setOpen(true)}
-        className="hairline flex items-center gap-2 rounded-full border bg-white/60 px-3 py-2 text-sm text-mute transition-colors hover:border-line/25 hover:text-ink"
-        aria-label="Search the toolbox"
-      >
-        <SearchIcon />
-        <span className="hidden sm:inline">Search</span>
-        <kbd className="label hidden rounded border border-line/15 px-1.5 py-0.5 text-[10px] text-mute sm:inline">
-          ⌘K
-        </kbd>
-      </button>
+      {variant === "icon" ? (
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          aria-label="Search the toolbox"
+          className="grid h-9 w-9 place-items-center rounded-lg border"
+          style={{ borderColor: "var(--border)" }}
+        >
+          <SearchIcon />
+        </button>
+      ) : (
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          className="flex w-full items-center gap-2 rounded-lg border px-2.5 py-2 text-sm transition-colors"
+          style={{
+            borderColor: "var(--border)",
+            background: "var(--bg-input)",
+            color: "var(--text-mute)",
+          }}
+          aria-label="Search the toolbox"
+        >
+          <SearchIcon />
+          <span className="flex-1 text-left">Search</span>
+          <kbd
+            className="label rounded border px-1.5 py-0.5 text-[10px]"
+            style={{ borderColor: "var(--border)" }}
+          >
+            ⌘K
+          </kbd>
+        </button>
+      )}
 
       {open ? (
-        <div className="fixed inset-0 z-50 flex items-start justify-center px-4 pt-[10vh] sm:pt-[14vh]">
+        <div className="fixed inset-0 z-[60] flex items-start justify-center px-4 pt-[10vh] sm:pt-[14vh]">
           <button
             type="button"
             aria-label="Close search"
-            className="absolute inset-0 bg-ink/25 backdrop-blur-[2px]"
+            className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"
             onClick={() => setOpen(false)}
           />
-          <div className="card relative z-10 w-full max-w-xl overflow-hidden shadow-[0_24px_64px_-24px_rgb(11_12_15/0.4)]">
-            <div className="flex items-center gap-3 border-b border-line/10 px-4 py-3">
-              <SearchIcon className="text-mute" />
+          <div
+            className="surface relative z-10 w-full max-w-xl overflow-hidden"
+            style={{ boxShadow: "var(--shadow-card)" }}
+          >
+            <div
+              className="flex items-center gap-3 border-b px-4 py-3"
+              style={{ borderColor: "var(--border)" }}
+            >
+              <SearchIcon />
               <input
                 ref={inputRef}
                 value={query}
@@ -160,10 +184,13 @@ export function CommandPalette() {
                   setActive(0);
                 }}
                 onKeyDown={onKeyDown}
-                placeholder="Search 700+ tools, prompts, kits and resources…"
-                className="w-full bg-transparent text-sm outline-none placeholder:text-mute"
+                placeholder="Search tools, prompts, kits and resources…"
+                className="w-full bg-transparent text-sm outline-none placeholder:text-[var(--text-mute)]"
               />
-              <kbd className="label rounded border border-line/15 px-1.5 py-0.5 text-[10px] text-mute">
+              <kbd
+                className="label rounded border px-1.5 py-0.5 text-[10px] text-mute"
+                style={{ borderColor: "var(--border)" }}
+              >
                 Esc
               </kbd>
             </div>
@@ -185,9 +212,8 @@ export function CommandPalette() {
                       type="button"
                       onClick={() => go(entry)}
                       onMouseEnter={() => setActive(index)}
-                      className={`flex w-full items-center gap-3 px-4 py-2.5 text-left ${
-                        index === active ? "bg-signal-soft/50" : ""
-                      }`}
+                      className="flex w-full items-center gap-3 px-4 py-2.5 text-left"
+                      style={index === active ? { background: "var(--accent-wash)" } : undefined}
                     >
                       <span className="min-w-0 flex-1">
                         <span className="block truncate text-sm font-medium">{entry.name}</span>
@@ -206,7 +232,7 @@ export function CommandPalette() {
   );
 }
 
-function SearchIcon({ className = "" }: { className?: string }) {
+function SearchIcon() {
   return (
     <svg
       aria-hidden
@@ -215,7 +241,7 @@ function SearchIcon({ className = "" }: { className?: string }) {
       stroke="currentColor"
       strokeWidth="1.6"
       strokeLinecap="round"
-      className={`h-4 w-4 shrink-0 ${className}`}
+      className="h-4 w-4 shrink-0"
     >
       <circle cx="7" cy="7" r="4.5" />
       <path d="M10.5 10.5 14 14" />

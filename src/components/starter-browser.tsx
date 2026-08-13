@@ -3,7 +3,7 @@
 import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { StarterCard } from "@/components/cards";
-import { Collapsible, FilterGroup, FilterOption, SearchField } from "@/components/filter-ui";
+import { Collapsible, FilterGroup, FilterOption, SearchField, Toggle } from "@/components/filter-ui";
 import { Badge } from "@/components/ui";
 import type { StarterListItem, StarterType, Tag } from "@/lib/types";
 
@@ -30,6 +30,7 @@ export function StarterBrowser({
   const [type, setType] = useState(params.get("type") ?? "");
   const [tag, setTag] = useState(params.get("tag") ?? "");
   const [featuredOnly, setFeaturedOnly] = useState(params.get("featured") === "1");
+  const [recommendedOnly, setRecommendedOnly] = useState(params.get("recommended") === "1");
   const [limit, setLimit] = useState(PAGE);
   const [showFilters, setShowFilters] = useState(false);
 
@@ -39,11 +40,12 @@ export function StarterBrowser({
     if (type) next.set("type", type);
     if (tag) next.set("tag", tag);
     if (featuredOnly) next.set("featured", "1");
+    if (recommendedOnly) next.set("recommended", "1");
     const search = next.toString();
     window.history.replaceState(null, "", search ? `/starters?${search}` : "/starters");
-  }, [query, type, tag, featuredOnly]);
+  }, [query, type, tag, featuredOnly, recommendedOnly]);
 
-  useEffect(() => setLimit(PAGE), [query, type, tag, featuredOnly]);
+  useEffect(() => setLimit(PAGE), [query, type, tag, featuredOnly, recommendedOnly]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -51,6 +53,7 @@ export function StarterBrowser({
       if (type && starter.type !== type) return false;
       if (tag && !starter.tags.includes(tag)) return false;
       if (featuredOnly && !starter.featured) return false;
+      if (recommendedOnly && !starter.recommended) return false;
       if (!q) return true;
       return (
         starter.name.toLowerCase().includes(q) ||
@@ -58,31 +61,31 @@ export function StarterBrowser({
         starter.tags.some((item) => item.includes(q))
       );
     });
-  }, [starters, query, type, tag, featuredOnly]);
+  }, [starters, query, type, tag, featuredOnly, recommendedOnly]);
 
   const reset = () => {
     setQuery("");
     setType("");
     setTag("");
     setFeaturedOnly(false);
+    setRecommendedOnly(false);
   };
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[15rem_1fr] lg:gap-8">
+    <div className="grid gap-6 lg:grid-cols-[14rem_1fr] lg:gap-10">
       <button
         type="button"
         onClick={() => setShowFilters((value) => !value)}
         aria-expanded={showFilters}
-        className="hairline label flex items-center justify-between rounded-full border bg-white px-4 py-3 lg:hidden"
+        className="label flex items-center justify-between rounded-full border px-4 py-3 lg:hidden"
+        style={{ borderColor: "var(--border)", background: "var(--bg-card)" }}
       >
         <span>{showFilters ? "Hide filters" : "Filters"}</span>
         <span className="text-mute">{filtered.length} shown</span>
       </button>
 
-      <aside
-        className={`${showFilters ? "block" : "hidden"} lg:sticky lg:top-40 lg:block lg:self-start`}
-      >
-        <div className="card p-4">
+      <aside className={`${showFilters ? "block" : "hidden"} lg:block`}>
+        <div className="lg:sticky lg:top-8">
           <FilterGroup title="Type">
             <FilterOption
               label="Everything"
@@ -101,10 +104,15 @@ export function StarterBrowser({
             ))}
           </FilterGroup>
 
-          <FilterGroup title="Gitwork">
-            <FilterOption
-              label="Featured only"
-              count={starters.filter((starter) => starter.featured).length}
+          <FilterGroup title="Verdict">
+            <Toggle
+              label="Recommended only"
+              hint="Flagged by Dan or Harry"
+              active={recommendedOnly}
+              onClick={() => setRecommendedOnly((value) => !value)}
+            />
+            <Toggle
+              label="Featured in Foundry"
               active={featuredOnly}
               onClick={() => setFeaturedOnly((value) => !value)}
             />
@@ -126,7 +134,7 @@ export function StarterBrowser({
         </div>
       </aside>
 
-      <div>
+      <div className="min-w-0">
         <SearchField
           value={query}
           onChange={setQuery}
@@ -137,29 +145,30 @@ export function StarterBrowser({
           <p className="label text-mute">
             {filtered.length} {filtered.length === 1 ? "starter" : "starters"}
           </p>
-          {type ? <Badge tone="signal">{TYPES.find((t) => t.value === type)?.label}</Badge> : null}
-          {tag ? <Badge tone="signal">{tags.find((t) => t.tag === tag)?.label ?? tag}</Badge> : null}
+          {type ? <Badge tone="accent">{TYPES.find((t) => t.value === type)?.label}</Badge> : null}
+          {tag ? <Badge tone="accent">{tags.find((t) => t.tag === tag)?.label ?? tag}</Badge> : null}
           {query.trim() || type || tag || featuredOnly ? (
-            <button type="button" onClick={reset} className="label text-signal hover:underline">
+            <button type="button" onClick={reset} className="label text-accent hover:underline">
               Clear filters
             </button>
           ) : null}
         </div>
 
         {filtered.length === 0 ? (
-          <div className="card mt-6 p-8 text-center">
-            <p className="font-display text-xl">No starters match that.</p>
+          <div className="surface mt-6 p-8 text-center">
+            <p className="display text-xl">No starters match that.</p>
             <button
               type="button"
               onClick={reset}
-              className="label mt-4 rounded-full bg-ink px-4 py-2 text-paper"
+              className="label mt-5 rounded-full px-4 py-2.5"
+              style={{ background: "var(--accent)", color: "var(--on-accent)" }}
             >
               Clear filters
             </button>
           </div>
         ) : (
           <>
-            <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
               {filtered.slice(0, limit).map((starter) => (
                 <StarterCard key={starter.slug} starter={starter} />
               ))}
@@ -169,7 +178,8 @@ export function StarterBrowser({
                 <button
                   type="button"
                   onClick={() => setLimit((value) => value + PAGE)}
-                  className="rounded-full bg-ink px-5 py-2.5 text-sm text-paper transition-opacity hover:opacity-85"
+                  className="rounded-full px-5 py-2.5 text-sm transition-opacity hover:opacity-85"
+                  style={{ background: "var(--accent)", color: "var(--on-accent)" }}
                 >
                   Load {Math.min(PAGE, filtered.length - limit)} more
                 </button>

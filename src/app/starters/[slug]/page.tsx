@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { StarterCard } from "@/components/cards";
 import { CopyButton } from "@/components/copy-button";
 import { BackLink, Container, Panel, Section } from "@/components/page-shell";
-import { Badge, Eyebrow, SectionHeading } from "@/components/ui";
+import { ApprovedBadge, Badge, Eyebrow, RecommendedBadge, SectionHeading } from "@/components/ui";
 import { getStarter, relatedStarters, starters } from "@/lib/data";
 import { Markdown } from "@/lib/markdown";
 
@@ -33,28 +33,32 @@ export default async function StarterPage({ params }: { params: Promise<{ slug: 
 
   return (
     <>
-      <div className="border-b border-line/10 bg-white/40">
-        <Container className="py-8 sm:py-12">
+      <div className="border-b border-hair">
+        <Container className="py-10">
           <BackLink href="/starters">Starter library</BackLink>
 
           <div className="mt-6 flex flex-wrap items-center gap-1.5">
-            <Badge tone={starter.type === "PROMPT" ? "neutral" : "signal"}>
+            <Badge tone={starter.type === "PROMPT" ? "neutral" : "accent"}>
               {starter.typeLabel}
             </Badge>
-            {starter.featured ? <Badge tone="solid">Featured</Badge> : null}
+            {starter.recommended ? <RecommendedBadge /> : null}
+            {starter.approved ? <ApprovedBadge /> : null}
+            {starter.featured ? <Badge tone="accent">Featured in Foundry</Badge> : null}
             <Badge>{starter.promptWords.toLocaleString("en-GB")} words</Badge>
           </div>
 
-          <h1 className="mt-4 max-w-3xl font-display text-3xl leading-tight sm:text-4xl">
+          <h1 className="display mt-5 max-w-4xl text-3xl sm:text-[2.75rem]">
             {starter.name}
+            <span className="text-accent">.</span>
           </h1>
-          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink/80">{starter.summary}</p>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-soft">{starter.summary}</p>
 
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <CopyButton text={starter.promptText} label={promptLabel} />
             <a
               href="#prompt"
-              className="hairline rounded-full border bg-white px-4 py-2.5 text-sm transition-colors hover:border-signal/50 hover:text-signal"
+              className="rounded-full border px-4 py-2.5 text-sm transition-colors hover:border-[var(--accent)] hover:text-[var(--accent-soft)]"
+              style={{ borderColor: "var(--border-strong)" }}
             >
               Read it first
             </a>
@@ -62,27 +66,33 @@ export default async function StarterPage({ params }: { params: Promise<{ slug: 
         </Container>
       </div>
 
-      <Container className="py-8 sm:py-12">
+      <Container className="py-10">
         <div className="grid gap-8 lg:grid-cols-[1fr_18rem]">
           <div className="space-y-6">
             <div>
               <Eyebrow className="mb-3">What it is</Eyebrow>
               <Markdown
                 text={starter.description}
-                className="prose-tight max-w-2xl text-[0.95rem] leading-relaxed text-ink/85"
+                className="prose-tight max-w-2xl text-[0.95rem] leading-relaxed"
               />
             </div>
 
             {starter.whatYouGet.length ? (
-              <Panel tone="signal" title="What you get">
+              <Panel tone="accent" title="What you get">
                 <ul className="space-y-2.5">
                   {starter.whatYouGet.map((item) => (
-                    <li key={item} className="flex gap-2.5 text-sm leading-relaxed text-ink/85">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-signal" />
+                    <li key={item} className="flex gap-3 text-sm leading-relaxed text-soft">
+                      <span className="shrink-0 text-accent">→</span>
                       {item}
                     </li>
                   ))}
                 </ul>
+              </Panel>
+            ) : null}
+
+            {starter.adminNote ? (
+              <Panel title="Studio note">
+                <p className="text-sm leading-relaxed text-soft">{starter.adminNote}</p>
               </Panel>
             ) : null}
 
@@ -96,7 +106,7 @@ export default async function StarterPage({ params }: { params: Promise<{ slug: 
                 </div>
                 <CopyButton text={starter.promptText} label="Copy" />
               </div>
-              <pre className="card max-h-[34rem] overflow-auto p-5 font-mono text-[0.78rem] leading-relaxed whitespace-pre-wrap break-words text-ink/85">
+              <pre className="surface max-h-[34rem] overflow-auto p-5 font-mono text-[0.78rem] leading-relaxed whitespace-pre-wrap break-words text-soft">
                 {starter.promptText}
               </pre>
             </div>
@@ -104,9 +114,12 @@ export default async function StarterPage({ params }: { params: Promise<{ slug: 
             {starter.install.length ? (
               <div>
                 <Eyebrow className="mb-3">How to use it</Eyebrow>
-                <ol className="card divide-y divide-line/8 px-5">
+                <ol className="surface px-5">
                   {starter.install.map((step, index) => (
-                    <li key={step} className="flex gap-4 py-4 text-sm leading-relaxed">
+                    <li
+                      key={step}
+                      className="flex gap-4 border-b border-hair py-4 text-sm leading-relaxed text-soft last:border-0"
+                    >
                       <span className="label mt-0.5 text-mute">{String(index + 1).padStart(2, "0")}</span>
                       <span className="flex-1">{step}</span>
                     </li>
@@ -132,7 +145,7 @@ export default async function StarterPage({ params }: { params: Promise<{ slug: 
                 <div className="flex flex-wrap gap-1.5">
                   {starter.tags.map((tag) => (
                     <Link key={tag} href={`/starters?tag=${tag}`}>
-                      <Badge className="transition-colors hover:border-signal/40 hover:text-signal">
+                      <Badge className="transition-opacity hover:opacity-80">
                         {tag}
                       </Badge>
                     </Link>
@@ -156,7 +169,7 @@ export default async function StarterPage({ params }: { params: Promise<{ slug: 
               title="Related starters"
               action={{ href: "/starters", label: "Full library" }}
             />
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
               {related.map((item) => (
                 <StarterCard key={item.slug} starter={item} />
               ))}

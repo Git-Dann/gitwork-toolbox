@@ -2,17 +2,14 @@
 
 import { useState } from "react";
 
-export function FilterGroup({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
+export function FilterGroup({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="border-b border-line/10 py-4 first:pt-0 last:border-0">
-      <p className="label mb-3 text-ink">{title}</p>
-      <div className="space-y-1.5">{children}</div>
+    <div
+      className="border-b py-4 first:pt-0 last:border-0 last:pb-0"
+      style={{ borderColor: "var(--border)" }}
+    >
+      <p className="label mb-3">{title}</p>
+      <div className="space-y-1">{children}</div>
     </div>
   );
 }
@@ -32,13 +29,20 @@ export function FilterOption({
     <button
       type="button"
       onClick={onClick}
-      className={`flex w-full items-center justify-between gap-2 rounded-md px-2 py-1.5 text-left text-sm transition-colors ${
-        active ? "bg-ink text-paper" : "text-ink/75 hover:bg-ink/5"
-      }`}
+      data-hover-surface={active ? undefined : "true"}
+      className="flex w-full items-center justify-between gap-2 rounded-lg px-2.5 py-2 text-left text-sm transition-colors"
+      style={
+        active
+          ? { background: "var(--accent)", color: "var(--on-accent)" }
+          : { color: "var(--text-soft)" }
+      }
     >
       <span className="truncate">{label}</span>
       {count === undefined ? null : (
-        <span className={`font-mono text-[11px] ${active ? "text-paper/70" : "text-mute"}`}>
+        <span
+          className="font-mono text-[11px]"
+          style={{ color: active ? "var(--on-accent)" : "var(--text-mute)" }}
+        >
           {count}
         </span>
       )}
@@ -62,12 +66,16 @@ export function Toggle({
       type="button"
       onClick={onClick}
       aria-pressed={active}
-      className="flex w-full items-start gap-2.5 rounded-md px-2 py-1.5 text-left transition-colors hover:bg-ink/5"
+      data-hover-surface="true"
+      className="flex w-full items-start gap-2.5 rounded-lg px-2.5 py-2 text-left transition-colors"
     >
       <span
-        className={`mt-0.5 grid h-4 w-4 shrink-0 place-items-center rounded border transition-colors ${
-          active ? "border-signal bg-signal text-white" : "border-line/25 bg-white"
-        }`}
+        className="mt-0.5 grid h-4 w-4 shrink-0 place-items-center rounded border"
+        style={{
+          borderColor: active ? "var(--accent)" : "var(--border-strong)",
+          background: active ? "var(--accent)" : "transparent",
+          color: "#fff",
+        }}
       >
         {active ? (
           <svg viewBox="0 0 12 12" className="h-3 w-3" aria-hidden>
@@ -83,14 +91,14 @@ export function Toggle({
         ) : null}
       </span>
       <span className="min-w-0">
-        <span className="block text-sm text-ink/85">{label}</span>
+        <span className="block text-sm text-soft">{label}</span>
         {hint ? <span className="block text-xs text-mute">{hint}</span> : null}
       </span>
     </button>
   );
 }
 
-/** Long option lists (50 categories) collapse to a readable number. */
+/** Long option lists collapse to a readable number. */
 export function Collapsible({
   children,
   visible = 8,
@@ -110,7 +118,7 @@ export function Collapsible({
         <button
           type="button"
           onClick={() => setExpanded((value) => !value)}
-          className="label px-2 pt-1 text-signal hover:underline"
+          className="label px-2.5 pt-1.5 text-accent hover:underline"
         >
           {expanded ? "Show fewer" : `${moreLabel} (${children.length})`}
         </button>
@@ -134,14 +142,15 @@ export function SearchField({
         value={value}
         onChange={(event) => onChange(event.target.value)}
         placeholder={placeholder}
-        className="hairline w-full rounded-full border bg-white py-2.5 pl-4 pr-10 text-sm outline-none transition-colors placeholder:text-mute focus:border-signal/50"
+        className="w-full rounded-full border py-2.5 pl-4 pr-10 text-sm outline-none transition-colors placeholder:text-[var(--text-mute)] focus:border-[var(--accent)]"
+        style={{ borderColor: "var(--border)", background: "var(--bg-input)", color: "var(--text)" }}
       />
       {value ? (
         <button
           type="button"
           onClick={() => onChange("")}
           aria-label="Clear search"
-          className="absolute right-3 top-1/2 -translate-y-1/2 text-mute hover:text-ink"
+          className="absolute right-3 top-1/2 -translate-y-1/2 text-mute hover:text-[var(--text)]"
         >
           ×
         </button>
