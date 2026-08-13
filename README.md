@@ -38,6 +38,7 @@ data/source/ai-tools-and-links.xlsx   the workbook, exported from Google Sheets
 data/source/workbook-sheets.json      raw rows, one array per tab
 data/source/foundry-starters.json     Foundry Starters export, as downloaded
 data/overrides.json                   flags set in the admin portal
+data/additions.json                   entries posted since, via /toolbox-add
         │  npm run data   (scripts/build-data.mjs)
         ▼
 src/data/generated/*.json             tools, resources, starters, meta, shortlist
@@ -59,6 +60,34 @@ files — nothing is hardcoded in the pages.
 Our categories are compound (`Design engineering / motion`), so they fold into
 areas via the `GROUPS` table in `scripts/build-data.mjs`. A category matching no
 entry falls through a keyword matcher and logs a warning at build time.
+
+## Adding entries
+
+The site has no CMS. New entries go into `data/additions.json`, get compiled by
+`npm run data`, and go live when the commit deploys.
+
+In a Cowork or Claude Code session on this repo, paste a link and say what you want:
+
+```
+add https://example.com to the toolbox
+/toolbox-add https://a.com https://b.com
+```
+
+The `.claude/skills/toolbox-add` skill takes it from there: it opens the page, writes
+the entry in the house voice, validates, commits and pushes. `docs/cowork-add-prompt.md`
+has the same instructions as a pasteable prompt for sessions that have not picked the
+skill up. The schema and the editorial rules live in the skill file — that is the one
+place to change how entries get written.
+
+`npm run data` is the validator. It fails the build on a missing field, a bad enum, an
+unparseable URL or a missing timestamp, so a malformed entry cannot reach the site.
+
+### Newly added
+
+Only entries in `data/additions.json` carry an `addedAt`, so the "Newly added" section
+— the home rail, the `/new` page and the sidebar link — appears only once something has
+been posted, and `/new` 404s until then. Anything added in the last 30 days also wears
+a small `New` mark on its card.
 
 ## Admin portal
 

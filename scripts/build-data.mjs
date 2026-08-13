@@ -4,6 +4,7 @@
  *   data/source/workbook-sheets.json   (from scripts/extract-workbook.py)
  *   data/source/foundry-starters.json  (Foundry Starters export)
  *   data/overrides.json                (flags set in the admin portal)
+ *   data/additions.json                (entries added since, via the /toolbox-add skill)
  *        ->  src/data/generated/*.json
  *
  * Run with `npm run data`. It also runs as the first half of `npm run build`,
@@ -25,6 +26,7 @@ const read = (p) => JSON.parse(readFileSync(join(ROOT, p), "utf8"));
 const sheets = read("data/source/workbook-sheets.json");
 const starterExport = read("data/source/foundry-starters.json");
 const overrides = read("data/overrides.json");
+const additions = read("data/additions.json");
 
 /* ------------------------------------------------------------------ helpers */
 
@@ -190,6 +192,66 @@ function groupFor(category) {
   return "discovery-and-reference";
 }
 
+/* ---------------------------------------------------------------- additions */
+
+// Entries added after the original import. They are validated hard, because they
+// are written by an agent session and a bad row should fail the build loudly
+// rather than render as an empty card.
+const PRICING_VALUES = ["Free", "Freemium", "Paid"];
+const USEFULNESS_VALUES = ["High", "Medium", "Low", "None", "Unknown", "Not assessed"];
+const STARTER_TYPES = ["PROMPT", "SKILL", "KIT", "COLLECTION", "PLUGIN"];
+
+const REQUIRED = {
+  tool: ["name", "website", "what", "category", "pricing"],
+  resource: ["name", "link", "resourceType", "category", "takeaway"],
+  starter: ["name", "summary", "type", "promptText"],
+};
+
+function validateAddition(entry, index) {
+  const where = `additions.entries[${index}]${entry?.name ? ` (${entry.name})` : ""}`;
+  const fail = (message) => {
+    throw new Error(`${where}: ${message}`);
+  };
+
+  if (!entry || typeof entry !== "object") fail("must be an object");
+  if (!REQUIRED[entry.kind]) fail(`kind must be one of tool, resource, starter — got ${entry.kind}`);
+
+  for (const field of REQUIRED[entry.kind]) {
+    if (!clean(entry[field])) fail(`${field} is required`);
+  }
+
+  if (entry.kind !== "starter") {
+    const url = entry.kind === "tool" ? entry.website : entry.link;
+    try {
+      new URL(url);
+    } catch {
+      fail(`${entry.kind === "tool" ? "website" : "link"} is not a valid URL: ${url}`);
+    }
+  }
+
+  if (entry.kind === "tool" && !PRICING_VALUES.includes(entry.pricing)) {
+    fail(`pricing must be one of ${PRICING_VALUES.join(", ")}`);
+  }
+  if (entry.usefulness && !USEFULNESS_VALUES.includes(entry.usefulness)) {
+    fail(`usefulness must be one of ${USEFULNESS_VALUES.join(", ")}`);
+  }
+  if (entry.kind === "starter" && !STARTER_TYPES.includes(entry.type)) {
+    fail(`type must be one of ${STARTER_TYPES.join(", ")}`);
+  }
+  if (!entry.addedAt || Number.isNaN(Date.parse(entry.addedAt))) {
+    fail("addedAt must be an ISO timestamp");
+  }
+}
+
+const additionEntries = additions.entries ?? [];
+additionEntries.forEach(validateAddition);
+
+const additionsByKind = {
+  tool: additionEntries.filter((entry) => entry.kind === "tool"),
+  resource: additionEntries.filter((entry) => entry.kind === "resource"),
+  starter: additionEntries.filter((entry) => entry.kind === "starter"),
+};
+
 /* -------------------------------------------------------------------- tools */
 
 const LINK_STATUS = {
@@ -246,6 +308,39 @@ for (const [tab, pricing] of PRICING_TABS) {
   }
 }
 
+for (const entry of additionsByKind.tool) {
+  const category = clean(entry.category) || "Unknown";
+  const website = clean(entry.website);
+  const slug = uniqueSlug(clean(entry.slug) || slugify(entry.name), toolSlugs);
+  const link = LINK_STATUS[entry.linkCheck] ?? LINK_STATUS["Reviewed in detail"];
+
+  tools.push({
+    slug,
+    name: clean(entry.name),
+    pricing: entry.pricing,
+    category,
+    group: groupFor(category),
+    what: clean(entry.what),
+    priceDetail: clean(entry.priceDetail),
+    linkStatus: link.status,
+    linkLabel: link.label,
+    usefulness: entry.usefulness || "Not assessed",
+    buildVerdict: clean(entry.buildVerdict) || "Not assessed",
+    notes: (entry.notes ?? []).map(clean).filter(Boolean),
+    website,
+    domain: domainOf(website),
+    addedAt: entry.addedAt,
+    addedBy: clean(entry.addedBy),
+    // Flags can be set inline on the entry, and the portal can still override them.
+    ...{
+      recommended: Boolean(entry.recommended),
+      approved: Boolean(entry.approved),
+      adminNote: clean(entry.note),
+      ...(overrides.tools?.[slug] ? flagsFor("tools", slug) : {}),
+    },
+  });
+}
+
 /* ---------------------------------------------------------------- resources */
 
 // Three rows are flagged "NOT A TOOL - file elsewhere": a private billing page, a
@@ -276,6 +371,35 @@ const resources = table("Resources")
       ...flagsFor("resources", slug),
     };
   });
+
+for (const entry of additionsByKind.resource) {
+  const category = clean(entry.category) || "Unknown";
+  const link = clean(entry.link);
+  const slug = uniqueSlug(clean(entry.slug) || slugify(entry.name), resourceSlugs);
+
+  resources.push({
+    slug,
+    name: clean(entry.name),
+    resourceType: clean(entry.resourceType) || "Reference",
+    category,
+    group: groupFor(category),
+    takeaway: clean(entry.takeaway),
+    usefulness: entry.usefulness || "Not assessed",
+    whatToDo: clean(entry.whatToDo),
+    notes: (entry.notes ?? []).map(clean).filter(Boolean),
+    cost: clean(entry.cost) || "—",
+    link,
+    domain: domainOf(link),
+    addedAt: entry.addedAt,
+    addedBy: clean(entry.addedBy),
+    ...{
+      recommended: Boolean(entry.recommended),
+      approved: Boolean(entry.approved),
+      adminNote: clean(entry.note),
+      ...(overrides.resources?.[slug] ? flagsFor("resources", slug) : {}),
+    },
+  });
+}
 
 /* ----------------------------------------------------------------- starters */
 
@@ -310,6 +434,36 @@ const starters = starterExport.map((item) => {
     ...flagsFor("starters", slug),
   };
 });
+
+for (const entry of additionsByKind.starter) {
+  const slug = uniqueSlug(clean(entry.slug) || slugify(entry.name), starterSlugs);
+  const promptText = clean(entry.promptText);
+
+  starters.push({
+    slug,
+    name: clean(entry.name),
+    summary: clean(entry.summary),
+    description: entry.description ?? "",
+    type: entry.type,
+    typeLabel: TYPE_META[entry.type]?.singular ?? entry.type,
+    tags: entry.tags ?? [],
+    featured: Boolean(entry.featured),
+    whatYouGet: entry.whatYouGet ?? [],
+    install: entry.install ?? [],
+    techStack: entry.techStack ?? [],
+    keywords: entry.keywords ?? [],
+    promptText,
+    promptWords: promptText ? promptText.split(/\s+/).length : 0,
+    addedAt: entry.addedAt,
+    addedBy: clean(entry.addedBy),
+    ...{
+      recommended: Boolean(entry.recommended),
+      approved: Boolean(entry.approved),
+      adminNote: clean(entry.note),
+      ...(overrides.starters?.[slug] ? flagsFor("starters", slug) : {}),
+    },
+  });
+}
 
 const tagCounts = new Map();
 for (const starter of starters) {
@@ -392,6 +546,49 @@ const categories = [...categoryCounts.entries()]
   .map(([name, count]) => ({ name, count, group: groupFor(name) }))
   .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 
+/* ----------------------------------------------------------- newly added */
+
+// Only entries added after the original import carry an addedAt, so this list is
+// empty until someone starts posting — which is exactly when the section appears.
+const recentlyAdded = [
+  ...tools
+    .filter((tool) => tool.addedAt)
+    .map((tool) => ({
+      kind: "tool",
+      slug: tool.slug,
+      name: tool.name,
+      descriptor: tool.category.split(" / ")[0],
+      addedAt: tool.addedAt,
+      addedBy: tool.addedBy ?? "",
+      recommended: tool.recommended,
+      approved: tool.approved,
+    })),
+  ...starters
+    .filter((starter) => starter.addedAt)
+    .map((starter) => ({
+      kind: "starter",
+      slug: starter.slug,
+      name: starter.name,
+      descriptor: starter.typeLabel,
+      addedAt: starter.addedAt,
+      addedBy: starter.addedBy ?? "",
+      recommended: starter.recommended,
+      approved: starter.approved,
+    })),
+  ...resources
+    .filter((resource) => resource.addedAt)
+    .map((resource) => ({
+      kind: "resource",
+      slug: resource.slug,
+      name: resource.name,
+      descriptor: resource.resourceType,
+      addedAt: resource.addedAt,
+      addedBy: resource.addedBy ?? "",
+      recommended: resource.recommended,
+      approved: resource.approved,
+    })),
+].sort((a, b) => Date.parse(b.addedAt) - Date.parse(a.addedAt));
+
 /* ------------------------------------------------------------ search index */
 
 const shorten = (value, max = 130) => {
@@ -456,6 +653,7 @@ const counts = {
   resources: resources.length,
   categories: categories.length,
   entries: tools.length + resources.length + starters.length,
+  recent: recentlyAdded.length,
 };
 
 mkdirSync(OUT_DIR, { recursive: true });
@@ -472,6 +670,7 @@ const files = {
     tags,
     types: TYPE_META,
     overrides: { updatedAt: overrides.updatedAt ?? null, updatedBy: overrides.updatedBy ?? null },
+    recentlyAdded,
   },
   "shortlist.json": shortlist,
 };
@@ -490,5 +689,5 @@ if (unmapped.size) {
 }
 console.log(
   `data: ${counts.tools} tools · ${counts.resources} resources · ${counts.starters} starters · ` +
-    `${counts.recommended} recommended · ${counts.approved} approved`,
+    `${counts.recommended} recommended · ${counts.approved} approved · ${counts.recent} newly added`,
 );

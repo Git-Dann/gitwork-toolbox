@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ExternalIcon, Monogram } from "@/components/ui";
+import { isNew } from "@/lib/data";
 import type { Resource, StarterListItem, ToolListItem } from "@/lib/types";
 
 /**
@@ -8,10 +9,24 @@ import type { Resource, StarterListItem, ToolListItem } from "@/lib/types";
  * for Gitwork approved, a star for recommended — rather than a row of pills.
  */
 
-function Marks({ recommended, approved }: { recommended?: boolean; approved?: boolean }) {
-  if (!recommended && !approved) return null;
+function Marks({
+  recommended,
+  approved,
+  addedAt,
+}: {
+  recommended?: boolean;
+  approved?: boolean;
+  addedAt?: string;
+}) {
+  const fresh = isNew(addedAt);
+  if (!recommended && !approved && !fresh) return null;
   return (
     <span className="ml-1.5 inline-flex shrink-0 items-center gap-1">
+      {fresh ? (
+        <span className="label text-accent" title="Added recently">
+          New
+        </span>
+      ) : null}
       {recommended ? (
         <span className="text-accent" title="Recommended" aria-label="Recommended">
           ★
@@ -48,7 +63,7 @@ export function ToolCard({ tool }: { tool: ToolListItem }) {
         <div className="min-w-0 flex-1">
           <div className="flex min-w-0 items-center">
             <h3 className={NAME}>{tool.name}</h3>
-            <Marks recommended={tool.recommended} approved={tool.approved} />
+            <Marks recommended={tool.recommended} approved={tool.approved} addedAt={tool.addedAt} />
           </div>
           <p className="mt-0.5 truncate font-mono text-[11px] text-mute">
             {tool.domain || tool.category}
@@ -73,7 +88,7 @@ export function StarterCard({ starter }: { starter: StarterListItem }) {
         <div className="min-w-0 flex-1">
           <div className="flex min-w-0 items-center">
             <h3 className={NAME}>{starter.name}</h3>
-            <Marks recommended={starter.recommended} approved={starter.approved} />
+            <Marks recommended={starter.recommended} approved={starter.approved} addedAt={starter.addedAt} />
           </div>
           <p className="mt-0.5 truncate font-mono text-[11px] text-mute">{starter.typeLabel}</p>
         </div>
@@ -92,7 +107,7 @@ export function ResourceCard({ resource }: { resource: Resource }) {
         <div className="min-w-0 flex-1">
           <div className="flex min-w-0 items-center">
             <h3 className={NAME}>{resource.name}</h3>
-            <Marks recommended={resource.recommended} approved={resource.approved} />
+            <Marks recommended={resource.recommended} approved={resource.approved} addedAt={resource.addedAt} />
           </div>
           <p className="mt-0.5 truncate font-mono text-[11px] text-mute">{resource.domain}</p>
         </div>
@@ -110,12 +125,14 @@ export function CompactRow({
   descriptor,
   recommended,
   approved,
+  addedAt,
 }: {
   href: string;
   name: string;
   descriptor: string;
   recommended?: boolean;
   approved?: boolean;
+  addedAt?: string;
 }) {
   return (
     <Link href={href} className="group flex items-center gap-3 rounded-lg py-2 pr-2">
@@ -125,7 +142,7 @@ export function CompactRow({
           <span className="truncate text-sm font-medium transition-colors group-hover:text-[var(--accent-soft)]">
             {name}
           </span>
-          <Marks recommended={recommended} approved={approved} />
+          <Marks recommended={recommended} approved={approved} addedAt={addedAt} />
         </span>
         <span className="block truncate text-xs text-mute">{descriptor}</span>
       </span>

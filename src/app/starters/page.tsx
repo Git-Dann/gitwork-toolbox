@@ -21,6 +21,7 @@ const listItems: StarterListItem[] = starters.map((starter) => ({
   featured: starter.featured,
   recommended: starter.recommended,
   approved: starter.approved,
+  addedAt: starter.addedAt,
 }));
 
 export default function StartersPage() {

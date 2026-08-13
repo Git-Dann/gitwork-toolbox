@@ -7,6 +7,7 @@ import {
   counts,
   groups,
   picks,
+  recentlyAdded,
   recommended,
   shortlist,
   starterCollections,
@@ -40,6 +41,8 @@ export default function HomePage() {
       approved: resource.approved,
     })),
   ];
+
+  const HREF = { tool: "/tools/", starter: "/starters/", resource: "/resources/" } as const;
 
   return (
     <>
@@ -87,9 +90,36 @@ export default function HomePage() {
         </Container>
       </section>
 
+      {/* -------------------------------------------------------- newly added */}
+      {recentlyAdded.length ? (
+        <Section>
+          <Container>
+            <SectionHeading
+              eyebrow={`${recentlyAdded.length} since the import`}
+              title="Newly added"
+              blurb="The latest things posted to the toolbox."
+              action={{ href: "/new", label: "All additions" }}
+            />
+            <div className="grid gap-x-8 gap-y-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+              {recentlyAdded.slice(0, 8).map((entry) => (
+                <CompactRow
+                  key={`${entry.kind}-${entry.slug}`}
+                  href={`${HREF[entry.kind]}${entry.slug}`}
+                  name={entry.name}
+                  descriptor={entry.descriptor}
+                  recommended={entry.recommended}
+                  approved={entry.approved}
+                  addedAt={entry.addedAt}
+                />
+              ))}
+            </div>
+          </Container>
+        </Section>
+      ) : null}
+
       {/* --------------------------------------------------------- recommended */}
       {recommendedAll.length ? (
-        <Section>
+        <Section className={recentlyAdded.length ? "border-t border-hair" : ""}>
           <Container>
             <SectionHeading
               eyebrow={`${counts.recommended} of ${counts.entries}`}

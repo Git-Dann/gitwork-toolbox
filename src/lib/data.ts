@@ -21,6 +21,14 @@ export const shortlist = shortlistJson as ShortlistSection[];
 export const counts = meta.counts;
 export const groups = meta.groups;
 
+/** Empty until someone posts an addition — the UI hides the section when it is. */
+export const recentlyAdded = meta.recentlyAdded ?? [];
+
+/** Anything added in the last 30 days wears a NEW mark. */
+const THIRTY_DAYS = 30 * 24 * 60 * 60 * 1000;
+export const isNew = (addedAt?: string) =>
+  Boolean(addedAt) && Date.now() - Date.parse(addedAt as string) < THIRTY_DAYS;
+
 const bySlug = <T extends { slug: string }>(items: T[]) =>
   new Map(items.map((item) => [item.slug, item]));
 

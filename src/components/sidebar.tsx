@@ -25,6 +25,8 @@ export function Sidebar({
 
   const primary: NavItem[] = [
     { href: "/", label: "Explore" },
+    // Only once something has been posted.
+    ...(counts.recent ? [{ href: "/new", label: "Newly added", count: counts.recent }] : []),
     { href: "/tools", label: "Tools", count: counts.tools },
     { href: "/starters", label: "Starters", count: counts.starters },
     { href: "/collections", label: "Collections" },

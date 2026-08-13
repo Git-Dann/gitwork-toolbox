@@ -10,7 +10,25 @@ export type AdminFlags = {
   adminNote: string;
 };
 
-export type Tool = AdminFlags & {
+/** Set only on entries added after the original import. */
+export type Added = {
+  addedAt?: string;
+  addedBy?: string;
+};
+
+export type RecentEntry = {
+  kind: "tool" | "starter" | "resource";
+  slug: string;
+  name: string;
+  descriptor: string;
+  addedAt: string;
+  addedBy: string;
+  recommended: boolean;
+  approved: boolean;
+};
+
+export type Tool = AdminFlags &
+  Added & {
   slug: string;
   name: string;
   pricing: Pricing;
@@ -27,7 +45,8 @@ export type Tool = AdminFlags & {
   domain: string;
 };
 
-export type Resource = AdminFlags & {
+export type Resource = AdminFlags &
+  Added & {
   slug: string;
   name: string;
   resourceType: string;
@@ -42,7 +61,8 @@ export type Resource = AdminFlags & {
   domain: string;
 };
 
-export type Starter = AdminFlags & {
+export type Starter = AdminFlags &
+  Added & {
   slug: string;
   name: string;
   summary: string;
@@ -104,6 +124,7 @@ export type Meta = {
   tags: Tag[];
   types: Record<StarterType, { slug: string; singular: string; plural: string }>;
   overrides: { updatedAt: string | null; updatedBy: string | null };
+  recentlyAdded: RecentEntry[];
 };
 
 /** The trimmed shape the client-side browsers and cards work with. */
@@ -121,6 +142,7 @@ export type ToolListItem = Pick<
   | "domain"
   | "recommended"
   | "approved"
+  | "addedAt"
 >;
 
 export type StarterListItem = Pick<
@@ -134,6 +156,7 @@ export type StarterListItem = Pick<
   | "featured"
   | "recommended"
   | "approved"
+  | "addedAt"
 >;
 
 /** One row in the admin portal's editing table. */
