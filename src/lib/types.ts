@@ -45,6 +45,7 @@ export type Tool = AdminFlags &
   website: string;
   domain: string;
   icon: string | null;
+  preview: string | null;
 };
 
 export type Resource = AdminFlags &
@@ -62,6 +63,7 @@ export type Resource = AdminFlags &
   link: string;
   domain: string;
   icon: string | null;
+  preview: string | null;
 };
 
 export type Starter = AdminFlags &
@@ -147,6 +149,7 @@ export type ToolListItem = Pick<
   | "approved"
   | "addedAt"
   | "icon"
+  | "preview"
 >;
 
 export type StarterListItem = Pick<

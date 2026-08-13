@@ -1,13 +1,48 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ExternalIcon, ItemIcon, Monogram } from "@/components/ui";
 import { isNew } from "@/lib/data";
 import type { Resource, StarterListItem, ToolListItem } from "@/lib/types";
 
 /**
- * Cards stay deliberately plain: icon, name, one line of description, one line of
- * grey metadata. Status lives in two small marks next to the name — a violet check
- * for Gitwork approved, a star for recommended — rather than a row of pills.
+ * Cards stay deliberately plain: the site's own preview image where there is one,
+ * then icon, name, a line of description and a line of grey metadata. Status lives
+ * in small marks next to the name — a violet check for Gitwork approved, a star for
+ * recommended — rather than a row of pills.
  */
+
+/**
+ * The vendor's own og:image, committed to public/previews. Entries without one get
+ * the same box holding their icon, so a grid row keeps its rhythm either way.
+ */
+function Preview({
+  src,
+  name,
+  icon,
+}: {
+  src?: string | null;
+  name: string;
+  icon?: string | null;
+}) {
+  return (
+    <span
+      className="relative mb-3.5 grid aspect-[16/10] place-items-center overflow-hidden rounded-lg border"
+      style={{ borderColor: "var(--border)", background: "var(--bg-input)" }}
+    >
+      {src ? (
+        <Image
+          src={src}
+          alt={`${name} preview`}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
+          className="object-cover"
+        />
+      ) : (
+        <ItemIcon name={name} icon={icon} size="lg" className="opacity-70" />
+      )}
+    </span>
+  );
+}
 
 function Marks({
   recommended,
@@ -58,8 +93,9 @@ export function ToolCard({ tool }: { tool: ToolListItem }) {
   const dead = tool.linkStatus === "dead";
   return (
     <Link href={`/tools/${tool.slug}`} className={CARD} aria-label={tool.name}>
+      <Preview src={tool.preview} name={tool.name} icon={tool.icon} />
       <div className="flex items-start gap-3">
-        <ItemIcon name={tool.name} icon={tool.icon} />
+        <ItemIcon name={tool.name} icon={tool.icon} size="sm" />
         <div className="min-w-0 flex-1">
           <div className="flex min-w-0 items-center">
             <h3 className={NAME}>{tool.name}</h3>
@@ -102,8 +138,9 @@ export function StarterCard({ starter }: { starter: StarterListItem }) {
 export function ResourceCard({ resource }: { resource: Resource }) {
   return (
     <Link href={`/resources/${resource.slug}`} className={CARD}>
+      <Preview src={resource.preview} name={resource.name} icon={resource.icon} />
       <div className="flex items-start gap-3">
-        <ItemIcon name={resource.name} icon={resource.icon} />
+        <ItemIcon name={resource.name} icon={resource.icon} size="sm" />
         <div className="min-w-0 flex-1">
           <div className="flex min-w-0 items-center">
             <h3 className={NAME}>{resource.name}</h3>

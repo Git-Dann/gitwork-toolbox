@@ -207,6 +207,17 @@ if (existsSync(ICON_DIR)) {
 }
 const iconFor = (slug) => iconBySlug.get(slug) ?? null;
 
+// Preview images (the site's own og:image) from scripts/fetch-previews.mjs.
+const PREVIEW_DIR = join(ROOT, "public", "previews");
+const previewBySlug = new Map();
+if (existsSync(PREVIEW_DIR)) {
+  for (const file of readdirSync(PREVIEW_DIR)) {
+    const slug = file.replace(/\.(png|jpg|jpeg|webp)$/i, "");
+    if (slug !== file) previewBySlug.set(slug, `/previews/${file}`);
+  }
+}
+const previewFor = (slug) => previewBySlug.get(slug) ?? null;
+
 /* ---------------------------------------------------------------- additions */
 
 // Entries added after the original import. They are validated hard, because they
@@ -319,6 +330,7 @@ for (const [tab, pricing] of PRICING_TABS) {
       website,
       domain: domainOf(website),
       icon: iconFor(slug),
+      preview: previewFor(slug),
       ...flagsFor("tools", slug),
     });
   }
@@ -386,6 +398,7 @@ const resources = table("Resources")
       link,
       domain: domainOf(link),
       icon: iconFor(slug),
+      preview: previewFor(slug),
       ...flagsFor("resources", slug),
     };
   });
@@ -409,6 +422,7 @@ for (const entry of additionsByKind.resource) {
     link,
     domain: domainOf(link),
     icon: iconFor(slug),
+    preview: previewFor(slug),
     addedAt: entry.addedAt,
     addedBy: clean(entry.addedBy),
     ...{

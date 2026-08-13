@@ -28,6 +28,7 @@ const listItems: ToolListItem[] = tools.map((tool) => ({
   approved: tool.approved,
   addedAt: tool.addedAt,
   icon: tool.icon,
+  preview: tool.preview,
 }));
 
 const resourceItems = resources.map((resource) => ({
