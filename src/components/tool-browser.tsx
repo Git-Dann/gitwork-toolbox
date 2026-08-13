@@ -3,7 +3,7 @@
 import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CompactRow, ToolCard } from "@/components/cards";
-import { SearchField } from "@/components/filter-ui";
+import { SearchField, Select } from "@/components/filter-ui";
 import { Badge } from "@/components/ui";
 import type { Group, ToolListItem } from "@/lib/types";
 
@@ -132,23 +132,12 @@ export function ToolBrowser({
           <label className="label text-mute" htmlFor="sort">
             Sort
           </label>
-          <select
+          <Select
             id="sort"
             value={sort}
-            onChange={(event) => setSort(event.target.value as Sort)}
-            className="rounded-full border px-3 py-2 text-sm outline-none"
-            style={{
-              borderColor: "var(--border)",
-              background: "var(--bg-input)",
-              color: "var(--text)",
-            }}
-          >
-            {SORTS.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
+            onChange={(value) => setSort(value as Sort)}
+            options={SORTS}
+          />
         </div>
       </div>
 

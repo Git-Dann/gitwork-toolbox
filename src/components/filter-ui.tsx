@@ -127,6 +127,57 @@ export function Collapsible({
   );
 }
 
+/**
+ * The only dropdown shape on the site. A native select draws its chevron hard against
+ * the inner right edge, which on a pill crowds the border curve — so the arrow is ours,
+ * inset to match SearchField's clear button, with pr-10 reserving room for it.
+ */
+export function Select({
+  id,
+  value,
+  onChange,
+  options,
+  className = "",
+}: {
+  id?: string;
+  value: string;
+  onChange: (value: string) => void;
+  options: { value: string; label: string }[];
+  className?: string;
+}) {
+  return (
+    <div className={`relative ${className}`}>
+      <select
+        id={id}
+        value={value}
+        onChange={(event) => onChange(event.target.value)}
+        className="w-full appearance-none rounded-full border py-2 pl-4 pr-10 text-sm outline-none transition-colors focus:border-[var(--accent)]"
+        style={{ borderColor: "var(--border)", background: "var(--bg-input)", color: "var(--text)" }}
+      >
+        {options.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </select>
+      <svg
+        viewBox="0 0 12 12"
+        aria-hidden
+        className="pointer-events-none absolute right-3.5 top-1/2 h-3 w-3 -translate-y-1/2 text-mute"
+      >
+        <path
+          d="M2.5 4.5 6 8 9.5 4.5"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.6"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </div>
+  );
+}
+
 export function SearchField({
   value,
   onChange,
