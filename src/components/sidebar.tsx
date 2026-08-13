@@ -6,27 +6,27 @@ import { Suspense, useEffect, useState } from "react";
 import { Wordmark } from "@/components/brand";
 import { CommandPalette } from "@/components/command-palette";
 import { ThemeToggle } from "@/components/theme-toggle";
-import type { Group, Meta, Tag } from "@/lib/types";
+import type { Group, Meta } from "@/lib/types";
 
 type NavItem = { href: string; label: string; count?: number };
 
 export type SidebarData = {
   counts: Record<string, number>;
   groups: Group[];
-  tags: Tag[];
   toolFacets: Meta["toolFacets"];
   starterFacets: Meta["starterFacets"];
 };
 
 /**
  * One rail. Below the destinations it carries the filters for whichever list you are
- * looking at — pricing and areas on the tools page, types and topics on starters —
- * so there is never a second filter column competing with it for width.
+ * looking at — pricing and areas on the tools page, type and verdict on starters — so
+ * there is never a second filter column competing with it for width. Topic is not here:
+ * 150 options belong in the dropdown beside the search bar, not in a rail.
  *
  * Filters are links that write the query string; the browsers read their state back
  * out of the URL, which also makes every view shareable.
  */
-export function Sidebar({ counts, groups, tags, toolFacets, starterFacets }: SidebarData) {
+export function Sidebar({ counts, groups, toolFacets, starterFacets }: SidebarData) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
@@ -74,7 +74,7 @@ export function Sidebar({ counts, groups, tags, toolFacets, starterFacets }: Sid
         </Suspense>
       ) : pathname === "/starters" ? (
         <Suspense fallback={<RailTitle>Filters</RailTitle>}>
-          <StarterFilters tags={tags} facets={starterFacets} onNavigate={close} />
+          <StarterFilters facets={starterFacets} onNavigate={close} />
         </Suspense>
       ) : (
         <StarterShortcuts counts={counts} onNavigate={close} />
@@ -304,37 +304,19 @@ const TYPES = [
 ] as const;
 
 function StarterFilters({
-  tags,
   facets,
   onNavigate,
 }: {
-  tags: Tag[];
   facets: Meta["starterFacets"];
   onNavigate: () => void;
 }) {
   const params = useSearchParams();
   const href = useHrefBuilder("/starters");
-  const [allTopics, setAllTopics] = useState(false);
   const type = params.get("type") ?? "";
   const tag = params.get("tag") ?? "";
   const recommended = params.get("recommended") === "1";
 
   const inType = type ? facets.filter((f) => f.t === type) : facets;
-
-  // Topics belong to the type above them: only the ones present in the current
-  // selection are listed, counted within it, so type + topic can never return
-  // nothing. Across everything that would be 150 tags, so the unfiltered view keeps
-  // the ones with some weight — inside a type, every topic it has is worth showing.
-  const threshold = type ? 1 : 4;
-  const topics = tags
-    .map((item) => ({
-      ...item,
-      inContext: inType.filter((f) => f.g.includes(item.tag) && (!recommended || f.r)).length,
-    }))
-    .filter((item) => item.inContext >= threshold || tag === item.tag)
-    .sort((a, b) => b.inContext - a.inContext || a.label.localeCompare(b.label));
-
-  const shown = allTopics ? topics : topics.slice(0, 8);
 
   // Switching type drops a topic that does not exist inside it.
   const typeHref = (value: string | null) => {
@@ -380,33 +362,6 @@ function StarterFilters({
           onNavigate={onNavigate}
         />
       </nav>
-
-      {topics.length ? (
-        <>
-          <RailTitle>Topic</RailTitle>
-          <nav>
-            {shown.map((item) => (
-              <FilterLink
-                key={item.tag}
-                href={href({ tag: tag === item.tag ? null : item.tag })}
-                label={item.label}
-                count={item.inContext}
-                active={tag === item.tag}
-                onNavigate={onNavigate}
-              />
-            ))}
-            {topics.length > 8 ? (
-              <button
-                type="button"
-                onClick={() => setAllTopics((value) => !value)}
-                className="label px-2.5 pt-1.5 text-accent hover:underline"
-              >
-                {allTopics ? "Fewer" : `All ${topics.length}`}
-              </button>
-            ) : null}
-          </nav>
-        </>
-      ) : null}
     </>
   );
 }

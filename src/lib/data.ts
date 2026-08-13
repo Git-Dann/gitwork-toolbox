@@ -110,7 +110,9 @@ export function relatedStarters(starter: Starter, limit = 6) {
     .map((entry) => entry.other);
 }
 
-/** Tags worth showing as filters: the model and topic families, not the catch-alls. */
-export const starterTags = meta.tags.filter(
-  (tag) => tag.count >= 4 && tag.tag !== "prompt-library",
-);
+/**
+ * Every topic, minus the prompt-library catch-all that covers 180 of them. The old
+ * count >= 4 cut existed because the rail could only show eight rows; the topic dropdown
+ * lists whatever the current selection holds, so a rare tag needs its label too.
+ */
+export const starterTags = meta.tags.filter((tag) => tag.tag !== "prompt-library");

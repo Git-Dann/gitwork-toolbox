@@ -36,7 +36,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Sidebar
             counts={counts}
             groups={groups}
-            tags={meta.tags}
             toolFacets={meta.toolFacets}
             starterFacets={meta.starterFacets}
           />

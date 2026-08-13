@@ -1,9 +1,9 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { StarterCard } from "@/components/cards";
-import { SearchField } from "@/components/filter-ui";
+import { SearchField, Select } from "@/components/filter-ui";
 import { Badge } from "@/components/ui";
 import type { StarterListItem, Tag } from "@/lib/types";
 
@@ -17,7 +17,10 @@ const TYPE_LABEL: Record<string, string> = {
   PLUGIN: "Plugins",
 };
 
-/** Type, topic and verdict filters live in the sidebar; this reads them off the URL. */
+/**
+ * Type and verdict live in the sidebar and are read off the URL. Topic sits here, at the
+ * end of the search bar — there are 150 of them, which is a list, not a rail.
+ */
 export function StarterBrowser({
   starters,
   tags,
@@ -26,6 +29,7 @@ export function StarterBrowser({
   tags: Tag[];
 }) {
   const params = useSearchParams();
+  const router = useRouter();
 
   const type = params.get("type") ?? "";
   const tag = params.get("tag") ?? "";
@@ -69,15 +73,64 @@ export function StarterBrowser({
     });
   }, [starters, query, type, tag, recommendedOnly, featuredOnly]);
 
+  const labelFor = (value: string) => tags.find((item) => item.tag === value)?.label ?? value;
+
+  // Only topics present in what is currently selected, counted within it, so picking one
+  // can never land on an empty grid. Alphabetical, because a 150-option list is scanned
+  // and typed at rather than read top to bottom.
+  const topicOptions = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const starter of starters) {
+      if (type && starter.type !== type) continue;
+      if (recommendedOnly && !starter.recommended) continue;
+      if (featuredOnly && !starter.featured) continue;
+      for (const item of starter.tags) {
+        if (item === "prompt-library") continue;
+        counts.set(item, (counts.get(item) ?? 0) + 1);
+      }
+    }
+    const options = [...counts.entries()]
+      .map(([value, count]) => ({ value, label: `${labelFor(value)} (${count})` }))
+      .sort((a, b) => a.label.localeCompare(b.label));
+    return [
+      { value: "", label: counts.size ? `All topics (${counts.size})` : "All topics" },
+      // A topic arriving from an old link stays selected rather than silently resetting.
+      ...(tag && !counts.has(tag) ? [{ value: tag, label: `${labelFor(tag)} (0)` }] : []),
+      ...options,
+    ];
+  }, [starters, tags, type, recommendedOnly, featuredOnly, tag]);
+
+  // The URL is the source of truth — the sidebar counts read the tag back out of it, so
+  // this goes through the router rather than a bare history.replaceState.
+  const selectTopic = (value: string) => {
+    const next = new URLSearchParams(window.location.search);
+    if (value) next.set("tag", value);
+    else next.delete("tag");
+    const search = next.toString();
+    lastWritten.current = search;
+    router.replace(search ? `/starters?${search}` : "/starters", { scroll: false });
+  };
+
   const chips = [
     type ? TYPE_LABEL[type] : null,
-    tag ? (tags.find((item) => item.tag === tag)?.label ?? tag) : null,
     recommendedOnly ? "Recommended" : null,
   ].filter(Boolean);
 
   return (
     <div>
-      <SearchField value={query} onChange={setQuery} placeholder="Search starters…" />
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <div className="min-w-0 flex-1">
+          <SearchField value={query} onChange={setQuery} placeholder="Search starters…" />
+        </div>
+        <Select
+          id="topic"
+          ariaLabel="Topic"
+          value={tag}
+          onChange={selectTopic}
+          options={topicOptions}
+          className="shrink-0 sm:w-52"
+        />
+      </div>
 
       <div className="mt-4 flex flex-wrap items-center gap-2">
         <p className="label text-mute">
@@ -88,7 +141,7 @@ export function StarterBrowser({
             {chip}
           </Badge>
         ))}
-        {chips.length || query.trim() ? (
+        {chips.length || tag || query.trim() ? (
           <a href="/starters" className="label text-accent hover:underline">
             Clear
           </a>

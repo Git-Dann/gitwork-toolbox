@@ -137,12 +137,14 @@ export function Select({
   value,
   onChange,
   options,
+  ariaLabel,
   className = "",
 }: {
   id?: string;
   value: string;
   onChange: (value: string) => void;
   options: { value: string; label: string }[];
+  ariaLabel?: string;
   className?: string;
 }) {
   return (
@@ -150,6 +152,7 @@ export function Select({
       <select
         id={id}
         value={value}
+        aria-label={ariaLabel}
         onChange={(event) => onChange(event.target.value)}
         className="w-full appearance-none rounded-full border py-2 pl-4 pr-10 text-sm outline-none transition-colors focus:border-[var(--accent)]"
         style={{ borderColor: "var(--border)", background: "var(--bg-input)", color: "var(--text)" }}
