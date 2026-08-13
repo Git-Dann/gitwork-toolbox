@@ -1135,6 +1135,690 @@
       ],
       "addedAt": "2026-08-13T22:55:12.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Cursor",
+      "website": "https://cursor.com/",
+      "what": "VS Code fork built around agents — tab completion, inline edits and a background agent that takes a task and returns a diff, with the whole repo as context.",
+      "category": "AI coding",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. Pro $20/month. Teams $40/user/month. Heavy agent use bills usage above the included allowance.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The default paid editor for most people writing code with AI, and the one a new developer here will already know. Worth listing even though it is obvious, because the alternative is pretending our stack is more exotic than it is.",
+        "Usage billing on top of $20 is the part that surprises people. Watch it on a month of heavy agent work.",
+        "It reads whole client repos. Check the privacy mode setting before opening work under an NDA."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Cline",
+      "website": "https://cline.bot/",
+      "what": "Open-source coding agent that runs inside VS Code with explicit Plan and Act modes — it proposes a plan, you approve, then it executes with terminal and MCP access.",
+      "category": "AI coding",
+      "pricing": "Free",
+      "priceDetail": "Free, Apache 2.0. You pay whichever model provider you point it at.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The Plan/Act split is the useful idea: an agent that shows its plan before touching files is far easier to supervise on client work than one that starts editing.",
+        "Apache 2.0 and bring-your-own-key, so there is no vendor holding the workflow and no second subscription — useful when a client insists on a specific model or region.",
+        "Claims 8M+ developers on its own site. Treat that as marketing, but the project is genuinely active and MCP support is first-class."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Aider",
+      "website": "https://aider.chat/",
+      "what": "Terminal-based pair programmer that edits files in a git repo and commits each change with a sensible message, so every agent edit is a reviewable commit rather than a mystery diff.",
+      "category": "AI coding",
+      "pricing": "Free",
+      "priceDetail": "Free and open source. Model costs are your own API keys.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The git-native design is the reason to know it: one commit per change means `git log` is the audit trail of what the agent did, which is exactly what a client handover needs.",
+        "Terminal-only, no editor integration — that is the point on a server or in CI, and a limitation on a designer's machine.",
+        "Model-agnostic and mature. A reasonable fallback if a client forbids the vendors we normally use."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Bolt.new",
+      "website": "https://bolt.new/",
+      "what": "Prompt-to-app in the browser: describe a site or app and it scaffolds, runs and previews a full stack in a WebContainer, with deploy from the same page.",
+      "category": "AI coding / app builders",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier with limited tokens. Paid plans from $25/month, with a $30 tier above it.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Genuinely fast for a throwaway prototype in a pitch — a working clickable thing in the meeting beats a wireframe.",
+        "Everything runs in the browser sandbox, so what you get out is a starting point, not a codebase we would hand to a client without rewriting.",
+        "Token-metered, so an afternoon of iteration can burn a month's allowance. Prototype, export, then build properly."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "v0",
+      "website": "https://v0.dev/",
+      "what": "Vercel's generative UI tool — describe an interface and it returns React and Tailwind using shadcn/ui components, iterating in a chat with a live preview, then deploys to Vercel.",
+      "category": "AI coding / app builders",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0/month with limited credits. Premium $30/user/month, with usage credits beyond the allowance and a $100/user enterprise tier.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "It outputs shadcn/ui and Tailwind, which is the stack we already use — so unlike most generators the output lands in our codebase rather than beside it.",
+        "Best used for the first pass on a component or a marketing section, then edited by hand. The generated markup is verbose and rarely accessible without a pass.",
+        "Same company as our hosting, so the deploy path is short. That is convenience, not lock-in worth worrying about at this size."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Replit",
+      "website": "https://replit.com/",
+      "what": "Browser IDE with hosting, databases and an agent that builds and deploys a working app from a description — the whole loop in one tab, no local setup.",
+      "category": "AI coding / app builders",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. Paid plans from $20/month, with a $25 tier and higher usage-based plans up to around $100/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The zero-setup part is the real value for us: handing a client or a non-developer a running environment they can poke at, without an install call.",
+        "Agent usage is metered on top of the subscription, and it moves fast on a big build.",
+        "For anything we ship, code belongs in our own repo on our own pipeline. Treat Replit as a sketchpad, not a home."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Builder.io",
+      "website": "https://builder.io/",
+      "what": "Visual development platform that turns Figma frames into React, Vue or Svelte components against your existing design system, plus a headless CMS so marketers can edit published pages without a deploy.",
+      "category": "Design engineering / design-to-code",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid plans at $24 and $40/month, with usage-based tiers above.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The pitch that matters on retainer work: a client's marketing team edits pages themselves instead of sending us a ticket to change a headline.",
+        "Design-to-code output still needs review — mapping to an existing component library is the hard part and it is only as good as the mapping you configure.",
+        "It becomes part of the client's publishing pipeline, so removing it later is a migration. Scope that before proposing it."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Subframe",
+      "website": "https://subframe.com/",
+      "what": "Visual UI builder that edits real React components rather than a canvas of shapes — drag a layout together from your own design system and it emits production React and Tailwind, with an MCP endpoint for agents.",
+      "category": "Design engineering / design-to-code",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid from $29/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Closer to how we actually work than Figma-to-code: the source of truth is components, so the output is not a fresh pile of divs each time.",
+        "The MCP endpoint means an agent can build against the real design system instead of inventing markup — the same argument as 21st.dev, applied to layout.",
+        "Young product. Worth a trial on an internal build before a client depends on it."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Magic Patterns",
+      "website": "https://magicpatterns.com/",
+      "what": "Prompt-to-prototype tool aimed at product teams — generates UI in React from a description or an image, can be pointed at your design system, and shares as an interactive prototype.",
+      "category": "Design engineering / design-to-code",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier; paid plans are not published in the served pricing page, so check in-app before committing.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Overlaps with v0. The distinction is that it aims at a shareable prototype for a product conversation rather than at code you keep.",
+        "Design-system binding is the feature worth testing — untethered generation is a demo, not a workflow.",
+        "Pricing unverified from the site; do not quote a figure from this listing."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Kiro",
+      "website": "https://kiro.dev/",
+      "what": "AWS's agentic IDE built around spec-driven development — a prompt becomes an executable spec with requirements and design docs, and the agent works against that rather than against a chat history.",
+      "category": "AI coding",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid from $20/month, with $40, $100 and $200 tiers and per-request overage around $0.04.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The spec-first idea is the interesting part and matches how we already brief agents in Foundry — a written spec the agent is held to beats a long chat.",
+        "AWS backing means it will not disappear, and it will pull toward AWS services. Worth knowing which of those assumptions land in generated code.",
+        "Another editor to learn. Only worth the switch if spec-driven working proves better on a real project than our current setup."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Devin",
+      "website": "https://devin.ai/",
+      "what": "Autonomous coding agent that runs in its own cloud environment and works asynchronously — you assign an issue, it plans, writes, tests and opens a pull request, with several agents running in parallel.",
+      "category": "AI coding",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier to try. Paid from $20/month, with a $200/month plan and per-seat pricing around $40–$80/month at team scale.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The async model is the difference from Claude Code: work is handed off and collected later rather than supervised live, which suits backlog chores more than design-led work.",
+        "Pricing came down a long way from its original $500/month. It is now a plausible experiment rather than an enterprise-only line item.",
+        "Autonomy is the risk, not the feature. Give it well-specified, low-blast-radius work and review every PR properly."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Greptile",
+      "website": "https://greptile.com/",
+      "what": "AI pull-request reviewer that indexes the whole codebase first, so its comments reference how the repo actually does things rather than reading the diff in isolation.",
+      "category": "AI coding / code review",
+      "pricing": "Paid",
+      "priceDetail": "$30 per seat/month, with usage-based components around $1–$2 per unit above the allowance. Free trial available.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Whole-repo indexing is the claim that separates it from a diff-only reviewer — the bugs that matter are usually about a convention elsewhere in the codebase.",
+        "Direct competitor to CodeRabbit at a similar price. Trial both on the same repo before picking; do not run both.",
+        "Indexing a client repo means a full copy on their infrastructure. That needs checking against the client contract."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Qodo",
+      "website": "https://qodo.ai/",
+      "what": "Code quality suite — generates tests from existing code, reviews pull requests, and ships agentic workflows into the IDE and CI, with the emphasis on test coverage rather than style comments.",
+      "category": "AI coding / code review",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. Paid around $30/user/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The test-generation half is the useful bit for us: our weak spot on fast client builds is coverage, not review, and generated tests at least pin current behaviour before a refactor.",
+        "Generated tests can enshrine a bug as expected behaviour. They are a safety net for refactoring, not a substitute for thinking about the cases.",
+        "Overlaps with CodeRabbit and Greptile on review. Pick one lane."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Tabby",
+      "website": "https://tabbyml.com/",
+      "what": "Self-hosted, open-source coding assistant — runs the model on your own hardware so completions never leave the network, with an admin layer for teams.",
+      "category": "AI coding",
+      "pricing": "Freemium",
+      "priceDetail": "Open source and free to self-host. Hosted and supported plans from $19/month, with annual tiers at $180, $280 and $480/year.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "This is the answer to a client who will not allow code to leave their network — a real constraint on public-sector and finance work, and one we currently have no answer for.",
+        "Self-hosting means running a GPU box and owning the uptime. Price that as our time before offering it.",
+        "Completion quality trails the frontier hosted models. It buys compliance, not capability."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Mintlify",
+      "website": "https://mintlify.com/",
+      "what": "Documentation platform that publishes from Markdown in a repo, keeps itself updated from code changes, and serves docs in a form agents can consume as well as people.",
+      "category": "AI coding",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid plans metered, with usage priced from around $0.01 per unit.",
+      "usefulness": "Medium",
+      "buildVerdict": "Small project (1-2 weeks)",
+      "notes": [
+        "Docs are the thing that rots first on a client handover. Publishing from the repo at least keeps them next to the code that changed.",
+        "The agent-readable angle is becoming the point: a client's own agents will read their docs, and badly structured docs now cost twice.",
+        "We could build this with Next.js and MDX in a fortnight, and have. The question is whether maintaining it beats paying for it."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Vercel",
+      "website": "https://vercel.com/",
+      "what": "The hosting and build platform this site runs on — preview deploys per branch, edge network, serverless and analytics, with first-class Next.js support.",
+      "category": "AI coding",
+      "pricing": "Freemium",
+      "priceDetail": "Hobby $0/month. Pro $20/month per user, with usage-based charges for bandwidth, functions and image optimisation on top.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Listed because it is the default deploy target for everything we build, and because preview deploys per pull request are the single biggest thing that speeds up client review.",
+        "Usage billing is the trap: a client site with heavy image traffic can cost far more than the $20 seat suggests. Model it before quoting hosting.",
+        "Their Open Source Program, already on this list, covers credits for qualifying projects."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Figma",
+      "website": "https://figma.com/",
+      "what": "The design tool the industry standardised on — multiplayer canvas, components and variables, dev mode for handoff, and Make for generating working prototypes from a prompt.",
+      "category": "Design tools / editors",
+      "pricing": "Freemium",
+      "priceDetail": "Free starter. Paid seats from $3/month for viewers and $12–$16/month for full seats, with $25 and $55/month tiers for dev and organisation plans.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Listed for completeness rather than discovery: it is where client work starts, and the seat model is what makes a client's costs jump when they add reviewers.",
+        "Variables and dev mode are the parts under-used on our projects — they are what makes a design system survive contact with code.",
+        "The alternative worth knowing is Penpot, already on this list, for a client who will not put IP in Figma."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Framer",
+      "website": "https://framer.com/",
+      "what": "Design tool and host in one — build a site on a canvas with real CSS layout, add a CMS and analytics, and publish to their hosting. Now with an agent that designs and builds on the canvas.",
+      "category": "Design tools / site builders",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0. Paid site plans from $10/month, with $30 and $40/month tiers, plus $20/month per additional editor seat.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The right answer for a marketing site that a client will edit themselves and we do not want to maintain — faster than Next.js and cheaper to hand over.",
+        "The line to hold: Framer for brochure sites, our own stack for anything with real product logic. Mixing them mid-project is where budgets go.",
+        "Sites live on Framer's hosting, so an export is not a clean migration path. Say that to the client before, not after."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Webflow",
+      "website": "https://webflow.com/",
+      "what": "Visual web builder producing real HTML, CSS and JavaScript, with a proper CMS, staging, and an interactions layer for scroll and hover animation without code.",
+      "category": "Design tools / site builders",
+      "pricing": "Freemium",
+      "priceDetail": "Free to build. Site plans from around $6/month for basic sites, with business and enterprise tiers running to $200–$500/month at scale.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The main alternative to Framer for client marketing sites, with a stronger CMS and a much larger pool of freelancers who can maintain it after we hand over.",
+        "Its pricing splits between workspace seats and per-site plans, which reliably confuses clients on a first invoice. Explain both.",
+        "Heavier and less pleasant to design in than Framer; better when the content model is genuinely complex."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Excalidraw",
+      "website": "https://excalidraw.com/",
+      "what": "Hand-drawn-style virtual whiteboard, free and open source, with no signup — diagrams look deliberately sketchy, which keeps a client conversation about structure rather than styling.",
+      "category": "Design engineering / diagrams",
+      "pricing": "Free",
+      "priceDetail": "Free and open source. A paid Excalidraw+ tier exists for teams and hosted collaboration.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The sketchy aesthetic is a feature: nobody argues about corner radius on an architecture diagram that looks hand-drawn, so the discussion stays on the system.",
+        "No signup means it works instantly on a call with a client who has never used it — the lowest-friction option here alongside tldraw.",
+        "Diagrams live in a file you own and can commit next to the code. That matters for handover docs."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Eraser",
+      "website": "https://eraser.io/",
+      "what": "Diagram-as-code tool for technical docs — write a description or prompt it and get architecture, sequence and ERD diagrams that live in version control alongside the docs they illustrate.",
+      "category": "Design engineering / diagrams",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid plans at $15 and $20/month per user, with $45 and $60/month team tiers.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Diagram-as-code is the reason to prefer it over a canvas for handover docs: the diagram updates in a pull request rather than rotting in someone's Figma file.",
+        "Mermaid does much of this for free and renders natively in GitHub and our own artifacts. Try that before paying.",
+        "Useful specifically for the architecture section of a client handover, which is the document most likely to be wrong six months later."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Napkin",
+      "website": "https://napkin.ai/",
+      "what": "Turns written text into explanatory graphics — paste a paragraph and it proposes diagrams, flows and comparisons, editable afterwards, aimed at decks and documents rather than engineering diagrams.",
+      "category": "Design engineering / diagrams",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid at $9/month and $22/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The practical use is proposals and reports: a diagram per section, generated from the text we already wrote, instead of a wall of prose.",
+        "Output is generic by default. It needs restyling to our brand before anything goes to a client, which removes much of the speed.",
+        "$9/month is cheap against the hour it saves per document, if anyone actually adopts it."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Google Stitch",
+      "website": "https://stitch.withgoogle.com/",
+      "what": "Generates mobile and web UI from a text prompt or a reference image, returning both a visual design and front-end code, then exports to Figma. Google's successor to Galileo AI.",
+      "category": "Design engineering / design-to-code",
+      "pricing": "Free",
+      "priceDetail": "Free, with a Google account.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Free is the differentiator against Uizard and Visily. For a first-pass concept in a pitch, cost per idea matters more than polish.",
+        "The Figma export makes it a starting point rather than a dead end — the output can be taken into a real design process.",
+        "Worth knowing that usegalileo.ai now redirects here: Galileo AI was acquired by Google and became Stitch, so older bookmarks and directory listings for Galileo are stale."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Uizard",
+      "website": "https://uizard.io/",
+      "what": "Wireframing and mockup tool aimed at non-designers — generates screens from a prompt, converts a hand-drawn sketch or screenshot into an editable design, and produces clickable prototypes.",
+      "category": "Design research / UI patterns",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Pro $12/month, Business $39/month.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Rated Low deliberately: we have designers, so generated wireframes save us little. Its value is letting a client sketch their own idea before a kickoff.",
+        "The screenshot-to-editable-design path is the genuinely useful trick, for taking apart a competitor's flow.",
+        "Output is not close to production quality and should never be shown as our work."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Khroma",
+      "website": "https://khroma.co/",
+      "what": "Colour tool trained on your own choices — pick fifty colours you like once, and it then generates palettes, gradients and type pairings filtered to that taste, searchable by name or hex.",
+      "category": "Design engineering / colour",
+      "pricing": "Free",
+      "priceDetail": "Free, with an account for the training step.",
+      "usefulness": "Medium",
+      "buildVerdict": "Weekend build",
+      "notes": [
+        "The training step is what makes it different from every other palette generator: results are filtered to a taste rather than to a colour-wheel rule.",
+        "Good for breaking a blank page at the start of a brand exploration; not a system. Take the direction, then build the real scale in OKLCH.",
+        "Trained on one person's picks, so it becomes that person's palette generator, not the studio's."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Relume",
+      "website": "https://relume.io/",
+      "what": "Generates a sitemap from a company description, then wireframes each page from a library of several thousand Figma and Webflow components, so a whole site structure exists before design starts.",
+      "category": "Design engineering / component libraries",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier with limited generations; paid plans on the site's pricing page, figures not published in the served HTML.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The sitemap-first workflow matches how a marketing site project actually starts, and it produces something a client can argue with on day one instead of week two.",
+        "The component library is Webflow-shaped. It fits that pipeline far better than it fits ours.",
+        "Everything it makes looks like Relume. Fine as structure, a problem if the visual language survives to the deliverable."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Midjourney",
+      "website": "https://midjourney.com/",
+      "what": "Image generation model with the strongest aesthetic defaults of the mainstream options — style references, character consistency and a web editor, still with a large Discord community around it.",
+      "category": "AI asset generation",
+      "pricing": "Paid",
+      "priceDetail": "No free tier. Subscription plans, with figures not published in the served pricing page — check in-app before committing.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Still the best default look of the mainstream generators, which matters for mood boards and concept imagery where nothing beats fewer prompts to something usable.",
+        "No free tier, and no commercial usage below the paid plans. Check the current terms before anything generated reaches a client deliverable.",
+        "Provenance is the standing risk on any generated image in client work. Use it for internal exploration, and be deliberate about what ships."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Recraft",
+      "website": "https://recraft.ai/",
+      "what": "Image model built for designers rather than illustrators — generates true vector output and editable SVG, holds a consistent brand style across a set, and does text-in-image reliably.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier with limited credits; paid plans priced per credit allowance, figures not published in the served pricing page.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Vector output is the reason to pick it over Midjourney for our work — an SVG icon set or illustration can be edited, recoloured and shipped, where a PNG cannot.",
+        "The brand-style feature keeps a set coherent, which is the usual failure of generated assets across a whole site.",
+        "Same provenance caution as any generated asset. Treat vector output as a base to redraw from, not a final mark."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Krea",
+      "website": "https://krea.ai/",
+      "what": "Real-time generative canvas — sketch or arrange shapes and the image regenerates as you move things, plus upscaling, video and 3D asset tools with several models behind one interface.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0/month tier. Paid at $9, $35 and $105/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Real-time control is the interesting part: steering an image by moving shapes is closer to designing than to writing prompts and hoping.",
+        "Several models behind one subscription is cheaper than holding accounts with each, if generated imagery becomes routine here.",
+        "Enhance and upscale are the features we would use most in practice, on assets a client supplied at the wrong resolution."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Remove.bg",
+      "website": "https://remove.bg/",
+      "what": "Background removal in about five seconds, with an API and Photoshop, Figma and CLI integrations — the reference implementation of the one job it does.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free for low-resolution previews in the browser; full-resolution downloads and API access are credit-based.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Still the most reliable at hair and soft edges, which is where the free alternatives fail and where a client notices.",
+        "The API is the part worth remembering: cutting out a few hundred product images in a build is a script, not an afternoon.",
+        "Free tier gives low resolution only. Budget credits if a project needs full-size output."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Upscayl",
+      "website": "https://upscayl.org/",
+      "what": "Free, open-source image upscaler for macOS, Windows and Linux that runs entirely on your own machine — no upload, no account, several models to choose from.",
+      "category": "AI asset generation",
+      "pricing": "Free",
+      "priceDetail": "Free and open source; a paid Pro build exists at around $25 for extra features.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Runs locally, which makes it the right answer for a client's unreleased product photography — nothing is uploaded to anyone's server.",
+        "Solves a constant real problem: the logo or photo a client sends at 400px that needs to be a hero image.",
+        "Needs a reasonably capable GPU to be quick, and upscaling invents detail. Check the result at full size before it ships."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Lummi",
+      "website": "https://lummi.ai/",
+      "what": "Stock library of AI-generated photos, illustrations and 3D assets, royalty-free, curated for a consistent modern look rather than the usual stock-photo register.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free downloads with an account; a paid tier removes limits. Figures not published in the served pricing page.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Fills the gap between generating imagery ourselves and paying for traditional stock, with a look that suits product marketing pages.",
+        "Curated, so the hit rate is far better than prompting from scratch when you need one specific image now.",
+        "Generated imagery with the usual provenance caveat, and a real risk that a competitor's site uses the same picture. Check before it becomes a hero."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Retool",
+      "website": "https://retool.com/",
+      "what": "Internal-tool builder: drag together tables, forms and charts, wire them to any database or API with JavaScript in between, and ship an admin panel in hours rather than sprints.",
+      "category": "No-code / internal tools",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid from $5 and $10 per user/month, with $50/user tiers for business features.",
+      "usefulness": "High",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Directly relevant to how we scope: clients ask for an admin panel on top of every build, and building one properly costs weeks that add nothing to their product.",
+        "Self-hosting is available, which is what makes it viable when the data cannot leave the client's infrastructure.",
+        "It becomes a dependency the client pays for forever. Say so during scoping — the alternative is us maintaining a bespoke admin panel forever instead."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "FlutterFlow",
+      "website": "https://flutterflow.io/",
+      "what": "Visual builder for Flutter apps — design screens, wire up Firebase or a custom backend, and export real Dart source or publish to the App Store and Play Store directly.",
+      "category": "Mobile & app dev",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid from $39/month, with $55 and $80/month team tiers.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Source export is what separates it from most app builders: a client is not stranded if they leave, and we can take the Dart into a normal build.",
+        "One codebase for iOS and Android suits the scale of app work we get asked for, where a native team for each is not in the budget.",
+        "Flutter, not React Native — so it does not share components or people with our web work. That is the real cost of choosing it."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "Descript",
+      "website": "https://descript.com/",
+      "what": "Edits video and audio by editing the transcript — delete a sentence and the footage goes with it. Also removes filler words, generates captions and clones a voice for corrections.",
+      "category": "Video & capture / editing",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. Paid at $16, $24, $35 and $50/month per user depending on features and export quality.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Text-based editing is genuinely faster for the talking-head and walkthrough content we make — case study videos, client updates, internal explainers.",
+        "Filler-word removal and captions in one pass covers most of what a demo video needs before it is presentable.",
+        "Voice cloning needs a clear internal rule on consent before anyone uses it on a client's recorded voice."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
+    },
+    {
+      "kind": "tool",
+      "name": "CapCut",
+      "website": "https://capcut.com/",
+      "what": "Free video editor with auto-captions, background removal and a large template library, on desktop, web and mobile. Made by ByteDance, the company behind TikTok.",
+      "category": "Video & capture / editing",
+      "pricing": "Freemium",
+      "priceDetail": "Free with a watermark on some exports and templates; a Pro subscription removes limits.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Rated Low for studio work but listed because it is what social content is actually cut in, and a client's marketing team will already be using it.",
+        "ByteDance ownership and its terms around uploaded content make it the wrong place for anything confidential or pre-launch.",
+        "Auto-captions are good enough to be worth it for social cuts; everything else we would do in Descript or Screen Studio."
+      ],
+      "addedAt": "2026-08-13T23:30:49.000Z",
+      "addedBy": "Dan",
+      "source": "700 AI Toolkit (audited)"
     }
   ]
 }

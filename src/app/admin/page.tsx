@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import { AdminEditor } from "@/components/admin-editor";
 import { AdminLogin } from "@/components/admin-login";
+import { ProposalQueue, type QueueItem } from "@/components/proposal-queue";
 import { Container, PageHeader, Panel } from "@/components/page-shell";
 import { COOKIE, authConfigured, githubConfigured, readToken } from "@/lib/admin";
 import { resources, starters, tools } from "@/lib/data";
 import type { AdminItem } from "@/lib/types";
+import proposalsJson from "@/../data/proposals.json";
+import type { ProposalsFile } from "@/lib/proposals";
 
 export const metadata: Metadata = { title: "Admin" };
 
@@ -42,6 +45,30 @@ const items: AdminItem[] = [
   })),
 ];
 
+/** Pending only — decided proposals stay in the file as the record of what was ruled out. */
+const queue: QueueItem[] = ((proposalsJson as ProposalsFile).entries ?? [])
+  .filter((entry) => entry.status === "pending")
+  .sort((a, b) => b.signal - a.signal || a.name.localeCompare(b.name))
+  .map((entry) => ({
+    url: entry.url,
+    name: entry.name,
+    host: entry.host,
+    discoveredVia: entry.discoveredVia,
+    sourceCategory: entry.sourceCategory,
+    claim: entry.claim,
+    claimedTier: entry.claimedTier,
+    title: entry.evidence.title,
+    description: entry.evidence.description,
+    figures: entry.evidence.figures.map((figure) => figure.figure),
+    priceSource: entry.evidence.priceSource,
+    mentionsFree: entry.evidence.mentionsFree,
+    licence: entry.evidence.licence ?? entry.repo?.licence ?? null,
+    blocked: Boolean(entry.evidence.blocked),
+    stars: entry.repo?.stars,
+    pushedAt: entry.repo?.pushedAt,
+    archived: entry.repo?.archived,
+  }));
+
 export default async function AdminPage() {
   const session = readToken((await cookies()).get(COOKIE)?.value);
   const configured = authConfigured();
@@ -75,15 +102,27 @@ export default async function AdminPage() {
         ) : !session ? (
           <AdminLogin />
         ) : (
-          <AdminEditor
-            items={items}
-            canSave={canSave}
-            configNote={
-              canSave
-                ? undefined
-                : "GITHUB_TOKEN is not set on this deployment, so changes cannot be published yet."
-            }
-          />
+          <div className="space-y-10">
+            <AdminEditor
+              items={items}
+              canSave={canSave}
+              configNote={
+                canSave
+                  ? undefined
+                  : "GITHUB_TOKEN is not set on this deployment, so changes cannot be published yet."
+              }
+            />
+
+            <div className="border-t border-hair pt-8">
+              <p className="label mb-1 text-mute">Discovery queue</p>
+              <p className="mb-4 text-sm leading-relaxed text-soft">
+                Found by the watchers and link-checked, but not written up. Add publishes it
+                marked “Not assessed” with only the facts we verified; Never stops it being
+                offered again.
+              </p>
+              <ProposalQueue items={queue} canSave={canSave} />
+            </div>
+          </div>
         )}
       </Container>
     </>

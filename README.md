@@ -89,6 +89,44 @@ Only entries in `data/additions.json` carry an `addedAt`, so the "Newly added" s
 been posted, and `/new` 404s until then. Anything added in the last 30 days also wears
 a small `New` mark on its card.
 
+## Discovery pipeline
+
+Three pipes keep the list growing without filling it with rows nobody read. The rule they
+all obey: automation finds and reads, a person publishes.
+
+**1. Foundry starters — automatic.** `npm run foundry-sync` diffs
+`data/source/foundry-starters.json` against the site and appends anything new to
+`data/additions.json`. This is the only pipe that publishes unsupervised, because these
+are our own starters — already written here, already used on client work. Refreshing the
+export needs a Foundry session; the script takes it from there. `--dry-run` to look first.
+
+**2. Discovery — `npm run discover`.** Sweeps the workbook's unassessed rows, the
+skills.sh leaderboard, Toolfolio's newest listings and designengineer.tools; drops
+anything already listed, proposed or previously rejected; writes the rest to
+`data/queue.json` ranked by signal. Ranking decides reading order only. Directories sell
+placement — Toolfolio's `-large-`/`-small-` slug pairs are paid slots, filtered out here —
+and stars measure attention, not whether a thing survives client work.
+
+**3. Assessment — `npm run assess`.** Fetches each candidate's own site: does it resolve,
+what does it say it is, what does its pricing page actually charge, is there a licence,
+and for GitHub-hosted things the stars, licence and last push. Evidence lands in
+`data/proposals.json`, which renders **only in `/admin`**. Nothing here is on the public
+site.
+
+Deciding happens in the portal's Discovery queue. **Add** publishes the entry with the
+verified facts, marked `Not assessed`, with notes saying plainly it was approved on
+link-checked evidence and still needs a proper write-up. **Never** records the domain so
+discovery stops offering it. A proper entry then comes from the `toolbox-add` skill, which
+already has the evidence gathered.
+
+`.github/workflows/discovery.yml` runs pipes 2 and 3 every Monday at 07:00 UTC and commits
+the queue. It cannot publish — that still needs someone in `/admin`.
+
+Why it is built this way: the workbook shipped with 684 directory rows nobody had read.
+Auditing them found products that had been acquired, pivoted or shut down while still
+being described as live. Volume without reading is how a reference stops being worth
+opening.
+
 ## Admin portal
 
 `/admin` lets Dan and Harry flag items. Because the site is statically generated

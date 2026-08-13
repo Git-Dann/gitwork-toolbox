@@ -16,7 +16,19 @@ export const meta = metaJson as Meta;
 export const tools = toolsJson as Tool[];
 export const resources = resourcesJson as Resource[];
 export const starters = startersJson as Starter[];
-export const shortlist = shortlistJson as ShortlistSection[];
+const shortlistSections = shortlistJson as ShortlistSection[];
+
+/**
+ * The one part of the old shortlist that lived nowhere else: seven things worth building
+ * rather than buying, each with what prompted it. The rest of that page duplicated the
+ * tools list, so it went; these are surfaced on /collections instead.
+ */
+export const buildCandidates = (shortlistSections.find((s) => s.number === 3)?.rows ?? []).map(
+  (row) => {
+    const [name, prompt, detail] = row.map((cell) => cell.join(" ").trim());
+    return { name, prompt, detail };
+  },
+);
 
 export const counts = meta.counts;
 export const groups = meta.groups;

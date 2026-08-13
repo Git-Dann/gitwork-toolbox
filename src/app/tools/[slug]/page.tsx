@@ -149,10 +149,10 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
                   {tool.pricing} tools
                 </Link>
                 <Link
-                  href="/shortlist"
+                  href="/collections"
                   className="block text-soft transition-colors hover:text-[var(--accent)]"
                 >
-                  Shortlist &amp; actions
+                  Collections
                 </Link>
               </div>
             </Panel>

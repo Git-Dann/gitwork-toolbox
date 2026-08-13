@@ -41,7 +41,6 @@ export function Sidebar({ counts, groups, toolFacets, starterFacets }: SidebarDa
     { href: "/starters", label: "Starters", count: counts.starters },
     { href: "/resources", label: "Resources", count: counts.resources },
     { href: "/collections", label: "Collections" },
-    { href: "/shortlist", label: "Shortlist" },
   ];
 
   const isActive = (href: string) => {

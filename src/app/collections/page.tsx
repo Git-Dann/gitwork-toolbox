@@ -8,6 +8,7 @@ import {
   picks,
   rankedTools,
   recommended,
+  buildCandidates,
   starterCollections,
   toolkits,
   tools,
@@ -50,22 +51,6 @@ export default function CollectionsPage() {
       samples: freeTools.map((tool) => tool.name),
     },
     {
-      href: "/shortlist#potential-to-build-ourselves",
-      title: "Build candidates",
-      blurb: "Worth building instead of buying.",
-      count: 7,
-      countLabel: "candidates",
-      samples: ["Design token extractor", "Generative UI", "Enquiry triage", "Diff abridger"],
-    },
-    {
-      href: "/shortlist#park-it",
-      title: "Parked",
-      blurb: "Ruled out, with the reason.",
-      count: 20,
-      countLabel: "items",
-      samples: ["oil-motion", "Appllama", "Path.cv", "LogoCreator", "TinyFolder"],
-    },
-    {
       href: "/starters?type=KIT",
       title: "Kits & plugins",
       blurb: "Installable, not single prompts.",
@@ -105,6 +90,27 @@ export default function CollectionsPage() {
           <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))]">
             {editorial.map((item) => (
               <CollectionCard key={item.href} {...item} />
+            ))}
+          </div>
+        </Section>
+
+        <Section className="border-t border-hair">
+          <SectionHeading
+            eyebrow={`${buildCandidates.length}`}
+            title="Build, don't buy"
+          />
+          <div className="surface overflow-hidden">
+            {buildCandidates.map((item) => (
+              <div
+                key={item.name}
+                className="grid gap-1.5 border-b border-hair p-4 last:border-0 sm:grid-cols-[16rem_1fr] sm:gap-6"
+              >
+                <div className="min-w-0">
+                  <p className="text-sm font-medium">{item.name}</p>
+                  <p className="mt-1 font-mono text-[11px] text-mute">{item.prompt}</p>
+                </div>
+                <p className="text-sm leading-relaxed text-soft">{item.detail}</p>
+              </div>
             ))}
           </div>
         </Section>

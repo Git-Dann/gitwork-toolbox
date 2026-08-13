@@ -1,0 +1,53 @@
+name: Discovery sweep
+
+# Refills the review queue. It never publishes to the public site: discover finds
+# candidates, assess reads them, and both write files that only /admin renders. Publishing
+# still needs someone to press Add in the portal.
+on:
+  schedule:
+    # Monday 07:00 UTC — the queue is there when the week starts, not overnight mid-week.
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "How many candidates to assess this run"
+        required: false
+        default: "60"
+
+permissions:
+  contents: write
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Generated data is what discovery dedupes against, so it has to be current.
+      - run: npm run data
+
+      - name: Find candidates
+        run: npm run discover
+
+      - name: Read them
+        run: node scripts/assess.mjs --limit=${{ inputs.limit || '60' }} --concurrency=8
+
+      - name: Commit the queue
+        run: |
+          git config user.name "toolbox-discovery"
+          git config user.email "noreply@gitwork.co.uk"
+          git add data/queue.json data/proposals.json
+          if git diff --staged --quiet; then
+            echo "nothing new this week"
+            exit 0
+          fi
+          pending=$(node -e "const p=require('./data/proposals.json');console.log(p.entries.filter(e=>e.status==='pending').length)")
+          git commit -m "Discovery sweep: $pending awaiting review in /admin"
+          git push

@@ -1,0 +1,6605 @@
+{
+  "$comment": "Written by scripts/discover.mjs. Candidates only — nothing here has been read. scripts/assess.mjs turns these into proposals.",
+  "generatedAt": "2026-08-13T23:27:56.879Z",
+  "counts": {
+    "collected": 684,
+    "queued": 659,
+    "dropped": {
+      "alreadyKnown": 7,
+      "duplicate": 2,
+      "dead": 16
+    }
+  },
+  "entries": [
+    {
+      "url": "https://express.adobe.com",
+      "name": "Adobe Express",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "Quick design with AI",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://aider.chat",
+      "name": "Aider",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Free",
+      "claim": "AI pair programming in terminal",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://augmentcode.com",
+      "name": "Augment Code",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Paid",
+      "claim": "AI for large codebases",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://blackbox.ai",
+      "name": "Blackbox",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "AI coding assistant",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://bolt.new",
+      "name": "Bolt",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Build full apps in the browser with AI",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://brandmark.io",
+      "name": "Brandmark",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Paid",
+      "claim": "AI logo maker",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://builder.io",
+      "name": "Builder.io",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Design to code with AI",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://cline.bot",
+      "name": "Cline",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Free",
+      "claim": "Open source coding agent",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://sourcegraph.com",
+      "name": "Cody",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "AI coding from Sourcegraph",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://continue.dev",
+      "name": "Continue",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Free",
+      "claim": "Open source AI code assistant",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://create.xyz",
+      "name": "Create",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Build apps from a prompt",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://cursor.com",
+      "name": "Cursor",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "The AI first code editor",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://databutton.com",
+      "name": "Databutton",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Build apps with an AI dev",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://designs.ai",
+      "name": "Designs.ai",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Paid",
+      "claim": "Logos videos and design",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://devin.ai",
+      "name": "Devin",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Paid",
+      "claim": "Autonomous AI software engineer",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://eraser.io",
+      "name": "Eraser",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "Diagrams and docs with AI",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://excalidraw.com",
+      "name": "Excalidraw",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Free",
+      "claim": "Whiteboard with AI diagrams",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://figma.com",
+      "name": "Figma",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "Collaborative design with AI features",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://flair.ai",
+      "name": "Flair",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "AI product photography",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://framer.com",
+      "name": "Framer",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "Design and ship sites with AI",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://usegalileo.ai",
+      "name": "Galileo AI",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "Text to UI design",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://stitch.withgoogle.com",
+      "name": "Google Stitch",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Free",
+      "claim": "Generate UI designs and code",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://greptile.com",
+      "name": "Greptile",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Paid",
+      "claim": "AI that understands your codebase",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://jules.google",
+      "name": "Jules",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Google async coding agent",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://khroma.co",
+      "name": "Khroma",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Free",
+      "claim": "AI color palette generator",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://kiro.dev",
+      "name": "Kiro",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Agentic IDE by AWS",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://kittl.com",
+      "name": "Kittl",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "AI design and video for brands",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://lovable.dev",
+      "name": "Lovable",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Describe an app and it builds it",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://lovart.ai",
+      "name": "Lovart",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "AI design agent",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://magicpatterns.com",
+      "name": "Magic Patterns",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Design product ideas with AI",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://designer.microsoft.com",
+      "name": "Microsoft Designer",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Free",
+      "claim": "AI design and image tool",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://mintlify.com",
+      "name": "Mintlify",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "AI documentation that writes itself",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://mockey.ai",
+      "name": "Mockey",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "Free AI mockups",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://napkin.ai",
+      "name": "Napkin",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "Turn text into visuals",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://polymet.ai",
+      "name": "Polymet",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "AI UI and product design",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://qodo.ai",
+      "name": "Qodo",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "AI code testing and review",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://refact.ai",
+      "name": "Refact",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Open source AI code agent",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://replit.com",
+      "name": "Replit",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Build and ship apps in the browser",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://roocode.com",
+      "name": "Roo Code",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Free",
+      "claim": "AI dev team in your editor",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://rork.com",
+      "name": "Rork",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Build mobile apps from prompts",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://sourcery.ai",
+      "name": "Sourcery",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Automated code review",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://stockimg.ai",
+      "name": "Stockimg",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "AI logos posters and art",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://subframe.com",
+      "name": "Subframe",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "UI builder for developers",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://supermaven.com",
+      "name": "Supermaven",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Fastest code autocomplete",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://tabbyml.com",
+      "name": "Tabby",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Free",
+      "claim": "Self hosted AI coding",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://tabnine.com",
+      "name": "Tabnine",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Private AI code completion",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://tempo.new",
+      "name": "Tempo",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Build React apps visually with AI",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://trae.ai",
+      "name": "Trae",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Free",
+      "claim": "AI IDE by ByteDance",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://uizard.io",
+      "name": "Uizard",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "Turn ideas into UI mockups",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://v0.dev",
+      "name": "v0",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Generate UI from a prompt",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://vercel.com",
+      "name": "Vercel",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "Ship and host AI powered web apps",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://visily.io",
+      "name": "Visily",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "AI wireframes and mockups",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://vizcom.ai",
+      "name": "Vizcom",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "Sketches into renders",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://warp.dev",
+      "name": "Warp",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "AI powered terminal",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://windsurf.com",
+      "name": "Windsurf",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "AI editor with agentic flows",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://zed.dev",
+      "name": "Zed",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Free",
+      "claim": "Fast editor with AI",
+      "linkCheck": "OK",
+      "signal": 5
+    },
+    {
+      "url": "https://agentgpt.reworkd.ai",
+      "name": "AgentGPT",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "Autonomous agents in browser",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://anyscale.com",
+      "name": "Anyscale",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Paid",
+      "claim": "Scale AI with Ray",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://baseten.co",
+      "name": "Baseten",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Paid",
+      "claim": "Deploy and serve ML models",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://beam.ai",
+      "name": "Beam",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Paid",
+      "claim": "AI agents for operations",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://bland.ai",
+      "name": "Bland",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Paid",
+      "claim": "AI phone calling platform",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://booth.ai",
+      "name": "Booth AI",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Paid",
+      "claim": "AI product photography",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 4
+    },
+    {
+      "url": "https://botpress.com",
+      "name": "Botpress",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "Build and deploy chatbots",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://canva.com",
+      "name": "Canva",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Freemium",
+      "claim": "All in one design with AI tools",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 4
+    },
+    {
+      "url": "https://cassidyai.com",
+      "name": "Cassidy",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "AI assistants on your company data",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://cerebras.ai",
+      "name": "Cerebras",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Freemium",
+      "claim": "Fastest AI inference",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://chatbase.co",
+      "name": "Chatbase",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "Custom GPT chatbot for your site",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://chatgpt.com/codex",
+      "name": "Codex",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Paid",
+      "claim": "OpenAI agentic coding",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 4
+    },
+    {
+      "url": "https://cohere.com",
+      "name": "Cohere",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Paid",
+      "claim": "Enterprise LLMs and search",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://crewai.com",
+      "name": "CrewAI",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Free",
+      "claim": "Framework for AI agent crews",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://delphi.ai",
+      "name": "Delphi",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Paid",
+      "claim": "Clone your knowledge as AI",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://dify.ai",
+      "name": "Dify",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "Open source LLM app platform",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://dust.tt",
+      "name": "Dust",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Paid",
+      "claim": "Build AI agents for teams",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://fine.dev",
+      "name": "Fine",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Freemium",
+      "claim": "AI dev environment for startups",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 4
+    },
+    {
+      "url": "https://fireworks.ai",
+      "name": "Fireworks",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Freemium",
+      "claim": "Fast inference for open models",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://fixie.ai",
+      "name": "Fixie",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "Build conversational agents",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://flowiseai.com",
+      "name": "Flowise",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Free",
+      "claim": "Open source agent builder",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://github.com/features/copilot",
+      "name": "GitHub Copilot",
+      "source": "workbook",
+      "sourceCategory": "Coding",
+      "claimedTier": "Paid",
+      "claim": "AI pair programmer in your editor",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 4
+    },
+    {
+      "url": "https://groq.com",
+      "name": "Groq",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Freemium",
+      "claim": "Blazing fast model inference",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://langflow.org",
+      "name": "Langflow",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Free",
+      "claim": "Visual LLM app builder",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://lmstudio.ai",
+      "name": "LM Studio",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Free",
+      "claim": "Desktop app to run local models",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://looka.com",
+      "name": "Looka",
+      "source": "workbook",
+      "sourceCategory": "Design",
+      "claimedTier": "Paid",
+      "claim": "AI logo and brand kit maker",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 4
+    },
+    {
+      "url": "https://lyzr.ai",
+      "name": "Lyzr",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "Build enterprise AI agents",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://manus.im",
+      "name": "Manus",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "General autonomous AI agent",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://mindstudio.ai",
+      "name": "MindStudio",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "Build and deploy AI apps",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://mistral.ai",
+      "name": "Mistral",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Freemium",
+      "claim": "Open weight frontier models",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://modal.com",
+      "name": "Modal",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Freemium",
+      "claim": "Serverless compute for AI",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://ollama.com",
+      "name": "Ollama",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Free",
+      "claim": "Run AI models locally",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://openrouter.ai",
+      "name": "OpenRouter",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Freemium",
+      "claim": "One API for every AI model",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://relevanceai.com",
+      "name": "Relevance AI",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "Build an AI workforce",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://replicate.com",
+      "name": "Replicate",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Paid",
+      "claim": "Run open models with an API",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://respell.ai",
+      "name": "Respell",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "AI workflow automation",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://retellai.com",
+      "name": "Retell AI",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "AI phone call agents",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://runpod.io",
+      "name": "RunPod",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Paid",
+      "claim": "GPU cloud for AI",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://sintra.ai",
+      "name": "Sintra",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Paid",
+      "claim": "AI employees for small business",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://stack-ai.com",
+      "name": "Stack AI",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "Build and deploy AI agents",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://synthflow.ai",
+      "name": "Synthflow",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Paid",
+      "claim": "No code AI voice agents",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://together.ai",
+      "name": "Together AI",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Freemium",
+      "claim": "Fast open model inference",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://vapi.ai",
+      "name": "Vapi",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "Build AI voice agents",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://vellum.ai",
+      "name": "Vellum",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Paid",
+      "claim": "Dev platform for AI apps",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://voiceflow.com",
+      "name": "Voiceflow",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "Build AI chat and voice agents",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://wordware.ai",
+      "name": "Wordware",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "Build AI agents in plain English",
+      "linkCheck": "OK",
+      "signal": 4
+    },
+    {
+      "url": "https://firefly.adobe.com",
+      "name": "Adobe Firefly",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Commercially safe generative images",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://aftershoot.com",
+      "name": "Aftershoot",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Paid",
+      "claim": "AI culling and editing for photographers",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://airtable.com",
+      "name": "Airtable",
+      "source": "workbook",
+      "sourceCategory": "No-code",
+      "claimedTier": "Freemium",
+      "claim": "Database and apps with AI",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://aragon.ai",
+      "name": "Aragon",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Paid",
+      "claim": "AI headshots from selfies",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://artbreeder.com",
+      "name": "Artbreeder",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Blend and evolve images",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://base44.com",
+      "name": "Base44",
+      "source": "workbook",
+      "sourceCategory": "No-code",
+      "claimedTier": "Freemium",
+      "claim": "Build apps by chatting",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://bing.com/images/create",
+      "name": "Bing Image Creator",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Free",
+      "claim": "Free image generation by Microsoft",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://bubble.io",
+      "name": "Bubble",
+      "source": "workbook",
+      "sourceCategory": "No-code",
+      "claimedTier": "Freemium",
+      "claim": "Build web apps without code",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://budibase.com",
+      "name": "Budibase",
+      "source": "workbook",
+      "sourceCategory": "No-code",
+      "claimedTier": "Freemium",
+      "claim": "Open source internal tools",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://civitai.com",
+      "name": "Civitai",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Open model and image community",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://cleanup.pictures",
+      "name": "Cleanup.pictures",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "Erase objects from photos",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://clipdrop.co",
+      "name": "Clipdrop",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "AI image editing toolkit",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://cutout.pro",
+      "name": "Cutout.Pro",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "AI background and photo editing",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://dezgo.com",
+      "name": "Dezgo",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Text to image generator",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://dream.ai",
+      "name": "Dream by Wombo",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "AI art on mobile and web",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://durable.co",
+      "name": "Durable",
+      "source": "workbook",
+      "sourceCategory": "No-code",
+      "claimedTier": "Freemium",
+      "claim": "AI website builder in seconds",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://erase.bg",
+      "name": "Erase.bg",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "Free background remover",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://evoto.ai",
+      "name": "Evoto",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Paid",
+      "claim": "AI photo retouching for pros",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://fal.ai",
+      "name": "Fal",
+      "source": "workbook",
+      "sourceCategory": "Models & Infra",
+      "claimedTier": "Paid",
+      "claim": "Fast generative media API",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 3
+    },
+    {
+      "url": "https://flutterflow.io",
+      "name": "FlutterFlow",
+      "source": "workbook",
+      "sourceCategory": "No-code",
+      "claimedTier": "Freemium",
+      "claim": "Build mobile apps visually",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://bfl.ai",
+      "name": "Flux",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "High quality open image model",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://fotor.com",
+      "name": "Fotor",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "AI photo editor and generator",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://getimg.ai",
+      "name": "Getimg",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "AI image suite and editor",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://glideapps.com",
+      "name": "Glide",
+      "source": "workbook",
+      "sourceCategory": "No-code",
+      "claimedTier": "Freemium",
+      "claim": "Apps from spreadsheets",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://glif.app",
+      "name": "Glif",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Build AI mini apps",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://headshotpro.com",
+      "name": "HeadshotPro",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Paid",
+      "claim": "AI professional headshots",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://hotpot.ai",
+      "name": "Hotpot",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "AI image and editing tools",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://labs.google/fx/tools/image-fx",
+      "name": "ImageFX",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Free",
+      "claim": "Google image generation",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://krea.ai",
+      "name": "Krea",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Real time generation and upscaling",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://letsenhance.io",
+      "name": "Let's Enhance",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "AI image upscaler",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://lexica.art",
+      "name": "Lexica",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Search and generate AI art",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://lummi.ai",
+      "name": "Lummi",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Free AI stock photos",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://mage.space",
+      "name": "Mage.space",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Free Stable Diffusion playground",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://magicstudio.com",
+      "name": "Magic Studio",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "AI photo editing tools",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://midjourney.com",
+      "name": "Midjourney",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Paid",
+      "claim": "Best in class artistic image generation",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://mokker.ai",
+      "name": "Mokker",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "AI product photo backgrounds",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://noloco.io",
+      "name": "Noloco",
+      "source": "workbook",
+      "sourceCategory": "No-code",
+      "claimedTier": "Freemium",
+      "claim": "Apps from your data",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://openart.ai",
+      "name": "OpenArt",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Image generation with custom models",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://pebblely.com",
+      "name": "Pebblely",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "AI product backgrounds",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://phot.ai",
+      "name": "Phot.AI",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "AI photo editing suite",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://photoai.com",
+      "name": "PhotoAI",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Paid",
+      "claim": "AI photos and models",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://photoroom.com",
+      "name": "Photoroom",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "Remove backgrounds and edit product shots",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://piclumen.com",
+      "name": "PicLumen",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Free",
+      "claim": "Free AI image generator",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://picsart.com",
+      "name": "Picsart",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "AI photo and video editor",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://picwish.com",
+      "name": "PicWish",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "Photo enhancement and cleanup",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://pixai.art",
+      "name": "PixAI",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Anime focused image generation",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://pixelcut.ai",
+      "name": "Pixelcut",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "Product photos and backgrounds",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://pixlr.com",
+      "name": "Pixlr",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "Browser photo editor with AI",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://plasmic.app",
+      "name": "Plasmic",
+      "source": "workbook",
+      "sourceCategory": "No-code",
+      "claimedTier": "Freemium",
+      "claim": "Visual builder for the web",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://playground.com",
+      "name": "Playground",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Free leaning social image creator",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://prompthero.com",
+      "name": "PromptHero",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Search AI art and prompts",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://recraft.ai",
+      "name": "Recraft",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Vector and brand consistent visuals",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://relume.io",
+      "name": "Relume",
+      "source": "workbook",
+      "sourceCategory": "No-code",
+      "claimedTier": "Freemium",
+      "claim": "AI sitemaps and wireframes",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://remini.ai",
+      "name": "Remini",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "AI photo enhancer",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://remove.bg",
+      "name": "Remove.bg",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "Instantly remove image backgrounds",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://retool.com",
+      "name": "Retool",
+      "source": "workbook",
+      "sourceCategory": "No-code",
+      "claimedTier": "Freemium",
+      "claim": "Build internal tools fast",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://reve.art",
+      "name": "Reve",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "High quality image generation",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://seaart.ai",
+      "name": "SeaArt",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Free leaning AI art platform",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://shakker.ai",
+      "name": "Shakker",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "ControlNet style generation",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://softr.io",
+      "name": "Softr",
+      "source": "workbook",
+      "sourceCategory": "No-code",
+      "claimedTier": "Freemium",
+      "claim": "Apps and portals from your data",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://stability.ai",
+      "name": "Stable Diffusion",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Open source image generation",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://starryai.com",
+      "name": "StarryAI",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "AI art generator app",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://stylar.ai",
+      "name": "Stylar",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "Controllable AI image editor",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://upscayl.org",
+      "name": "Upscayl",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Free",
+      "claim": "Free open source image upscaler",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://vanceai.com",
+      "name": "VanceAI",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "AI photo enhancement suite",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://vondy.com",
+      "name": "Vondy",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Many AI apps in one",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://webflow.com",
+      "name": "Webflow",
+      "source": "workbook",
+      "sourceCategory": "No-code",
+      "claimedTier": "Freemium",
+      "claim": "Visual web design with AI",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://weweb.io",
+      "name": "WeWeb",
+      "source": "workbook",
+      "sourceCategory": "No-code",
+      "claimedTier": "Freemium",
+      "claim": "Build web apps visually",
+      "linkCheck": "OK",
+      "signal": 3
+    },
+    {
+      "url": "https://2short.ai",
+      "name": "2Short",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "YouTube shorts from long videos",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://afforai.com",
+      "name": "Afforai",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "AI research and reference manager",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://akiflow.com",
+      "name": "Akiflow",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Paid",
+      "claim": "Consolidate tasks and calendar",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://akkio.com",
+      "name": "Akkio",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Paid",
+      "claim": "No code predictive analytics",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://amie.so",
+      "name": "Amie",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Joyful calendar with AI",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://withaqua.com",
+      "name": "Aqua Voice",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Fast voice to text",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://arc.net",
+      "name": "Arc",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Free",
+      "claim": "Browser with AI features",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://arcads.ai",
+      "name": "Arcads",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Paid",
+      "claim": "UGC style ads with AI actors",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://asana.com",
+      "name": "Asana",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Work management with AI",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://askyourpdf.com",
+      "name": "AskYourPDF",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "Ask questions about documents",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://autoshorts.ai",
+      "name": "AutoShorts",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Paid",
+      "claim": "Automated faceless videos",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://avoma.com",
+      "name": "Avoma",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "AI meeting assistant",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://basedash.com",
+      "name": "Basedash",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Freemium",
+      "claim": "AI admin panel and dashboards",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://bluedothq.com",
+      "name": "Bluedot",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "AI meeting recorder",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://thebricks.com",
+      "name": "Bricks",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Freemium",
+      "claim": "AI spreadsheet and dashboards",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://capacities.io",
+      "name": "Capacities",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Object based notes with AI",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://capcut.com",
+      "name": "CapCut",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Popular AI video editor",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://captions.ai",
+      "name": "Captions",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "AI video editing for creators",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://chatpdf.com",
+      "name": "ChatPDF",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "Chat with any PDF",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://circleback.ai",
+      "name": "Circleback",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Paid",
+      "claim": "AI meeting notes and actions",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://clickup.com",
+      "name": "ClickUp",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Project management with AI",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://getclockwise.com",
+      "name": "Clockwise",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "AI calendar optimization",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://coda.io",
+      "name": "Coda",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Docs that work like apps with AI",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://colossyan.com",
+      "name": "Colossyan",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Paid",
+      "claim": "AI avatar training videos",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://connectedpapers.com",
+      "name": "Connected Papers",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "Visual map of research papers",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://creatify.ai",
+      "name": "Creatify",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Paid",
+      "claim": "AI video ads from a URL",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://cron.com",
+      "name": "Cron",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Free",
+      "claim": "Fast modern calendar",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://openai.com/dall-e-3",
+      "name": "DALL-E",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Image generation from OpenAI",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 2
+    },
+    {
+      "url": "https://databricks.com",
+      "name": "Databricks",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Freemium",
+      "claim": "Data and AI lakehouse platform",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://decohere.ai",
+      "name": "Decohere",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Real time AI video",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://deepnote.com",
+      "name": "Deepnote",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Freemium",
+      "claim": "AI data notebook",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://descript.com",
+      "name": "Descript",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Edit video by editing the transcript",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://designify.com",
+      "name": "Designify",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "Auto design product images",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 2
+    },
+    {
+      "url": "https://dreamina.capcut.com",
+      "name": "Dreamina",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "AI image and video by CapCut",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://elicit.com",
+      "name": "Elicit",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "AI research assistant for papers",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://equals.com",
+      "name": "Equals",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Freemium",
+      "claim": "The spreadsheet with AI and data",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://fathom.video",
+      "name": "Fathom",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "Free AI meeting note taker",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://fellow.app",
+      "name": "Fellow",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "AI meeting management",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://fireflies.ai",
+      "name": "Fireflies",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "Records and summarizes meetings",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://flexclip.com",
+      "name": "FlexClip",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Online video maker with AI",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://fliki.ai",
+      "name": "Fliki",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Text to video with AI voices",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://formulabot.com",
+      "name": "Formula Bot",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Freemium",
+      "claim": "Generate spreadsheet formulas",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://freepik.com",
+      "name": "Freepik",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Stock plus AI image generation",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 2
+    },
+    {
+      "url": "https://genei.io",
+      "name": "Genei",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "AI summarization and research",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://gigasheet.com",
+      "name": "Gigasheet",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Freemium",
+      "claim": "Huge spreadsheets with AI",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://goblin.tools",
+      "name": "Goblin Tools",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Free",
+      "claim": "Tiny AI tools for tasks",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://grain.com",
+      "name": "Grain",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "Record and clip call moments",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://getguru.com",
+      "name": "Guru",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "AI company knowledge in your flow",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://hailuoai.video",
+      "name": "Hailuo",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Cinematic AI video by MiniMax",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://haiper.ai",
+      "name": "Haiper",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "AI video generation",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://hebbia.ai",
+      "name": "Hebbia",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Paid",
+      "claim": "AI for finance and law research",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://hedra.com",
+      "name": "Hedra",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Talking character video",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://heptabase.com",
+      "name": "Heptabase",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Paid",
+      "claim": "Visual notes and research",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://hex.tech",
+      "name": "Hex",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Freemium",
+      "claim": "AI notebooks for data teams",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://heygen.com",
+      "name": "HeyGen",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Avatar and translated video at scale",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://higgsfield.ai",
+      "name": "Higgsfield",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "AI video for creators",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://humata.ai",
+      "name": "Humata",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "AI for your files and papers",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://ideogram.ai",
+      "name": "Ideogram",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Image generation that nails text",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 2
+    },
+    {
+      "url": "https://invideo.io",
+      "name": "InVideo",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Text to video for social content",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://meetjamie.ai",
+      "name": "Jamie",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "AI notetaker without bots",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://julius.ai",
+      "name": "Julius",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Freemium",
+      "claim": "Analyze data by chatting",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://kapwing.com",
+      "name": "Kapwing",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Collaborative AI video editor",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://klap.app",
+      "name": "Klap",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Long video into viral shorts",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://klingai.com",
+      "name": "Kling",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Cinematic AI video generation",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://laxis.com",
+      "name": "Laxis",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "AI meeting and sales notes",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://leonardo.ai",
+      "name": "Leonardo AI",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Game and design focused image generator",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 2
+    },
+    {
+      "url": "https://loom.com",
+      "name": "Loom",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "Screen recording with AI summaries",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://ltx.studio",
+      "name": "LTX Studio",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "AI filmmaking and storyboards",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://lumalabs.ai",
+      "name": "Luma Dream Machine",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Fast realistic video generation",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://getmagical.com",
+      "name": "Magical",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "AI text expansion and autofill",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://magnific.ai",
+      "name": "Magnific",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Paid",
+      "claim": "Extreme AI upscaler and enhancer",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 2
+    },
+    {
+      "url": "https://mapify.so",
+      "name": "Mapify",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "Turn anything into mind maps",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://trymaverick.com",
+      "name": "Maverick",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Paid",
+      "claim": "Personalized AI videos for ecommerce",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://maxai.me",
+      "name": "MaxAI",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "AI assistant on any webpage",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://meetgeek.ai",
+      "name": "MeetGeek",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "Record transcribe summarize",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://mem.ai",
+      "name": "Mem",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Self organizing AI notes",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://imagine.meta.com",
+      "name": "Meta AI Imagine",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Free",
+      "claim": "Free image generation by Meta",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 2
+    },
+    {
+      "url": "https://miro.com",
+      "name": "Miro",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Visual workspace with AI",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://monday.com",
+      "name": "Monday",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Work OS with AI agents",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://monica.im",
+      "name": "Monica",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "All in one AI browser assistant",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://morphstudio.com",
+      "name": "Morph Studio",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Storyboard to AI film",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://usemotion.com",
+      "name": "Motion",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Paid",
+      "claim": "AI calendar and task planner",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://nightcafe.studio",
+      "name": "NightCafe",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Community AI art generator",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 2
+    },
+    {
+      "url": "https://notebooklm.google.com",
+      "name": "NotebookLM",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Free",
+      "claim": "Chat with your own documents",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://notion.com/product/calendar",
+      "name": "Notion Calendar",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Free",
+      "claim": "Calendar connected to Notion",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://numerous.ai",
+      "name": "Numerous",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Freemium",
+      "claim": "AI functions in spreadsheets",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://opus.pro",
+      "name": "Opus Clip",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Turns long videos into viral clips",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://otio.ai",
+      "name": "Otio",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "AI research and writing workspace",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://otter.ai",
+      "name": "Otter.ai",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "Live meeting transcription and notes",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://pdf.ai",
+      "name": "PDF.ai",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "Chat with your documents",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://pecan.ai",
+      "name": "Pecan",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Paid",
+      "claim": "Predictive analytics for teams",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://picklellc.com",
+      "name": "Pickle",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Paid",
+      "claim": "AI video clone for calls",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://pictory.ai",
+      "name": "Pictory",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Paid",
+      "claim": "Turn scripts into videos",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://pika.art",
+      "name": "Pika",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Generate and edit short AI videos",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://pixverse.ai",
+      "name": "PixVerse",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "AI video generation",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://powerbi.microsoft.com",
+      "name": "Power BI",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Freemium",
+      "claim": "Microsoft analytics with AI",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://powerdrill.ai",
+      "name": "Powerdrill",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Freemium",
+      "claim": "Chat with your datasets",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://quso.ai",
+      "name": "Quso",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Repurpose and schedule video",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://read.ai",
+      "name": "Read AI",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "Meeting summaries and coaching",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://getrecall.ai",
+      "name": "Recall",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Summarize and save anything",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://reclaim.ai",
+      "name": "Reclaim",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Smart scheduling for your calendar",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://reflect.app",
+      "name": "Reflect",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Paid",
+      "claim": "AI networked note taking",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://researchrabbit.ai",
+      "name": "ResearchRabbit",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Free",
+      "claim": "Discover related research",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://revid.ai",
+      "name": "Revid",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Faceless video generator",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://routine.co",
+      "name": "Routine",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Tasks calendar and notes",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://rows.com",
+      "name": "Rows",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Freemium",
+      "claim": "Spreadsheet with AI built in",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://runwayml.com",
+      "name": "Runway",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Pro grade AI video generation and editing",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://scispace.com",
+      "name": "SciSpace",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "Understand and analyze papers",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://scisummary.com",
+      "name": "SciSummary",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "Summarize scientific papers",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://semanticscholar.org",
+      "name": "Semantic Scholar",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Free",
+      "claim": "AI powered paper search",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://sembly.ai",
+      "name": "Sembly",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "AI meeting assistant",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://slite.com",
+      "name": "Slite",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "AI powered team knowledge base",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://sourcetable.com",
+      "name": "Sourcetable",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Freemium",
+      "claim": "AI spreadsheet that does analysis",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://spinach.io",
+      "name": "Spinach",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "AI scrum master and notes",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://steve.ai",
+      "name": "Steve AI",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Animation and live video from text",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://submagic.co",
+      "name": "Submagic",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Paid",
+      "claim": "AI captions and short form edits",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://sunsama.com",
+      "name": "Sunsama",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Paid",
+      "claim": "Daily planner for calm focus",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://superhuman.com",
+      "name": "Superhuman",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Paid",
+      "claim": "The fastest AI email experience",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://synthesia.io",
+      "name": "Synthesia",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Paid",
+      "claim": "AI avatar videos from text",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://tactiq.io",
+      "name": "Tactiq",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "AI transcripts for meetings",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://tana.inc",
+      "name": "Tana",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "AI native workspace",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://taskade.com",
+      "name": "Taskade",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "AI tasks notes and agents",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://tensor.art",
+      "name": "Tensor.Art",
+      "source": "workbook",
+      "sourceCategory": "Image",
+      "claimedTier": "Freemium",
+      "claim": "Free AI image generation",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 2
+    },
+    {
+      "url": "https://thoughtspot.com",
+      "name": "ThoughtSpot",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Paid",
+      "claim": "Search driven analytics",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://tldv.io",
+      "name": "tl;dv",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "Records and clips your calls",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://todoist.com",
+      "name": "Todoist",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Task manager with AI assist",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://topazlabs.com",
+      "name": "Topaz Labs",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Paid",
+      "claim": "Upscale and sharpen images and video",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 2
+    },
+    {
+      "url": "https://trello.com",
+      "name": "Trello",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Boards with AI automation",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://trinka.ai",
+      "name": "Trinka",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "Academic grammar and writing",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://upword.ai",
+      "name": "Upword",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "Read and research faster",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://vadoo.tv",
+      "name": "Vadoo",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "AI short video generator",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://veed.io",
+      "name": "VEED",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Online video editor with AI",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://vidnoz.com",
+      "name": "Vidnoz",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Free AI video and avatars",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://vidu.com",
+      "name": "Vidu",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Fast AI video generation",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://vidyo.ai",
+      "name": "Vidyo.ai",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Long video into short clips",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://visla.us",
+      "name": "Visla",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "AI video creation and editing",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://vizard.ai",
+      "name": "Vizard",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "AI video clipping tool",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://vrew.ai",
+      "name": "Vrew",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Edit video via transcript",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://whimsical.com",
+      "name": "Whimsical",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Flowcharts and docs with AI",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://filmora.wondershare.com",
+      "name": "Wondershare Filmora",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Video editor with AI tools",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://you.com",
+      "name": "You.com",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "AI search and assistant",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://zubtitle.com",
+      "name": "Zubtitle",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Paid",
+      "claim": "Add captions and resize video",
+      "linkCheck": "OK",
+      "signal": 2
+    },
+    {
+      "url": "https://podcast.adobe.com",
+      "name": "Adobe Podcast",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Free",
+      "claim": "Cleans up audio to studio quality",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://aiva.ai",
+      "name": "AIVA",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "AI music composition",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://altered.ai",
+      "name": "Altered",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "AI voice changer studio",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://assemblyai.com",
+      "name": "AssemblyAI",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Speech AI models and API",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://beatoven.ai",
+      "name": "Beatoven",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Royalty free AI music",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://boomy.com",
+      "name": "Boomy",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Make songs in seconds",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://camb.ai",
+      "name": "Camb.ai",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "AI dubbing and translation",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://cartesia.ai",
+      "name": "Cartesia",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Ultra fast voice models",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://cohesive.so",
+      "name": "Cohesive",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "AI content editor and templates",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://consensus.app",
+      "name": "Consensus",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "Find answers from research papers",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 1
+    },
+    {
+      "url": "https://copy.ai",
+      "name": "Copy.ai",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "Generate marketing copy in seconds",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://copymatic.ai",
+      "name": "Copymatic",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Paid",
+      "claim": "AI content and copywriting",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://deepgram.com",
+      "name": "Deepgram",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Speech to text API",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://eightify.app",
+      "name": "Eightify",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "YouTube video summaries",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 1
+    },
+    {
+      "url": "https://elevenlabs.io",
+      "name": "ElevenLabs",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "The leading AI voice generator",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://fish.audio",
+      "name": "Fish Audio",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Open source voice cloning",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://frase.io",
+      "name": "Frase",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Paid",
+      "claim": "SEO content research and writing",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://genmo.ai",
+      "name": "Genmo",
+      "source": "workbook",
+      "sourceCategory": "Video",
+      "claimedTier": "Freemium",
+      "claim": "Open AI video generation",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 1
+    },
+    {
+      "url": "https://gladia.io",
+      "name": "Gladia",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Audio transcription API",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://glasp.co",
+      "name": "Glasp",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "Highlight and summarize the web",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 1
+    },
+    {
+      "url": "https://gptzero.me",
+      "name": "GPTZero",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "Detects AI generated text",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://grammarly.com",
+      "name": "Grammarly",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "Grammar tone and clarity checker",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://gravitywrite.com",
+      "name": "GravityWrite",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "Free leaning AI writing suite",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://hemingwayapp.com",
+      "name": "Hemingway Editor",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "Makes your writing bold and clear",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://hoppycopy.co",
+      "name": "Hoppy Copy",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Paid",
+      "claim": "AI copy for email marketing",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://hume.ai",
+      "name": "Hume",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Emotionally aware voice AI",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://hyperwriteai.com",
+      "name": "HyperWrite",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "AI writing and personal assistant",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://hypotenuse.ai",
+      "name": "Hypotenuse",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Paid",
+      "claim": "AI content for ecommerce and blogs",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://jasper.ai",
+      "name": "Jasper",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Paid",
+      "claim": "Marketing copy and brand content at scale",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://jenni.ai",
+      "name": "Jenni",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "AI writing for academics",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://junia.ai",
+      "name": "Junia",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Paid",
+      "claim": "AI writer for SEO blogs",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://kits.ai",
+      "name": "Kits AI",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "AI voices for musicians",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://krisp.ai",
+      "name": "Krisp",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "AI noise cancellation",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://lalal.ai",
+      "name": "LALAL.AI",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Split vocals and instruments",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://lemonaide.ai",
+      "name": "Lemonaide",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "AI music ideas for producers",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://lex.page",
+      "name": "Lex",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "A document editor with AI built in",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://listnr.ai",
+      "name": "Listnr",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Text to speech and podcasts",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://longshot.ai",
+      "name": "LongShot",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Paid",
+      "claim": "Fact based long form AI writing",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://loudly.com",
+      "name": "Loudly",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "AI music generator",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://moises.ai",
+      "name": "Moises",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "AI music practice and stems",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://mubert.com",
+      "name": "Mubert",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Generative music for content",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://murf.ai",
+      "name": "Murf",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Studio quality AI voiceovers",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://musicfy.lol",
+      "name": "Musicfy",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "AI voice and music covers",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://naturalreaders.com",
+      "name": "NaturalReader",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Text to speech reader",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://notion.so",
+      "name": "Notion AI",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "AI writing built into your workspace",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://originality.ai",
+      "name": "Originality.ai",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Paid",
+      "claim": "AI content and plagiarism detector",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://paperpal.com",
+      "name": "Paperpal",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "AI academic writing assistant",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://penfriend.ai",
+      "name": "Penfriend",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Paid",
+      "claim": "Generate ranking articles",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://phind.com",
+      "name": "Phind",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "AI search built for developers",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 1
+    },
+    {
+      "url": "https://podcastle.ai",
+      "name": "Podcastle",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "AI podcast recording studio",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://prowritingaid.com",
+      "name": "ProWritingAid",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "Grammar and style editor",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://quillbot.com",
+      "name": "QuillBot",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "Paraphrasing and summarizing tool",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://resemble.ai",
+      "name": "Resemble AI",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Paid",
+      "claim": "Custom AI voice cloning",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://riffusion.com",
+      "name": "Riffusion",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Generate music from text",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://riverside.fm",
+      "name": "Riverside",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Studio quality remote recording",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://rytr.me",
+      "name": "Rytr",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "Budget friendly AI writing assistant",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://sapling.ai",
+      "name": "Sapling",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "AI writing for support teams",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://scholarcy.com",
+      "name": "Scholarcy",
+      "source": "workbook",
+      "sourceCategory": "Research",
+      "claimedTier": "Freemium",
+      "claim": "Summarize research papers",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 1
+    },
+    {
+      "url": "https://sider.ai",
+      "name": "Sider",
+      "source": "workbook",
+      "sourceCategory": "Productivity",
+      "claimedTier": "Freemium",
+      "claim": "AI sidebar for any page",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 1
+    },
+    {
+      "url": "https://smodin.io",
+      "name": "Smodin",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "AI writer and detector",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://sonauto.com",
+      "name": "Sonauto",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "AI music generation",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://soundful.com",
+      "name": "Soundful",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Royalty free AI music",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://soundraw.io",
+      "name": "Soundraw",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Paid",
+      "claim": "Royalty free AI music",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://speechify.com",
+      "name": "Speechify",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Text to speech for reading",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://speechmatics.com",
+      "name": "Speechmatics",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Speech to text API",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://splashmusic.com",
+      "name": "Splash Music",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "AI music creation",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://stableaudio.com",
+      "name": "Stable Audio",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Generate music and sound",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://sudowrite.com",
+      "name": "Sudowrite",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Paid",
+      "claim": "AI writing partner built for fiction",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://suno.com",
+      "name": "Suno",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Create full songs from a prompt",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://supernormal.com",
+      "name": "Supernormal",
+      "source": "workbook",
+      "sourceCategory": "Meetings & Notes",
+      "claimedTier": "Freemium",
+      "claim": "Automatic meeting notes",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 1
+    },
+    {
+      "url": "https://supertone.ai",
+      "name": "Supertone",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "AI voice and audio editing",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://tableau.com",
+      "name": "Tableau",
+      "source": "workbook",
+      "sourceCategory": "Data & Analytics",
+      "claimedTier": "Paid",
+      "claim": "Analytics with AI insights",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 1
+    },
+    {
+      "url": "https://texta.ai",
+      "name": "Texta",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "AI blog post generator",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://type.ai",
+      "name": "Type",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "AI document editor for fast drafts",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://typeface.ai",
+      "name": "Typeface",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Paid",
+      "claim": "On brand content for enterprises",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://udio.com",
+      "name": "Udio",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "High quality AI music generation",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://undetectable.ai",
+      "name": "Undetectable AI",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "Humanizes AI written text",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://voice.ai",
+      "name": "Voice.ai",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Real time voice changer",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://voicemod.net",
+      "name": "Voicemod",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Real time AI voice changer",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://wellsaidlabs.com",
+      "name": "WellSaid",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Paid",
+      "claim": "Studio AI voiceovers",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://wordhero.co",
+      "name": "WordHero",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Paid",
+      "claim": "AI writing across formats",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://wordtune.com",
+      "name": "Wordtune",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "Rewrites your sentences for impact",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://wordvice.ai",
+      "name": "Wordvice AI",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "AI proofreading and editing",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://writecream.com",
+      "name": "Writecream",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "AI copy and voiceovers",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://writefull.com",
+      "name": "Writefull",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "Academic language feedback",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://writer.com",
+      "name": "Writer",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Paid",
+      "claim": "Enterprise AI writing platform",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://writesonic.com",
+      "name": "Writesonic",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Freemium",
+      "claim": "SEO articles and ad copy generator",
+      "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://abridge.com",
+      "name": "Abridge",
+      "source": "workbook",
+      "sourceCategory": "Healthcare",
+      "claimedTier": "Paid",
+      "claim": "AI clinical note taking",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://activepieces.com",
+      "name": "Activepieces",
+      "source": "workbook",
+      "sourceCategory": "Automation",
+      "claimedTier": "Freemium",
+      "claim": "Open source automation",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://adcreative.ai",
+      "name": "AdCreative",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "Generate high converting ad creative",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://ahrefs.com",
+      "name": "Ahrefs",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "SEO toolset with AI",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://airops.com",
+      "name": "AirOps",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "Build AI content workflows",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://getalai.com",
+      "name": "Alai",
+      "source": "workbook",
+      "sourceCategory": "Presentations",
+      "claimedTier": "Freemium",
+      "claim": "Designer grade AI decks",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://alpha-sense.com",
+      "name": "AlphaSense",
+      "source": "workbook",
+      "sourceCategory": "Search & Research",
+      "claimedTier": "Paid",
+      "claim": "Market intelligence search",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://alsoasked.com",
+      "name": "AlsoAsked",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Freemium",
+      "claim": "People also ask research",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://andisearch.com",
+      "name": "Andi",
+      "source": "workbook",
+      "sourceCategory": "Search & Research",
+      "claimedTier": "Free",
+      "claim": "AI answer search engine",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://answerthepublic.com",
+      "name": "AnswerThePublic",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Freemium",
+      "claim": "Search question research",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://anyword.com",
+      "name": "Anyword",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "AI copy with performance scores",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://apollo.io",
+      "name": "Apollo",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Freemium",
+      "claim": "Sales intelligence and outreach",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://argil.ai",
+      "name": "Argil",
+      "source": "workbook",
+      "sourceCategory": "Avatars",
+      "claimedTier": "Paid",
+      "claim": "Clone yourself for video",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://audiense.com",
+      "name": "Audiense",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Freemium",
+      "claim": "Audience intelligence",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://authoredup.com",
+      "name": "AuthoredUp",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Paid",
+      "claim": "LinkedIn post editor and analytics",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://bardeen.ai",
+      "name": "Bardeen",
+      "source": "workbook",
+      "sourceCategory": "Automation",
+      "claimedTier": "Freemium",
+      "claim": "Automate browser workflows",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://beautiful.ai",
+      "name": "Beautiful.ai",
+      "source": "workbook",
+      "sourceCategory": "Presentations",
+      "claimedTier": "Paid",
+      "claim": "Slides that design themselves",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://boxbrownie.com",
+      "name": "BoxBrownie",
+      "source": "workbook",
+      "sourceCategory": "Real Estate",
+      "claimedTier": "Paid",
+      "claim": "AI photo editing for listings",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://brand24.com",
+      "name": "Brand24",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "AI social listening",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://buffer.com",
+      "name": "Buffer",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Freemium",
+      "claim": "Schedule posts with AI assist",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://byword.ai",
+      "name": "Byword",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "Generate SEO articles at scale",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://canarymail.io",
+      "name": "Canary Mail",
+      "source": "workbook",
+      "sourceCategory": "Email",
+      "claimedTier": "Freemium",
+      "claim": "AI email with Sidekick",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://cascadeur.com",
+      "name": "Cascadeur",
+      "source": "workbook",
+      "sourceCategory": "3D & Game",
+      "claimedTier": "Freemium",
+      "claim": "AI assisted character animation",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://castmagic.io",
+      "name": "Castmagic",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "Turn audio into content",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://chroniclehq.com",
+      "name": "Chronicle",
+      "source": "workbook",
+      "sourceCategory": "Presentations",
+      "claimedTier": "Freemium",
+      "claim": "Beautiful AI presentations",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://clay.com",
+      "name": "Clay",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "Enrich and automate outreach",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://clearscope.io",
+      "name": "Clearscope",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "SEO content optimization",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://cognosys.ai",
+      "name": "Cognosys",
+      "source": "workbook",
+      "sourceCategory": "Chatbots & Agents",
+      "claimedTier": "Freemium",
+      "claim": "Autonomous AI agents",
+      "linkCheck": "Payment required (402)",
+      "signal": 0
+    },
+    {
+      "url": "https://contentstudio.io",
+      "name": "ContentStudio",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Paid",
+      "claim": "AI content and social suite",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://copyleaks.com",
+      "name": "Copyleaks",
+      "source": "workbook",
+      "sourceCategory": "Writing",
+      "claimedTier": "Paid",
+      "claim": "AI and plagiarism detection",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 0
+    },
+    {
+      "url": "https://creatopy.com",
+      "name": "Creatopy",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "AI ad design and automation",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://customer.io",
+      "name": "Customer.io",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "Automated messaging with AI",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://d-id.com",
+      "name": "D-ID",
+      "source": "workbook",
+      "sourceCategory": "Avatars",
+      "claimedTier": "Freemium",
+      "claim": "Talking avatar videos from a photo",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://decktopus.com",
+      "name": "Decktopus",
+      "source": "workbook",
+      "sourceCategory": "Presentations",
+      "claimedTier": "Freemium",
+      "claim": "Quick AI generated presentations",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://aistudios.com",
+      "name": "DeepBrain AI",
+      "source": "workbook",
+      "sourceCategory": "Avatars",
+      "claimedTier": "Paid",
+      "claim": "AI avatars and studios",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://deepl.com",
+      "name": "DeepL",
+      "source": "workbook",
+      "sourceCategory": "Transcription",
+      "claimedTier": "Freemium",
+      "claim": "Best in class AI translation",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://deepscribe.ai",
+      "name": "DeepScribe",
+      "source": "workbook",
+      "sourceCategory": "Healthcare",
+      "claimedTier": "Paid",
+      "claim": "Ambient clinical documentation",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://deepseek.com",
+      "name": "DeepSeek",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Free",
+      "claim": "Open and capable reasoning chatbot",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://diabrowser.com",
+      "name": "Dia",
+      "source": "workbook",
+      "sourceCategory": "Search & Research",
+      "claimedTier": "Freemium",
+      "claim": "AI browser by The Browser Company",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://ellieai.com",
+      "name": "Ellie",
+      "source": "workbook",
+      "sourceCategory": "Email",
+      "claimedTier": "Paid",
+      "claim": "AI that drafts your replies",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://feedhive.com",
+      "name": "FeedHive",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Freemium",
+      "claim": "AI social media scheduling",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://felo.ai",
+      "name": "Felo",
+      "source": "workbook",
+      "sourceCategory": "Search & Research",
+      "claimedTier": "Freemium",
+      "claim": "Multilingual AI search",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://flick.tech",
+      "name": "Flick",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Paid",
+      "claim": "AI social marketing assistant",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://followupboss.com",
+      "name": "Follow Up Boss",
+      "source": "workbook",
+      "sourceCategory": "Real Estate",
+      "claimedTier": "Paid",
+      "claim": "AI enhanced real estate CRM",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://getfreed.ai",
+      "name": "Freed",
+      "source": "workbook",
+      "sourceCategory": "Healthcare",
+      "claimedTier": "Paid",
+      "claim": "AI scribe for clinicians",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://fyxer.com",
+      "name": "Fyxer",
+      "source": "workbook",
+      "sourceCategory": "Email",
+      "claimedTier": "Paid",
+      "claim": "AI email and meeting assistant",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://gemini.google.com",
+      "name": "Gemini",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Freemium",
+      "claim": "Google assistant with deep search and apps",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://glass.health",
+      "name": "Glass Health",
+      "source": "workbook",
+      "sourceCategory": "Healthcare",
+      "claimedTier": "Freemium",
+      "claim": "AI clinical decision support",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://glean.com",
+      "name": "Glean",
+      "source": "workbook",
+      "sourceCategory": "Search & Research",
+      "claimedTier": "Paid",
+      "claim": "AI search across your work apps",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://explorer.globe.engineer",
+      "name": "Globe Explorer",
+      "source": "workbook",
+      "sourceCategory": "Search & Research",
+      "claimedTier": "Free",
+      "claim": "Visual AI search results",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://grok.com",
+      "name": "Grok",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Freemium",
+      "claim": "Conversational AI from xAI",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://gumloop.com",
+      "name": "Gumloop",
+      "source": "workbook",
+      "sourceCategory": "Automation",
+      "claimedTier": "Freemium",
+      "claim": "No code AI automation",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://heidihealth.com",
+      "name": "Heidi Health",
+      "source": "workbook",
+      "sourceCategory": "Healthcare",
+      "claimedTier": "Freemium",
+      "claim": "AI medical scribe",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://hootsuite.com",
+      "name": "Hootsuite",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Paid",
+      "claim": "Social management with AI",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://housecanary.com",
+      "name": "HouseCanary",
+      "source": "workbook",
+      "sourceCategory": "Real Estate",
+      "claimedTier": "Paid",
+      "claim": "AI property valuation",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://hubspot.com",
+      "name": "HubSpot",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Freemium",
+      "claim": "CRM and marketing AI",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://huggingface.co/chat",
+      "name": "HuggingChat",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Free",
+      "claim": "Open source AI chat",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://hypefury.com",
+      "name": "Hypefury",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Freemium",
+      "claim": "Schedule and grow on X and socials",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://instantly.ai",
+      "name": "Instantly",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "Cold email at scale",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://inworld.ai",
+      "name": "Inworld",
+      "source": "workbook",
+      "sourceCategory": "3D & Game",
+      "claimedTier": "Freemium",
+      "claim": "AI characters for games",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://kaedim3d.com",
+      "name": "Kaedim",
+      "source": "workbook",
+      "sourceCategory": "3D & Game",
+      "claimedTier": "Paid",
+      "claim": "2D images into 3D models",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://kimi.com",
+      "name": "Kimi",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Free",
+      "claim": "Long context chatbot from Moonshot",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://koala.sh",
+      "name": "Koala",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "AI articles that rank",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://komo.ai",
+      "name": "Komo",
+      "source": "workbook",
+      "sourceCategory": "Search & Research",
+      "claimedTier": "Freemium",
+      "claim": "Fast AI search engine",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://later.com",
+      "name": "Later",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Freemium",
+      "claim": "Visual social scheduler",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://lavender.ai",
+      "name": "Lavender",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "AI email coach for sales",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://letterdrop.co",
+      "name": "Letterdrop",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "Content and SEO automation",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://lindy.ai",
+      "name": "Lindy",
+      "source": "workbook",
+      "sourceCategory": "Automation",
+      "claimedTier": "Freemium",
+      "claim": "Build AI agents for your work",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://lofty.com",
+      "name": "Lofty",
+      "source": "workbook",
+      "sourceCategory": "Real Estate",
+      "claimedTier": "Paid",
+      "claim": "All in one brokerage platform",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://ludo.ai",
+      "name": "Ludo",
+      "source": "workbook",
+      "sourceCategory": "3D & Game",
+      "claimedTier": "Freemium",
+      "claim": "AI for game ideation",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://lutra.ai",
+      "name": "Lutra",
+      "source": "workbook",
+      "sourceCategory": "Automation",
+      "claimedTier": "Freemium",
+      "claim": "AI workflows from plain English",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://magicslides.app",
+      "name": "MagicSlides",
+      "source": "workbook",
+      "sourceCategory": "Presentations",
+      "claimedTier": "Freemium",
+      "claim": "AI slides in Google Slides",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://marketmuse.com",
+      "name": "MarketMuse",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "AI content planning and SEO",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://meshy.ai",
+      "name": "Meshy",
+      "source": "workbook",
+      "sourceCategory": "3D & Game",
+      "claimedTier": "Freemium",
+      "claim": "Text and image to 3D models",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://metricool.com",
+      "name": "Metricool",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Freemium",
+      "claim": "Analytics and scheduling",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://copilot.microsoft.com",
+      "name": "Microsoft Copilot",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Freemium",
+      "claim": "AI assistant built into Windows and Office",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://missiveapp.com",
+      "name": "Missive",
+      "source": "workbook",
+      "sourceCategory": "Email",
+      "claimedTier": "Freemium",
+      "claim": "Shared inbox with AI",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://move.ai",
+      "name": "Move AI",
+      "source": "workbook",
+      "sourceCategory": "3D & Game",
+      "claimedTier": "Paid",
+      "claim": "Markerless motion capture",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://mutinyhq.com",
+      "name": "Mutiny",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "AI website personalization",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://n8n.io",
+      "name": "n8n",
+      "source": "workbook",
+      "sourceCategory": "Automation",
+      "claimedTier": "Freemium",
+      "claim": "Open source workflow automation",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://nabla.com",
+      "name": "Nabla",
+      "source": "workbook",
+      "sourceCategory": "Healthcare",
+      "claimedTier": "Freemium",
+      "claim": "Ambient AI for clinicians",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://neuronwriter.com",
+      "name": "NeuronWriter",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Freemium",
+      "claim": "SEO content editor",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://notta.ai",
+      "name": "Notta",
+      "source": "workbook",
+      "sourceCategory": "Transcription",
+      "claimedTier": "Freemium",
+      "claim": "Transcribe and summarize audio",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://ocoya.com",
+      "name": "Ocoya",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "AI social content and scheduling",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://outranking.io",
+      "name": "Outranking",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "SEO content optimization",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://trypencil.com",
+      "name": "Pencil",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "AI ad generation and testing",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://pipedream.com",
+      "name": "Pipedream",
+      "source": "workbook",
+      "sourceCategory": "Automation",
+      "claimedTier": "Freemium",
+      "claim": "Connect APIs with code",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://pitch.com",
+      "name": "Pitch",
+      "source": "workbook",
+      "sourceCategory": "Presentations",
+      "claimedTier": "Freemium",
+      "claim": "Collaborative decks with AI",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://planoly.com",
+      "name": "Planoly",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Freemium",
+      "claim": "Plan and schedule posts",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://plusai.com",
+      "name": "Plus AI",
+      "source": "workbook",
+      "sourceCategory": "Presentations",
+      "claimedTier": "Paid",
+      "claim": "AI slides inside Google Slides",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://poly.cam",
+      "name": "Polycam",
+      "source": "workbook",
+      "sourceCategory": "3D & Game",
+      "claimedTier": "Freemium",
+      "claim": "3D scanning and capture",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://popai.pro",
+      "name": "Popai",
+      "source": "workbook",
+      "sourceCategory": "Presentations",
+      "claimedTier": "Freemium",
+      "claim": "AI slides and document chat",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://postwise.ai",
+      "name": "Postwise",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "Write and schedule viral posts",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://predis.ai",
+      "name": "Predis",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Freemium",
+      "claim": "AI social media content generator",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://presentations.ai",
+      "name": "Presentations.ai",
+      "source": "workbook",
+      "sourceCategory": "Presentations",
+      "claimedTier": "Freemium",
+      "claim": "AI presentation maker",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://publer.io",
+      "name": "Publer",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Freemium",
+      "claim": "Schedule and generate posts",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://chat.qwen.ai",
+      "name": "Qwen Chat",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Free",
+      "claim": "Alibaba open model assistant",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://reimaginehome.ai",
+      "name": "REimagineHome",
+      "source": "workbook",
+      "sourceCategory": "Real Estate",
+      "claimedTier": "Freemium",
+      "claim": "AI interior and staging",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://relay.app",
+      "name": "Relay",
+      "source": "workbook",
+      "sourceCategory": "Automation",
+      "claimedTier": "Freemium",
+      "claim": "Human in the loop AI automation",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://restb.ai",
+      "name": "Restb.ai",
+      "source": "workbook",
+      "sourceCategory": "Real Estate",
+      "claimedTier": "Paid",
+      "claim": "Computer vision for listings",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://rev.com",
+      "name": "Rev",
+      "source": "workbook",
+      "sourceCategory": "Transcription",
+      "claimedTier": "Paid",
+      "claim": "Transcription and captions",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://reword.com",
+      "name": "Reword",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "AI editor trained on your audience",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://hyper3d.ai",
+      "name": "Rodin",
+      "source": "workbook",
+      "sourceCategory": "3D & Game",
+      "claimedTier": "Freemium",
+      "claim": "Generate 3D assets with AI",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://sanebox.com",
+      "name": "SaneBox",
+      "source": "workbook",
+      "sourceCategory": "Email",
+      "claimedTier": "Paid",
+      "claim": "AI inbox cleanup",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://scalenut.com",
+      "name": "Scalenut",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "SEO and content marketing suite",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://scenario.com",
+      "name": "Scenario",
+      "source": "workbook",
+      "sourceCategory": "3D & Game",
+      "claimedTier": "Freemium",
+      "claim": "AI game art generation",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://scite.ai",
+      "name": "Scite",
+      "source": "workbook",
+      "sourceCategory": "Search & Research",
+      "claimedTier": "Paid",
+      "claim": "Smart citations for research",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://seranking.com",
+      "name": "SE Ranking",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "SEO platform with AI",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://semrush.com",
+      "name": "Semrush",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "SEO and marketing suite",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://seo.ai",
+      "name": "SEO.AI",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "AI writer built for SEO",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://shortwave.com",
+      "name": "Shortwave",
+      "source": "workbook",
+      "sourceCategory": "Email",
+      "claimedTier": "Freemium",
+      "claim": "AI email client for Gmail",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://simplified.com",
+      "name": "Simplified",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Freemium",
+      "claim": "All in one AI content suite",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://slidesai.io",
+      "name": "SlidesAI",
+      "source": "workbook",
+      "sourceCategory": "Presentations",
+      "claimedTier": "Freemium",
+      "claim": "Create slides from text",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://slidesgpt.com",
+      "name": "SlidesGPT",
+      "source": "workbook",
+      "sourceCategory": "Presentations",
+      "claimedTier": "Freemium",
+      "claim": "Generate slides from a prompt",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://sloyd.ai",
+      "name": "Sloyd",
+      "source": "workbook",
+      "sourceCategory": "3D & Game",
+      "claimedTier": "Freemium",
+      "claim": "Real time 3D model generation",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://smartzip.com",
+      "name": "SmartZip",
+      "source": "workbook",
+      "sourceCategory": "Real Estate",
+      "claimedTier": "Paid",
+      "claim": "Predict who will sell next",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://socialbee.io",
+      "name": "SocialBee",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Paid",
+      "claim": "AI social media management",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://sonix.ai",
+      "name": "Sonix",
+      "source": "workbook",
+      "sourceCategory": "Transcription",
+      "claimedTier": "Paid",
+      "claim": "Automated transcription",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://sparkmailapp.com",
+      "name": "Spark Mail",
+      "source": "workbook",
+      "sourceCategory": "Email",
+      "claimedTier": "Freemium",
+      "claim": "Smart email with AI compose",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://spikenow.com",
+      "name": "Spike",
+      "source": "workbook",
+      "sourceCategory": "Email",
+      "claimedTier": "Freemium",
+      "claim": "Conversational email with AI",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://spline.design",
+      "name": "Spline",
+      "source": "workbook",
+      "sourceCategory": "3D & Game",
+      "claimedTier": "Freemium",
+      "claim": "3D design with AI",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://sproutsocial.com",
+      "name": "Sprout Social",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Paid",
+      "claim": "Social management with AI",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://storydoc.com",
+      "name": "Storydoc",
+      "source": "workbook",
+      "sourceCategory": "Presentations",
+      "claimedTier": "Paid",
+      "claim": "Interactive AI decks",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://structurely.com",
+      "name": "Structurely",
+      "source": "workbook",
+      "sourceCategory": "Real Estate",
+      "claimedTier": "Paid",
+      "claim": "AI lead nurturing for agents",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://suki.ai",
+      "name": "Suki",
+      "source": "workbook",
+      "sourceCategory": "Healthcare",
+      "claimedTier": "Paid",
+      "claim": "AI voice assistant for doctors",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://supergrow.ai",
+      "name": "Supergrow",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Paid",
+      "claim": "Grow on LinkedIn with AI",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://surferseo.com",
+      "name": "Surfer SEO",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "Optimize content to rank on Google",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://tailwindapp.com",
+      "name": "Tailwind",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Freemium",
+      "claim": "AI marketing for small business",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://taplio.com",
+      "name": "Taplio",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "Grow and schedule on LinkedIn",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://tavus.io",
+      "name": "Tavus",
+      "source": "workbook",
+      "sourceCategory": "Avatars",
+      "claimedTier": "Paid",
+      "claim": "Personalized AI video at scale",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://trint.com",
+      "name": "Trint",
+      "source": "workbook",
+      "sourceCategory": "Transcription",
+      "claimedTier": "Paid",
+      "claim": "Transcribe and edit audio",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://tripo3d.ai",
+      "name": "Tripo",
+      "source": "workbook",
+      "sourceCategory": "3D & Game",
+      "claimedTier": "Freemium",
+      "claim": "Fast 3D model generation",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://tweethunter.io",
+      "name": "Tweet Hunter",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "Grow your X audience",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://typefully.com",
+      "name": "Typefully",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Freemium",
+      "claim": "Write and schedule for X",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://virtualstagingai.app",
+      "name": "Virtual Staging AI",
+      "source": "workbook",
+      "sourceCategory": "Real Estate",
+      "claimedTier": "Freemium",
+      "claim": "Stage empty rooms with AI",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://vistasocial.com",
+      "name": "Vista Social",
+      "source": "workbook",
+      "sourceCategory": "Social Media",
+      "claimedTier": "Freemium",
+      "claim": "AI social scheduling and reports",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://vocode.dev",
+      "name": "Vocode",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "Open source voice AI",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 0
+    },
+    {
+      "url": "https://yepic.ai",
+      "name": "Yepic",
+      "source": "workbook",
+      "sourceCategory": "Avatars",
+      "claimedTier": "Paid",
+      "claim": "Real time AI avatars",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://ylopo.com",
+      "name": "Ylopo",
+      "source": "workbook",
+      "sourceCategory": "Real Estate",
+      "claimedTier": "Paid",
+      "claim": "AI real estate lead gen",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://zapier.com",
+      "name": "Zapier",
+      "source": "workbook",
+      "sourceCategory": "Automation",
+      "claimedTier": "Freemium",
+      "claim": "Connect apps and automate workflows",
+      "linkCheck": "OK",
+      "signal": 0
+    },
+    {
+      "url": "https://character.ai",
+      "name": "Character.AI",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Freemium",
+      "claim": "Chat with custom AI characters",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://chat.openai.com",
+      "name": "ChatGPT",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Freemium",
+      "claim": "The original AI assistant for almost anything",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://claude.ai",
+      "name": "Claude",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Freemium",
+      "claim": "Thoughtful assistant strong at writing and code",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://comet.perplexity.ai",
+      "name": "Comet",
+      "source": "workbook",
+      "sourceCategory": "Search & Research",
+      "claimedTier": "Freemium",
+      "claim": "Perplexity AI browser",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://facetune.com",
+      "name": "Facetune",
+      "source": "workbook",
+      "sourceCategory": "Image Editing",
+      "claimedTier": "Freemium",
+      "claim": "AI selfie and photo editor",
+      "linkCheck": "Check (500)",
+      "signal": -1
+    },
+    {
+      "url": "https://gamma.app",
+      "name": "Gamma",
+      "source": "workbook",
+      "sourceCategory": "Presentations",
+      "claimedTier": "Freemium",
+      "claim": "Generate decks docs and sites",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://genspark.ai",
+      "name": "Genspark",
+      "source": "workbook",
+      "sourceCategory": "Search & Research",
+      "claimedTier": "Freemium",
+      "claim": "AI agent search engine",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://growthbarseo.com",
+      "name": "GrowthBar",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "SEO writing and research",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://happyscribe.com",
+      "name": "Happy Scribe",
+      "source": "workbook",
+      "sourceCategory": "Transcription",
+      "claimedTier": "Paid",
+      "claim": "Transcription and subtitles",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://chat.mistral.ai",
+      "name": "Le Chat",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Freemium",
+      "claim": "Fast assistant from Mistral",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://make.com",
+      "name": "Make",
+      "source": "workbook",
+      "sourceCategory": "Automation",
+      "claimedTier": "Freemium",
+      "claim": "Visual automation for any workflow",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://meta.ai",
+      "name": "Meta AI",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Free",
+      "claim": "Assistant across Meta apps",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://perplexity.ai",
+      "name": "Perplexity",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Freemium",
+      "claim": "AI answer engine with live sources",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://pi.ai",
+      "name": "Pi",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Free",
+      "claim": "A warm and conversational personal AI",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://poe.com",
+      "name": "Poe",
+      "source": "workbook",
+      "sourceCategory": "Chat & Assistants",
+      "claimedTier": "Freemium",
+      "claim": "One place to chat with many AI models",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://repurpose.io",
+      "name": "Repurpose.io",
+      "source": "workbook",
+      "sourceCategory": "Marketing",
+      "claimedTier": "Paid",
+      "claim": "Auto publish across platforms",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://wonderdynamics.com",
+      "name": "Wonder Dynamics",
+      "source": "workbook",
+      "sourceCategory": "3D & Game",
+      "claimedTier": "Paid",
+      "claim": "AI CG characters into video",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -1
+    },
+    {
+      "url": "https://briskteaching.com",
+      "name": "Brisk Teaching",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "AI in your browser for teachers",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://caktus.ai",
+      "name": "Caktus",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "AI student workspace",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://chatfuel.com",
+      "name": "Chatfuel",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Freemium",
+      "claim": "AI chatbots for messaging",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://conker.ai",
+      "name": "Conker",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "AI quiz maker for teachers",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://crisp.chat",
+      "name": "Crisp",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Freemium",
+      "claim": "Business messaging with AI",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://curipod.com",
+      "name": "Curipod",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "Interactive AI lessons",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://diffit.me",
+      "name": "Diffit",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "Leveled materials for teachers",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://elsaspeak.com",
+      "name": "ELSA",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "AI English pronunciation coach",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://forethought.ai",
+      "name": "Forethought",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Paid",
+      "claim": "AI support automation",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://gorgias.com",
+      "name": "Gorgias",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Paid",
+      "claim": "AI helpdesk for ecommerce",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://inkeep.com",
+      "name": "Inkeep",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Paid",
+      "claim": "AI support from your content",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://intercom.com",
+      "name": "Intercom",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Paid",
+      "claim": "AI customer service with Fin agent",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://kapa.ai",
+      "name": "Kapa.ai",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Paid",
+      "claim": "AI answers from your docs",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://khanmigo.ai",
+      "name": "Khanmigo",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "AI tutor from Khan Academy",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://klaviyo.com",
+      "name": "Klaviyo",
+      "source": "workbook",
+      "sourceCategory": "E-commerce",
+      "claimedTier": "Freemium",
+      "claim": "AI email and SMS for ecommerce",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://knowji.com",
+      "name": "Knowji",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Paid",
+      "claim": "AI vocabulary learning",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://knowt.com",
+      "name": "Knowt",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "AI flashcards and notes",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://landbot.io",
+      "name": "Landbot",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Freemium",
+      "claim": "No code chatbot builder",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://magicschool.ai",
+      "name": "MagicSchool",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "AI tools for teachers",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://mathful.com",
+      "name": "Mathful",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "AI math solver",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://myaskai.com",
+      "name": "My AskAI",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Freemium",
+      "claim": "AI support agent",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://octaneai.com",
+      "name": "Octane AI",
+      "source": "workbook",
+      "sourceCategory": "E-commerce",
+      "claimedTier": "Paid",
+      "claim": "Quizzes and AI for Shopify",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://photomath.com",
+      "name": "Photomath",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "Solve math by photo",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://usepylon.com",
+      "name": "Pylon",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Paid",
+      "claim": "Support platform for B2B",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://hellorep.ai",
+      "name": "Rep AI",
+      "source": "workbook",
+      "sourceCategory": "E-commerce",
+      "claimedTier": "Paid",
+      "claim": "AI shopping assistant",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://schoolai.com",
+      "name": "SchoolAI",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "AI classroom assistant",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://shopify.com",
+      "name": "Shopify Magic",
+      "source": "workbook",
+      "sourceCategory": "E-commerce",
+      "claimedTier": "Freemium",
+      "claim": "AI tools for Shopify stores",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://sierra.ai",
+      "name": "Sierra",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Paid",
+      "claim": "Conversational AI agents",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://sitegpt.ai",
+      "name": "SiteGPT",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Paid",
+      "claim": "Chatbot trained on your site",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://speak.com",
+      "name": "Speak",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "AI language learning",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://synthesis.com",
+      "name": "Synthesis",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Paid",
+      "claim": "AI tutor for kids",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://tidio.com",
+      "name": "Tidio",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Freemium",
+      "claim": "AI chat and helpdesk",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://twee.com",
+      "name": "Twee",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "AI tools for English teachers",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://yuma.ai",
+      "name": "Yuma",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Paid",
+      "claim": "AI support for ecommerce",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://zendesk.com",
+      "name": "Zendesk",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Paid",
+      "claim": "Support suite with AI agents",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://zipchat.ai",
+      "name": "Zipchat",
+      "source": "workbook",
+      "sourceCategory": "E-commerce",
+      "claimedTier": "Paid",
+      "claim": "AI sales chatbot for stores",
+      "linkCheck": "OK",
+      "signal": -2
+    },
+    {
+      "url": "https://11x.ai",
+      "name": "11x",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "Autonomous AI sales reps",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://ada.cx",
+      "name": "Ada",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Paid",
+      "claim": "AI customer service automation",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -3
+    },
+    {
+      "url": "https://aomni.com",
+      "name": "Aomni",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "AI account research",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://artisan.co",
+      "name": "Artisan",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "AI sales rep that books meetings",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://attention.com",
+      "name": "Attention",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "AI for sales calls and CRM",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://beamery.com",
+      "name": "Beamery",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "Talent lifecycle AI",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://brex.com",
+      "name": "Brex",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Freemium",
+      "claim": "Spend management with AI",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://brighthire.ai",
+      "name": "BrightHire",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "AI interview intelligence",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://cognism.com",
+      "name": "Cognism",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "Sales intelligence and leads",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://commonroom.io",
+      "name": "Common Room",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "Signal based go to market",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://decagon.com",
+      "name": "Decagon",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Paid",
+      "claim": "AI support agents for scale",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -3
+    },
+    {
+      "url": "https://deel.com",
+      "name": "Deel",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "Global payroll with AI",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://demodesk.com",
+      "name": "Demodesk",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "AI meeting and coaching",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://donotpay.com",
+      "name": "DoNotPay",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Paid",
+      "claim": "AI consumer rights assistant",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://eduaide.ai",
+      "name": "Eduaide",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "AI teaching assistant",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -3
+    },
+    {
+      "url": "https://eightfold.ai",
+      "name": "Eightfold",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "AI talent intelligence",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://evenuplaw.com",
+      "name": "EvenUp",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Paid",
+      "claim": "AI for injury law firms",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://fetcher.ai",
+      "name": "Fetcher",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "Automated candidate sourcing",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://gem.com",
+      "name": "Gem",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "AI recruiting CRM",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://genieai.co",
+      "name": "Genie AI",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Freemium",
+      "claim": "AI legal document drafting",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://gong.io",
+      "name": "Gong",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "AI revenue intelligence from calls",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://harvey.ai",
+      "name": "Harvey",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Paid",
+      "claim": "AI for legal professionals",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://hireez.com",
+      "name": "HireEZ",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "AI sourcing for recruiters",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://hirevue.com",
+      "name": "HireVue",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "AI video interviewing",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://lattice.com",
+      "name": "Lattice",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "People management with AI",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://lawgeex.com",
+      "name": "Lawgeex",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Paid",
+      "claim": "Automated contract review",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://leapsome.com",
+      "name": "Leapsome",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "AI performance and engagement",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://lemlist.com",
+      "name": "Lemlist",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "Cold email outreach with AI personalization",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://lovo.ai",
+      "name": "Lovo",
+      "source": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "claimedTier": "Freemium",
+      "claim": "AI voiceover and TTS",
+      "linkCheck": "Payment required (402)",
+      "signal": -3
+    },
+    {
+      "url": "https://luminance.com",
+      "name": "Luminance",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Paid",
+      "claim": "AI for contract analysis",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://makipeople.com",
+      "name": "Maki",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "AI candidate screening",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://manychat.com",
+      "name": "ManyChat",
+      "source": "workbook",
+      "sourceCategory": "Customer Support",
+      "claimedTier": "Freemium",
+      "claim": "Chat marketing automation",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -3
+    },
+    {
+      "url": "https://metaview.ai",
+      "name": "Metaview",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Freemium",
+      "claim": "AI interview notes",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://numeric.io",
+      "name": "Numeric",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Paid",
+      "claim": "AI accounting close",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://useorigin.com",
+      "name": "Origin",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Paid",
+      "claim": "AI financial planning",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://paradox.ai",
+      "name": "Paradox",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "Conversational recruiting AI",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://people.ai",
+      "name": "People.ai",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "Revenue intelligence",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://persana.ai",
+      "name": "Persana",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "AI prospecting and enrichment",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://pilot.com",
+      "name": "Pilot",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Paid",
+      "claim": "Bookkeeping with AI and experts",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://pipedrive.com",
+      "name": "Pipedrive",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "CRM with AI sales assistant",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://puzzle.io",
+      "name": "Puzzle",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Paid",
+      "claim": "AI powered accounting",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://quizlet.com",
+      "name": "Quizlet",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "AI study tools and flashcards",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -3
+    },
+    {
+      "url": "https://ramp.com",
+      "name": "Ramp",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Freemium",
+      "claim": "Finance automation with AI",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://rb2b.com",
+      "name": "RB2B",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Freemium",
+      "claim": "Identify website visitors",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://regie.ai",
+      "name": "Regie.ai",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "AI sales prospecting",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://rippling.com",
+      "name": "Rippling",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "HR and IT platform with AI",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://robinai.com",
+      "name": "Robin AI",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Paid",
+      "claim": "AI contract review",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://rogo.ai",
+      "name": "Rogo",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Paid",
+      "claim": "AI analyst for finance",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://salesforce.com",
+      "name": "Salesforce",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "CRM with Einstein AI",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://salesloft.com",
+      "name": "Salesloft",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "AI revenue workflow platform",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://sanalabs.com",
+      "name": "Sana",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "AI learning and knowledge",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://seamless.ai",
+      "name": "Seamless.AI",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Freemium",
+      "claim": "Find verified B2B contacts",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://seekout.com",
+      "name": "SeekOut",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "AI talent sourcing",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://smartlead.ai",
+      "name": "Smartlead",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "Scale cold email with AI",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://spellbook.legal",
+      "name": "Spellbook",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Paid",
+      "claim": "AI contract drafting",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://studyfetch.com",
+      "name": "StudyFetch",
+      "source": "workbook",
+      "sourceCategory": "Education",
+      "claimedTier": "Freemium",
+      "claim": "Turn material into study sets",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -3
+    },
+    {
+      "url": "https://textio.com",
+      "name": "Textio",
+      "source": "workbook",
+      "sourceCategory": "HR & Recruiting",
+      "claimedTier": "Paid",
+      "claim": "AI for inclusive job posts",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://triplewhale.com",
+      "name": "Triple Whale",
+      "source": "workbook",
+      "sourceCategory": "E-commerce",
+      "claimedTier": "Paid",
+      "claim": "Ecommerce analytics with AI",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -3
+    },
+    {
+      "url": "https://unifygtm.com",
+      "name": "Unify",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "Warm outbound on autopilot",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://vic.ai",
+      "name": "Vic.ai",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Paid",
+      "claim": "AI accounts payable",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://warmer.ai",
+      "name": "Warmer.ai",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "AI personalized cold emails",
+      "linkCheck": "OK",
+      "signal": -3
+    },
+    {
+      "url": "https://6sense.com",
+      "name": "6sense",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "Predictive B2B intelligence",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -4
+    },
+    {
+      "url": "https://meetcleo.com",
+      "name": "Cleo",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Freemium",
+      "claim": "AI money management chat",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -4
+    },
+    {
+      "url": "https://clio.com",
+      "name": "Clio",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Paid",
+      "claim": "Legal practice with AI",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -4
+    },
+    {
+      "url": "https://fiscal.ai",
+      "name": "Fiscal.ai",
+      "source": "workbook",
+      "sourceCategory": "Finance & Legal",
+      "claimedTier": "Freemium",
+      "claim": "AI financial research",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -4
+    },
+    {
+      "url": "https://lusha.com",
+      "name": "Lusha",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Freemium",
+      "claim": "B2B contact and company data",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -4
+    },
+    {
+      "url": "https://reply.io",
+      "name": "Reply.io",
+      "source": "workbook",
+      "sourceCategory": "Sales & Outreach",
+      "claimedTier": "Paid",
+      "claim": "AI sales engagement platform",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "signal": -4
+    }
+  ]
+}

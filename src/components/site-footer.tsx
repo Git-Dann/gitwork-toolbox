@@ -51,7 +51,6 @@ export function SiteFooter() {
 
           <FooterColumn title="The workbook">
             {counts.recent ? <FooterLink href="/new">Newly added</FooterLink> : null}
-            <FooterLink href="/shortlist">Shortlist &amp; actions</FooterLink>
             <FooterLink href="/collections">Collections</FooterLink>
             <FooterLink href="/resources">Resources</FooterLink>
             <FooterLink href="/about">How this is built</FooterLink>

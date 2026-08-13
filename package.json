@@ -8,7 +8,12 @@
     "build": "node scripts/build-data.mjs && next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "discover": "node scripts/discover.mjs",
+    "assess": "node scripts/assess.mjs",
+    "foundry-sync": "node scripts/foundry-sync.mjs",
+    "icons": "node scripts/fetch-icons.mjs",
+    "previews": "node scripts/fetch-previews.mjs"
   },
   "dependencies": {
     "next": "^16.3.0",
