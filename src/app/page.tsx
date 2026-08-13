@@ -1,10 +1,19 @@
 import Link from "next/link";
 import { Headline } from "@/components/brand";
-import { CollectionCard, CompactRow, StarterCard, ToolCard } from "@/components/cards";
+import {
+  CollectionCard,
+  CompactRow,
+  ResourceCard,
+  StarterCard,
+  ToolCard,
+} from "@/components/cards";
 import { Container, Panel, Section } from "@/components/page-shell";
 import { ArrowList, Divider, Eyebrow, SectionHeading, Stat } from "@/components/ui";
 import {
   counts,
+  getResource,
+  getStarter,
+  getTool,
   groups,
   picks,
   recentlyAdded,
@@ -44,13 +53,26 @@ export default function HomePage() {
     })),
   ];
 
-  const HREF = { tool: "/tools/", starter: "/starters/", resource: "/resources/" } as const;
+  // The newest entries as real cards: a rail that starts life with one item still
+  // needs to look deliberate.
+  const newestCards = recentlyAdded.slice(0, 4).map((entry) => {
+    if (entry.kind === "tool") {
+      const tool = getTool(entry.slug);
+      return tool ? <ToolCard key={entry.slug} tool={tool} /> : null;
+    }
+    if (entry.kind === "resource") {
+      const resource = getResource(entry.slug);
+      return resource ? <ResourceCard key={entry.slug} resource={resource} /> : null;
+    }
+    const starter = getStarter(entry.slug);
+    return starter ? <StarterCard key={entry.slug} starter={starter} /> : null;
+  });
 
   return (
     <>
       {/* ---------------------------------------------------------------- hero */}
       <section className="border-b border-hair">
-        <Container className="py-12 sm:py-16">
+        <Container className="py-10 sm:py-14">
           <Eyebrow accent>Gitwork · studio reference</Eyebrow>
           <Headline className="mt-4 max-w-3xl text-[2rem] sm:text-[2.75rem]" emphasis="actually use">
             Every tool, prompt and kit we{" "}
@@ -83,7 +105,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mt-11 grid grid-cols-2 gap-6 sm:grid-cols-4">
+          <div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-4">
             <Stat value={counts.entries} label="Entries" />
             <Stat value={counts.recommended} label="Recommended" />
             <Stat value={counts.approved} label="Gitwork approved" />
@@ -101,19 +123,8 @@ export default function HomePage() {
               title="Newly added"
               action={{ href: "/new", label: "All additions" }}
             />
-            <div className="grid gap-x-8 gap-y-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-              {recentlyAdded.slice(0, 8).map((entry) => (
-                <CompactRow
-                  key={`${entry.kind}-${entry.slug}`}
-                  href={`${HREF[entry.kind]}${entry.slug}`}
-                  name={entry.name}
-                  descriptor={entry.descriptor}
-                  recommended={entry.recommended}
-                  approved={entry.approved}
-                  addedAt={entry.addedAt}
-                  icon={entry.icon}
-                />
-              ))}
+            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+              {newestCards}
             </div>
           </Container>
         </Section>
