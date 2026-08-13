@@ -118,6 +118,7 @@ const GROUPS = [
       "Motion / AI-generated animation",
       "Portfolio tooling / personal sites",
       "Design inspiration / reference management",
+      "Design inspiration / social posts",
     ],
   },
   {

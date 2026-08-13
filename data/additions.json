@@ -1,4 +1,23 @@
 {
   "$comment": "Entries added after the original workbook import. Written by the /toolbox-add skill or by hand — see .claude/skills/toolbox-add/SKILL.md for the schema and the house rules. Everything here carries an addedAt, which is what drives the Newly added section.",
-  "entries": []
+  "entries": [
+    {
+      "kind": "resource",
+      "name": "posts.design",
+      "link": "https://posts.design/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / social posts",
+      "takeaway": "A hand-picked wall of social post design — 378 captures of product updates, announcements and launches from X, browsable by recency or by brand, each keeping its creator, platform and original link. Run by one curator (@baseddesigner) whose stated filter is what is worth stealing rather than what spreads.",
+      "whatToDo": "Reference, not a dependency. Open it when designing a launch or announcement post for a client or for Gitwork, take the structure and the hierarchy, and leave the styling behind. Anything genuinely good gets screenshotted into the Foundry wiki rather than relied on staying up.",
+      "cost": "Free. No ads and no paywall; the curator asks for voluntary tips.",
+      "usefulness": "Medium",
+      "notes": [
+        "Narrow but real: announcement and launch post design is a surface we produce for nearly every client, and there is no decent reference for it beyond scrolling a feed. It is inspiration only — no product, no export, no API, nothing to install.",
+        "Same IP caution as Flaude and Refero Styles. These are other companies' posts and trade dress. Fine as internal reference; a problem if a layout or a line of copy survives into a client deliverable, so treat it as structure-only input.",
+        "One person, no company, free by choice with tips — assume it can disappear. /pricing and /submit both returned 500 when requested directly, so free-forever is the curator's current position rather than a commitment, and takedowns are handled by DM."
+      ],
+      "addedAt": "2026-08-13T15:08:04.000Z",
+      "addedBy": "Dan"
+    }
+  ]
 }
