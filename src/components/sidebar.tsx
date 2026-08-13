@@ -6,7 +6,7 @@ import { Suspense, useEffect, useState } from "react";
 import { Wordmark } from "@/components/brand";
 import { CommandPalette } from "@/components/command-palette";
 import { ThemeToggle } from "@/components/theme-toggle";
-import type { Group, Tag } from "@/lib/types";
+import type { Group, Meta, Tag } from "@/lib/types";
 
 type NavItem = { href: string; label: string; count?: number };
 
@@ -14,6 +14,8 @@ export type SidebarData = {
   counts: Record<string, number>;
   groups: Group[];
   tags: Tag[];
+  toolFacets: Meta["toolFacets"];
+  starterFacets: Meta["starterFacets"];
 };
 
 /**
@@ -24,7 +26,7 @@ export type SidebarData = {
  * Filters are links that write the query string; the browsers read their state back
  * out of the URL, which also makes every view shareable.
  */
-export function Sidebar({ counts, groups, tags }: SidebarData) {
+export function Sidebar({ counts, groups, tags, toolFacets, starterFacets }: SidebarData) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
@@ -68,11 +70,11 @@ export function Sidebar({ counts, groups, tags }: SidebarData) {
           the destinations above stay statically rendered. */}
       {pathname === "/tools" ? (
         <Suspense fallback={<RailTitle>Filters</RailTitle>}>
-          <ToolFilters counts={counts} groups={groups} onNavigate={close} />
+          <ToolFilters counts={counts} groups={groups} facets={toolFacets} onNavigate={close} />
         </Suspense>
       ) : pathname === "/starters" ? (
         <Suspense fallback={<RailTitle>Filters</RailTitle>}>
-          <StarterFilters counts={counts} tags={tags} onNavigate={close} />
+          <StarterFilters tags={tags} facets={starterFacets} onNavigate={close} />
         </Suspense>
       ) : (
         <StarterShortcuts counts={counts} onNavigate={close} />
@@ -186,10 +188,12 @@ function useHrefBuilder(base: string) {
 function ToolFilters({
   counts,
   groups,
+  facets,
   onNavigate,
 }: {
   counts: Record<string, number>;
   groups: Group[];
+  facets: Meta["toolFacets"];
   onNavigate: () => void;
 }) {
   const params = useSearchParams();
@@ -198,6 +202,34 @@ function ToolFilters({
   const group = params.get("group") ?? "";
   const recommended = params.get("recommended") === "1";
   const approved = params.get("approved") === "1";
+  const hideDead = params.get("dead") !== "1";
+
+  // Count each option against the filters already applied, ignoring the one being
+  // counted — so a number in the rail is always the number of results you would get.
+  const countWith = (over: { price?: string; group?: string; recommended?: boolean; approved?: boolean }) =>
+    facets.filter((f) => {
+      const p = over.price ?? price;
+      const g = over.group ?? group;
+      const r = over.recommended ?? recommended;
+      const a = over.approved ?? approved;
+      if (p && f.p !== p) return false;
+      if (g && f.g !== g) return false;
+      if (r && !f.r) return false;
+      if (a && !f.a) return false;
+      if (hideDead && f.d) return false;
+      return true;
+    }).length;
+
+  const pricingOptions = PRICING.map((tier) => ({
+    tier,
+    count: countWith({ price: tier }),
+  })).filter((option) => option.count > 0 || price === option.tier);
+
+  // An area with no matching tools may still hold resources, and an area view lists
+  // both — so it stays listed as long as it holds something.
+  const areaOptions = groups
+    .map((item) => ({ item, count: countWith({ group: item.slug }) }))
+    .filter((option) => option.count > 0 || option.item.count > 0 || group === option.item.slug);
 
   return (
     <>
@@ -206,14 +238,14 @@ function ToolFilters({
         <FilterLink
           href={href({ recommended: recommended ? null : "1" })}
           label="Recommended"
-          count={counts.recommended}
+          count={countWith({ recommended: true })}
           active={recommended}
           onNavigate={onNavigate}
         />
         <FilterLink
           href={href({ approved: approved ? null : "1" })}
           label="Gitwork approved"
-          count={counts.approved}
+          count={countWith({ approved: true })}
           active={approved}
           onNavigate={onNavigate}
         />
@@ -224,17 +256,17 @@ function ToolFilters({
         <FilterLink
           href={href({ price: null })}
           label="Any"
-          count={counts.tools}
+          count={countWith({ price: "" })}
           active={!price}
           onNavigate={onNavigate}
         />
-        {PRICING.map((tier) => (
+        {pricingOptions.map((option) => (
           <FilterLink
-            key={tier}
-            href={href({ price: price === tier ? null : tier })}
-            label={tier}
-            count={counts[tier.toLowerCase()]}
-            active={price === tier}
+            key={option.tier}
+            href={href({ price: price === option.tier ? null : option.tier })}
+            label={option.tier}
+            count={option.count}
+            active={price === option.tier}
             onNavigate={onNavigate}
           />
         ))}
@@ -248,13 +280,13 @@ function ToolFilters({
           active={!group}
           onNavigate={onNavigate}
         />
-        {groups.map((item) => (
+        {areaOptions.map((option) => (
           <FilterLink
-            key={item.slug}
-            href={href({ group: group === item.slug ? null : item.slug })}
-            label={item.name}
-            count={item.count}
-            active={group === item.slug}
+            key={option.item.slug}
+            href={href({ group: group === option.item.slug ? null : option.item.slug })}
+            label={option.item.name}
+            count={option.item.count}
+            active={group === option.item.slug}
             onNavigate={onNavigate}
           />
         ))}
@@ -272,12 +304,12 @@ const TYPES = [
 ] as const;
 
 function StarterFilters({
-  counts,
   tags,
+  facets,
   onNavigate,
 }: {
-  counts: Record<string, number>;
   tags: Tag[];
+  facets: Meta["starterFacets"];
   onNavigate: () => void;
 }) {
   const params = useSearchParams();
@@ -287,25 +319,51 @@ function StarterFilters({
   const tag = params.get("tag") ?? "";
   const recommended = params.get("recommended") === "1";
 
-  const shown = allTopics ? tags : tags.slice(0, 8);
+  const inType = type ? facets.filter((f) => f.t === type) : facets;
+
+  // Topics belong to the type above them: only the ones present in the current
+  // selection are listed, counted within it, so type + topic can never return
+  // nothing. Across everything that would be 150 tags, so the unfiltered view keeps
+  // the ones with some weight — inside a type, every topic it has is worth showing.
+  const threshold = type ? 1 : 4;
+  const topics = tags
+    .map((item) => ({
+      ...item,
+      inContext: inType.filter((f) => f.g.includes(item.tag) && (!recommended || f.r)).length,
+    }))
+    .filter((item) => item.inContext >= threshold || tag === item.tag)
+    .sort((a, b) => b.inContext - a.inContext || a.label.localeCompare(b.label));
+
+  const shown = allTopics ? topics : topics.slice(0, 8);
+
+  // Switching type drops a topic that does not exist inside it.
+  const typeHref = (value: string | null) => {
+    const keepTag =
+      tag && (!value || facets.some((f) => f.t === value && f.g.includes(tag))) ? tag : null;
+    return href({ type: value, tag: keepTag });
+  };
+
+  const typeCount = (value: string) =>
+    facets.filter((f) => f.t === value && (!tag || f.g.includes(tag)) && (!recommended || f.r))
+      .length;
 
   return (
     <>
       <RailTitle>Type</RailTitle>
       <nav>
         <FilterLink
-          href={href({ type: null })}
+          href={typeHref(null)}
           label="Everything"
-          count={counts.starters}
+          count={facets.filter((f) => (!tag || f.g.includes(tag)) && (!recommended || f.r)).length}
           active={!type}
           onNavigate={onNavigate}
         />
         {TYPES.map((item) => (
           <FilterLink
             key={item.value}
-            href={href({ type: type === item.value ? null : item.value })}
+            href={typeHref(type === item.value ? null : item.value)}
             label={item.label}
-            count={counts[item.key]}
+            count={typeCount(item.value)}
             active={type === item.value}
             onNavigate={onNavigate}
           />
@@ -317,33 +375,38 @@ function StarterFilters({
         <FilterLink
           href={href({ recommended: recommended ? null : "1" })}
           label="Recommended"
+          count={inType.filter((f) => f.r && (!tag || f.g.includes(tag))).length}
           active={recommended}
           onNavigate={onNavigate}
         />
       </nav>
 
-      <RailTitle>Topic</RailTitle>
-      <nav>
-        {shown.map((item) => (
-          <FilterLink
-            key={item.tag}
-            href={href({ tag: tag === item.tag ? null : item.tag })}
-            label={item.label}
-            count={item.count}
-            active={tag === item.tag}
-            onNavigate={onNavigate}
-          />
-        ))}
-        {tags.length > 8 ? (
-          <button
-            type="button"
-            onClick={() => setAllTopics((value) => !value)}
-            className="label px-2.5 pt-1.5 text-accent hover:underline"
-          >
-            {allTopics ? "Fewer" : `All ${tags.length}`}
-          </button>
-        ) : null}
-      </nav>
+      {topics.length ? (
+        <>
+          <RailTitle>Topic</RailTitle>
+          <nav>
+            {shown.map((item) => (
+              <FilterLink
+                key={item.tag}
+                href={href({ tag: tag === item.tag ? null : item.tag })}
+                label={item.label}
+                count={item.inContext}
+                active={tag === item.tag}
+                onNavigate={onNavigate}
+              />
+            ))}
+            {topics.length > 8 ? (
+              <button
+                type="button"
+                onClick={() => setAllTopics((value) => !value)}
+                className="label px-2.5 pt-1.5 text-accent hover:underline"
+              >
+                {allTopics ? "Fewer" : `All ${topics.length}`}
+              </button>
+            ) : null}
+          </nav>
+        </>
+      ) : null}
     </>
   );
 }

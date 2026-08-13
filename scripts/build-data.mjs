@@ -624,6 +624,25 @@ const recentlyAdded = [
     })),
 ].sort((a, b) => Date.parse(b.addedAt) - Date.parse(a.addedAt));
 
+/* ------------------------------------------------------------------ facets */
+
+// Small projections the sidebar uses to count each filter option against the
+// filters already applied, so it can hide anything that would return nothing.
+const toolFacets = tools.map((tool) => ({
+  g: tool.group,
+  p: tool.pricing,
+  r: tool.recommended ? 1 : 0,
+  a: tool.approved ? 1 : 0,
+  d: tool.linkStatus === "dead" ? 1 : 0,
+}));
+
+const starterFacets = starters.map((starter) => ({
+  t: starter.type,
+  g: starter.tags.filter((tag) => tag !== "prompt-library"),
+  r: starter.recommended ? 1 : 0,
+  f: starter.featured ? 1 : 0,
+}));
+
 /* ------------------------------------------------------------ search index */
 
 const shorten = (value, max = 130) => {
@@ -704,6 +723,8 @@ const files = {
     categories,
     tags,
     types: TYPE_META,
+    toolFacets,
+    starterFacets,
     overrides: { updatedAt: overrides.updatedAt ?? null, updatedBy: overrides.updatedBy ?? null },
     recentlyAdded,
   },

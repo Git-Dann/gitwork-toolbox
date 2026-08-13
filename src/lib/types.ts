@@ -128,6 +128,9 @@ export type Meta = {
   categories: Category[];
   tags: Tag[];
   types: Record<StarterType, { slug: string; singular: string; plural: string }>;
+  /** Projections for context-aware facet counts in the sidebar. */
+  toolFacets: { g: string; p: string; r: number; a: number; d: number }[];
+  starterFacets: { t: string; g: string[]; r: number; f: number }[];
   overrides: { updatedAt: string | null; updatedBy: string | null };
   recentlyAdded: RecentEntry[];
 };
