@@ -18,6 +18,601 @@
       ],
       "addedAt": "2026-08-13T15:08:04.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "shadcn/ui",
+      "website": "https://ui.shadcn.com/",
+      "what": "Not a component dependency — a registry you copy Radix-and-Tailwind component source out of, into your own repo, where you then own and edit it. Ships blocks, charts, a theming layer and a CLI that writes the files.",
+      "category": "Design engineering / component libraries",
+      "pricing": "Free",
+      "priceDetail": "Free. MIT-licensed, no accounts, no paid tier.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The default answer for a React UI layer on client work: because the code lands in the repo rather than in node_modules, there is no upgrade treadmill and no vendor to outlive. It is also what most coding agents already know, so an agent asked for 'a dialog' produces something that matches the rest of the codebase.",
+        "Copy-in cuts both ways — you inherit maintenance of every component you pull, and there is no `npm update` to pick up upstream fixes. Worth pinning the registry version you generated from in the project README.",
+        "121k GitHub stars showing on the site. Effectively the industry default, which is the real argument for standardising on it rather than on anything more novel."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "21st.dev",
+      "website": "https://21st.dev/",
+      "what": "Marketplace of 12,000+ React and Tailwind components, templates and shadcn themes — 2,000+ marketing blocks, 2,100+ UI components — with an MCP endpoint and CLI so an agent can search and install a component without leaving the editor.",
+      "category": "Design engineering / component libraries",
+      "pricing": "Freemium",
+      "priceDetail": "The site is browsable without an account. Plan table lists three paid tiers and no free tier: Builder $6/mo, Builder + AI $15/mo (500–2,000 AI credits, top-ups +100 for $5, credits roll over), Team $7.50/seat/mo for 2–50 seats. All figures billed yearly; quarterly is dearer.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The MCP endpoint is the reason to care. Unlimited component retrieval via MCP on any paid tier means an agent building a marketing page pulls real components instead of inventing markup — which is where most agent-built pages fall apart.",
+        "Marketplace, not a library: quality varies by contributor, so it wants review before anything reaches a client site. There is no single maintainer standing behind an individual component.",
+        "The 21st AI half (multi-model generation, sandbox code mode) is a separate product from the marketplace and priced by credits. Buy the marketplace tier for the components; do not assume the AI credits are worth the difference until someone has tested them."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "React Bits",
+      "website": "https://www.reactbits.dev/",
+      "what": "Collection of animated, interactive React components — text effects, backgrounds, transitions — offered in JS and TS variants with and without Tailwind, copied in by hand or via a CLI.",
+      "category": "Design engineering / component libraries",
+      "pricing": "Free",
+      "priceDetail": "Free. Licensed MIT + Commons Clause: commercial use of the components in a product is allowed, selling or redistributing the components themselves is not.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Read the licence before shipping. MIT + Commons Clause permits use in client sites and products, but forbids selling, sublicensing or redistributing the components alone, in a bundle, or as a port — so these must not end up inside a Gitwork starter kit or template we hand on or resell.",
+        "45,443 stars and a push yesterday, but a single maintainer (David Haz). Fine for copy-in components, where a stalled repo costs us nothing.",
+        "Best-in-class for the decorative layer — the text reveals and background effects a landing page needs — which is exactly the work that otherwise eats a day of hand-rolled motion code."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Fancy Components",
+      "website": "https://www.fancycomponents.dev/",
+      "what": "Copy-in React components and microinteractions built on Motion and Tailwind — physics-driven text, cursor effects, elastic drags. Deliberately over-the-top rather than a general-purpose UI kit.",
+      "category": "Design engineering / motion",
+      "pricing": "Free",
+      "priceDetail": "Free. MIT licence.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "MIT means no restriction on reuse in our own starters, unlike React Bits — worth knowing when picking which library a Gitwork template pulls from.",
+        "3,073 stars and last pushed 2026-03-14, so about five months quiet at the time of adding. Copy-in code, so a stalled repo is a low risk; treat anything you copy as ours to maintain.",
+        "One person (Daniel Petho). Use it for a specific effect a page needs, not as the foundation of a design system."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Motion Primitives",
+      "website": "https://motion-primitives.com/",
+      "what": "Copy-in motion components for React built on Motion and Tailwind — animated lists, dialogs, cursors, text effects — aimed at the layer between a component library and hand-written animation code.",
+      "category": "Design engineering / motion",
+      "pricing": "Free",
+      "priceDetail": "Free. MIT licence.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "linkCheck": "Blocked bot check (likely OK)",
+      "notes": [
+        "Assessed from the GitHub repo, not the docs site: motion-primitives.com returned 429 behind a Vercel security checkpoint on every attempt, so nobody here has read the component docs yet. Open it in a browser before relying on it.",
+        "The repo states 'This project is in beta. Expect new components to be released regularly and significant updates to the code.' Copy-in code from a beta project means breaking changes are our problem, not an upgrade path.",
+        "5,952 stars, MIT, last pushed 2026-03-19 — same five-month quiet spell as Fancy Components, same single-maintainer profile (ibelick)."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Anime.js",
+      "website": "https://animejs.com/",
+      "what": "General-purpose JavaScript animation engine — timelines, springs, scroll-linked animation, SVG morphing, WAAPI output — driven from one API rather than tied to a framework.",
+      "category": "Design engineering / motion",
+      "pricing": "Free",
+      "priceDetail": "Free. MIT licence (animejs 4.5.0 on npm).",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "v4 is a full rewrite and is MIT-licensed on npm, which matters because v4 spent time as sponsorware and older write-ups still say it is paid. Check the licence field, not the blog posts.",
+        "The reason to reach for it over Motion: it is framework-agnostic, so it covers the Webflow, Framer-embed and plain-HTML work where a React-only motion library is no use.",
+        "Effectively one maintainer (Julian Garnier) on a library used everywhere. Low risk — it is a build-time dependency with no service behind it."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "NumberFlow",
+      "website": "https://number-flow.barvian.me/",
+      "what": "One component that animates a number changing — digit-by-digit transitions with correct formatting via Intl.NumberFormat, dependency-free, screen-reader friendly. React, Vue and Svelte builds.",
+      "category": "Design engineering / motion",
+      "pricing": "Free",
+      "priceDetail": "Free. MIT licence (@number-flow/react 0.6.2 on npm).",
+      "usefulness": "High",
+      "buildVerdict": "Weekend build",
+      "notes": [
+        "Narrow on purpose, and worth it: animated counters and price toggles appear on nearly every landing page and dashboard we build, and hand-rolled ones almost always break tabular alignment, currency formatting or the accessibility tree. This gets all three right.",
+        "Accessible by default — it renders a plain number for assistive tech and animates only the visual layer. That is the part a weekend build gets wrong.",
+        "Single maintainer (Maxwell Barvian), 7.6k on GitHub. It is a small MIT dependency with no service attached, so the downside of it going quiet is that we vendor it."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Rive",
+      "website": "https://rive.app/",
+      "what": "Editor plus runtimes for interactive vector animation: build a state machine in the editor, export a .riv file, drive it from code at runtime. Ships runtimes for web, iOS, Android, Flutter, React Native and game engines.",
+      "category": "Design engineering / motion graphics",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0/seat (3 collaborative files, no .riv export). Cadet $9/seat/mo, 3 seats max, unlimited files and .riv export. Voyager $32/seat/mo, 25 seats max, adds Libraries and embed hosting. Enterprise $120/seat/mo above $10M revenue. Agent credits are extra: $20/seat/mo on Voyager, $40/seat/mo on Enterprise.",
+      "usefulness": "High",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The distinction that matters against Lottie: a .riv file carries a state machine, so the animation responds to input at runtime instead of playing a fixed sequence. That is how you ship a genuinely interactive illustration to both web and native from one asset.",
+        "Export is behind the paid tier — the free plan cannot produce a .riv — so any client project using Rive needs at least Cadet at $9/seat/mo from day one. Budget it, do not discover it.",
+        "Real production credibility (Spotify Wrapped, Duolingo). The cost is that the source of truth lives in Rive's editor rather than in our repo: whoever built the file owns it, and offboarding means re-authoring."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Lottielab",
+      "website": "https://www.lottielab.com/",
+      "what": "Browser editor for Lottie animations — import from Figma or SVG, animate, export .lottie/JSON, GIF or MP4, with hosting on a CDN. Aimed at product teams rather than After Effects animators.",
+      "category": "Design engineering / motion graphics",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier: unlimited files, Lottie and SVG upload, Figma import, GIF and MP4 export. Pro $12 per editor/month billed annually adds Lottie export, HD and 4K video, team library, comments, file-size optimisation and CDN hosting. Enterprise on request.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Lottie export is the paid feature, and Lottie export is the entire point — the free tier is a viewer and a GIF exporter. Treat $12/editor/month as the real price of using it on client work.",
+        "The Figma import path is what makes it usable by a designer without After Effects, which is the gap it fills against Rive: simpler tool, dumber output. Lottie plays a fixed sequence and does not react to input.",
+        "Their CDN hosting is convenient and a dependency — a client site pulling a .lottie from Lottielab breaks if the account lapses. Self-host the file in the repo instead."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Unicorn Studio",
+      "website": "https://www.unicorn.studio/",
+      "what": "Layer-based editor for real-time WebGL scenes — 75+ configurable effects, 3D models, extruded text and SVG, pointer and scroll interactivity — published as an embed or exported as JSON for its runtime. Layers rather than a shader node graph.",
+      "category": "Design engineering / motion graphics",
+      "pricing": "Freemium",
+      "priceDetail": "Free: all 75+ effects, up to 8 publishes with Unicorn branding, personal and non-commercial use only. Legend $168/year or $20/mo: commercial licence, unlimited publishes with no watermark, JSON export, custom 3D models and fonts, versioning, 200 Unicorn AI credits a month.",
+      "usefulness": "High",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The free tier is explicitly personal and non-commercial. Any client scene needs Legend at $168/year — using the free plan on paid work is a licence breach, not a grey area.",
+        "Redistribution is prohibited on every plan, Legend included: we may use scenes in client deliverables, but we cannot bundle the Unicorn runtime into a Gitwork template or starter kit we hand on. That rules it out of anything productised.",
+        "The honest alternative to hand-written shaders for hero sections — a designer can build a gradient or fluid background in an afternoon that would otherwise be a week of GLSL. Watch the performance guide; these ship real GPU cost to mobile."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Jitter",
+      "website": "https://jitter.video/",
+      "what": "Browser motion tool aimed at social and product marketing output — import Figma frames, animate on a simple timeline, export 4K video, GIF or Lottie. Templates rather than a blank canvas.",
+      "category": "Design engineering / motion graphics",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier: unlimited drafts, 3 workspace files, video/GIF/Lottie export capped at 720p 30fps, limited AI credits. Pro is priced per editor/month billed annually and Team above it — both figures render client-side and were not in the served page, so read them in-app before committing.",
+      "usefulness": "Medium",
+      "buildVerdict": "Small project (1-2 weeks)",
+      "notes": [
+        "Fills the gap between 'export a static frame from Figma' and 'open After Effects' for launch and announcement assets — the same surface posts.design covers as reference. 720p/30fps on the free tier means the free plan is for trying it, not shipping.",
+        "The Figma import is the whole workflow: it wants the design to exist already, which suits how we work and makes it useless as a design tool in its own right.",
+        "Pricing figures unverified — the tier structure is published but the numbers are injected by JavaScript. Do not quote a price to a client from this listing."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "tldraw",
+      "website": "https://tldraw.com/",
+      "what": "Infinite-canvas SDK for React — the whiteboard at tldraw.com is the demo. Multiplayer sync, persistence and shape tooling included; also ships tldraw offline as a local app for you and your agents.",
+      "category": "Design engineering / canvas SDK",
+      "pricing": "Freemium",
+      "priceDetail": "tldraw.com is free to use. The SDK is free in development environments under the tldraw licence; production use needs a commercial licence with a licence key — 100-day free trial, then 'value-based pricing' by arrangement, no public figure.",
+      "usefulness": "High",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Read the licence before designing anything around it. The tldraw licence permits development, modification and bundling, but forbids production deployment without a key — a canvas feature demoed to a client on the trial becomes a sales conversation at launch, and the price is not published.",
+        "Where it earns its place is scope: multiplayer sync, undo, persistence and hit-testing on an infinite canvas are months of work, and this is the mature option. Used in production by Google, Shopify, Replit and Autodesk per their own site.",
+        "49,766 stars, pushed today, real company behind it (tldraw Inc). The free whiteboard is also the fastest way to sketch an architecture diagram with a client on a call — no signup, works on mobile."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Paper",
+      "website": "https://paper.design/",
+      "what": "Design tool built on web standards, pitched at teams shipping with agents — connects the canvas to code and data, and exposes a Paper MCP server so an agent can read and act on the design. Web app plus a desktop build.",
+      "category": "Design tools / editors",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0: unlimited viewers and editors, 100 MCP tool calls a week, limited image generation, 25MB image cap. Pro $16 per editor/month billed yearly ($20 monthly): 1M MCP calls a week, 100× image generation, video export, 100MB images. Organisations tier for SSO and custom contracts.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Unusual and worth noting: editors are free, so a whole team can collaborate at $0 — the paywall is on MCP call volume and export, not on seats. That inverts Figma's model and makes it cheap to trial on a real project.",
+        "The MCP server is the actual pitch. If an agent can query the design directly, design-to-code stops being an export step. Whether that survives contact with a real build is untested here.",
+        "Young product against an entrenched incumbent, and the file format is theirs. Do not put a client's source of truth in it yet; use it where the output is code we own."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Penpot",
+      "website": "https://penpot.app/",
+      "what": "Open-source design and prototyping platform, self-hostable, that works in SVG and CSS natively rather than in a proprietary format — so a developer can read the file's actual markup. Plugin API and libraries included.",
+      "category": "Design tools / editors",
+      "pricing": "Freemium",
+      "priceDetail": "MPL-2.0 and self-hostable at no licence cost. Hosted plans list $0/user and $7/user/month tiers, with enterprise and support figures on the same page running up to $950/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The reason it matters to us is data ownership, not features: self-hosted MPL-2.0 means a client's design files can live inside their own infrastructure, which is an answer we currently do not have for a client who will not put IP in Figma.",
+        "58,520 stars, pushed today, a real company and a funded roadmap — this is the credible open-source option, not a hobby project.",
+        "It is still behind Figma on polish and on the plugin ecosystem, and self-hosting means we operate it. Only worth proposing when the ownership requirement is real."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Mobbin",
+      "website": "https://mobbin.com/",
+      "what": "Searchable library of 400,000+ real app and web screenshots — 1,000+ iOS and web apps plus 200 sites — organised by flow (onboarding, paywall, empty state) and by UI element, with recorded animations on paid tiers.",
+      "category": "Design research / UI patterns",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier is capped at the latest 4 apps and 4 sites. Pro $10/month billed yearly (all apps, flows, animations, unlimited collections, screen downloads). Team $16 per member/month billed yearly. Finance+ add-on $399/month for 55+ finance apps.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "This is the pattern-research shortcut for client work: instead of arguing about how a paywall or an onboarding flow should behave, pull ten shipped examples in five minutes. $10/month is less than the time it saves on one project.",
+        "Free tier is a teaser — 4 apps. Assume Pro if anyone is going to actually use it.",
+        "Same IP caution as every reference library here: these are other companies' interfaces. Use them to inform structure and behaviour, never to lift layout or copy into a deliverable."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "OKLCH Colour Picker & Converter",
+      "website": "https://oklch.com/",
+      "what": "Picker and converter for OKLCH — paste a hex, RGB or HSL value and see it in perceptual colour space, with the sRGB gamut boundary drawn, the closest in-gamut fallback calculated, and a P3 preview. By Evil Martians (Andrey Sitnik and Roman Shamin).",
+      "category": "Design engineering / colour",
+      "pricing": "Free",
+      "priceDetail": "Free, no account.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The practical use is building a palette where every step is perceptually even — lightening a brand colour in HSL shifts its apparent brightness, in OKLCH it does not. That is the fix for the 'why does our hover state look muddy' problem.",
+        "It shows the sRGB fallback alongside the P3 value, which is the part people skip: an OKLCH colour outside sRGB renders differently on older displays unless you ship the fallback.",
+        "Free tool from a consultancy, no account, nothing to depend on at runtime. Pair it with the APCA contrast guidance they link rather than WCAG 2 ratios."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "color.review",
+      "website": "https://color.review/",
+      "what": "Contrast checker that plots the whole range instead of returning one number — adjust foreground and background and it shows where the pair crosses 3:1, 4.5:1 and 7:1 for text and headlines, with a shareable URL per combination.",
+      "category": "Design engineering / colour",
+      "pricing": "Free",
+      "priceDetail": "Free, no account.",
+      "usefulness": "Medium",
+      "buildVerdict": "Weekend build",
+      "notes": [
+        "Better than a pass/fail checker for the actual job, which is finding the nearest accessible version of a colour a client has already signed off. The curve shows you how far you have to move, not just that you failed.",
+        "URLs encode the pair (color.review/check/293845-FFFFFF), so an accessibility note in a PR or a client email can link to the evidence.",
+        "WCAG 2 contrast ratios only. For perceptual accuracy on light text or thin type, cross-check with APCA — the maths behind the 4.5:1 threshold is known to be wrong at the extremes."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "ray.so",
+      "website": "https://ray.so/",
+      "what": "Turns a snippet of code into a shareable image — syntax themes, background on or off, dark or light window, padding control. Raycast's own tool, and the source is MIT on GitHub.",
+      "category": "Design engineering / marketing assets",
+      "pricing": "Free",
+      "priceDetail": "Free. MIT licence (raycast/ray-so).",
+      "usefulness": "Medium",
+      "buildVerdict": "Weekend build",
+      "notes": [
+        "The fastest route from a snippet to something presentable in a deck, a case study or a launch post — the alternative is a screenshot of an editor with someone's file tree in it.",
+        "MIT and self-hostable, which matters if we want a Gitwork-themed variant for case studies rather than Raycast's default palettes.",
+        "Nothing to depend on: it renders client-side and the output is a PNG or SVG we own."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Screen Studio",
+      "website": "https://screen.studio/",
+      "what": "macOS screen recorder that applies automatic zoom on mouse actions and smooths the cursor path, so a raw capture comes out looking edited. Built for product demos and tutorials rather than meetings.",
+      "category": "Video & capture / screen recording",
+      "pricing": "Paid",
+      "priceDetail": "$29/month billed monthly, or $9/month billed yearly. One plan, all features. macOS only — Ventura 13.1+ recommended.",
+      "usefulness": "High",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The automatic zoom and cursor smoothing is the entire product, and it is the difference between a demo video a client can put on a landing page and one that looks like a support call. $9/month on annual billing against half a day in an editor per video.",
+        "macOS only, so it is a personal-machine tool, not something we can put in a client's hands if they are on Windows.",
+        "No free tier listed on the pricing section — plan for the annual figure. Effectively a solo product (Adam Pietrasiak) with a long track record and Product Hunt #1 of the year."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Raycast",
+      "website": "https://www.raycast.com/",
+      "what": "Extensible launcher replacing Spotlight — clipboard history, window management, snippets, script commands and a store of community extensions, with AI and cloud sync on the paid tier. Mac, plus a Windows beta.",
+      "category": "Mac software / launcher utility",
+      "pricing": "Freemium",
+      "priceDetail": "Free forever for individuals, including all built-in and community extensions. Pro $10/month monthly or $8/month annual (Raycast AI, unlimited notes, cloud sync, custom themes, translator). Team $15/user/month monthly or $12/user/month annual. Advanced AI add-on +$8/user/month.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The free tier is genuinely the whole launcher — clipboard history and window management alone justify installing it, and nothing is time-limited. Pro buys AI and sync, not the core.",
+        "Worth standardising on because extensions are scriptable: a Raycast extension over Foundry's API would put client and task lookup a keystroke away on every machine.",
+        "Windows is still beta, so it cannot be the answer for a mixed-OS team yet. The free plan is licensed for organisational use, so there is no compliance reason to avoid it on work machines."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Granola",
+      "website": "https://www.granola.ai/",
+      "what": "Meeting notepad that transcribes locally from the machine's audio rather than joining the call as a bot — you type sparse notes, it merges them with the transcript afterwards. Mac, Windows, mobile and an Apple Watch app.",
+      "category": "Productivity / meeting notes",
+      "pricing": "Freemium",
+      "priceDetail": "Basic $0/user/month: AI notes, limited meeting history, AI chat, shared folders, templates. Business $14/user/month: unlimited history, advanced models, integrations (Notion, Slack, HubSpot, Attio, Affinity, Zapier), MCP and API access. Enterprise $35/user/month for SSO and admin controls.",
+      "usefulness": "High",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "No bot in the call is the point, and it is a client-facing point: nothing announces itself in a prospect meeting, and there is no second participant to consent to. Compare with what Scribe already does inside Foundry before adding another notes silo.",
+        "MCP and API access are Business-tier at $14/user/month — that is the tier if we ever want meeting context flowing into Foundry rather than sitting in Granola.",
+        "Recording a client call still needs their consent regardless of whether a bot appears; the tool removes the awkwardness, not the obligation. Model-training opt-out is available on every tier, including free."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Wispr Flow",
+      "website": "https://wisprflow.ai/",
+      "what": "System-wide voice dictation that rewrites as it goes — punctuation, filler removal and tone applied to speech across any app, in 100+ languages, learning names and jargon from use. Adds a meeting notetaker on Mac.",
+      "category": "Productivity / dictation",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0/month: dictation across all apps, 100+ languages, Mac/Windows/iOS/Android, notetaker (Mac only), MCP access to notes, HIPAA-ready. Pro $15/user/month monthly or $12/user/month annual: unlimited dictations, longer meeting retention, advanced models. Enterprise on request.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Where it pays off is prompting: dictating a long, specific brief to a coding agent is several times faster than typing it, and the cleanup is what separates this from built-in dictation.",
+        "The free tier caps dictation volume rather than features, so the real cost of adopting it across the team is $12/user/month on annual billing.",
+        "$81M raised and enterprise compliance claims (SOC 2 Type II, ISO 27001) — but everything dictated passes through their processing. Model-training opt-out exists on every tier; check it before dictating anything under a client NDA."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "LocalSend",
+      "website": "https://localsend.org/",
+      "what": "Cross-platform file transfer over the local network with no cloud, no account and no internet — Windows, macOS, Linux, Android and iOS, using an encrypted peer-to-peer connection between devices on the same Wi-Fi.",
+      "category": "Mac software / file transfer",
+      "pricing": "Free",
+      "priceDetail": "Free and open source. No ads or trackers per the project's own claim.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The practical case is AirDrop across an OS boundary: getting a build, a video or a set of assets from a Mac to an Android test device or a Windows machine without uploading a client's files to a third party.",
+        "Because it never leaves the local network, it is the safe answer for moving anything covered by an NDA between machines — no service to audit, no retention policy to read.",
+        "70k+ stars and 5M+ downloads claimed on the site. Open source with contributors rather than a company; a stalled release cycle costs nothing since the protocol is local."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "The Component Gallery",
+      "link": "https://component.gallery/",
+      "resourceType": "Directory",
+      "category": "Design engineering / UI reference",
+      "takeaway": "60 interface components cross-referenced against 95 published design systems, with 2,671 concrete examples — so for any component you can read how Carbon, Polaris, Material and 90 others named it, structured it and what states they defined. Also lists the design systems themselves.",
+      "whatToDo": "Reference before naming or specifying a component. Action: when a client design system needs a component we have not built before, open its page here first and steal the naming and the state list rather than inventing them.",
+      "cost": "Free, no account.",
+      "usefulness": "High",
+      "notes": [
+        "The value is settling arguments cheaply: 'is it a Toast or a Snackbar, and does it need a dismiss action' becomes a five-second lookup across 95 systems instead of a meeting.",
+        "It is a reference index, not code — every example links out to someone else's documentation, so nothing here ships.",
+        "Maintained by one person (Iain Bean) and up to date at the time of adding. Worth screenshotting anything a client design system depends on."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Easing Functions Cheat Sheet",
+      "link": "https://easings.net/",
+      "resourceType": "Docs & reference",
+      "category": "Design engineering / motion",
+      "takeaway": "Every standard easing curve — the ease-in/out/inOut families plus back, elastic and bounce — animated side by side with its graph, its cubic-bezier CSS value and its maths, so you can pick by watching rather than by name.",
+      "whatToDo": "Reference during motion work. Action: when a transition feels wrong, open this, find the curve that matches the intent, and paste the cubic-bezier value rather than nudging numbers.",
+      "cost": "Free. The site's own code is GPL-3.0.",
+      "usefulness": "High",
+      "notes": [
+        "The reason to keep it to hand: naming is the problem in motion work — 'make it snappier' is unactionable, 'easeOutBack, 400ms' is a spec. This turns taste into a value you can put in a PR.",
+        "Copy the cubic-bezier values, not the site's source. The page code is GPL-3.0, which would be a licensing problem in a client repo; the curves themselves are just numbers.",
+        "Static reference, no dependency, nothing to break."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Design Spells",
+      "link": "https://designspells.com/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / micro-interactions",
+      "takeaway": "A catalogue of individual delightful details captured from shipped products — easter eggs, transitions, confetti, Dynamic Island tricks, 404s — each tagged by type and platform (Mobile, Desktop, Interaction, Animation, Skeuomorphic). One detail per entry, not whole screens.",
+      "whatToDo": "Reference when a build needs one memorable moment. Action: pick a single spell to implement on the next Gitwork or client site rather than scattering effects across it.",
+      "cost": "Free. Newsletter and sponsor slots; no paywall.",
+      "usefulness": "Medium",
+      "notes": [
+        "Useful precisely because it is granular: the entries are things a developer can implement in an afternoon, unlike a full-page inspiration shot that implies a redesign.",
+        "Run by two people (Chester and Duncan) with a newsletter attached — assume it can go quiet. Capture anything worth reusing rather than linking to it from internal docs.",
+        "Every entry is another product's craft. Take the idea and rebuild it; do not copy assets."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "60fps.design",
+      "link": "https://60fps.design/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / micro-interactions",
+      "takeaway": "2,024 screen recordings of interaction and animation detail from 475 best-in-class iOS and web apps, plus 77 app sites, 25 motion studies and a handful of code snippets. Recordings rather than stills, and it exposes an MCP endpoint so an agent can query the collection.",
+      "whatToDo": "Reference for motion specs. Action: when specifying a transition for a client build, find the closest recording here and attach it to the ticket — a video beats an adjective.",
+      "cost": "Free to browse. No pricing page published.",
+      "usefulness": "Medium",
+      "notes": [
+        "The MCP endpoint is the interesting part and the reason this is worth knowing over the other inspiration sites: an agent implementing an interaction can pull real reference instead of guessing at timings.",
+        "No pricing page exists, so 'free' is the current state rather than a commitment — the collection may gate later.",
+        "Recordings of other companies' products. Fine as a motion spec, not as an asset source."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Recent (formerly Godly)",
+      "link": "https://recent.design/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / websites",
+      "takeaway": "Daily curation of exceptional websites, split into browsable sections for Websites, OG Images, App Screenshots, App Icons, Resources, Tools, Skills and Jobs, filtered by discipline (Interface, Branding, Typography, Motion, Editorial, Packaging). godly.website now redirects here.",
+      "whatToDo": "Reference at the start of a site project. Action: use the OG Images and App Icons sections specifically — those are the two assets we produce for every client and the two with the least reference material elsewhere.",
+      "cost": "Free to browse; account for saving. No pricing page published.",
+      "usefulness": "Medium",
+      "notes": [
+        "The OG image and app icon sections are the genuinely differentiated bit. General website inspiration is oversupplied; a curated wall of 379 OG images is not.",
+        "Note the redirect: anything in our notes pointing at godly.website is now Recent, so the old bookmark is stale rather than dead.",
+        "3,498 members at the time of adding, with signups climbing fast — an early-stage curation site, so screenshot what matters."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Saaspo",
+      "link": "https://saaspo.com/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / websites",
+      "takeaway": "3,097 SaaS pages broken down into 716 individual sections, plus 379 OG images and 46 templates, filterable so you can look at pricing sections or testimonial blocks in isolation rather than whole homepages.",
+      "whatToDo": "Reference when specifying a marketing site. Action: pull the relevant section type (pricing, feature grid, social proof) before writing the wireframe, so the structure argument happens against 20 shipped examples.",
+      "cost": "Free to browse; funded by sponsor slots. No pricing page (returns 404).",
+      "usefulness": "Medium",
+      "notes": [
+        "Section-level filtering is what separates it from Awwwards-style galleries: our work is usually 'this pricing table is not converting', not 'redesign everything', and this indexes at that granularity.",
+        "Narrow to SaaS, which covers a good share of our client base and none of the rest.",
+        "Sponsor-funded with no pricing page — free today, no commitment. Other companies' pages, so structure-only input as ever."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Cosmos",
+      "link": "https://www.cosmos.so/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / reference management",
+      "takeaway": "Visual reference tool where you build private connected collections and search across everything by colour or by visual similarity rather than by tag. Includes an AI-content filter with show, blur and hide settings, which no other reference library here offers.",
+      "whatToDo": "Reference management. Action: trial it against GatherOS for holding client mood boards, and turn the AI filter to hide when collecting craft references.",
+      "cost": "Free to join. Paid tiers are not published on any page we could read — the pricing route renders nothing without JavaScript.",
+      "usefulness": "Medium",
+      "notes": [
+        "Search by colour and by visual similarity is the actual feature. Finding 'the reference with that exact green' across a year of saves is the thing tag-based tools cannot do.",
+        "The AI-content toggle matters more than it sounds: an inspiration library quietly filling with generated images is worthless for craft reference, and this is the only one here that lets you exclude it.",
+        "Pricing unverified — /pricing, /about and the help centre all render client-side and returned nothing readable, so assume a paid tier exists and check in-app before the team standardises on it."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "UNCUT.wtf",
+      "link": "https://uncut.wtf/",
+      "resourceType": "Directory",
+      "category": "Typography / free fonts",
+      "takeaway": "163 contemporary typefaces, all free for commercial use, filtered by classification — 66 sans, 47 display, 27 serif, 23 monospace. Curated for current type rather than comprehensive, which is why the hit rate is high.",
+      "whatToDo": "Source fonts here before proposing a licensed family. Action: on the next brand or site project, shortlist from UNCUT first and check each font's own licence file before it reaches a client deliverable.",
+      "cost": "Free for commercial use. All fonts remain copyright of their respective creators.",
+      "usefulness": "High",
+      "notes": [
+        "Directly saves client budget: a display face with real personality at no licence cost, and no per-domain webfont renewal to explain to a client three years later.",
+        "'Free for commercial use' is the catalogue's framing, but each typeface carries its own licence from its own designer. Read the individual licence before shipping — some restrict webfont use or redistribution even when the desktop file is free.",
+        "One curator, running since 2021. The fonts are downloaded files, so the catalogue disappearing costs us nothing already in a project."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Fontshare",
+      "link": "https://www.fontshare.com/",
+      "resourceType": "Directory",
+      "category": "Typography / free fonts",
+      "takeaway": "100 font families from the Indian Type Foundry, free for personal and commercial use, with variable versions, OpenType feature listings and a web API for serving them. Professionally drawn families rather than a mixed catalogue — Satoshi, Switzer and General Sans come from here.",
+      "whatToDo": "First stop for a free workhorse sans or serif. Action: use the API's licence field to confirm each family before it ships, and self-host the files rather than hotlinking their CDN on a client site.",
+      "cost": "Free. Every family in their API carries license_type \"itf_ffl\" — the ITF Free Font Licence.",
+      "usefulness": "High",
+      "notes": [
+        "The quality gap against most free catalogues is the point: these are foundry-drawn families with proper weights and OpenType features, so they hold up as a client's primary typeface rather than only as display type.",
+        "The licence page itself is JavaScript-only and did not render for us, so we have confirmed the licence type (itf_ffl) from their API but not read the terms. Read them before a client site depends on it.",
+        "One foundry behind all 100 families, which cuts both ways — consistent quality, single point of failure. Self-host the woff2 files in the repo."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "skills.sh",
+      "link": "https://www.skills.sh/",
+      "resourceType": "Directory",
+      "category": "AI coding",
+      "takeaway": "Leaderboard and installer for agent skills — `npx skills add owner/repo` pulls a skill into your agent, and the directory ranks skills by anonymous install telemetry from that CLI. Supports packs, which bundle public and private skills behind one install command. The CLI is open source at vercel-labs/skills.",
+      "whatToDo": "Action: publish the Foundry starters worth sharing as a skills pack, and check the leaderboard before writing a skill from scratch — install counts are a better signal of what actually works than a README.",
+      "cost": "Free. CLI is open source (vercel-labs/skills).",
+      "usefulness": "High",
+      "notes": [
+        "Packs are the directly useful bit for us: a private pack of Gitwork skills installed with one command on every machine and in every client repo, instead of copying .claude directories by hand.",
+        "The ranking is install telemetry, not review — popular is not the same as good, and a skill that installs into an agent gets to run instructions on our machines. Read any skill's source before adding it.",
+        "Vercel Labs project, so treat it as an experiment with a company behind it rather than a supported product."
+      ],
+      "addedAt": "2026-08-13T19:07:46.000Z",
+      "addedBy": "Dan"
     }
   ]
 }
