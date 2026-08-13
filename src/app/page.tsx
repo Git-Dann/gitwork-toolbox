@@ -18,7 +18,6 @@ import {
   picks,
   recentlyAdded,
   recommended,
-  shortlist,
   starterCollections,
   toolkits,
   tools,
@@ -26,7 +25,6 @@ import {
 } from "@/lib/data";
 
 export default function HomePage() {
-  const worthMoney = shortlist.find((section) => section.number === 1);
   const recommendedAll = [
     ...recommended.tools.map((tool) => ({
       href: `/tools/${tool.slug}`,
@@ -130,36 +128,6 @@ export default function HomePage() {
               {recommendedAll.map((item) => (
                 <CompactRow key={item.href} {...item} />
               ))}
-            </div>
-          </Container>
-        </Section>
-      ) : null}
-
-      {/* ----------------------------------------------------------- shortlist */}
-      {worthMoney ? (
-        <Section className="border-t border-hair">
-          <Container>
-            <SectionHeading
-              eyebrow="Buy · read · build · park"
-              title="Shortlist"
-              action={{ href: "/shortlist", label: "All 5 sections" }}
-            />
-            <div className="surface overflow-hidden">
-              {worthMoney.rows.map((row) => {
-                const [item, cost, action] = row.map((cell) => cell.join(" "));
-                return (
-                  <div
-                    key={item}
-                    className="grid gap-1.5 border-b border-hair p-4 last:border-0 sm:grid-cols-[14rem_1fr] sm:gap-6"
-                  >
-                    <div>
-                      <p className="text-sm font-medium">{item}</p>
-                      <p className="mt-1 font-mono text-[11px] text-mute">{cost}</p>
-                    </div>
-                    <p className="text-sm leading-relaxed text-soft">{action}</p>
-                  </div>
-                );
-              })}
             </div>
           </Container>
         </Section>

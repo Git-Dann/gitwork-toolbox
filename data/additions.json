@@ -613,6 +613,528 @@
       ],
       "addedAt": "2026-08-13T19:07:46.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Radix UI",
+      "website": "https://www.radix-ui.com/",
+      "what": "The unstyled, accessible primitives shadcn/ui is built on — dialog, popover, select, dropdown and the rest, each handling focus trapping, keyboard interaction and ARIA, with no styling opinions. Also ships Themes, an Icons set and the Colors scales.",
+      "category": "Design engineering / component libraries",
+      "pricing": "Free",
+      "priceDetail": "Free and open source, MIT. Maintained by WorkOS.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Worth listing separately from shadcn/ui because it is the layer underneath: when a copied shadcn component behaves oddly on keyboard or screen reader, the answer is in Radix's docs, not shadcn's.",
+        "The accessibility work is the product. Focus management on a nested dialog, or type-ahead on a select, is a fortnight of subtle bugs to reimplement and the reason not to hand-roll these.",
+        "Backed by a funded company rather than a lone maintainer, which is unusual in this list and matters for anything a client depends on for years."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Sonner",
+      "website": "https://sonner.emilkowal.ski/",
+      "what": "One toast component for React, by Emil Kowalski — `npm install sonner`, render `<Toaster />` at the root, call `toast()` anywhere. Stacking, swipe-to-dismiss and promise states are handled.",
+      "category": "Design engineering / component libraries",
+      "pricing": "Free",
+      "priceDetail": "Free, MIT.",
+      "usefulness": "High",
+      "buildVerdict": "Weekend build",
+      "notes": [
+        "It is the toast shadcn/ui itself now recommends, so standardising on it means an agent-written component and a hand-written one agree on how notifications work.",
+        "Narrow and finished — the promise API (`toast.promise`) covers the loading/success/error pattern that otherwise gets rebuilt badly on every project.",
+        "One maintainer, but it is a small MIT dependency with no service behind it, so the downside is vendoring it."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "dnd kit",
+      "website": "https://dndkit.com/",
+      "what": "Drag-and-drop toolkit written in TypeScript — framework-agnostic core with first-class React, Vue, Svelte and Solid packages, plus sortable lists, custom sensors, modifiers and a plugin layer.",
+      "category": "Design engineering / component libraries",
+      "pricing": "Free",
+      "priceDetail": "Free and open source.",
+      "usefulness": "High",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Drag-and-drop is the classic underestimate: pointer, touch and keyboard sensors, collision detection, auto-scroll and accessible announcements are months of work, and clients ask for reorderable lists constantly.",
+        "Keyboard sensors mean a sortable list is operable without a mouse, which is the difference between a feature and an accessibility complaint.",
+        "The rewrite splits into a framework-agnostic core with per-framework bindings, so a Vue or Svelte client project is no longer a reason to pick a different library."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "SVGL",
+      "website": "https://svgl.app/",
+      "what": "Library of brand logos as clean SVGs, categorised (AI 67, Adobe 56, Design 62, Database 23 and so on), with light and dark variants, a public API, a shadcn/ui registry entry and editor extensions.",
+      "category": "Design engineering / icons",
+      "pricing": "Free",
+      "priceDetail": "Free, open source, no account.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Solves a job we do on nearly every client site — the logo wall, the integrations grid, the tech-stack strip — where the alternative is hunting press kits and tracing PNGs.",
+        "The API and the shadcn registry mean an agent building a logo section can fetch the real mark instead of inventing one.",
+        "Third-party trade marks. Fine for showing genuine integrations or clients; get permission before implying an endorsement, and check each brand's own guidelines for a logo you are putting in front of the public."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Phosphor Icons",
+      "website": "https://phosphoricons.com/",
+      "what": "Icon family in six weights — thin through to fill, plus duotone — designed as one system so a whole interface can shift weight without redrawing anything. By Helena Zhang and Tobias Fried, with React, Vue, Svelte, Flutter and web-component packages.",
+      "category": "Design engineering / icons",
+      "pricing": "Free",
+      "priceDetail": "Free, MIT.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The six-weight system is the reason to choose it over Lucide or Heroicons: a dense dashboard and a marketing page can share an icon set and still look right, because weight carries the difference.",
+        "MIT, so unlike most icon sets there is nothing to check before it ships in a client deliverable or a Gitwork starter.",
+        "The browsing site needs JavaScript and served nothing readable without it, so the family was assessed from its own description and packages rather than by browsing the set. Open it in a browser to pick icons."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Iconbuddy",
+      "website": "https://iconbuddy.com/",
+      "what": "Search across 300,000+ icons from open-source sets in one place — Phosphor, Tabler, Material, Solar, Lucide and dozens more — recolour and resize in the browser, then export SVG, PNG, JSX or Base64. Figma, VS Code, Framer and Chrome plugins.",
+      "category": "Design engineering / icons",
+      "pricing": "Freemium",
+      "priceDetail": "Free search and download. Pro $6.99/month, $49.99/year, or $120 once for lifetime. Team from 3 seats × $39/year = $117/year.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The value is the search across sets: finding the one icon that matches a client's existing set without installing five libraries to compare.",
+        "The icons themselves come from their original open-source projects and keep those licences — Iconbuddy sells the search and the export, not the artwork, so check the source set's licence for anything unusual.",
+        "$120 lifetime is the sane option if anyone here uses it weekly; the monthly is hard to justify against free browsing on the source sites."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Thiings",
+      "website": "https://www.thiings.co/",
+      "what": "Collection of 10,000+ AI-generated 3D icons in a single consistent style — objects, tools, food, tech — downloadable individually or as the whole set with JSON metadata.",
+      "category": "Design engineering / illustration",
+      "pricing": "Freemium",
+      "priceDetail": "Personal $0: individual downloads, non-commercial only, attribution required. Indie $49 lifetime for businesses under $200k/year revenue. Business $199 lifetime for over $200k. Enterprise above $2M/year or 50+ staff. Reselling the icons as assets is excluded on every tier.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Read the licence before it touches client work. The free tier is non-commercial with attribution, and their own terms say that when you are buying on behalf of a client you pick the tier matching the client's revenue, not ours — so a big client's site needs the $199 tier even though we bought it.",
+        "One consistent 3D style across 10,000 objects is genuinely hard to source; the usual alternative is commissioning renders or accepting a mismatched stock set.",
+        "AI-generated artwork, so treat provenance as unsettled for anything a client will trade mark or put on packaging."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "unDraw",
+      "website": "https://undraw.co/",
+      "what": "Open-source SVG illustration collection by Katerina Limpitsouni — pick a hex colour on the site and every illustration recolours to it before download.",
+      "category": "Design engineering / illustration",
+      "pricing": "Free",
+      "priceDetail": "Free, open licence, no attribution required.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "No attribution required is the differentiator against most free illustration sets, and it is what makes it usable on a client deliverable without a credits line.",
+        "The on-site recolour means a set can be pulled straight into a client's brand colour instead of arriving in someone else's purple.",
+        "So widely used that it reads as a placeholder to anyone in the industry. Fine for internal tools, empty states and prototypes; a poor choice for a brand-led marketing page."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Storyset",
+      "website": "https://storyset.com/",
+      "what": "Customisable illustrations with an online editor — change colours, swap components and animate a scene, then export as static SVG or an animated asset. Themed sets for business, education, medical, technology and people, plus a Figma plugin.",
+      "category": "Design engineering / illustration",
+      "pricing": "Free",
+      "priceDetail": "Free to use and download. Run by Freepik; attribution terms were not readable in the served page, so check the licence on the asset before it ships.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The animation export is the part unDraw does not do — an animated empty state or onboarding step without opening After Effects.",
+        "Freepik's free assets normally require attribution unless you hold a subscription, and the licence page did not render for us. Confirm before putting one on a client site, because retro-fitting a credit line is awkward.",
+        "Same house-style problem as unDraw, more so. Rated Low deliberately: useful for speed on internal or throwaway work, not for anything brand-led."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "CleanShot X",
+      "website": "https://cleanshot.com/",
+      "what": "Screenshot and screen-recording app for Mac with the parts the built-in tool lacks — scrolling capture, annotation, self-timer, hidden desktop icons, OCR, and an upload that returns a shareable link.",
+      "category": "Video & capture / screen recording",
+      "pricing": "Paid",
+      "priceDetail": "$29 one-time for the Mac app and 1GB cloud, keep it forever; updates optional at $19/year after the first year. App + Cloud Pro $8 per user/month billed annually, or $10/month monthly. 30-day money-back guarantee.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The one-time $29 licence with optional renewal is unusually honest pricing, and it makes this the cheap default for every machine here — the app keeps working if you never renew.",
+        "Scrolling capture and annotation are the day-to-day wins: a full-page screenshot of a client site with callouts, in one pass, instead of stitching three images.",
+        "Different job from Screen Studio, which is for polished demo video. This is for the twenty captures a day that go into Slack, tickets and QA notes."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Shottr",
+      "website": "https://shottr.cc/",
+      "what": "Small, fast Mac screenshot app aimed at people who care about pixels — scrolling screenshots, OCR, annotation, and measurement tools for checking spacing and colour against a design. A 2.3MB download.",
+      "category": "Video & capture / screen recording",
+      "pricing": "Free",
+      "priceDetail": "Free to download and use; the site sells a licence via its Buy page, but no figure was present in the served pricing text.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The measurement instruments are the reason it is here rather than CleanShot: measuring spacing straight off the screen is exactly the front-end QA loop when a build is drifting from the design.",
+        "2.3MB and native, so it is a reasonable thing to put on every machine even alongside CleanShot X.",
+        "Pricing unverified — free is what the download page offers, and the licence figure was not readable, so do not quote a cost from this listing."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Xnapper",
+      "website": "https://xnapper.com/",
+      "what": "Mac screenshot app that beautifies automatically — balanced padding, background, rounded corners and, notably, automatic redaction of detected emails and sensitive text before you share.",
+      "category": "Video & capture / screen recording",
+      "pricing": "Paid",
+      "priceDetail": "One-time: Basic $29.99 (1 Mac), Personal $54.99 (2 Macs), Standard $79.99 (3 Macs), each with a year of updates and optional renewal at 40% off. Team $5 per device/month billed annually.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Automatic redaction is the feature worth paying for on client work — screenshots of a staging environment routinely leak real customer emails into a Slack channel or a deck.",
+        "Overlaps heavily with CleanShot X at more than twice the price. Pick one; this wins only if the auto-redaction and instant beautifying matter more than scrolling capture and cloud links.",
+        "Per-device licensing means a laptop and a studio Mac need the $54.99 tier, not the $29.99."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Cap",
+      "website": "https://cap.so/",
+      "what": "Open-source Loom alternative for macOS, Windows and Linux. Instant Mode gives a shareable link in seconds; Studio Mode is a local editor with zoom and layout controls. Self-hostable, so recordings can stay on infrastructure you own.",
+      "category": "Video & capture / screen recording",
+      "pricing": "Freemium",
+      "priceDetail": "Free forever for personal use, unlimited local recordings. Desktop Licence $29/year, perpetual. Cap Pro $8.16 per user/month for the hosted side. Open source on GitHub and self-hostable.",
+      "usefulness": "High",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Self-hosting is the argument. A walkthrough of a client's admin panel recorded to Loom's servers is their data on a third party's infrastructure; the same recording on our own instance is not a conversation with their security team.",
+        "Cross-platform, unlike Screen Studio and CleanShot, so it is the one screen-recording answer we can give a client on Windows.",
+        "Free tier is genuinely usable for local recordings — the paid tiers buy hosted sharing and team features, not the recorder."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Arcade",
+      "website": "https://www.arcade.software/",
+      "what": "Interactive product demos: capture a flow in the browser extension or desktop app and it becomes a clickable walkthrough rather than a video, with branching, CTAs, personalisation and an MCP endpoint. Also generates AI voiceovers and videos from the same capture.",
+      "category": "Video & capture / screen recording",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0/month: unlimited AI demos, 1 published demo, 1 published video, 200 AI credits a month. Growth $42.50 per seat/month billed yearly ($50 monthly): branding, translations, branching, CTAs and insights. Enterprise on request.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The pitch that matters for us is client-facing: an interactive demo of a build we shipped is a better case-study artefact than a video, because the reader drives it and it survives on a phone.",
+        "The free tier's one published demo makes it a trial, not a plan — real use starts at $42.50 a seat.",
+        "Demos are hosted by Arcade and embedded, so a case study built on it dies if the account lapses. Keep a video capture of anything that matters."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Rotato",
+      "website": "https://rotato.app/",
+      "what": "3D mockup generator for Mac — drop a screenshot or a live URL onto a device model, then rotate, light and animate it from any angle and export 4K stills or video. 30+ devices and 80+ ready-made templates.",
+      "category": "Design engineering / marketing assets",
+      "pricing": "Freemium",
+      "priceDetail": "Free to download and use on any Mac. Paid plans are listed at $239/year and $861/year; the pricing page frames these against hiring a 3D artist rather than itemising what each tier includes, so confirm in-app before buying.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Fills the app-store-screenshot and case-study-hero job: an animated device mockup of a client build, without opening Blender or buying a template pack that dates in a year.",
+        "The device library is the perishable part — a mockup on last year's iPhone reads as stale, and staying current is exactly what the subscription buys.",
+        "Pricing is the least clear of anything in this batch. The free tier is real and worth trying first; get the tier details in writing before it goes on a client budget."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "FontBase",
+      "website": "https://fontba.se/",
+      "what": "Font manager for Mac, Windows and Linux — activate and deactivate families without installing them system-wide, organise by collection, preview with your own text, and pull in Google Fonts directly.",
+      "category": "Typography / free fonts",
+      "pricing": "Freemium",
+      "priceDetail": "Core font management is free on all three platforms. The Awesome tier adds features from around $3/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The practical case is per-project activation: a Mac with 400 client fonts installed slows every design app and pollutes every font menu. Activating only the families for the project in hand fixes that.",
+        "Cross-platform, which matters if anyone here works on Windows — most font managers are Mac-only.",
+        "It manages fonts, it does not license them. Keeping a client's licensed families organised does not make them ours to reuse on the next project."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Velvetyne Type Foundry",
+      "link": "https://velvetyne.fr/",
+      "resourceType": "Directory",
+      "category": "Typography / free fonts",
+      "takeaway": "A libre type foundry, not a catalogue — French collective releasing experimental typefaces under free licences, with the sources on GitLab, an In Use section showing where each face has shipped, and workshops and writing about the politics of type.",
+      "whatToDo": "Source display type here when a brand needs a face with a point of view. Action: check each family's licence file on GitLab (they vary) before it ships, and use the In Use section to see how a face behaves at real sizes.",
+      "cost": "Free, libre licences. Donation-funded.",
+      "usefulness": "Medium",
+      "notes": [
+        "Different job from Fontshare and UNCUT: these are experimental, opinionated faces — the ones that make a brand look like it was designed rather than configured.",
+        "Sources on GitLab means a face can be modified for a client, which almost no commercial licence allows. That is a real capability if a brand needs a bespoke ligature or a missing glyph.",
+        "Licences vary per family and are not uniform across the foundry, so read the specific one. A collective rather than a company — pace of updates follows volunteers."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Open Foundry",
+      "link": "https://open-foundry.com/",
+      "resourceType": "Directory",
+      "category": "Typography / free fonts",
+      "takeaway": "A decade-old curated showcase of open-source typefaces — Archivo, Work Sans, Aileron, Bluu Next, Terminal Grotesque and others — presented with their makers and specimen views rather than as a download grid.",
+      "whatToDo": "Use it to shortlist an open-source workhorse with a specimen you can actually judge. Action: pair it with Fontshare and UNCUT as the three free-type sources, and record which one a client's face came from in their brand doc.",
+      "cost": "Free.",
+      "usefulness": "Medium",
+      "notes": [
+        "Curation is the value — it is a small set chosen for quality, which is the opposite of Google Fonts' thousands and much faster to decide from.",
+        "Open-source licences, so the same families can be self-hosted and modified without a webfont subscription to renew.",
+        "It showcases rather than hosts, so downloads land you on each project's own repo where the licence lives. Read it there."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Realtime Colors",
+      "website": "https://www.realtimecolors.com/",
+      "what": "Applies a palette and type pairing to a full dummy website in the browser and updates live as you change them — so a colour scheme is judged on a real page with real hierarchy instead of as swatches. Figma plugin and a VS Code theme editor.",
+      "category": "Design engineering / colour",
+      "pricing": "Free",
+      "priceDetail": "Free, no account.",
+      "usefulness": "High",
+      "buildVerdict": "Weekend build",
+      "notes": [
+        "It answers the question swatches cannot: what a palette does to a whole page. Most palettes that die in review died because nobody saw them at page scale until it was built.",
+        "Sharing a URL of a live palette is a faster client conversation than a PDF of colour chips, and it removes the 'it looked different in the deck' argument.",
+        "Judgement aid, not an accessibility check. Run the pairs through color.review or an APCA tool before committing — a palette can look right here and still fail contrast."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Conductor",
+      "website": "https://www.conductor.build/",
+      "what": "Runs several coding agents at once, each in its own isolated workspace, so parallel work does not collide in one checkout. Local workspaces on a Mac on the free tier; Conductor Cloud runs them in cloud sandboxes.",
+      "category": "AI coding",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0: parallel agents in local workspaces on your Mac, bring your own model subscriptions and keys. Pro $50/month adds Conductor Cloud workspace hours, multiplayer, the API and teams up to 5. Teams $60/month per user above that.",
+      "usefulness": "High",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Directly relevant to how we already work: the constraint on running three Claude Code sessions is that they fight over one working tree, and isolated workspaces per agent is precisely that fix.",
+        "The free tier is local-only but complete for one machine, and you bring your own Claude subscription — so there is no second model bill to trial it.",
+        "Cloud sandboxes mean client code leaving our machines. Check what a client's contract says about third-party processing before pointing Conductor Cloud at their repo; the local tier avoids the question entirely."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "OpenCode",
+      "website": "https://opencode.ai/",
+      "what": "Open-source terminal coding agent with a desktop build for macOS, Windows and Linux. Model-agnostic — ships with free models included and connects to Claude, GPT, Gemini or any provider you hold a key for.",
+      "category": "AI coding",
+      "pricing": "Free",
+      "priceDetail": "Free and open source. Model costs are whatever provider you point it at; some models are included at no cost.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The reason to know it: it is the credible open-source answer to Claude Code, and being model-agnostic it is the fallback if a client forbids a specific vendor or we need a local model on sensitive work.",
+        "Being open source, its prompts and tool definitions are readable — genuinely useful reference when writing our own agent tooling in Foundry.",
+        "Not a reason to move off Claude Code for day-to-day work. List it as the second option, and try it on an internal project before it touches a client repo."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "CodeRabbit",
+      "website": "https://www.coderabbit.ai/",
+      "what": "AI pull-request reviewer that comments line by line with context from the whole repo, offers one-click fixes, runs linters and SAST tools, and learns from how a team responds to its past reviews. Integrates with Jira and Linear.",
+      "category": "AI coding / code review",
+      "pricing": "Paid",
+      "priceDetail": "Pro $24/month per user billed annually. Pro Plus $48/month per user adds multi-repo analysis and custom pre-merge checks. CodeRabbit Security $40/month per user. Slack agent billed at $0.50 per agent minute. 14-day free trial, no card.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The case for a studio is consistency: every PR gets the same review even when the person who would have caught it is on another project. It does not replace review, it stops the obvious things reaching a human.",
+        "$24 a seat is real money against Claude Code already reviewing diffs on request. Trial it on one repo and measure whether it catches things we did not before committing the team.",
+        "It reads every client repo you connect it to. That is a processor relationship needing checking against client contracts, and the reason the Security tier exists separately."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Firecrawl",
+      "website": "https://www.firecrawl.dev/",
+      "what": "Turns any URL or whole site into clean Markdown or structured JSON for an agent to consume — handles JavaScript rendering, crawling and extraction behind one API, with a search endpoint on top.",
+      "category": "AI coding / agent infrastructure",
+      "pricing": "Freemium",
+      "priceDetail": "Free 1,000 credits/month, 2 concurrent requests. Hobby $16/month (5,000 pages). Standard $83/month (100,000 pages, 50 concurrent). Growth $333/month (500,000). Scale $599/month (1,000,000). All billed yearly; extra credits sold on top. Open source.",
+      "usefulness": "High",
+      "buildVerdict": "Small project (1-2 weeks)",
+      "notes": [
+        "This is the thing we keep hand-rolling. Every audit and content migration starts with 'fetch these pages and give me the text', and the fiddly parts — JS rendering, rate limits, boilerplate stripping — are exactly what this sells.",
+        "Open source with a hosted tier, so a sensitive client crawl can run on our own infrastructure while everyday work uses the hosted API.",
+        "Free tier is 1,000 pages a month, which genuinely covers a small site audit. Watch the credit model on a large crawl — a 100k-page site is the $83 tier, not the $16."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Exa",
+      "website": "https://exa.ai/",
+      "what": "Search API built for agents rather than people — semantic search over the live web returning full page contents, plus crawling and a deep-research endpoint, priced per request instead of per seat.",
+      "category": "AI coding / agent infrastructure",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier to start, then usage-based — search priced per thousand results and contents per page, with published unit rates from around $0.01 per request. No seat licence.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Relevant to Foundry rather than to client sites: an agent that needs current information — competitor pages, a client's own live site, a standard that changed — needs a search API, and general web search results are shaped for humans.",
+        "Usage pricing means a runaway agent loop is a bill, not a rate-limit error. Cap it before wiring it into anything automated.",
+        "Verified the pricing model but not the per-tier detail; the published rates are unit prices, so model expected volume before committing."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Composio",
+      "website": "https://composio.dev/",
+      "what": "Gives an agent authenticated tool access to 1,000+ apps — Gmail, Slack, Notion, GitHub and the rest — handling OAuth on behalf of a user, sandboxed execution and parallel tool calls, so you do not build an integration per service.",
+      "category": "AI coding / agent infrastructure",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0/month to start, then $29/month and $229/month tiers with per-execution rates around $0.25–$0.30 above the included volume.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The hard part it sells is delegated auth: holding a user's Google or Slack credentials safely so an agent can act as them. That is the part we should not be building ourselves for Foundry.",
+        "It becomes a custodian of client and staff credentials for every app you connect. That is a security review before adoption, not after — and a reason to scope it to internal tools first.",
+        "Worth flagging: their homepage carries text addressed to AI agents reading the HTML, pointing at their signup flow. Harmless here, but it is a live example of why an agent browsing the web needs to treat page content as untrusted input rather than instructions."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Steel",
+      "website": "https://steel.dev/",
+      "what": "Open-source browser infrastructure for agents — managed headless Chrome sessions over an API, with session reuse, proxies and captcha handling, driven from Puppeteer, Playwright or Selenium.",
+      "category": "AI coding / agent infrastructure",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier, then plans at $30, $100 and $250/month. Open source and self-hostable.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Where Firecrawl reads pages, this drives them — the option when a job needs a logged-in session or a form filled, which is most real client migrations.",
+        "Open source and self-hostable, so a client's credentials need not sit in a third party's browser session.",
+        "Same note as Composio: the site embeds a line addressed to AI agents pointing at its setup instructions. Read it as marketing aimed at crawlers, not as guidance to follow."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "TinyPNG",
+      "website": "https://tinypng.com/",
+      "what": "Image compression in the browser for WebP, AVIF, JXL, PNG and JPEG, with format conversion, a website analyser that estimates the savings available on any URL, and a developer API for automating it in a build.",
+      "category": "Creative ops / image optimisation",
+      "pricing": "Freemium",
+      "priceDetail": "Free in the browser for everyday batches. The developer API is metered, with a free monthly allowance before paid usage.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Still the fastest fix for the most common client complaint we get about performance — a 4MB hero image someone exported from Figma at full size.",
+        "The site analyser is the useful half for us: point it at a client's live URL and get a number for the savings, which is a better argument in a report than 'optimise your images'.",
+        "Next.js and Vercel already optimise images at build and request time, so this is for assets outside that pipeline — email, decks, uploads to a CMS — rather than for the app itself."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Dropover",
+      "website": "https://dropoverapp.com/",
+      "what": "Mac drag-and-drop shelf: shake the pointer mid-drag and a floating tray appears to hold files, links, text or images, so you can gather from several places and drop them all at once instead of one window at a time.",
+      "category": "Mac software / file handling",
+      "pricing": "Free",
+      "priceDetail": "Free to download and use.",
+      "usefulness": "Medium",
+      "buildVerdict": "Weekend build",
+      "notes": [
+        "Small but constant: collecting assets from four folders into a client upload, or pulling files out of a download folder into a project, is a daily task and macOS makes it needlessly fiddly.",
+        "Native and unobtrusive — it appears only when you shake mid-drag, so it costs nothing when unused.",
+        "Handles files, links, text and images in one shelf, which makes it a staging area for a deck or a handover rather than only a file mover."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Open Source Alternative To",
+      "link": "https://www.opensourcealternative.to/",
+      "resourceType": "Directory",
+      "category": "Tool discovery",
+      "takeaway": "505 open-source alternatives to proprietary products, each listed against the product it replaces with its GitHub star count and category — Godot for Unity, and equivalents across analytics, CRM, forms, storage and design.",
+      "whatToDo": "Open it when a client baulks at a SaaS line item or needs data on their own infrastructure. Action: check it before proposing a paid tool in a scope of work, so the open alternative is a considered choice rather than an oversight.",
+      "cost": "Free. Sponsor-funded.",
+      "usefulness": "Medium",
+      "notes": [
+        "Directly useful in proposals: 'the open-source equivalent is X, self-hosted, and here is what it costs to run' is a stronger position than only quoting the SaaS.",
+        "Star counts are the only quality signal it carries — popularity is not maintenance. Check commit recency and licence on anything before recommending it to a client.",
+        "Self-hosting moves cost from a subscription to our time. Say that plainly when proposing one, or it lands as a saving that later becomes a support burden."
+      ],
+      "addedAt": "2026-08-13T22:55:12.000Z",
+      "addedBy": "Dan"
     }
   ]
 }
