@@ -3,8 +3,7 @@ import { cookies } from "next/headers";
 import { AdminEditor } from "@/components/admin-editor";
 import { AdminLogin } from "@/components/admin-login";
 import { Container, PageHeader, Panel } from "@/components/page-shell";
-import { ArrowList } from "@/components/ui";
-import { COOKIE, adminNames, authConfigured, githubConfigured, readToken } from "@/lib/admin";
+import { COOKIE, authConfigured, githubConfigured, readToken } from "@/lib/admin";
 import { resources, starters, tools } from "@/lib/data";
 import type { AdminItem } from "@/lib/types";
 
@@ -51,42 +50,38 @@ export default async function AdminPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Dan & Harry only"
-        title="Admin portal"
-        lead="Mark anything Recommended or Gitwork approved, and add a studio note. Changes are committed to the repository, so every call is versioned and attributed."
+        eyebrow="Dan & Harry"
+        title="Admin"
+        lead="Mark anything Recommended or Gitwork approved and add a studio note. Publishing commits the change, so the site picks it up on the next deploy."
       />
 
-      <Container className="py-10">
+      <Container className="py-8">
         {!configured ? (
-          <div className="mx-auto max-w-2xl space-y-4">
-            <Panel tone="flag" title="Not configured yet">
+          <div className="mx-auto max-w-lg space-y-3">
+            <Panel tone="flag" title="Set a password first">
               <p className="text-sm leading-relaxed text-soft">
-                The portal needs two environment variables in Vercel before it will let anyone in.
-                Add them under Project → Settings → Environment Variables, then redeploy.
+                Add <code className="font-mono text-[0.8rem]">ADMIN_PASSWORD</code> in Vercel →
+                Settings → Environment Variables and redeploy. That is the whole sign-in.
               </p>
             </Panel>
-            <Panel title="What to set">
-              <ArrowList
-                items={[
-                  "ADMIN_PASSWORD — the shared password you and Harry will use. Anything long and random.",
-                  "GITHUB_TOKEN — a fine-grained personal access token with Contents: Read and write on this repository only. This is what lets the portal commit your flags.",
-                  "ADMIN_USERS — optional, defaults to \"Dan,Harry\". Comma-separated names for the sign-in picker, used to attribute each commit.",
-                  "ADMIN_SECRET — optional. A separate random string for signing the session cookie; falls back to ADMIN_PASSWORD.",
-                ]}
-              />
+            <Panel title="And one for saving">
+              <p className="text-sm leading-relaxed text-soft">
+                <code className="font-mono text-[0.8rem]">GITHUB_TOKEN</code> — a fine-grained token
+                with Contents: Read and write on this repository. Without it you can still browse
+                and tick, but publishing will fail.
+              </p>
             </Panel>
           </div>
         ) : !session ? (
-          <AdminLogin names={adminNames()} />
+          <AdminLogin />
         ) : (
           <AdminEditor
             items={items}
-            session={session.name}
             canSave={canSave}
             configNote={
               canSave
                 ? undefined
-                : "GITHUB_TOKEN is not set on this deployment, so changes cannot be published yet. Add a fine-grained token with Contents: Read and write, then redeploy."
+                : "GITHUB_TOKEN is not set on this deployment, so changes cannot be published yet."
             }
           />
         )}

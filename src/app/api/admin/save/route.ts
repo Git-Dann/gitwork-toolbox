@@ -43,7 +43,7 @@ export async function POST(request: Request) {
   }
 
   try {
-    const result = await commitOverrides(changes, session.name);
+    const result = await commitOverrides(changes);
     return NextResponse.json({ ok: true, ...result });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Could not save those changes.";

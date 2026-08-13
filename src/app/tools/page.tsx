@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { Container, PageHeader } from "@/components/page-shell";
 import { ToolBrowser } from "@/components/tool-browser";
 import { Badge } from "@/components/ui";
-import { counts, meta, tools } from "@/lib/data";
+import { counts, meta, resources, tools } from "@/lib/data";
 import type { ToolListItem } from "@/lib/types";
 
 export const metadata: Metadata = {
@@ -28,6 +28,15 @@ const listItems: ToolListItem[] = tools.map((tool) => ({
   approved: tool.approved,
 }));
 
+const resourceItems = resources.map((resource) => ({
+  slug: resource.slug,
+  name: resource.name,
+  resourceType: resource.resourceType,
+  group: resource.group,
+  recommended: resource.recommended,
+  approved: resource.approved,
+}));
+
 export default function ToolsPage() {
   return (
     <>
@@ -46,7 +55,7 @@ export default function ToolsPage() {
       />
       <Container className="py-10">
         <Suspense fallback={<p className="label py-12 text-center text-mute">Loading the list…</p>}>
-          <ToolBrowser tools={listItems} groups={meta.groups} />
+          <ToolBrowser tools={listItems} resources={resourceItems} groups={meta.groups} />
         </Suspense>
       </Container>
     </>

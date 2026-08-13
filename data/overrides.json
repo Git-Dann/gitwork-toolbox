@@ -1,7 +1,107 @@
 {
-  "updatedAt": null,
-  "updatedBy": null,
-  "tools": {},
-  "resources": {},
-  "starters": {}
+  "updatedAt": "2026-08-13T14:00:00.000Z",
+  "updatedBy": "Seeded from the workbook verdicts",
+  "tools": {
+    "transitions-dev": {
+      "recommended": true,
+      "approved": true,
+      "note": "Best value item in the batch. Buy the $149 lifetime, but confirm the commercial licence covers client deliverables first."
+    },
+    "flaude": {
+      "recommended": true,
+      "approved": true,
+      "note": "House rule: Flaude output gets fully restyled before it goes anywhere near a client deliverable."
+    },
+    "refero-styles": {
+      "approved": true,
+      "note": "Free browsing is a benchmarking reference. Get the Pro price in writing before wiring MCP into a workflow."
+    },
+    "wonder-aquila-labs": {
+      "approved": true,
+      "note": "Internal projects only while it is in public alpha — no Figma round-trip, so not for a client deadline."
+    },
+    "appless-thesys": {
+      "note": "Read as a pattern study. The reusable asset is the schema-constrained render contract, not the phone-OS demo."
+    },
+    "meat-bold-software": {
+      "note": "Try the Apache-2.0 tool before writing our own. Verify model cost on large diffs."
+    }
+  },
+  "resources": {
+    "claude-model-and-effort-level-in-claude-code": {
+      "recommended": true,
+      "approved": true,
+      "note": "House default set from this: mid-tier model at medium for routine build work, top model at high only for architecture and debugging."
+    },
+    "figma-make-kits": {
+      "recommended": true,
+      "approved": true,
+      "note": "Publish one kit per retained client and treat it as a delivery artefact."
+    },
+    "claudedevs-claudedevs": {
+      "approved": true
+    },
+    "expo-expo": {
+      "approved": true,
+      "note": "Follow @expo_status for incidents — @expo itself is the marketing feed."
+    },
+    "designengineer-tools": {
+      "approved": true,
+      "note": "Read once, diff against the studio stack, record adoptions in the Foundry wiki."
+    },
+    "vercel-open-source-program": {
+      "note": "$3,600 of credit, but it creates a maintenance obligation. Only worth it if we open-source something real."
+    },
+    "steering-claude-code-skills-hooks-rules-subagents": {
+      "recommended": true,
+      "approved": true,
+      "note": "Action: audit the .claude/ setup for Foundry and client repos against the seven mechanisms."
+    }
+  },
+  "starters": {
+    "launch-kit": {
+      "recommended": true,
+      "approved": true,
+      "note": "The default starting point for a new project — rules, commands, hooks and quality gates from day one."
+    },
+    "flow": {
+      "recommended": true,
+      "approved": true,
+      "note": "Our spec-to-shipped delivery loop. Use it on anything with more than a couple of days in it."
+    },
+    "foundry-build-prompt": {
+      "recommended": true,
+      "approved": true
+    },
+    "taste": {
+      "recommended": true,
+      "approved": true
+    },
+    "proposal-builder": {
+      "recommended": true,
+      "approved": true
+    },
+    "prompt-builder": {
+      "approved": true
+    },
+    "pulse-scan-action-plan": {
+      "approved": true
+    },
+    "humanizer": {
+      "approved": true,
+      "note": "Final pass on client-facing copy. It removes AI tells; it does not fix a weak argument."
+    },
+    "design-system": {
+      "approved": true
+    },
+    "skills-library": {
+      "approved": true
+    },
+    "testing": {
+      "approved": true
+    },
+    "security": {
+      "approved": true
+    }
+  }
 }

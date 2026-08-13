@@ -1,7 +1,7 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { StarterCard } from "@/components/cards";
 import { Collapsible, FilterGroup, FilterOption, SearchField, Toggle } from "@/components/filter-ui";
 import { Badge } from "@/components/ui";
@@ -34,6 +34,8 @@ export function StarterBrowser({
   const [limit, setLimit] = useState(PAGE);
   const [showFilters, setShowFilters] = useState(false);
 
+  const lastWritten = useRef<string | null>(null);
+
   useEffect(() => {
     const next = new URLSearchParams();
     if (query.trim()) next.set("q", query.trim());
@@ -42,8 +44,21 @@ export function StarterBrowser({
     if (featuredOnly) next.set("featured", "1");
     if (recommendedOnly) next.set("recommended", "1");
     const search = next.toString();
+    lastWritten.current = search;
     window.history.replaceState(null, "", search ? `/starters?${search}` : "/starters");
   }, [query, type, tag, featuredOnly, recommendedOnly]);
+
+  // Adopt the query when a sidebar link navigates while this is already mounted.
+  useEffect(() => {
+    const incoming = params.toString();
+    if (incoming === (lastWritten.current ?? "")) return;
+    lastWritten.current = incoming;
+    setQuery(params.get("q") ?? "");
+    setType(params.get("type") ?? "");
+    setTag(params.get("tag") ?? "");
+    setFeaturedOnly(params.get("featured") === "1");
+    setRecommendedOnly(params.get("recommended") === "1");
+  }, [params]);
 
   useEffect(() => setLimit(PAGE), [query, type, tag, featuredOnly, recommendedOnly]);
 

@@ -8,6 +8,7 @@ recommend.
 No logins, accounts or favourites on the public side. Everything is static.
 
 - **18 tools** we fetched and read individually, with price, verdict and watch-outs
+- **10 recommended, 22 approved** out of the box, seeded from the workbook verdicts
 - **224 Foundry starters** with the full prompt text and a copy button
 - **20 resources** — articles, docs, accounts to follow, other people's directories
 - **The shortlist** — what to buy, read, build, follow and park
@@ -71,15 +72,15 @@ Environment variables (Vercel → Project → Settings → Environment Variables
 
 | Variable | Required | What it does |
 | --- | --- | --- |
-| `ADMIN_PASSWORD` | yes | The shared password. Without it the portal shows setup instructions and refuses every login. |
+| `ADMIN_PASSWORD` | yes | The shared password. That is the whole sign-in. |
 | `GITHUB_TOKEN` | yes | Fine-grained PAT with **Contents: Read and write** on this repository only. Lets the portal commit flags. |
-| `ADMIN_USERS` | no | Comma-separated names for the sign-in picker, used to attribute commits. Defaults to `Dan,Harry`. |
-| `ADMIN_SECRET` | no | Separate random string for signing the session cookie. Falls back to `ADMIN_PASSWORD`. |
 | `GITHUB_REPO` / `GITHUB_BRANCH` | no | Override the commit target. Defaults to Vercel's own `VERCEL_GIT_*` values. |
 
-Sessions are a signed, HTTP-only cookie lasting seven days. `Recommended` means we
-would actively reach for it; `Gitwork approved` means it has been checked over and
-cleared for client work. Both are set by hand — never inferred from the data.
+One password, a signed HTTP-only cookie for seven days, no user accounts.
+`Recommended` means we would actively reach for it; `Gitwork approved` means it has
+been checked over and cleared for client work. Both are set by hand — never
+inferred from the data. The seeded set in `data/overrides.json` came from the
+workbook's own High ratings and the "worth money this week" shortlist.
 
 ## Local development
 

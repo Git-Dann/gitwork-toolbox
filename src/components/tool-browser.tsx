@@ -1,11 +1,21 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useCallback, useEffect, useMemo, useState } from "react";
-import { ToolCard } from "@/components/cards";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { CompactRow, ToolCard } from "@/components/cards";
 import { FilterGroup, FilterOption, SearchField, Toggle } from "@/components/filter-ui";
 import { Badge } from "@/components/ui";
 import type { Group, Pricing, ToolListItem } from "@/lib/types";
+
+/** Resources share the same areas as tools, so an area view lists both. */
+export type ResourceListItem = {
+  slug: string;
+  name: string;
+  resourceType: string;
+  group: string;
+  recommended: boolean;
+  approved: boolean;
+};
 
 const PRICING: Pricing[] = ["Free", "Freemium", "Paid"];
 
@@ -28,9 +38,11 @@ const USEFULNESS_RANK: Record<string, number> = {
 
 export function ToolBrowser({
   tools,
+  resources,
   groups,
 }: {
   tools: ToolListItem[];
+  resources: ResourceListItem[];
   groups: Group[];
 }) {
   const params = useSearchParams();
@@ -44,6 +56,9 @@ export function ToolBrowser({
   const [sort, setSort] = useState<Sort>((params.get("sort") as Sort) ?? "verdict");
   const [showFilters, setShowFilters] = useState(false);
 
+  // Distinguishes the URL we wrote ourselves from one a link just navigated to.
+  const lastWritten = useRef<string | null>(null);
+
   // Filters live in the URL so any view can be pasted into Slack.
   useEffect(() => {
     const next = new URLSearchParams();
@@ -55,8 +70,24 @@ export function ToolBrowser({
     if (!hideDead) next.set("dead", "1");
     if (sort !== "verdict") next.set("sort", sort);
     const search = next.toString();
+    lastWritten.current = search;
     window.history.replaceState(null, "", search ? `/tools?${search}` : "/tools");
   }, [query, group, pricing, recommendedOnly, approvedOnly, hideDead, sort]);
+
+  // A sidebar link to /tools?group=… while this component is already mounted is a
+  // client-side navigation: adopt the incoming query instead of overwriting it.
+  useEffect(() => {
+    const incoming = params.toString();
+    if (incoming === (lastWritten.current ?? "")) return;
+    lastWritten.current = incoming;
+    setQuery(params.get("q") ?? "");
+    setGroup(params.get("group") ?? "");
+    setPricing(params.get("price") ?? "");
+    setRecommendedOnly(params.get("recommended") === "1");
+    setApprovedOnly(params.get("approved") === "1");
+    setHideDead(params.get("dead") !== "1");
+    setSort((params.get("sort") as Sort) ?? "verdict");
+  }, [params]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -106,6 +137,17 @@ export function ToolBrowser({
     (approvedOnly ? 1 : 0);
 
   const groupName = groups.find((item) => item.slug === group)?.name;
+
+  // The area counts include resources, so an area view has to show them too —
+  // otherwise "Mobile & Apple 2" leads to an empty grid.
+  const areaResources = useMemo(() => {
+    if (!group) return [];
+    const q = query.trim().toLowerCase();
+    return resources.filter(
+      (resource) =>
+        resource.group === group && (!q || resource.name.toLowerCase().includes(q)),
+    );
+  }, [resources, group, query]);
 
   return (
     <div className="grid gap-6 lg:grid-cols-[14rem_1fr] lg:gap-10">
@@ -165,21 +207,15 @@ export function ToolBrowser({
 
           <FilterGroup title="Area">
             <FilterOption label="Everything" active={!group} onClick={() => setGroup("")} />
-            {groups
-              .map((item) => ({
-                ...item,
-                tools: tools.filter((tool) => tool.group === item.slug).length,
-              }))
-              .filter((item) => item.tools > 0)
-              .map((item) => (
-                <FilterOption
-                  key={item.slug}
-                  label={item.name}
-                  count={item.tools}
-                  active={group === item.slug}
-                  onClick={() => setGroup(group === item.slug ? "" : item.slug)}
-                />
-              ))}
+            {groups.map((item) => (
+              <FilterOption
+                key={item.slug}
+                label={item.name}
+                count={item.count}
+                active={group === item.slug}
+                onClick={() => setGroup(group === item.slug ? "" : item.slug)}
+              />
+            ))}
           </FilterGroup>
         </div>
       </aside>
@@ -231,7 +267,7 @@ export function ToolBrowser({
           ) : null}
         </div>
 
-        {filtered.length === 0 ? (
+        {filtered.length === 0 && areaResources.length === 0 ? (
           <div className="surface mt-6 p-8 text-center">
             <p className="display text-xl">Nothing matches that.</p>
             <p className="mt-2 text-sm text-soft">
@@ -247,11 +283,36 @@ export function ToolBrowser({
             </button>
           </div>
         ) : (
-          <div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-            {filtered.map((tool) => (
-              <ToolCard key={tool.slug} tool={tool} />
-            ))}
-          </div>
+          <>
+            {filtered.length ? (
+              <div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+                {filtered.map((tool) => (
+                  <ToolCard key={tool.slug} tool={tool} />
+                ))}
+              </div>
+            ) : null}
+
+            {areaResources.length ? (
+              <div className="mt-8 border-t border-hair pt-6">
+                <p className="label mb-3 text-mute">
+                  {areaResources.length} resource{areaResources.length === 1 ? "" : "s"} filed under{" "}
+                  {groupName}
+                </p>
+                <div className="grid gap-x-8 gap-y-1 sm:grid-cols-2 xl:grid-cols-3">
+                  {areaResources.map((resource) => (
+                    <CompactRow
+                      key={resource.slug}
+                      href={`/resources/${resource.slug}`}
+                      name={resource.name}
+                      descriptor={resource.resourceType}
+                      recommended={resource.recommended}
+                      approved={resource.approved}
+                    />
+                  ))}
+                </div>
+              </div>
+            ) : null}
+          </>
         )}
       </div>
     </div>

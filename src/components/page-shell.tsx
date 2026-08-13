@@ -26,17 +26,19 @@ export function PageHeader({
   children?: ReactNode;
 }) {
   return (
-    <div className="border-b" style={{ borderColor: "var(--border)" }}>
-      <Container className="py-10 sm:py-14">
-        <Eyebrow accent>{eyebrow}</Eyebrow>
-        <h1 className="display mt-4 max-w-4xl text-4xl sm:text-[3.25rem]">
-          {title}
-          <span className="text-accent">.</span>
-        </h1>
+    <div className="border-b border-hair">
+      <Container className="py-7">
+        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+          <h1 className="display text-2xl sm:text-[1.85rem]">
+            {title}
+            <span className="text-accent">.</span>
+          </h1>
+          <Eyebrow className="pb-0.5">{eyebrow}</Eyebrow>
+        </div>
         {lead ? (
-          <p className="mt-5 max-w-2xl text-base leading-relaxed text-soft">{lead}</p>
+          <p className="mt-2.5 max-w-2xl text-sm leading-relaxed text-soft">{lead}</p>
         ) : null}
-        {meta ? <div className="mt-6 flex flex-wrap items-center gap-2">{meta}</div> : null}
+        {meta ? <div className="mt-4 flex flex-wrap items-center gap-2">{meta}</div> : null}
         {children}
       </Container>
     </div>

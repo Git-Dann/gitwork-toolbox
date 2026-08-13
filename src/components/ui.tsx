@@ -154,14 +154,16 @@ export function SectionHeading({
   action?: { href: string; label: string };
 }) {
   return (
-    <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+    <div className="mb-5 flex flex-wrap items-end justify-between gap-4">
       <div className="max-w-2xl">
-        {eyebrow ? <Eyebrow accent className="mb-2.5">{eyebrow}</Eyebrow> : null}
-        <h2 className="display text-2xl sm:text-[1.75rem]">
-          {title}
-          <span className="text-accent">.</span>
-        </h2>
-        {blurb ? <p className="mt-2.5 text-sm leading-relaxed text-soft">{blurb}</p> : null}
+        <div className="flex flex-wrap items-baseline gap-x-3">
+          <h2 className="display text-xl sm:text-[1.4rem]">
+            {title}
+            <span className="text-accent">.</span>
+          </h2>
+          {eyebrow ? <Eyebrow className="pb-0.5">{eyebrow}</Eyebrow> : null}
+        </div>
+        {blurb ? <p className="mt-2 text-sm leading-relaxed text-soft">{blurb}</p> : null}
       </div>
       {action ? (
         <Link
@@ -200,11 +202,11 @@ export function ExternalIcon({ className = "" }: { className?: string }) {
 export function Stat({ value, label }: { value: string | number; label: string }) {
   return (
     <div>
-      <p className="display text-3xl sm:text-4xl">
+      <p className="display text-2xl sm:text-[1.75rem]">
         {value}
         <span className="text-accent">.</span>
       </p>
-      <p className="label mt-2 text-mute">{label}</p>
+      <p className="label mt-1.5 text-mute">{label}</p>
     </div>
   );
 }

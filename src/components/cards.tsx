@@ -1,107 +1,134 @@
 import Link from "next/link";
-import {
-  ApprovedBadge,
-  Badge,
-  ExternalIcon,
-  LinkHealth,
-  Monogram,
-  PricingBadge,
-  RecommendedBadge,
-} from "@/components/ui";
+import { ExternalIcon, Monogram } from "@/components/ui";
 import type { Resource, StarterListItem, ToolListItem } from "@/lib/types";
 
-export function ToolCard({ tool }: { tool: ToolListItem }) {
+/**
+ * Cards stay deliberately plain: icon, name, one line of description, one line of
+ * grey metadata. Status lives in two small marks next to the name — a violet check
+ * for Gitwork approved, a star for recommended — rather than a row of pills.
+ */
+
+function Marks({ recommended, approved }: { recommended?: boolean; approved?: boolean }) {
+  if (!recommended && !approved) return null;
   return (
-    <Link
-      href={`/tools/${tool.slug}`}
-      className="surface surface-hover group flex h-full flex-col p-4"
-      aria-label={tool.name}
-    >
+    <span className="ml-1.5 inline-flex shrink-0 items-center gap-1">
+      {recommended ? (
+        <span className="text-accent" title="Recommended" aria-label="Recommended">
+          ★
+        </span>
+      ) : null}
+      {approved ? (
+        <span
+          className="grid h-3.5 w-3.5 place-items-center rounded-full text-[9px]"
+          style={{ background: "var(--accent)", color: "#fff" }}
+          title="Gitwork approved"
+          aria-label="Gitwork approved"
+        >
+          ✓
+        </span>
+      ) : null}
+    </span>
+  );
+}
+
+function Meta({ children }: { children: React.ReactNode }) {
+  return <p className="mt-3 truncate font-mono text-[11px] text-mute">{children}</p>;
+}
+
+const CARD = "surface surface-hover group flex h-full flex-col p-4";
+const NAME = "truncate font-medium leading-snug transition-colors group-hover:text-[var(--accent-soft)]";
+const BODY = "mt-2 line-clamp-2 flex-1 text-sm leading-relaxed text-soft";
+
+export function ToolCard({ tool }: { tool: ToolListItem }) {
+  const dead = tool.linkStatus === "dead";
+  return (
+    <Link href={`/tools/${tool.slug}`} className={CARD} aria-label={tool.name}>
       <div className="flex items-start gap-3">
         <Monogram name={tool.name} />
         <div className="min-w-0 flex-1">
-          <h3 className="truncate font-medium leading-snug transition-colors group-hover:text-[var(--accent-soft)]">
-            {tool.name}
-          </h3>
-          <p className="mt-1 truncate font-mono text-[11px] text-mute">
+          <div className="flex min-w-0 items-center">
+            <h3 className={NAME}>{tool.name}</h3>
+            <Marks recommended={tool.recommended} approved={tool.approved} />
+          </div>
+          <p className="mt-0.5 truncate font-mono text-[11px] text-mute">
             {tool.domain || tool.category}
           </p>
         </div>
-        {tool.recommended ? (
-          <span className="mt-1 shrink-0 text-accent" aria-hidden>
-            ★
-          </span>
-        ) : null}
       </div>
-
-      <p className="mt-3.5 line-clamp-3 text-sm leading-relaxed text-soft">{tool.what}</p>
-
-      <div className="mt-4 flex flex-wrap items-center gap-1.5 overflow-hidden pt-1">
-        <PricingBadge pricing={tool.pricing} />
-        {/* Cards show the head of a compound category; the detail page has it all. */}
-        <Badge>{tool.category.split(" / ")[0]}</Badge>
-        {tool.approved ? <ApprovedBadge /> : null}
-        <LinkHealth status={tool.linkStatus} label={tool.linkLabel} />
-      </div>
+      <p className={BODY}>{tool.what}</p>
+      <Meta>
+        {tool.pricing} · {tool.category.split(" / ")[0]}
+        {dead ? " · dead link" : ""}
+      </Meta>
     </Link>
   );
 }
 
 export function StarterCard({ starter }: { starter: StarterListItem }) {
+  const tags = starter.tags.filter((tag) => tag !== "prompt-library").slice(0, 2);
   return (
-    <Link
-      href={`/starters/${starter.slug}`}
-      className="surface surface-hover group flex h-full flex-col p-4"
-    >
-      <div className="flex items-center justify-between gap-3">
-        <Badge tone={starter.type === "PROMPT" ? "neutral" : "accent"}>{starter.typeLabel}</Badge>
-        {starter.recommended ? (
-          <RecommendedBadge />
-        ) : starter.featured ? (
-          <Badge tone="accent">Featured</Badge>
-        ) : null}
+    <Link href={`/starters/${starter.slug}`} className={CARD}>
+      <div className="flex items-start gap-3">
+        <Monogram name={starter.name} />
+        <div className="min-w-0 flex-1">
+          <div className="flex min-w-0 items-center">
+            <h3 className={NAME}>{starter.name}</h3>
+            <Marks recommended={starter.recommended} approved={starter.approved} />
+          </div>
+          <p className="mt-0.5 truncate font-mono text-[11px] text-mute">{starter.typeLabel}</p>
+        </div>
       </div>
-      <h3 className="mt-3.5 font-medium leading-snug transition-colors group-hover:text-[var(--accent-soft)]">
-        {starter.name}
-      </h3>
-      <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-soft">
-        {starter.summary}
-      </p>
-      <div className="mt-4 flex flex-wrap gap-2">
-        {starter.tags
-          .filter((tag) => tag !== "prompt-library")
-          .slice(0, 3)
-          .map((tag) => (
-            <span key={tag} className="label text-mute">
-              #{tag}
-            </span>
-          ))}
-      </div>
+      <p className={BODY}>{starter.summary}</p>
+      <Meta>{tags.length ? tags.join(" · ") : starter.typeLabel}</Meta>
     </Link>
   );
 }
 
 export function ResourceCard({ resource }: { resource: Resource }) {
   return (
-    <Link
-      href={`/resources/${resource.slug}`}
-      className="surface surface-hover group flex h-full flex-col p-4"
-    >
-      <div className="flex items-center justify-between gap-3">
-        <Badge>{resource.resourceType}</Badge>
-        {resource.recommended ? (
-          <RecommendedBadge />
-        ) : resource.usefulness === "High" ? (
-          <Badge tone="accent">High value</Badge>
-        ) : null}
+    <Link href={`/resources/${resource.slug}`} className={CARD}>
+      <div className="flex items-start gap-3">
+        <Monogram name={resource.name} />
+        <div className="min-w-0 flex-1">
+          <div className="flex min-w-0 items-center">
+            <h3 className={NAME}>{resource.name}</h3>
+            <Marks recommended={resource.recommended} approved={resource.approved} />
+          </div>
+          <p className="mt-0.5 truncate font-mono text-[11px] text-mute">{resource.domain}</p>
+        </div>
       </div>
-      <h3 className="mt-3.5 font-medium leading-snug transition-colors group-hover:text-[var(--accent-soft)]">
-        {resource.name}
-      </h3>
-      <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-soft">
-        {resource.takeaway}
-      </p>
-      <p className="mt-4 truncate font-mono text-[11px] text-mute">{resource.domain}</p>
+      <p className={BODY}>{resource.takeaway}</p>
+      <Meta>{resource.resourceType}</Meta>
+    </Link>
+  );
+}
+
+/** The compact icon-and-one-liner row used for rails on the home page. */
+export function CompactRow({
+  href,
+  name,
+  descriptor,
+  recommended,
+  approved,
+}: {
+  href: string;
+  name: string;
+  descriptor: string;
+  recommended?: boolean;
+  approved?: boolean;
+}) {
+  return (
+    <Link href={href} className="group flex items-center gap-3 rounded-lg py-2 pr-2">
+      <Monogram name={name} size="sm" />
+      <span className="min-w-0 flex-1">
+        <span className="flex min-w-0 items-center">
+          <span className="truncate text-sm font-medium transition-colors group-hover:text-[var(--accent-soft)]">
+            {name}
+          </span>
+          <Marks recommended={recommended} approved={approved} />
+        </span>
+        <span className="block truncate text-xs text-mute">{descriptor}</span>
+      </span>
     </Link>
   );
 }
@@ -122,19 +149,19 @@ export function CollectionCard({
   samples: string[];
 }) {
   return (
-    <Link href={href} className="surface surface-hover group flex h-full flex-col p-5">
+    <Link href={href} className="surface surface-hover group flex h-full flex-col p-4">
       <div className="flex gap-1.5">
-        {samples.slice(0, 5).map((name) => (
+        {samples.slice(0, 4).map((name) => (
           <Monogram key={name} name={name} size="sm" />
         ))}
       </div>
-      <h3 className="display mt-4 text-xl transition-colors group-hover:text-[var(--accent-soft)]">
+      <h3 className="mt-3.5 font-medium transition-colors group-hover:text-[var(--accent-soft)]">
         {title}
       </h3>
-      <p className="mt-2 flex-1 text-sm leading-relaxed text-soft">{blurb}</p>
-      <p className="label mt-4 text-mute">
+      <p className="mt-1.5 line-clamp-2 flex-1 text-sm leading-relaxed text-soft">{blurb}</p>
+      <Meta>
         {count} {countLabel}
-      </p>
+      </Meta>
     </Link>
   );
 }

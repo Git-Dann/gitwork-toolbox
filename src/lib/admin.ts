@@ -12,15 +12,9 @@ import { createHmac, timingSafeEqual } from "node:crypto";
 export const COOKIE = "gw_admin";
 const SESSION_DAYS = 7;
 
-export type Session = { name: string; exp: number };
+export type Session = { exp: number };
 
-export const adminNames = () =>
-  (process.env.ADMIN_USERS ?? "Dan,Harry")
-    .split(",")
-    .map((name) => name.trim())
-    .filter(Boolean);
-
-const secret = () => process.env.ADMIN_SECRET ?? process.env.ADMIN_PASSWORD ?? "";
+const secret = () => process.env.ADMIN_PASSWORD ?? "";
 
 export function authConfigured() {
   return Boolean(process.env.ADMIN_PASSWORD);
@@ -42,11 +36,8 @@ export function passwordMatches(candidate: string) {
 
 const sign = (payload: string) => createHmac("sha256", secret()).update(payload).digest("hex");
 
-export function createToken(name: string) {
-  const session: Session = {
-    name,
-    exp: Date.now() + SESSION_DAYS * 24 * 60 * 60 * 1000,
-  };
+export function createToken() {
+  const session: Session = { exp: Date.now() + SESSION_DAYS * 24 * 60 * 60 * 1000 };
   const payload = Buffer.from(JSON.stringify(session)).toString("base64url");
   return `${payload}.${sign(payload)}`;
 }
@@ -129,7 +120,7 @@ export type Change = {
 };
 
 /** Applies changes and commits the file, which triggers a redeploy. */
-export async function commitOverrides(changes: Change[], author: string) {
+export async function commitOverrides(changes: Change[]) {
   const { owner, repo, branch } = repoTarget();
   if (!owner || !repo) throw new Error("No repository configured for the admin portal.");
 
@@ -142,7 +133,7 @@ export async function commitOverrides(changes: Change[], author: string) {
     resources: { ...current.overrides.resources },
     starters: { ...current.overrides.starters },
     updatedAt: new Date().toISOString(),
-    updatedBy: author,
+    updatedBy: "the toolbox admin",
   };
 
   for (const change of changes) {
@@ -165,7 +156,7 @@ export async function commitOverrides(changes: Change[], author: string) {
     method: "PUT",
     headers: headers(),
     body: JSON.stringify({
-      message: `Toolbox: update flags (${changes.length} changed, ${flagged} flagged) by ${author}`,
+      message: `Toolbox: update flags (${changes.length} changed, ${flagged} flagged)`,
       content: Buffer.from(`${JSON.stringify(next, null, 2)}\n`).toString("base64"),
       sha: current.sha,
       branch,

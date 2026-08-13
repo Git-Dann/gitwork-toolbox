@@ -23,7 +23,7 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={() => apply(theme === "dark" ? "light" : "dark")}
-      className="label flex w-full items-center justify-between rounded-lg px-2.5 py-2 text-mute transition-colors hover:bg-[var(--bg-card)] hover:text-[var(--text)]"
+      className="label flex w-full items-center justify-between rounded-md px-2.5 py-2 text-mute transition-colors hover:bg-[var(--bg-card)] hover:text-[var(--text)]"
       aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
     >
       <span>{theme === "dark" ? "Dark" : "Paper"}</span>

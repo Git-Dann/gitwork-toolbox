@@ -30,12 +30,12 @@ export function Roundel({ size = 28 }: { size?: number }) {
 export function Wordmark({ subtitle = "Toolbox" }: { subtitle?: string }) {
   return (
     <span className="flex items-center gap-2.5">
-      <Roundel size={30} />
+      <Roundel size={26} />
       <span className="flex flex-col leading-none">
-        <span className="display text-[1.15rem]">
+        <span className="display text-[1.05rem]">
           Gitwork<span className="text-accent">.</span>
         </span>
-        <span className="label mt-1 text-mute">{subtitle}</span>
+        <span className="label mt-0.5 text-mute">{subtitle}</span>
       </span>
     </span>
   );

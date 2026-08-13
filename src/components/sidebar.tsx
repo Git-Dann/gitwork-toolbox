@@ -47,25 +47,36 @@ export function Sidebar({
   };
 
   const nav = (
-    <div className="flex h-full flex-col gap-1 overflow-y-auto px-3 pb-6">
-      <Link href="/" className="mb-5 mt-5 block px-2.5" aria-label="Gitwork Toolbox">
+    <div className="flex h-full flex-col overflow-y-auto px-2.5 pb-6">
+      <Link href="/" className="mb-4 mt-4 block px-2" aria-label="Gitwork Toolbox">
         <Wordmark />
       </Link>
 
-      <div className="px-1 pb-3">
+      <div className="px-0.5 pb-2">
         <CommandPalette variant="sidebar" />
       </div>
 
       <Section>
         {primary.map((item) => (
-          <NavLink key={item.href} item={item} active={isActive(item.href)} />
+          <NavLink
+            key={item.href}
+            item={item}
+            active={isActive(item.href)}
+            onNavigate={() => setOpen(false)}
+          />
         ))}
       </Section>
 
       <SectionTitle>Starter library</SectionTitle>
       <Section>
         {library.map((item) => (
-          <NavLink key={item.href} item={item} active={false} subtle />
+          <NavLink
+            key={item.href}
+            item={item}
+            active={false}
+            subtle
+            onNavigate={() => setOpen(false)}
+          />
         ))}
       </Section>
 
@@ -77,11 +88,12 @@ export function Sidebar({
             item={{ href: `/tools?group=${group.slug}`, label: group.name, count: group.count }}
             active={false}
             subtle
+            onNavigate={() => setOpen(false)}
           />
         ))}
       </Section>
 
-      <div className="mt-auto space-y-1 border-t pt-3" style={{ borderColor: "var(--border)" }}>
+      <div className="mt-auto border-t pt-2" style={{ borderColor: "var(--border)" }}>
         <NavLink item={{ href: "/about", label: "How this is built" }} active={isActive("/about")} subtle />
         <NavLink item={{ href: "/admin", label: "Admin" }} active={isActive("/admin")} subtle />
         <ThemeToggle />
@@ -150,26 +162,29 @@ export function Sidebar({
 }
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
-  return <p className="label mt-5 mb-2 px-2.5 text-mute">{children}</p>;
+  return <p className="label mt-5 mb-1.5 px-2.5 text-mute">{children}</p>;
 }
 
 function Section({ children }: { children: React.ReactNode }) {
-  return <nav className="space-y-0.5">{children}</nav>;
+  return <nav>{children}</nav>;
 }
 
 function NavLink({
   item,
   active,
   subtle = false,
+  onNavigate,
 }: {
   item: NavItem;
   active: boolean;
   subtle?: boolean;
+  onNavigate?: () => void;
 }) {
   return (
     <Link
       href={item.href}
-      className="flex items-center justify-between gap-2 rounded-lg px-2.5 py-2 text-sm transition-colors"
+      onClick={onNavigate}
+      className="flex items-center justify-between gap-2 rounded-md px-2.5 py-[7px] text-[13px] transition-colors"
       style={
         active
           ? { background: "var(--accent)", color: "var(--on-accent)" }

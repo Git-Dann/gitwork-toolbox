@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { Headline } from "@/components/brand";
-import { CollectionCard, ResourceCard, StarterCard, ToolCard } from "@/components/cards";
+import { CollectionCard, CompactRow, StarterCard, ToolCard } from "@/components/cards";
 import { Container, Panel, Section } from "@/components/page-shell";
-import { ArrowList, Badge, Divider, Eyebrow, SectionHeading, Stat } from "@/components/ui";
+import { ArrowList, Divider, Eyebrow, SectionHeading, Stat } from "@/components/ui";
 import {
   counts,
-  featuredStarters,
   groups,
   picks,
+  recommended,
   shortlist,
   starterCollections,
   toolkits,
@@ -17,89 +17,116 @@ import {
 
 export default function HomePage() {
   const worthMoney = shortlist.find((section) => section.number === 1);
+  const recommendedAll = [
+    ...recommended.tools.map((tool) => ({
+      href: `/tools/${tool.slug}`,
+      name: tool.name,
+      descriptor: tool.category.split(" / ")[0],
+      recommended: true,
+      approved: tool.approved,
+    })),
+    ...recommended.starters.map((starter) => ({
+      href: `/starters/${starter.slug}`,
+      name: starter.name,
+      descriptor: starter.typeLabel,
+      recommended: true,
+      approved: starter.approved,
+    })),
+    ...recommended.resources.map((resource) => ({
+      href: `/resources/${resource.slug}`,
+      name: resource.name,
+      descriptor: resource.resourceType,
+      recommended: true,
+      approved: resource.approved,
+    })),
+  ];
 
   return (
     <>
       {/* ---------------------------------------------------------------- hero */}
-      <section className="border-b" style={{ borderColor: "var(--border)" }}>
-        <Container className="py-16 sm:py-24">
+      <section className="border-b border-hair">
+        <Container className="py-12 sm:py-16">
           <Eyebrow accent>Gitwork · studio reference</Eyebrow>
-          <Headline
-            className="mt-6 max-w-4xl text-[2.75rem] sm:text-[4.25rem]"
-            emphasis="actually use"
-          >
+          <Headline className="mt-4 max-w-3xl text-[2rem] sm:text-[2.75rem]" emphasis="actually use">
             Every tool, prompt and kit we{" "}
           </Headline>
-          <p className="mt-7 max-w-2xl text-lg leading-relaxed text-soft">
-            {counts.tools} tools we fetched and read properly, {counts.starters} Foundry starters
-            you can drop straight into a workflow, and {counts.resources} things worth reading once.
-            Nothing here is padded out with someone else's directory.
+          <p className="mt-4 max-w-xl text-[0.95rem] leading-relaxed text-soft">
+            {counts.tools} tools we read properly, {counts.starters} Foundry starters to drop into a
+            workflow, and {counts.resources} things worth reading once.
           </p>
 
-          <div className="mt-9 flex flex-wrap items-center gap-3">
+          <div className="mt-7 flex flex-wrap items-center gap-2.5">
             <Link
               href="/starters"
-              className="rounded-full px-5 py-3 text-sm font-medium transition-opacity hover:opacity-90"
+              className="rounded-full px-4 py-2.5 text-sm font-medium transition-opacity hover:opacity-90"
               style={{ background: "var(--accent)", color: "var(--on-accent)" }}
             >
               Browse {counts.starters} starters
             </Link>
             <Link
               href="/tools"
-              className="rounded-full border px-5 py-3 text-sm font-medium transition-colors hover:border-[var(--accent)] hover:text-[var(--accent-soft)]"
+              className="rounded-full border px-4 py-2.5 text-sm transition-colors hover:border-[var(--accent)] hover:text-[var(--accent-soft)]"
               style={{ borderColor: "var(--border-strong)" }}
             >
               The tools list
             </Link>
             <p className="label ml-1 text-mute">
-              or press{" "}
+              or{" "}
               <kbd className="rounded border px-1.5 py-0.5" style={{ borderColor: "var(--border)" }}>
                 ⌘K
-              </kbd>{" "}
-              to search
+              </kbd>
             </p>
           </div>
 
-          <div className="mt-14 grid grid-cols-2 gap-8 sm:grid-cols-4">
-            <Stat value={counts.entries} label="Entries in total" />
-            <Stat value={counts.starters} label="Foundry starters" />
-            <Stat value={counts.tools} label="Tools assessed" />
-            <Stat value={counts.picks} label="Worth your time" />
+          <div className="mt-11 grid grid-cols-2 gap-6 sm:grid-cols-4">
+            <Stat value={counts.entries} label="Entries" />
+            <Stat value={counts.recommended} label="Recommended" />
+            <Stat value={counts.approved} label="Gitwork approved" />
+            <Stat value={counts.free} label="Free tools" />
           </div>
         </Container>
       </section>
 
+      {/* --------------------------------------------------------- recommended */}
+      {recommendedAll.length ? (
+        <Section>
+          <Container>
+            <SectionHeading
+              eyebrow={`${counts.recommended} of ${counts.entries}`}
+              title="Recommended"
+              blurb="Flagged by hand in the portal — what we would actually reach for."
+              action={{ href: "/tools?recommended=1", label: "Tools only" }}
+            />
+            <div className="grid gap-x-8 gap-y-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+              {recommendedAll.map((item) => (
+                <CompactRow key={item.href} {...item} />
+              ))}
+            </div>
+          </Container>
+        </Section>
+      ) : null}
+
       {/* ----------------------------------------------------------- shortlist */}
       {worthMoney ? (
-        <Section>
+        <Section className="border-t border-hair">
           <Container>
             <SectionHeading
               eyebrow="Read this first"
               title="The decision view"
-              blurb="Of everything on the list, these are the calls worth making this week. The rest of the shortlist covers what to read, what to build, who to follow and what we have deliberately parked."
+              blurb="The calls worth making this week. The full shortlist covers what to read, what to build, who to follow and what we have parked."
               action={{ href: "/shortlist", label: "Full shortlist" }}
             />
-            <div
-              className="surface divide-y overflow-hidden"
-              style={{ borderColor: "var(--border)" }}
-            >
+            <div className="surface overflow-hidden">
               {worthMoney.rows.map((row) => {
-                const [item, cost, action, confidence] = row.map((cell) => cell.join(" "));
+                const [item, cost, action] = row.map((cell) => cell.join(" "));
                 return (
                   <div
                     key={item}
-                    className="grid gap-3 border-b p-5 last:border-0 sm:grid-cols-[15rem_1fr] sm:gap-8"
-                    style={{ borderColor: "var(--border)" }}
+                    className="grid gap-1.5 border-b border-hair p-4 last:border-0 sm:grid-cols-[14rem_1fr] sm:gap-6"
                   >
                     <div>
-                      <p className="font-medium">{item}</p>
-                      <p className="mt-1.5 font-mono text-xs text-mute">{cost}</p>
-                      <Badge
-                        className="mt-2.5"
-                        tone={confidence.startsWith("High") ? "green" : "accent"}
-                      >
-                        {confidence} confidence
-                      </Badge>
+                      <p className="text-sm font-medium">{item}</p>
+                      <p className="mt-1 font-mono text-[11px] text-mute">{cost}</p>
                     </div>
                     <p className="text-sm leading-relaxed text-soft">{action}</p>
                   </div>
@@ -114,20 +141,6 @@ export default function HomePage() {
       <Section className="border-t border-hair">
         <Container>
           <SectionHeading
-            eyebrow="Foundry starters"
-            title="Lift these straight into a build"
-            blurb={`${counts.prompts} prompts, ${counts.skills} skills, ${counts.kits} kits, ${counts.plugins} plugins and ${counts.starterCollections} collections — copy the prompt text, or install the kit and go.`}
-            action={{ href: "/starters", label: "Starter library" }}
-          />
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-            {featuredStarters.slice(0, 4).map((starter) => (
-              <StarterCard key={starter.slug} starter={starter} />
-            ))}
-          </div>
-
-          <Divider className="my-12" />
-
-          <SectionHeading
             eyebrow="Installable"
             title="Kits & plugins"
             blurb="Scaffolds and delivery workflows rather than single prompts."
@@ -138,6 +151,20 @@ export default function HomePage() {
               <StarterCard key={kit.slug} starter={kit} />
             ))}
           </div>
+
+          <Divider className="my-10" />
+
+          <SectionHeading
+            eyebrow={`${counts.starterCollections} sets`}
+            title="Collections"
+            blurb="Grouped starter libraries — which stage of a build each piece serves."
+            action={{ href: "/collections", label: "All collections" }}
+          />
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+            {starterCollections.slice(0, 4).map((collection) => (
+              <StarterCard key={collection.slug} starter={collection} />
+            ))}
+          </div>
         </Container>
       </Section>
 
@@ -145,17 +172,14 @@ export default function HomePage() {
       <Section className="border-t border-hair">
         <Container>
           <SectionHeading
-            eyebrow={`${picks.tools.length + picks.resources.length} of ${counts.tools + counts.resources}`}
+            eyebrow="Assessed high value"
             title="Worth your time"
-            blurb="Recommended in the portal, or rated high value when we assessed it. Everything else on the list is mid-table — and the shortlist says why."
-            action={{ href: "/tools?recommended=1", label: "Recommended only" }}
+            blurb="Rated high when we read it, whether or not it has been flagged since."
+            action={{ href: "/tools", label: "All tools" }}
           />
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-            {picks.tools.map((tool) => (
+            {picks.tools.slice(0, 4).map((tool) => (
               <ToolCard key={tool.slug} tool={tool} />
-            ))}
-            {picks.resources.slice(0, 4).map((resource) => (
-              <ResourceCard key={resource.slug} resource={resource} />
             ))}
           </div>
         </Container>
@@ -179,26 +203,9 @@ export default function HomePage() {
                 count={group.count}
                 countLabel="tools & resources"
                 samples={toolsInGroup(group.slug)
-                  .slice(0, 5)
+                  .slice(0, 4)
                   .map((tool) => tool.name)}
               />
-            ))}
-          </div>
-        </Container>
-      </Section>
-
-      {/* --------------------------------------------------------- collections */}
-      <Section className="border-t border-hair">
-        <Container>
-          <SectionHeading
-            eyebrow={`${counts.starterCollections} sets`}
-            title="Collections"
-            blurb="Grouped starter libraries — the index of what exists and which stage of a build each piece serves."
-            action={{ href: "/collections", label: "All collections" }}
-          />
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-            {starterCollections.slice(0, 4).map((collection) => (
-              <StarterCard key={collection.slug} starter={collection} />
             ))}
           </div>
         </Container>
@@ -207,20 +214,19 @@ export default function HomePage() {
       {/* ------------------------------------------------------------ caveats */}
       <Section className="border-t border-hair">
         <Container>
-          <div className="grid gap-8 lg:grid-cols-[1fr_1.3fr]">
+          <div className="grid gap-6 lg:grid-cols-[1fr_1.4fr]">
             <div>
-              <Eyebrow accent>How to read this</Eyebrow>
-              <h2 className="display mt-4 text-2xl sm:text-3xl">
+              <h2 className="display text-xl">
                 Every row here was opened and read
                 <span className="text-accent">.</span>
               </h2>
-              <p className="mt-4 max-w-md text-sm leading-relaxed text-soft">
+              <p className="mt-3 max-w-md text-sm leading-relaxed text-soft">
                 The imported 684-tool directory was dropped: unread listings with someone else's
-                unverified pricing labels are not a reference, they are noise.
+                unverified pricing labels are noise, not a reference.
               </p>
               <Link
                 href="/about"
-                className="label mt-5 inline-block border-b pb-1 transition-colors hover:text-[var(--accent)]"
+                className="label mt-4 inline-block border-b pb-1 transition-colors hover:text-[var(--accent)]"
                 style={{ borderColor: "var(--border-strong)" }}
               >
                 How this is built →
@@ -230,8 +236,7 @@ export default function HomePage() {
               <ArrowList
                 items={[
                   `Prices are what was published when we looked — ${counts.tools} tools, assessed 5 and 13 August 2026. Re-check before you spend.`,
-                  "Recommended and Gitwork approved are set by hand in the admin portal, so they mean a person made a call.",
-                  "Nothing carries an added date, so staleness cannot be judged from the data alone.",
+                  "Recommended and Gitwork approved are set by hand in the admin portal, so they mean a person made the call.",
                   "Dead and paywalled links stay on the list but are hidden by default, so nobody re-researches them.",
                 ]}
               />

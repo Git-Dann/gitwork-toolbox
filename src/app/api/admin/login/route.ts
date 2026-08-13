@@ -1,12 +1,5 @@
 import { NextResponse } from "next/server";
-import {
-  COOKIE,
-  adminNames,
-  authConfigured,
-  createToken,
-  passwordMatches,
-  sessionMaxAge,
-} from "@/lib/admin";
+import { COOKIE, authConfigured, createToken, passwordMatches, sessionMaxAge } from "@/lib/admin";
 
 export async function POST(request: Request) {
   if (!authConfigured()) {
@@ -16,24 +9,19 @@ export async function POST(request: Request) {
     );
   }
 
-  let body: { name?: string; password?: string };
+  let body: { password?: string };
   try {
     body = await request.json();
   } catch {
     return NextResponse.json({ error: "Bad request." }, { status: 400 });
   }
 
-  const name = (body.name ?? "").trim();
-  const names = adminNames();
-  if (!names.includes(name)) {
-    return NextResponse.json({ error: "Pick who you are first." }, { status: 400 });
-  }
   if (!passwordMatches(body.password ?? "")) {
     return NextResponse.json({ error: "That password is not right." }, { status: 401 });
   }
 
-  const response = NextResponse.json({ ok: true, name });
-  response.cookies.set(COOKIE, createToken(name), {
+  const response = NextResponse.json({ ok: true });
+  response.cookies.set(COOKIE, createToken(), {
     httpOnly: true,
     sameSite: "lax",
     secure: process.env.NODE_ENV === "production",

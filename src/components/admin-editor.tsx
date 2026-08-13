@@ -17,12 +17,10 @@ const key = (item: { kind: string; slug: string }) => `${item.kind}:${item.slug}
 
 export function AdminEditor({
   items,
-  session,
   canSave,
   configNote,
 }: {
   items: AdminItem[];
-  session: string;
   canSave: boolean;
   configNote?: string;
 }) {
@@ -166,7 +164,7 @@ export function AdminEditor({
           <Badge tone="solid">{counts.recommended} recommended</Badge>
           <Badge tone="accent">{counts.approved} approved</Badge>
           <button type="button" onClick={signOut} className="label text-mute hover:text-[var(--accent)]">
-            Sign out ({session})
+            Sign out
           </button>
         </div>
       </div>
