@@ -67,6 +67,7 @@ export default function NewPage() {
                   recommended={entry.recommended}
                   approved={entry.approved}
                   addedAt={entry.addedAt}
+                  icon={entry.icon}
                 />
               ))}
             </div>

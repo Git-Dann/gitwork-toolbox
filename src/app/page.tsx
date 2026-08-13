@@ -25,6 +25,7 @@ export default function HomePage() {
       descriptor: tool.category.split(" / ")[0],
       recommended: true,
       approved: tool.approved,
+      icon: tool.icon,
     })),
     ...recommended.starters.map((starter) => ({
       href: `/starters/${starter.slug}`,
@@ -39,6 +40,7 @@ export default function HomePage() {
       descriptor: resource.resourceType,
       recommended: true,
       approved: resource.approved,
+      icon: resource.icon,
     })),
   ];
 
@@ -54,8 +56,8 @@ export default function HomePage() {
             Every tool, prompt and kit we{" "}
           </Headline>
           <p className="mt-4 max-w-xl text-[0.95rem] leading-relaxed text-soft">
-            {counts.tools} tools we read properly, {counts.starters} Foundry starters to drop into a
-            workflow, and {counts.resources} things worth reading once.
+            {counts.starters} Foundry starters to paste into a workflow, {counts.tools} tools we read
+            properly, {counts.resources} references worth keeping.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-2.5">
@@ -97,7 +99,6 @@ export default function HomePage() {
             <SectionHeading
               eyebrow={`${recentlyAdded.length} since the import`}
               title="Newly added"
-              blurb="The latest things posted to the toolbox."
               action={{ href: "/new", label: "All additions" }}
             />
             <div className="grid gap-x-8 gap-y-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
@@ -110,6 +111,7 @@ export default function HomePage() {
                   recommended={entry.recommended}
                   approved={entry.approved}
                   addedAt={entry.addedAt}
+                  icon={entry.icon}
                 />
               ))}
             </div>
@@ -124,7 +126,6 @@ export default function HomePage() {
             <SectionHeading
               eyebrow={`${counts.recommended} of ${counts.entries}`}
               title="Recommended"
-              blurb="Flagged by hand in the portal — what we would actually reach for."
               action={{ href: "/tools?recommended=1", label: "Tools only" }}
             />
             <div className="grid gap-x-8 gap-y-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
@@ -143,7 +144,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Read this first"
               title="The decision view"
-              blurb="The calls worth making this week. The full shortlist covers what to read, what to build, who to follow and what we have parked."
+              blurb="What to buy, read, build, follow or park."
               action={{ href: "/shortlist", label: "Full shortlist" }}
             />
             <div className="surface overflow-hidden">
@@ -173,7 +174,6 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Installable"
             title="Kits & plugins"
-            blurb="Scaffolds and delivery workflows rather than single prompts."
             action={{ href: "/starters?type=KIT", label: "All kits" }}
           />
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
@@ -187,7 +187,6 @@ export default function HomePage() {
           <SectionHeading
             eyebrow={`${counts.starterCollections} sets`}
             title="Collections"
-            blurb="Grouped starter libraries — which stage of a build each piece serves."
             action={{ href: "/collections", label: "All collections" }}
           />
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
@@ -204,7 +203,6 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Assessed high value"
             title="Worth your time"
-            blurb="Rated high when we read it, whether or not it has been flagged since."
             action={{ href: "/tools", label: "All tools" }}
           />
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
@@ -241,39 +239,6 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      {/* ------------------------------------------------------------ caveats */}
-      <Section className="border-t border-hair">
-        <Container>
-          <div className="grid gap-6 lg:grid-cols-[1fr_1.4fr]">
-            <div>
-              <h2 className="display text-xl">
-                Every row here was opened and read
-                <span className="text-accent">.</span>
-              </h2>
-              <p className="mt-3 max-w-md text-sm leading-relaxed text-soft">
-                The imported 684-tool directory was dropped: unread listings with someone else's
-                unverified pricing labels are noise, not a reference.
-              </p>
-              <Link
-                href="/about"
-                className="label mt-4 inline-block border-b pb-1 transition-colors hover:text-[var(--accent)]"
-                style={{ borderColor: "var(--border-strong)" }}
-              >
-                How this is built →
-              </Link>
-            </div>
-            <Panel>
-              <ArrowList
-                items={[
-                  `Prices are what was published when we looked — ${counts.tools} tools, assessed 5 and 13 August 2026. Re-check before you spend.`,
-                  "Recommended and Gitwork approved are set by hand in the admin portal, so they mean a person made the call.",
-                  "Dead and paywalled links stay on the list but are hidden by default, so nobody re-researches them.",
-                ]}
-              />
-            </Panel>
-          </div>
-        </Container>
-      </Section>
     </>
   );
 }

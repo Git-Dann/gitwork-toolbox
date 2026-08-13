@@ -15,7 +15,7 @@
  * else's unverified pricing labels are not worth browsing.
  */
 
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, readdirSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -193,6 +193,20 @@ function groupFor(category) {
   return "discovery-and-reference";
 }
 
+/* -------------------------------------------------------------------- icons */
+
+// Icons are committed to public/icons by scripts/fetch-icons.mjs. Anything without
+// one keeps its monogram.
+const ICON_DIR = join(ROOT, "public", "icons");
+const iconBySlug = new Map();
+if (existsSync(ICON_DIR)) {
+  for (const file of readdirSync(ICON_DIR)) {
+    const slug = file.replace(/\.(png|svg|ico|jpg|jpeg|webp)$/i, "");
+    if (slug !== file) iconBySlug.set(slug, `/icons/${file}`);
+  }
+}
+const iconFor = (slug) => iconBySlug.get(slug) ?? null;
+
 /* ---------------------------------------------------------------- additions */
 
 // Entries added after the original import. They are validated hard, because they
@@ -304,6 +318,7 @@ for (const [tab, pricing] of PRICING_TABS) {
       notes: paragraphs(row["Notes / watch out for"]),
       website,
       domain: domainOf(website),
+      icon: iconFor(slug),
       ...flagsFor("tools", slug),
     });
   }
@@ -330,6 +345,7 @@ for (const entry of additionsByKind.tool) {
     notes: (entry.notes ?? []).map(clean).filter(Boolean),
     website,
     domain: domainOf(website),
+    icon: iconFor(slug),
     addedAt: entry.addedAt,
     addedBy: clean(entry.addedBy),
     // Flags can be set inline on the entry, and the portal can still override them.
@@ -369,6 +385,7 @@ const resources = table("Resources")
       cost: row["Cost"] || "—",
       link,
       domain: domainOf(link),
+      icon: iconFor(slug),
       ...flagsFor("resources", slug),
     };
   });
@@ -391,6 +408,7 @@ for (const entry of additionsByKind.resource) {
     cost: clean(entry.cost) || "—",
     link,
     domain: domainOf(link),
+    icon: iconFor(slug),
     addedAt: entry.addedAt,
     addedBy: clean(entry.addedBy),
     ...{
@@ -559,6 +577,7 @@ const recentlyAdded = [
       slug: tool.slug,
       name: tool.name,
       descriptor: tool.category.split(" / ")[0],
+      icon: tool.icon,
       addedAt: tool.addedAt,
       addedBy: tool.addedBy ?? "",
       recommended: tool.recommended,
@@ -583,6 +602,7 @@ const recentlyAdded = [
       slug: resource.slug,
       name: resource.name,
       descriptor: resource.resourceType,
+      icon: resource.icon,
       addedAt: resource.addedAt,
       addedBy: resource.addedBy ?? "",
       recommended: resource.recommended,

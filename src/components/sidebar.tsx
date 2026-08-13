@@ -6,17 +6,16 @@ import { useEffect, useState } from "react";
 import { Wordmark } from "@/components/brand";
 import { CommandPalette } from "@/components/command-palette";
 import { ThemeToggle } from "@/components/theme-toggle";
-import type { Group } from "@/lib/types";
 
 type NavItem = { href: string; label: string; count?: number };
 
-export function Sidebar({
-  groups,
-  counts,
-}: {
-  groups: Group[];
-  counts: Record<string, number>;
-}) {
+/**
+ * One list of destinations, then the starter library by type. Areas deliberately
+ * live on the tools page as filters rather than up here: two competing filter sets
+ * in one view was the confusing part, and "Collections" appeared twice meaning two
+ * different things.
+ */
+export function Sidebar({ counts }: { counts: Record<string, number> }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
@@ -29,9 +28,9 @@ export function Sidebar({
     ...(counts.recent ? [{ href: "/new", label: "Newly added", count: counts.recent }] : []),
     { href: "/tools", label: "Tools", count: counts.tools },
     { href: "/starters", label: "Starters", count: counts.starters },
+    { href: "/resources", label: "Resources", count: counts.resources },
     { href: "/collections", label: "Collections" },
     { href: "/shortlist", label: "Shortlist" },
-    { href: "/resources", label: "Resources", count: counts.resources },
   ];
 
   const library: NavItem[] = [
@@ -39,7 +38,6 @@ export function Sidebar({
     { href: "/starters?type=SKILL", label: "Skills", count: counts.skills },
     { href: "/starters?type=KIT", label: "Kits", count: counts.kits },
     { href: "/starters?type=PLUGIN", label: "Plugins", count: counts.plugins },
-    { href: "/starters?type=COLLECTION", label: "Collections", count: counts.starterCollections },
   ];
 
   const isActive = (href: string) => {
@@ -75,19 +73,6 @@ export function Sidebar({
           <NavLink
             key={item.href}
             item={item}
-            active={false}
-            subtle
-            onNavigate={() => setOpen(false)}
-          />
-        ))}
-      </Section>
-
-      <SectionTitle>Areas</SectionTitle>
-      <Section>
-        {groups.map((group) => (
-          <NavLink
-            key={group.slug}
-            item={{ href: `/tools?group=${group.slug}`, label: group.name, count: group.count }}
             active={false}
             subtle
             onNavigate={() => setOpen(false)}
@@ -154,7 +139,7 @@ export function Sidebar({
 
       {/* Desktop rail */}
       <aside
-        className="sticky top-0 hidden h-screen w-64 shrink-0 border-r lg:block"
+        className="sticky top-0 hidden h-screen w-60 shrink-0 border-r lg:block"
         style={{ borderColor: "var(--border)", background: "var(--bg-raised)" }}
       >
         {nav}
@@ -164,7 +149,7 @@ export function Sidebar({
 }
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
-  return <p className="label mt-5 mb-1.5 px-2.5 text-mute">{children}</p>;
+  return <p className="label mt-6 mb-1.5 px-2.5 text-mute">{children}</p>;
 }
 
 function Section({ children }: { children: React.ReactNode }) {

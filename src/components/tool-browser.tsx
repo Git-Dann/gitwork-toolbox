@@ -15,6 +15,7 @@ export type ResourceListItem = {
   group: string;
   recommended: boolean;
   approved: boolean;
+  icon: string | null;
 };
 
 const PRICING: Pricing[] = ["Free", "Freemium", "Paid"];
@@ -307,6 +308,7 @@ export function ToolBrowser({
                       descriptor={resource.resourceType}
                       recommended={resource.recommended}
                       approved={resource.approved}
+                      icon={resource.icon}
                     />
                   ))}
                 </div>

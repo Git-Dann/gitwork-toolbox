@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ExternalIcon, Monogram } from "@/components/ui";
+import { ExternalIcon, ItemIcon, Monogram } from "@/components/ui";
 import { isNew } from "@/lib/data";
 import type { Resource, StarterListItem, ToolListItem } from "@/lib/types";
 
@@ -59,7 +59,7 @@ export function ToolCard({ tool }: { tool: ToolListItem }) {
   return (
     <Link href={`/tools/${tool.slug}`} className={CARD} aria-label={tool.name}>
       <div className="flex items-start gap-3">
-        <Monogram name={tool.name} />
+        <ItemIcon name={tool.name} icon={tool.icon} />
         <div className="min-w-0 flex-1">
           <div className="flex min-w-0 items-center">
             <h3 className={NAME}>{tool.name}</h3>
@@ -103,7 +103,7 @@ export function ResourceCard({ resource }: { resource: Resource }) {
   return (
     <Link href={`/resources/${resource.slug}`} className={CARD}>
       <div className="flex items-start gap-3">
-        <Monogram name={resource.name} />
+        <ItemIcon name={resource.name} icon={resource.icon} />
         <div className="min-w-0 flex-1">
           <div className="flex min-w-0 items-center">
             <h3 className={NAME}>{resource.name}</h3>
@@ -126,6 +126,7 @@ export function CompactRow({
   recommended,
   approved,
   addedAt,
+  icon,
 }: {
   href: string;
   name: string;
@@ -133,10 +134,11 @@ export function CompactRow({
   recommended?: boolean;
   approved?: boolean;
   addedAt?: string;
+  icon?: string | null;
 }) {
   return (
     <Link href={href} className="group flex items-center gap-3 rounded-lg py-2 pr-2">
-      <Monogram name={name} size="sm" />
+      <ItemIcon name={name} icon={icon} size="sm" />
       <span className="min-w-0 flex-1">
         <span className="flex min-w-0 items-center">
           <span className="truncate text-sm font-medium transition-colors group-hover:text-[var(--accent-soft)]">

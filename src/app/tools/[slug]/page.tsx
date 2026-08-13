@@ -8,7 +8,7 @@ import {
   Badge,
   Eyebrow,
   LinkHealth,
-  Monogram,
+  ItemIcon,
   RecommendedBadge,
   SectionHeading,
   UsefulnessBadge,
@@ -45,7 +45,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
           <BackLink href="/tools">All tools</BackLink>
 
           <div className="mt-7 flex flex-col gap-6 sm:flex-row sm:items-start">
-            <Monogram name={tool.name} size="lg" />
+            <ItemIcon name={tool.name} icon={tool.icon} size="lg" />
             <div className="min-w-0 flex-1">
               <h1 className="display text-3xl sm:text-[2.75rem]">
                 {tool.name}

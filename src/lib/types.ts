@@ -21,6 +21,7 @@ export type RecentEntry = {
   slug: string;
   name: string;
   descriptor: string;
+  icon?: string | null;
   addedAt: string;
   addedBy: string;
   recommended: boolean;
@@ -43,6 +44,7 @@ export type Tool = AdminFlags &
   notes: string[];
   website: string;
   domain: string;
+  icon: string | null;
 };
 
 export type Resource = AdminFlags &
@@ -59,6 +61,7 @@ export type Resource = AdminFlags &
   cost: string;
   link: string;
   domain: string;
+  icon: string | null;
 };
 
 export type Starter = AdminFlags &
@@ -143,6 +146,7 @@ export type ToolListItem = Pick<
   | "recommended"
   | "approved"
   | "addedAt"
+  | "icon"
 >;
 
 export type StarterListItem = Pick<

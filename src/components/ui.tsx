@@ -59,6 +59,34 @@ export function Monogram({
   );
 }
 
+/** The product's own mark where we have one, the monogram where we do not. */
+export function ItemIcon({
+  name,
+  icon,
+  size = "md",
+  className = "",
+}: {
+  name: string;
+  icon?: string | null;
+  size?: "sm" | "md" | "lg";
+  className?: string;
+}) {
+  if (!icon) return <Monogram name={name} size={size} className={className} />;
+
+  const box = { sm: "h-8 w-8 rounded-md", md: "h-11 w-11 rounded-lg", lg: "h-16 w-16 rounded-xl" }[size];
+
+  return (
+    <span
+      className={`grid shrink-0 place-items-center overflow-hidden border ${box} ${className}`}
+      style={{ borderColor: "var(--border)", background: "#fff" }}
+    >
+      {/* Plain img: these are committed files of unknown intrinsic size. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={icon} alt="" aria-hidden className="h-full w-full object-contain p-1" />
+    </span>
+  );
+}
+
 /* -------------------------------------------------------------------- badges */
 
 type Tone = "neutral" | "accent" | "green" | "flag" | "amber" | "solid";

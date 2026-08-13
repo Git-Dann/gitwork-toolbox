@@ -6,7 +6,7 @@ import {
   ApprovedBadge,
   Badge,
   Eyebrow,
-  Monogram,
+  ItemIcon,
   RecommendedBadge,
   SectionHeading,
   UsefulnessBadge,
@@ -44,7 +44,7 @@ export default async function ResourcePage({ params }: { params: Promise<{ slug:
           <BackLink href="/resources">All resources</BackLink>
 
           <div className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-start sm:gap-6">
-            <Monogram name={resource.name} size="lg" />
+            <ItemIcon name={resource.name} icon={resource.icon} size="lg" />
             <div className="min-w-0 flex-1">
               <h1 className="display text-3xl sm:text-[2.5rem]">
                 {resource.name}

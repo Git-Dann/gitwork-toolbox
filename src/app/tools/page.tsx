@@ -27,6 +27,7 @@ const listItems: ToolListItem[] = tools.map((tool) => ({
   recommended: tool.recommended,
   approved: tool.approved,
   addedAt: tool.addedAt,
+  icon: tool.icon,
 }));
 
 const resourceItems = resources.map((resource) => ({
@@ -36,6 +37,7 @@ const resourceItems = resources.map((resource) => ({
   group: resource.group,
   recommended: resource.recommended,
   approved: resource.approved,
+  icon: resource.icon,
 }));
 
 export default function ToolsPage() {
