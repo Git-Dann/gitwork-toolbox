@@ -171,7 +171,7 @@ export function AdminEditor({
 
       <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center">
         <div className="flex-1">
-          <SearchField value={query} onChange={setQuery} placeholder="Find an item by name…" />
+          <SearchField value={query} onChange={setQuery} placeholder="Find an item…" />
         </div>
         <button
           type="button"
@@ -238,7 +238,7 @@ export function AdminEditor({
                 <input
                   value={draft.note}
                   onChange={(event) => update(item, { note: event.target.value })}
-                  placeholder="Optional — shown on the page"
+                  placeholder="Note (shown on the page)"
                   className="rounded-lg border px-3 py-2 text-sm outline-none focus:border-[var(--accent)] sm:w-64"
                   style={{
                     borderColor: "var(--border)",
@@ -282,7 +282,7 @@ export function AdminEditor({
             <p className="text-sm text-mute">
               {changeCount
                 ? `${changeCount} unsaved ${changeCount === 1 ? "change" : "changes"}`
-                : "Tick what you rate. Nothing is live until you publish."}
+                : "Nothing is live until you publish."}
             </p>
           )}
         </div>

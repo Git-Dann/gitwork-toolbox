@@ -42,9 +42,9 @@ export default function NewPage() {
   return (
     <>
       <PageHeader
-        eyebrow={`${recentlyAdded.length} since the import`}
+        eyebrow={`${recentlyAdded.length} total`}
         title="Newly added"
-        lead="Everything posted to the toolbox since the original workbook import, newest first."
+        lead="Newest first."
       />
       <Container>
         {days.map(([day, entries]) => (

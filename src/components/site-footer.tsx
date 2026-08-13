@@ -23,8 +23,7 @@ export function SiteFooter() {
               Gitwork<span className="text-accent">.</span> Toolbox
             </p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-soft">
-              {counts.entries} entries: {counts.tools} assessed tools, {counts.starters} Foundry
-              starters and {counts.resources} resources, each with our own verdict attached.
+              {counts.tools} tools · {counts.starters} starters · {counts.resources} resources
             </p>
             <OutboundLink
               href="https://gitwork.co.uk"
@@ -61,8 +60,8 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-12 flex flex-wrap items-center justify-between gap-3 border-t border-hair pt-6">
-          <p className="label text-mute">© {YEAR} Gitwork — from prompt to production</p>
-          <p className="label text-mute">Internal reference · not indexed</p>
+          <p className="label text-mute">© {YEAR} Gitwork</p>
+          <p className="label text-mute">Internal · not indexed</p>
         </div>
       </Container>
     </footer>

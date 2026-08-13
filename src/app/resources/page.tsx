@@ -27,9 +27,9 @@ export default function ResourcesPage() {
   return (
     <>
       <PageHeader
-        eyebrow={`${counts.resources} items`}
+        eyebrow={`${counts.resources} filed`}
         title="Resources"
-        lead="Not tools: articles worth reading once, official docs, accounts worth following, other people's directories, and two hardware side projects. Each one says what to do with it."
+        lead="Articles, docs, accounts and directories. Each one says what to do with it."
         meta={types.map((type) => (
           <Badge key={type}>{type}</Badge>
         ))}
@@ -38,9 +38,8 @@ export default function ResourcesPage() {
       <Container>
         <Section>
           <SectionHeading
-            eyebrow={`${lead.length} of ${resources.length}`}
-            title="Read or follow these"
-            blurb="Rated high value — each has a specific follow-on action, not just a bookmark."
+            eyebrow="Rated high"
+            title="Read or follow"
           />
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
             {lead.map((resource) => (
@@ -52,8 +51,7 @@ export default function ResourcesPage() {
         <Section className="border-t border-hair">
           <SectionHeading
             eyebrow="Everything else"
-            title="Filed for reference"
-            blurb="Recorded so nobody researches them twice. Several could not be read directly — the detail page says which."
+            title="Filed"
           />
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
             {rest.map((resource) => (

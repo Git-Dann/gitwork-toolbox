@@ -16,8 +16,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Collections",
-  description:
-    "Curated sets: Foundry starter collections, the tool areas, and the editorial cuts worth keeping.",
+  description: "Starter collections, filtered cuts and the tool areas.",
 };
 
 export default function CollectionsPage() {
@@ -27,7 +26,7 @@ export default function CollectionsPage() {
     {
       href: "/tools?recommended=1",
       title: "Recommended",
-      blurb: "Flagged by hand in the admin portal — the ones we would put on a client project.",
+      blurb: "Picked by hand in the portal.",
       count: recommended.tools.length,
       countLabel: "tools",
       samples: recommended.tools.length
@@ -36,8 +35,8 @@ export default function CollectionsPage() {
     },
     {
       href: "/tools",
-      title: "Worth your time",
-      blurb: "Recommended, or rated high value at assessment. Best verdict first.",
+      title: "Worth using",
+      blurb: "Recommended or rated high.",
       count: picks.tools.length,
       countLabel: "tools",
       samples: picks.tools.map((tool) => tool.name),
@@ -45,7 +44,7 @@ export default function CollectionsPage() {
     {
       href: "/tools?price=Free",
       title: "Free or open source",
-      blurb: "A genuine free tier or an open-source licence. Check the licence before shipping.",
+      blurb: "Real free tier or an open-source licence.",
       count: freeTools.length,
       countLabel: "tools",
       samples: freeTools.map((tool) => tool.name),
@@ -53,7 +52,7 @@ export default function CollectionsPage() {
     {
       href: "/shortlist#potential-to-build-ourselves",
       title: "Build candidates",
-      blurb: "The seven things worth building instead of buying — ranked, with a verdict.",
+      blurb: "Worth building instead of buying.",
       count: 7,
       countLabel: "candidates",
       samples: ["Design token extractor", "Generative UI", "Enquiry triage", "Diff abridger"],
@@ -61,7 +60,7 @@ export default function CollectionsPage() {
     {
       href: "/shortlist#park-it",
       title: "Parked",
-      blurb: "Recorded so nobody re-researches them. Read this before adding to the stack.",
+      blurb: "Ruled out, with the reason.",
       count: 20,
       countLabel: "items",
       samples: ["oil-motion", "Appllama", "Path.cv", "LogoCreator", "TinyFolder"],
@@ -69,7 +68,7 @@ export default function CollectionsPage() {
     {
       href: "/starters?type=KIT",
       title: "Kits & plugins",
-      blurb: "Installable scaffolds and delivery workflows rather than single prompts.",
+      blurb: "Installable, not single prompts.",
       count: toolkits.length,
       countLabel: "kits & plugins",
       samples: toolkits.map((kit) => kit.name),
@@ -79,17 +78,16 @@ export default function CollectionsPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Curated sets"
+        eyebrow="Saved views"
         title="Collections"
-        lead="Ways into the list that are more useful than alphabetical: Foundry's own starter collections, the tool areas, and the editorial cuts."
+        lead="Saved views you can paste to someone."
       />
 
       <Container>
         <Section>
           <SectionHeading
             eyebrow={`${counts.starterCollections} sets`}
-            title="Foundry starter collections"
-            blurb="Each one is an index in its own right — what exists in the library and which stage of a build it serves."
+            title="Starter collections"
             action={{ href: "/starters?type=COLLECTION", label: "In the library" }}
           />
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
@@ -101,9 +99,8 @@ export default function CollectionsPage() {
 
         <Section className="border-t border-hair">
           <SectionHeading
-            eyebrow="Editorial"
-            title="Cuts worth keeping"
-            blurb="Filtered views of the same data, saved as links you can paste to someone."
+            eyebrow="Filtered"
+            title="Cuts"
           />
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             {editorial.map((item) => (
@@ -114,8 +111,8 @@ export default function CollectionsPage() {
 
         <Section className="border-t border-hair">
           <SectionHeading
-            eyebrow={`${groups.length} areas`}
-            title="Tool areas"
+            eyebrow={`${groups.length}`}
+            title="Areas"
             action={{ href: "/tools", label: "All tools" }}
           />
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">

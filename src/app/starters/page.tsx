@@ -28,9 +28,9 @@ export default function StartersPage() {
   return (
     <>
       <PageHeader
-        eyebrow={`${counts.starters} Foundry starters`}
+        eyebrow={`${counts.starters} from Foundry`}
         title="The starter library"
-        lead="Gitwork's own prompts, skills, kits and plugins, exported from Foundry. Copy the prompt text into any capable agent, or install the kit and work through it."
+        lead="Copy the text into any agent, or install the kit."
         meta={
           <>
             <Badge>{counts.prompts} prompts</Badge>

@@ -184,7 +184,7 @@ export function CommandPalette({ variant = "sidebar" }: { variant?: "sidebar" | 
                   setActive(0);
                 }}
                 onKeyDown={onKeyDown}
-                placeholder="Search tools, prompts, kits and resources…"
+                placeholder="Search the toolbox…"
                 className="w-full bg-transparent text-sm outline-none placeholder:text-[var(--text-mute)]"
               />
               <kbd
@@ -199,12 +199,12 @@ export function CommandPalette({ variant = "sidebar" }: { variant?: "sidebar" | 
               <p className="px-4 py-6 text-sm text-mute">Loading the index…</p>
             ) : results.length === 0 ? (
               <p className="px-4 py-6 text-sm text-mute">
-                Nothing matches “{query}”. Try a category, a model name, or part of a URL.
+                No matches for “{query}”.
               </p>
             ) : (
               <ul ref={listRef} className="max-h-[52vh] overflow-y-auto py-1">
                 {!query.trim() ? (
-                  <li className="label px-4 py-2 text-mute">Gitwork picks</li>
+                  <li className="label px-4 py-2 text-mute">Recommended</li>
                 ) : null}
                 {results.map((entry, index) => (
                   <li key={`${entry.kind}-${entry.slug}`}>

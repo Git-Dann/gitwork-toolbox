@@ -52,7 +52,7 @@ export default async function AdminPage() {
       <PageHeader
         eyebrow="Dan & Harry"
         title="Admin"
-        lead="Mark anything Recommended or Gitwork approved and add a studio note. Publishing commits the change, so the site picks it up on the next deploy."
+        lead="Tick what you rate, then publish. The site picks it up on the next deploy."
       />
 
       <Container className="py-8">

@@ -45,9 +45,8 @@ export default function ToolsPage() {
   return (
     <>
       <PageHeader
-        eyebrow={`${counts.tools} tools · ${meta.groups.length} areas`}
+        eyebrow={`${counts.tools} assessed`}
         title="The tools list"
-        lead="Every link we fetched and read individually, with a real verdict: what it does, what it costs, whether to use it or build it, and what to watch out for."
         meta={
           <>
             <Badge tone="green">{counts.free} free</Badge>

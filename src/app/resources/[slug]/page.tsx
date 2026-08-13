@@ -113,11 +113,9 @@ export default async function ResourcePage({ params }: { params: Promise<{ slug:
           </div>
 
           <aside>
-            <Panel title="Where it sits">
-              <p className="text-sm leading-relaxed text-mute">
-                Filed under {resource.category}. Resources are not tools — nothing here goes into the
-                stack, it gets read, followed or filed.
-              </p>
+            <Panel title="Filed under">
+              <p className="text-sm">{resource.category}</p>
+              <p className="mt-2 font-mono text-[11px] text-mute">{resource.resourceType}</p>
             </Panel>
           </aside>
         </div>

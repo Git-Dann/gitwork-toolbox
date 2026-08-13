@@ -60,7 +60,7 @@ export default async function StarterPage({ params }: { params: Promise<{ slug: 
               className="rounded-full border px-4 py-2.5 text-sm transition-colors hover:border-[var(--accent)] hover:text-[var(--accent-soft)]"
               style={{ borderColor: "var(--border-strong)" }}
             >
-              Read it first
+              Read it
             </a>
           </div>
         </Container>
@@ -70,7 +70,7 @@ export default async function StarterPage({ params }: { params: Promise<{ slug: 
         <div className="grid gap-8 lg:grid-cols-[1fr_18rem]">
           <div className="space-y-6">
             <div>
-              <Eyebrow className="mb-3">What it is</Eyebrow>
+              <Eyebrow className="mb-3">About</Eyebrow>
               <Markdown
                 text={starter.description}
                 className="prose-tight max-w-2xl text-[0.95rem] leading-relaxed"
@@ -100,9 +100,7 @@ export default async function StarterPage({ params }: { params: Promise<{ slug: 
               <div className="mb-3 flex flex-wrap items-end justify-between gap-3">
                 <div>
                   <Eyebrow>The full text</Eyebrow>
-                  <p className="mt-1 text-sm text-mute">
-                    Paste it whole — it is written to work as a single instruction block.
-                  </p>
+                  <p className="mt-1 text-sm text-mute">Paste it whole.</p>
                 </div>
                 <CopyButton text={starter.promptText} label="Copy" />
               </div>
@@ -113,7 +111,7 @@ export default async function StarterPage({ params }: { params: Promise<{ slug: 
 
             {starter.install.length ? (
               <div>
-                <Eyebrow className="mb-3">How to use it</Eyebrow>
+                <Eyebrow className="mb-3">How to use</Eyebrow>
                 <ol className="surface px-5">
                   {starter.install.map((step, index) => (
                     <li
@@ -155,7 +153,7 @@ export default async function StarterPage({ params }: { params: Promise<{ slug: 
             ) : null}
 
             {starter.keywords.length ? (
-              <Panel title="Also known as">
+              <Panel title="Keywords">
                 <p className="text-sm leading-relaxed text-mute">{starter.keywords.join(", ")}</p>
               </Panel>
             ) : null}

@@ -121,13 +121,13 @@ export function StarterBrowser({
 
           <FilterGroup title="Verdict">
             <Toggle
-              label="Recommended only"
-              hint="Flagged by Dan or Harry"
+              label="Recommended"
+              hint="Picked by hand"
               active={recommendedOnly}
               onClick={() => setRecommendedOnly((value) => !value)}
             />
             <Toggle
-              label="Featured in Foundry"
+              label="Featured"
               active={featuredOnly}
               onClick={() => setFeaturedOnly((value) => !value)}
             />
@@ -153,7 +153,7 @@ export function StarterBrowser({
         <SearchField
           value={query}
           onChange={setQuery}
-          placeholder="Search prompts, skills and kits…"
+          placeholder="Search starters…"
         />
 
         <div className="mt-4 flex flex-wrap items-center gap-2">
@@ -171,7 +171,7 @@ export function StarterBrowser({
 
         {filtered.length === 0 ? (
           <div className="surface mt-6 p-8 text-center">
-            <p className="display text-xl">No starters match that.</p>
+            <p className="display text-xl">No matches.</p>
             <button
               type="button"
               onClick={reset}

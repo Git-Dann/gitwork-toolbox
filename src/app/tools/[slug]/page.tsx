@@ -103,8 +103,8 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
             {tool.linkStatus === "dead" ? (
               <Panel tone="flag" title="Link check failed">
                 <p className="text-sm leading-relaxed text-soft">
-                  {tool.linkLabel} when it was checked. The row is kept so the tool is not
-                  re-researched from scratch, but do not expect the site to load.
+                  {tool.linkLabel} when it was checked. Kept on the list so nobody researches it
+                  twice.
                 </p>
               </Panel>
             ) : null}

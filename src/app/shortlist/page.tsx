@@ -14,9 +14,9 @@ export default function ShortlistPage() {
   return (
     <>
       <PageHeader
-        eyebrow="The decision view"
-        title="Shortlist & actions"
-        lead="41 links assessed and sorted by what to actually do, not by category. The tools list holds everything; this is the part that needs a decision."
+        eyebrow="41 links assessed"
+        title="Shortlist"
+        lead="Sorted by what to do, not by category."
       >
         <nav className="mt-7 flex flex-wrap gap-2">
           {shortlist.map((section) => (

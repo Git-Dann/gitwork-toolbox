@@ -169,20 +169,19 @@ export function ToolBrowser({
         <div className="lg:sticky lg:top-8">
           <FilterGroup title="Verdict">
             <Toggle
-              label="Recommended only"
-              hint="Flagged by Dan or Harry"
+              label="Recommended"
+              hint="Picked by hand"
               active={recommendedOnly}
               onClick={() => setRecommendedOnly((value) => !value)}
             />
             <Toggle
-              label="Gitwork approved only"
+              label="Gitwork approved"
               hint="Cleared for client work"
               active={approvedOnly}
               onClick={() => setApprovedOnly((value) => !value)}
             />
             <Toggle
               label="Hide dead links"
-              hint="404s and domains that no longer resolve"
               active={hideDead}
               onClick={() => setHideDead((value) => !value)}
             />
@@ -227,7 +226,7 @@ export function ToolBrowser({
             <SearchField
               value={query}
               onChange={setQuery}
-              placeholder="Search by name, what it does, category or domain…"
+              placeholder="Search tools…"
             />
           </div>
           <div className="flex items-center gap-2">
@@ -270,10 +269,7 @@ export function ToolBrowser({
 
         {filtered.length === 0 && areaResources.length === 0 ? (
           <div className="surface mt-6 p-8 text-center">
-            <p className="display text-xl">Nothing matches that.</p>
-            <p className="mt-2 text-sm text-soft">
-              Try a broader area, or clear the filters and search again.
-            </p>
+            <p className="display text-xl">No matches.</p>
             <button
               type="button"
               onClick={reset}
@@ -296,8 +292,7 @@ export function ToolBrowser({
             {areaResources.length ? (
               <div className="mt-8 border-t border-hair pt-6">
                 <p className="label mb-3 text-mute">
-                  {areaResources.length} resource{areaResources.length === 1 ? "" : "s"} filed under{" "}
-                  {groupName}
+                  Resources · {groupName}
                 </p>
                 <div className="grid gap-x-8 gap-y-1 sm:grid-cols-2 xl:grid-cols-3">
                   {areaResources.map((resource) => (

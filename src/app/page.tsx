@@ -106,7 +106,7 @@ export default function HomePage() {
         <Section>
           <Container>
             <SectionHeading
-              eyebrow={`${recentlyAdded.length} since the import`}
+              eyebrow={recentlyAdded.length === 1 ? "1 new" : `${recentlyAdded.length} new`}
               title="Newly added"
               action={{ href: "/new", label: "All additions" }}
             />
@@ -122,7 +122,7 @@ export default function HomePage() {
         <Section className={recentlyAdded.length ? "border-t border-hair" : ""}>
           <Container>
             <SectionHeading
-              eyebrow={`${counts.recommended} of ${counts.entries}`}
+              eyebrow={`${counts.recommended} picked by hand`}
               title="Recommended"
               action={{ href: "/tools?recommended=1", label: "Tools only" }}
             />
@@ -140,10 +140,9 @@ export default function HomePage() {
         <Section className="border-t border-hair">
           <Container>
             <SectionHeading
-              eyebrow="Read this first"
-              title="The decision view"
-              blurb="What to buy, read, build, follow or park."
-              action={{ href: "/shortlist", label: "Full shortlist" }}
+              eyebrow="Buy · read · build · park"
+              title="Shortlist"
+              action={{ href: "/shortlist", label: "All 5 sections" }}
             />
             <div className="surface overflow-hidden">
               {worthMoney.rows.map((row) => {
@@ -199,8 +198,8 @@ export default function HomePage() {
       <Section className="border-t border-hair">
         <Container>
           <SectionHeading
-            eyebrow="Assessed high value"
-            title="Worth your time"
+            eyebrow="Rated high"
+            title="Worth using"
             action={{ href: "/tools", label: "All tools" }}
           />
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
