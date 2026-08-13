@@ -7,8 +7,8 @@ import {
   StarterCard,
   ToolCard,
 } from "@/components/cards";
-import { Container, Panel, Section } from "@/components/page-shell";
-import { ArrowList, Divider, Eyebrow, SectionHeading, Stat } from "@/components/ui";
+import { Container, Section } from "@/components/page-shell";
+import { Divider, Eyebrow, SectionHeading } from "@/components/ui";
 import {
   counts,
   getResource,
@@ -78,8 +78,8 @@ export default function HomePage() {
             Every tool, prompt and kit we{" "}
           </Headline>
           <p className="mt-4 max-w-xl text-[0.95rem] leading-relaxed text-soft">
-            {counts.starters} Foundry starters to paste into a workflow, {counts.tools} tools we read
-            properly, {counts.resources} references worth keeping.
+            Grab a prompt, install a kit, or find out what a tool actually costs and whether it
+            holds up on client work — before you commit to it.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-2.5">
@@ -97,19 +97,6 @@ export default function HomePage() {
             >
               The tools list
             </Link>
-            <p className="label ml-1 text-mute">
-              or{" "}
-              <kbd className="rounded border px-1.5 py-0.5" style={{ borderColor: "var(--border)" }}>
-                ⌘K
-              </kbd>
-            </p>
-          </div>
-
-          <div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-4">
-            <Stat value={counts.entries} label="Entries" />
-            <Stat value={counts.recommended} label="Recommended" />
-            <Stat value={counts.approved} label="Gitwork approved" />
-            <Stat value={counts.free} label="Free tools" />
           </div>
         </Container>
       </section>
