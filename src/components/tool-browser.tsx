@@ -1,11 +1,11 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { CompactRow, ToolCard } from "@/components/cards";
-import { FilterGroup, FilterOption, SearchField, Toggle } from "@/components/filter-ui";
+import { SearchField } from "@/components/filter-ui";
 import { Badge } from "@/components/ui";
-import type { Group, Pricing, ToolListItem } from "@/lib/types";
+import type { Group, ToolListItem } from "@/lib/types";
 
 /** Resources share the same areas as tools, so an area view lists both. */
 export type ResourceListItem = {
@@ -18,12 +18,10 @@ export type ResourceListItem = {
   icon: string | null;
 };
 
-const PRICING: Pricing[] = ["Free", "Freemium", "Paid"];
-
 type Sort = "verdict" | "name" | "category";
 
 const SORTS: { value: Sort; label: string }[] = [
-  { value: "verdict", label: "Gitwork verdict" },
+  { value: "verdict", label: "Verdict" },
   { value: "name", label: "A–Z" },
   { value: "category", label: "Category" },
 ];
@@ -37,6 +35,11 @@ const USEFULNESS_RANK: Record<string, number> = {
   "Not assessed": 5,
 };
 
+/**
+ * Filtering lives in the sidebar as links that write the query string; this reads
+ * it back out. Search and sort are local, and get mirrored into the URL so a view
+ * can be pasted to someone.
+ */
 export function ToolBrowser({
   tools,
   resources,
@@ -48,46 +51,33 @@ export function ToolBrowser({
 }) {
   const params = useSearchParams();
 
-  const [query, setQuery] = useState(params.get("q") ?? "");
-  const [group, setGroup] = useState(params.get("group") ?? "");
-  const [pricing, setPricing] = useState(params.get("price") ?? "");
-  const [recommendedOnly, setRecommendedOnly] = useState(params.get("recommended") === "1");
-  const [approvedOnly, setApprovedOnly] = useState(params.get("approved") === "1");
-  const [hideDead, setHideDead] = useState(params.get("dead") !== "1");
-  const [sort, setSort] = useState<Sort>((params.get("sort") as Sort) ?? "verdict");
-  const [showFilters, setShowFilters] = useState(false);
+  const group = params.get("group") ?? "";
+  const pricing = params.get("price") ?? "";
+  const recommendedOnly = params.get("recommended") === "1";
+  const approvedOnly = params.get("approved") === "1";
+  const hideDead = params.get("dead") !== "1";
 
-  // Distinguishes the URL we wrote ourselves from one a link just navigated to.
+  const [query, setQuery] = useState(params.get("q") ?? "");
+  const [sort, setSort] = useState<Sort>((params.get("sort") as Sort) ?? "verdict");
   const lastWritten = useRef<string | null>(null);
 
-  // Filters live in the URL so any view can be pasted into Slack.
+  // Mirror search and sort back into the URL without stamping on the rail's filters.
   useEffect(() => {
-    const next = new URLSearchParams();
+    const next = new URLSearchParams(params.toString());
     if (query.trim()) next.set("q", query.trim());
-    if (group) next.set("group", group);
-    if (pricing) next.set("price", pricing);
-    if (recommendedOnly) next.set("recommended", "1");
-    if (approvedOnly) next.set("approved", "1");
-    if (!hideDead) next.set("dead", "1");
+    else next.delete("q");
     if (sort !== "verdict") next.set("sort", sort);
+    else next.delete("sort");
     const search = next.toString();
+    if (search === params.toString() || search === lastWritten.current) return;
     lastWritten.current = search;
     window.history.replaceState(null, "", search ? `/tools?${search}` : "/tools");
-  }, [query, group, pricing, recommendedOnly, approvedOnly, hideDead, sort]);
+  }, [query, sort, params]);
 
-  // A sidebar link to /tools?group=… while this component is already mounted is a
-  // client-side navigation: adopt the incoming query instead of overwriting it.
+  // Adopt a query typed or linked from elsewhere.
   useEffect(() => {
-    const incoming = params.toString();
-    if (incoming === (lastWritten.current ?? "")) return;
-    lastWritten.current = incoming;
-    setQuery(params.get("q") ?? "");
-    setGroup(params.get("group") ?? "");
-    setPricing(params.get("price") ?? "");
-    setRecommendedOnly(params.get("recommended") === "1");
-    setApprovedOnly(params.get("approved") === "1");
-    setHideDead(params.get("dead") !== "1");
-    setSort((params.get("sort") as Sort) ?? "verdict");
+    const incoming = params.get("q") ?? "";
+    setQuery((current) => (current === incoming ? current : incoming));
   }, [params]);
 
   const filtered = useMemo(() => {
@@ -120,198 +110,105 @@ export function ToolBrowser({
       });
   }, [tools, query, group, pricing, recommendedOnly, approvedOnly, hideDead, sort]);
 
-  const reset = useCallback(() => {
-    setQuery("");
-    setGroup("");
-    setPricing("");
-    setRecommendedOnly(false);
-    setApprovedOnly(false);
-    setHideDead(true);
-    setSort("verdict");
-  }, []);
-
-  const activeFilters =
-    (query.trim() ? 1 : 0) +
-    (group ? 1 : 0) +
-    (pricing ? 1 : 0) +
-    (recommendedOnly ? 1 : 0) +
-    (approvedOnly ? 1 : 0);
-
-  const groupName = groups.find((item) => item.slug === group)?.name;
-
-  // The area counts include resources, so an area view has to show them too —
-  // otherwise "Mobile & Apple 2" leads to an empty grid.
+  // The area counts include resources, so an area view has to show them too.
   const areaResources = useMemo(() => {
     if (!group) return [];
     const q = query.trim().toLowerCase();
     return resources.filter(
-      (resource) =>
-        resource.group === group && (!q || resource.name.toLowerCase().includes(q)),
+      (resource) => resource.group === group && (!q || resource.name.toLowerCase().includes(q)),
     );
   }, [resources, group, query]);
 
+  const groupName = groups.find((item) => item.slug === group)?.name;
+  const activeChips = [groupName, pricing, recommendedOnly ? "Recommended" : null].filter(Boolean);
+
   return (
-    <div className="grid gap-6 lg:grid-cols-[14rem_1fr] lg:gap-10">
-      <button
-        type="button"
-        onClick={() => setShowFilters((value) => !value)}
-        aria-expanded={showFilters}
-        className="label flex items-center justify-between rounded-full border px-4 py-3 lg:hidden"
-        style={{ borderColor: "var(--border)", background: "var(--bg-card)" }}
-      >
-        <span>{showFilters ? "Hide filters" : "Filters"}</span>
-        <span className="text-mute">
-          {activeFilters ? `${activeFilters} active` : `${filtered.length} shown`}
-        </span>
-      </button>
-
-      <aside className={`${showFilters ? "block" : "hidden"} lg:block`}>
-        <div className="lg:sticky lg:top-8">
-          <FilterGroup title="Verdict">
-            <Toggle
-              label="Recommended"
-              hint="Picked by hand"
-              active={recommendedOnly}
-              onClick={() => setRecommendedOnly((value) => !value)}
-            />
-            <Toggle
-              label="Gitwork approved"
-              hint="Cleared for client work"
-              active={approvedOnly}
-              onClick={() => setApprovedOnly((value) => !value)}
-            />
-            <Toggle
-              label="Hide dead links"
-              active={hideDead}
-              onClick={() => setHideDead((value) => !value)}
-            />
-          </FilterGroup>
-
-          <FilterGroup title="Pricing">
-            <FilterOption
-              label="Any"
-              count={tools.length}
-              active={!pricing}
-              onClick={() => setPricing("")}
-            />
-            {PRICING.map((tier) => (
-              <FilterOption
-                key={tier}
-                label={tier}
-                count={tools.filter((tool) => tool.pricing === tier).length}
-                active={pricing === tier}
-                onClick={() => setPricing(pricing === tier ? "" : tier)}
-              />
-            ))}
-          </FilterGroup>
-
-          <FilterGroup title="Area">
-            <FilterOption label="Everything" active={!group} onClick={() => setGroup("")} />
-            {groups.map((item) => (
-              <FilterOption
-                key={item.slug}
-                label={item.name}
-                count={item.count}
-                active={group === item.slug}
-                onClick={() => setGroup(group === item.slug ? "" : item.slug)}
-              />
-            ))}
-          </FilterGroup>
+    <div>
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <div className="min-w-0 flex-1">
+          <SearchField value={query} onChange={setQuery} placeholder="Search tools…" />
         </div>
-      </aside>
+        <div className="flex shrink-0 items-center gap-2">
+          <label className="label text-mute" htmlFor="sort">
+            Sort
+          </label>
+          <select
+            id="sort"
+            value={sort}
+            onChange={(event) => setSort(event.target.value as Sort)}
+            className="rounded-full border px-3 py-2 text-sm outline-none"
+            style={{
+              borderColor: "var(--border)",
+              background: "var(--bg-input)",
+              color: "var(--text)",
+            }}
+          >
+            {SORTS.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
 
-      <div className="min-w-0">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-          <div className="flex-1">
-            <SearchField
-              value={query}
-              onChange={setQuery}
-              placeholder="Search tools…"
-            />
-          </div>
-          <div className="flex items-center gap-2">
-            <label className="label text-mute" htmlFor="sort">
-              Sort
-            </label>
-            <select
-              id="sort"
-              value={sort}
-              onChange={(event) => setSort(event.target.value as Sort)}
-              className="rounded-full border px-3 py-2 text-sm outline-none"
-              style={{
-                borderColor: "var(--border)",
-                background: "var(--bg-input)",
-                color: "var(--text)",
-              }}
-            >
-              {SORTS.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
+      <div className="mt-4 flex flex-wrap items-center gap-2">
+        <p className="label text-mute">
+          {filtered.length} {filtered.length === 1 ? "tool" : "tools"}
+        </p>
+        {activeChips.map((chip) => (
+          <Badge key={chip as string} tone="accent">
+            {chip}
+          </Badge>
+        ))}
+        {activeChips.length || query.trim() ? (
+          <a href="/tools" className="label text-accent hover:underline">
+            Clear
+          </a>
+        ) : null}
+      </div>
+
+      {filtered.length === 0 && areaResources.length === 0 ? (
+        <div className="surface mt-5 p-8 text-center">
+          <p className="display text-xl">No matches.</p>
+          <a
+            href="/tools"
+            className="label mt-5 inline-block rounded-full px-4 py-2.5"
+            style={{ background: "var(--accent)", color: "var(--on-accent)" }}
+          >
+            Clear filters
+          </a>
+        </div>
+      ) : (
+        <>
+          {filtered.length ? (
+            <div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+              {filtered.map((tool) => (
+                <ToolCard key={tool.slug} tool={tool} />
               ))}
-            </select>
-          </div>
-        </div>
-
-        <div className="mt-4 flex flex-wrap items-center gap-2">
-          <p className="label text-mute">
-            {filtered.length} {filtered.length === 1 ? "tool" : "tools"}
-          </p>
-          {groupName ? <Badge tone="accent">{groupName}</Badge> : null}
-          {pricing ? <Badge tone="accent">{pricing}</Badge> : null}
-          {recommendedOnly ? <Badge tone="solid">Recommended</Badge> : null}
-          {activeFilters ? (
-            <button type="button" onClick={reset} className="label text-accent hover:underline">
-              Clear filters
-            </button>
+            </div>
           ) : null}
-        </div>
 
-        {filtered.length === 0 && areaResources.length === 0 ? (
-          <div className="surface mt-6 p-8 text-center">
-            <p className="display text-xl">No matches.</p>
-            <button
-              type="button"
-              onClick={reset}
-              className="label mt-5 rounded-full px-4 py-2.5"
-              style={{ background: "var(--accent)", color: "var(--on-accent)" }}
-            >
-              Clear filters
-            </button>
-          </div>
-        ) : (
-          <>
-            {filtered.length ? (
-              <div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-                {filtered.map((tool) => (
-                  <ToolCard key={tool.slug} tool={tool} />
+          {areaResources.length ? (
+            <div className="mt-8 border-t border-hair pt-6">
+              <p className="label mb-3 text-mute">Resources · {groupName}</p>
+              <div className="grid gap-x-8 gap-y-1 [grid-template-columns:repeat(auto-fill,minmax(min(100%,15rem),1fr))]">
+                {areaResources.map((resource) => (
+                  <CompactRow
+                    key={resource.slug}
+                    href={`/resources/${resource.slug}`}
+                    name={resource.name}
+                    descriptor={resource.resourceType}
+                    recommended={resource.recommended}
+                    approved={resource.approved}
+                    icon={resource.icon}
+                  />
                 ))}
               </div>
-            ) : null}
-
-            {areaResources.length ? (
-              <div className="mt-8 border-t border-hair pt-6">
-                <p className="label mb-3 text-mute">
-                  Resources · {groupName}
-                </p>
-                <div className="grid gap-x-8 gap-y-1 sm:grid-cols-2 xl:grid-cols-3">
-                  {areaResources.map((resource) => (
-                    <CompactRow
-                      key={resource.slug}
-                      href={`/resources/${resource.slug}`}
-                      name={resource.name}
-                      descriptor={resource.resourceType}
-                      recommended={resource.recommended}
-                      approved={resource.approved}
-                      icon={resource.icon}
-                    />
-                  ))}
-                </div>
-              </div>
-            ) : null}
-          </>
-        )}
-      </div>
+            </div>
+          ) : null}
+        </>
+      )}
     </div>
   );
 }

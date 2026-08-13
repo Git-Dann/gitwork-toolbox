@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Sidebar } from "@/components/sidebar";
 import { SiteFooter } from "@/components/site-footer";
 import { ThemeScript } from "@/components/theme-toggle";
-import { counts } from "@/lib/data";
+import { counts, groups, starterTags } from "@/lib/data";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <div className="flex min-h-screen flex-col lg:flex-row">
-          <Sidebar counts={counts} />
+          <Sidebar counts={counts} groups={groups} tags={starterTags} />
           <div className="flex min-w-0 flex-1 flex-col">
             <main className="flex-1">{children}</main>
             <SiteFooter />

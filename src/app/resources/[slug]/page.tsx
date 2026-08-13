@@ -80,7 +80,7 @@ export default async function ResourcePage({ params }: { params: Promise<{ slug:
       </div>
 
       <Container className="py-10">
-        <div className="grid gap-6 lg:grid-cols-[1fr_18rem]">
+        <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_18rem]">
           <div className="space-y-6">
             <Panel tone="accent" title="What to do with it">
               <p className="text-sm leading-relaxed text-soft">{resource.whatToDo}</p>
@@ -123,7 +123,7 @@ export default async function ResourcePage({ params }: { params: Promise<{ slug:
         {related.length ? (
           <Section className="pb-0">
             <SectionHeading eyebrow="Same ground" title="Related resources" />
-            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))]">
               {related.map((item) => (
                 <ResourceCard key={item.slug} resource={item} />
               ))}

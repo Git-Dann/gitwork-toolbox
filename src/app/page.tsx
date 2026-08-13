@@ -110,7 +110,7 @@ export default function HomePage() {
               title="Newly added"
               action={{ href: "/new", label: "All additions" }}
             />
-            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+            <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))]">
               {newestCards}
             </div>
           </Container>
@@ -126,7 +126,7 @@ export default function HomePage() {
               title="Recommended"
               action={{ href: "/tools?recommended=1", label: "Tools only" }}
             />
-            <div className="grid gap-x-8 gap-y-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+            <div className="grid gap-x-8 gap-y-1 [grid-template-columns:repeat(auto-fill,minmax(min(100%,15rem),1fr))]">
               {recommendedAll.map((item) => (
                 <CompactRow key={item.href} {...item} />
               ))}
@@ -173,7 +173,7 @@ export default function HomePage() {
             title="Kits & plugins"
             action={{ href: "/starters?type=KIT", label: "All kits" }}
           />
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+          <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))]">
             {toolkits.slice(0, 4).map((kit) => (
               <StarterCard key={kit.slug} starter={kit} />
             ))}
@@ -186,7 +186,7 @@ export default function HomePage() {
             title="Collections"
             action={{ href: "/collections", label: "All collections" }}
           />
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+          <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))]">
             {starterCollections.slice(0, 4).map((collection) => (
               <StarterCard key={collection.slug} starter={collection} />
             ))}
@@ -202,7 +202,7 @@ export default function HomePage() {
             title="Worth using"
             action={{ href: "/tools", label: "All tools" }}
           />
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+          <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))]">
             {picks.tools.slice(0, 4).map((tool) => (
               <ToolCard key={tool.slug} tool={tool} />
             ))}
@@ -218,7 +218,7 @@ export default function HomePage() {
             title="Browse by area"
             action={{ href: "/tools", label: "Everything" }}
           />
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))]">
             {groups.map((group) => (
               <CollectionCard
                 key={group.slug}

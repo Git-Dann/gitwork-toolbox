@@ -26,7 +26,7 @@ function Preview({
 }) {
   return (
     <span
-      className="relative mb-3.5 grid aspect-[16/10] place-items-center overflow-hidden rounded-lg border"
+      className="relative mb-3.5 grid aspect-[16/10] w-full place-items-center overflow-hidden rounded-lg border"
       style={{ borderColor: "var(--border)", background: "var(--bg-input)" }}
     >
       {src ? (
@@ -69,7 +69,7 @@ function Marks({
       ) : null}
       {approved ? (
         <span
-          className="grid h-3.5 w-3.5 place-items-center rounded-full text-[9px]"
+          className="grid h-4 w-4 place-items-center rounded-full text-[10px]"
           style={{ background: "var(--accent)", color: "#fff" }}
           title="Gitwork approved"
           aria-label="Gitwork approved"
@@ -85,7 +85,7 @@ function Meta({ children }: { children: React.ReactNode }) {
   return <p className="mt-3 truncate font-mono text-[11px] text-mute">{children}</p>;
 }
 
-const CARD = "surface surface-hover group flex h-full flex-col p-4";
+const CARD = "surface surface-hover group flex h-full min-w-0 flex-col overflow-hidden p-4";
 const NAME = "truncate font-medium leading-snug transition-colors group-hover:text-[var(--accent-soft)]";
 const BODY = "mt-2 line-clamp-2 flex-1 text-sm leading-relaxed text-soft";
 
@@ -174,7 +174,7 @@ export function CompactRow({
   icon?: string | null;
 }) {
   return (
-    <Link href={href} className="group flex items-center gap-3 rounded-lg py-2 pr-2">
+    <Link href={href} className="group flex min-w-0 items-center gap-3 rounded-lg py-2 pr-2">
       <ItemIcon name={name} icon={icon} size="sm" />
       <span className="min-w-0 flex-1">
         <span className="flex min-w-0 items-center">
@@ -205,7 +205,7 @@ export function CollectionCard({
   samples: string[];
 }) {
   return (
-    <Link href={href} className="surface surface-hover group flex h-full flex-col p-4">
+    <Link href={href} className="surface surface-hover group flex h-full min-w-0 flex-col p-4">
       <div className="flex gap-1.5">
         {samples.slice(0, 4).map((name) => (
           <Monogram key={name} name={name} size="sm" />

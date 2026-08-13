@@ -90,7 +90,7 @@ export default function CollectionsPage() {
             title="Starter collections"
             action={{ href: "/starters?type=COLLECTION", label: "In the library" }}
           />
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+          <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))]">
             {starterCollections.map((collection) => (
               <StarterCard key={collection.slug} starter={collection} />
             ))}
@@ -102,7 +102,7 @@ export default function CollectionsPage() {
             eyebrow="Filtered"
             title="Cuts"
           />
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))]">
             {editorial.map((item) => (
               <CollectionCard key={item.href} {...item} />
             ))}
@@ -115,7 +115,7 @@ export default function CollectionsPage() {
             title="Areas"
             action={{ href: "/tools", label: "All tools" }}
           />
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))]">
             {groups.map((group) => (
               <CollectionCard
                 key={group.slug}

@@ -41,7 +41,7 @@ export default function ResourcesPage() {
             eyebrow="Rated high"
             title="Read or follow"
           />
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+          <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))]">
             {lead.map((resource) => (
               <ResourceCard key={resource.slug} resource={resource} />
             ))}
@@ -53,7 +53,7 @@ export default function ResourcesPage() {
             eyebrow="Everything else"
             title="Filed"
           />
-          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+          <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))]">
             {rest.map((resource) => (
               <ResourceCard key={resource.slug} resource={resource} />
             ))}

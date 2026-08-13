@@ -67,7 +67,7 @@ export default async function StarterPage({ params }: { params: Promise<{ slug: 
       </div>
 
       <Container className="py-10">
-        <div className="grid gap-8 lg:grid-cols-[1fr_18rem]">
+        <div className="grid gap-8 xl:grid-cols-[minmax(0,1fr)_18rem]">
           <div className="space-y-6">
             <div>
               <Eyebrow className="mb-3">About</Eyebrow>
@@ -167,7 +167,7 @@ export default async function StarterPage({ params }: { params: Promise<{ slug: 
               title="Related starters"
               action={{ href: "/starters", label: "Full library" }}
             />
-            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))]">
               {related.map((item) => (
                 <StarterCard key={item.slug} starter={item} />
               ))}

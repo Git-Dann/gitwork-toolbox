@@ -84,7 +84,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
       </div>
 
       <Container className="py-10">
-        <div className="grid gap-8 lg:grid-cols-[1fr_19rem]">
+        <div className="grid gap-8 xl:grid-cols-[minmax(0,1fr)_18rem]">
           <div className="space-y-5">
             <Panel tone="accent" title="Gitwork's read">
               <div className="prose-tight text-sm leading-relaxed">
@@ -162,7 +162,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
         {related.length ? (
           <Section className="pb-0">
             <SectionHeading eyebrow="Same ground" title="Related tools" />
-            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+            <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))]">
               {related.map((item) => (
                 <ToolCard key={item.slug} tool={item} />
               ))}
