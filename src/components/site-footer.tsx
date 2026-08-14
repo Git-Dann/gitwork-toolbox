@@ -53,7 +53,6 @@ export function SiteFooter() {
             {counts.recent ? <FooterLink href="/new">Newly added</FooterLink> : null}
             <FooterLink href="/collections">Collections</FooterLink>
             <FooterLink href="/resources">Resources</FooterLink>
-            <FooterLink href="/about">How this is built</FooterLink>
             <FooterLink href="/admin">Admin portal</FooterLink>
           </FooterColumn>
         </div>

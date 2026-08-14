@@ -1,136 +1,37 @@
 "use client";
 
-import { useState } from "react";
+import { useRouter } from "next/navigation";
 
-export function FilterGroup({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div
-      className="border-b py-4 first:pt-0 last:border-0 last:pb-0"
-      style={{ borderColor: "var(--border)" }}
-    >
-      <p className="label mb-3">{title}</p>
-      <div className="space-y-1">{children}</div>
-    </div>
-  );
-}
-
-export function FilterOption({
-  label,
-  count,
-  active,
-  onClick,
-}: {
-  label: string;
-  count?: number;
-  active: boolean;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      data-hover-surface={active ? undefined : "true"}
-      className="flex w-full items-center justify-between gap-2 rounded-lg px-2.5 py-2 text-left text-sm transition-colors"
-      style={
-        active
-          ? { background: "var(--accent)", color: "var(--on-accent)" }
-          : { color: "var(--text-soft)" }
-      }
-    >
-      <span className="truncate">{label}</span>
-      {count === undefined ? null : (
-        <span
-          className="font-mono text-[11px]"
-          style={{ color: active ? "var(--on-accent)" : "var(--text-mute)" }}
-        >
-          {count}
-        </span>
-      )}
-    </button>
-  );
-}
-
-export function Toggle({
-  label,
-  hint,
-  active,
-  onClick,
-}: {
-  label: string;
-  hint?: string;
-  active: boolean;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-pressed={active}
-      data-hover-surface="true"
-      className="flex w-full items-start gap-2.5 rounded-lg px-2.5 py-2 text-left transition-colors"
-    >
-      <span
-        className="mt-0.5 grid h-4 w-4 shrink-0 place-items-center rounded border"
-        style={{
-          borderColor: active ? "var(--accent)" : "var(--border-strong)",
-          background: active ? "var(--accent)" : "transparent",
-          color: "#fff",
-        }}
-      >
-        {active ? (
-          <svg viewBox="0 0 12 12" className="h-3 w-3" aria-hidden>
-            <path
-              d="M2.5 6.5 4.8 8.8 9.5 3.5"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        ) : null}
-      </span>
-      <span className="min-w-0">
-        <span className="block text-sm text-soft">{label}</span>
-        {hint ? <span className="block text-xs text-mute">{hint}</span> : null}
-      </span>
-    </button>
-  );
-}
-
-/** Long option lists collapse to a readable number. */
-export function Collapsible({
-  children,
-  visible = 8,
-  moreLabel = "Show all",
-}: {
-  children: React.ReactNode[];
-  visible?: number;
-  moreLabel?: string;
-}) {
-  const [expanded, setExpanded] = useState(false);
-  const items = expanded ? children : children.slice(0, visible);
-
-  return (
-    <>
-      {items}
-      {children.length > visible ? (
-        <button
-          type="button"
-          onClick={() => setExpanded((value) => !value)}
-          className="label px-2.5 pt-1.5 text-accent hover:underline"
-        >
-          {expanded ? "Show fewer" : `${moreLabel} (${children.length})`}
-        </button>
-      ) : null}
-    </>
-  );
+/**
+ * Filters live in the URL, not in component state — that is what makes any view
+ * pasteable to someone else, and what lets the browsers and the cards agree on what is
+ * showing. Reads come from useSearchParams; writes come through here.
+ *
+ * It builds from window.location.search rather than from the params snapshot, because
+ * the search box mirrors itself in with history.replaceState, which the router does not
+ * see. Building from the snapshot would silently drop whatever was typed.
+ */
+export function useFilterWriter(base: string) {
+  const router = useRouter();
+  return (changes: Record<string, string | null>) => {
+    const next = new URLSearchParams(window.location.search);
+    for (const [key, value] of Object.entries(changes)) {
+      if (value) next.set(key, value);
+      else next.delete(key);
+    }
+    const search = next.toString();
+    router.replace(search ? `${base}?${search}` : base, { scroll: false });
+    return search;
+  };
 }
 
 /**
- * The only dropdown shape on the site. A native select draws its chevron hard against
- * the inner right edge, which on a pill crowds the border curve — so the arrow is ours,
- * inset to match SearchField's clear button, with pr-10 reserving room for it.
+ * The only dropdown shape on the site. Two things it gets right that are easy to get
+ * wrong: a native select draws its chevron hard against the inner right edge, which on a
+ * pill crowds the border curve — so the arrow is ours, inset to match SearchField's clear
+ * button, with pr-10 reserving room for it. And the width is left to the browser, which
+ * sizes a select to its widest option; fixed widths clipped "Discovery & Reference (8)"
+ * and would clip again the next time a category is renamed.
  */
 export function Select({
   id,
@@ -148,7 +49,7 @@ export function Select({
   className?: string;
 }) {
   return (
-    <div className={`relative ${className}`}>
+    <div className={`relative w-auto max-w-full ${className}`}>
       <select
         id={id}
         value={value}

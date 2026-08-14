@@ -3,8 +3,7 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { StarterCard } from "@/components/cards";
-import { SearchField, Select } from "@/components/filter-ui";
-import { Badge } from "@/components/ui";
+import { SearchField, Select, useFilterWriter } from "@/components/filter-ui";
 import type { StarterListItem, Tag } from "@/lib/types";
 
 const PAGE = 36;
@@ -18,8 +17,10 @@ const TYPE_LABEL: Record<string, string> = {
 };
 
 /**
- * Type and verdict live in the sidebar and are read off the URL. Topic sits here, at the
- * end of the search bar — there are 150 of them, which is a list, not a rail.
+ * Every control sits above the grid: search, then type, topic and verdict as dropdowns.
+ * All of it round-trips through the URL. Options are counted against the filters already
+ * applied and an option that would empty the grid is not offered — with 150 topics that
+ * matters, which is why they could never have worked as a rail.
  */
 export function StarterBrowser({
   starters,
@@ -30,6 +31,7 @@ export function StarterBrowser({
 }) {
   const params = useSearchParams();
   const router = useRouter();
+  const write = useFilterWriter("/starters");
 
   const type = params.get("type") ?? "";
   const tag = params.get("tag") ?? "";
@@ -100,8 +102,42 @@ export function StarterBrowser({
     ];
   }, [starters, tags, type, recommendedOnly, featuredOnly, tag]);
 
-  // The URL is the source of truth — the sidebar counts read the tag back out of it, so
-  // this goes through the router rather than a bare history.replaceState.
+  const typeOptions = useMemo(() => {
+    const count = (t: string) =>
+      starters.filter(
+        (s) =>
+          (!t || s.type === t) &&
+          (!tag || s.tags.includes(tag)) &&
+          (!recommendedOnly || s.recommended) &&
+          (!featuredOnly || s.featured),
+      ).length;
+    const options = Object.entries(TYPE_LABEL)
+      .map(([value, label]) => ({ value, label, n: count(value) }))
+      .filter((o) => o.n > 0 || type === o.value)
+      .map((o) => ({ value: o.value, label: `${o.label} (${o.n})` }));
+    return [{ value: "", label: `All types (${count("")})` }, ...options];
+  }, [starters, type, tag, recommendedOnly, featuredOnly]);
+
+  const verdictOptions = useMemo(() => {
+    const inCtx = starters.filter(
+      (s) => (!type || s.type === type) && (!tag || s.tags.includes(tag)),
+    );
+    const rec = inCtx.filter((s) => s.recommended).length;
+    return [
+      { value: "", label: `Any verdict (${inCtx.length})` },
+      ...(rec > 0 || recommendedOnly ? [{ value: "recommended", label: `Recommended (${rec})` }] : []),
+    ];
+  }, [starters, type, tag, recommendedOnly]);
+
+  // Switching type drops a topic that does not exist inside it, so the grid cannot empty.
+  const selectType = (value: string) => {
+    const keepTag =
+      tag && (!value || starters.some((s) => s.type === value && s.tags.includes(tag))) ? tag : null;
+    write({ type: value, tag: keepTag });
+  };
+
+  // The URL is the source of truth — the counts read these back out of it, so this goes
+  // through the router rather than a bare history.replaceState.
   const selectTopic = (value: string) => {
     const next = new URLSearchParams(window.location.search);
     if (value) next.set("tag", value);
@@ -111,37 +147,39 @@ export function StarterBrowser({
     router.replace(search ? `/starters?${search}` : "/starters", { scroll: false });
   };
 
-  const chips = [
-    type ? TYPE_LABEL[type] : null,
-    recommendedOnly ? "Recommended" : null,
-  ].filter(Boolean);
 
   return (
     <div>
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-        <div className="min-w-0 flex-1">
-          <SearchField value={query} onChange={setQuery} placeholder="Search starters…" />
+      <div className="flex flex-col gap-3">
+        <SearchField value={query} onChange={setQuery} placeholder="Search starters…" />
+        <div className="flex flex-wrap gap-2">
+          <Select
+            ariaLabel="Type"
+            value={type}
+            onChange={selectType}
+            options={typeOptions}
+          />
+          <Select
+            id="topic"
+            ariaLabel="Topic"
+            value={tag}
+            onChange={selectTopic}
+            options={topicOptions}
+          />
+          <Select
+            ariaLabel="Verdict"
+            value={recommendedOnly ? "recommended" : ""}
+            onChange={(value) => write({ recommended: value ? "1" : null })}
+            options={verdictOptions}
+          />
         </div>
-        <Select
-          id="topic"
-          ariaLabel="Topic"
-          value={tag}
-          onChange={selectTopic}
-          options={topicOptions}
-          className="shrink-0 sm:w-52"
-        />
       </div>
 
       <div className="mt-4 flex flex-wrap items-center gap-2">
         <p className="label text-mute">
           {filtered.length} {filtered.length === 1 ? "starter" : "starters"}
         </p>
-        {chips.map((chip) => (
-          <Badge key={chip as string} tone="accent">
-            {chip}
-          </Badge>
-        ))}
-        {chips.length || tag || query.trim() ? (
+        {type || tag || recommendedOnly || query.trim() ? (
           <a href="/starters" className="label text-accent hover:underline">
             Clear
           </a>
