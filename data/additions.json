@@ -3910,6 +3910,42 @@
       ],
       "addedAt": "2026-08-14T08:46:23.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Delphi",
+      "website": "https://www.delphi.ai/",
+      "what": "Builds a queryable agent from one person's body of work — books, podcast episodes, lectures, posts and threads — so their audience can ask questions and get answers in their voice, with the sources behind each one.",
+      "category": "AI coding / conversational agents",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid at $79/month and $299/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "This is the answer to a request we get and should not build: a consultant, author or coach wanting to 'clone my expertise'. Pointing them at $79/month beats quoting a bespoke retrieval product that will need maintaining forever.",
+        "Their own homepage runs Lawrence Lessig — 12 books, 84 podcast episodes, 62 lectures, 210 posts — which is a real implementation at real scale rather than a mock-up, and worth showing a sceptical client.",
+        "It is the client's own likeness and voice being reproduced, so the consent and accuracy questions are theirs to own. Put that in writing before we recommend it into a brand."
+      ],
+      "addedAt": "2026-08-14T09:16:45.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Vellum",
+      "website": "https://www.vellum.ai/",
+      "what": "Personal AI assistant with a persistent machine behind it — each plan buys real vCPU, memory and storage, so it holds long-running context, works in Slack and on mobile, and has an email address of its own. Open source and self-hostable.",
+      "category": "Personal AI assistant",
+      "pricing": "Paid",
+      "priceDetail": "Free to start. Mighty $30/month (1 vCPU, 2GiB, 10GB, $25 credits included). Super $100/month (2.5 vCPU, 5GiB, 30GB, $45 credits). Ultra $200/month (4 vCPU, 8GiB, 60GB, $115 credits). Self-hosting available.",
+      "usefulness": "Low",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Read this before recommending it to anyone: Vellum used to be an LLM development and evaluation platform, and that is what most developers still think it is. It has pivoted entirely to a personal assistant, so old bookmarks, tutorials and comparisons describe a product that no longer exists here.",
+        "Open source and self-hostable is the genuine differentiator against Halo — an always-on assistant holding studio context that can run on our own infrastructure rather than someone else's.",
+        "Priced as compute rather than seats, with credits on top, so the real monthly cost depends on usage. Rated Low until someone has run it for a month and knows what it actually costs."
+      ],
+      "addedAt": "2026-08-14T09:16:45.000Z",
+      "addedBy": "Dan"
     }
   ]
 }

@@ -2352,7 +2352,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:14.017Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
+      "reason": "a 2023 autonomous-agent demo, no pricing and no sign it is maintained as a product"
     },
     {
       "url": "https://anyscale.com",
@@ -2503,7 +2503,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:14.150Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
+      "reason": "enterprise process automation at $50 to $3,990/month — a business we are not"
     },
     {
       "url": "https://bland.ai",
@@ -2774,7 +2774,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:16.278Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
+      "reason": "enterprise document operations, pricing unpublished"
     },
     {
       "url": "https://cerebras.ai",
@@ -3066,10 +3066,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:17.971Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
+      "decidedAt": "2026-08-14T09:16:45.000Z"
     },
     {
       "url": "https://dify.ai",
@@ -3137,7 +3136,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:16.780Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
+      "reason": "renders nothing without JavaScript on repeated fetches, so nobody could read it"
     },
     {
       "url": "https://fine.dev",
@@ -3599,7 +3598,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:25.428Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
+      "reason": "enterprise agent governance from $100/month plus per-task charges"
     },
     {
       "url": "https://manus.im",
@@ -3935,7 +3934,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:19.495Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
+      "reason": "sales, customer-success and HR agents; pricing unpublished"
     },
     {
       "url": "https://replicate.com",
@@ -4238,7 +4237,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:19.690Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
+      "reason": "\"AI employees\" framing over generic assistants, aimed at small-business owners"
     },
     {
       "url": "https://stack-ai.com",
@@ -4277,7 +4276,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:25.781Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
+      "reason": "enterprise no-code agents; the only published figure is $0"
     },
     {
       "url": "https://synthflow.ai",
@@ -4312,7 +4311,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:20.021Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
+      "reason": "enterprise voice automation; the only published figure is $30,000"
     },
     {
       "url": "https://together.ai",
@@ -4508,10 +4507,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:30.543Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
+      "decidedAt": "2026-08-14T09:16:45.000Z"
     },
     {
       "url": "https://voiceflow.com",
