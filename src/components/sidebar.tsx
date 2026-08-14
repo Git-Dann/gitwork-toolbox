@@ -65,8 +65,15 @@ export function Sidebar({ counts, groups, toolFacets, starterFacets }: SidebarDa
         ))}
       </nav>
 
-      {/* The filter rails read the query string, so they load inside a boundary and
-          the destinations above stay statically rendered. */}
+      {/* Filters for the list you are actually looking at, and nothing otherwise.
+          The rail used to fall back to a "Starter library" block on every other
+          page, so Resources, Collections and Explore each carried a five-item
+          section belonging to a destination you had not chosen — and the rail
+          reshuffled under the cursor on every navigation. The types are still one
+          click away: they are the Type filter on /starters.
+
+          These read the query string, so they load inside a boundary and the
+          destinations above stay statically rendered. */}
       {pathname === "/tools" ? (
         <Suspense fallback={<RailTitle>Filters</RailTitle>}>
           <ToolFilters counts={counts} groups={groups} facets={toolFacets} onNavigate={close} />
@@ -75,9 +82,7 @@ export function Sidebar({ counts, groups, toolFacets, starterFacets }: SidebarDa
         <Suspense fallback={<RailTitle>Filters</RailTitle>}>
           <StarterFilters facets={starterFacets} onNavigate={close} />
         </Suspense>
-      ) : (
-        <StarterShortcuts counts={counts} onNavigate={close} />
-      )}
+      ) : null}
 
       <div className="mt-auto border-t pt-2" style={{ borderColor: "var(--border)" }}>
         <NavLink
@@ -295,11 +300,11 @@ function ToolFilters({
 }
 
 const TYPES = [
-  { value: "PROMPT", label: "Prompts", key: "prompts" },
-  { value: "SKILL", label: "Skills", key: "skills" },
-  { value: "KIT", label: "Kits", key: "kits" },
-  { value: "PLUGIN", label: "Plugins", key: "plugins" },
-  { value: "COLLECTION", label: "Collections", key: "starterCollections" },
+  { value: "PROMPT", label: "Prompts" },
+  { value: "SKILL", label: "Skills" },
+  { value: "KIT", label: "Kits" },
+  { value: "PLUGIN", label: "Plugins" },
+  { value: "COLLECTION", label: "Collections" },
 ] as const;
 
 function StarterFilters({
@@ -360,36 +365,6 @@ function StarterFilters({
           active={recommended}
           onNavigate={onNavigate}
         />
-      </nav>
-    </>
-  );
-}
-
-/** Off the browse pages the rail still offers the library by type. */
-function StarterShortcuts({
-  counts,
-  onNavigate,
-}: {
-  counts: Record<string, number>;
-  onNavigate: () => void;
-}) {
-  return (
-    <>
-      <RailTitle>Starter library</RailTitle>
-      <nav>
-        {TYPES.map((item) => (
-          <NavLink
-            key={item.value}
-            item={{
-              href: `/starters?type=${item.value}`,
-              label: item.label,
-              count: counts[item.key],
-            }}
-            active={false}
-            subtle
-            onNavigate={onNavigate}
-          />
-        ))}
       </nav>
     </>
   );
