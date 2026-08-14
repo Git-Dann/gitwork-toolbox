@@ -26,8 +26,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:05.823Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:05.823Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "template-and-logo generators; not how we design"
     },
     {
       "url": "https://aider.chat",
@@ -100,8 +102,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:07.683Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:07.683Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "superseded: pivoted; the site is about a different platform (Cosmos)"
     },
     {
       "url": "https://blackbox.ai",
@@ -169,8 +173,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:06.749Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:06.749Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "another editor or completion tool making the same claim as one already listed"
     },
     {
       "url": "https://bolt.new",
@@ -239,8 +245,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:06.472Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:06.472Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "template-and-logo generators; not how we design"
     },
     {
       "url": "https://builder.io",
@@ -351,8 +359,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:05.919Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:05.919Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "another editor or completion tool making the same claim as one already listed"
     },
     {
       "url": "https://continue.dev",
@@ -379,8 +389,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:06.784Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:06.784Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "superseded: its own site now reads: acquired by Cursor"
     },
     {
       "url": "https://create.xyz",
@@ -424,8 +436,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:07.217Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:07.217Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "another editor or completion tool making the same claim as one already listed"
     },
     {
       "url": "https://cursor.com",
@@ -495,8 +509,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:11.525Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:11.525Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "superseded: domain now serves an unrelated logistics product (Riff)"
     },
     {
       "url": "https://designs.ai",
@@ -523,8 +539,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:07.154Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:07.154Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "template-and-logo generators; not how we design"
     },
     {
       "url": "https://devin.ai",
@@ -775,8 +793,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:08.093Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:08.093Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "template-and-logo generators; not how we design"
     },
     {
       "url": "https://framer.com",
@@ -865,8 +885,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:08.816Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:08.816Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "superseded: redirects to Google Stitch, which is listed"
     },
     {
       "url": "https://stitch.withgoogle.com",
@@ -968,8 +990,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:08.523Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:08.523Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "another editor or completion tool making the same claim as one already listed"
     },
     {
       "url": "https://khroma.co",
@@ -1108,8 +1132,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:10.066Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:10.066Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "template-and-logo generators; not how we design"
     },
     {
       "url": "https://lovable.dev",
@@ -1137,8 +1163,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:08.535Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:08.535Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "behind a bot check, so nobody could read it"
     },
     {
       "url": "https://lovart.ai",
@@ -1165,8 +1193,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:10.172Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:10.172Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "template-and-logo generators; not how we design"
     },
     {
       "url": "https://magicpatterns.com",
@@ -1222,8 +1252,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:09.411Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:09.411Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "template-and-logo generators; not how we design"
     },
     {
       "url": "https://mintlify.com",
@@ -1288,8 +1320,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:10.153Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:10.153Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "template-and-logo generators; not how we design"
     },
     {
       "url": "https://napkin.ai",
@@ -1358,8 +1392,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:10.886Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:10.886Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "template-and-logo generators; not how we design"
     },
     {
       "url": "https://qodo.ai",
@@ -1425,8 +1461,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:11.843Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:11.843Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "another editor or completion tool making the same claim as one already listed"
     },
     {
       "url": "https://replit.com",
@@ -1516,8 +1554,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:11.982Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:11.982Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "superseded: listed as Free, actually sells $49-$499/month as Roomote"
     },
     {
       "url": "https://rork.com",
@@ -1544,8 +1584,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:10.755Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:10.755Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "another editor or completion tool making the same claim as one already listed"
     },
     {
       "url": "https://sourcery.ai",
@@ -1581,8 +1623,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:12.115Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:12.115Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "another editor or completion tool making the same claim as one already listed"
     },
     {
       "url": "https://stockimg.ai",
@@ -1618,8 +1662,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:12.547Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:12.547Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "template-and-logo generators; not how we design"
     },
     {
       "url": "https://subframe.com",
@@ -1697,8 +1743,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:11.335Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:11.335Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "superseded: team acquired by Cursor; not a standalone bet"
     },
     {
       "url": "https://tabbyml.com",
@@ -1787,8 +1835,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:13.752Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:13.752Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "another editor or completion tool making the same claim as one already listed"
     },
     {
       "url": "https://tempo.new",
@@ -1815,8 +1865,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:15.478Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:15.478Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "another editor or completion tool making the same claim as one already listed"
     },
     {
       "url": "https://trae.ai",
@@ -1843,8 +1895,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:17.755Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:17.755Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "superseded: now TraeCode; row describes the old IDE"
     },
     {
       "url": "https://uizard.io",
@@ -2066,8 +2120,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:14.237Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:14.237Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "template-and-logo generators; not how we design"
     },
     {
       "url": "https://vizcom.ai",
@@ -2103,8 +2159,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:13.291Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:13.291Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://warp.dev",
@@ -2164,8 +2221,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:14.960Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:14.960Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://windsurf.com",
@@ -2229,8 +2287,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:14.063Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:14.063Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://zed.dev",
@@ -2278,8 +2337,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:13.731Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:13.731Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://agentgpt.reworkd.ai",
@@ -2306,8 +2366,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:14.017Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:14.017Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://anyscale.com",
@@ -2347,8 +2409,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:14.776Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:14.776Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
     },
     {
       "url": "https://baseten.co",
@@ -2416,8 +2480,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:14.447Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:14.447Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
     },
     {
       "url": "https://beam.ai",
@@ -2453,8 +2519,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:14.150Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:14.150Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://bland.ai",
@@ -2522,8 +2590,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:15.912Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:15.912Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://booth.ai",
@@ -2592,8 +2662,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:15.692Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:15.692Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "behind a bot check, so nobody could read it"
     },
     {
       "url": "https://botpress.com",
@@ -2661,8 +2733,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:15.722Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:15.722Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://canva.com",
@@ -2689,8 +2763,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:17.073Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:17.073Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://cassidyai.com",
@@ -2717,8 +2792,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:16.278Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:16.278Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://cerebras.ai",
@@ -2770,8 +2847,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:17.424Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:17.424Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
     },
     {
       "url": "https://chatbase.co",
@@ -2839,8 +2918,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:16.289Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:16.289Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://chatgpt.com/codex",
@@ -2867,8 +2948,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:16.613Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:16.613Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://cohere.com",
@@ -2936,8 +3018,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:16.334Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:16.334Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
     },
     {
       "url": "https://crewai.com",
@@ -2964,8 +3048,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:16.802Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:16.802Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://delphi.ai",
@@ -3005,8 +3090,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:17.971Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:17.971Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://dify.ai",
@@ -3042,8 +3129,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:17.076Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:17.076Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://dust.tt",
@@ -3070,8 +3158,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:16.780Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:16.780Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://fine.dev",
@@ -3168,8 +3258,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:18.040Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:18.040Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
     },
     {
       "url": "https://fixie.ai",
@@ -3217,8 +3309,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:18.550Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:18.550Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "superseded: now Ultravox, a different product"
     },
     {
       "url": "https://flowiseai.com",
@@ -3245,8 +3339,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:18.397Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:18.397Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://github.com/features/copilot",
@@ -3304,8 +3399,9 @@
       "repo": {
         "status": 403
       },
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:17.418Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:17.418Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://groq.com",
@@ -3337,8 +3433,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:18.443Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:18.443Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://langflow.org",
@@ -3365,8 +3462,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:20.477Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:20.477Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://lmstudio.ai",
@@ -3434,8 +3533,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:18.975Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:18.975Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://looka.com",
@@ -3471,8 +3571,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:18.127Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:18.127Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "superseded: formerly Logojoy; row describes the old product"
     },
     {
       "url": "https://lyzr.ai",
@@ -3520,8 +3622,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:25.428Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:25.428Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://manus.im",
@@ -3548,8 +3652,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:19.439Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:19.439Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://mindstudio.ai",
@@ -3601,8 +3707,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:18.968Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:18.968Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://mistral.ai",
@@ -3666,8 +3774,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:19.481Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:19.481Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
     },
     {
       "url": "https://modal.com",
@@ -3735,8 +3845,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:19.222Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:19.222Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://ollama.com",
@@ -3792,8 +3903,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:19.038Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:19.038Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://openrouter.ai",
@@ -3849,8 +3961,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:19.495Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:19.495Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://replicate.com",
@@ -3918,8 +4032,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:19.888Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:19.888Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://respell.ai",
@@ -3946,8 +4061,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:19.662Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:19.662Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "superseded: team joined Salesforce; product folded into Agentforce"
     },
     {
       "url": "https://retellai.com",
@@ -4015,8 +4132,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:20.684Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:20.684Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://runpod.io",
@@ -4084,8 +4203,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:24.269Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:24.269Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
     },
     {
       "url": "https://sintra.ai",
@@ -4145,8 +4266,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:19.690Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:19.690Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://stack-ai.com",
@@ -4182,8 +4305,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:25.781Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:25.781Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://synthflow.ai",
@@ -4215,8 +4340,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:20.021Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:20.021Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://together.ai",
@@ -4284,8 +4411,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:24.970Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:24.970Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
     },
     {
       "url": "https://vapi.ai",
@@ -4349,8 +4478,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:20.282Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:20.282Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://vellum.ai",
@@ -4410,8 +4540,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:30.543Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:30.543Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://voiceflow.com",
@@ -4438,8 +4570,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:26.442Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:26.442Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
     },
     {
       "url": "https://wordware.ai",
@@ -4471,8 +4605,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:25.988Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:25.988Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "superseded: pivoted to an unrelated product (Sauna)"
     },
     {
       "url": "https://firefly.adobe.com",
@@ -4499,8 +4635,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:21.780Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:21.780Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://aftershoot.com",
@@ -4527,8 +4664,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:23.661Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:23.661Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://airtable.com",
@@ -4564,8 +4703,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:28.069Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:28.069Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://aragon.ai",
@@ -4592,8 +4732,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:25.126Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:25.126Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://artbreeder.com",
@@ -4645,8 +4787,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:23.937Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:23.937Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://base44.com",
@@ -4694,8 +4838,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:24.104Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:24.104Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "app builders we cannot version or hand over as code"
     },
     {
       "url": "https://bing.com/images/create",
@@ -4722,8 +4868,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:25.578Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:25.578Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://bubble.io",
@@ -4750,8 +4898,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:30.207Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:30.207Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://budibase.com",
@@ -4799,8 +4948,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:25.054Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:25.054Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "app builders we cannot version or hand over as code"
     },
     {
       "url": "https://civitai.com",
@@ -4840,8 +4991,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:26.057Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:26.057Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://cleanup.pictures",
@@ -4881,8 +5034,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:26.302Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:26.302Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://clipdrop.co",
@@ -4909,8 +5063,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:25.741Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:25.741Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://cutout.pro",
@@ -4937,8 +5092,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:33.860Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:33.860Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://dezgo.com",
@@ -4965,8 +5122,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:26.233Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:26.233Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://dream.ai",
@@ -4993,8 +5152,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:30.428Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:30.428Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://durable.co",
@@ -5062,8 +5223,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:27.446Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:27.446Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "app builders we cannot version or hand over as code"
     },
     {
       "url": "https://erase.bg",
@@ -5119,8 +5282,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:32.064Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:32.064Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://evoto.ai",
@@ -5147,8 +5312,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:28.401Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:28.401Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://fal.ai",
@@ -5217,8 +5384,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:31.171Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:31.171Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "behind a bot check, so nobody could read it"
     },
     {
       "url": "https://flutterflow.io",
@@ -5308,8 +5477,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:33.300Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:33.300Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://fotor.com",
@@ -5341,8 +5511,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:35.204Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:35.204Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://getimg.ai",
@@ -5410,8 +5582,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:28.603Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:28.603Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://glideapps.com",
@@ -5451,8 +5625,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:35.090Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:35.090Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://glif.app",
@@ -5479,8 +5654,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:29.570Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:29.570Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://headshotpro.com",
@@ -5548,8 +5725,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:31.059Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:31.059Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://hotpot.ai",
@@ -5576,8 +5755,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:31.888Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:31.888Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://labs.google/fx/tools/image-fx",
@@ -5604,8 +5785,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:30.535Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:30.535Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://krea.ai",
@@ -5707,8 +5890,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:31.423Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:31.423Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://lexica.art",
@@ -5735,8 +5920,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:32.520Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:32.520Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://lummi.ai",
@@ -5809,8 +5996,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:34.856Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:34.856Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://magicstudio.com",
@@ -5837,8 +6026,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:32.110Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:32.110Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://midjourney.com",
@@ -5907,8 +6098,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:33.221Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:33.221Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://noloco.io",
@@ -5976,8 +6169,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:33.749Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:33.749Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "app builders we cannot version or hand over as code"
     },
     {
       "url": "https://openart.ai",
@@ -6041,8 +6236,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:33.351Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:33.351Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://pebblely.com",
@@ -6082,8 +6279,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:34.272Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:34.272Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://phot.ai",
@@ -6147,8 +6346,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:35.260Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:35.260Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://photoai.com",
@@ -6216,8 +6417,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:34.277Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:34.277Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://photoroom.com",
@@ -6244,8 +6447,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:35.274Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:35.274Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://piclumen.com",
@@ -6313,8 +6517,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:35.844Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:35.844Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://picsart.com",
@@ -6366,8 +6572,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:40.644Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:40.644Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://picwish.com",
@@ -6394,8 +6602,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:39.908Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:39.908Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://pixai.art",
@@ -6422,8 +6632,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:42.271Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:42.271Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://pixelcut.ai",
@@ -6471,8 +6683,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:35.925Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:35.925Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://pixlr.com",
@@ -6532,8 +6746,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:35.562Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:35.562Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://plasmic.app",
@@ -6589,8 +6805,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:36.664Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:36.664Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://playground.com",
@@ -6642,8 +6859,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:36.301Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:36.301Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://prompthero.com",
@@ -6707,8 +6925,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:36.429Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:36.429Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://recraft.ai",
@@ -6798,8 +7018,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:40.138Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:40.138Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://remove.bg",
@@ -6925,8 +7147,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:39.701Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:39.701Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://seaart.ai",
@@ -6953,8 +7177,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:40.428Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:40.428Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://shakker.ai",
@@ -6981,8 +7207,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:40.953Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:40.953Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://softr.io",
@@ -7050,8 +7278,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:39.346Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:39.346Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "app builders we cannot version or hand over as code"
     },
     {
       "url": "https://stability.ai",
@@ -7095,8 +7325,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:40.327Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:40.327Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://starryai.com",
@@ -7123,8 +7355,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:40.845Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:40.845Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://stylar.ai",
@@ -7192,8 +7426,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:40.650Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:40.650Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://upscayl.org",
@@ -7291,8 +7527,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:40.842Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:40.842Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://vondy.com",
@@ -7332,8 +7570,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:41.556Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:41.556Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://webflow.com",
@@ -7410,8 +7650,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:42.563Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:42.563Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "app builders we cannot version or hand over as code"
     },
     {
       "url": "https://2short.ai",
@@ -7451,8 +7693,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:50.585Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:50.585Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://afforai.com",
@@ -7479,8 +7723,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:51.236Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:51.236Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://akiflow.com",
@@ -7532,8 +7778,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:50.729Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:50.729Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://akkio.com",
@@ -7560,8 +7808,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:53.793Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:53.793Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://amie.so",
@@ -7588,8 +7838,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:50.401Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:50.401Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://withaqua.com",
@@ -7657,8 +7909,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:51.431Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:51.431Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://arc.net",
@@ -7685,8 +7939,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:51.344Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:51.344Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://arcads.ai",
@@ -7746,8 +8001,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:54.891Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:54.891Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://asana.com",
@@ -7799,8 +8056,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:51.618Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:51.618Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://askyourpdf.com",
@@ -7840,8 +8099,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:50.555Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:50.555Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://autoshorts.ai",
@@ -7868,8 +8129,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:51.301Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:51.301Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://avoma.com",
@@ -7933,8 +8196,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:51.466Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:51.466Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://basedash.com",
@@ -7970,8 +8235,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:52.544Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:52.544Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://bluedothq.com",
@@ -8035,8 +8302,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:53.485Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:53.485Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://thebricks.com",
@@ -8092,8 +8361,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:52.610Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:52.610Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://capacities.io",
@@ -8120,8 +8391,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:51.513Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:51.513Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://capcut.com",
@@ -8194,8 +8467,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:54.252Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:54.252Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://chatpdf.com",
@@ -8222,8 +8497,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:53.335Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:53.335Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://circleback.ai",
@@ -8259,8 +8536,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:52.415Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:52.415Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://clickup.com",
@@ -8324,8 +8603,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:52.535Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:52.535Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://getclockwise.com",
@@ -8352,8 +8633,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:52.320Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:52.320Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "superseded: \"a new chapter for our team\" — winding down"
     },
     {
       "url": "https://coda.io",
@@ -8380,8 +8663,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:53.137Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:53.137Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://colossyan.com",
@@ -8433,8 +8718,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:54.160Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:54.160Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://connectedpapers.com",
@@ -8461,8 +8748,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:54.177Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:54.177Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://creatify.ai",
@@ -8498,8 +8787,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:53.639Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:53.639Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://cron.com",
@@ -8526,8 +8817,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:00.386Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:00.386Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "superseded: became Notion Calendar, which supersedes this row"
     },
     {
       "url": "https://openai.com/dall-e-3",
@@ -8555,8 +8848,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:53.587Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:53.587Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "behind a bot check, so nobody could read it"
     },
     {
       "url": "https://databricks.com",
@@ -8583,8 +8878,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:54.100Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:54.100Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://decohere.ai",
@@ -8636,8 +8933,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:55.505Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:55.505Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://deepnote.com",
@@ -8681,8 +8980,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:53.925Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:53.925Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://descript.com",
@@ -8763,8 +9064,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:01.252Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:01.252Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://dreamina.capcut.com",
@@ -8791,8 +9094,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:54.912Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:54.912Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://elicit.com",
@@ -8860,8 +9165,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:55.126Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:55.126Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://equals.com",
@@ -8929,8 +9235,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:56.076Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:56.076Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://fathom.video",
@@ -8998,8 +9306,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:56.260Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:28:56.260Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://fellow.app",
@@ -9051,8 +9360,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:56.136Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:56.136Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://fireflies.ai",
@@ -9104,8 +9415,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:00.948Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:00.948Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://flexclip.com",
@@ -9132,8 +9445,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:01.277Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:01.277Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://fliki.ai",
@@ -9160,8 +9475,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:55.598Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:55.598Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://formulabot.com",
@@ -9229,8 +9546,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:57.232Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:57.232Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://freepik.com",
@@ -9283,8 +9602,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:58.457Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:58.457Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "behind a bot check, so nobody could read it"
     },
     {
       "url": "https://genei.io",
@@ -9348,8 +9669,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:57.602Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:57.602Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://gigasheet.com",
@@ -9376,8 +9699,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:56.880Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:56.880Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://goblin.tools",
@@ -9404,8 +9729,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:58.709Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:58.709Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://grain.com",
@@ -9441,8 +9768,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:56.953Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:56.953Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://getguru.com",
@@ -9469,8 +9798,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:57.846Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:57.846Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://hailuoai.video",
@@ -9497,8 +9828,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:58.400Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:58.400Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://haiper.ai",
@@ -9525,8 +9858,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:58.442Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:58.442Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://hebbia.ai",
@@ -9553,8 +9888,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:58.702Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:58.702Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://hedra.com",
@@ -9594,8 +9931,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:59.769Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:59.769Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://heptabase.com",
@@ -9635,8 +9974,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:58.674Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:58.674Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://hex.tech",
@@ -9700,8 +10041,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:58.757Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:58.757Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://heygen.com",
@@ -9769,8 +10112,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:02.593Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:02.593Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://higgsfield.ai",
@@ -9797,8 +10142,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:02.477Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:02.477Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://humata.ai",
@@ -9846,8 +10193,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:28:59.819Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:28:59.819Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://ideogram.ai",
@@ -9875,8 +10224,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:00.355Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:00.355Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "behind a bot check, so nobody could read it"
     },
     {
       "url": "https://invideo.io",
@@ -9903,8 +10254,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:00.614Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:00.614Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://meetjamie.ai",
@@ -9964,8 +10317,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:00.275Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:00.275Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://julius.ai",
@@ -10033,8 +10388,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:01.830Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:01.830Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://kapwing.com",
@@ -10098,8 +10455,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:02.706Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:02.706Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://klap.app",
@@ -10139,8 +10498,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:01.893Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:01.893Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://klingai.com",
@@ -10167,8 +10528,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:03.307Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:03.307Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://laxis.com",
@@ -10216,8 +10579,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:03.541Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:03.541Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://leonardo.ai",
@@ -10245,8 +10610,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:01.287Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:01.287Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "behind a bot check, so nobody could read it"
     },
     {
       "url": "https://loom.com",
@@ -10286,8 +10653,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:02.302Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:29:02.302Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://ltx.studio",
@@ -10367,8 +10735,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:02.791Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:02.791Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://getmagical.com",
@@ -10395,8 +10765,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:03.048Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:03.048Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://magnific.ai",
@@ -10449,8 +10821,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:03.266Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:03.266Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "behind a bot check, so nobody could read it"
     },
     {
       "url": "https://mapify.so",
@@ -10506,8 +10880,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:04.572Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:04.572Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://trymaverick.com",
@@ -10543,8 +10919,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:04.022Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:04.022Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://maxai.me",
@@ -10588,8 +10966,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:04.870Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:04.870Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://meetgeek.ai",
@@ -10641,8 +11021,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:03.969Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:03.969Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://mem.ai",
@@ -10669,8 +11051,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:03.795Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:03.795Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://imagine.meta.com",
@@ -10747,8 +11131,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:04.794Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:29:04.794Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://monday.com",
@@ -10816,8 +11201,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:04.504Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:04.504Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://monica.im",
@@ -10844,8 +11231,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:05.976Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:05.976Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://morphstudio.com",
@@ -10913,8 +11302,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:07.232Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:07.232Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://usemotion.com",
@@ -10950,8 +11341,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:05.683Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:05.683Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://nightcafe.studio",
@@ -10979,8 +11372,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:04.829Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:04.829Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "behind a bot check, so nobody could read it"
     },
     {
       "url": "https://notebooklm.google.com",
@@ -11007,8 +11402,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:05.267Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:29:05.267Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://notion.com/product/calendar",
@@ -11056,8 +11452,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:05.872Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:05.872Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://numerous.ai",
@@ -11089,8 +11487,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:05.352Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:05.352Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://opus.pro",
@@ -11158,8 +11558,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:06.138Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:06.138Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://otio.ai",
@@ -11219,8 +11621,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:06.011Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:06.011Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://otter.ai",
@@ -11288,8 +11692,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:05.688Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:05.688Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://pdf.ai",
@@ -11316,8 +11722,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:05.913Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:05.913Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://pecan.ai",
@@ -11349,8 +11757,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:08.637Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:08.637Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://picklellc.com",
@@ -11446,8 +11856,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:06.895Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:06.895Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://pika.art",
@@ -11491,8 +11903,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:06.374Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:06.374Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://pixverse.ai",
@@ -11548,8 +11962,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:07.436Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:07.436Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://powerbi.microsoft.com",
@@ -11577,8 +11993,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:06.851Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:06.851Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "behind a bot check, so nobody could read it"
     },
     {
       "url": "https://powerdrill.ai",
@@ -11646,8 +12064,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:07.430Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:07.430Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://quso.ai",
@@ -11703,8 +12123,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:06.814Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:06.814Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://read.ai",
@@ -11756,8 +12178,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:07.602Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:07.602Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://getrecall.ai",
@@ -11797,8 +12221,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:08.125Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:08.125Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://reclaim.ai",
@@ -11866,8 +12292,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:06.593Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:06.593Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://reflect.app",
@@ -11899,8 +12327,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:07.351Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:07.351Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://researchrabbit.ai",
@@ -11940,8 +12370,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:08.671Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:08.671Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://revid.ai",
@@ -11981,8 +12413,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:09.025Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:09.025Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://routine.co",
@@ -12022,8 +12456,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:08.233Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:08.233Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://rows.com",
@@ -12079,8 +12515,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:08.606Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:08.606Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://runwayml.com",
@@ -12148,8 +12586,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:09.290Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:29:09.290Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://scispace.com",
@@ -12218,8 +12657,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:08.602Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:08.602Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://semanticscholar.org",
@@ -12246,8 +12687,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:09.034Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:09.034Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://sembly.ai",
@@ -12299,8 +12742,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:09.928Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:09.928Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://slite.com",
@@ -12336,8 +12781,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:08.911Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:08.911Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://sourcetable.com",
@@ -12405,8 +12852,10 @@
         "openSource": true
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:11.816Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:11.816Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://spinach.io",
@@ -12433,8 +12882,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:11.743Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:11.743Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://steve.ai",
@@ -12502,8 +12953,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:25.322Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:25.322Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://submagic.co",
@@ -12571,8 +13024,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:11.305Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:11.305Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://sunsama.com",
@@ -12632,8 +13087,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:15.150Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:15.150Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://superhuman.com",
@@ -12660,8 +13117,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:09.369Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:09.369Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://synthesia.io",
@@ -12729,8 +13188,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:10.879Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:10.879Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://tactiq.io",
@@ -12774,8 +13235,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:10.712Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:10.712Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://tana.inc",
@@ -12823,8 +13286,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:10.200Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:10.200Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://taskade.com",
@@ -12876,8 +13341,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:10.843Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:10.843Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://tensor.art",
@@ -12904,8 +13371,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:12.181Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:12.181Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
     },
     {
       "url": "https://thoughtspot.com",
@@ -12945,8 +13414,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:15.950Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:15.950Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "BI and spreadsheet AI — not work we sell"
     },
     {
       "url": "https://tldv.io",
@@ -12978,8 +13449,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:11.869Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:11.869Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "meeting transcribers; Granola and Fathom cover it"
     },
     {
       "url": "https://todoist.com",
@@ -13006,8 +13479,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:16.142Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:16.142Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://topazlabs.com",
@@ -13075,8 +13550,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:12.758Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:12.758Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
     },
     {
       "url": "https://trello.com",
@@ -13136,8 +13613,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:11.808Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:11.808Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "task, calendar and note apps; we run on Foundry"
     },
     {
       "url": "https://trinka.ai",
@@ -13173,8 +13652,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:14.257Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:14.257Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://upword.ai",
@@ -13201,8 +13682,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:13.019Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:13.019Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://vadoo.tv",
@@ -13262,8 +13745,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:13.750Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:13.750Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://veed.io",
@@ -13290,8 +13775,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:18.690Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:18.690Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://vidnoz.com",
@@ -13323,8 +13810,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:13.599Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:13.599Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://vidu.com",
@@ -13351,8 +13840,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:18.606Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:18.606Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://vidyo.ai",
@@ -13408,8 +13899,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:14.045Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:14.045Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://visla.us",
@@ -13436,8 +13929,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:16.473Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:16.473Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://vizard.ai",
@@ -13473,8 +13968,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:14.402Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:14.402Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://vrew.ai",
@@ -13547,8 +14044,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:15.678Z"
+      "status": "approved",
+      "assessedAt": "2026-08-13T23:29:15.678Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z"
     },
     {
       "url": "https://filmora.wondershare.com",
@@ -13575,8 +14073,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:15.705Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:15.705Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://you.com",
@@ -13624,8 +14124,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:18.311Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:18.311Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
     },
     {
       "url": "https://zubtitle.com",
@@ -13693,8 +14195,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:15.827Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:15.827Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "AI video generation and social clip factories — marketing output we do not produce"
     },
     {
       "url": "https://podcast.adobe.com",
@@ -13721,8 +14225,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:16.120Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:16.120Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "voice cloning and music generation — not our output"
     },
     {
       "url": "https://aiva.ai",
@@ -13762,8 +14268,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:18.376Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:18.376Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "voice cloning and music generation — not our output"
     },
     {
       "url": "https://altered.ai",
@@ -13790,8 +14298,10 @@
         "openSource": false
       },
       "repo": null,
-      "status": "pending",
-      "assessedAt": "2026-08-13T23:29:17.429Z"
+      "status": "rejected",
+      "assessedAt": "2026-08-13T23:29:17.429Z",
+      "decidedAt": "2026-08-14T07:44:52.000Z",
+      "reason": "voice cloning and music generation — not our output"
     }
   ]
 }
