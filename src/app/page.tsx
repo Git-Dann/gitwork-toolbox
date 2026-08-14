@@ -72,12 +72,20 @@ export default function HomePage() {
       <section className="border-b border-hair">
         <Container className="py-10 sm:py-14">
           <Eyebrow accent>Gitwork · studio reference</Eyebrow>
-          <Headline className="mt-4 max-w-3xl text-[2rem] sm:text-[2.75rem]" emphasis="actually use">
-            Every tool, prompt and kit we{" "}
+          {/* Says what the page is, because that is what a reference has to do
+              first. The previous headline — "every tool, prompt and kit we
+              actually use" — claimed first-hand use of all of it, which is not
+              true of a catalogue this size and is the kind of claim a developer
+              checks exactly once before distrusting everything else on the page.
+              The ratings below are research, not a usage log, and the copy now
+              matches that. */}
+          <Headline className="mt-4 max-w-3xl text-[2rem] sm:text-[2.75rem]" emphasis="in one place">
+            Every tool, prompt and kit,{" "}
           </Headline>
           <p className="mt-4 max-w-xl text-[0.95rem] leading-relaxed text-soft">
-            Grab a prompt, install a kit, or find out what a tool actually costs and whether it
-            holds up on client work — before you commit to it.
+            A reference for the team: starters you can install, prompts you can lift, and a tools
+            list with what each one does and what it costs. Start here rather than in a search
+            engine.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-2.5">
