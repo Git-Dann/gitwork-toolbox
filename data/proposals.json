@@ -26,10 +26,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:05.823Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "template-and-logo generators; not how we design"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://aider.chat",
@@ -173,10 +172,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:06.749Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "another editor or completion tool making the same claim as one already listed"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://bolt.new",
@@ -248,7 +246,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:06.472Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "template-and-logo generators; not how we design"
+      "reason": "logo and template generator whose output is not usable as identity work"
     },
     {
       "url": "https://builder.io",
@@ -359,10 +357,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:05.919Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "another editor or completion tool making the same claim as one already listed"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://continue.dev",
@@ -436,10 +433,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:07.217Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "another editor or completion tool making the same claim as one already listed"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://cursor.com",
@@ -542,7 +538,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:07.154Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "template-and-logo generators; not how we design"
+      "reason": "logo and template generator whose output is not usable as identity work"
     },
     {
       "url": "https://devin.ai",
@@ -793,10 +789,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:08.093Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "template-and-logo generators; not how we design"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://framer.com",
@@ -990,10 +985,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:08.523Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "another editor or completion tool making the same claim as one already listed"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://khroma.co",
@@ -1132,10 +1126,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:10.066Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "template-and-logo generators; not how we design"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://lovable.dev",
@@ -1193,10 +1186,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:10.172Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "template-and-logo generators; not how we design"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://magicpatterns.com",
@@ -1252,10 +1244,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:09.411Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "template-and-logo generators; not how we design"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://mintlify.com",
@@ -1320,10 +1311,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:10.153Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "template-and-logo generators; not how we design"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://napkin.ai",
@@ -1392,10 +1382,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:10.886Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "template-and-logo generators; not how we design"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://qodo.ai",
@@ -1461,10 +1450,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:11.843Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "another editor or completion tool making the same claim as one already listed"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://replit.com",
@@ -1584,10 +1572,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:10.755Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "another editor or completion tool making the same claim as one already listed"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://sourcery.ai",
@@ -1623,10 +1610,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:12.115Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "another editor or completion tool making the same claim as one already listed"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://stockimg.ai",
@@ -1665,7 +1651,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:12.547Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "template-and-logo generators; not how we design"
+      "reason": "logo and template generator whose output is not usable as identity work"
     },
     {
       "url": "https://subframe.com",
@@ -1835,10 +1821,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:13.752Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "another editor or completion tool making the same claim as one already listed"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://tempo.new",
@@ -1865,10 +1850,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:15.478Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "another editor or completion tool making the same claim as one already listed"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://trae.ai",
@@ -2120,10 +2104,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:14.237Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "template-and-logo generators; not how we design"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://vizcom.ai",
@@ -2369,7 +2352,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:14.017Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
     },
     {
       "url": "https://anyscale.com",
@@ -2409,10 +2392,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:14.776Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://baseten.co",
@@ -2480,10 +2462,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:14.447Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://beam.ai",
@@ -2522,7 +2503,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:14.150Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
     },
     {
       "url": "https://bland.ai",
@@ -2590,10 +2571,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:15.912Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://booth.ai",
@@ -2733,10 +2713,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:15.722Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://canva.com",
@@ -2795,7 +2774,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:16.278Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
     },
     {
       "url": "https://cerebras.ai",
@@ -2847,10 +2826,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:17.424Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://chatbase.co",
@@ -2918,10 +2896,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:16.289Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://chatgpt.com/codex",
@@ -3018,10 +2995,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:16.334Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://crewai.com",
@@ -3093,7 +3069,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:17.971Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
     },
     {
       "url": "https://dify.ai",
@@ -3161,7 +3137,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:16.780Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
     },
     {
       "url": "https://fine.dev",
@@ -3258,10 +3234,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:18.040Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://fixie.ai",
@@ -3462,10 +3437,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:20.477Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://lmstudio.ai",
@@ -3625,7 +3599,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:25.428Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
     },
     {
       "url": "https://manus.im",
@@ -3652,10 +3626,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:19.439Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://mindstudio.ai",
@@ -3707,10 +3680,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:18.968Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://mistral.ai",
@@ -3774,10 +3746,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:19.481Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://modal.com",
@@ -3964,7 +3935,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:19.495Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
     },
     {
       "url": "https://replicate.com",
@@ -4132,10 +4103,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:20.684Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://runpod.io",
@@ -4203,10 +4173,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:24.269Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://sintra.ai",
@@ -4269,7 +4238,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:19.690Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
     },
     {
       "url": "https://stack-ai.com",
@@ -4308,7 +4277,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:25.781Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
     },
     {
       "url": "https://synthflow.ai",
@@ -4343,7 +4312,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:20.021Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
     },
     {
       "url": "https://together.ai",
@@ -4411,10 +4380,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:24.970Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "inference hosts; Replicate, Modal, Groq and Ollama cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://vapi.ai",
@@ -4543,7 +4511,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:30.543Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "reason": "enterprise process automation or creator products, priced and shaped for a different business"
     },
     {
       "url": "https://voiceflow.com",
@@ -4570,10 +4538,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:26.442Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "support-bot and voice-agent platforms; Dify, Flowise, CrewAI and Vapi cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://wordware.ai",
@@ -4667,7 +4634,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:23.661Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://airtable.com",
@@ -4735,7 +4702,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:25.126Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://artbreeder.com",
@@ -4790,7 +4757,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:23.937Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://base44.com",
@@ -4838,10 +4805,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:24.104Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "app builders we cannot version or hand over as code"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://bing.com/images/create",
@@ -4871,7 +4837,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:25.578Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://bubble.io",
@@ -4948,10 +4914,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:25.054Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "app builders we cannot version or hand over as code"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://civitai.com",
@@ -4991,10 +4956,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:26.057Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://cleanup.pictures",
@@ -5095,7 +5059,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:33.860Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://dezgo.com",
@@ -5125,7 +5089,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:26.233Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://dream.ai",
@@ -5155,7 +5119,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:30.428Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://durable.co",
@@ -5223,10 +5187,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:27.446Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "app builders we cannot version or hand over as code"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://erase.bg",
@@ -5285,7 +5248,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:32.064Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://evoto.ai",
@@ -5315,7 +5278,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:28.401Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://fal.ai",
@@ -5514,7 +5477,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:35.204Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://getimg.ai",
@@ -5585,7 +5548,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:28.603Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://glideapps.com",
@@ -5657,7 +5620,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:29.570Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://headshotpro.com",
@@ -5728,7 +5691,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:31.059Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://hotpot.ai",
@@ -5758,7 +5721,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:31.888Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://labs.google/fx/tools/image-fx",
@@ -5788,7 +5751,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:30.535Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://krea.ai",
@@ -5890,10 +5853,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:31.423Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://lexica.art",
@@ -5920,10 +5882,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:32.520Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://lummi.ai",
@@ -5999,7 +5960,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:34.856Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://magicstudio.com",
@@ -6029,7 +5990,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:32.110Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://midjourney.com",
@@ -6101,7 +6062,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:33.221Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://noloco.io",
@@ -6169,10 +6130,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:33.749Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "app builders we cannot version or hand over as code"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://openart.ai",
@@ -6236,10 +6196,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:33.351Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://pebblely.com",
@@ -6282,7 +6241,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:34.272Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://phot.ai",
@@ -6349,7 +6308,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:35.260Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://photoai.com",
@@ -6420,7 +6379,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:34.277Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://photoroom.com",
@@ -6520,7 +6479,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:35.844Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://picsart.com",
@@ -6575,7 +6534,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:40.644Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://picwish.com",
@@ -6605,7 +6564,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:39.908Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://pixai.art",
@@ -6635,7 +6594,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:42.271Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://pixelcut.ai",
@@ -6683,10 +6642,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:35.925Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://pixlr.com",
@@ -6749,7 +6707,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:35.562Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://plasmic.app",
@@ -6925,10 +6883,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:36.429Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://recraft.ai",
@@ -7021,7 +6978,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:40.138Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://remove.bg",
@@ -7147,10 +7104,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:39.701Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://seaart.ai",
@@ -7180,7 +7136,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:40.428Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://shakker.ai",
@@ -7210,7 +7166,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:40.953Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://softr.io",
@@ -7278,10 +7234,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:39.346Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "app builders we cannot version or hand over as code"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://stability.ai",
@@ -7325,10 +7280,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:40.327Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://starryai.com",
@@ -7358,7 +7312,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:40.845Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://stylar.ai",
@@ -7429,7 +7383,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:40.650Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://upscayl.org",
@@ -7530,7 +7484,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:40.842Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://vondy.com",
@@ -7573,7 +7527,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:41.556Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://webflow.com",
@@ -7650,10 +7604,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:42.563Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "app builders we cannot version or hand over as code"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://2short.ai",
@@ -7696,7 +7649,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:50.585Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://afforai.com",
@@ -7726,7 +7679,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:51.236Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "reason": "single-purpose PDF chat with no API and nothing NotebookLM or Humata does not do"
     },
     {
       "url": "https://akiflow.com",
@@ -7781,7 +7734,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:50.729Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://akkio.com",
@@ -7811,7 +7764,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:53.793Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "reason": "enterprise BI or finance modelling — not work we sell"
     },
     {
       "url": "https://amie.so",
@@ -7841,7 +7794,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:50.401Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://withaqua.com",
@@ -7909,10 +7862,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:51.431Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://arc.net",
@@ -8004,7 +7956,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:54.891Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://asana.com",
@@ -8059,7 +8011,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:51.618Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://askyourpdf.com",
@@ -8102,7 +8054,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:50.555Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "reason": "single-purpose PDF chat with no API and nothing NotebookLM or Humata does not do"
     },
     {
       "url": "https://autoshorts.ai",
@@ -8132,7 +8084,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:51.301Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://avoma.com",
@@ -8199,7 +8151,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:51.466Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "reason": "near-duplicate transcriber with nothing to distinguish it from the seven listed"
     },
     {
       "url": "https://basedash.com",
@@ -8238,7 +8190,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:52.544Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "reason": "enterprise BI or finance modelling — not work we sell"
     },
     {
       "url": "https://bluedothq.com",
@@ -8302,10 +8254,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:53.485Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://thebricks.com",
@@ -8364,7 +8315,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:52.610Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "reason": "enterprise BI or finance modelling — not work we sell"
     },
     {
       "url": "https://capacities.io",
@@ -8394,7 +8345,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:51.513Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://capcut.com",
@@ -8470,7 +8421,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:54.252Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://chatpdf.com",
@@ -8500,7 +8451,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:53.335Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "reason": "single-purpose PDF chat with no API and nothing NotebookLM or Humata does not do"
     },
     {
       "url": "https://circleback.ai",
@@ -8536,10 +8487,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:52.415Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://clickup.com",
@@ -8606,7 +8556,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:52.535Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://getclockwise.com",
@@ -8666,7 +8616,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:53.137Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://colossyan.com",
@@ -8721,7 +8671,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:54.160Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://connectedpapers.com",
@@ -8748,10 +8698,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:54.177Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://creatify.ai",
@@ -8790,7 +8739,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:53.639Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://cron.com",
@@ -8881,7 +8830,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:54.100Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "reason": "enterprise BI or finance modelling — not work we sell"
     },
     {
       "url": "https://decohere.ai",
@@ -8936,7 +8885,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:55.505Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://deepnote.com",
@@ -8980,10 +8929,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:53.925Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://descript.com",
@@ -9067,7 +9015,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:01.252Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "reason": "AI headshot mills and consumer photo editors — nothing a studio would reach for on client work"
     },
     {
       "url": "https://dreamina.capcut.com",
@@ -9097,7 +9045,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:54.912Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://elicit.com",
@@ -9235,10 +9183,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:56.076Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://fathom.video",
@@ -9363,7 +9310,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:56.136Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "reason": "near-duplicate transcriber with nothing to distinguish it from the seven listed"
     },
     {
       "url": "https://fireflies.ai",
@@ -9415,10 +9362,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:00.948Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://flexclip.com",
@@ -9448,7 +9394,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:01.277Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://fliki.ai",
@@ -9478,7 +9424,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:55.598Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://formulabot.com",
@@ -9549,7 +9495,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:57.232Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "reason": "enterprise BI or finance modelling — not work we sell"
     },
     {
       "url": "https://freepik.com",
@@ -9672,7 +9618,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:57.602Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "reason": "single-purpose PDF chat with no API and nothing NotebookLM or Humata does not do"
     },
     {
       "url": "https://gigasheet.com",
@@ -9702,7 +9648,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:56.880Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "reason": "enterprise BI or finance modelling — not work we sell"
     },
     {
       "url": "https://goblin.tools",
@@ -9729,10 +9675,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:58.709Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://grain.com",
@@ -9771,7 +9716,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:56.953Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "reason": "near-duplicate transcriber with nothing to distinguish it from the seven listed"
     },
     {
       "url": "https://getguru.com",
@@ -9801,7 +9746,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:57.846Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://hailuoai.video",
@@ -9831,7 +9776,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:58.400Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://haiper.ai",
@@ -9861,7 +9806,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:58.442Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://hebbia.ai",
@@ -9891,7 +9836,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:58.702Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "reason": "single-purpose PDF chat with no API and nothing NotebookLM or Humata does not do"
     },
     {
       "url": "https://hedra.com",
@@ -9934,7 +9879,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:28:59.769Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://heptabase.com",
@@ -9974,10 +9919,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:58.674Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://hex.tech",
@@ -10041,10 +9985,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:58.757Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://heygen.com",
@@ -10112,10 +10055,9 @@
         "openSource": true
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:02.593Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://higgsfield.ai",
@@ -10145,7 +10087,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:02.477Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://humata.ai",
@@ -10193,10 +10135,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:28:59.819Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://ideogram.ai",
@@ -10257,7 +10198,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:00.614Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://meetjamie.ai",
@@ -10317,10 +10258,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:00.275Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://julius.ai",
@@ -10388,10 +10328,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:01.830Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://kapwing.com",
@@ -10455,10 +10394,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:02.706Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://klap.app",
@@ -10501,7 +10439,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:01.893Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://klingai.com",
@@ -10531,7 +10469,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:03.307Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://laxis.com",
@@ -10582,7 +10520,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:03.541Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "reason": "near-duplicate transcriber with nothing to distinguish it from the seven listed"
     },
     {
       "url": "https://leonardo.ai",
@@ -10735,10 +10673,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:02.791Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://getmagical.com",
@@ -10768,7 +10705,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:03.048Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://magnific.ai",
@@ -10883,7 +10820,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:04.572Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "reason": "single-purpose PDF chat with no API and nothing NotebookLM or Humata does not do"
     },
     {
       "url": "https://trymaverick.com",
@@ -10922,7 +10859,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:04.022Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://maxai.me",
@@ -10969,7 +10906,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:04.870Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://meetgeek.ai",
@@ -11024,7 +10961,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:03.969Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "reason": "near-duplicate transcriber with nothing to distinguish it from the seven listed"
     },
     {
       "url": "https://mem.ai",
@@ -11054,7 +10991,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:03.795Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://imagine.meta.com",
@@ -11204,7 +11141,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:04.504Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://monica.im",
@@ -11234,7 +11171,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:05.976Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://morphstudio.com",
@@ -11305,7 +11242,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:07.232Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://usemotion.com",
@@ -11344,7 +11281,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:05.683Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://nightcafe.studio",
@@ -11452,10 +11389,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:05.872Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://numerous.ai",
@@ -11490,7 +11426,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:05.352Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "reason": "enterprise BI or finance modelling — not work we sell"
     },
     {
       "url": "https://opus.pro",
@@ -11558,10 +11494,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:06.138Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://otio.ai",
@@ -11624,7 +11559,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:06.011Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "reason": "single-purpose PDF chat with no API and nothing NotebookLM or Humata does not do"
     },
     {
       "url": "https://otter.ai",
@@ -11692,10 +11627,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:05.688Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://pdf.ai",
@@ -11722,10 +11656,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:05.913Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://pecan.ai",
@@ -11760,7 +11693,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:08.637Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "reason": "enterprise BI or finance modelling — not work we sell"
     },
     {
       "url": "https://picklellc.com",
@@ -11859,7 +11792,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:06.895Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://pika.art",
@@ -11903,10 +11836,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:06.374Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://pixverse.ai",
@@ -11965,7 +11897,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:07.436Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://powerbi.microsoft.com",
@@ -12067,7 +11999,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:07.430Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "reason": "enterprise BI or finance modelling — not work we sell"
     },
     {
       "url": "https://quso.ai",
@@ -12126,7 +12058,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:06.814Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://read.ai",
@@ -12181,7 +12113,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:07.602Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "reason": "near-duplicate transcriber with nothing to distinguish it from the seven listed"
     },
     {
       "url": "https://getrecall.ai",
@@ -12224,7 +12156,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:08.125Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://reclaim.ai",
@@ -12292,10 +12224,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:06.593Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://reflect.app",
@@ -12327,10 +12258,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:07.351Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://researchrabbit.ai",
@@ -12370,10 +12300,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:08.671Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://revid.ai",
@@ -12416,7 +12345,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:09.025Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://routine.co",
@@ -12459,7 +12388,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:08.233Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://rows.com",
@@ -12515,10 +12444,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:08.606Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://runwayml.com",
@@ -12660,7 +12588,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:08.602Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "reason": "single-purpose PDF chat with no API and nothing NotebookLM or Humata does not do"
     },
     {
       "url": "https://semanticscholar.org",
@@ -12687,10 +12615,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:09.034Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://sembly.ai",
@@ -12745,7 +12672,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:09.928Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "reason": "near-duplicate transcriber with nothing to distinguish it from the seven listed"
     },
     {
       "url": "https://slite.com",
@@ -12784,7 +12711,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:08.911Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://sourcetable.com",
@@ -12855,7 +12782,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:11.816Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "reason": "enterprise BI or finance modelling — not work we sell"
     },
     {
       "url": "https://spinach.io",
@@ -12885,7 +12812,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:11.743Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "reason": "near-duplicate transcriber with nothing to distinguish it from the seven listed"
     },
     {
       "url": "https://steve.ai",
@@ -12956,7 +12883,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:25.322Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://submagic.co",
@@ -13024,10 +12951,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:11.305Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://sunsama.com",
@@ -13087,10 +13013,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:15.150Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://superhuman.com",
@@ -13117,10 +13042,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:09.369Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://synthesia.io",
@@ -13188,10 +13112,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:10.879Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://tactiq.io",
@@ -13235,10 +13158,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:10.712Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://tana.inc",
@@ -13286,10 +13208,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:10.200Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://taskade.com",
@@ -13344,7 +13265,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:10.843Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "reason": "project-management suite or browser AI wrapper; Foundry covers the first and nothing needs the second"
     },
     {
       "url": "https://tensor.art",
@@ -13374,7 +13295,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:12.181Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "prompt-box image generators; Midjourney, Recraft, Krea, Firefly and FLUX cover it"
+      "reason": "thin wrapper or community art site with no capability the listed generators lack"
     },
     {
       "url": "https://thoughtspot.com",
@@ -13417,7 +13338,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:15.950Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "BI and spreadsheet AI — not work we sell"
+      "reason": "enterprise BI or finance modelling — not work we sell"
     },
     {
       "url": "https://tldv.io",
@@ -13449,10 +13370,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:11.869Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "meeting transcribers; Granola and Fathom cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://todoist.com",
@@ -13479,10 +13399,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:16.142Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://topazlabs.com",
@@ -13550,10 +13469,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:12.758Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "single-purpose photo editors; Photoroom, Clipdrop and Cleanup cover it"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://trello.com",
@@ -13613,10 +13531,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:11.808Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "task, calendar and note apps; we run on Foundry"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://trinka.ai",
@@ -13655,7 +13572,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:14.257Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "reason": "single-purpose PDF chat with no API and nothing NotebookLM or Humata does not do"
     },
     {
       "url": "https://upword.ai",
@@ -13685,7 +13602,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:13.019Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "reason": "single-purpose PDF chat with no API and nothing NotebookLM or Humata does not do"
     },
     {
       "url": "https://vadoo.tv",
@@ -13748,7 +13665,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:13.750Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://veed.io",
@@ -13775,10 +13692,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:18.690Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://vidnoz.com",
@@ -13813,7 +13729,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:13.599Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://vidu.com",
@@ -13843,7 +13759,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:18.606Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://vidyo.ai",
@@ -13902,7 +13818,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:14.045Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://visla.us",
@@ -13932,7 +13848,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:16.473Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://vizard.ai",
@@ -13971,7 +13887,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:14.402Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://vrew.ai",
@@ -14076,7 +13992,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:15.705Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://you.com",
@@ -14124,10 +14040,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:18.311Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "academic and PDF research tooling; NotebookLM and Elicit cover the need"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://zubtitle.com",
@@ -14198,7 +14113,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:15.827Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "AI video generation and social clip factories — marketing output we do not produce"
+      "reason": "faceless-video and viral-clip factories — Opus Clip and Submagic are the two in this category worth having"
     },
     {
       "url": "https://podcast.adobe.com",
@@ -14225,10 +14140,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:16.120Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "voice cloning and music generation — not our output"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://aiva.ai",
@@ -14268,10 +14182,9 @@
         "openSource": false
       },
       "repo": null,
-      "status": "rejected",
+      "status": "approved",
       "assessedAt": "2026-08-13T23:29:18.376Z",
-      "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "voice cloning and music generation — not our output"
+      "decidedAt": "2026-08-14T08:46:23.000Z"
     },
     {
       "url": "https://altered.ai",
@@ -14301,7 +14214,7 @@
       "status": "rejected",
       "assessedAt": "2026-08-13T23:29:17.429Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
-      "reason": "voice cloning and music generation — not our output"
+      "reason": "voice cloning — consent problems and no studio use"
     }
   ]
 }

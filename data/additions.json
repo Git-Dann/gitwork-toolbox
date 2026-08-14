@@ -2431,6 +2431,1485 @@
       ],
       "addedAt": "2026-08-14T07:44:52.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Cody (Sourcegraph)",
+      "website": "https://sourcegraph.com/cody",
+      "what": "Coding assistant built on Sourcegraph's code search, so its context is the whole indexed codebase rather than the open files — useful on repos too large for an editor to hold.",
+      "category": "AI coding",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. Paid from $16/user/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Pick this one when the repo is genuinely big — a decade-old client monolith where Cursor's context window is the limiting factor. Code search is what Sourcegraph has always been good at.",
+        "Indexing a client repo puts a copy on their infrastructure. Worth the contract check before it points at anything private."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Tabnine",
+      "website": "https://tabnine.com/",
+      "what": "Code completion and chat with privacy as the product: air-gapped and on-premise deployment, models trained only on permissively licensed code, and provenance attribution on suggestions.",
+      "category": "AI coding",
+      "pricing": "Paid",
+      "priceDetail": "Per-seat subscription; figures are not published on the pricing page — quoted on request.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The differentiator is the licence story: trained on permissive code only, with attribution, which is the answer to a client asking whether our AI-written code could carry someone else's GPL.",
+        "Air-gapped deployment puts it alongside Tabby for regulated work. Tabby is open source and cheaper; Tabnine is the supported commercial version."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Refact.ai",
+      "website": "https://refact.ai/",
+      "what": "Open-source coding agent for the IDE that runs the full loop — writes, runs tests, reads the failure, fixes — and can self-host the model alongside it.",
+      "category": "AI coding",
+      "pricing": "Freemium",
+      "priceDetail": "Open source and free to self-host. Hosted plan from $10/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "$10/month is the cheapest hosted agent on this list, which makes it the low-risk way to give someone here an agent without a $20 seat.",
+        "Self-hostable model plus agent in one package is unusual — the combination Tabby and Cline otherwise need two tools for."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Blackbox AI",
+      "website": "https://blackbox.ai/",
+      "what": "Routes 300+ models through one endpoint, or runs an open-weight model of your choice as a dedicated deployment, with a coding assistant on top.",
+      "category": "AI coding",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier at $0/month, then usage pricing with published per-million-token rates from around $0.26 to $4.40.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The one-endpoint routing is the useful half: comparing models on the same prompt without holding five accounts and five keys.",
+        "Dedicated deployment of an open-weight model is the compliance option. Check what the shared routing tier does with prompts before using it on client code."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Sourcery",
+      "website": "https://sourcery.ai/",
+      "what": "Automated code review in GitHub, GitLab or the IDE — comments on each pull request with concrete refactors rather than style nits.",
+      "category": "AI coding / code review",
+      "pricing": "Freemium",
+      "priceDetail": "Free for open-source and small use. Paid at $12 and $24/user/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The cheapest of the three reviewers here — $12 against CodeRabbit's $24 and Greptile's $30 — and enough for a small team that wants a second pair of eyes on every PR.",
+        "Narrower than the others: strong on refactoring suggestions, weaker on cross-repo reasoning and security."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Jules",
+      "website": "https://jules.google/",
+      "what": "Google's asynchronous coding agent — hand it a task against a GitHub repo and it works in a cloud VM, returning a plan and a pull request to review.",
+      "category": "AI coding",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier with daily task limits; higher limits come with paid Google AI subscriptions. No standalone price published.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Free daily tasks make it the cheapest async agent to try — good for the backlog chores nobody wants: dependency bumps, test coverage, small refactors.",
+        "Cloud VMs mean client code on Google's infrastructure, and the free tier's terms are worth reading before that happens."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Tempo",
+      "website": "https://tempo.new/",
+      "what": "Turns customer feedback, issues and requirements into reviewed pull requests — agents do the implementation and the team approves, so the queue is the input rather than a prompt.",
+      "category": "AI coding",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier; paid plan figures are not published on the pricing page.",
+      "usefulness": "Low",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The interesting bit is the input: pointing agents at a real backlog rather than at a chat box is closer to how client work actually arrives.",
+        "Rated Low because it wants to own the whole intake-to-PR flow, and ours runs through Foundry. Pricing is also unpublished."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Create",
+      "website": "https://create.xyz/",
+      "what": "Prompt-to-app builder that generates a working full-stack site or tool with database and auth wired up, editable in the browser and deployable from it.",
+      "category": "AI coding / app builders",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. Paid at $19/month and $199/month, with $60 and $480 annual figures on the pricing page.",
+      "usefulness": "Low",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "An option alongside Bolt and Replit for a pitch prototype. Its differentiator is generating the backend pieces rather than only the front end.",
+        "Rated Low against v0 and Bolt: the output is further from a codebase we would keep, and the $199 tier is steep for a sketchpad."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Rork",
+      "website": "https://rork.com/",
+      "what": "Builds cross-platform mobile apps from a prompt using React Native and Expo, with publishing to the App Store and Play Store from the same place.",
+      "category": "AI coding / app builders",
+      "pricing": "Freemium",
+      "priceDetail": "Subscription tiers; figures are not published in the served pricing page.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "React Native and Expo output is the reason this beats FlutterFlow for us — it lands in the stack we already use, and Expo is already on this list.",
+        "App-store publishing from a prompt tool sounds better than it is; review, signing and store policy are still ours. Pricing is unpublished."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Mistral",
+      "website": "https://mistral.ai/",
+      "what": "European model lab with open-weight and commercial models, an API, fine-tuning, and Le Chat as the consumer surface — plus on-premise deployment for regulated work.",
+      "category": "AI coding / model providers",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier on Le Chat. Paid consumer plans at $14.99 and $24.99/user/month; API billed per token, with enterprise deployment quoted separately. Several models released under Apache 2.0.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The EU-hosted option, which matters more than its benchmark scores: a UK or EU client asking where inference happens gets a straight answer, and GDPR conversations get shorter.",
+        "Apache-2.0 weights on several models mean the same family can run locally through Ollama and hosted in production — one prompt, two deployment stories."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Cohere",
+      "website": "https://cohere.com/",
+      "what": "Model provider aimed squarely at enterprise retrieval — strong embedding and rerank models, private deployment into a customer's own cloud, and multilingual coverage.",
+      "category": "AI coding / model providers",
+      "pricing": "Freemium",
+      "priceDetail": "Free trial keys. Production billed per token, with published rates from around $0.30 to $2.00 per million; enterprise deployment quoted separately.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Their rerank model is the practical reason to know them: dropping it in front of a retrieval pipeline usually improves answer quality more than swapping the generation model.",
+        "Deployment into a client's own VPC is the selling point for regulated work. Overkill for anything smaller."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Together AI",
+      "website": "https://together.ai/",
+      "what": "Hosts open models for inference, fine-tuning and dedicated GPU clusters behind an OpenAI-compatible API, covering hundreds of open-weight models.",
+      "category": "AI coding / model hosting",
+      "pricing": "Freemium",
+      "priceDetail": "Per-token inference with published rates from around $0.06 to $3.48 per million, plus hourly GPU cluster pricing.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The breadth is the point: when a project needs one specific open model, this is more likely to carry it than Groq's curated list.",
+        "Fine-tuning on the same platform as serving is convenient. Check licence terms of the base model before shipping a fine-tune in a client product."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Fireworks AI",
+      "website": "https://fireworks.ai/",
+      "what": "Inference and fine-tuning platform for open models, tuned for low latency and high throughput, with function calling and structured output support.",
+      "category": "AI coding / model hosting",
+      "pricing": "Freemium",
+      "priceDetail": "Free credits to start. Per-token pricing from around $0.008 to $0.50 per million depending on model size, plus dedicated deployments.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Structured-output and function-calling support on open models is the useful part — that is usually what breaks when moving a feature off a frontier model to save cost.",
+        "Direct alternative to Together and Groq. Pick on the specific model and latency you need, not on the brand."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Baseten",
+      "website": "https://baseten.co/",
+      "what": "Deploys custom and open-source models as production endpoints with autoscaling, and handles the packaging so a model becomes an API without writing serving code.",
+      "category": "AI coding / model hosting",
+      "pricing": "Freemium",
+      "priceDetail": "Free credits. Usage-based from around $0.30 per compute-hour unit, with published figures at $3.00 and $15.00 tiers.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The option when a client project needs a bespoke or fine-tuned model in production rather than an off-the-shelf one — the case Replicate handles less well.",
+        "More operational surface than Replicate. Only worth it when the model is genuinely ours to serve."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "RunPod",
+      "website": "https://runpod.io/",
+      "what": "On-demand and spot GPUs by the hour, plus serverless inference — the cheap end of renting compute, with per-second billing on serverless.",
+      "category": "AI coding / model hosting",
+      "pricing": "Paid",
+      "priceDetail": "Hourly GPU rates published from around $2.09 to $7.89 depending on card, with cheaper spot pricing and separate serverless rates.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The cheapest way to get a real GPU for an afternoon — training a small model, batch-processing a client's image library, testing a local model at speed.",
+        "Raw infrastructure: you manage the container and the uptime. Modal or Replicate for anything that needs to stay up."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Cerebras",
+      "website": "https://cerebras.ai/",
+      "what": "Runs open models on wafer-scale chips, producing token throughput far above GPU hosts, offered as an inference API and as training capacity.",
+      "category": "AI coding / model hosting",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier with rate limits. Paid plans at $50/month and $200/month, with credit packs at $5, $10 and $48.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Same argument as Groq — speed changes what an interaction can feel like — with a different curated model list, so it is worth knowing as the fallback.",
+        "Rated Low because Groq covers the same need and we have no volume that justifies two fast-inference accounts."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Anyscale",
+      "website": "https://anyscale.com/",
+      "what": "Managed Ray — the framework for distributing Python across a cluster — for data-heavy training, batch inference and pipelines that outgrow one machine.",
+      "category": "AI coding / model hosting",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. Usage-based from around $3 per unit, with a $100 credit figure on the pricing page.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Relevant only when a job is genuinely distributed — processing a client's entire media library, or training on more data than one GPU holds.",
+        "Rated Low: Modal covers our scale with far less ceremony. Know it exists for the job that outgrows Modal."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Botpress",
+      "website": "https://botpress.com/",
+      "what": "Agent platform for customer support with a visual flow builder, knowledge bases, and deployment to web, WhatsApp, Slack and phone — priced by usage rather than per seat.",
+      "category": "AI coding / conversational agents",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid from $25/month with usage add-ons, a $65 tier and $150/month for teams, plus around $0.65 per unit of AI spend.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "No per-seat cost is the practical difference on client work: a support agent handling a client's volume does not get more expensive as their team grows.",
+        "Multi-channel deployment — especially WhatsApp — is what clients actually ask for and what takes longest to build ourselves."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Chatbase",
+      "website": "https://chatbase.co/",
+      "what": "Builds a support agent from a website, docs or uploaded files and gives you an embeddable widget with analytics on what it could not answer.",
+      "category": "AI coding / conversational agents",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid at $32/month and $120/month, with annual figures of $384 and $1,440.",
+      "usefulness": "Medium",
+      "buildVerdict": "Small project (1-2 weeks)",
+      "notes": [
+        "The most common small client ask on this whole list — \"can we have a chatbot trained on our site\" — answered in an afternoon rather than a sprint.",
+        "The unanswered-questions analytics is the part worth showing a client: it is a content gap report, not just a bot."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Voiceflow",
+      "website": "https://voiceflow.com/",
+      "what": "Design-led platform for building chat and voice agents — a canvas for conversation flows with version control, testing and handoff to developers.",
+      "category": "AI coding / conversational agents",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier to build. Paid team and enterprise plans; figures are not published in the served pricing page.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Its strength is the design surface — a conversation flow a client can review before it is built, which is how we work on everything else.",
+        "Pricing unpublished, and it aims at enterprise. Prototype on the free tier before quoting anything."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Retell AI",
+      "website": "https://retellai.com/",
+      "what": "Voice agent platform with per-minute billing — telephony, low-latency speech, and a test-and-monitor surface for production phone agents.",
+      "category": "AI coding / conversational agents",
+      "pricing": "Freemium",
+      "priceDetail": "Free credits to start, then around $0.07 per minute, with a $10 starting credit and published rates down to $0.002 per unit at volume.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Directly comparable to Vapi and worth pricing against it on a real client job — per-minute rates differ enough to matter at volume.",
+        "Its testing tools are better than most: simulating calls before a client's phone line goes live is the difference between a demo and a deployment."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Bland",
+      "website": "https://bland.ai/",
+      "what": "Voice agents with self-hosted models and sub-second latency, aimed at high call volume with enterprise compliance options.",
+      "category": "AI coding / conversational agents",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. From $15/month, with per-minute rates published around $0.05 to $0.14.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Third option alongside Vapi and Retell, and the one that claims its own model hosting rather than stitching third-party speech services together — fewer moving parts, less latency.",
+        "Same standing caveat on all three: cap spend and call length before a phone line goes live, and get caller disclosure into the client's scope."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Langflow",
+      "website": "https://langflow.org/",
+      "what": "Open-source visual builder for LLM pipelines and agents, Python-native underneath, so a flow can be exported and run as code rather than trapped in the canvas.",
+      "category": "AI coding / agent frameworks",
+      "pricing": "Free",
+      "priceDetail": "Free and open source; a hosted option exists through DataStax.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Exporting to Python is the reason to pick it over Flowise for anything that might graduate: the prototype becomes the starting code rather than being rebuilt.",
+        "Backed by DataStax, so it has a company behind it — unusual among the visual builders."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "MindStudio",
+      "website": "https://mindstudio.ai/",
+      "what": "No-code builder for AI workflows and agents that publishes as a shareable app, browser extension or API, with model choice per step.",
+      "category": "AI coding / agent frameworks",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0/month tier. Paid at $16 and $20/month, with a $24/month team tier.",
+      "usefulness": "Medium",
+      "buildVerdict": "Small project (1-2 weeks)",
+      "notes": [
+        "Cheap enough to put an internal tool in a non-developer's hands here — a repeatable client-report generator, say — without it becoming a build.",
+        "Per-step model choice keeps cost sane: a cheap model for extraction, an expensive one only where judgement is needed."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Manus",
+      "website": "https://manus.im/",
+      "what": "General-purpose agent that executes multi-step tasks in its own cloud environment — browses, writes files, runs code — and returns finished work rather than instructions.",
+      "category": "AI coding / agent frameworks",
+      "pricing": "Paid",
+      "priceDetail": "Credit-based subscription; figures are not published in the served pricing page.",
+      "usefulness": "Low",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Worth knowing because clients ask about it by name. Its useful shape for us is research and data-gathering tasks, not code we would ship.",
+        "Rated Low: unpublished pricing, and Claude Code already does the parts of this we need with our own supervision."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Budibase",
+      "website": "https://budibase.com/",
+      "what": "Open-source internal-tool builder — connect a database or API, generate CRUD screens and forms, add automations, and self-host the whole thing.",
+      "category": "No-code / internal tools",
+      "pricing": "Freemium",
+      "priceDetail": "Open source and free to self-host. Paid from $5/user/month, with $19, $49 and $299/month tiers for hosted and enterprise features.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The open-source answer to Retool, and the one to reach for when a client's data cannot leave their infrastructure or they baulk at per-seat SaaS.",
+        "Less polished than Retool and the component set is narrower. Fine for admin panels; not for a customer-facing product."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Softr",
+      "website": "https://softr.io/",
+      "what": "Builds client portals and internal tools on top of Airtable, Google Sheets or a database — permissions, branded pages and forms without code.",
+      "category": "No-code / internal tools",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. Paid from $19/month, with $99/month for business features and per-user add-ons around $5–$10.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Directly useful for agency work: a branded client portal over data already in Airtable, live in a day, for less than a day of our time.",
+        "Airtable-shaped, so it inherits Airtable's record limits and per-seat costs. Check both before proposing it as permanent."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Noloco",
+      "website": "https://noloco.io/",
+      "what": "Client-portal and internal-tool builder over Airtable, Postgres or Google Sheets, with granular per-record permissions and white-labelling.",
+      "category": "No-code / internal tools",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0/month tier. Paid from $79/month, with per-user pricing around $6 above the included seats.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Stronger permission model than Softr, which is what matters when several of a client's customers each see only their own records.",
+        "At $79/month it is the dearer of the two. Worth it when the permissions are the requirement rather than the look."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "WeWeb",
+      "website": "https://weweb.io/",
+      "what": "No-code front-end builder that produces a real web app against your own backend — Supabase, Xano or any REST API — and exports to self-hosting.",
+      "category": "No-code / internal tools",
+      "pricing": "Freemium",
+      "priceDetail": "Free to build. Paid plans per project; figures are not published in the served pricing page.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The bring-your-own-backend model is why this beats Bubble for us: the data layer stays somewhere we can own, version and migrate.",
+        "Self-hosted export means a client is not trapped. Pricing is unpublished, so get it in writing before scoping."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Base44",
+      "website": "https://base44.com/",
+      "what": "Prompt-to-app platform with database, auth and hosting included — describe the tool, get a working app, iterate in chat. Now owned by Wix.",
+      "category": "No-code / internal tools",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid at $16, $40, $80 and $160/month.",
+      "usefulness": "Low",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The $16 entry tier makes it the cheapest of the prompt-to-app tools for a genuinely internal tool nobody will maintain.",
+        "Rated Low: Wix acquisition means the roadmap now serves Wix, and there is no code export worth the name."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Durable",
+      "website": "https://durable.co/",
+      "what": "Generates a small-business website in about a minute, then bundles the surrounding admin — invoicing, CRM and SEO tooling — around it.",
+      "category": "Design tools / site builders",
+      "pricing": "Freemium",
+      "priceDetail": "Free to build. Paid from around $2/month promotional up to $25/month, with a $20/month standard tier.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Worth knowing as the honest answer to an enquiry we should not take: a sole trader wanting a five-page site does not need a studio.",
+        "Rated Low as a tool for us — the output is template-grade and there is nothing to hand over."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Hex",
+      "website": "https://hex.tech/",
+      "what": "Collaborative data notebooks — SQL and Python in the same document, published as an interactive app so a stakeholder gets a dashboard rather than a notebook.",
+      "category": "Data / analysis",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. Paid from around $100/month, with usage components published from $0.32 per unit.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The publish-as-app step is the differentiator: analysis for a client ends up as something they can use, not a notebook they cannot open.",
+        "Priced for data teams, which we are not. Reach for it on a project where analysis is the deliverable."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Deepnote",
+      "website": "https://deepnote.com/",
+      "what": "Collaborative Python and SQL notebooks in the browser with real-time editing, scheduling and shareable dashboards, and no local environment to set up.",
+      "category": "Data / analysis",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. Paid at $39 and $50/month per user, with a $112/month team tier and $280 annual figure.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Cheaper than Hex and better for the collaborative middle: two people poking at a client's data without arguing about Python versions.",
+        "Notebooks still rot. Anything a client depends on should graduate into code in their repo."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Rows",
+      "website": "https://rows.com/",
+      "what": "Spreadsheet with live integrations built in — pull from 50+ sources including databases, analytics and APIs into cells, then publish the sheet as a dashboard.",
+      "category": "Data / analysis",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid at $8/month per user (or $6 annual) and $79/month for teams.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The fastest route to a client-facing metrics view that we do not have to maintain: the integrations are the product, and it publishes as a page.",
+        "A spreadsheet is still a spreadsheet. Fine for a monthly report, wrong as a client's operational system."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Julius",
+      "website": "https://julius.ai/",
+      "what": "Chat interface over your own data files — upload a spreadsheet or connect a database and it writes and runs the analysis, returning charts and the code it used.",
+      "category": "Data / analysis",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0/month tier. Paid at $16 and $20/month, with a $45/month tier.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Showing the code it ran is what makes it trustworthy — the analysis is checkable rather than a chart you have to believe.",
+        "$20/month against a day of someone here fighting a client's CSV export is an easy trade."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Equals",
+      "website": "https://equals.com/",
+      "what": "Spreadsheet with a live SQL connection to your database, built so a model can refresh from source rather than living on a stale export.",
+      "category": "Data / analysis",
+      "pricing": "Freemium",
+      "priceDetail": "Paid from $24/month per user (or $36 monthly), with team tiers at $250 and $500/month.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Solves the real spreadsheet failure — the numbers were right the day it was made — by keeping the connection to the database live.",
+        "Rated Low: aimed at finance teams, and we do not build financial models. Rows covers our lighter version of this."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Adobe Express",
+      "website": "https://express.adobe.com/",
+      "what": "Adobe's browser design tool — templates, brand kits, background removal and Firefly generation, with the Creative Cloud asset library behind it.",
+      "category": "Design tools / editors",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier with a large template and asset set. Paid tier included with Creative Cloud; standalone figures not published in the served page.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The option to hand a client already inside Adobe: brand kits carry over from their existing assets, which Canva cannot do.",
+        "Firefly generation inside it inherits Adobe's licensed training data, so client-facing output has the same legal cover as Firefly itself."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Microsoft Designer",
+      "website": "https://designer.microsoft.com/",
+      "what": "Free browser design tool for social posts and graphics with generative fill and image creation, wired into Microsoft 365 and OneDrive.",
+      "category": "Design tools / editors",
+      "pricing": "Free",
+      "priceDetail": "Free with a Microsoft account; higher limits with Microsoft 365.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The free option for a client on Microsoft 365 who will not pay for Canva — their licence probably already covers it.",
+        "Rated Low: template quality trails Canva and Express, and output needs restyling before it represents a brand we built."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Kittl",
+      "website": "https://kittl.com/",
+      "what": "Vector design tool in the browser aimed at type-led and print work — lettering effects, textures, mockups and a large licensed asset library, with real vector export.",
+      "category": "Design tools / editors",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. Paid subscription with figures on the pricing page including a $200 tier and $4,185/year enterprise figure; per-seat monthly figures were not in the served HTML.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Genuinely good at the thing Canva is bad at: display lettering and print-ready vector work, with merch mockups built in.",
+        "Vector export means output can go into a real brand system rather than staying a PNG. Confirm the per-seat price in-app before buying."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Lovart",
+      "website": "https://lovart.ai/",
+      "what": "Design agent that takes a brand description and produces a whole set — logo, packaging, social content and video ads — in one conversation, on an editable canvas.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free credits to start; paid tiers not published in the served pricing page.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Worth knowing because it is the clearest example of what clients now expect a design agent to do, and a useful thing to be able to talk about accurately.",
+        "Rated Low: output is generic and unusable as identity work. The value is speed on throwaway variations, not a brand."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Polymet",
+      "website": "https://polymet.ai/",
+      "what": "Generates production-ready product designs and matching front-end code from a description or a reference image, working against a design system rather than from scratch.",
+      "category": "Design engineering / design-to-code",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier; paid figures not published in the served pricing page.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "Another option in the same lane as Subframe and Magic Patterns. Its angle is full product screens rather than single components.",
+        "Pricing unpublished, which is common in this category and a reason to trial rather than commit."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Visily",
+      "website": "https://visily.io/",
+      "what": "Wireframing tool that converts a screenshot, sketch or text prompt into an editable hi-fidelity design, with prototyping and a large template set.",
+      "category": "Design research / UI patterns",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid at $11/month and $29/month.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Cheaper than Uizard at $11 and better at the screenshot-to-editable trick, which is the one genuinely useful feature in this category.",
+        "Rated Low for the same reason as Uizard: we have designers. Its use is capturing a client's own sketch before kickoff."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Flair",
+      "website": "https://flair.ai/",
+      "what": "Drag-and-drop AI editor for product photography — place a product on a generated set with controlled lighting and composition, then batch out variations.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid at $8, $26 and $38/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Real client use on e-commerce work: a product shot in five settings without booking a studio, from one clean cut-out.",
+        "At $8/month it is worth trying against Photoroom. Flair is stronger on composed scenes, Photoroom on volume."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Mockey",
+      "website": "https://mockey.ai/",
+      "what": "Free mockup generator with 30,000+ templates — apparel, print, packaging and devices — upload a design and download the composite.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free with no watermark on the base library; paid tier for premium templates and bulk export.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Fills the merch and print gap Rotato does not touch: t-shirts, tote bags, packaging and signage for a brand project.",
+        "Templates are template-grade. Fine for a client presentation, not for a hero image on a launch site."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Synthesia",
+      "website": "https://synthesia.io/",
+      "what": "Generates presenter-led video from a script using avatars and voices in 140+ languages, with brand templates and a screen-recording mode.",
+      "category": "Video & capture / generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0/month tier with limited minutes. Paid at $18/month, $29/month and $89/month per seat.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The one AI video tool with a real client use case for us: training and onboarding video that has to exist in eight languages and be updated when the process changes.",
+        "Avatars still read as avatars. Right for internal and instructional content, wrong for anything brand-led."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "HeyGen",
+      "website": "https://heygen.com/",
+      "what": "Avatar video generation with translation and lip-sync — record once and produce the same video in dozens of languages, or build an avatar from a real presenter.",
+      "category": "Video & capture / generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0/month tier. Paid at $29, $49 and $149/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The translation-with-lip-sync is the differentiator against Synthesia: an existing client video localised rather than regenerated from a script.",
+        "Cloning a real person's likeness needs written consent from that person, not just from the client. Get it in the scope."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Kapwing",
+      "website": "https://kapwing.com/",
+      "what": "Browser video editor with the utility layer teams actually need — auto-subtitles, resizing for each platform, background removal and a full project from one prompt.",
+      "category": "Video & capture / editing",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier with watermarks on some exports. Paid at $16, $24 and $50/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Nothing to install, which makes it the one to send a client who needs to trim and caption a video themselves.",
+        "Overlaps VEED closely. Kapwing is a little stronger on templates, VEED on dubbing — try both on the same clip."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "VEED",
+      "website": "https://veed.io/",
+      "what": "Browser video editor with AI dubbing, subtitles, eye-contact correction and filler-word removal, plus a screen recorder.",
+      "category": "Video & capture / editing",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier with watermarks. Paid subscription tiers; per-seat figures were not in the served pricing page.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Dubbing is the reason to keep it alongside Kapwing — a client video into another language without re-shooting or paying a voice artist.",
+        "Free tier watermarks output, so any real use is paid. Confirm the current figure in-app."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Opus Clip",
+      "website": "https://opus.pro/",
+      "what": "Cuts long video into short vertical clips, choosing moments by predicted engagement, then adds captions, reframes to keep the speaker centred and schedules the posts.",
+      "category": "Video & capture / editing",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier with monthly minute limits. Paid at $15/month and $29/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The best of a crowded category and the only one worth listing: auto-reframing that tracks the speaker is what makes the output usable without a manual pass.",
+        "Its use for us is turning a client webinar or podcast into a month of social content — a deliverable we can sell, not just a tool."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Submagic",
+      "website": "https://submagic.co/",
+      "what": "Adds the short-form video treatment automatically — animated captions, b-roll, zooms, sound effects and hooks — from an uploaded clip.",
+      "category": "Video & capture / editing",
+      "pricing": "Freemium",
+      "priceDetail": "Free trial. Paid at $19, $38, $39 and $58/month depending on volume.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Does one job well: the caption-and-b-roll style short-form video now expects, in a minute rather than an hour of editing.",
+        "Rated Low because the style is aggressively of-the-moment and will date. Use it for a client's social feed, never for brand film."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Pika",
+      "website": "https://pika.art/",
+      "what": "Generative video from text, image or video input, with editing controls for extending clips, swapping elements and applying effects to a region.",
+      "category": "Video & capture / generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier with limited credits. Paid at $8, $28 and $76/month.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Cheapest way into generative video at $8/month — useful for a moodboard or a motion test before committing to Runway.",
+        "Rated Low against Runway: less control and no real editing surface. An option for exploration, not delivery."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Luma Dream Machine",
+      "website": "https://lumalabs.ai/",
+      "what": "Generative video and image platform from Luma, with camera-motion control, keyframe-to-keyframe generation and a reference-image workflow.",
+      "category": "Video & capture / generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier with limited generations. Paid at $30/month and $90/month, with annual figures of $300 and $900.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Camera-motion control is its differentiator — specifying a dolly or an orbit rather than hoping the model chooses one.",
+        "Rated Low: $30/month for exploratory footage is hard to justify against Runway's editing surface at a similar price."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Stability AI",
+      "website": "https://stability.ai/",
+      "what": "The company behind Stable Diffusion — open-weight image, video, audio and 3D models, plus a hosted API and enterprise licences for self-hosting.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free non-commercial use of many models. Paid API credits, with a $19/month creator tier and $50/month professional tier; enterprise licences quoted separately.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The reason to know them is licensing, not quality: their open weights are what make on-premise image generation possible for a client who cannot use a hosted model.",
+        "Read the specific model licence. Several are free for non-commercial use only, and revenue thresholds apply to the commercial tiers."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Civitai",
+      "website": "https://civitai.com/",
+      "what": "Community hub for open image models — thousands of Stable Diffusion and FLUX checkpoints and LoRAs, with example outputs and the settings that produced them.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free browsing and downloads. Paid tiers at $10, $25 and $50/month for on-site generation.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Where you find a LoRA trained on a specific style or product type — genuinely useful when a client needs consistent imagery in one visual language.",
+        "Rated Low deliberately: much of the site is adult content and model provenance is unverifiable. Download to our own pipeline, do not browse it on a client's screen."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "OpenArt",
+      "website": "https://openart.ai/",
+      "what": "One interface over 100+ image and video models from Google, OpenAI, Seedream and others, with character consistency tools and a shared prompt library.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier with daily credits. Paid at $14/month and $34/month, with per-seat annual figures of $13 and $27.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Model breadth under one subscription is the practical case: comparing four models on the same brief without four accounts.",
+        "Character-consistency tooling is the feature worth testing — keeping the same person or product across a set is where most generated imagery falls apart."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Lexica",
+      "website": "https://lexica.art/",
+      "what": "Searchable archive of millions of generated images with the prompts that made them, plus its own generation model.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free search. Paid generation tiers; figures not published in the served pricing page.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Use it as reverse prompt engineering: find an image close to the look you want and read the prompt that produced it, instead of guessing.",
+        "Faster than iterating from scratch, and free for the search half — which is the half worth having."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "PromptHero",
+      "website": "https://prompthero.com/",
+      "what": "Searchable prompt library across Midjourney, Stable Diffusion and DALL·E outputs, with courses and a model-specific prompt-building guide.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0/month tier. Paid at $16/month and $24/month, with a $194/year option.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The teaching angle is the value — prompt structure per model, which is the bit people here learn by trial and error.",
+        "Rated Low: Lexica covers the search half for free. This is worth it only if someone wants the structured learning."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Reve",
+      "website": "https://reve.art/",
+      "what": "Image model with natural-language editing — describe a change and it edits the existing image rather than regenerating it, with strong prompt adherence and text rendering.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free credits to start; paid tiers not published in the served pricing page.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Edit-by-instruction is the workflow that matters for client work: changing one element of an approved image without losing everything else about it.",
+        "Genuinely good at text inside images, which most models still fail at. Pricing unpublished — try the free credits first."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Topaz Labs",
+      "website": "https://topazlabs.com/",
+      "what": "Professional photo and video enhancement — upscaling, denoise, sharpen and frame interpolation, running locally as desktop apps with plugin versions for Adobe tools.",
+      "category": "AI asset generation",
+      "pricing": "Paid",
+      "priceDetail": "Perpetual licences with published figures at $19 and $39, plus a $12/month subscription option.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The professional standard for rescuing supplied assets — the 800px logo that must be a billboard, or client footage shot at the wrong frame rate.",
+        "Runs locally, so unreleased client material never leaves the machine. Perpetual licence rather than a subscription, which is rare and worth it."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Pixelcut",
+      "website": "https://pixelcut.ai/",
+      "what": "Product-photo toolkit — background removal and replacement, object erase, upscale and batch processing — with a mobile app and an API.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid at $8/month annual, $10/month monthly, and a $30/month tier.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Cheapest credible option in this cluster at $8/month, with an API — the one to reach for when the job is volume rather than craft.",
+        "Mobile app matters more than it sounds: a client can shoot and clean up their own product photos on a phone."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Let's Enhance",
+      "website": "https://letsenhance.io/",
+      "what": "Upscaling and enhancement in the browser with an API — resolution, lighting and colour correction, plus batch processing and a print-size mode.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "Free credits to start. Paid at $9, $12, $24 and $32/month depending on volume.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Browser-based with an API, so it covers the case Topaz does not: upscaling inside an automated pipeline rather than on someone's desktop.",
+        "Rated Low: Topaz is better on quality and Upscayl is free locally. This wins only when it has to run server-side."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Adobe Podcast",
+      "website": "https://podcast.adobe.com/",
+      "what": "Audio cleanup that makes a phone or laptop recording sound like it was recorded in a studio — removes room noise and reverb, evens levels, and transcribes.",
+      "category": "Audio / production",
+      "pricing": "Free",
+      "priceDetail": "Free with an Adobe account; Enhance Speech has generous free limits.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Directly fixes the weak link in everything we record: a walkthrough or client interview recorded on a laptop mic in a normal room. One pass and it is presentable.",
+        "Free, browser-based and better at de-reverberation than the paid tools bundled into editors. Run recordings through it before they reach Descript."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "AIVA",
+      "website": "https://aiva.ai/",
+      "what": "Generates original music by style and duration, with a licence to use the output — including options that assign full copyright of the generated track.",
+      "category": "Audio / production",
+      "pricing": "Freemium",
+      "priceDetail": "Free €0 tier for non-commercial use. Paid at €11/month and €33/month, the higher tier including copyright ownership of generated tracks.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Solves a real recurring cost: background music for a client video without a stock-library subscription or a sync-licence conversation.",
+        "The licensing tiers are the whole point — the free tier is non-commercial, and only the top tier assigns ownership. Read which one a client deliverable needs."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Otter.ai",
+      "website": "https://otter.ai/",
+      "what": "Real-time meeting transcription with live chat, summaries and action items, joining Zoom, Meet and Teams as a bot.",
+      "category": "Productivity / meeting notes",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier with monthly minute limits. Paid at $8/user/month annual ($16 monthly), $30/month for business, and around $24/user for enterprise.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The incumbent, and the one a client is most likely to already have — worth knowing so we do not propose a second transcriber into their stack.",
+        "$8/user annual is the cheapest paid option in this cluster. Weakest of them on summary quality."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Fireflies",
+      "website": "https://fireflies.ai/",
+      "what": "Meeting recorder that pushes what it captures outward — CRM updates, task creation and workflow automations across email, chat and connected apps.",
+      "category": "Productivity / meeting notes",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid at $10/user/month annual ($18 monthly), $19 and $29/month for higher tiers.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The automation layer is why to pick this one: a client call that ends with the CRM already updated and tasks created, rather than notes to process later.",
+        "Integration depth is also the risk — it reaches into a lot of systems. Scope its permissions before connecting it to anything client-facing."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Circleback",
+      "website": "https://circleback.ai/",
+      "what": "Meeting notes built for accuracy and structure rather than volume — clean summaries, extracted action items with owners, and automations, across any platform.",
+      "category": "Productivity / meeting notes",
+      "pricing": "Paid",
+      "priceDetail": "$20.83/user/month billed annually, or $25/user/month monthly. No free tier.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Notably better output quality than the cheap end of this cluster — the summaries need less editing before they go to a client.",
+        "No free tier and the dearest per seat here. Justified only if the notes actually get sent to clients as-is."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Bluedot",
+      "website": "https://bluedothq.com/",
+      "what": "Bot-free meeting recorder — a Chrome extension captures the call without joining it, so nothing announces itself to the other participants. Handles in-person meetings too.",
+      "category": "Productivity / meeting notes",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0/user tier. Paid at $14, $18, $20 and $32/user/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Bot-free is the same argument as Granola, with in-person meeting capture on top — useful for a client workshop where no call is happening.",
+        "No visible bot does not remove the duty to tell people they are being recorded. Say it at the top of the call."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Jamie",
+      "website": "https://meetjamie.ai/",
+      "what": "Bot-free note-taker built in Germany with EU data residency — records from the device across any platform, including offline meetings, and outputs structured notes.",
+      "category": "Productivity / meeting notes",
+      "pricing": "Freemium",
+      "priceDetail": "Free €0 tier. Paid at €21/month annual, €33/month and €39/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "EU data residency is the reason it is here: for a UK or EU client asking where recordings of their meetings are stored, this is the straightforward answer.",
+        "Priced in euros and slightly dearer than the US options. The compliance answer is what you are paying for."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "tl;dv",
+      "website": "https://tldv.io/",
+      "what": "Records and transcribes Zoom, Meet and Teams with timestamped highlights and clips, so a specific thirty seconds of a client call can be shared rather than the whole recording.",
+      "category": "Productivity / meeting notes",
+      "pricing": "Freemium",
+      "priceDetail": "Genuinely usable free tier with unlimited recordings and transcripts. Paid tiers for CRM integrations and analytics.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Best free tier in this cluster — unlimited recording and transcription at $0, which is enough for a studio our size.",
+        "Clipping a moment out of a call is the underrated feature: sending a client's own words to the team beats paraphrasing them."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Tactiq",
+      "website": "https://tactiq.io/",
+      "what": "Browser-extension transcription that runs on the call you are already in — no bot joins, transcripts appear live, and summaries generate from a prompt you control.",
+      "category": "Productivity / meeting notes",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier with monthly transcript limits. Paid at $8, $16.67 and $29.17/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Lightest option here — an extension rather than a service that stores everything, which makes it the easiest to get past a client's IT.",
+        "Custom summary prompts mean output can match how we actually write notes rather than a generic template."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Semantic Scholar",
+      "website": "https://semanticscholar.org/",
+      "what": "Free academic search across 200 million-plus papers from the Allen Institute, with citation context, influential-citation ranking and a public API.",
+      "category": "Research / tools",
+      "pricing": "Free",
+      "priceDetail": "Free, including the API.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Free API is the part worth remembering: if a client project ever needs literature search built in, this is the source that does not bill per query.",
+        "Non-profit and stable, unlike most of this category. No sales motion, no pivot risk."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Connected Papers",
+      "website": "https://connectedpapers.com/",
+      "what": "Builds a visual graph of papers related to one you already have, by citation similarity rather than keyword — so the field around a paper becomes visible at a glance.",
+      "category": "Research / tools",
+      "pricing": "Free",
+      "priceDetail": "Free for basic use, with a paid tier for heavy users.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The graph view answers a question search cannot: what else sits around this idea, including work that uses different vocabulary.",
+        "Rated Low — we rarely do literature work. Genuinely good when a client claim needs an evidence base."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "ResearchRabbit",
+      "website": "https://researchrabbit.ai/",
+      "what": "Literature discovery that learns from a starting set of papers and keeps recommending, with collaborative collections and citation network views.",
+      "category": "Research / tools",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. Paid from around $10/month, with a $12.50 tier.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Recommendation-based rather than one-shot search, which suits an ongoing subject rather than a single question.",
+        "Rated Low for the same reason as Connected Papers: real capability, rare need."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Humata",
+      "website": "https://humata.ai/",
+      "what": "Turns uploaded documents into a queryable knowledge base with page-level citations, aimed at long technical and legal documents.",
+      "category": "Research / tools",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid at $9/month and $49/user/month, with usage priced around $0.02 per page.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The paid option next to NotebookLM, with page-level citations and per-page pricing that suits one big document rather than a whole corpus.",
+        "Uploading a client's contracts or specs is a processing decision. NotebookLM's Workspace terms are usually easier to defend."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "PDF.ai",
+      "website": "https://pdf.ai/",
+      "what": "Chat with a PDF — ask questions, get summaries and cited answers — with an API for doing it inside another product.",
+      "category": "Research / tools",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier with document limits; paid subscription figures not published in the served page.",
+      "usefulness": "Low",
+      "buildVerdict": "Weekend build",
+      "notes": [
+        "The API is the only interesting part for us: document Q&A as a feature in a client build, without assembling a retrieval stack.",
+        "Rated Low, and honestly a weekend build with Firecrawl and an embedding model if a client needs it properly."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "You.com",
+      "website": "https://you.com/",
+      "what": "Search API and assistant aimed at giving agents web results with citations, including a research endpoint that returns structured reports.",
+      "category": "Research / tools",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. API billed per query, with published figures from around $1.00 to $12.00 per thousand and a $100 credit tier.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Second option next to Exa for giving an agent live web access — worth pricing both against a real workload, as their per-query rates differ.",
+        "Cap usage before wiring it into anything automated. A looping agent on a per-query API is a bill, not an error."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Superhuman",
+      "website": "https://superhuman.com/",
+      "what": "Keyboard-first email client built for speed — split inboxes, snippets, send-later and AI drafting, over Gmail or Outlook.",
+      "category": "Productivity / email",
+      "pricing": "Paid",
+      "priceDetail": "Per-seat subscription; figures are not published in the served pricing page.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Worth it for whoever here carries the client correspondence — the whole product is removing seconds from an action performed a hundred times a day.",
+        "Unpublished pricing and historically expensive. It only pays back for someone genuinely living in email."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Notion Calendar",
+      "website": "https://notion.com/calendar",
+      "what": "Calendar client tied into Notion — joins meetings in a click, shows availability for scheduling links, and surfaces Notion pages against events.",
+      "category": "Productivity / planning",
+      "pricing": "Freemium",
+      "priceDetail": "Free with a Notion account. Paid Notion plans at $10 and $20/user/month, with a $8/month annual figure.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Free and better than the native calendar apps at the two things that matter daily: joining the right call and sharing availability without a scheduling tool.",
+        "Formerly Cron, which is the row this replaced in the audit. Anything pointing at cron.com is stale."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Sunsama",
+      "website": "https://sunsama.com/",
+      "what": "Daily planner that pulls tasks from Jira, Linear, Asana, Trello and email into one deliberate daily plan, with a guided shutdown at the end of the day.",
+      "category": "Productivity / planning",
+      "pricing": "Paid",
+      "priceDetail": "$17/month billed annually or $22/month monthly, with a $24.99 figure on the pricing page. Free trial, no free tier.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Aggregating across trackers is the point for us: work arrives from a client's Jira, our own tickets and email, and this makes one list out of three.",
+        "No free tier and $17/month is dear for a planner. It suits people who plan a day deliberately and is wasted on anyone who does not."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Reclaim",
+      "website": "https://reclaim.ai/",
+      "what": "Calendar automation — defends focus time, schedules habits and tasks into real gaps, and reshuffles automatically when a meeting lands on top of them.",
+      "category": "Productivity / planning",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. Paid at $8, $16, $24 and $32/user/month.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Automatic rescheduling is what separates it from a planner: on a week where client calls keep landing, the focus blocks move themselves instead of being deleted.",
+        "Now owned by Dropbox. Free tier is enough to find out whether the automation suits how someone works."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Todoist",
+      "website": "https://todoist.com/",
+      "what": "Task manager with natural-language input, projects, labels and filters, on every platform, with a genuinely capable free tier.",
+      "category": "Productivity / tasks",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier with project limits. Paid tiers per user; figures not published in the served page.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The default personal task list, and the one whose quick-add is fast enough to actually capture things — \"call the client tomorrow at 10\" parses correctly.",
+        "Personal, not project management. Client work belongs in Foundry; this is for the things that fall between."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Trello",
+      "website": "https://trello.com/",
+      "what": "Kanban boards with automation, checklists and integrations — the simplest shared board a client will actually keep using.",
+      "category": "Productivity / tasks",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier with unlimited cards. Paid at $5, $6 and $10/user/month.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Its use is client-facing simplicity: a shared board for approvals or content collection that a non-technical client can operate without training.",
+        "Rated Low internally — we run on Foundry — but worth having as the answer when a client insists on their own board."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Tana",
+      "website": "https://tana.inc/",
+      "what": "Structured notes with typed nodes and fields, now positioned around meetings — agents create structured records during the call rather than after it.",
+      "category": "Productivity / daily notes",
+      "pricing": "Freemium",
+      "priceDetail": "Free $0 tier. Paid at $20, $30 and $80/month.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Typed nodes mean notes become data — every client meeting a record with the same fields, queryable later. Powerful and genuinely different from a document.",
+        "Rated Low: a steep learning curve, and the structure only pays back if someone maintains it. Hejour is the simpler daily-notes option already listed."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Reflect",
+      "website": "https://reflect.app/",
+      "what": "Minimal networked note-taking with backlinks, daily notes and end-to-end encryption, plus an AI assistant over your own notes.",
+      "category": "Productivity / daily notes",
+      "pricing": "Paid",
+      "priceDetail": "$10/month. Free trial, no free tier.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "End-to-end encryption is the distinguishing feature — the option if someone here keeps notes on client work they would rather not have sitting in plaintext.",
+        "Rated Low: $10/month with no free tier for a notes app, against Hejour and Obsidian doing much of it for less."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Heptabase",
+      "website": "https://heptabase.com/",
+      "what": "Visual knowledge base — notes as cards on an infinite whiteboard, so a subject can be laid out spatially and then linked into a structure.",
+      "category": "Productivity / daily notes",
+      "pricing": "Paid",
+      "priceDetail": "$8.99/month billed annually, $17.99/month monthly, with a $53.99/month team tier. Free trial, no free tier.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The spatial approach genuinely suits research and discovery work — laying out everything known about a client's problem before writing it up.",
+        "Rated Low: single-purpose and paid-only. Worth it for someone who thinks visually, wasted on everyone else."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Aqua Voice",
+      "website": "https://withaqua.com/",
+      "what": "Dictation for Mac, Windows and iPhone aimed at AI workflows — speech to formatted text with editing by voice, and a mode for dictating into prompts.",
+      "category": "Productivity / dictation",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier. Paid at $8/month and $24/month, with $12/user/month for teams.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The direct alternative to Wispr Flow at half the price, and explicitly built for dictating prompts to agents — which is the use that actually saves time here.",
+        "Try both on a week of real prompting. The difference is cleanup quality, and it is a matter of preference."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Goblin Tools",
+      "website": "https://goblin.tools/",
+      "what": "Small free tools that break an overwhelming task into steps, estimate effort, and adjust the tone of a message — built with neurodivergent users in mind.",
+      "category": "Productivity / tasks",
+      "pricing": "Free",
+      "priceDetail": "Free on the web; a small one-off charge for the mobile apps.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The Magic ToDo breaks a vague task into steps at whatever granularity you ask for — genuinely useful on the days a job feels too big to start.",
+        "Free, no account, no product roadmap trying to become a platform. Rare and worth keeping a link to."
+      ],
+      "addedAt": "2026-08-14T08:46:23.000Z",
+      "addedBy": "Dan"
     }
   ]
 }
