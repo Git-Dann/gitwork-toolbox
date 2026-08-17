@@ -14213,6 +14213,2718 @@
       "assessedAt": "2026-08-13T23:29:17.429Z",
       "decidedAt": "2026-08-14T07:44:52.000Z",
       "reason": "voice cloning — consent problems and no studio use"
+    },
+    {
+      "url": "https://github.com/agent/amp",
+      "host": "github.com",
+      "name": "agent/amp",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/amp",
+        "finalUrl": "https://github.com/agent/amp",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.583Z"
+    },
+    {
+      "url": "https://github.com/agent/antigravity",
+      "host": "github.com",
+      "name": "agent/antigravity",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/antigravity",
+        "finalUrl": "https://github.com/agent/antigravity",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.574Z"
+    },
+    {
+      "url": "https://github.com/agent/claude-code",
+      "host": "github.com",
+      "name": "agent/claude-code",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/claude-code",
+        "finalUrl": "https://github.com/agent/claude-code",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.620Z"
+    },
+    {
+      "url": "https://github.com/agent/clawdbot",
+      "host": "github.com",
+      "name": "agent/clawdbot",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/clawdbot",
+        "finalUrl": "https://github.com/agent/clawdbot",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.572Z"
+    },
+    {
+      "url": "https://github.com/agent/cline",
+      "host": "github.com",
+      "name": "agent/cline",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/cline",
+        "finalUrl": "https://github.com/agent/cline",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.584Z"
+    },
+    {
+      "url": "https://github.com/agent/codex",
+      "host": "github.com",
+      "name": "agent/codex",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/codex",
+        "finalUrl": "https://github.com/agent/codex",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.582Z"
+    },
+    {
+      "url": "https://github.com/agent/cursor",
+      "host": "github.com",
+      "name": "agent/cursor",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/cursor",
+        "finalUrl": "https://github.com/agent/cursor",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.573Z"
+    },
+    {
+      "url": "https://github.com/agent/droid",
+      "host": "github.com",
+      "name": "agent/droid",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/droid",
+        "finalUrl": "https://github.com/agent/droid",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.588Z"
+    },
+    {
+      "url": "https://github.com/agent/gemini",
+      "host": "github.com",
+      "name": "agent/gemini",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/gemini",
+        "finalUrl": "https://github.com/agent/gemini",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.824Z"
+    },
+    {
+      "url": "https://github.com/agent/github-copilot",
+      "host": "github.com",
+      "name": "agent/github-copilot",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/github-copilot",
+        "finalUrl": "https://github.com/agent/github-copilot",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.819Z"
+    },
+    {
+      "url": "https://github.com/agent/goose",
+      "host": "github.com",
+      "name": "agent/goose",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/goose",
+        "finalUrl": "https://github.com/agent/goose",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.844Z"
+    },
+    {
+      "url": "https://github.com/agent/kilo",
+      "host": "github.com",
+      "name": "agent/kilo",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/kilo",
+        "finalUrl": "https://github.com/agent/kilo",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.853Z"
+    },
+    {
+      "url": "https://github.com/agent/kiro-cli",
+      "host": "github.com",
+      "name": "agent/kiro-cli",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/kiro-cli",
+        "finalUrl": "https://github.com/agent/kiro-cli",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.907Z"
+    },
+    {
+      "url": "https://github.com/agent/nous-research",
+      "host": "github.com",
+      "name": "agent/nous-research",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/nous-research",
+        "finalUrl": "https://github.com/agent/nous-research",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.900Z"
+    },
+    {
+      "url": "https://github.com/agent/opencode",
+      "host": "github.com",
+      "name": "agent/opencode",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/opencode",
+        "finalUrl": "https://github.com/agent/opencode",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.866Z"
+    },
+    {
+      "url": "https://github.com/agent/roo",
+      "host": "github.com",
+      "name": "agent/roo",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/roo",
+        "finalUrl": "https://github.com/agent/roo",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:54.887Z"
+    },
+    {
+      "url": "https://github.com/agent/trae",
+      "host": "github.com",
+      "name": "agent/trae",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/trae",
+        "finalUrl": "https://github.com/agent/trae",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:55.025Z"
+    },
+    {
+      "url": "https://github.com/agent/vscode",
+      "host": "github.com",
+      "name": "agent/vscode",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/vscode",
+        "finalUrl": "https://github.com/agent/vscode",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:55.015Z"
+    },
+    {
+      "url": "https://github.com/agent/windsurf",
+      "host": "github.com",
+      "name": "agent/windsurf",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/windsurf",
+        "finalUrl": "https://github.com/agent/windsurf",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:55.071Z"
+    },
+    {
+      "url": "https://github.com/agent/zed",
+      "host": "github.com",
+      "name": "agent/zed",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/agent/zed",
+        "finalUrl": "https://github.com/agent/zed",
+        "status": 404,
+        "reachable": false,
+        "title": "Page not found · GitHub · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Page not found · GitHub · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:55.058Z"
+    },
+    {
+      "url": "https://github.com/topic/agent-workflows",
+      "host": "github.com",
+      "name": "topic/agent-workflows",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/topic/agent-workflows",
+        "finalUrl": "https://github.com/topics/agent-workflows",
+        "status": 200,
+        "reachable": true,
+        "title": "agent-workflows · GitHub Topics · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "agent-workflows · GitHub Topics · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY C",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:55.620Z"
+    },
+    {
+      "url": "https://github.com/topic/databases",
+      "host": "github.com",
+      "name": "topic/databases",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/topic/databases",
+        "finalUrl": "https://github.com/topics/databases",
+        "status": 200,
+        "reachable": true,
+        "title": "databases · GitHub Topics · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "databases · GitHub Topics · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:55.726Z"
+    },
+    {
+      "url": "https://github.com/topic/design",
+      "host": "github.com",
+      "name": "topic/design",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/topic/design",
+        "finalUrl": "https://github.com/topics/design",
+        "status": 200,
+        "reachable": true,
+        "title": "design · GitHub Topics · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "design · GitHub Topics · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SI",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:55.803Z"
+    },
+    {
+      "url": "https://github.com/topic/marketing",
+      "host": "github.com",
+      "name": "topic/marketing",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/topic/marketing",
+        "finalUrl": "https://github.com/topics/marketing",
+        "status": 200,
+        "reachable": true,
+        "title": "marketing · GitHub Topics · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "marketing · GitHub Topics · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:55.634Z"
+    },
+    {
+      "url": "https://github.com/topic/mobile",
+      "host": "github.com",
+      "name": "topic/mobile",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/topic/mobile",
+        "finalUrl": "https://github.com/topics/mobile",
+        "status": 200,
+        "reachable": true,
+        "title": "mobile · GitHub Topics · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "mobile · GitHub Topics · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SI",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:55.802Z"
+    },
+    {
+      "url": "https://github.com/topic/nextjs",
+      "host": "github.com",
+      "name": "topic/nextjs",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/topic/nextjs",
+        "finalUrl": "https://github.com/topics/nextjs",
+        "status": 200,
+        "reachable": true,
+        "title": "nextjs · GitHub Topics · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "nextjs · GitHub Topics · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SI",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:55.926Z"
+    },
+    {
+      "url": "https://github.com/topic/react",
+      "host": "github.com",
+      "name": "topic/react",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/topic/react",
+        "finalUrl": "https://github.com/topics/react",
+        "status": 200,
+        "reachable": true,
+        "title": "react · GitHub Topics · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "react · GitHub Topics · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY SIZ",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:55.858Z"
+    },
+    {
+      "url": "https://github.com/topic/testing",
+      "host": "github.com",
+      "name": "topic/testing",
+      "discoveredVia": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
+      "signal": 4,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/topic/testing",
+        "finalUrl": "https://github.com/topics/testing",
+        "status": 200,
+        "reachable": true,
+        "title": "testing · GitHub Topics · GitHub",
+        "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "testing · GitHub Topics · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all features Solutions BY COMPANY S",
+        "openSource": true
+      },
+      "repo": {
+        "status": 404
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:55.833Z"
+    },
+    {
+      "url": "https://affine.pro/",
+      "host": "affine.pro",
+      "name": "affine.pro",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://affine.pro/",
+        "finalUrl": "https://affine.pro/",
+        "status": 200,
+        "reachable": true,
+        "title": "AFFiNE — Open-Source Knowledge Base Software",
+        "description": "AFFiNE is the open-source Notion & Miro alternative — combining docs, whiteboards, databases, and AI in one local-first workspace. Free for teams.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$0",
+            "context": "AFFiNE Pricing 2026: Free, Pro, Team Plans from $0 əˈfʌɪn | a-fine AFFiNE AI Create Smarter with AI Docs Powerful, Simple for All Edgeless"
+          },
+          {
+            "figure": "$8.9 / mo",
+            "context": " leaving AFFiNE. Turn all your ideas into reality AFFiNE AI A true multimodal AI copilot. $8.9 / month billed annually Learn about AFFiNE AI Write with you Create quality content f"
+          },
+          {
+            "figure": "$10",
+            "context": "Collaboration for more people Learn more about self-hosting Team Best for scalable teams. $10 per seat/month Both in Teams & Enterprise: Everything in Self Hosted FOSS 100 GB initi"
+          },
+          {
+            "figure": "$6.75",
+            "context": "ne file version history Up to 3 login devices Get Started Pro For family and small teams. $6.75 per month Include in Pro: Everything in AFFiNE FOSS & Basic 100 GB of Cloud Storage "
+          },
+          {
+            "figure": "$499.99",
+            "context": " members (10+ seats) Multiple admin roles Priority customer support Upgrade Believer Plan $499.99 Purchase Everything in AFFiNE Pro Life-time Personal usage 1TB Cloud Storage Enter"
+          },
+          {
+            "figure": "$10/seat",
+            "context": "rol all data, and limits are bound by your own infrastructure. The Self-Hosted Team tier ($10/seat/month) adds priority support, multi-admin roles, and scaling for 10+ seats. Can I"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "AFFiNE — Open-Source Knowledge Base Software əˈfʌɪn | a-fine AFFiNE AI Create Smarter with AI Docs Powerful, Simple for All Edgeless Collaborate Without Limits Teamhub Unified Team Document Space Enterprise Private cloud and self-hosted deployments Contact sales Seats, contracts and pilots — talk to us Docs Templates About Us Blog Timers Community Discord Get tips and support from 7k+ users Twitter Stay tuned for the latest news Community Become an ambassador and track events English 日本語 ja-JP 한국어 ko-KR 繁體中文 zh-TW Deutsch de-DE Español es-ES Français fr-FR Português (Brasil) pt-BR Italiano it-IT English 日本語 ja-JP 한국어 ko-KR 繁體中文 zh-TW Deutsch de-DE Español es-ES Français fr-FR Português (Bras",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:55.792Z"
+    },
+    {
+      "url": "https://www.are.na/",
+      "host": "are.na",
+      "name": "are.na",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.are.na/",
+        "finalUrl": "https://www.are.na/",
+        "status": 200,
+        "reachable": true,
+        "title": "Are.na",
+        "description": "Are.na is a platform for connecting ideas and building knowledge.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Are.na Sign up Log in Are.na Are.na is Online software for saving and organizing the content that is important to you A toolkit for assembling new worlds from the scraps of the old For the last 15 years and 8 days , Are.na has been a place for students, designers, academics, collectors, researchers, and many other people who defy categorization to share and connect ideas. Sign up Download the app How it works Capture Save photos, notes, files, webpages and anything else you can think of Arrange Your content lives in channels—containers that are editable, arrangeable and searchable Search Everything on Are.na is findable—search across your channels, your network, and all of Are.na Connect Reu",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:56.289Z"
+    },
+    {
+      "url": "https://www.awwwards.com/",
+      "host": "awwwards.com",
+      "name": "awwwards.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.awwwards.com/",
+        "finalUrl": "https://www.awwwards.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Awwwards - Website Awards - Best Web Design Trends",
+        "description": "Awwwards are the Website Awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Awwwards - Website Awards - Best Web Design Trends search#close\"> search#toggleMobile\"> search#toggleDropdown\"> Explore search#doToogleTab\"> Awards Honor Mentions Nominees Sites of the Day Sites of the Month Sites of the Year Honors New Most Awarded Profiles Jury 2026 Annual Awards search#doToogleTab\"> Trending Portfolio Websites Free fonts Animated websites Sites of the Day Scrolling One page design UI design E-commerce layouts Architecture websites Photography websites search#doToogleTab\"> By Category E-commerce Architecture Restaurant & Hotel Design Agencies Business & Corporate Fashion Mobile & Apps Interaction Design Illustration Header Design search#doToogleTab\"> By Technology CSS anim",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:58.961Z"
+    },
+    {
+      "url": "https://bestfreefonts.com/",
+      "host": "bestfreefonts.com",
+      "name": "bestfreefonts.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://bestfreefonts.com/",
+        "finalUrl": "https://bestfreefonts.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Best Free Fonts – Curated Fonts for Designers",
+        "description": "Discover a curated collection of the best free fonts for branding, websites, editorial design and more. Preview fonts and find the right typeface for your next project.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Best Free Fonts – Curated Fonts for Designers Best Free Fonts Sans Serif Serif Display Script Monospace Truly free fonts for your designs Best Free Fonts is a curated selection of 214 free fonts. Including serif, sans serif, script and monospace. Clarity City Clarity City Clarity City Sans Serif · 18 styles Murecho Murecho Murecho Sans Serif · 9 styles variable Climate Crisis Climate Crisis Climate Crisis Display · 8 styles variable Host Grotesk Host Grotesk Host Grotesk Sans Serif · 12 styles variable Gabarito Gabarito Gabarito Sans Serif · 6 styles variable Familjen Grotesk Familjen Grotesk Familjen Grotesk Sans Serif · 8 styles Figtree Figtree Figtree Sans Serif · 14 styles variable Brico",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:56.216Z"
+    },
+    {
+      "url": "https://www.bezi.com/",
+      "host": "bezi.com",
+      "name": "bezi.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.bezi.com/",
+        "finalUrl": "https://www.bezi.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Unity AI Assistant - Debug, Code &amp; Build Games Faster | Bezi",
+        "description": "The AI assistant built for Unity developers. Get instant help with debugging, code generation, shader creation, and prototyping. Integrates with the engine and works with your actual project, not generic answers.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$20 /mo",
+            "context": " required 100 credits 1 Workspace Up to 2 Pages Limited access to models Try for free Pro $20 /month 800 credits monthly Unlimited Workspaces Unlimited Pages Access to all models O"
+          },
+          {
+            "figure": "$60 /mo",
+            "context": "ss to all models On-demand usage available at API pricing Select Pro Advanced Recommended $60 /month 2400 credits monthly Unlimited Workspaces Unlimited Pages Access to all models "
+          },
+          {
+            "figure": "$180 /mo",
+            "context": "es Access to all models On-demand usage available at API pricing Select Advanced Ultimate $180 /month 7200 credits monthly Unlimited Workspaces Unlimited Pages Access to all models"
+          },
+          {
+            "figure": "$200 /mo",
+            "context": " to all models On-demand usage available at API pricing Select Ultimate Studio Plans Team $200 /month 8,000 shared credit pool monthly Unity VCS & Perforce intelligence Unlimited S"
+          },
+          {
+            "figure": "$50/mo",
+            "context": "ligence Unlimited Shared Workspaces Shared Pages 3 seats included Each additional seat is $50/mo and adds 2,000 credits Team management & billing All features in Ultimate, plus: Se"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Unity AI Assistant - Debug, Code & Build Games Faster | Bezi New: Package entire processes and workflows into Skills, then reuse them instantly, anytime. New: Package workflows into Skills, then reuse instantly. For Unity AI for building real games, not generating them. Bezi is an AI agent that works inside Unity, built for game developers who want to see every idea built and tested. It understands your full project and acts across the engine, from writing scripts to building scenes, so you can hand off the tedious work without handing off control. Try for free Learn more Trusted by studios of all sizes Your data and IP are never used to train AI models. Bezi is SOC 2 certified and offers en",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:56.048Z"
+    },
+    {
+      "url": "https://bitspace.sh/",
+      "host": "bitspace.sh",
+      "name": "bitspace.sh",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://bitspace.sh/",
+        "finalUrl": "https://bitspace.sh/",
+        "status": 200,
+        "reachable": true,
+        "title": "Bitspace",
+        "description": "A space for exploration, prototyping &amp; creative computation",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Bitspace Bitspace Creative computing for everyone A space for exploration & creative imagination Open Prototype Timer N Milliseconds N Seconds Oscillator N Frequency N Amplitude N Time N Oscillation To Color N Hue N Saturation N Value C Color Square Harmony C Color C A C B C C C D Analogous Harmony C Color C A C B C C Gradient C A C B N Angle G Output a creative space from new fragment",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:56.708Z"
+    },
+    {
+      "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+      "host": "blackmagicdesign.com",
+      "name": "blackmagicdesign.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+        "finalUrl": "https://www.blackmagicdesign.com/products/davinciresolve",
+        "status": 200,
+        "reachable": true,
+        "title": "DaVinci Resolve | Blackmagic Design",
+        "description": "Professional video editing, color correction, visual effects and audio post production all in a single application. Free and paid versions for Mac, Windows and Linux.",
+        "priceSource": "homepage",
+        "figures": [
+          {
+            "figure": "$295",
+            "context": "o Post! Davinci Resolve Free Download Now cart icon Davinci Resolve Studio Buy Online Now $295 DaVinci Resolve is the world’s only solution that combines editing, color correction,"
+          },
+          {
+            "figure": "$435",
+            "context": "ned for editors who spend hours each day editing. Learn More DaVinci Resolve Speed Editor $435 DaVinci Resolve Replay Editor $559 DaVinci Resolve Editor Keyboard $669 DaVinci Resol"
+          },
+          {
+            "figure": "$559",
+            "context": "h day editing. Learn More DaVinci Resolve Speed Editor $435 DaVinci Resolve Replay Editor $559 DaVinci Resolve Editor Keyboard $669 DaVinci Resolve Color Panels DaVinci Resolve col"
+          },
+          {
+            "figure": "$669",
+            "context": "olve Speed Editor $435 DaVinci Resolve Replay Editor $559 DaVinci Resolve Editor Keyboard $669 DaVinci Resolve Color Panels DaVinci Resolve color panels let you adjust multiple par"
+          },
+          {
+            "figure": "$2,319",
+            "context": " and buttons for switching tools, adding color nodes, HDR and secondary grading and more! $2,319 Find Reseller DaVinci Resolve Advanced Panel Designed in collaboration with profess"
+          },
+          {
+            "figure": "$34,665",
+            "context": "a massive number of controls for direct access to every DaVinci color correction feature. $34,665 Find Reseller Fairlight Audio Consoles Fairlight Desktop Console Portable audio co"
+          },
+          {
+            "figure": "$3,525",
+            "context": "processing, automation and transport controls plus HDMI for an external graphics display. $3,525 Find Reseller Fairlight Desktop Audio Editor Get incredibly fast audio editing for "
+          },
+          {
+            "figure": "$5,169",
+            "context": "sensitive control knobs, built in search dial and full keyboard with multi function keys. $5,169 Find Reseller --> Fairlight Advanced Consoles Used by Hollywood and broadcasters, t"
+          },
+          {
+            "figure": "$24,745",
+            "context": "f channels and tracks. Modular design allows customizing 2, 3, 4, or 5 bay consoles! From $24,745 Find Reseller --> Find Reseller Fairlight Studio Console Bundles Fairlight Console"
+          },
+          {
+            "figure": "$33,745",
+            "context": "h 2 channel faders, 2 channel controls, 1 audio editor, 3 LCD monitors and 3 bay chassis. $33,745 Find Reseller Fairlight Console Bundle 4 Bay Complete Fairlight studio console wit"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "DaVinci Resolve | Blackmagic Design Products Resellers Support Developer Company Media Splice Forum Overview Overview What’s New Photo Edit Cut Color Fusion Fairlight Collaboration Keyboard Panels Consoles Studio Media Training Tech Specs Argentina Australia Austria Brazil Canada China Denmark Finland France Germany Hong Kong SAR, China India Italy Japan Korea Mexico Malaysia Netherlands New Zealand Norway Poland Portugal Singapore South Africa Spain Sweden Chinese Taipei Turkey UAE Ukraine United Kingdom United States DAVINCI RESOLVE 21 Argentina Australia Austria Brazil Canada China Denmark Finland France Germany Hong Kong SAR, China India Italy Japan Korea Mexico Malaysia Netherlands New ",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:56.008Z"
+    },
+    {
+      "url": "https://www.blender.org/",
+      "host": "blender.org",
+      "name": "blender.org",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.blender.org/",
+        "finalUrl": "https://www.blender.org/",
+        "status": 200,
+        "reachable": true,
+        "title": "Blender - The Free and Open Source 3D Creation Software — blender.org",
+        "description": "The Freedom to Create",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": "GPL",
+        "body": "Blender - The Free and Open Source 3D Creation Software — blender.org Toggle navigation Features Download Support Get Involved About Jobs Store Donate Features Download Support Get Involved About Jobs Store Donate Blender 5.2 LTS Node-based physics, online assets, and so, so much more. What's New Video Learn More Latest News A FEATURE FILM BY BLENDER STUDIO Support OVERGROWN and let it grow! BLENDER CONFERENCE SEP. 2026 Tickets available! Blender Development Geometry Nodes Physics Geometry Nodes Physics in Blender 5.2 LTS and beyond. Remote Asset Libraries Browse assets stored online and download them only when needed. Cycles Texture Cache In Blender 5.2 LTS, rendering scenes with many image",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:58.175Z"
+    },
+    {
+      "url": "https://brave.com/",
+      "host": "brave.com",
+      "name": "brave.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://brave.com/",
+        "finalUrl": "https://brave.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "The browser that puts you first | Brave",
+        "description": "The Brave browser is a fast, private and secure web browser for PC, Mac and mobile. Download now to enjoy a faster ad-free browsing experience that saves data and battery life by blocking tracking software.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "The browser that puts you first | Brave Yes Dismiss Browser Downloads Desktop Android iOS Features Shields adblocker VPN Privacy features Premium services Brave Origin More features Brave vs. other browsers Search Try Brave Search Search features Web Discovery Project Brave vs. other search engines Private AI Ask Brave Browser AI More AI features Search API API features Developer docs Use cases How-to guides Latest API news Tools & integrations MCP Server Log in / sign up Brave for business Brave Ads Ads features Search Ads Browser Ads Demographics Why Brave Ads? Advertiser support Log in / sign up Group policy Enterprise deployments Get Brave Search the Web The browser that puts you first B",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:56.654Z"
+    },
+    {
+      "url": "https://cables.gl/",
+      "host": "cables.gl",
+      "name": "cables.gl",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://cables.gl/",
+        "finalUrl": "https://cables.gl/",
+        "status": 200,
+        "reachable": true,
+        "title": "cables",
+        "description": "Cables is a tool for creating beautiful interactive content. With an easy to navigate interface and real time visuals, it allows for rapid prototyping and fast adjustments.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "cables you need to enable javascript! cables Homepage Download Standalone Support cables Cables on patreon Supporter and Contributor About Changelog About Explore Browse All the patches Top Patches Latest Patches Featured Patches Patchlists Project Showcase Made with cables Examples Basic Example Patches Teams Public Teams Learn Ops OP Reference List Examples Basic Example Patches Docs Documentation Videos All Video Tutorials Beginner Video Beginner Introduction Blog News and blog Changelog Cables update history Github Coding with cables Community Issue Tracker Bugs Reports, Feature Requests Discord Chat about cables Login Register Home Explore Patchlists Op Reference Cables Project Showcase",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:56.888Z"
+    },
+    {
+      "url": "https://cavalry.scenegroup.co/",
+      "host": "cavalry.scenegroup.co",
+      "name": "cavalry.scenegroup.co",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://cavalry.scenegroup.co/",
+        "finalUrl": "https://cavalry.studio/en/",
+        "status": 200,
+        "reachable": true,
+        "title": "Free 2D animation &amp; motion graphics software for Mac and Windows | Cavalry",
+        "description": "Download Cavalry free on Mac or Windows. Real-time 2D animation, motion design, and data-driven workflows - built for animators and motion designers.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Free 2D animation & motion graphics software for Mac and Windows | Cavalry Get Cavalry Features Learn Support Get Cavalry Motion design reinvented Professional, real-time animation software. For free. Download for free Get for Enterprise by @pathengart @marsio.bellizzi @bareis.nicolaus @hannah.sun__ @studiofeixen @antonin.work @ashfall_studio @fafa_motion Reduce motion Move faster. Scale further. Change it once, watch it ripple Adjust a single value, watch entire systems respond. Design in real-time Full-speed, real-time rendering. No waiting. No preview lag. Your data, in motion Connect a spreadsheet. Animate at scale. Trusted by some of the world’s biggest brands Professional 2D animation ",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:57.366Z"
+    },
+    {
+      "url": "https://www.clo3d.com/",
+      "host": "clo3d.com",
+      "name": "clo3d.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.clo3d.com/",
+        "finalUrl": "https://www.clo3d.com/",
+        "status": 202,
+        "reachable": false,
+        "title": "",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "JavaScript is disabled In order to continue, we need to verify that you're not a robot. This requires JavaScript. Enable JavaScript and then reload the page.",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:56.440Z"
+    },
+    {
+      "url": "https://codeium.com/windsurf",
+      "host": "codeium.com",
+      "name": "codeium.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://codeium.com/windsurf",
+        "finalUrl": "https://devin.ai/desktop",
+        "status": 429,
+        "reachable": false,
+        "title": "Vercel Security Checkpoint",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Vercel Security Checkpoint We're verifying your browser Website owner? Click here to fix Vercel Security Checkpoint | iad1::1786953356-O0W1qJZ9r4JnHtQwEFQ5CoKD9SGmO61m Enable JavaScript to continue Vercel Security Checkpoint | iad1::1786953356-O0W1qJZ9r4JnHtQwEFQ5CoKD9SGmO61m",
+        "blocked": true,
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:56.696Z"
+    },
+    {
+      "url": "https://www.curated.design/",
+      "host": "curated.design",
+      "name": "curated.design",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.curated.design/",
+        "finalUrl": "https://craftwork.design/curated/websites",
+        "status": 200,
+        "reachable": true,
+        "title": "Curated Website Inspiration • Craftwork",
+        "description": "Discover hundreds of carefully selected websites and design patterns originally featured on Curated.design.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Skip to main content Search K Packs Assets Inspiration Custom design Search K Search K marketplace Pro Access Bundles Figma Plugin MCP Server Updates Newsletter Authors Student Discount company Studio About Us Projects Blog Press Kit Sponsorship Contact Us Thumb Assets License Privacy Policy Terms of Use Refund Policy Cookies X (Twitter) Product Hunt Dribbble Instagram Telegram Linked In Facebook Day Night Auto Craftwork — Designed in Bangkok, supplied Worldwide Resources Featured Illustrations Framer Templates 3D Assets Webflow Templates Coded Templates Figma Templates UX / UI Kits Mockups Graphics Fonts Icons Jitter Notion Templates Presentations Tutorials Freebies Made by Craftwork Market",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:56.936Z"
+    },
+    {
+      "url": "https://cursify.vercel.app/",
+      "host": "cursify.vercel.app",
+      "name": "cursify.vercel.app",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://cursify.vercel.app/",
+        "finalUrl": "https://cursify.vercel.app/",
+        "status": 200,
+        "reachable": true,
+        "title": "Cursify",
+        "description": "The Ultimate Cursor Animation Library for React &amp; Next.js",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Cursify Ship faster with UI-Layouts Pro – 50+ Tailwind & React components for production-ready UIs – 50+ battle-tested components. Ui-Layouts Tools New Search... Search... ⌘ K Github Toggle theme Update ✨ Introducing Neural Glow the only cursor animation you need A open-source animated cusor component built with React , TypeScript , Tailwind CSS , and Framer Motion . Browse Component Get Started Fairydust Cursor Smooth Following Cursor Canvas Cursor Bubble Cursor Character Cursor Snowflake Cursor Rainbow Cursor Follow Cursor Spotlight Cursor Springy Cursor Created By Durgesh Re-imagined By Naymur",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:56.811Z"
+    },
+    {
+      "url": "https://www.depthkit.tv/",
+      "host": "depthkit.tv",
+      "name": "depthkit.tv",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.depthkit.tv/",
+        "finalUrl": "https://www.depthkit.tv/",
+        "status": 200,
+        "reachable": true,
+        "title": "Depthkit",
+        "description": "Depthkit is the world’s most widely used solution for volumetric video capture for AR, VR, MR, and other immersive media. Download Depthkit Record or Pro to capture full motion video and depth for use in interactive 3D environments like Unity or WebGL.",
+        "priceSource": "homepage",
+        "figures": [
+          {
+            "figure": "$399/mo",
+            "context": " to 8K by pairing a professional video camera to your depth sensor. Learn More GET CINEMA $399/mo Depthkit Studio Film true fullbody 360-degree 3D holograms by connecting up to 10 "
+          },
+          {
+            "figure": "$3,000/mo",
+            "context": "s by connecting up to 10 Azure Kinect depth sensors to a single PC. Learn More Get Studio $3,000/mo Depthkit Live Stream your volumetric video in real time. Included with the price"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Depthkit STATUS TEXT ABOUT THE THING // STAGING VERSION OF SITE // GET DEPTHKIT My Depthkit SIGN IN CREATE ACCOUNT ACCOUNT DOWNLOADS REQUEST A FEATURE REPORT A BUG SIGN OUT Products Depthkit Core Depthkit Cinema Depthkit Studio Studio Hardware Unity Expansion Learn Tutorials FAQS DOCUMENTATION BLOG Creative community FACEBOOK GROUP VOLUMETRIC MEETUP FORUMS Products Depthkit Core Depthkit Cinema Depthkit Studio Studio Hardware Unity Expansion LEARN Tutorials FAQs Documentation BLOG COMMUNITY Facebook Group Volumetric Meetup Forums Slack Channel CONTACT US GET DEPTHKIT My Depthkit Account Downloads Request a Feature Report a Bug SIGN OUT Sign IN Create an Account READ THE ANNOUNCEMENT Evercoas",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:57.055Z"
+    },
+    {
+      "url": "https://derivative.ca/",
+      "host": "derivative.ca",
+      "name": "derivative.ca",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://derivative.ca/",
+        "finalUrl": "https://derivative.ca/",
+        "status": 200,
+        "reachable": true,
+        "title": "Derivative |",
+        "description": "Derivative is a software company that offers TouchDesigner, a visual development platform.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Derivative | Skip to main content Close Home TouchDesigner TouchDesigner Features Showcase Community Job Board About Derivative Learn Learn User Guide Curriculum Forum Tutorials Workshops & Events Resources Support Get It Now Privacy policy Terms of use Privacy Follow us https://www.instagram.com/touchdesigner/ https://www.facebook.com/TouchDesigner https://twitter.com/1null1 https://www.youtube.com/TouchDesignerOfficial TouchDesigner Features Showcase Community Job board About Derivative Learn User Guide Curriculum Forum Tutorials Workshops & Events Resources Support Filter by All User Guide Forum Tutorials Events & Workshops Features Community Showcase Resources All User Guide Forum Tutori",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:57.151Z"
+    },
+    {
+      "url": "https://deskflow.org",
+      "host": "deskflow.org",
+      "name": "deskflow.org",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://deskflow.org",
+        "finalUrl": "https://github.com/deskflow/deskflow",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - deskflow/deskflow: Share a single keyboard and mouse between multiple computers. · GitHub",
+        "description": "Share a single keyboard and mouse between multiple computers. - deskflow/deskflow",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "GPL",
+        "body": "GitHub - deskflow/deskflow: Share a single keyboard and mouse between multiple computers. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation B",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:57.558Z"
+    },
+    {
+      "url": "https://en.eagle.cool/",
+      "host": "en.eagle.cool",
+      "name": "en.eagle.cool",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://en.eagle.cool/",
+        "finalUrl": "https://en.eagle.cool/",
+        "status": 200,
+        "reachable": true,
+        "title": "Eagle - Organize design files has never been easier",
+        "description": "A better way to collect, search and organize your design files in a logical way and all in one place.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Eagle - Organize design files has never been easier Home Extension Blog Resources Support Buy Now Home Extension Blog Resources Support Buy Now Eagle 4 Highlights Organizing design files has never been easier A better way to collect, search and organize your design files in a logical way, all in one place. Download for Windows v4.0.0 Build23 ( 2026-04-01 ) Supports Windows 10+ Download for Mac v4.0.0 Build23 ( 2026-04-01 ) Supports macOS 10.15+ Prompts ideas Prompts ideas Illustration Design Photography Packaging Design Interior Design Concept Art Motion Design UI Design Icon Font Audio Video Player GIF Player Font Viewer An asset manager tailored for designers With AI built into Eagle, coll",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:57.769Z"
+    },
+    {
+      "url": "https://erbppons.api.sanity.io",
+      "host": "erbppons.api.sanity.io",
+      "name": "erbppons.api.sanity.io",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://erbppons.api.sanity.io",
+        "finalUrl": "https://erbppons.api.sanity.io/",
+        "status": 200,
+        "reachable": true,
+        "title": "",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "{\"message\":\"hello\"}",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:57.113Z"
+    },
+    {
+      "url": "https://www.fmod.com/",
+      "host": "fmod.com",
+      "name": "fmod.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.fmod.com/",
+        "finalUrl": "https://www.fmod.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:57.213Z"
+    },
+    {
+      "url": "https://fontsinuse.com/",
+      "host": "fontsinuse.com",
+      "name": "fontsinuse.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://fontsinuse.com/",
+        "finalUrl": "https://fontsinuse.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Fonts In Use - Fonts In Use",
+        "description": "A searchable archive of typographic design, indexed by typeface, format, and topic.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Fonts In Use - Fonts In Use An independent archive of typography. Collection Blog or combine terms with Advanced Search Topics ▼ Activism (1190) Architecture (1509) Art (5024) Automotive (331) Business/Finance (816) Education/Academia (2318) Entertainment (1624) Event (3429) Fashion/Apparel (1651) Film/TV (2176) Food/Beverage (3255) Governmental/Civic (781) Graphic Design (3156) Health/Fitness (939) Home/Interior (874) Industrial Design (635) Institutional (1504) Kids (871) Lifestyle (1503) Literature (3210) Local (1754) Music (6724) News (571) Performing Arts (1069) Politics (908) Product (2268) Religion/Spirituality (460) Retail/Shopping (1184) Science/Nature (1219) Services (1648) Sports ",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:57.412Z"
+    },
+    {
+      "url": "https://framer.university/resources",
+      "host": "framer.university",
+      "name": "framer.university",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://framer.university/resources",
+        "finalUrl": "https://framer.university/resources",
+        "status": 200,
+        "reachable": true,
+        "title": "Best Free Framer Resources — Framer University",
+        "description": "Discover the best free Framer resources for your next project, including Framer components, code overrides, animations, and effects. Elevate your Framer website with a curated selection of top-quality Framer assets.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Best Free Framer Resources — Framer University How can I improve Framer Uni? Let me know if there’s a missing feature or something that could be improved. Name Email Your feedback Send a message Thanks for your feedback! Share feedback ')\"> ')\"> ')\"> Quick preview Shader Button Component in Framer Component ')\"> Shader Button Component in Framer Component ')\"> Quick preview Blinds Text Reveal Component for Framer Component ')\"> Blinds Text Reveal Component for Framer Component ')\"> Quick preview Text Lift on Hover in Framer Component ')\"> Text Lift on Hover in Framer Component ')\"> Quick preview Mobile Haptics in Framer Component ')\"> Mobile Haptics in Framer Component ')\"> Quick preview Pla",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:57.452Z"
+    },
+    {
+      "url": "https://www.freefaces.gallery/",
+      "host": "freefaces.gallery",
+      "name": "freefaces.gallery",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.freefaces.gallery/",
+        "finalUrl": "https://www.freefaces.gallery/",
+        "status": 200,
+        "reachable": true,
+        "title": "Free Faces",
+        "description": "This website is a curated collection of typefaces that are available under a variety of free licences somewhere on the interwebs.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Free Faces FF Cursive Display Monospace Sans Serif Serif Slab Menu Close Cursive Display Monospace Sans Serif Serif Slab Name Free typefaces and fonts Latest typefaces Unique Display Commit Mono Monospace Façade Display Oi Display Space Grotesk Sans Serif Barriecito Display GTL001 Display Lastik Serif Hyperlegible Sans Sans Serif Getai Grotesk Display Memoir Display, Serif Martian Mono Monospace 1 / 8 Next Aa Unique Display Aa Commit Mono Monospace Aa Façade Display Aa Oi Display Aa Space Grotesk Sans Serif Aa Barriecito Display A1 GTL001 Display Aa Lastik Serif Aa Hyperlegible Sans Sans Serif Aa Getai Grotesk Display A1 Memoir Display, Serif Aa Martian Mono Monospace 1 / 8 Next Light mode D",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:57.540Z"
+    },
+    {
+      "url": "https://www.gameuidatabase.com/",
+      "host": "gameuidatabase.com",
+      "name": "gameuidatabase.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.gameuidatabase.com/",
+        "finalUrl": "https://www.gameuidatabase.com/",
+        "status": 403,
+        "reachable": false,
+        "title": "Just a moment...",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Just a moment... Enable JavaScript and cookies to continue",
+        "blocked": true,
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:57.868Z"
+    },
+    {
+      "url": "https://github.com/pmndrs/gltfjsx",
+      "host": "github.com",
+      "name": "github.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/pmndrs/gltfjsx",
+        "finalUrl": "https://github.com/pmndrs/gltfjsx",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - pmndrs/gltfjsx: 🎮 Turns GLTFs into JSX components · GitHub",
+        "description": "🎮 Turns GLTFs into JSX components. Contribute to pmndrs/gltfjsx development by creating an account on GitHub.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Compare all features “ G"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - pmndrs/gltfjsx: 🎮 Turns GLTFs into JSX components · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "pmndrs/gltfjsx",
+        "stars": 5841,
+        "licence": "MIT",
+        "pushedAt": "2024-11-04T16:51:26Z",
+        "archived": false,
+        "description": "🎮 Turns GLTFs into JSX components"
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:57.994Z"
+    },
+    {
+      "url": "https://godly.website/",
+      "host": "godly.website",
+      "name": "godly.website",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://godly.website/",
+        "finalUrl": "https://recent.design/?ref=godly",
+        "status": 200,
+        "reachable": true,
+        "title": "Recent — Design Inspiration",
+        "description": "The best design inspiration on the Internet.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Recent — Design Inspiration Log in Browse Design Websites OG Images App Screenshots App Icons Resources Tools Skills Jobs A daily curation of exceptional design, websites and tools. Sign up Join 5,220 creatives, including 462 who signed up yesterday A daily curation of exceptional design, websites and tools. Sign up Join 5,220 creatives, including 462 who signed up yesterday © 2026 Sponsor Info Design The best design inspiration on the Internet. All Web Interface Branding Product Typography Motion Illustration 3D Editorial Print Packaging Recent 4 slides 4 2 slides 2 2 slides 2 © 2026 Sponsor Info",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:58.763Z"
+    },
+    {
+      "url": "https://www.hudsandguis.com/",
+      "host": "hudsandguis.com",
+      "name": "hudsandguis.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.hudsandguis.com/",
+        "finalUrl": "https://www.hudsandguis.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "HUDS+GUIS",
+        "description": "HUDS and GUIS is an inspiration resource site featuring Future User Interfaces, Graphic User Interfaces, Heads Up Displays and UX/UI Design from areas such as film and games.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "HUDS+GUIS Cart 0 FUI: The book Articles Resources About Join us Buy me coffee Cart 0 FUI: The book Articles Resources About Join us Buy me coffee Jurassic World Rebirth UI Designs Film , GUIs Jono Yuen July 11, 2026 map , schematics , dna , security , future lab Comment Andor Season 2 Film , HUDs , GUIs Jono Yuen June 10, 2026 space , cockpit , medical , spy , analogue , retro , elevator , tablets , utilitarian , industrial , scanner , holographic Comment Quick update Jono Yuen April 7, 2026 news Comments 2025 Recap Jono Yuen December 22, 2025 news Comments The Silent Sea Film , GUIs Jono Yuen October 7, 2025 holographic , scanner , weapons , map , schematics , space , mobile , touch screen ",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:58.532Z"
+    },
+    {
+      "url": "https://interfaceingame.com/",
+      "host": "interfaceingame.com",
+      "name": "interfaceingame.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://interfaceingame.com/",
+        "finalUrl": "https://interfaceingame.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Interface In Game | Collection of video games UI | Screenshots and videos",
+        "description": "Explore a collection of video games UI interfaces, screenshots and videos. This creative tool is for video games lovers and game designers to get inspiration and help the creative process.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Interface In Game | Collection of video games UI | Screenshots and videos Games Screenshots Articles About Wireframe Mockup Cookie policy Copyright complaints Privacy policy Terms and conditions Wireframe Mockup Search game See all results No games found Doom Eternal March 20, 2020 See game interface Genres All genres Action 243 Games Adventure 114 Games Card Game 14 Games Fighting 17 Games FPS 68 Games Indie 86 Games MMO 5 Games Music 8 Games Platformer 45 Games Puzzle 26 Games Racing 17 Games RPG 54 Games Simulation 41 Games Sport 15 Games Strategy 71 Games Previous Next Recent games add All games Ball x Pit October 15, 2025 Indie 1 007 First Light May 27, 2026 Action Adventure 5 Pragmata ",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:59.549Z"
+    },
+    {
+      "url": "https://jakearchibald.github.io/svgomg/",
+      "host": "jakearchibald.github.io",
+      "name": "jakearchibald.github.io",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://jakearchibald.github.io/svgomg/",
+        "finalUrl": "https://jakearchibald.github.io/svgomg/",
+        "status": 200,
+        "reachable": true,
+        "title": "SVGOMG - SVGO's Missing GUI for minifying SVGs",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "SVGOMG - SVGO's Missing GUI for minifying SVGs SVGOMG Powered by SVGO v4.0.0 Open SVG Paste markup Demo Contribute Image Markup Global settings Show original Compare gzipped Prettify markup Multipass Number precision Transform precision Features Remove doctype Remove XML instructions Remove comments Remove &lt;metadata> Remove xmlns Remove editor data Clean up attribute whitespace Merge styles Inline styles Minify styles Style to attributes Clean up IDs Remove raster images Remove unused defs Round/rewrite numbers Round/rewrite number lists Minify colours Remove unknowns & defaults Remove unneeded group attrs Remove useless stroke & fill Remove viewBox Remove/tidy enable-background Remove hi",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:57.841Z"
+    },
+    {
+      "url": "https://jmswrnr.com/?ref=designengineer.tools",
+      "host": "jmswrnr.com",
+      "name": "jmswrnr.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://jmswrnr.com/?ref=designengineer.tools",
+        "finalUrl": "https://jmswrnr.com/?ref=designengineer.tools",
+        "status": 200,
+        "reachable": true,
+        "title": "James Warner",
+        "description": "Design Engineer",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "James Warner JMSWRNR ™ settings Engineering playful experiences for the modern web. About James Warner -&gt; open_in_new open_in_new open_in_new open_in_new open_in_new open_in_new open_in_new open_in_new open_in_new rss_feed Blog Growing Chili Peppers: A Home Guide 20 Feb 2025 7.2K Creative Web Dev Techniques of 2024 16 Jun 2024 1K Hacking a Smart Home Device 03 Feb 2024 5.3K Hardware Failure 2023 25 Aug 2023 428 Protecting Next.js API Routes: Query Parameters 23 Feb 2023 786 Streaming a &lt;canvas&gt; to LEDs 13 Apr 2020 3.7K Creating My Website's 3D Header 1.0 25 Mar 2020 4.5K Building a PUBG Stats Website 16 Feb 2020 8.3K Artifacts info Smooth Circle Pointer 06 Jan 2025 272 Floating Hove",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:56:00.674Z"
+    },
+    {
+      "url": "https://www.kiriengine.app/",
+      "host": "kiriengine.app",
+      "name": "kiriengine.app",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.kiriengine.app/",
+        "finalUrl": "https://www.kiriengine.app/",
+        "status": 200,
+        "reachable": true,
+        "title": "KIRI Engine: 3D Scanner App for iPhone, Android, and Web",
+        "description": "The most powerful 3D scanner app for iPhone, Android, and Web. Capture in 3D with Photogrammetry, Featureless Object Scan, 3D Gaussian Splatting, 3DGS To Mesh and LiDAR.",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "KIRI Engine: 3D Scanner App for iPhone, Android, and Web Get 3D Scan App Features Photo Scan Produces 3D mesh and textures in the highest quality LiDAR Scan Provides a variety of features such as Room Scan & Object Capture Featureless Object Scan Generates 3D mesh & textures for low-texture objects 3DGS Scan Produces stunning 3D renders using 3D Gaussian Splatting See All Features Download Community API Pricing Tutorial Resources Features Overview Photo Scan LiDAR Scan Featureless Object Scan 3D Gaussian Splatting Download iPhone/iPad Android Company About KIRI Innovations Meet developers on Discord Contact Us Resources KIRI Engine Tutorial 3D Tools by KIRI Engine Pricing FAQ Blog 3D Scannin",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-17T07:55:58.409Z"
     }
   ]
 }

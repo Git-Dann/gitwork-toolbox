@@ -1,3164 +1,905 @@
 {
   "$comment": "Written by scripts/discover.mjs. Candidates only — nothing here has been read. scripts/assess.mjs turns these into proposals.",
-  "generatedAt": "2026-08-13T23:27:56.879Z",
+  "generatedAt": "2026-08-17T07:55:53.884Z",
   "counts": {
-    "collected": 684,
-    "queued": 659,
+    "collected": 1219,
+    "queued": 794,
     "dropped": {
-      "alreadyKnown": 7,
-      "duplicate": 2,
+      "alreadyKnown": 374,
+      "duplicate": 35,
       "dead": 16
     }
   },
   "entries": [
     {
-      "url": "https://express.adobe.com",
-      "name": "Adobe Express",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "Quick design with AI",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://aider.chat",
-      "name": "Aider",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Free",
-      "claim": "AI pair programming in terminal",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://augmentcode.com",
-      "name": "Augment Code",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Paid",
-      "claim": "AI for large codebases",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://blackbox.ai",
-      "name": "Blackbox",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "AI coding assistant",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://bolt.new",
-      "name": "Bolt",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Build full apps in the browser with AI",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://brandmark.io",
-      "name": "Brandmark",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Paid",
-      "claim": "AI logo maker",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://builder.io",
-      "name": "Builder.io",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Design to code with AI",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://cline.bot",
-      "name": "Cline",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Free",
-      "claim": "Open source coding agent",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://sourcegraph.com",
-      "name": "Cody",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "AI coding from Sourcegraph",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://continue.dev",
-      "name": "Continue",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Free",
-      "claim": "Open source AI code assistant",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://create.xyz",
-      "name": "Create",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Build apps from a prompt",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://cursor.com",
-      "name": "Cursor",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "The AI first code editor",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://databutton.com",
-      "name": "Databutton",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Build apps with an AI dev",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://designs.ai",
-      "name": "Designs.ai",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Paid",
-      "claim": "Logos videos and design",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://devin.ai",
-      "name": "Devin",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Paid",
-      "claim": "Autonomous AI software engineer",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://eraser.io",
-      "name": "Eraser",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "Diagrams and docs with AI",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://excalidraw.com",
-      "name": "Excalidraw",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Free",
-      "claim": "Whiteboard with AI diagrams",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://figma.com",
-      "name": "Figma",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "Collaborative design with AI features",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://flair.ai",
-      "name": "Flair",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "AI product photography",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://framer.com",
-      "name": "Framer",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "Design and ship sites with AI",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://usegalileo.ai",
-      "name": "Galileo AI",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "Text to UI design",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://stitch.withgoogle.com",
-      "name": "Google Stitch",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Free",
-      "claim": "Generate UI designs and code",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://greptile.com",
-      "name": "Greptile",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Paid",
-      "claim": "AI that understands your codebase",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://jules.google",
-      "name": "Jules",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Google async coding agent",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://khroma.co",
-      "name": "Khroma",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Free",
-      "claim": "AI color palette generator",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://kiro.dev",
-      "name": "Kiro",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Agentic IDE by AWS",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://kittl.com",
-      "name": "Kittl",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "AI design and video for brands",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://lovable.dev",
-      "name": "Lovable",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Describe an app and it builds it",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://lovart.ai",
-      "name": "Lovart",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "AI design agent",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://magicpatterns.com",
-      "name": "Magic Patterns",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Design product ideas with AI",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://designer.microsoft.com",
-      "name": "Microsoft Designer",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Free",
-      "claim": "AI design and image tool",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://mintlify.com",
-      "name": "Mintlify",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "AI documentation that writes itself",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://mockey.ai",
-      "name": "Mockey",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "Free AI mockups",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://napkin.ai",
-      "name": "Napkin",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "Turn text into visuals",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://polymet.ai",
-      "name": "Polymet",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "AI UI and product design",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://qodo.ai",
-      "name": "Qodo",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "AI code testing and review",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://refact.ai",
-      "name": "Refact",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Open source AI code agent",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://replit.com",
-      "name": "Replit",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Build and ship apps in the browser",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://roocode.com",
-      "name": "Roo Code",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Free",
-      "claim": "AI dev team in your editor",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://rork.com",
-      "name": "Rork",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Build mobile apps from prompts",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://sourcery.ai",
-      "name": "Sourcery",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Automated code review",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://stockimg.ai",
-      "name": "Stockimg",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "AI logos posters and art",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://subframe.com",
-      "name": "Subframe",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "UI builder for developers",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://supermaven.com",
-      "name": "Supermaven",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Fastest code autocomplete",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://tabbyml.com",
-      "name": "Tabby",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Free",
-      "claim": "Self hosted AI coding",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://tabnine.com",
-      "name": "Tabnine",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Private AI code completion",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://tempo.new",
-      "name": "Tempo",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Build React apps visually with AI",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://trae.ai",
-      "name": "Trae",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Free",
-      "claim": "AI IDE by ByteDance",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://uizard.io",
-      "name": "Uizard",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "Turn ideas into UI mockups",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://v0.dev",
-      "name": "v0",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Generate UI from a prompt",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://vercel.com",
-      "name": "Vercel",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "Ship and host AI powered web apps",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://visily.io",
-      "name": "Visily",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "AI wireframes and mockups",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://vizcom.ai",
-      "name": "Vizcom",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "Sketches into renders",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://warp.dev",
-      "name": "Warp",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "AI powered terminal",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://windsurf.com",
-      "name": "Windsurf",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "AI editor with agentic flows",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://zed.dev",
-      "name": "Zed",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Free",
-      "claim": "Fast editor with AI",
-      "linkCheck": "OK",
-      "signal": 5
-    },
-    {
-      "url": "https://agentgpt.reworkd.ai",
-      "name": "AgentGPT",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "Autonomous agents in browser",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/amp",
+      "name": "agent/amp",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://anyscale.com",
-      "name": "Anyscale",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Paid",
-      "claim": "Scale AI with Ray",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/antigravity",
+      "name": "agent/antigravity",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://baseten.co",
-      "name": "Baseten",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Paid",
-      "claim": "Deploy and serve ML models",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/claude-code",
+      "name": "agent/claude-code",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://beam.ai",
-      "name": "Beam",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Paid",
-      "claim": "AI agents for operations",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/clawdbot",
+      "name": "agent/clawdbot",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://bland.ai",
-      "name": "Bland",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Paid",
-      "claim": "AI phone calling platform",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/cline",
+      "name": "agent/cline",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://booth.ai",
-      "name": "Booth AI",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Paid",
-      "claim": "AI product photography",
-      "linkCheck": "Blocked bot check (likely OK)",
+      "url": "https://github.com/agent/codex",
+      "name": "agent/codex",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://botpress.com",
-      "name": "Botpress",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "Build and deploy chatbots",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/cursor",
+      "name": "agent/cursor",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://canva.com",
-      "name": "Canva",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Freemium",
-      "claim": "All in one design with AI tools",
-      "linkCheck": "Blocked bot check (likely OK)",
+      "url": "https://github.com/agent/droid",
+      "name": "agent/droid",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://cassidyai.com",
-      "name": "Cassidy",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "AI assistants on your company data",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/gemini",
+      "name": "agent/gemini",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://cerebras.ai",
-      "name": "Cerebras",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Freemium",
-      "claim": "Fastest AI inference",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/github-copilot",
+      "name": "agent/github-copilot",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://chatbase.co",
-      "name": "Chatbase",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "Custom GPT chatbot for your site",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/goose",
+      "name": "agent/goose",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://chatgpt.com/codex",
-      "name": "Codex",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Paid",
-      "claim": "OpenAI agentic coding",
-      "linkCheck": "Blocked bot check (likely OK)",
+      "url": "https://github.com/agent/kilo",
+      "name": "agent/kilo",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://cohere.com",
-      "name": "Cohere",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Paid",
-      "claim": "Enterprise LLMs and search",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/kiro-cli",
+      "name": "agent/kiro-cli",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://crewai.com",
-      "name": "CrewAI",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Free",
-      "claim": "Framework for AI agent crews",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/nous-research",
+      "name": "agent/nous-research",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://delphi.ai",
-      "name": "Delphi",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Paid",
-      "claim": "Clone your knowledge as AI",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/opencode",
+      "name": "agent/opencode",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://dify.ai",
-      "name": "Dify",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "Open source LLM app platform",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/roo",
+      "name": "agent/roo",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://dust.tt",
-      "name": "Dust",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Paid",
-      "claim": "Build AI agents for teams",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/trae",
+      "name": "agent/trae",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://fine.dev",
-      "name": "Fine",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Freemium",
-      "claim": "AI dev environment for startups",
-      "linkCheck": "Blocked bot check (likely OK)",
+      "url": "https://github.com/agent/vscode",
+      "name": "agent/vscode",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://fireworks.ai",
-      "name": "Fireworks",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Freemium",
-      "claim": "Fast inference for open models",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/windsurf",
+      "name": "agent/windsurf",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://fixie.ai",
-      "name": "Fixie",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "Build conversational agents",
-      "linkCheck": "OK",
+      "url": "https://github.com/agent/zed",
+      "name": "agent/zed",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://flowiseai.com",
-      "name": "Flowise",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Free",
-      "claim": "Open source agent builder",
-      "linkCheck": "OK",
+      "url": "https://github.com/topic/agent-workflows",
+      "name": "topic/agent-workflows",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://github.com/features/copilot",
-      "name": "GitHub Copilot",
-      "source": "workbook",
-      "sourceCategory": "Coding",
-      "claimedTier": "Paid",
-      "claim": "AI pair programmer in your editor",
-      "linkCheck": "Blocked bot check (likely OK)",
+      "url": "https://github.com/topic/databases",
+      "name": "topic/databases",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://groq.com",
-      "name": "Groq",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Freemium",
-      "claim": "Blazing fast model inference",
-      "linkCheck": "OK",
+      "url": "https://github.com/topic/design",
+      "name": "topic/design",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://langflow.org",
-      "name": "Langflow",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Free",
-      "claim": "Visual LLM app builder",
-      "linkCheck": "OK",
+      "url": "https://github.com/topic/marketing",
+      "name": "topic/marketing",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://lmstudio.ai",
-      "name": "LM Studio",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Free",
-      "claim": "Desktop app to run local models",
-      "linkCheck": "OK",
+      "url": "https://github.com/topic/mobile",
+      "name": "topic/mobile",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://looka.com",
-      "name": "Looka",
-      "source": "workbook",
-      "sourceCategory": "Design",
-      "claimedTier": "Paid",
-      "claim": "AI logo and brand kit maker",
-      "linkCheck": "Blocked bot check (likely OK)",
+      "url": "https://github.com/topic/nextjs",
+      "name": "topic/nextjs",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://lyzr.ai",
-      "name": "Lyzr",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "Build enterprise AI agents",
-      "linkCheck": "OK",
+      "url": "https://github.com/topic/react",
+      "name": "topic/react",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://manus.im",
-      "name": "Manus",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "General autonomous AI agent",
-      "linkCheck": "OK",
+      "url": "https://github.com/topic/testing",
+      "name": "topic/testing",
+      "source": "skills-sh",
+      "sourceCategory": "Agent skills",
+      "kindHint": "starter",
       "signal": 4
     },
     {
-      "url": "https://mindstudio.ai",
-      "name": "MindStudio",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "Build and deploy AI apps",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://mistral.ai",
-      "name": "Mistral",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Freemium",
-      "claim": "Open weight frontier models",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://modal.com",
-      "name": "Modal",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Freemium",
-      "claim": "Serverless compute for AI",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://ollama.com",
-      "name": "Ollama",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Free",
-      "claim": "Run AI models locally",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://openrouter.ai",
-      "name": "OpenRouter",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Freemium",
-      "claim": "One API for every AI model",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://relevanceai.com",
-      "name": "Relevance AI",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "Build an AI workforce",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://replicate.com",
-      "name": "Replicate",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Paid",
-      "claim": "Run open models with an API",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://respell.ai",
-      "name": "Respell",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "AI workflow automation",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://retellai.com",
-      "name": "Retell AI",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "AI phone call agents",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://runpod.io",
-      "name": "RunPod",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Paid",
-      "claim": "GPU cloud for AI",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://sintra.ai",
-      "name": "Sintra",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Paid",
-      "claim": "AI employees for small business",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://stack-ai.com",
-      "name": "Stack AI",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "Build and deploy AI agents",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://synthflow.ai",
-      "name": "Synthflow",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Paid",
-      "claim": "No code AI voice agents",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://together.ai",
-      "name": "Together AI",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Freemium",
-      "claim": "Fast open model inference",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://vapi.ai",
-      "name": "Vapi",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "Build AI voice agents",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://vellum.ai",
-      "name": "Vellum",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Paid",
-      "claim": "Dev platform for AI apps",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://voiceflow.com",
-      "name": "Voiceflow",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "Build AI chat and voice agents",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://wordware.ai",
-      "name": "Wordware",
-      "source": "workbook",
-      "sourceCategory": "Chatbots & Agents",
-      "claimedTier": "Freemium",
-      "claim": "Build AI agents in plain English",
-      "linkCheck": "OK",
-      "signal": 4
-    },
-    {
-      "url": "https://firefly.adobe.com",
-      "name": "Adobe Firefly",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Commercially safe generative images",
-      "linkCheck": "OK",
-      "signal": 3
-    },
-    {
-      "url": "https://aftershoot.com",
-      "name": "Aftershoot",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Paid",
-      "claim": "AI culling and editing for photographers",
-      "linkCheck": "OK",
-      "signal": 3
-    },
-    {
-      "url": "https://airtable.com",
-      "name": "Airtable",
-      "source": "workbook",
-      "sourceCategory": "No-code",
-      "claimedTier": "Freemium",
-      "claim": "Database and apps with AI",
-      "linkCheck": "OK",
+      "url": "https://affine.pro/",
+      "name": "affine.pro",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://aragon.ai",
-      "name": "Aragon",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Paid",
-      "claim": "AI headshots from selfies",
-      "linkCheck": "OK",
+      "url": "https://www.are.na/",
+      "name": "are.na",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://artbreeder.com",
-      "name": "Artbreeder",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Blend and evolve images",
-      "linkCheck": "OK",
+      "url": "https://www.awwwards.com/",
+      "name": "awwwards.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://base44.com",
-      "name": "Base44",
-      "source": "workbook",
-      "sourceCategory": "No-code",
-      "claimedTier": "Freemium",
-      "claim": "Build apps by chatting",
-      "linkCheck": "OK",
+      "url": "https://bestfreefonts.com/",
+      "name": "bestfreefonts.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://bing.com/images/create",
-      "name": "Bing Image Creator",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Free",
-      "claim": "Free image generation by Microsoft",
-      "linkCheck": "OK",
+      "url": "https://www.bezi.com/",
+      "name": "bezi.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://bubble.io",
-      "name": "Bubble",
-      "source": "workbook",
-      "sourceCategory": "No-code",
-      "claimedTier": "Freemium",
-      "claim": "Build web apps without code",
-      "linkCheck": "OK",
+      "url": "https://bitspace.sh/",
+      "name": "bitspace.sh",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://budibase.com",
-      "name": "Budibase",
-      "source": "workbook",
-      "sourceCategory": "No-code",
-      "claimedTier": "Freemium",
-      "claim": "Open source internal tools",
-      "linkCheck": "OK",
+      "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+      "name": "blackmagicdesign.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://civitai.com",
-      "name": "Civitai",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Open model and image community",
-      "linkCheck": "OK",
+      "url": "https://www.blender.org/",
+      "name": "blender.org",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://cleanup.pictures",
-      "name": "Cleanup.pictures",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "Erase objects from photos",
-      "linkCheck": "OK",
+      "url": "https://brave.com/",
+      "name": "brave.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://clipdrop.co",
-      "name": "Clipdrop",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "AI image editing toolkit",
-      "linkCheck": "OK",
+      "url": "https://cables.gl/",
+      "name": "cables.gl",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://cutout.pro",
-      "name": "Cutout.Pro",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "AI background and photo editing",
-      "linkCheck": "OK",
+      "url": "https://cavalry.scenegroup.co/",
+      "name": "cavalry.scenegroup.co",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://dezgo.com",
-      "name": "Dezgo",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Text to image generator",
-      "linkCheck": "OK",
+      "url": "https://www.clo3d.com/",
+      "name": "clo3d.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://dream.ai",
-      "name": "Dream by Wombo",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "AI art on mobile and web",
-      "linkCheck": "OK",
+      "url": "https://codeium.com/windsurf",
+      "name": "codeium.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://durable.co",
-      "name": "Durable",
-      "source": "workbook",
-      "sourceCategory": "No-code",
-      "claimedTier": "Freemium",
-      "claim": "AI website builder in seconds",
-      "linkCheck": "OK",
+      "url": "https://www.curated.design/",
+      "name": "curated.design",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://erase.bg",
-      "name": "Erase.bg",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "Free background remover",
-      "linkCheck": "OK",
+      "url": "https://cursify.vercel.app/",
+      "name": "cursify.vercel.app",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://evoto.ai",
-      "name": "Evoto",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Paid",
-      "claim": "AI photo retouching for pros",
-      "linkCheck": "OK",
+      "url": "https://www.depthkit.tv/",
+      "name": "depthkit.tv",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://fal.ai",
-      "name": "Fal",
-      "source": "workbook",
-      "sourceCategory": "Models & Infra",
-      "claimedTier": "Paid",
-      "claim": "Fast generative media API",
-      "linkCheck": "Blocked bot check (likely OK)",
+      "url": "https://derivative.ca/",
+      "name": "derivative.ca",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://flutterflow.io",
-      "name": "FlutterFlow",
-      "source": "workbook",
-      "sourceCategory": "No-code",
-      "claimedTier": "Freemium",
-      "claim": "Build mobile apps visually",
-      "linkCheck": "OK",
+      "url": "https://deskflow.org",
+      "name": "deskflow.org",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://bfl.ai",
-      "name": "Flux",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "High quality open image model",
-      "linkCheck": "OK",
+      "url": "https://en.eagle.cool/",
+      "name": "en.eagle.cool",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://fotor.com",
-      "name": "Fotor",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "AI photo editor and generator",
-      "linkCheck": "OK",
+      "url": "https://erbppons.api.sanity.io",
+      "name": "erbppons.api.sanity.io",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://getimg.ai",
-      "name": "Getimg",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "AI image suite and editor",
-      "linkCheck": "OK",
+      "url": "https://www.fmod.com/",
+      "name": "fmod.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://glideapps.com",
-      "name": "Glide",
-      "source": "workbook",
-      "sourceCategory": "No-code",
-      "claimedTier": "Freemium",
-      "claim": "Apps from spreadsheets",
-      "linkCheck": "OK",
+      "url": "https://fontsinuse.com/",
+      "name": "fontsinuse.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://glif.app",
-      "name": "Glif",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Build AI mini apps",
-      "linkCheck": "OK",
+      "url": "https://framer.university/resources",
+      "name": "framer.university",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://headshotpro.com",
-      "name": "HeadshotPro",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Paid",
-      "claim": "AI professional headshots",
-      "linkCheck": "OK",
+      "url": "https://www.freefaces.gallery/",
+      "name": "freefaces.gallery",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://hotpot.ai",
-      "name": "Hotpot",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "AI image and editing tools",
-      "linkCheck": "OK",
+      "url": "https://www.gameuidatabase.com/",
+      "name": "gameuidatabase.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://labs.google/fx/tools/image-fx",
-      "name": "ImageFX",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Free",
-      "claim": "Google image generation",
-      "linkCheck": "OK",
+      "url": "https://github.com/pmndrs/gltfjsx",
+      "name": "github.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://krea.ai",
-      "name": "Krea",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Real time generation and upscaling",
-      "linkCheck": "OK",
+      "url": "https://godly.website/",
+      "name": "godly.website",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://letsenhance.io",
-      "name": "Let's Enhance",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "AI image upscaler",
-      "linkCheck": "OK",
+      "url": "https://www.hudsandguis.com/",
+      "name": "hudsandguis.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://lexica.art",
-      "name": "Lexica",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Search and generate AI art",
-      "linkCheck": "OK",
+      "url": "https://interfaceingame.com/",
+      "name": "interfaceingame.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://lummi.ai",
-      "name": "Lummi",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Free AI stock photos",
-      "linkCheck": "OK",
+      "url": "https://jakearchibald.github.io/svgomg/",
+      "name": "jakearchibald.github.io",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://mage.space",
-      "name": "Mage.space",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Free Stable Diffusion playground",
-      "linkCheck": "OK",
+      "url": "https://jmswrnr.com/?ref=designengineer.tools",
+      "name": "jmswrnr.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://magicstudio.com",
-      "name": "Magic Studio",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "AI photo editing tools",
-      "linkCheck": "OK",
+      "url": "https://www.kiriengine.app/",
+      "name": "kiriengine.app",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://midjourney.com",
-      "name": "Midjourney",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Paid",
-      "claim": "Best in class artistic image generation",
-      "linkCheck": "OK",
+      "url": "https://larsenwork.com/easing-gradients/",
+      "name": "larsenwork.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://mokker.ai",
-      "name": "Mokker",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "AI product photo backgrounds",
-      "linkCheck": "OK",
+      "url": "https://layers.to/explore",
+      "name": "layers.to",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://noloco.io",
-      "name": "Noloco",
-      "source": "workbook",
-      "sourceCategory": "No-code",
-      "claimedTier": "Freemium",
-      "claim": "Apps from your data",
-      "linkCheck": "OK",
+      "url": "https://linear.app/",
+      "name": "linear.app",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://openart.ai",
-      "name": "OpenArt",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Image generation with custom models",
-      "linkCheck": "OK",
+      "url": "https://loadmo.re/",
+      "name": "loadmo.re",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://pebblely.com",
-      "name": "Pebblely",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "AI product backgrounds",
-      "linkCheck": "OK",
+      "url": "https://lottiefiles.com/lottie-creator",
+      "name": "lottiefiles.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://phot.ai",
-      "name": "Phot.AI",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "AI photo editing suite",
-      "linkCheck": "OK",
+      "url": "https://makeemoji.com/",
+      "name": "makeemoji.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://photoai.com",
-      "name": "PhotoAI",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Paid",
-      "claim": "AI photos and models",
-      "linkCheck": "OK",
+      "url": "https://www.marvelousdesigner.com/",
+      "name": "marvelousdesigner.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://photoroom.com",
-      "name": "Photoroom",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "Remove backgrounds and edit product shots",
-      "linkCheck": "OK",
+      "url": "https://mifi.no/losslesscut/",
+      "name": "mifi.no",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://piclumen.com",
-      "name": "PicLumen",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Free",
-      "claim": "Free AI image generator",
-      "linkCheck": "OK",
+      "url": "https://minimal.gallery/",
+      "name": "minimal.gallery",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://picsart.com",
-      "name": "Picsart",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "AI photo and video editor",
-      "linkCheck": "OK",
+      "url": "https://mnmm.xyz/",
+      "name": "mnmm.xyz",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://picwish.com",
-      "name": "PicWish",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "Photo enhancement and cleanup",
-      "linkCheck": "OK",
+      "url": "https://www.mozilla.org/firefox/new/",
+      "name": "mozilla.org",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://pixai.art",
-      "name": "PixAI",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Anime focused image generation",
-      "linkCheck": "OK",
+      "url": "https://museapp.com/",
+      "name": "museapp.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://pixelcut.ai",
-      "name": "Pixelcut",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "Product photos and backgrounds",
-      "linkCheck": "OK",
+      "url": "https://nodes.io/",
+      "name": "nodes.io",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://pixlr.com",
-      "name": "Pixlr",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "Browser photo editor with AI",
-      "linkCheck": "OK",
+      "url": "https://nodetoy.co/",
+      "name": "nodetoy.co",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://plasmic.app",
-      "name": "Plasmic",
-      "source": "workbook",
-      "sourceCategory": "No-code",
-      "claimedTier": "Freemium",
-      "claim": "Visual builder for the web",
-      "linkCheck": "OK",
+      "url": "https://notebooklm.google/",
+      "name": "notebooklm.google",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://playground.com",
-      "name": "Playground",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Free leaning social image creator",
-      "linkCheck": "OK",
+      "url": "https://www.nvidia.com/en-us/software/nvidia-app/#shadowplay",
+      "name": "nvidia.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://prompthero.com",
-      "name": "PromptHero",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Search AI art and prompts",
-      "linkCheck": "OK",
+      "url": "https://obsidian.md/",
+      "name": "obsidian.md",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://recraft.ai",
-      "name": "Recraft",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Vector and brand consistent visuals",
-      "linkCheck": "OK",
+      "url": "https://obsproject.com/",
+      "name": "obsproject.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://relume.io",
-      "name": "Relume",
-      "source": "workbook",
-      "sourceCategory": "No-code",
-      "claimedTier": "Freemium",
-      "claim": "AI sitemaps and wireframes",
-      "linkCheck": "OK",
+      "url": "https://opencut.app/",
+      "name": "opencut.app",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://remini.ai",
-      "name": "Remini",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "AI photo enhancer",
-      "linkCheck": "OK",
+      "url": "https://parsec.app/",
+      "name": "parsec.app",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://remove.bg",
-      "name": "Remove.bg",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "Instantly remove image backgrounds",
-      "linkCheck": "OK",
+      "url": "https://pinterest.com/",
+      "name": "pinterest.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://retool.com",
-      "name": "Retool",
-      "source": "workbook",
-      "sourceCategory": "No-code",
-      "claimedTier": "Freemium",
-      "claim": "Build internal tools fast",
-      "linkCheck": "OK",
+      "url": "https://www.rebrand.gallery/",
+      "name": "rebrand.gallery",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://reve.art",
-      "name": "Reve",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "High quality image generation",
-      "linkCheck": "OK",
+      "url": "https://recordly.dev/",
+      "name": "recordly.dev",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://seaart.ai",
-      "name": "SeaArt",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Free leaning AI art platform",
-      "linkCheck": "OK",
+      "url": "https://regexr.com/",
+      "name": "regexr.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://shakker.ai",
-      "name": "Shakker",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "ControlNet style generation",
-      "linkCheck": "OK",
+      "url": "https://same.energy/",
+      "name": "same.energy",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://softr.io",
-      "name": "Softr",
-      "source": "workbook",
-      "sourceCategory": "No-code",
-      "claimedTier": "Freemium",
-      "claim": "Apps and portals from your data",
-      "linkCheck": "OK",
+      "url": "https://searchsystem.co/",
+      "name": "searchsystem.co",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://stability.ai",
-      "name": "Stable Diffusion",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Open source image generation",
-      "linkCheck": "OK",
+      "url": "https://www.seesaw.website/",
+      "name": "seesaw.website",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://starryai.com",
-      "name": "StarryAI",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "AI art generator app",
-      "linkCheck": "OK",
+      "url": "https://www.shadertoy.com/",
+      "name": "shadertoy.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://stylar.ai",
-      "name": "Stylar",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "Controllable AI image editor",
-      "linkCheck": "OK",
+      "url": "https://spiral.soot.com/spiral",
+      "name": "spiral.soot.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://upscayl.org",
-      "name": "Upscayl",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Free",
-      "claim": "Free open source image upscaler",
-      "linkCheck": "OK",
+      "url": "https://splice.com/features/sounds",
+      "name": "splice.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://vanceai.com",
-      "name": "VanceAI",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "AI photo enhancement suite",
-      "linkCheck": "OK",
+      "url": "https://www.supahero.io/",
+      "name": "supahero.io",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://vondy.com",
-      "name": "Vondy",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Many AI apps in one",
-      "linkCheck": "OK",
+      "url": "https://superspl.at/editor",
+      "name": "superspl.at",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://webflow.com",
-      "name": "Webflow",
-      "source": "workbook",
-      "sourceCategory": "No-code",
-      "claimedTier": "Freemium",
-      "claim": "Visual web design with AI",
-      "linkCheck": "OK",
+      "url": "https://www.theatrejs.com/",
+      "name": "theatrejs.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
     },
     {
-      "url": "https://weweb.io",
-      "name": "WeWeb",
-      "source": "workbook",
-      "sourceCategory": "No-code",
-      "claimedTier": "Freemium",
-      "claim": "Build web apps visually",
-      "linkCheck": "OK",
+      "url": "https://www.unrealengine.com/en-US/realityscan",
+      "name": "unrealengine.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
       "signal": 3
-    },
-    {
-      "url": "https://2short.ai",
-      "name": "2Short",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "YouTube shorts from long videos",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://afforai.com",
-      "name": "Afforai",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "AI research and reference manager",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://akiflow.com",
-      "name": "Akiflow",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Paid",
-      "claim": "Consolidate tasks and calendar",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://akkio.com",
-      "name": "Akkio",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Paid",
-      "claim": "No code predictive analytics",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://amie.so",
-      "name": "Amie",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Joyful calendar with AI",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://withaqua.com",
-      "name": "Aqua Voice",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Fast voice to text",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://arc.net",
-      "name": "Arc",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Free",
-      "claim": "Browser with AI features",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://arcads.ai",
-      "name": "Arcads",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Paid",
-      "claim": "UGC style ads with AI actors",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://asana.com",
-      "name": "Asana",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Work management with AI",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://askyourpdf.com",
-      "name": "AskYourPDF",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "Ask questions about documents",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://autoshorts.ai",
-      "name": "AutoShorts",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Paid",
-      "claim": "Automated faceless videos",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://avoma.com",
-      "name": "Avoma",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "AI meeting assistant",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://basedash.com",
-      "name": "Basedash",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Freemium",
-      "claim": "AI admin panel and dashboards",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://bluedothq.com",
-      "name": "Bluedot",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "AI meeting recorder",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://thebricks.com",
-      "name": "Bricks",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Freemium",
-      "claim": "AI spreadsheet and dashboards",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://capacities.io",
-      "name": "Capacities",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Object based notes with AI",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://capcut.com",
-      "name": "CapCut",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Popular AI video editor",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://captions.ai",
-      "name": "Captions",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "AI video editing for creators",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://chatpdf.com",
-      "name": "ChatPDF",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "Chat with any PDF",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://circleback.ai",
-      "name": "Circleback",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Paid",
-      "claim": "AI meeting notes and actions",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://clickup.com",
-      "name": "ClickUp",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Project management with AI",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://getclockwise.com",
-      "name": "Clockwise",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "AI calendar optimization",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://coda.io",
-      "name": "Coda",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Docs that work like apps with AI",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://colossyan.com",
-      "name": "Colossyan",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Paid",
-      "claim": "AI avatar training videos",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://connectedpapers.com",
-      "name": "Connected Papers",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "Visual map of research papers",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://creatify.ai",
-      "name": "Creatify",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Paid",
-      "claim": "AI video ads from a URL",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://cron.com",
-      "name": "Cron",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Free",
-      "claim": "Fast modern calendar",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://openai.com/dall-e-3",
-      "name": "DALL-E",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Image generation from OpenAI",
-      "linkCheck": "Blocked bot check (likely OK)",
-      "signal": 2
-    },
-    {
-      "url": "https://databricks.com",
-      "name": "Databricks",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Freemium",
-      "claim": "Data and AI lakehouse platform",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://decohere.ai",
-      "name": "Decohere",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Real time AI video",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://deepnote.com",
-      "name": "Deepnote",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Freemium",
-      "claim": "AI data notebook",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://descript.com",
-      "name": "Descript",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Edit video by editing the transcript",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://designify.com",
-      "name": "Designify",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Freemium",
-      "claim": "Auto design product images",
-      "linkCheck": "Blocked bot check (likely OK)",
-      "signal": 2
-    },
-    {
-      "url": "https://dreamina.capcut.com",
-      "name": "Dreamina",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "AI image and video by CapCut",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://elicit.com",
-      "name": "Elicit",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "AI research assistant for papers",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://equals.com",
-      "name": "Equals",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Freemium",
-      "claim": "The spreadsheet with AI and data",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://fathom.video",
-      "name": "Fathom",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "Free AI meeting note taker",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://fellow.app",
-      "name": "Fellow",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "AI meeting management",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://fireflies.ai",
-      "name": "Fireflies",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "Records and summarizes meetings",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://flexclip.com",
-      "name": "FlexClip",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Online video maker with AI",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://fliki.ai",
-      "name": "Fliki",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Text to video with AI voices",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://formulabot.com",
-      "name": "Formula Bot",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Freemium",
-      "claim": "Generate spreadsheet formulas",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://freepik.com",
-      "name": "Freepik",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Stock plus AI image generation",
-      "linkCheck": "Blocked bot check (likely OK)",
-      "signal": 2
-    },
-    {
-      "url": "https://genei.io",
-      "name": "Genei",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "AI summarization and research",
-      "linkCheck": "OK",
-      "signal": 2
     },
     {
-      "url": "https://gigasheet.com",
-      "name": "Gigasheet",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Freemium",
-      "claim": "Huge spreadsheets with AI",
-      "linkCheck": "OK",
-      "signal": 2
+      "url": "https://viewer.needle.tools/",
+      "name": "viewer.needle.tools",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
+      "signal": 3
     },
     {
-      "url": "https://goblin.tools",
-      "name": "Goblin Tools",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Free",
-      "claim": "Tiny AI tools for tasks",
-      "linkCheck": "OK",
-      "signal": 2
+      "url": "https://womp.com/",
+      "name": "womp.com",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
+      "signal": 3
     },
     {
-      "url": "https://grain.com",
-      "name": "Grain",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "Record and clip call moments",
-      "linkCheck": "OK",
-      "signal": 2
+      "url": "https://zen-browser.app/",
+      "name": "zen-browser.app",
+      "source": "designengineer",
+      "sourceCategory": "Design engineering",
+      "signal": 3
     },
-    {
-      "url": "https://getguru.com",
-      "name": "Guru",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "AI company knowledge in your flow",
-      "linkCheck": "OK",
-      "signal": 2
-    },
     {
-      "url": "https://hailuoai.video",
-      "name": "Hailuo",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Cinematic AI video by MiniMax",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://haiper.ai",
-      "name": "Haiper",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "AI video generation",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://hebbia.ai",
-      "name": "Hebbia",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Paid",
-      "claim": "AI for finance and law research",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://hedra.com",
-      "name": "Hedra",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Talking character video",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://heptabase.com",
-      "name": "Heptabase",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Paid",
-      "claim": "Visual notes and research",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://hex.tech",
-      "name": "Hex",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Freemium",
-      "claim": "AI notebooks for data teams",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://heygen.com",
-      "name": "HeyGen",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Avatar and translated video at scale",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://higgsfield.ai",
-      "name": "Higgsfield",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "AI video for creators",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://humata.ai",
-      "name": "Humata",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "AI for your files and papers",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://ideogram.ai",
-      "name": "Ideogram",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Image generation that nails text",
-      "linkCheck": "Blocked bot check (likely OK)",
-      "signal": 2
-    },
-    {
-      "url": "https://invideo.io",
-      "name": "InVideo",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Text to video for social content",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://meetjamie.ai",
-      "name": "Jamie",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "AI notetaker without bots",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://julius.ai",
-      "name": "Julius",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Freemium",
-      "claim": "Analyze data by chatting",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://kapwing.com",
-      "name": "Kapwing",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Collaborative AI video editor",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://klap.app",
-      "name": "Klap",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Long video into viral shorts",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://klingai.com",
-      "name": "Kling",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Cinematic AI video generation",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://laxis.com",
-      "name": "Laxis",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "AI meeting and sales notes",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://leonardo.ai",
-      "name": "Leonardo AI",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Game and design focused image generator",
-      "linkCheck": "Blocked bot check (likely OK)",
-      "signal": 2
-    },
-    {
-      "url": "https://loom.com",
-      "name": "Loom",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "Screen recording with AI summaries",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://ltx.studio",
-      "name": "LTX Studio",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "AI filmmaking and storyboards",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://lumalabs.ai",
-      "name": "Luma Dream Machine",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Fast realistic video generation",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://getmagical.com",
-      "name": "Magical",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "AI text expansion and autofill",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://magnific.ai",
-      "name": "Magnific",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Paid",
-      "claim": "Extreme AI upscaler and enhancer",
-      "linkCheck": "Blocked bot check (likely OK)",
-      "signal": 2
-    },
-    {
-      "url": "https://mapify.so",
-      "name": "Mapify",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "Turn anything into mind maps",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://trymaverick.com",
-      "name": "Maverick",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Paid",
-      "claim": "Personalized AI videos for ecommerce",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://maxai.me",
-      "name": "MaxAI",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "AI assistant on any webpage",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://meetgeek.ai",
-      "name": "MeetGeek",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "Record transcribe summarize",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://mem.ai",
-      "name": "Mem",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Self organizing AI notes",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://imagine.meta.com",
-      "name": "Meta AI Imagine",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Free",
-      "claim": "Free image generation by Meta",
-      "linkCheck": "Blocked bot check (likely OK)",
-      "signal": 2
-    },
-    {
-      "url": "https://miro.com",
-      "name": "Miro",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Visual workspace with AI",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://monday.com",
-      "name": "Monday",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Work OS with AI agents",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://monica.im",
-      "name": "Monica",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "All in one AI browser assistant",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://morphstudio.com",
-      "name": "Morph Studio",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Storyboard to AI film",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://usemotion.com",
-      "name": "Motion",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Paid",
-      "claim": "AI calendar and task planner",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://nightcafe.studio",
-      "name": "NightCafe",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Community AI art generator",
-      "linkCheck": "Blocked bot check (likely OK)",
-      "signal": 2
-    },
-    {
-      "url": "https://notebooklm.google.com",
-      "name": "NotebookLM",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Free",
-      "claim": "Chat with your own documents",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://notion.com/product/calendar",
-      "name": "Notion Calendar",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Free",
-      "claim": "Calendar connected to Notion",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://numerous.ai",
-      "name": "Numerous",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Freemium",
-      "claim": "AI functions in spreadsheets",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://opus.pro",
-      "name": "Opus Clip",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Turns long videos into viral clips",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://otio.ai",
-      "name": "Otio",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "AI research and writing workspace",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://otter.ai",
-      "name": "Otter.ai",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "Live meeting transcription and notes",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://pdf.ai",
-      "name": "PDF.ai",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "Chat with your documents",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://pecan.ai",
-      "name": "Pecan",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Paid",
-      "claim": "Predictive analytics for teams",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://picklellc.com",
-      "name": "Pickle",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Paid",
-      "claim": "AI video clone for calls",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://pictory.ai",
-      "name": "Pictory",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Paid",
-      "claim": "Turn scripts into videos",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://pika.art",
-      "name": "Pika",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Generate and edit short AI videos",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://pixverse.ai",
-      "name": "PixVerse",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "AI video generation",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://powerbi.microsoft.com",
-      "name": "Power BI",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Freemium",
-      "claim": "Microsoft analytics with AI",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://powerdrill.ai",
-      "name": "Powerdrill",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Freemium",
-      "claim": "Chat with your datasets",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://quso.ai",
-      "name": "Quso",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Repurpose and schedule video",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://read.ai",
-      "name": "Read AI",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "Meeting summaries and coaching",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://getrecall.ai",
-      "name": "Recall",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Summarize and save anything",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://reclaim.ai",
-      "name": "Reclaim",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Smart scheduling for your calendar",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://reflect.app",
-      "name": "Reflect",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Paid",
-      "claim": "AI networked note taking",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://researchrabbit.ai",
-      "name": "ResearchRabbit",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Free",
-      "claim": "Discover related research",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://revid.ai",
-      "name": "Revid",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Faceless video generator",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://routine.co",
-      "name": "Routine",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Tasks calendar and notes",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://rows.com",
-      "name": "Rows",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Freemium",
-      "claim": "Spreadsheet with AI built in",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://runwayml.com",
-      "name": "Runway",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Pro grade AI video generation and editing",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://scispace.com",
-      "name": "SciSpace",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "Understand and analyze papers",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://scisummary.com",
-      "name": "SciSummary",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "Summarize scientific papers",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://semanticscholar.org",
-      "name": "Semantic Scholar",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Free",
-      "claim": "AI powered paper search",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://sembly.ai",
-      "name": "Sembly",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "AI meeting assistant",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://slite.com",
-      "name": "Slite",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "AI powered team knowledge base",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://sourcetable.com",
-      "name": "Sourcetable",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Freemium",
-      "claim": "AI spreadsheet that does analysis",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://spinach.io",
-      "name": "Spinach",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "AI scrum master and notes",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://steve.ai",
-      "name": "Steve AI",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Animation and live video from text",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://submagic.co",
-      "name": "Submagic",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Paid",
-      "claim": "AI captions and short form edits",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://sunsama.com",
-      "name": "Sunsama",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Paid",
-      "claim": "Daily planner for calm focus",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://superhuman.com",
-      "name": "Superhuman",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Paid",
-      "claim": "The fastest AI email experience",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://synthesia.io",
-      "name": "Synthesia",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Paid",
-      "claim": "AI avatar videos from text",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://tactiq.io",
-      "name": "Tactiq",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "AI transcripts for meetings",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://tana.inc",
-      "name": "Tana",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "AI native workspace",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://taskade.com",
-      "name": "Taskade",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "AI tasks notes and agents",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://tensor.art",
-      "name": "Tensor.Art",
-      "source": "workbook",
-      "sourceCategory": "Image",
-      "claimedTier": "Freemium",
-      "claim": "Free AI image generation",
-      "linkCheck": "Blocked bot check (likely OK)",
-      "signal": 2
-    },
-    {
-      "url": "https://thoughtspot.com",
-      "name": "ThoughtSpot",
-      "source": "workbook",
-      "sourceCategory": "Data & Analytics",
-      "claimedTier": "Paid",
-      "claim": "Search driven analytics",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://tldv.io",
-      "name": "tl;dv",
-      "source": "workbook",
-      "sourceCategory": "Meetings & Notes",
-      "claimedTier": "Freemium",
-      "claim": "Records and clips your calls",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://todoist.com",
-      "name": "Todoist",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Task manager with AI assist",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://topazlabs.com",
-      "name": "Topaz Labs",
-      "source": "workbook",
-      "sourceCategory": "Image Editing",
-      "claimedTier": "Paid",
-      "claim": "Upscale and sharpen images and video",
-      "linkCheck": "Blocked bot check (likely OK)",
-      "signal": 2
-    },
-    {
-      "url": "https://trello.com",
-      "name": "Trello",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Boards with AI automation",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://trinka.ai",
-      "name": "Trinka",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "Academic grammar and writing",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://upword.ai",
-      "name": "Upword",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "Read and research faster",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://vadoo.tv",
-      "name": "Vadoo",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "AI short video generator",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://veed.io",
-      "name": "VEED",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Online video editor with AI",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://vidnoz.com",
-      "name": "Vidnoz",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Free AI video and avatars",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://vidu.com",
-      "name": "Vidu",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Fast AI video generation",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://vidyo.ai",
-      "name": "Vidyo.ai",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Long video into short clips",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://visla.us",
-      "name": "Visla",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "AI video creation and editing",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://vizard.ai",
-      "name": "Vizard",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "AI video clipping tool",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://vrew.ai",
-      "name": "Vrew",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Edit video via transcript",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://whimsical.com",
-      "name": "Whimsical",
-      "source": "workbook",
-      "sourceCategory": "Productivity",
-      "claimedTier": "Freemium",
-      "claim": "Flowcharts and docs with AI",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://filmora.wondershare.com",
-      "name": "Wondershare Filmora",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Freemium",
-      "claim": "Video editor with AI tools",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://you.com",
-      "name": "You.com",
-      "source": "workbook",
-      "sourceCategory": "Research",
-      "claimedTier": "Freemium",
-      "claim": "AI search and assistant",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://zubtitle.com",
-      "name": "Zubtitle",
-      "source": "workbook",
-      "sourceCategory": "Video",
-      "claimedTier": "Paid",
-      "claim": "Add captions and resize video",
-      "linkCheck": "OK",
-      "signal": 2
-    },
-    {
-      "url": "https://podcast.adobe.com",
-      "name": "Adobe Podcast",
-      "source": "workbook",
-      "sourceCategory": "Audio & Voice",
-      "claimedTier": "Free",
-      "claim": "Cleans up audio to studio quality",
-      "linkCheck": "OK",
+      "url": "https://toolfolio.com/tools/21st-dev",
+      "name": "21st dev",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
-      "url": "https://aiva.ai",
-      "name": "AIVA",
-      "source": "workbook",
-      "sourceCategory": "Audio & Voice",
-      "claimedTier": "Freemium",
-      "claim": "AI music composition",
-      "linkCheck": "OK",
+      "url": "https://toolfolio.com/tools/abtest-design",
+      "name": "abtest design",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
-      "url": "https://altered.ai",
-      "name": "Altered",
-      "source": "workbook",
-      "sourceCategory": "Audio & Voice",
-      "claimedTier": "Freemium",
-      "claim": "AI voice changer studio",
-      "linkCheck": "OK",
+      "url": "https://toolfolio.com/tools/admire-the-web",
+      "name": "admire the web",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/adobe-photoshop",
+      "name": "adobe photoshop",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/affinity",
+      "name": "affinity",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/affonso",
+      "name": "affonso",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/agency-gallery",
+      "name": "agency gallery",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/ai-camera-movements",
+      "name": "ai camera movements",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/amie",
+      "name": "amie",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/amplift",
+      "name": "amplift",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/animos",
+      "name": "animos",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/annot",
+      "name": "annot",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/anthony-boyd-graphics",
+      "name": "anthony boyd graphics",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/anything",
+      "name": "anything",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/apollo",
+      "name": "apollo",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/appgrowkit",
+      "name": "appgrowkit",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/applaunchpad",
+      "name": "applaunchpad",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/appshot-gallery",
+      "name": "appshot gallery",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/appshots",
+      "name": "appshots",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/appthetics",
+      "name": "appthetics",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/arcade",
+      "name": "arcade",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/arq",
+      "name": "arq",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/artboard-studio",
+      "name": "artboard studio",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3172,6 +913,54 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/autodraw",
+      "name": "autodraw",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/autosana-1",
+      "name": "autosana 1",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/avec",
+      "name": "avec",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/banani",
+      "name": "banani",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/base44",
+      "name": "base44",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/bear",
+      "name": "bear",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://beatoven.ai",
       "name": "Beatoven",
       "source": "workbook",
@@ -3179,6 +968,94 @@
       "claimedTier": "Freemium",
       "claim": "Royalty free AI music",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/beautiful-ai-1",
+      "name": "beautiful ai 1",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/beui",
+      "name": "beui",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/beyond-ui",
+      "name": "beyond ui",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/bio",
+      "name": "bio",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/black-illustrations",
+      "name": "black illustrations",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/blink",
+      "name": "blink",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/blitzit",
+      "name": "blitzit",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/bloom",
+      "name": "bloom",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/bolt-new",
+      "name": "bolt new",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/bookmarkify",
+      "name": "bookmarkify",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/boom-for-mac",
+      "name": "boom for mac",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3192,6 +1069,102 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/border-beam",
+      "name": "border beam",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/botconsole",
+      "name": "botconsole",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/boxicons",
+      "name": "boxicons",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/brand-logo",
+      "name": "brand logo",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/brandbird",
+      "name": "brandbird",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/brandcrowd",
+      "name": "brandcrowd",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/brandfetch",
+      "name": "brandfetch",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/branding-website",
+      "name": "branding website",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/brandmark",
+      "name": "brandmark",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/bravemark",
+      "name": "bravemark",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/brik-ai",
+      "name": "brik ai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/bugsplat",
+      "name": "bugsplat",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://camb.ai",
       "name": "Camb.ai",
       "source": "workbook",
@@ -3199,6 +1172,30 @@
       "claimedTier": "Freemium",
       "claim": "AI dubbing and translation",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/canva",
+      "name": "canva",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/canvas-ui",
+      "name": "canvas ui",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/careerboom",
+      "name": "careerboom",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3212,6 +1209,62 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/chatcut",
+      "name": "chatcut",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/chatgpt",
+      "name": "chatgpt",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/chatgpt-atlas",
+      "name": "chatgpt atlas",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/claude",
+      "name": "claude",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/cluely",
+      "name": "cluely",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/cobalt",
+      "name": "cobalt",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/coderabbit",
+      "name": "coderabbit",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://cohesive.so",
       "name": "Cohesive",
       "source": "workbook",
@@ -3222,6 +1275,46 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/colir",
+      "name": "colir",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/collletttivo",
+      "name": "collletttivo",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/colorion-tools",
+      "name": "colorion tools",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/combase",
+      "name": "combase",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/comet",
+      "name": "comet",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://consensus.app",
       "name": "Consensus",
       "source": "workbook",
@@ -3229,6 +1322,14 @@
       "claimedTier": "Freemium",
       "claim": "Find answers from research papers",
       "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/copy-paste-svg-shapes",
+      "name": "copy paste svg shapes",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3252,6 +1353,102 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/cosmaha",
+      "name": "cosmaha",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/craftwork",
+      "name": "craftwork",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/create-ui",
+      "name": "create ui",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/creavit-studio",
+      "name": "creavit studio",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/creed",
+      "name": "creed",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/creen-ai",
+      "name": "creen ai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/curated-supply",
+      "name": "curated supply",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/dafont",
+      "name": "dafont",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/databuddy",
+      "name": "databuddy",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/datafast",
+      "name": "datafast",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/decart",
+      "name": "decart",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/deck-gallery",
+      "name": "deck gallery",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://deepgram.com",
       "name": "Deepgram",
       "source": "workbook",
@@ -3259,6 +1456,86 @@
       "claimedTier": "Freemium",
       "claim": "Speech to text API",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/design-com",
+      "name": "design com",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/details",
+      "name": "details",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/diffusion-studio",
+      "name": "diffusion studio",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/ditther",
+      "name": "ditther",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/dnd-kit",
+      "name": "dnd kit",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/domain-sdk",
+      "name": "domain sdk",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/dot-matrix",
+      "name": "dot matrix",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/dump",
+      "name": "dump",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/ebb",
+      "name": "ebb",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/ego-lite",
+      "name": "ego lite",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3272,6 +1549,14 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/elements-library",
+      "name": "elements library",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://elevenlabs.io",
       "name": "ElevenLabs",
       "source": "workbook",
@@ -3279,6 +1564,94 @@
       "claimedTier": "Freemium",
       "claim": "The leading AI voice generator",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/email-sdk",
+      "name": "email sdk",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/evendeals",
+      "name": "evendeals",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/excalidraw",
+      "name": "excalidraw",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/expo",
+      "name": "expo",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/fabric",
+      "name": "fabric",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/fathom",
+      "name": "fathom",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/fathom-video",
+      "name": "fathom video",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/feedzy",
+      "name": "feedzy",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/fellow",
+      "name": "fellow",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/fillout",
+      "name": "fillout",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/firecrawl",
+      "name": "firecrawl",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3292,6 +1665,78 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/flowcub",
+      "name": "flowcub",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/focusee",
+      "name": "focusee",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/fontalog",
+      "name": "fontalog",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/fontbase",
+      "name": "fontbase",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/forgegui",
+      "name": "forgegui",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/formaloo",
+      "name": "formaloo",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/formcarry",
+      "name": "formcarry",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/forms-app",
+      "name": "forms app",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/framer",
+      "name": "framer",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://frase.io",
       "name": "Frase",
       "source": "workbook",
@@ -3302,6 +1747,38 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/fyxer",
+      "name": "fyxer",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/gatheros",
+      "name": "gatheros",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/generative-loaders",
+      "name": "generative loaders",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/geniusai",
+      "name": "geniusai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://genmo.ai",
       "name": "Genmo",
       "source": "workbook",
@@ -3309,6 +1786,14 @@
       "claimedTier": "Freemium",
       "claim": "Open AI video generation",
       "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/giga-ai",
+      "name": "giga ai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3332,6 +1817,38 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/gofullpage",
+      "name": "gofullpage",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/google-ai-studio",
+      "name": "google ai studio",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/google-analytics",
+      "name": "google analytics",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/google-vids",
+      "name": "google vids",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://gptzero.me",
       "name": "GPTZero",
       "source": "workbook",
@@ -3339,6 +1856,22 @@
       "claimedTier": "Freemium",
       "claim": "Detects AI generated text",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/gradientool",
+      "name": "gradientool",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/gradients-fm",
+      "name": "gradients fm",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3352,6 +1885,14 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/granola",
+      "name": "granola",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://gravitywrite.com",
       "name": "GravityWrite",
       "source": "workbook",
@@ -3359,6 +1900,62 @@
       "claimedTier": "Freemium",
       "claim": "Free leaning AI writing suite",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/grayblocks",
+      "name": "grayblocks",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/griddy-icons",
+      "name": "griddy icons",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/guideless",
+      "name": "guideless",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/hano",
+      "name": "hano",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/headsnap",
+      "name": "headsnap",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/hejour",
+      "name": "hejour",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/helm-for-app-store-connect",
+      "name": "helm for app store connect",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3372,6 +1969,78 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/heroicons",
+      "name": "heroicons",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/herokit",
+      "name": "herokit",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/heyclicky",
+      "name": "heyclicky",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/heygen",
+      "name": "heygen",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/higgsfield",
+      "name": "higgsfield",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/holosticker",
+      "name": "holosticker",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/holygrid",
+      "name": "holygrid",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/hootsuite",
+      "name": "hootsuite",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/hoox",
+      "name": "hoox",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://hoppycopy.co",
       "name": "Hoppy Copy",
       "source": "workbook",
@@ -3382,6 +2051,14 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/horse-browser",
+      "name": "horse browser",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://hume.ai",
       "name": "Hume",
       "source": "workbook",
@@ -3389,6 +2066,30 @@
       "claimedTier": "Freemium",
       "claim": "Emotionally aware voice AI",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/hunter",
+      "name": "hunter",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/hunyuanworld",
+      "name": "hunyuanworld",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/hyperfxai",
+      "name": "hyperfxai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3412,6 +2113,110 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/icnes",
+      "name": "icnes",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/icon-inspo",
+      "name": "icon inspo",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/icon-museum",
+      "name": "icon museum",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/icoon-co",
+      "name": "icoon co",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/imagineart",
+      "name": "imagineart",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/imideo",
+      "name": "imideo",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/impact-com",
+      "name": "impact com",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/indestructible-type",
+      "name": "indestructible type",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/input-otp",
+      "name": "input otp",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/invideo-ai",
+      "name": "invideo ai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/invisible-details",
+      "name": "invisible details",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/ira-design",
+      "name": "ira design",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/is-your-site-agent-ready",
+      "name": "is your site agent ready",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://jasper.ai",
       "name": "Jasper",
       "source": "workbook",
@@ -3419,6 +2224,14 @@
       "claimedTier": "Paid",
       "claim": "Marketing copy and brand content at scale",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/javii-tools",
+      "name": "javii tools",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3442,6 +2255,30 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/kinet",
+      "name": "kinet",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/kinetics",
+      "name": "kinetics",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/kite",
+      "name": "kite",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://kits.ai",
       "name": "Kits AI",
       "source": "workbook",
@@ -3449,6 +2286,30 @@
       "claimedTier": "Freemium",
       "claim": "AI voices for musicians",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/kling-ai",
+      "name": "kling ai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/kobbe",
+      "name": "kobbe",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/kompa",
+      "name": "kompa",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3472,6 +2333,22 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/later",
+      "name": "later",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/launchnow",
+      "name": "launchnow",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://lemonaide.ai",
       "name": "Lemonaide",
       "source": "workbook",
@@ -3479,6 +2356,14 @@
       "claimedTier": "Freemium",
       "claim": "AI music ideas for producers",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/leonardo-ai",
+      "name": "leonardo ai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3492,6 +2377,22 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/limora",
+      "name": "limora",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/linktree",
+      "name": "linktree",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://listnr.ai",
       "name": "Listnr",
       "source": "workbook",
@@ -3499,6 +2400,54 @@
       "claimedTier": "Freemium",
       "claim": "Text to speech and podcasts",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/liveline",
+      "name": "liveline",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/loftlyy",
+      "name": "loftlyy",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/logo-diffusion",
+      "name": "logo diffusion",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/logoinspo",
+      "name": "logoinspo",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/logome",
+      "name": "logome",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/logseq",
+      "name": "logseq",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3512,6 +2461,30 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/looka",
+      "name": "looka",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/lookaway",
+      "name": "lookaway",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/lordicon",
+      "name": "lordicon",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://loudly.com",
       "name": "Loudly",
       "source": "workbook",
@@ -3522,6 +2495,198 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/lovable",
+      "name": "lovable",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/ltx-studio",
+      "name": "ltx studio",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/lukasz-adam",
+      "name": "lukasz adam",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/lunatask",
+      "name": "lunatask",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/magic-pattern",
+      "name": "magic pattern",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/magic-patterns",
+      "name": "magic patterns",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/majesticons",
+      "name": "majesticons",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/makeshot",
+      "name": "makeshot",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/marqly",
+      "name": "marqly",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/matext",
+      "name": "matext",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/matte",
+      "name": "matte",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/melius",
+      "name": "melius",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/meta-ai",
+      "name": "meta ai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/meta-ai-demos",
+      "name": "meta ai demos",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/metasync",
+      "name": "metasync",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/metricool",
+      "name": "metricool",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/microsoft-clarity",
+      "name": "microsoft clarity",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/milanote",
+      "name": "milanote",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/minimum",
+      "name": "minimum",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/mirage",
+      "name": "mirage",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/mockup-freak",
+      "name": "mockup freak",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/mockupanda",
+      "name": "mockupanda",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/modelfy-3d",
+      "name": "modelfy 3d",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/modyfi",
+      "name": "modyfi",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://moises.ai",
       "name": "Moises",
       "source": "workbook",
@@ -3529,6 +2694,38 @@
       "claimedTier": "Freemium",
       "claim": "AI music practice and stems",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/momentum",
+      "name": "momentum",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/morflax-studio-1",
+      "name": "morflax studio 1",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/motion-1",
+      "name": "motion 1",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/motioner",
+      "name": "motioner",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3562,6 +2759,62 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/myinstants",
+      "name": "myinstants",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/mykeep",
+      "name": "mykeep",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/name-that-ui",
+      "name": "name that ui",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/nano-banana",
+      "name": "nano banana",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/nano-banana-2-ai",
+      "name": "nano banana 2 ai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/nano-banana-pro",
+      "name": "nano banana pro",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/nanophoto",
+      "name": "nanophoto",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://naturalreaders.com",
       "name": "NaturalReader",
       "source": "workbook",
@@ -3569,6 +2822,38 @@
       "claimedTier": "Freemium",
       "claim": "Text to speech reader",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/nexlev",
+      "name": "nexlev",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/nextbunny",
+      "name": "nextbunny",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/nexus-ui",
+      "name": "nexus ui",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/notegpt",
+      "name": "notegpt",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3582,6 +2867,78 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/numberflow",
+      "name": "numberflow",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/obsidian",
+      "name": "obsidian",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/octarine",
+      "name": "octarine",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/ogfolio-1",
+      "name": "ogfolio 1",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/op0",
+      "name": "op0",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/open-foundry",
+      "name": "open foundry",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/open-source-builders",
+      "name": "open source builders",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/opentui",
+      "name": "opentui",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/orchid",
+      "name": "orchid",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://originality.ai",
       "name": "Originality.ai",
       "source": "workbook",
@@ -3592,6 +2949,54 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/originkit",
+      "name": "originkit",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/orshot",
+      "name": "orshot",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/otter",
+      "name": "otter",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/outvid",
+      "name": "outvid",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/pageai",
+      "name": "pageai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/palette",
+      "name": "palette",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://paperpal.com",
       "name": "Paperpal",
       "source": "workbook",
@@ -3599,6 +3004,30 @@
       "claimedTier": "Freemium",
       "claim": "AI academic writing assistant",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/partnerstack",
+      "name": "partnerstack",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/pebblely",
+      "name": "pebblely",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/peeler",
+      "name": "peeler",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3622,6 +3051,70 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/phonefarm",
+      "name": "phonefarm",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/photon-spectrum",
+      "name": "photon spectrum",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/pi",
+      "name": "pi",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/pikkovia",
+      "name": "pikkovia",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/pixelarticons",
+      "name": "pixelarticons",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/pixlo",
+      "name": "pixlo",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/plausible-analytics",
+      "name": "plausible analytics",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/playbook",
+      "name": "playbook",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://podcastle.ai",
       "name": "Podcastle",
       "source": "workbook",
@@ -3629,6 +3122,46 @@
       "claimedTier": "Freemium",
       "claim": "AI podcast recording studio",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/posthog",
+      "name": "posthog",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/postiz",
+      "name": "postiz",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/postsyncer",
+      "name": "postsyncer",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/presentify",
+      "name": "presentify",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/prezi",
+      "name": "prezi",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3642,6 +3175,30 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/pryzm",
+      "name": "pryzm",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/publer",
+      "name": "publer",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/quartr",
+      "name": "quartr",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://quillbot.com",
       "name": "QuillBot",
       "source": "workbook",
@@ -3652,6 +3209,110 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/quiverai",
+      "name": "quiverai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/qwen-chat",
+      "name": "qwen chat",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/rare-ui",
+      "name": "rare ui",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/raylight",
+      "name": "raylight",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/react-bits",
+      "name": "react bits",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/react-video-editor",
+      "name": "react video editor",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/recordly",
+      "name": "recordly",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/refix-analytics",
+      "name": "refix analytics",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/reloop",
+      "name": "reloop",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/remocn",
+      "name": "remocn",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/rendernet",
+      "name": "rendernet",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/replicate",
+      "name": "replicate",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/replit",
+      "name": "replit",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://resemble.ai",
       "name": "Resemble AI",
       "source": "workbook",
@@ -3659,6 +3320,38 @@
       "claimedTier": "Paid",
       "claim": "Custom AI voice cloning",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/reve",
+      "name": "reve",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/revid-ai",
+      "name": "revid ai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/rewardful",
+      "name": "rewardful",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/rezi",
+      "name": "rezi",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3682,6 +3375,22 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/rsw-sora-2-ai-studio",
+      "name": "rsw sora 2 ai studio",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/runway",
+      "name": "runway",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://rytr.me",
       "name": "Rytr",
       "source": "workbook",
@@ -3689,6 +3398,14 @@
       "claimedTier": "Freemium",
       "claim": "Budget friendly AI writing assistant",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/sandbox-sdk",
+      "name": "sandbox sdk",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3702,6 +3419,14 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/saveday",
+      "name": "saveday",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://scholarcy.com",
       "name": "Scholarcy",
       "source": "workbook",
@@ -3709,6 +3434,110 @@
       "claimedTier": "Freemium",
       "claim": "Summarize research papers",
       "linkCheck": "Blocked bot check (likely OK)",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/screenshotone",
+      "name": "screenshotone",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/seedeo",
+      "name": "seedeo",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/seesaw",
+      "name": "seesaw",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/selected",
+      "name": "selected",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/sequenzy",
+      "name": "sequenzy",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/serif-sh",
+      "name": "serif sh",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/shadcraft",
+      "name": "shadcraft",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/shakeshape",
+      "name": "shakeshape",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/shieldcn",
+      "name": "shieldcn",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/shipper",
+      "name": "shipper",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/shoorts",
+      "name": "shoorts",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/shots",
+      "name": "shots",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/shrtcts",
+      "name": "shrtcts",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3722,6 +3551,54 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/similarweb",
+      "name": "similarweb",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/simple-icons",
+      "name": "simple icons",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/sketch-to",
+      "name": "sketch to",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/skeudesign",
+      "name": "skeudesign",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/sleek-analytics",
+      "name": "sleek analytics",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/slicetube",
+      "name": "slicetube",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://smodin.io",
       "name": "Smodin",
       "source": "workbook",
@@ -3732,6 +3609,22 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/socialbee",
+      "name": "socialbee",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/sologoai",
+      "name": "sologoai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://sonauto.com",
       "name": "Sonauto",
       "source": "workbook",
@@ -3739,6 +3632,30 @@
       "claimedTier": "Freemium",
       "claim": "AI music generation",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/sonner",
+      "name": "sonner",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/soora2",
+      "name": "soora2",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/sora-2-ai",
+      "name": "sora 2 ai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3792,6 +3709,30 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/spline",
+      "name": "spline",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/spotted-in-prod",
+      "name": "spotted in prod",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/stability-ai",
+      "name": "stability ai",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://stableaudio.com",
       "name": "Stable Audio",
       "source": "workbook",
@@ -3799,6 +3740,70 @@
       "claimedTier": "Freemium",
       "claim": "Generate music and sound",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/stable-diffusion",
+      "name": "stable diffusion",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/stanley",
+      "name": "stanley",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/steel",
+      "name": "steel",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/stepcapture",
+      "name": "stepcapture",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/storyshort",
+      "name": "storyshort",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/strawberry",
+      "name": "strawberry",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/stylokit",
+      "name": "stylokit",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/submagic",
+      "name": "submagic",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3822,6 +3827,38 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/supamaus",
+      "name": "supamaus",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/superdev-pro",
+      "name": "superdev pro",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/superlist",
+      "name": "superlist",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/supermotion",
+      "name": "supermotion",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://supernormal.com",
       "name": "Supernormal",
       "source": "workbook",
@@ -3842,6 +3879,30 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/swaptok",
+      "name": "swaptok",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/swishy",
+      "name": "swishy",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/synthesia",
+      "name": "synthesia",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://tableau.com",
       "name": "Tableau",
       "source": "workbook",
@@ -3852,6 +3913,30 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/tabler-icons",
+      "name": "tabler icons",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/testerarmy",
+      "name": "testerarmy",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/text-to-speech",
+      "name": "text to speech",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://texta.ai",
       "name": "Texta",
       "source": "workbook",
@@ -3859,6 +3944,94 @@
       "claimedTier": "Freemium",
       "claim": "AI blog post generator",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/the-gist-of",
+      "name": "the gist of",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/the-noun-project",
+      "name": "the noun project",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/thiings",
+      "name": "thiings",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/thinking-orbs",
+      "name": "thinking orbs",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/thumbnailpilot",
+      "name": "thumbnailpilot",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/thumbsy",
+      "name": "thumbsy",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/tiny-place",
+      "name": "tiny place",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/tinyfolder",
+      "name": "tinyfolder",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/todoist",
+      "name": "todoist",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/toolcraft",
+      "name": "toolcraft",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/transitions-dev",
+      "name": "transitions dev",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3892,6 +4065,46 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/ultramock",
+      "name": "ultramock",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/umanmade",
+      "name": "umanmade",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/uncode-framer",
+      "name": "uncode framer",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/uncovr",
+      "name": "uncovr",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/uncut-wtf",
+      "name": "uncut wtf",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://undetectable.ai",
       "name": "Undetectable AI",
       "source": "workbook",
@@ -3899,6 +4112,86 @@
       "claimedTier": "Freemium",
       "claim": "Humanizes AI written text",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/unlayered",
+      "name": "unlayered",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/ux-pilot",
+      "name": "ux pilot",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/v0-by-vercel",
+      "name": "v0 by vercel",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/variant",
+      "name": "variant",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/vecteezy",
+      "name": "vecteezy",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/veed",
+      "name": "veed",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/viewtrack",
+      "name": "viewtrack",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/viktor-1",
+      "name": "viktor 1",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/vira-theme",
+      "name": "vira theme",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/vivaldi-browser",
+      "name": "vivaldi browser",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3922,6 +4215,30 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/voiceos",
+      "name": "voiceos",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/voicy",
+      "name": "voicy",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/wan",
+      "name": "wan",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://wellsaidlabs.com",
       "name": "WellSaid",
       "source": "workbook",
@@ -3929,6 +4246,22 @@
       "claimedTier": "Paid",
       "claim": "Studio AI voiceovers",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/wiretext",
+      "name": "wiretext",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/wonder",
+      "name": "wonder",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3959,6 +4292,14 @@
       "claimedTier": "Freemium",
       "claim": "AI proofreading and editing",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/workspaces",
+      "name": "workspaces",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
@@ -3999,6 +4340,46 @@
       "claimedTier": "Freemium",
       "claim": "SEO articles and ad copy generator",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/youform",
+      "name": "youform",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/your-name-in-landsat",
+      "name": "your name in landsat",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/z-image",
+      "name": "z image",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/zawa",
+      "name": "zawa",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/zen-browser",
+      "name": "zen browser",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
       "signal": 1
     },
     {
