@@ -3981,6 +3981,153 @@
       ],
       "addedAt": "2026-08-20T16:19:06.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Kitbitz",
+      "website": "https://kitbitz.art/",
+      "what": "2,000+ hand-drawn illustrations across 13 themed Figma kits \u2014 built as reusable components with colour variables and smart resizing, so a scene can be recoloured and rescaled rather than redrawn. SVG and PNG download, a Figma plugin for browsing and inserting, and an MCP endpoint so an agent can pull assets directly.",
+      "category": "Design engineering / illustration",
+      "pricing": "Free",
+      "priceDetail": "Free under CC0 \u2014 public domain, commercial use included, no attribution required.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "CC0 is the headline. Every other illustration set on this list carries a licence to read before shipping \u2014 unDraw asks nothing but is not public domain, Storyset's terms would not even render, Thiings prices by the client's revenue. This one has no strings at all, which makes it the safe default for client work.",
+        "Components with colour variables rather than flat SVGs means a set can be pulled into a client's palette in one change, which is the usual failure of free illustration.",
+        "A year of one person's work on a game product that did not launch, released rather than binned. Hand-drawn, so it has a house style \u2014 check it suits the brand before committing a whole site to it."
+      ],
+      "addedAt": "2026-08-20T21:42:09.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Forge (UI8)",
+      "website": "https://ui8.ai/forge/",
+      "what": "Free macOS app that opens a local web project as a visual canvas \u2014 arrange and edit the real thing rather than a mockup of it. Files stay on disk in your repo, ready to commit, so there is no export step and no second source of truth.",
+      "category": "Design engineering / design-to-code",
+      "pricing": "Free",
+      "priceDetail": "Free macOS app, per its own description. No pricing page published.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "\"Your work always lives on disk, in your repo\" is the part that matters and the part every design-to-code tool on this list gets wrong. Nothing to export, nothing to reconcile, no Figma file drifting from the build.",
+        "sticky.ui8.dev is their demo of what it can do \u2014 a 3D sticker toy on Three.js and WebGPU. Worth opening for the capability, but its own page renders client-side and served us nothing, so it is not listed separately.",
+        "The site is a single-page app and served only its own title and description, so the app was assessed from that rather than from a feature list. macOS only. Download it before promising anything on a client project."
+      ],
+      "addedAt": "2026-08-20T21:42:09.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Spherium",
+      "website": "https://www.tryspherium.com/",
+      "what": "WebGL globe and map generator in the browser \u2014 pick a projection and region, choose the point shape (triangle, hex, matrix, line), set density up to 8k points, adjust graticules and opacity, then export the result as SVG.",
+      "category": "Design engineering / illustration",
+      "pricing": "Free",
+      "priceDetail": "No pricing, account or paywall published anywhere on the site; it runs in the browser and exports directly. Marked Beta 1.0.",
+      "usefulness": "Medium",
+      "buildVerdict": "Weekend build",
+      "notes": [
+        "Vector export is what makes it useful rather than a toy: the dotted-globe hero that appears on every infrastructure and fintech site, as an SVG we can recolour and animate, instead of a stock PNG or an afternoon in Illustrator.",
+        "Density up to 8,000 points will make a heavy SVG. Check the file size before it goes into a page we are also promising to keep fast.",
+        "Beta, no pricing published, single maintainer. Export what you need and keep the file \u2014 do not design a client page around the tool staying up."
+      ],
+      "addedAt": "2026-08-20T21:42:09.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Bible Strong Avatar Lab",
+      "website": "https://avatars.bible-strong.app/",
+      "what": "Procedural 2D avatar studio in the browser \u2014 build a character from parts, set expressions and animations, then export it as reusable React, JavaScript, SVG or PNG rather than as a flat image.",
+      "category": "Design engineering / illustration",
+      "pricing": "Free",
+      "priceDetail": "No pricing, account or paywall published anywhere on the site.",
+      "usefulness": "Medium",
+      "buildVerdict": "Serious product (1-3 months)",
+      "notes": [
+        "The React and JavaScript export is the difference from every other avatar generator: the output is a component that can take props, so a client's app can render an avatar per user rather than shipping a folder of PNGs.",
+        "Procedural and animated covers the empty states, onboarding and loading moments that otherwise get a stock illustration or nothing.",
+        "A side project attached to a Bible study app, which is an odd provenance for a design tool and worth knowing before it goes in a client's dependency list. The export is code we own, so the risk is limited to the editor disappearing."
+      ],
+      "addedAt": "2026-08-20T21:42:09.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "hunk",
+      "website": "https://www.hunk.dev/",
+      "what": "Terminal diff viewer built for reviewing agent-authored changesets \u2014 a multi-file review stream rather than a per-file pager, with inline AI annotations, watch mode, exact-line agent guidance, 64 themes, TypeScript extensions and Git, Jujutsu and Sapling support. Ships agent skills alongside the binary.",
+      "category": "AI coding / code review",
+      "pricing": "Free",
+      "priceDetail": "Free and open source, MIT. `npm i -g hunkdiff`, or an install script. v0.19.0 at the time of adding, 8.6k GitHub stars.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "This is the answer to the actual daily problem with coding agents: a 40-file diff that is technically correct and unreviewable. A review-first stream across files beats `git diff | less` and beats scrolling a pull request in a browser.",
+        "Second option alongside meat, already on this list \u2014 meat abridges a diff into a conceptual summary, hunk keeps every line but makes the review navigable. Different jobs; try both on the same agent changeset.",
+        "The bundled agent skills and live session control are the interesting half: the reviewer can hand exact-line guidance back to the agent rather than you retyping it. MIT, so there is no vendor to outlive."
+      ],
+      "addedAt": "2026-08-20T21:42:09.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Frontpages",
+      "link": "https://frontpages.dev/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / websites",
+      "takeaway": "A curated gallery of landing page front pages \u2014 hero sections from across the web, searchable by category and company, updated weekly. Its author pitches it as a free version of Mobbin for the web rather than for apps.",
+      "whatToDo": "Reference at the start of a marketing site. Action: pull ten hero sections in the client's category before wireframing, so the structure argument happens against shipped examples rather than opinions.",
+      "cost": "Free. Optional email subscription for the weekly update.",
+      "usefulness": "Medium",
+      "notes": [
+        "Narrower and more useful than a general inspiration gallery: it indexes the one section every client argues about most, and it is free where Mobbin's web coverage is behind $10/month.",
+        "Hero sections only, so it complements Saaspo's section-level index rather than replacing it.",
+        "Other companies' pages. Structure and hierarchy are the input; the styling is theirs."
+      ],
+      "addedAt": "2026-08-20T21:42:09.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "starter",
+      "name": "IP as Logo",
+      "slug": "ip-as-logo",
+      "type": "SKILL",
+      "summary": "Generates simple, cute mascot logos that still read at 32\u00d732 \u2014 three directions, then six candidates for approval.",
+      "description": "An **Agent Skill** for generating company-ready IP mascots: one dominant silhouette from 4\u20137 basic shapes, exactly two character colours plus one solid background, thick rounded forms, and a large character emerging from the lower-left or lower-right.\n\nIt is opinionated about process, not just style. The agent inspects the repo for product context first, asks one consolidated round of questions if that is not enough, proposes three directions, and only generates after you agree \u2014 six candidates, split evenly between lower-left and lower-right so each direction is tested from both sides.\n\nWritten to the open Agent Skills format, so it works with any compatible agent rather than one product. Install with `npx skills@latest add s1dashu/ip-as-logo-skill`.",
+      "promptText": "---\nname: ip-as-logo\ndescription: Generate extremely simple, cute, personified square character images with rounded heavy forms, two purposeful character colors, one solid background color, and a dominant lower-corner composition. Use when creating an animal, creature, robot, ghost, plant, object, or other character image, including when the agent should infer three product-relevant directions and propose six independent candidates for approval.\n---\n\n# IP as Logo\n\nCreate the simplest possible cute IP character: a compact, lovable symbol that remains recognizable at `32 \u00d7 32`, not a detailed character illustration.\n\n## Workflow\n\n1. Parse the request for an explicit IP subject and available product context. Do not ask the user to choose a color mode unless they explicitly want to control it.\n2. When the user has not specified an IP subject and the current workspace is a product repository, inspect relevant read-only context before asking questions. Prefer the README, product docs, package or app metadata, landing-page copy, manifests, and design tokens. Treat context as sufficient when the product purpose, primary audience, and intended personality can be inferred with reasonable confidence.\n3. When product context is insufficient, ask one consolidated round of background questions covering what the product does, who it serves, and how it should feel. Do not start a second background questionnaire. Continue with the best supported interpretation after the answer.\n4. Once context is sufficient, always present three concise directions before generation and explicitly propose generating six independent candidates in one batch. Do not generate until the user agrees, unless the current request already explicitly authorizes six outputs or asks the agent to proceed without another confirmation.\n5. Choose the three proposed directions deliberately:\n   - When the user explicitly specifies an IP subject, keep that subject and propose three distinct design treatments based on silhouette treatment, secondary color region, defining feature, or personality emphasis.\n   - When the user does not specify an IP subject, propose three genuinely different IP subjects or metaphors. Tie each one to a different product attribute or brand promise; do not return three arbitrary animals with no rationale.\n6. Interpret the user's response exactly:\n   - If the user accepts all three directions and the six-image proposal, generate two independent variants per direction and label them `A1`, `A2`, `B1`, `B2`, `C1`, and `C2`. Assign `A1`, `B1`, and `C1` to the lower-left and `A2`, `B2`, and `C2` to the lower-right so every direction is tested once from each side.\n   - If the user selects one direction but accepts six images, generate six controlled variants of that direction and label them `A1` through `A6`. Assign odd-numbered variants to the lower-left and even-numbered variants to the lower-right.\n   - If the user rejects the proposed quantity, directions, or distribution, follow the user's replacement instructions without arguing for the default.\n   - For any other even default batch size, split candidates equally between lower-left and lower-right. For an odd batch, assign the extra candidate to either side deliberately and record the imbalance. Do not use bottom-center unless the user explicitly requests it.\n7. Default every candidate to exactly three semantic colors in the complete image: exactly two IP base colors plus exactly one background color. Reuse the two IP colors for facial marks rather than introducing additional semantic colors. Follow an explicit user request for another color count. Keep required product cues, identifying features, complexity limits, and any supplied palette consistent enough for useful comparison.\n8. Determine the available image-generation path before promising output. In Codex, use ImageGen when it is available. In any other agent environment, use an available configured image generator; if none is available, ask the user whether they can provide or enable one. Do not fabricate generated results.\n9. If the runtime supports subagents, parallelize the six independent candidates up to the available concurrency. Give every subagent the same product brief, shared constraints, and one assigned direction or variant; run remaining candidates in subsequent waves when capacity is limited. If subagents are unavailable, generate the candidates through separate image-generation calls or jobs.\n10. If the user supplies a background palette, reserve every supplied color for backgrounds unless they explicitly say otherwise. Choose exactly two IP base colors independently for the subject and context unless the user also assigns subject colors. Do not treat any historical or example palette as a closed list of allowed backgrounds.\n11. Abstract each subject using the complexity budget below. Generate every candidate as a separate full-resolution square asset; never ask an image model to compose a contact sheet, grid, or multi-image sheet. Do not use previous candidates as image references when testing prompt-only reproducibility.\n12. Treat each batch as a one-pass creative draw. Generate every requested candidate once, then preserve and deliver every returned result as-is. Do not inspect outputs to block delivery, classify them as recommended or non-recommended, retry them automatically, or repair them with post-processing.\n13. Preserve and label every generated result. Report every label, IP direction and rationale, assigned corner, saved path, prompt/color mapping, and dimensions. Present all results together; generate refinements or replacements only when the user explicitly asks for another draw.\n\nWhen proposing directions before generation, describe each in one compact line: `<IP subject> \u2014 <product connection> \u2014 <defining silhouette>`. End with a direct proposal to generate six images using the distribution above. Do not turn the discovery phase into a long branding workshop unless the user asks for one.\n\n## Complexity budget\n\n- Build one dominant continuous outer silhouette from roughly `4\u20137` large basic geometric shapes. Merge or delete any shape that does not carry identity, expression, or recognition.\n- Use at most one species-defining feature: for example, one large pouch beak, one pair of curled horns, or one broad visor.\n- Use at most two broad internal color regions corresponding to the two IP base colors. Keep the face to two eyes and, only when needed for the expression, one tiny mouth. Omit eyebrows, highlights, nostrils, texture, outlines, and decorative marks unless essential for recognition.\n- Remove repeated feathers, scales, fur tufts, armor plates, buttons, screws, numbers, labels, and other illustrative detail.\n- Make simplification, cuteness, and an endearing baby-like personality the decisive qualities. Favor a large head, compact proportions, soft cheeks, widely spaced simple eyes, and a calm friendly expression when appropriate to the subject.\n- Require a readable black silhouette and recognizability at `32 \u00d7 32`. If a feature disappears or becomes noise at that size, enlarge, merge, or remove it.\n\n## Shape language and composition\n\n- Use thick, rounded, weighty contours and broad color masses.\n- Forbid sharp corners, pointed ears or beaks, needle-like tails, thin antennae, thin smiles, narrow gaps, and acute flame or feather tips. Replace every necessary tip with a visibly blunt rounded end.\n- Show both members of paired identifying features, such as ears, horns, wings, gills, or bells.\n- Show the character upright and emerging from the assigned lower-left or lower-right corner, filling about `85\u201395%` of the canvas so the IP remains visually dominant.\n- Cropping at the bottom or assigned side is welcome when it strengthens the sense of emerging from that corner, but do not prescribe exact edge contact or a fixed crop.\n- Never center or bottom-center the character unless the user explicitly requests it.\n- Preserve both members of paired identifying features within the visible composition.\n- Keep the artwork upright; never rotate the canvas or tilt the main mark without an explicit request.\n\n## Simplicity and visual treatment\n\n- Start from large, clean semantic shapes and the strongest possible simple silhouette. The character should be understood immediately, before any internal feature is noticed.\n- Prefer fewer, larger, softer forms over extra definition. Do not add a feature merely to explain anatomy or material.\n- Keep facial marks tiny, simple, and subordinate. Do not add glossy hotspots or detailed cavity rendering to eyes, mouths, noses, or other small features.\n- Keep the named background color visually solid and uniform, without scenery, texture, halo, vignette, or lighting variation.\n- Ask for the subtle dimensional effect only with the single sentence used in the Prompt skeleton. Do not expand it into numerical strength or instructions for gradients, highlights, or shadows. Incidental gradients, shading, or mild dimensionality returned by the generator are acceptable and must not trigger filtering or retrying.\n- Keep the requested visual direction graphic and simple rather than asking for clay, inflatable, plastic, plush, toy-like, or photorealistic rendering.\n\n## Color and canvas\n\n- Default to exactly three semantic colors in the complete image: exactly two IP base colors plus exactly one background color.\n- Choose the two IP colors from the product context, subject identity, intended personality, and user request. Organize both into broad purposeful masses; reuse one for facial marks and keep the other in one continuous defining region rather than scattering decorative fragments.\n- Choose both subject colors independently from the background. Favor clear, lively subject colors when appropriate, but do not impose global saturation, OKLCH, hue-shift, or chroma bands on the IP.\n- Choose the background freely for the context or from a user-supplied palette. Unless the user asks for vivid color, gently mute the background by lowering its saturation a little; keep it clearly chromatic and intentional rather than vivid, gray, or muddy. Historical palettes and examples are suggestions only, never an allowlist or mandatory default palette.\n- Preserve clear visual separation between the dominant IP silhouette, its facial marks, and the background. If a user-supplied background causes weak separation, adjust the subject colors first rather than replacing the requested background.\n- Across a batch, vary the two-IP-color strategies deliberately instead of repeating the same neutral-heavy combination.\n- Treat the two character colors as semantic color families. Incidental tonal variation within either family does not invalidate an output.\n- Name the intended solid background color directly. Ask for it to fill every open area and the unoccupied corners while the assigned emergence corner is occupied by the character. Do not use image-mode terms such as `opaque`, `alpha`, or `transparency` in the generation prompt.\n- Generate a direct `1:1` square with square outer corners. Request approximately `1536 \u00d7 1536`; accept and preserve a native `1254 \u00d7 1254` result when that is the service output limit. Never resample merely to reach the requested number.\n\n## Prompt skeleton\n\n### Route constraints by generator capability\n\nDetermine the available image model and its actual tool schema from runtime metadata, configured provider documentation, or an explicit user statement. Do not guess a model or invent unsupported parameters.\n\nDescribe the requested visual as an image only. Never tell the image generator that the image is a `logo`, `brand mark`, `app icon`, `icon asset`, or intended for any of those uses. Do not prepend use-case or asset-type scaffolding that reveals such a use. This rule applies only to the generation prompt; the surrounding user conversation and Skill name may still describe the broader project.\n\n- For modern instruction-following image models such as GPT Image 2, Nano Banana Pro, and Seedream 5.0 Pro, keep the complete positive prompt and express the minimal exclusions as the natural-language `Constraints:` line inside the main prompt. Do not create a separate negative-prompt payload for these models.\n- For an older model or runtime that explicitly exposes a dedicated parameter such as `negative_prompt`, keep every positive prompt line unchanged and deliver the minimal exclusions through that dedicated parameter in the syntax required by the available adapter. Omit the natural-language `Constraints:` line from the main prompt to avoid duplicating the same exclusions in both channels.\n- For an older model without a dedicated negative-prompt parameter, follow its documented prompt format. When only one prompt string is available, retain the concise natural-language `Constraints:` line.\n- Record the model or provider, the detected constraint-delivery mode (`main-prompt constraints` or `dedicated negative parameter`), and the exact constraint text or payload in the generation report.\n\nWhen a dedicated legacy negative-prompt parameter is available, adapt this minimal payload to its required syntax:\n\n```text\ntext, watermark, borders, frames, cards, presentation masks, extra subjects, scenery, thin fragile lines, sharp tips, photorealistic materials, strong three-dimensional rendering, external cast shadows\n```\n\nFor modern instruction-following models and single-prompt interfaces, use the following complete prompt:\n\n```text\nCreate one complete full-bleed 1:1 square image.\nBackground: fill the entire square with solid <background>. Keep <background> visible in every open area and in the corners not occupied by the character; the assigned emergence corner must be occupied by the character.\nSubject: place one extremely simplified, cute, endearing <subject> IP character on the background, reduced to one soft rounded continuous silhouette and one defining feature.\nComplexity: use only 4\u20137 large basic shapes and at most two broad internal color regions. Use two simple eyes and add one tiny mouth only when it helps the expression. Remove every nonessential line, outline, anatomical detail, texture, and decoration. Keep the character readable at 32 \u00d7 32.\nColor behavior: use exactly three semantic colors in the complete image: exactly two IP base colors plus the background color. Choose the two IP colors from the subject and context, organize both into broad purposeful masses, and reuse them for facial marks. Choose the background independently or follow the user's supplied background. Unless the user asks for vivid color, lower the background saturation slightly so it feels gently muted and restrained while remaining clearly chromatic, clean, and intentional rather than gray or muddy. Keep the IP, facial marks, and background clearly separated. Treat any example palette as optional inspiration, never as an allowlist.\nComposition: keep the character upright and emerging from the assigned <lower-left or lower-right>, filling about 85\u201395% of the square so it remains visually dominant. Cropping at the bottom or assigned side is welcome when it strengthens the corner emergence. Preserve both paired identifying features. Never center or bottom-center the character.\nStyle: make simplification, cuteness, and lovable baby-like appeal the strongest qualities. Use large soft forms, compact proportions, thick rounded contours, and an ultra-clean graphic treatment. Prefer one clear shape over several explanatory details. Add an extremely, extremely subtle, almost imperceptible sense of depth through a barely-there neo-skeuomorphic treatment.\nFinish: show only the character on the full-canvas background, with clean surfaces and normal square outer corners.\nConstraints: Use no text or watermark. Add no borders, frames, cards, or presentation masks. Include one character only, with no extra subjects or scenery. Use no fragile lines, sharp tips, unnecessary outlines, tiny details, or decorative marks. Add no photorealistic material, dramatic bevel, glossy hotspot, deep occlusion, extrusion, strong three-dimensional rendering, or external cast shadow. Keep the background solid and uniform, with no texture, vignette, or lighting variation.\n```\n\n## Delivery behavior\n\n- Treat generation as a stochastic draw, not a conformance test.\n- Generate the requested number of independent candidates once and deliver every returned image.\n- Do not inspect or report alpha, transparency, or background mode by default.\n- Do not block delivery, rank candidates as compliant or non-compliant, mark them as recommended or non-recommended, or automatically retry any result because of its background, colors, detail, composition, gradient, shading, or dimensionality.\n- Do not post-process a result to make it appear more compliant. If the user later requests another direction or replacement, generate a new independent candidate in response to that explicit request.\n",
+      "whatYouGet": [
+        "A full SKILL.md with the workflow, the complexity limits and the colour rules",
+        "A three-directions-then-six-candidates approval loop rather than one-shot generation",
+        "Explicit guidance to keep the mark legible at 32\u00d732",
+        "Image-only generation prompts that never mention logo or app-icon use, which is what stops a model producing a mockup instead of a mark"
+      ],
+      "install": [
+        "npx skills@latest add s1dashu/ip-as-logo-skill",
+        "Add --global for a personal install available across projects",
+        "Needs an image generator available in the agent \u2014 ImageGen in Codex, or any configured generator elsewhere"
+      ],
+      "techStack": [
+        "Agent Skills",
+        "Codex",
+        "Claude Code"
+      ],
+      "tags": [
+        "logo",
+        "branding",
+        "image-generation",
+        "skills"
+      ],
+      "keywords": [
+        "mascot",
+        "ip",
+        "logo",
+        "avatar"
+      ],
+      "addedAt": "2026-08-20T21:42:09.000Z",
+      "addedBy": "Dan"
     }
   ]
 }

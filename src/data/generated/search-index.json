@@ -2034,6 +2034,51 @@
     "pick": false
   },
   {
+    "kind": "tool",
+    "slug": "kitbitz",
+    "name": "Kitbitz",
+    "blurb": "2,000+ hand-drawn illustrations across 13 themed Figma kits — built as reusable components with colour variables and smart resizi…",
+    "meta": "Design engineering / illustration",
+    "badge": "Free",
+    "pick": true
+  },
+  {
+    "kind": "tool",
+    "slug": "forge-ui8",
+    "name": "Forge (UI8)",
+    "blurb": "Free macOS app that opens a local web project as a visual canvas — arrange and edit the real thing rather than a mockup of it. Fi…",
+    "meta": "Design engineering / design-to-code",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "spherium",
+    "name": "Spherium",
+    "blurb": "WebGL globe and map generator in the browser — pick a projection and region, choose the point shape (triangle, hex, matrix, line)…",
+    "meta": "Design engineering / illustration",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "bible-strong-avatar-lab",
+    "name": "Bible Strong Avatar Lab",
+    "blurb": "Procedural 2D avatar studio in the browser — build a character from parts, set expressions and animations, then export it as reus…",
+    "meta": "Design engineering / illustration",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "hunk",
+    "name": "hunk",
+    "blurb": "Terminal diff viewer built for reviewing agent-authored changesets — a multi-file review stream rather than a per-file pager, wit…",
+    "meta": "AI coding / code review",
+    "badge": "Free",
+    "pick": true
+  },
+  {
     "kind": "starter",
     "slug": "humanizer",
     "name": "Humanizer",
@@ -4050,6 +4095,15 @@
     "pick": false
   },
   {
+    "kind": "starter",
+    "slug": "ip-as-logo",
+    "name": "IP as Logo",
+    "blurb": "Generates simple, cute mascot logos that still read at 32×32 — three directions, then six candidates for approval.",
+    "meta": "Skill",
+    "badge": "Skill",
+    "pick": false
+  },
+  {
     "kind": "resource",
     "slug": "claude-model-and-effort-level-in-claude-code",
     "name": "Claude model and effort level in Claude Code",
@@ -4369,6 +4423,15 @@
     "slug": "spectr-gallery",
     "name": "Spectr gallery",
     "blurb": "Live browser-rendered previews of every screen in the 200 apps that awesome-ios-design-md documents, so you can see the interface…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "frontpages",
+    "name": "Frontpages",
+    "blurb": "A curated gallery of landing page front pages — hero sections from across the web, searchable by category and company, updated we…",
     "meta": "Directory",
     "badge": "Resource",
     "pick": false
