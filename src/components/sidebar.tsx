@@ -9,7 +9,12 @@ import { ThemeToggle } from "@/components/theme-toggle";
 
 type NavItem = { href: string; label: string; count?: number };
 
-export type SidebarData = { counts: Record<string, number> };
+export type SidebarData = {
+  counts: Record<string, number>;
+  /** Passed in rather than imported: the DESIGN.md index is 90KB and this is a client
+      component, so importing it here would ship it on every page. */
+  designApps: number;
+};
 
 /**
  * Navigation only. Filters used to live down here as link lists, which meant the rail
@@ -17,7 +22,7 @@ export type SidebarData = { counts: Record<string, number> };
  * filtered as the layout allows. They are dropdowns beside each search bar now, which is
  * where a list's own controls belong.
  */
-export function Sidebar({ counts }: SidebarData) {
+export function Sidebar({ counts, designApps }: SidebarData) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
@@ -31,6 +36,7 @@ export function Sidebar({ counts }: SidebarData) {
     { href: "/tools", label: "Tools", count: counts.tools },
     { href: "/starters", label: "Starters", count: counts.starters },
     { href: "/resources", label: "Resources", count: counts.resources },
+    { href: "/design-md", label: "DESIGN.md", count: designApps },
     { href: "/collections", label: "Collections" },
   ];
 

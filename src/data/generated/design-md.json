@@ -1,0 +1,5292 @@
+{
+  "flavours": [
+    {
+      "key": "neutral",
+      "file": "DESIGN.md",
+      "label": "Framework-neutral",
+      "for": "Any agent, any framework"
+    },
+    {
+      "key": "swiftui",
+      "file": "DESIGN-swiftui.md",
+      "label": "SwiftUI",
+      "for": "Native iOS"
+    },
+    {
+      "key": "expo",
+      "file": "DESIGN-expo.md",
+      "label": "Expo",
+      "for": "React Native"
+    },
+    {
+      "key": "android",
+      "file": "DESIGN-android.md",
+      "label": "Jetpack Compose",
+      "for": "Android"
+    }
+  ],
+  "apps": [
+    {
+      "slug": "acorns",
+      "name": "Acorns",
+      "category": "finance",
+      "summary": "Micro-investing with spare change. Dual brand Acorns Oak `#5A2B82` + Acorn Green `#6FBF4E`, a sweeping multi-segment allocation donut, the purple Round-Ups card (`#5A2B82 → #7B43A8`), and a Found Money cashback feed on deep aubergine `#14121A`.",
+      "accent": "#5A2B82",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24742
+        },
+        {
+          "k": "swiftui",
+          "b": 16167
+        },
+        {
+          "k": "expo",
+          "b": 15817
+        },
+        {
+          "k": "android",
+          "b": 21447
+        }
+      ],
+      "bytes": 78173
+    },
+    {
+      "slug": "airbnb",
+      "name": "Airbnb",
+      "category": "travel",
+      "summary": "Stays + Experiences. Rausch / `#FF385C` coral, Airbnb Cereal font, photography-first stay cards, category chip rail, subtle card shadows",
+      "accent": "#FF385C",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27829
+        },
+        {
+          "k": "swiftui",
+          "b": 17969
+        },
+        {
+          "k": "expo",
+          "b": 18798
+        },
+        {
+          "k": "android",
+          "b": 30470
+        }
+      ],
+      "bytes": 95066
+    },
+    {
+      "slug": "alltrails",
+      "name": "AllTrails",
+      "category": "fitness",
+      "summary": "Hiking + trails. AllTrails Green `#428000`, topo-map base, trail cards with the difficulty color scale (easy/moderate/hard) + length/elevation stats, route-trace draw",
+      "accent": "#428000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 23335
+        },
+        {
+          "k": "swiftui",
+          "b": 14046
+        },
+        {
+          "k": "expo",
+          "b": 15941
+        },
+        {
+          "k": "android",
+          "b": 21484
+        }
+      ],
+      "bytes": 74806
+    },
+    {
+      "slug": "amazon",
+      "name": "Amazon",
+      "category": "misc",
+      "summary": "E-commerce. Amazon Yellow `#FF9900` Add-to-Cart, Deep Navy `#131921` top nav, PDP price block with superscript cents, Prime badge, Amazon Ember",
+      "accent": "#FF9900",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25845
+        },
+        {
+          "k": "swiftui",
+          "b": 17720
+        },
+        {
+          "k": "expo",
+          "b": 16566
+        },
+        {
+          "k": "android",
+          "b": 31635
+        }
+      ],
+      "bytes": 91766
+    },
+    {
+      "slug": "amazon-music",
+      "name": "Amazon Music",
+      "category": "music",
+      "summary": "Music streaming, deep teal dark. A teal-navy `#0C1B22` canvas with the signature X-Ray synced-lyrics panel (current line in bright cyan `#25D1DA`) and a cyan `#00A8E1` glow play button on a top-down player gradient.",
+      "accent": "#0C1B22",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24006
+        },
+        {
+          "k": "swiftui",
+          "b": 18643
+        },
+        {
+          "k": "expo",
+          "b": 15692
+        },
+        {
+          "k": "android",
+          "b": 21476
+        }
+      ],
+      "bytes": 79817
+    },
+    {
+      "slug": "apple-fitness",
+      "name": "Apple Fitness",
+      "category": "fitness",
+      "summary": "Activity tracking and Fitness+ streaming. True-black canvas `#000000` with the three Activity rings as the entire brand (Move `#FA114F`, Exercise `#92E82A`, Stand `#1EE4E1`) on 22%-opacity tracks, grouped system cards `#1C1C1E`, Apple’s label-opacity text ramp, a Move-pink chrome accent `#FF375F`, and a cinematic Fitness+ shelf with frosted-glass overlays.",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26677
+        },
+        {
+          "k": "swiftui",
+          "b": 16937
+        },
+        {
+          "k": "expo",
+          "b": 16707
+        },
+        {
+          "k": "android",
+          "b": 22441
+        }
+      ],
+      "bytes": 82762
+    },
+    {
+      "slug": "apple-maps",
+      "name": "Apple Maps",
+      "category": "travel",
+      "summary": "Apple's native navigation. Cream parchment cartography `#F6F1E6` land + `#B9D9EB` water, Maps Blue `#0A84FF` directions polyline, pulsing current-location puck, `.regularMaterial` blur on the sliding search card (88/50/full detents), SF Pro tabular figures",
+      "accent": "#F6F1E6",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 30007
+        },
+        {
+          "k": "swiftui",
+          "b": 23509
+        },
+        {
+          "k": "expo",
+          "b": 20519
+        },
+        {
+          "k": "android",
+          "b": 31642
+        }
+      ],
+      "bytes": 105677
+    },
+    {
+      "slug": "apple-music",
+      "name": "Apple Music",
+      "category": "music",
+      "summary": "Music + lyrics. Apple Music Red `#FA2D48`, SF Pro native, time-synced word-by-word lyrics, Dolby Atmos badge, `.regularMaterial` tab bar",
+      "accent": "#FA2D48",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 33813
+        },
+        {
+          "k": "swiftui",
+          "b": 21295
+        },
+        {
+          "k": "expo",
+          "b": 23134
+        },
+        {
+          "k": "android",
+          "b": 34578
+        }
+      ],
+      "bytes": 112820
+    },
+    {
+      "slug": "apple-notes",
+      "name": "Apple Notes",
+      "category": "productivity",
+      "summary": "The calmest note-taker. Warm Notes Cream canvas `#FFFBED`, Notes Orange `#F09A38` FAB + folder stroke, yellow folder glyph `#F5D773`, SF Pro 34pt Heavy nav, 17pt 400 body with 1.5 line-height, no tab bar",
+      "accent": "#FFFBED",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25668
+        },
+        {
+          "k": "swiftui",
+          "b": 18338
+        },
+        {
+          "k": "expo",
+          "b": 17515
+        },
+        {
+          "k": "android",
+          "b": 32469
+        }
+      ],
+      "bytes": 93990
+    },
+    {
+      "slug": "apple-tv",
+      "name": "Apple TV",
+      "category": "video",
+      "summary": "Video streaming, true-black minimal. A pure `#000000` OLED canvas with an inset rounded floating hero, the Up Next rail of 16:9 thumbnails with white resume bars, one system-blue `#0A84FF` accent for links and the active tab, a white Play CTA, and MLS Season Pass hot-pink `#ED1A6F`.",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25863
+        },
+        {
+          "k": "swiftui",
+          "b": 15242
+        },
+        {
+          "k": "expo",
+          "b": 15422
+        },
+        {
+          "k": "android",
+          "b": 20312
+        }
+      ],
+      "bytes": 76839
+    },
+    {
+      "slug": "apple-wallet",
+      "name": "Apple Wallet",
+      "category": "finance",
+      "summary": "Cards + passes. True-black canvas, 80pt-peek vertical card stack with 10pt-radius envelopes, Apple Card titanium gradient `#E8E8EB → #3D3D3F`, SF Pro Display/Text, no tab bar — the stack is the whole app",
+      "accent": "#E8E8EB",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26262
+        },
+        {
+          "k": "swiftui",
+          "b": 16458
+        },
+        {
+          "k": "expo",
+          "b": 18140
+        },
+        {
+          "k": "android",
+          "b": 31146
+        }
+      ],
+      "bytes": 92006
+    },
+    {
+      "slug": "asana",
+      "name": "Asana",
+      "category": "productivity",
+      "summary": "project & task management. The task list IS the product: 20pt completion circles that fill green (#62D26F) on tap, a single coral accent (#F06A6A) for the FAB and active tab, multicolor object pills as ~16% tints (plum #4573D2, aqua #4ECBC4), and a charcoal dark canvas (#1E1F21).",
+      "accent": "#62D26F",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26752
+        },
+        {
+          "k": "swiftui",
+          "b": 17241
+        },
+        {
+          "k": "expo",
+          "b": 16343
+        },
+        {
+          "k": "android",
+          "b": 21162
+        }
+      ],
+      "bytes": 81498
+    },
+    {
+      "slug": "audible",
+      "name": "Audible",
+      "category": "music",
+      "summary": "Audiobooks. Audible Orange `#FF9900` on warm charcoal `#1A1A1A`, Playfair/Inter pairing, progress-ring cover, speed-dial + 30s-skip player, Captions",
+      "accent": "#FF9900",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 22153
+        },
+        {
+          "k": "swiftui",
+          "b": 17444
+        },
+        {
+          "k": "expo",
+          "b": 14633
+        },
+        {
+          "k": "android",
+          "b": 21009
+        }
+      ],
+      "bytes": 75239
+    },
+    {
+      "slug": "bandcamp",
+      "name": "Bandcamp",
+      "category": "music",
+      "summary": "Music marketplace, paper editorial. Light #FFFFFF and #F4F4F4 canvas where big square album art is the hero and a scarce Bandcamp Teal #1DA0C3 marks artist links, the buy price, and the collection; the signature is the album page with a name-your-price buy-and-support card and a social fan-collection feed.",
+      "accent": "#FFFFFF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25146
+        },
+        {
+          "k": "swiftui",
+          "b": 16316
+        },
+        {
+          "k": "expo",
+          "b": 15287
+        },
+        {
+          "k": "android",
+          "b": 23386
+        }
+      ],
+      "bytes": 80135
+    },
+    {
+      "slug": "bear",
+      "name": "Bear",
+      "category": "productivity",
+      "summary": "Markdown notes and writing app. Calm charcoal canvas (#21252B) with live in-place Markdown, inline #hashtag tokens and a single red-to-orange brand gradient (#E0566F to #FF8A65); every interactive glyph is Bear Orange (#FF8A65).",
+      "accent": "#21252B",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27005
+        },
+        {
+          "k": "swiftui",
+          "b": 18155
+        },
+        {
+          "k": "expo",
+          "b": 17477
+        },
+        {
+          "k": "android",
+          "b": 23122
+        }
+      ],
+      "bytes": 85759
+    },
+    {
+      "slug": "bereal",
+      "name": "BeReal",
+      "category": "social",
+      "summary": "Authentic dual-camera social. Stark pure-black `#000000` canvas, no brand accent (white-only), dual front+back composite card, 2-minute countdown, RealMojis, zero vanity metrics",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 20034
+        },
+        {
+          "k": "swiftui",
+          "b": 12754
+        },
+        {
+          "k": "expo",
+          "b": 12409
+        },
+        {
+          "k": "android",
+          "b": 18739
+        }
+      ],
+      "bytes": 63936
+    },
+    {
+      "slug": "binance",
+      "name": "Binance",
+      "category": "finance",
+      "summary": "Dark-native crypto exchange terminal. Single Binance Yellow `#F0B90B` accent on a near-black `#0B0E11` canvas, absolute market green `#0ECB81` / red `#F6465D`, a dense markets list with colored percentage pills, and a depth-shaded order book over IBM Plex Mono tabular figures.",
+      "accent": "#F0B90B",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25487
+        },
+        {
+          "k": "swiftui",
+          "b": 17487
+        },
+        {
+          "k": "expo",
+          "b": 16496
+        },
+        {
+          "k": "android",
+          "b": 23231
+        }
+      ],
+      "bytes": 82701
+    },
+    {
+      "slug": "bluesky",
+      "name": "Bluesky",
+      "category": "social",
+      "summary": "Custom-feeds social. Bluesky Blue `#1185FE`, butterfly mark, switchable pinned custom feeds, reply-control chips, three themes (light / dim `#1E2936` / dark `#0B0F14`)",
+      "accent": "#1185FE",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 19431
+        },
+        {
+          "k": "swiftui",
+          "b": 13100
+        },
+        {
+          "k": "expo",
+          "b": 14048
+        },
+        {
+          "k": "android",
+          "b": 19822
+        }
+      ],
+      "bytes": 66401
+    },
+    {
+      "slug": "booking",
+      "name": "Booking.com",
+      "category": "travel",
+      "summary": "Travel booking. Booking navy `#003580` + bright-blue `#0071C2` action + yellow `#FEBB02`, the review-score badge, dense property cards, Genius banner",
+      "accent": "#003580",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21614
+        },
+        {
+          "k": "swiftui",
+          "b": 14481
+        },
+        {
+          "k": "expo",
+          "b": 14576
+        },
+        {
+          "k": "android",
+          "b": 20699
+        }
+      ],
+      "bytes": 71370
+    },
+    {
+      "slug": "bumble",
+      "name": "Bumble",
+      "category": "dating",
+      "summary": "Women-first dating. Bumble Yellow `#FFC629` + pure-black-on-yellow text, hexagon iconography for matches and mode toggles, big confident Brando 500/700/900, 24-hour countdown chip mechanic",
+      "accent": "#FFC629",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 30142
+        },
+        {
+          "k": "swiftui",
+          "b": 21335
+        },
+        {
+          "k": "expo",
+          "b": 23814
+        },
+        {
+          "k": "android",
+          "b": 35339
+        }
+      ],
+      "bytes": 110630
+    },
+    {
+      "slug": "cal-ai",
+      "name": "Cal AI",
+      "category": "misc",
+      "summary": "AI calorie tracking. Near-black `#0A0A0A` canvas, white-on-black CTAs, macro trio accents (blue/amber/pink), capture FAB with subtle glow",
+      "accent": "#0A0A0A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 22369
+        },
+        {
+          "k": "swiftui",
+          "b": 17671
+        },
+        {
+          "k": "expo",
+          "b": 16035
+        },
+        {
+          "k": "android",
+          "b": 32068
+        }
+      ],
+      "bytes": 88143
+    },
+    {
+      "slug": "calm",
+      "name": "Calm",
+      "category": "fitness",
+      "summary": "Meditation + sleep. Calm Blue `#2A6FD6` night-sky gradient, nature-photo backdrops, the 4-7-8 breathe bubble, Daily Calm card, Lora serif + Inter, sleep-story rows",
+      "accent": "#2A6FD6",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21956
+        },
+        {
+          "k": "swiftui",
+          "b": 12377
+        },
+        {
+          "k": "expo",
+          "b": 14894
+        },
+        {
+          "k": "android",
+          "b": 19249
+        }
+      ],
+      "bytes": 68476
+    },
+    {
+      "slug": "canva",
+      "name": "Canva",
+      "category": "productivity",
+      "summary": "Design and creativity tool. Bright workspace (#FFFFFF / dark #18191B) with the cyan-to-purple brand gradient (#00C4CC to #7D2AE8) on the logo, primary CTA and a centered lifted create FAB; full-color template galleries with gold Pro badges (#FFC24B).",
+      "accent": "#FFFFFF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26636
+        },
+        {
+          "k": "swiftui",
+          "b": 16505
+        },
+        {
+          "k": "expo",
+          "b": 15593
+        },
+        {
+          "k": "android",
+          "b": 22303
+        }
+      ],
+      "bytes": 81037
+    },
+    {
+      "slug": "cash-app",
+      "name": "Cash App",
+      "category": "finance",
+      "summary": "Mobile money. Pure-black canvas + single Cash Green `#00D632` accent, Cash Sans / Cash Sans Mono, 96pt $-amount keypad, icon-only tab bar, matte black Cash Card",
+      "accent": "#00D632",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25265
+        },
+        {
+          "k": "swiftui",
+          "b": 18076
+        },
+        {
+          "k": "expo",
+          "b": 18555
+        },
+        {
+          "k": "android",
+          "b": 30557
+        }
+      ],
+      "bytes": 92453
+    },
+    {
+      "slug": "character-ai",
+      "name": "Character.AI",
+      "category": "misc",
+      "summary": "Immersive conversation with an AI persona. Near-black canvas `#0F0F10`, asymmetric bubbles set apart by a 4pt tucked corner (AI `#1C1C1F` / user `#26262A`) rather than color, italic `*roleplay actions*` in muted `#9A9AA2`, and a single rationed accent blue `#3A7BFD` on the send button and CTAs.",
+      "accent": "#0F0F10",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24614
+        },
+        {
+          "k": "swiftui",
+          "b": 17480
+        },
+        {
+          "k": "expo",
+          "b": 17282
+        },
+        {
+          "k": "android",
+          "b": 23017
+        }
+      ],
+      "bytes": 82393
+    },
+    {
+      "slug": "charles-schwab",
+      "name": "Charles Schwab",
+      "category": "finance",
+      "summary": "Confident full-service brokerage and trading. Schwab Blue `#009DDC` (with dark-navy `#002233` on-color text) on a maritime-navy canvas `#0A1622`, a navy-gradient `#003B5C → #002A42` Total Value hero, flat hairline account rows, the segmented Buy/Sell trade ticket centerpiece, and sacred gain `#18B07B` / loss `#E2564E` tabular numerals.",
+      "accent": "#009DDC",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26783
+        },
+        {
+          "k": "swiftui",
+          "b": 19246
+        },
+        {
+          "k": "expo",
+          "b": 17232
+        },
+        {
+          "k": "android",
+          "b": 23045
+        }
+      ],
+      "bytes": 86306
+    },
+    {
+      "slug": "chatgpt",
+      "name": "ChatGPT",
+      "category": "misc",
+      "summary": "AI chat. Monochromatic canvas, 32pt black/white circular send button, user-bubble vs inline-assistant asymmetry, full-screen pulsing blue voice-mode sphere, Söhne",
+      "accent": "#FFFFFF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 30238
+        },
+        {
+          "k": "swiftui",
+          "b": 24717
+        },
+        {
+          "k": "expo",
+          "b": 24072
+        },
+        {
+          "k": "android",
+          "b": 36499
+        }
+      ],
+      "bytes": 115526
+    },
+    {
+      "slug": "chime",
+      "name": "Chime",
+      "category": "finance",
+      "summary": "Mobile banking. Chime Mint `#1EC677` / `#00D67E` as the entire brand personality, a full `#1EC677 → #12A862` gradient balance hero with the amount at 44pt 700 in near-black mint ink `#062014` plus a mint-glow shadow, a SpotMe fee-free-overdraft banner, slide-down instant transaction alerts with a solid-mint check icon, spending kept neutral ink (red `#FF6B6B` only for declined/negative), Posted/Pending/SpotMe/Declined status chips, and heavily rounded geometry on a deep green-charcoal `#0E1411` dark canvas",
+      "accent": "#1EC677",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25833
+        },
+        {
+          "k": "swiftui",
+          "b": 17613
+        },
+        {
+          "k": "expo",
+          "b": 16954
+        },
+        {
+          "k": "android",
+          "b": 22953
+        }
+      ],
+      "bytes": 83353
+    },
+    {
+      "slug": "chipotle",
+      "name": "Chipotle",
+      "category": "food",
+      "summary": "QSR ordering. Chipotle Red `#A81612` on cream kraft `#FFF5E1`, build-your-burrito ingredient stepper, ALL-CAPS Archivo headers, rewards ring",
+      "accent": "#A81612",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 20656
+        },
+        {
+          "k": "swiftui",
+          "b": 12763
+        },
+        {
+          "k": "expo",
+          "b": 11970
+        },
+        {
+          "k": "android",
+          "b": 18059
+        }
+      ],
+      "bytes": 63448
+    },
+    {
+      "slug": "citymapper",
+      "name": "Citymapper",
+      "category": "travel",
+      "summary": "Multimodal transit and live navigation. Theme-invariant mode colors (walk `#00B894`, bus `#E8453C`, tube `#2B5BFF`), the colored leg strip, and the shape-locked green GO pill `#00C281`, on a deep blue-black `#0C0E14` dark canvas.",
+      "accent": "#00B894",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26550
+        },
+        {
+          "k": "swiftui",
+          "b": 17603
+        },
+        {
+          "k": "expo",
+          "b": 16589
+        },
+        {
+          "k": "android",
+          "b": 22019
+        }
+      ],
+      "bytes": 82761
+    },
+    {
+      "slug": "claude",
+      "name": "Claude",
+      "category": "misc",
+      "summary": "AI assistant by Anthropic. Warm cream paper canvas + Claude Orange terracotta + Tiempos serif assistant body (the brand's central typographic decision) / Styrene sans for user and chrome, asterisk-star logomark on every message, streaming orange cursor",
+      "accent": "#F8F4ED",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 33452
+        },
+        {
+          "k": "swiftui",
+          "b": 26032
+        },
+        {
+          "k": "expo",
+          "b": 26348
+        },
+        {
+          "k": "android",
+          "b": 28712
+        }
+      ],
+      "bytes": 114544
+    },
+    {
+      "slug": "clickup",
+      "name": "ClickUp",
+      "category": "productivity",
+      "summary": "all-in-one productivity & project management. The 3-stop brand gradient (purple #7B68EE → pink #FD71AF → blue #49CCF9) is reserved for the squircle FAB, primary CTA, and AI surfaces; the task list groups by solid custom-status pills, priority is a colored flag triangle, all over a deep blue-violet canvas (#1B1B2E).",
+      "accent": "#7B68EE",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28083
+        },
+        {
+          "k": "swiftui",
+          "b": 18073
+        },
+        {
+          "k": "expo",
+          "b": 17359
+        },
+        {
+          "k": "android",
+          "b": 24002
+        }
+      ],
+      "bytes": 87517
+    },
+    {
+      "slug": "clubhouse",
+      "name": "Clubhouse",
+      "category": "social",
+      "summary": "live-audio social rooms. Warm cream \"hallway\" canvas (`#F2EFE4`) with DM Serif room titles, a grid of circular speaker avatars, and an emerald speaking-pulse ring (`#38B569` + `rgba(56,181,105,0.18)` halo) — all-pill controls, warm `#1A1A1A` dark mode, no blue anywhere.",
+      "accent": "#F2EFE4",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28093
+        },
+        {
+          "k": "swiftui",
+          "b": 19416
+        },
+        {
+          "k": "expo",
+          "b": 18384
+        },
+        {
+          "k": "android",
+          "b": 25722
+        }
+      ],
+      "bytes": 91615
+    },
+    {
+      "slug": "coffee-meets-bagel",
+      "name": "Coffee Meets Bagel",
+      "category": "dating",
+      "summary": "curated dating & relationships. A cozy coffee-house palette — brew-brown (#A0522D) + bagel-orange (#F4623A) + cream (#F3E4CF) over a roasted brown-black canvas (#14100D); one curated Today's Bagel card at a time (24pt radius, full-bleed photo) with a noticeably oversized bagel-orange Like, a roasted-brown Pass, and a brew-brown Send a Bagel; cream replaces pure white everywhere and a match fires an orange→brown takeover with bagel confetti.",
+      "accent": "#A0522D",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26032
+        },
+        {
+          "k": "swiftui",
+          "b": 15600
+        },
+        {
+          "k": "expo",
+          "b": 16085
+        },
+        {
+          "k": "android",
+          "b": 22481
+        }
+      ],
+      "bytes": 80198
+    },
+    {
+      "slug": "coinbase",
+      "name": "Coinbase",
+      "category": "finance",
+      "summary": "Crypto exchange. Coinbase Blue `#0052FF` + geometric C-mark, Coinbase Sans/Display/Mono (Frere-Jones, 2021), brand-color asset icons (BTC orange, ETH purple), mini sparklines, 4-up Buy/Sell/Send/Receive quad",
+      "accent": "#0052FF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27156
+        },
+        {
+          "k": "swiftui",
+          "b": 19102
+        },
+        {
+          "k": "expo",
+          "b": 20203
+        },
+        {
+          "k": "android",
+          "b": 29067
+        }
+      ],
+      "bytes": 95528
+    },
+    {
+      "slug": "craft",
+      "name": "Craft",
+      "category": "productivity",
+      "summary": "docs & notes editor. The blue→purple gradient (#2F5BEA → #6E56CF) carries every primary action and the rounded-square FAB; structural blocks render as soft-shadowed cards with tinted icon chips on a warm canvas (#FCFCFD light / #1A1A1E dark), titles in Inter 28pt extrabold, plus a first-class Daily Note card.",
+      "accent": "#2F5BEA",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27678
+        },
+        {
+          "k": "swiftui",
+          "b": 18266
+        },
+        {
+          "k": "expo",
+          "b": 17917
+        },
+        {
+          "k": "android",
+          "b": 24755
+        }
+      ],
+      "bytes": 88616
+    },
+    {
+      "slug": "crunchyroll",
+      "name": "Crunchyroll",
+      "category": "video",
+      "summary": "cinematic anime streaming platform. True-black OLED canvas (#000000) with a single Crunchyroll Orange accent (#F47521), full-bleed key-art heroes with a #000-fading scrim, and a resume-aware episode list with orange progress bars and Sub | Dub badges.",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26790
+        },
+        {
+          "k": "swiftui",
+          "b": 16418
+        },
+        {
+          "k": "expo",
+          "b": 15389
+        },
+        {
+          "k": "android",
+          "b": 21084
+        }
+      ],
+      "bytes": 79681
+    },
+    {
+      "slug": "crypto-com",
+      "name": "Crypto.com",
+      "category": "finance",
+      "summary": "Premium navy crypto super-app. A two-blue system (brand navy `#002D74` / `#103F68` for hero, electric `#1199FA` for interaction) on a navy-tinted `#03060F` canvas, the brushed-metal tiered Visa card with gold `#C8A24A` embossing, and a floating center Trade tab over Roboto Mono money.",
+      "accent": "#002D74",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25407
+        },
+        {
+          "k": "swiftui",
+          "b": 18124
+        },
+        {
+          "k": "expo",
+          "b": 16770
+        },
+        {
+          "k": "android",
+          "b": 22899
+        }
+      ],
+      "bytes": 83200
+    },
+    {
+      "slug": "deepseek",
+      "name": "DeepSeek",
+      "category": "misc",
+      "summary": "AI reasoning chat assistant. A near-black canvas (#0E0E10) with exactly one accent — DeepSeek Blue (#4D6BFE) on the whale mark, user bubble, and active DeepThink/Search toggles; the signature is the reasoning trace: a recessed #16171A panel (darker than the canvas) with a 2pt blue left-bar holding the R1 chain-of-thought in dimmed italic #8A8B90, subordinate to an upright #ECECEC answer.",
+      "accent": "#0E0E10",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25175
+        },
+        {
+          "k": "swiftui",
+          "b": 15613
+        },
+        {
+          "k": "expo",
+          "b": 16241
+        },
+        {
+          "k": "android",
+          "b": 24408
+        }
+      ],
+      "bytes": 81437
+    },
+    {
+      "slug": "deezer",
+      "name": "Deezer",
+      "category": "music",
+      "summary": "Music streaming, gradient dark. Violet near-black #0F0D13 canvas with a scarce purple-to-pink gradient (#A238FF to #FF0092) lighting only the 68pt circular play button, the scrubber fill, and the Flow badge; the signature is the living-gradient Flow artwork with an embedded white equalizer and pink now-playing rows.",
+      "accent": "#0F0D13",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25844
+        },
+        {
+          "k": "swiftui",
+          "b": 17819
+        },
+        {
+          "k": "expo",
+          "b": 17249
+        },
+        {
+          "k": "android",
+          "b": 23090
+        }
+      ],
+      "bytes": 84002
+    },
+    {
+      "slug": "deliveroo",
+      "name": "Deliveroo",
+      "category": "food",
+      "summary": "Food delivery. One brand color — Deliveroo Teal `#00CCBC` (pressed `#00A99C`) — for the kangaroo logo, every button, ratings, Plus and the active tab, with deep Teal Ink `#003733` labels on teal fills, wide 5:3 restaurant photo cards, a signature delivery-fee pill, a floating teal `+` on menu thumbnails, and promo gold `#FFC100` for deals only, over a warm `#121212` dark canvas",
+      "accent": "#00CCBC",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28001
+        },
+        {
+          "k": "swiftui",
+          "b": 16382
+        },
+        {
+          "k": "expo",
+          "b": 17839
+        },
+        {
+          "k": "android",
+          "b": 24634
+        }
+      ],
+      "bytes": 86856
+    },
+    {
+      "slug": "delta",
+      "name": "Delta",
+      "category": "travel",
+      "summary": "Airline travel concierge, boarding-pass-first. Navy→red boarding pass (Delta Blue `#003268` → widget red `#C8102E`), on-time green `#1E8E5A` status timeline, SkyMiles gold `#C99700`.",
+      "accent": "#003268",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26039
+        },
+        {
+          "k": "swiftui",
+          "b": 17668
+        },
+        {
+          "k": "expo",
+          "b": 15943
+        },
+        {
+          "k": "android",
+          "b": 21893
+        }
+      ],
+      "bytes": 81543
+    },
+    {
+      "slug": "discord",
+      "name": "Discord",
+      "category": "messaging",
+      "summary": "Community chat. Blurple `#5865F2`, three-gray surface system `#1E1F22`/`#2B2D31`/`#313338`, server rail with squircle-morph on active, role-colored usernames, gg sans",
+      "accent": "#5865F2",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27315
+        },
+        {
+          "k": "swiftui",
+          "b": 22731
+        },
+        {
+          "k": "expo",
+          "b": 22542
+        },
+        {
+          "k": "android",
+          "b": 30384
+        }
+      ],
+      "bytes": 102972
+    },
+    {
+      "slug": "disney-plus",
+      "name": "Disney+",
+      "category": "video",
+      "summary": "Premium streaming. Deep space-navy `#0A0E2A` starfield, Disney Blue `#0063E5` + glow `#1A75FF`, brand-portal tile row (Disney/Pixar/Marvel/Star Wars/Nat Geo), 16:9 rails",
+      "accent": "#0A0E2A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 22077
+        },
+        {
+          "k": "swiftui",
+          "b": 16111
+        },
+        {
+          "k": "expo",
+          "b": 14866
+        },
+        {
+          "k": "android",
+          "b": 21566
+        }
+      ],
+      "bytes": 74620
+    },
+    {
+      "slug": "dominos",
+      "name": "Domino's",
+      "category": "food",
+      "summary": "Pizza ordering. Domino's Red `#E31837` action + Blue `#006491` info, 5-stage pizza tracker, build-your-pizza topping layout, deal cards",
+      "accent": "#E31837",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 20576
+        },
+        {
+          "k": "swiftui",
+          "b": 13460
+        },
+        {
+          "k": "expo",
+          "b": 12916
+        },
+        {
+          "k": "android",
+          "b": 19332
+        }
+      ],
+      "bytes": 66284
+    },
+    {
+      "slug": "doordash",
+      "name": "DoorDash",
+      "category": "food",
+      "summary": "On-demand delivery. DoorDash Red `#EB1700` for every checkout, photo-first 16:10 merchant cards, floating pill CTA, TT Norms Pro bold hierarchy",
+      "accent": "#EB1700",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 22289
+        },
+        {
+          "k": "swiftui",
+          "b": 11369
+        },
+        {
+          "k": "expo",
+          "b": 12606
+        },
+        {
+          "k": "android",
+          "b": 25978
+        }
+      ],
+      "bytes": 72242
+    },
+    {
+      "slug": "dropbox",
+      "name": "Dropbox",
+      "category": "productivity",
+      "summary": "Cloud storage. Dropbox Blue `#0061FF` on warm paper-white, colored file-type rows, preview thumbnail grid, the upload FAB, share sheet",
+      "accent": "#0061FF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21701
+        },
+        {
+          "k": "swiftui",
+          "b": 15273
+        },
+        {
+          "k": "expo",
+          "b": 14443
+        },
+        {
+          "k": "android",
+          "b": 22184
+        }
+      ],
+      "bytes": 73601
+    },
+    {
+      "slug": "duolingo",
+      "name": "Duolingo",
+      "category": "misc",
+      "summary": "Language learning. Feather Green `#58CC02`, Feather Bold font, mascot-driven gamification, streak + gems + hearts currency",
+      "accent": "#58CC02",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26542
+        },
+        {
+          "k": "swiftui",
+          "b": 20463
+        },
+        {
+          "k": "expo",
+          "b": 24303
+        },
+        {
+          "k": "android",
+          "b": 31190
+        }
+      ],
+      "bytes": 102498
+    },
+    {
+      "slug": "ebay",
+      "name": "eBay",
+      "category": "finance",
+      "summary": "Auction marketplace. Four-color identity (red `#E53238` / blue `#0064D2` / yellow `#F5AF02` / green `#86B817`), bid-vs-Buy-It-Now badges, watch heart, time-left countdown",
+      "accent": "#E53238",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 20921
+        },
+        {
+          "k": "swiftui",
+          "b": 12202
+        },
+        {
+          "k": "expo",
+          "b": 13644
+        },
+        {
+          "k": "android",
+          "b": 19723
+        }
+      ],
+      "bytes": 66490
+    },
+    {
+      "slug": "espn",
+      "name": "ESPN",
+      "category": "video",
+      "summary": "fast live-first sports scoreboard platform. Near-black canvas (#0E0F11, never pure black) with a single ESPN Red accent (#D50A0A), a pinned horizontal scores ticker, pulsing #FF1A1A LIVE badges, and the winning team's score in green (#1FAA59) with tabular numerals.",
+      "accent": "#0E0F11",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26829
+        },
+        {
+          "k": "swiftui",
+          "b": 17367
+        },
+        {
+          "k": "expo",
+          "b": 16901
+        },
+        {
+          "k": "android",
+          "b": 22954
+        }
+      ],
+      "bytes": 84051
+    },
+    {
+      "slug": "etsy",
+      "name": "Etsy",
+      "category": "finance",
+      "summary": "Handmade marketplace. Etsy Orange `#F1641E` on warm-cream `#FAF5EF`, handmade product cards, the favorite-heart bounce, shop-front banners, review stars",
+      "accent": "#F1641E",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 20214
+        },
+        {
+          "k": "swiftui",
+          "b": 11949
+        },
+        {
+          "k": "expo",
+          "b": 13642
+        },
+        {
+          "k": "android",
+          "b": 19689
+        }
+      ],
+      "bytes": 65494
+    },
+    {
+      "slug": "evernote",
+      "name": "Evernote",
+      "category": "productivity",
+      "summary": "note-taking & knowledge capture. Calm neutral canvas (near-white light, true near-black `#1C1C1E` dark) with the single brand Evernote Green `#00A82D` for FAB/checkboxes/links, warm ink `#1C2B33`, green tag pills, and a 1.6 reading rhythm.",
+      "accent": "#1C1C1E",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26770
+        },
+        {
+          "k": "swiftui",
+          "b": 16431
+        },
+        {
+          "k": "expo",
+          "b": 14844
+        },
+        {
+          "k": "android",
+          "b": 20345
+        }
+      ],
+      "bytes": 78390
+    },
+    {
+      "slug": "expedia",
+      "name": "Expedia",
+      "category": "travel",
+      "summary": "Travel booking. Expedia Yellow `#FFC94D` savings accent + Action Blue `#1668E3` + navy `#00355F` review-score badge, the search-and-results loop, Bundle + Save, One Key gold `#F5C518` earn lines",
+      "accent": "#FFC94D",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27651
+        },
+        {
+          "k": "swiftui",
+          "b": 17376
+        },
+        {
+          "k": "expo",
+          "b": 17701
+        },
+        {
+          "k": "android",
+          "b": 22793
+        }
+      ],
+      "bytes": 85521
+    },
+    {
+      "slug": "facebook",
+      "name": "Facebook",
+      "category": "social",
+      "summary": "Social network. Facebook Blue `#1877F2`, `#F0F2F5` feed background, 7-emoji Reactions popover with drag-select, profile cover hero",
+      "accent": "#1877F2",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 32041
+        },
+        {
+          "k": "swiftui",
+          "b": 18677
+        },
+        {
+          "k": "expo",
+          "b": 19649
+        },
+        {
+          "k": "android",
+          "b": 29889
+        }
+      ],
+      "bytes": 100256
+    },
+    {
+      "slug": "feeld",
+      "name": "Feeld",
+      "category": "dating",
+      "summary": "Open-minded dating, dark-native. True-black canvas `#000000` with one rationed acid-yellow `#E8FF63` accent, desire pink `#FF5C8A`, a full-bleed 28pt Discover card with couple-aware names and a heavy `rgba(0,0,0,0.72)→0.92` gradient, plus the three-state Desire chip system.",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24273
+        },
+        {
+          "k": "swiftui",
+          "b": 15931
+        },
+        {
+          "k": "expo",
+          "b": 15507
+        },
+        {
+          "k": "android",
+          "b": 21011
+        }
+      ],
+      "bytes": 76722
+    },
+    {
+      "slug": "fidelity",
+      "name": "Fidelity",
+      "category": "finance",
+      "summary": "Institutional brokerage and portfolio tracking. Fidelity Green `#368727` + Heritage Green `#00754A` on a calm evergreen dark canvas `#0E1411`, a 34pt tabular account-value hero with sparkline and range tabs, flat hairline holding rows, and sacred gain `#15B374` / loss `#E5544B` numerals with a sticky green Trade bar.",
+      "accent": "#368727",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26152
+        },
+        {
+          "k": "swiftui",
+          "b": 17965
+        },
+        {
+          "k": "expo",
+          "b": 17124
+        },
+        {
+          "k": "android",
+          "b": 21294
+        }
+      ],
+      "bytes": 82535
+    },
+    {
+      "slug": "figma",
+      "name": "Figma",
+      "category": "productivity",
+      "summary": "Design + collaboration. Five iconic brand cubes (`#F24E1E` `#FF7262` `#A259FF` `#1ABCFE` `#0ACF83`) for avatars/thumbnails/cursors, Action Blue `#0D99FF` for the real CTA, Inter at 11–16pt density, `#1E1E1E` dark canvas matching the Editor",
+      "accent": "#F24E1E",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26252
+        },
+        {
+          "k": "swiftui",
+          "b": 19429
+        },
+        {
+          "k": "expo",
+          "b": 18605
+        },
+        {
+          "k": "android",
+          "b": 27497
+        }
+      ],
+      "bytes": 91783
+    },
+    {
+      "slug": "fitbit",
+      "name": "Fitbit",
+      "category": "fitness",
+      "summary": "Supportive health dashboard. Fitbit Teal `#00B0B9` (brightening to `#21D9CE` on dark) on a teal-black `#001017` canvas, a per-metric color system (heart-rate coral `#FF6B81`, sleep purple `#7C5CFF`, readiness lime `#B8E986`), and the steps progress-ring hero with big-number-first DM Sans tiles.",
+      "accent": "#00B0B9",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25212
+        },
+        {
+          "k": "swiftui",
+          "b": 14741
+        },
+        {
+          "k": "expo",
+          "b": 16043
+        },
+        {
+          "k": "android",
+          "b": 20999
+        }
+      ],
+      "bytes": 76995
+    },
+    {
+      "slug": "flickr",
+      "name": "Flickr",
+      "category": "social",
+      "summary": "Photo sharing & community. Near-black gallery canvas (`#0C0D0E`), justified photo mosaic with 3pt gutters, twin brand dots (Pink `#FF0084` + Blue `#0063DC`), and a monospace EXIF camera-detail table.",
+      "accent": "#0C0D0E",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25965
+        },
+        {
+          "k": "swiftui",
+          "b": 18084
+        },
+        {
+          "k": "expo",
+          "b": 17629
+        },
+        {
+          "k": "android",
+          "b": 23750
+        }
+      ],
+      "bytes": 85428
+    },
+    {
+      "slug": "flighty",
+      "name": "Flighty",
+      "category": "travel",
+      "summary": "Flight tracking. Flighty Blue `#0A84FF` on deep-black `#0B0B0F`, live great-circle flight arc, on-time stats, Live-Activity status bar, delay timeline",
+      "accent": "#0A84FF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 20954
+        },
+        {
+          "k": "swiftui",
+          "b": 13046
+        },
+        {
+          "k": "expo",
+          "b": 13959
+        },
+        {
+          "k": "android",
+          "b": 20443
+        }
+      ],
+      "bytes": 68402
+    },
+    {
+      "slug": "flo",
+      "name": "Flo",
+      "category": "fitness",
+      "summary": "Cycle tracking. Flo Coral `#FF6B81` + lavender `#C5B3E6`, the rotating cycle-phase wheel, symptom-log chips, reassuring prediction cards, soft rounded surfaces",
+      "accent": "#FF6B81",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 22119
+        },
+        {
+          "k": "swiftui",
+          "b": 13842
+        },
+        {
+          "k": "expo",
+          "b": 14885
+        },
+        {
+          "k": "android",
+          "b": 20363
+        }
+      ],
+      "bytes": 71209
+    },
+    {
+      "slug": "garmin-connect",
+      "name": "Garmin Connect",
+      "category": "fitness",
+      "summary": "Fitness tracking and activity analysis. True-black canvas `#000000` with a single Garmin Blue accent `#007CC3` (brightened to `#2A9FD6` on black), a glowing GPS route line, a condensed tabular stat grid, Training Status ring, Body Battery gauge `#2EA8E0`, and the green-to-red HR-zone ramp (`#4CAF50 → #E5402A`).",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26865
+        },
+        {
+          "k": "swiftui",
+          "b": 19718
+        },
+        {
+          "k": "expo",
+          "b": 18193
+        },
+        {
+          "k": "android",
+          "b": 24764
+        }
+      ],
+      "bytes": 89540
+    },
+    {
+      "slug": "gas",
+      "name": "Gas",
+      "category": "social",
+      "summary": "joyful anonymous compliments for schools. Full-bleed indigo-to-purple gradient (#6C5CE7 to #A06CFF) behind a big white poll card, four fixed festive choice colors, and the flame #FF7A45 currency loop.",
+      "accent": "#6C5CE7",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25772
+        },
+        {
+          "k": "swiftui",
+          "b": 14194
+        },
+        {
+          "k": "expo",
+          "b": 14198
+        },
+        {
+          "k": "android",
+          "b": 20538
+        }
+      ],
+      "bytes": 74702
+    },
+    {
+      "slug": "github",
+      "name": "GitHub",
+      "category": "misc",
+      "summary": "Developer tooling, the Primer system on mobile. Dark default canvas `#0D1117` with one accent blue `#2F81F7` and a reserved green `#238636` for Code/Merge only, the iconic contributions heatmap (`#161B22 → #39D353`), semantic state pills (open `#3FB950` / merged `#A371F7` / closed `#F85149`), and a monospace code browser + diff viewer.",
+      "accent": "#0D1117",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26135
+        },
+        {
+          "k": "swiftui",
+          "b": 20408
+        },
+        {
+          "k": "expo",
+          "b": 21386
+        },
+        {
+          "k": "android",
+          "b": 25517
+        }
+      ],
+      "bytes": 93446
+    },
+    {
+      "slug": "gmail",
+      "name": "Gmail",
+      "category": "misc",
+      "summary": "Email. Google multicolor logo, Gmail Red `#D93025` Compose FAB (16pt squircle), Material You active-indicator pill, swipe archive/delete, Google Sans + Roboto",
+      "accent": "#D93025",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 29236
+        },
+        {
+          "k": "swiftui",
+          "b": 18770
+        },
+        {
+          "k": "expo",
+          "b": 16998
+        },
+        {
+          "k": "android",
+          "b": 26982
+        }
+      ],
+      "bytes": 91986
+    },
+    {
+      "slug": "goodreads",
+      "name": "Goodreads",
+      "category": "misc",
+      "summary": "books, reviews & reading tracking. Warm tan paper canvas (`#F4F1EA` light, ink-brown `#161310` dark) with literary brown `#382110` chrome, full-color cover grids, the load-bearing amber five-star rating `#E9A100`, a green Want-to-Read CTA `#409D69`, teal links `#00635D`, and a serif 1.6 reading rhythm.",
+      "accent": "#F4F1EA",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24942
+        },
+        {
+          "k": "swiftui",
+          "b": 15960
+        },
+        {
+          "k": "expo",
+          "b": 16395
+        },
+        {
+          "k": "android",
+          "b": 21864
+        }
+      ],
+      "bytes": 79161
+    },
+    {
+      "slug": "google-calendar",
+      "name": "Google Calendar",
+      "category": "productivity",
+      "summary": "Scheduling. Material on iOS: Google Blue `#1A73E8` FAB at Material Level 6, Material primaries (Blue/Red/Yellow/Green) + 24-color user palette, Google Sans Display + SF Pro Text hybrid, 36pt Schedule banners with today as filled blue circle",
+      "accent": "#1A73E8",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28593
+        },
+        {
+          "k": "swiftui",
+          "b": 22000
+        },
+        {
+          "k": "expo",
+          "b": 21103
+        },
+        {
+          "k": "android",
+          "b": 28278
+        }
+      ],
+      "bytes": 99974
+    },
+    {
+      "slug": "gemini",
+      "name": "Google Gemini",
+      "category": "misc",
+      "summary": "AI assistant. Gemini gradient `#4285F4 → #9B72CB → #D96570`, the sparkle mark, document-not-feed conversation (user chip / assistant text), streaming shimmer",
+      "accent": "#4285F4",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 22852
+        },
+        {
+          "k": "swiftui",
+          "b": 16169
+        },
+        {
+          "k": "expo",
+          "b": 15731
+        },
+        {
+          "k": "android",
+          "b": 23935
+        }
+      ],
+      "bytes": 78687
+    },
+    {
+      "slug": "google-maps",
+      "name": "Google Maps",
+      "category": "travel",
+      "summary": "Navigation. Google Blue `#4285F4` route polyline, map-as-hero with floating bottom sheet drawer, color-coded pins, turn-by-turn immersive mode",
+      "accent": "#4285F4",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27626
+        },
+        {
+          "k": "swiftui",
+          "b": 19057
+        },
+        {
+          "k": "expo",
+          "b": 19002
+        },
+        {
+          "k": "android",
+          "b": 31429
+        }
+      ],
+      "bytes": 97114
+    },
+    {
+      "slug": "grammarly",
+      "name": "Grammarly",
+      "category": "productivity",
+      "summary": "writing assistant & grammar checker. One brand accent — Grammarly Green (#15C39A → #11A683) — carries every CTA, the animated document score ring, and the assistant orb; suggestion underlines are color-coded by category (Correctness red #E5484D, Clarity blue #3B82F6, Engagement green #16A34A, Delivery purple #8B5CF6); the suggestion card slides up from the bottom over a warm charcoal canvas (#121212).",
+      "accent": "#15C39A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27071
+        },
+        {
+          "k": "swiftui",
+          "b": 15966
+        },
+        {
+          "k": "expo",
+          "b": 15854
+        },
+        {
+          "k": "android",
+          "b": 22018
+        }
+      ],
+      "bytes": 80909
+    },
+    {
+      "slug": "grindr",
+      "name": "Grindr",
+      "category": "dating",
+      "summary": "Proximity dating. Grindr Yellow `#FFDE00` on true black, the dense proximity thumbnail cascade, online dots, distance overlays, profile sheet, Taps",
+      "accent": "#FFDE00",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21355
+        },
+        {
+          "k": "swiftui",
+          "b": 13488
+        },
+        {
+          "k": "expo",
+          "b": 13294
+        },
+        {
+          "k": "android",
+          "b": 21200
+        }
+      ],
+      "bytes": 69337
+    },
+    {
+      "slug": "grok",
+      "name": "Grok",
+      "category": "misc",
+      "summary": "Real-time AI chat. True-black `#000000` monochrome conversation, link-blue `#1D9BF0` as the only chroma, real-time X citation card, regular/fun mode toggle, streaming cursor",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24494
+        },
+        {
+          "k": "swiftui",
+          "b": 15371
+        },
+        {
+          "k": "expo",
+          "b": 14716
+        },
+        {
+          "k": "android",
+          "b": 21340
+        }
+      ],
+      "bytes": 75921
+    },
+    {
+      "slug": "groupme",
+      "name": "GroupMe",
+      "category": "messaging",
+      "summary": "Friendly group-messaging design system. Solid GroupMe-Blue chat nav bar (`#00AFF0`), blue outbound bubbles with neutral inbound (`#F0F0F0` / `#2A2A2C`), a docked heart-like count pill (`#FF3B5C`), circular gradient avatars, and per-group color themes.",
+      "accent": "#00AFF0",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27538
+        },
+        {
+          "k": "swiftui",
+          "b": 17849
+        },
+        {
+          "k": "expo",
+          "b": 18053
+        },
+        {
+          "k": "android",
+          "b": 25333
+        }
+      ],
+      "bytes": 88773
+    },
+    {
+      "slug": "grubhub",
+      "name": "Grubhub",
+      "category": "food",
+      "summary": "Food delivery. Grubhub Red `#F63440` primary action (pressed `#D2202B`) + Grubhub Orange `#FF8000` for deals and savings + a gold `#FFB81C` Grubhub+ Perks badge, wide 16:9 restaurant photography in 14pt rounded cards, a green rating star `#18A957`, and a live order-tracking timeline on a calm Track Blue `#00A0DF` accent over a warm `#121212` dark canvas",
+      "accent": "#F63440",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28562
+        },
+        {
+          "k": "swiftui",
+          "b": 17170
+        },
+        {
+          "k": "expo",
+          "b": 17840
+        },
+        {
+          "k": "android",
+          "b": 24587
+        }
+      ],
+      "bytes": 88159
+    },
+    {
+      "slug": "happn",
+      "name": "happn",
+      "category": "dating",
+      "summary": "Crossed-paths dating, timeline-first. happn pink `#FF4865` fading to magenta `#E91E63` as connective tissue across a connector-line Crossings feed, location+time stamps, the one-tap Charm heart (shadow `rgba(255,72,101,0.5)`), teardrop map pins, and a reserved Crush gold `#FFC24B` celebration on a graphite `#0E0E12` canvas.",
+      "accent": "#FF4865",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24907
+        },
+        {
+          "k": "swiftui",
+          "b": 16710
+        },
+        {
+          "k": "expo",
+          "b": 17094
+        },
+        {
+          "k": "android",
+          "b": 21688
+        }
+      ],
+      "bytes": 80399
+    },
+    {
+      "slug": "headspace",
+      "name": "Headspace",
+      "category": "fitness",
+      "summary": "Meditation + sleep. Butter-cream canvas `#FFF7E7`, Marigold `#FF6B35` primary + Aurora gradient (peach → butter → marigold) wash, 234pt breathing meditation sphere on a 12s 4-2-4-2 ease-in-out cycle, Apercu/Nunito title case with 1.5 line-height",
+      "accent": "#FFF7E7",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28691
+        },
+        {
+          "k": "swiftui",
+          "b": 18777
+        },
+        {
+          "k": "expo",
+          "b": 21659
+        },
+        {
+          "k": "android",
+          "b": 30594
+        }
+      ],
+      "bytes": 99721
+    },
+    {
+      "slug": "hevy",
+      "name": "Hevy",
+      "category": "fitness",
+      "summary": "Workout logger built around the live set table. Single-accent Hevy Blue `#1E6FFF` on a near-black training canvas `#0E1116`, completed sets washing green `#2FBF71`, an auto-starting rest-timer pill, and a gold `#F5B83D` PR badge that fires when you beat a record.",
+      "accent": "#1E6FFF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26740
+        },
+        {
+          "k": "swiftui",
+          "b": 15728
+        },
+        {
+          "k": "expo",
+          "b": 16629
+        },
+        {
+          "k": "android",
+          "b": 22768
+        }
+      ],
+      "bytes": 81865
+    },
+    {
+      "slug": "hinge",
+      "name": "Hinge",
+      "category": "dating",
+      "summary": "Relationship-intent dating. Cream paper + warm Hinge Black + sacred Rose Gold accent for Standouts/Roses, vertical-scroll profiles with prompt cards in Sailec 24pt Bold, 44pt heart-tap on every reactive surface",
+      "accent": "#1A1A1A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 30323
+        },
+        {
+          "k": "swiftui",
+          "b": 20065
+        },
+        {
+          "k": "expo",
+          "b": 22062
+        },
+        {
+          "k": "android",
+          "b": 33556
+        }
+      ],
+      "bytes": 106006
+    },
+    {
+      "slug": "hopper",
+      "name": "Hopper",
+      "category": "travel",
+      "summary": "Price-prediction travel. Hopper Red `#FA4747` + bunny, the buy/wait price-prediction calendar heatmap, watch-price toggle, fare cards",
+      "accent": "#FA4747",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 19693
+        },
+        {
+          "k": "swiftui",
+          "b": 13257
+        },
+        {
+          "k": "expo",
+          "b": 13887
+        },
+        {
+          "k": "android",
+          "b": 20221
+        }
+      ],
+      "bytes": 67058
+    },
+    {
+      "slug": "hulu",
+      "name": "Hulu",
+      "category": "video",
+      "summary": "Content-dense streaming. Electric Hulu Green `#1CE783` Watch CTA on near-black `#0B0C0F`, 16:9 tiles, hub chips, continue-watching progress",
+      "accent": "#1CE783",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21473
+        },
+        {
+          "k": "swiftui",
+          "b": 14181
+        },
+        {
+          "k": "expo",
+          "b": 13494
+        },
+        {
+          "k": "android",
+          "b": 19572
+        }
+      ],
+      "bytes": 68720
+    },
+    {
+      "slug": "iheartradio",
+      "name": "iHeartRadio",
+      "category": "music",
+      "summary": "Live radio & podcasts, warm dark. Maroon-black #120A0E canvas with a scarce red-to-magenta system (#C6002B to #E40A5D, coral #F23A2F) lighting the 68pt circular play button and a pulsing LIVE badge; the signature is the live-station player with a heart-logomark tile and an indeterminate scanning bar instead of a scrubber (live radio cannot seek).",
+      "accent": "#120A0E",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25766
+        },
+        {
+          "k": "swiftui",
+          "b": 17786
+        },
+        {
+          "k": "expo",
+          "b": 17645
+        },
+        {
+          "k": "android",
+          "b": 23686
+        }
+      ],
+      "bytes": 84883
+    },
+    {
+      "slug": "imessage",
+      "name": "iMessage",
+      "category": "messaging",
+      "summary": "Apple's system messaging surface. Blue/gray bubble pair with outgoing iMessage Blue (#007AFF), SMS Green (#34C759) fallback, incoming gray (#E9E9EB / #26262A), the six-glyph tapback strip, pulsing typing dots, and true-black (#000000) OLED dark mode.",
+      "accent": "#007AFF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26931
+        },
+        {
+          "k": "swiftui",
+          "b": 16180
+        },
+        {
+          "k": "expo",
+          "b": 15731
+        },
+        {
+          "k": "android",
+          "b": 20696
+        }
+      ],
+      "bytes": 79538
+    },
+    {
+      "slug": "instacart",
+      "name": "Instacart",
+      "category": "food",
+      "summary": "Grocery delivery. Instacart Green `#0AAD0A` + carrot `#FF7009`, aisle browse, the − n + qty stepper, replacement-preference flow, green cart bar",
+      "accent": "#0AAD0A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21270
+        },
+        {
+          "k": "swiftui",
+          "b": 13806
+        },
+        {
+          "k": "expo",
+          "b": 14040
+        },
+        {
+          "k": "android",
+          "b": 20792
+        }
+      ],
+      "bytes": 69908
+    },
+    {
+      "slug": "instagram",
+      "name": "Instagram",
+      "category": "social",
+      "summary": "Photo & video social. Monochrome chrome, 10-stop brand gradient reserved for Stories + Create, icon-only tab bar, true-black OLED dark mode",
+      "accent": "#833AB4",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 23508
+        },
+        {
+          "k": "swiftui",
+          "b": 12661
+        },
+        {
+          "k": "expo",
+          "b": 11407
+        },
+        {
+          "k": "android",
+          "b": 29714
+        }
+      ],
+      "bytes": 77290
+    },
+    {
+      "slug": "jira",
+      "name": "Jira",
+      "category": "productivity",
+      "summary": "project & issue tracking. Atlassian-neutral canvas (light `#FFFFFF`/`#F7F8F9`, dark `#1D2125`) with the single brand Jira Blue `#0052CC` for actions, Navy `#172B4D` ink, semantic status lozenges, and the drag-to-transition sprint board.",
+      "accent": "#FFFFFF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28495
+        },
+        {
+          "k": "swiftui",
+          "b": 18185
+        },
+        {
+          "k": "expo",
+          "b": 15768
+        },
+        {
+          "k": "android",
+          "b": 21495
+        }
+      ],
+      "bytes": 83943
+    },
+    {
+      "slug": "kakaotalk",
+      "name": "KakaoTalk",
+      "category": "messaging",
+      "summary": "Korea’s super-app messenger design system. Kakao Yellow outbound bubbles (`#FEE500`) on Kakao Brown text (`#3C1E1E`), the iconic side-docked yellow unread \"N\", rounded-square avatars, and a blue-gray chat backdrop (`#B2C7DA` / `#1E2A33`).",
+      "accent": "#FEE500",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28018
+        },
+        {
+          "k": "swiftui",
+          "b": 17465
+        },
+        {
+          "k": "expo",
+          "b": 16965
+        },
+        {
+          "k": "android",
+          "b": 23830
+        }
+      ],
+      "bytes": 86278
+    },
+    {
+      "slug": "kayak",
+      "name": "KAYAK",
+      "category": "travel",
+      "summary": "Travel metasearch. KAYAK Orange `#FF690F` as the single scarce accent over a near-neutral canvas, the color-coded price calendar (green `#1E9E5A` / red `#E5484D`), forecast banner, fare-compare matrix, and Hacker Fares",
+      "accent": "#FF690F",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26175
+        },
+        {
+          "k": "swiftui",
+          "b": 18665
+        },
+        {
+          "k": "expo",
+          "b": 16896
+        },
+        {
+          "k": "android",
+          "b": 23538
+        }
+      ],
+      "bytes": 85274
+    },
+    {
+      "slug": "kick",
+      "name": "Kick",
+      "category": "video",
+      "summary": "Creator-first live streaming. Near-black canvas (#0E0E10) with one screaming electric-green brand color (#53FC18) on every CTA; signature video-plus-streamer-bar-plus-chat watch page with role-colored usernames (mod #3EA6FF, sub #FFC700, VIP #FF4FD8) and a red #FF1F44 LIVE pill.",
+      "accent": "#0E0E10",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27469
+        },
+        {
+          "k": "swiftui",
+          "b": 18844
+        },
+        {
+          "k": "expo",
+          "b": 18954
+        },
+        {
+          "k": "android",
+          "b": 23334
+        }
+      ],
+      "bytes": 88601
+    },
+    {
+      "slug": "kik",
+      "name": "Kik",
+      "category": "messaging",
+      "summary": "Username-first anonymous messenger. Modern Kik Blue (#00B0F0) outgoing bubbles with dark-cyan ink (#002A36), gray incoming (#E9EAEC / #25282D), the single-letter S/D/R receipt (Read turns #00B0F0), first-class bots, circular Kik Code plates, and a neutral near-black (#121316) dark canvas (heritage Kik Green #82BC23 noted).",
+      "accent": "#00B0F0",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25832
+        },
+        {
+          "k": "swiftui",
+          "b": 15506
+        },
+        {
+          "k": "expo",
+          "b": 16407
+        },
+        {
+          "k": "android",
+          "b": 20894
+        }
+      ],
+      "bytes": 78639
+    },
+    {
+      "slug": "kindle",
+      "name": "Kindle",
+      "category": "misc",
+      "summary": "e-reading & digital library. A chrome-free reading page (default Sepia paper `#FBF0D9` / warm ink `#5F4B32`, five user themes incl. dark `#2A2A2A` / black `#000000`) with the single Amazon Orange `#FF9900` accent for CTAs and progress, a cover-grid library with orange progress bars, the Aa panel, and a justified 1.72 reading rhythm.",
+      "accent": "#FBF0D9",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 23928
+        },
+        {
+          "k": "swiftui",
+          "b": 16772
+        },
+        {
+          "k": "expo",
+          "b": 15182
+        },
+        {
+          "k": "android",
+          "b": 21618
+        }
+      ],
+      "bytes": 77500
+    },
+    {
+      "slug": "klarna",
+      "name": "Klarna",
+      "category": "finance",
+      "summary": "Buy now, pay later. Klarna Pink `#FFB3C7` + near-black text, the pay-in-4 schedule timeline, in-app shopping browser, very-soft 28pt radii",
+      "accent": "#FFB3C7",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21033
+        },
+        {
+          "k": "swiftui",
+          "b": 13716
+        },
+        {
+          "k": "expo",
+          "b": 14350
+        },
+        {
+          "k": "android",
+          "b": 19849
+        }
+      ],
+      "bytes": 68948
+    },
+    {
+      "slug": "lemon8",
+      "name": "Lemon8",
+      "category": "social",
+      "summary": "Lifestyle & social discovery. Bright editorial white canvas (`#FFFFFF`), two-column staggered masonry feed of magazine-cover cards, sparing Lemon8 Yellow (`#FFE600`) paired only with ink `#1A1A1A`, and a pastel topic-tag system (mint `#E4F5EC`, blush `#FCE8EE`, sky `#E6F0FB`).",
+      "accent": "#FFFFFF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24890
+        },
+        {
+          "k": "swiftui",
+          "b": 18167
+        },
+        {
+          "k": "expo",
+          "b": 16817
+        },
+        {
+          "k": "android",
+          "b": 23161
+        }
+      ],
+      "bytes": 83035
+    },
+    {
+      "slug": "life360",
+      "name": "Life360",
+      "category": "misc",
+      "summary": "family safety and location sharing. The family map IS the product: a deep-violet night canvas (#161325) behind a dark-styled map (#1A2138) so colored member pins pop, a fixed per-member identity color (amber #F2A33C, teal #2DD4BF, pink #F472B6) used on every pin, avatar and trail, Life360 Purple #7E57C2 as the brand spine for Circles and Places, and SOS red #FF6B6B rationed strictly for real safety events.",
+      "accent": "#161325",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27472
+        },
+        {
+          "k": "swiftui",
+          "b": 17483
+        },
+        {
+          "k": "expo",
+          "b": 17203
+        },
+        {
+          "k": "android",
+          "b": 23806
+        }
+      ],
+      "bytes": 85964
+    },
+    {
+      "slug": "line",
+      "name": "LINE",
+      "category": "messaging",
+      "summary": "Sticker-first messaging. LINE Green `#06C755`, periwinkle `#8CABD9` chat backdrop, oversized bubble-less stickers, official-account badges, super-app tabs",
+      "accent": "#06C755",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 22367
+        },
+        {
+          "k": "swiftui",
+          "b": 14270
+        },
+        {
+          "k": "expo",
+          "b": 15569
+        },
+        {
+          "k": "android",
+          "b": 22289
+        }
+      ],
+      "bytes": 74495
+    },
+    {
+      "slug": "linear",
+      "name": "Linear",
+      "category": "productivity",
+      "summary": "Fast issue tracker. Linear Purple `#5E6AD2` on near-OLED `#08090A`, ultra-dense issue list, the Cmd+K command menu, cycle bars, drawn status iconography",
+      "accent": "#5E6AD2",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 22010
+        },
+        {
+          "k": "swiftui",
+          "b": 15365
+        },
+        {
+          "k": "expo",
+          "b": 14476
+        },
+        {
+          "k": "android",
+          "b": 20914
+        }
+      ],
+      "bytes": 72765
+    },
+    {
+      "slug": "linkedin",
+      "name": "LinkedIn",
+      "category": "social",
+      "summary": "Professional network. Cream canvas `#F3F2EF`, LinkedIn Blue `#0A66C2`, 6-reaction picker, Premium gold avatar frame, Open-to-Work green ring",
+      "accent": "#F3F2EF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27711
+        },
+        {
+          "k": "swiftui",
+          "b": 17540
+        },
+        {
+          "k": "expo",
+          "b": 17360
+        },
+        {
+          "k": "android",
+          "b": 30227
+        }
+      ],
+      "bytes": 92838
+    },
+    {
+      "slug": "locket",
+      "name": "Locket",
+      "category": "social",
+      "summary": "warm, widget-first photos from your closest friends. Cream-gold world (#FFF7EC / #FFB02E) with a square full-bleed friend photo, a big white capture button with a gold ring, and a 4-up photo-history grid.",
+      "accent": "#FFF7EC",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25102
+        },
+        {
+          "k": "swiftui",
+          "b": 16092
+        },
+        {
+          "k": "expo",
+          "b": 16113
+        },
+        {
+          "k": "android",
+          "b": 22823
+        }
+      ],
+      "bytes": 80130
+    },
+    {
+      "slug": "lyft",
+      "name": "Lyft",
+      "category": "travel",
+      "summary": "Ride-hailing. Single Lyft Pink `#FF00BF` accent, map-as-hero with no tab bar, very-rounded springy ride-type selector sheet (Wait & Save / Standard / XL / Lux Black)",
+      "accent": "#FF00BF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21422
+        },
+        {
+          "k": "swiftui",
+          "b": 13068
+        },
+        {
+          "k": "expo",
+          "b": 12885
+        },
+        {
+          "k": "android",
+          "b": 18268
+        }
+      ],
+      "bytes": 65643
+    },
+    {
+      "slug": "marriott-bonvoy",
+      "name": "Marriott Bonvoy",
+      "category": "travel",
+      "summary": "Hotel loyalty. Deep Bonvoy navy `#16264A` / near-black `#1C1C1C` base with disciplined gold `#B3852A` (brightened to `#D2A23E` on dark) reserved for member value only — points balances, elite tiers, redemption, the gold Book CTA — plus big hotel heros with gold small-caps sub-brand eyebrows, points-aware rate cards, and the navy+gold Mobile Key on a `#121214` dark canvas",
+      "accent": "#16264A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27566
+        },
+        {
+          "k": "swiftui",
+          "b": 19786
+        },
+        {
+          "k": "expo",
+          "b": 18727
+        },
+        {
+          "k": "android",
+          "b": 25129
+        }
+      ],
+      "bytes": 91208
+    },
+    {
+      "slug": "mastodon",
+      "name": "Mastodon",
+      "category": "social",
+      "summary": "Federated social. Mastodon Purple `#6364FF`, `@user@instance` handles, content-warning spoilers, home/local/federated timelines, boost-with-spin, light + `#191B22` dark",
+      "accent": "#6364FF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 20147
+        },
+        {
+          "k": "swiftui",
+          "b": 13761
+        },
+        {
+          "k": "expo",
+          "b": 15122
+        },
+        {
+          "k": "android",
+          "b": 20683
+        }
+      ],
+      "bytes": 69713
+    },
+    {
+      "slug": "match",
+      "name": "Match",
+      "category": "dating",
+      "summary": "Dating and social. A full-bleed profile-photo system on a warm near-black canvas `#141414` where the entire screen is one person and a bottom `rgba(20,20,20,0.95)` gradient scrim carries the name/age/chips, a single disciplined Match Red `#E92434` (energized to `#F0203E` for the Like button and active tab on dark) drives every action, the solid-red circular Like is deliberately the loudest object in a five-button floating action dock, functional accents stay strict (green `#2ECC71` presence, blue `#1FB6FF` Super Like/verified, gold `#D6A75B` Premium, purple `#B36BD8` Boost), the profile name is bold 700 with the age a lighter 500 beside it, interest chips are frosted translucent pills, the \"It's a Match!\" moment is a full-screen maroon-to-ink `#2A1418 → #1A1A1A` celebration, and a heavy blur is the Likes You paywall",
+      "accent": "#141414",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27902
+        },
+        {
+          "k": "swiftui",
+          "b": 19033
+        },
+        {
+          "k": "expo",
+          "b": 17641
+        },
+        {
+          "k": "android",
+          "b": 24055
+        }
+      ],
+      "bytes": 88631
+    },
+    {
+      "slug": "max",
+      "name": "Max",
+      "category": "video",
+      "summary": "Prestige streaming. Gradient wordmark `#0046FF → #7B2FF7` on deep-purple `#12053A`, auto-trailer billboard, prestige rows, profile gate",
+      "accent": "#0046FF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21480
+        },
+        {
+          "k": "swiftui",
+          "b": 12931
+        },
+        {
+          "k": "expo",
+          "b": 14415
+        },
+        {
+          "k": "android",
+          "b": 20832
+        }
+      ],
+      "bytes": 69658
+    },
+    {
+      "slug": "mcdonalds",
+      "name": "McDonald's",
+      "category": "food",
+      "summary": "bold, deal-driven QSR loyalty and mobile-order platform. A two-color Golden Arches Yellow (#FFC72C, always with #1A1A1A text) and McDonald's Red (#DA291C) system over a near-black canvas (#121212), with a points-hero rewards card, a product-photo deals grid, and an elevated yellow Order FAB.",
+      "accent": "#FFC72C",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26335
+        },
+        {
+          "k": "swiftui",
+          "b": 17239
+        },
+        {
+          "k": "expo",
+          "b": 15792
+        },
+        {
+          "k": "android",
+          "b": 24331
+        }
+      ],
+      "bytes": 83697
+    },
+    {
+      "slug": "messenger",
+      "name": "Messenger",
+      "category": "messaging",
+      "summary": "Rich chat. Multi-stop brand gradient `#0A7CFF → #9D4EDD → #FF5CA0` conversation-anchored bubbles, chat-head avatars, 6-emoji reactions popover, active dots",
+      "accent": "#0A7CFF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 23438
+        },
+        {
+          "k": "swiftui",
+          "b": 15435
+        },
+        {
+          "k": "expo",
+          "b": 14914
+        },
+        {
+          "k": "android",
+          "b": 23383
+        }
+      ],
+      "bytes": 77170
+    },
+    {
+      "slug": "copilot",
+      "name": "Microsoft Copilot",
+      "category": "misc",
+      "summary": "AI companion. Copilot gradient `#FF6F61 → #FFB900` + Fluent Blue `#0078D4`, the flourish logo, Fluent acrylic surfaces, tone selector, prompt chips",
+      "accent": "#FF6F61",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24597
+        },
+        {
+          "k": "swiftui",
+          "b": 18712
+        },
+        {
+          "k": "expo",
+          "b": 16604
+        },
+        {
+          "k": "android",
+          "b": 27441
+        }
+      ],
+      "bytes": 87354
+    },
+    {
+      "slug": "microsoft-teams",
+      "name": "Microsoft Teams",
+      "category": "productivity",
+      "summary": "Work collaboration. Teams Purple `#6264A7`/`#5B5FC7`, the Teams→Channels tree, activity feed, presence dots, meeting join bar, dual light/dark",
+      "accent": "#6264A7",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 22556
+        },
+        {
+          "k": "swiftui",
+          "b": 15676
+        },
+        {
+          "k": "expo",
+          "b": 15030
+        },
+        {
+          "k": "android",
+          "b": 20197
+        }
+      ],
+      "bytes": 73459
+    },
+    {
+      "slug": "midjourney",
+      "name": "Midjourney",
+      "category": "misc",
+      "summary": "AI image generation, gallery-first. A true-black OLED canvas (#000000) with no brand accent — white (#FFFFFF) is the only primary; the 2x2 image grid carries 100% of the color while chrome stays a grey ramp (#A1A1A1 / #6E6E6E); prompts render in monospace and the Discord-heritage U1-U4 (white) / V1-V4 (dark #1A1A1A) chip grammar drives every refinement.",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25228
+        },
+        {
+          "k": "swiftui",
+          "b": 15622
+        },
+        {
+          "k": "expo",
+          "b": 16725
+        },
+        {
+          "k": "android",
+          "b": 23928
+        }
+      ],
+      "bytes": 81503
+    },
+    {
+      "slug": "miro",
+      "name": "Miro",
+      "category": "productivity",
+      "summary": "collaboration whiteboard. An infinite pinch-zoom canvas with a zoom-scaled dotted grid; Miro Yellow (#FFD02F) on Miro Ink (#050038) is the brand, while Miro Blue (#4262FF) is reserved for selection; tight 4pt-radius pastel sticky notes (default #FEF3B6) lift off the board with soft shadows, and a floating toolbar fills the active tool yellow.",
+      "accent": "#FFD02F",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28372
+        },
+        {
+          "k": "swiftui",
+          "b": 17898
+        },
+        {
+          "k": "expo",
+          "b": 17948
+        },
+        {
+          "k": "android",
+          "b": 23101
+        }
+      ],
+      "bytes": 87319
+    },
+    {
+      "slug": "monday",
+      "name": "monday.com",
+      "category": "productivity",
+      "summary": "work management & project OS. The colorful board IS the product: full-bleed saturated status cells (Done #00C875, Working on it #FDAB3D, Stuck #E2445C), a 6pt leading group-color stripe on every row, blue (#0073EA) as the only action color, and a deep-indigo night canvas (#181B34).",
+      "accent": "#00C875",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25701
+        },
+        {
+          "k": "swiftui",
+          "b": 15963
+        },
+        {
+          "k": "expo",
+          "b": 15097
+        },
+        {
+          "k": "android",
+          "b": 20635
+        }
+      ],
+      "bytes": 77396
+    },
+    {
+      "slug": "monzo",
+      "name": "Monzo",
+      "category": "finance",
+      "summary": "Neobank with the iconic Hot Coral card. Coral-and-navy palette (`#FF3464` card hero on `#14233C` navy), round Pot coins with savings goals, and a day-grouped emoji transaction feed with income in green `#2FCB8F`.",
+      "accent": "#FF3464",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24629
+        },
+        {
+          "k": "swiftui",
+          "b": 15076
+        },
+        {
+          "k": "expo",
+          "b": 15581
+        },
+        {
+          "k": "android",
+          "b": 20069
+        }
+      ],
+      "bytes": 75355
+    },
+    {
+      "slug": "myfitnesspal",
+      "name": "MyFitnessPal",
+      "category": "fitness",
+      "summary": "Calorie + macro tracking. White canvas + MFP Blue `#005DAA` heritage + Lake Blue `#0072CE` action, 220pt calorie ring that color-flips green → blue → amber → red, locked macro trio (Carbs `#FF9F1C` / Fat `#A463F2` / Protein `#19C37D`)",
+      "accent": "#005DAA",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27327
+        },
+        {
+          "k": "swiftui",
+          "b": 19066
+        },
+        {
+          "k": "expo",
+          "b": 19672
+        },
+        {
+          "k": "android",
+          "b": 30855
+        }
+      ],
+      "bytes": 96920
+    },
+    {
+      "slug": "netflix",
+      "name": "Netflix",
+      "category": "video",
+      "summary": "Streaming. Netflix Red `#E50914` on `#141414` canvas, hero trailer auto-play, Top 10 numeral row, Continue Watching progress bar, Netflix Sans",
+      "accent": "#E50914",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 32302
+        },
+        {
+          "k": "swiftui",
+          "b": 20340
+        },
+        {
+          "k": "expo",
+          "b": 20349
+        },
+        {
+          "k": "android",
+          "b": 25561
+        }
+      ],
+      "bytes": 98552
+    },
+    {
+      "slug": "nextdoor",
+      "name": "Nextdoor",
+      "category": "social",
+      "summary": "Hyperlocal community. Nextdoor Green `#00B246`, warm cream `#FAF9F6` canvas, neighborhood feed, map-with-pins, verified-neighbor badge, Lato",
+      "accent": "#00B246",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 20029
+        },
+        {
+          "k": "swiftui",
+          "b": 13654
+        },
+        {
+          "k": "expo",
+          "b": 12913
+        },
+        {
+          "k": "android",
+          "b": 19125
+        }
+      ],
+      "bytes": 65721
+    },
+    {
+      "slug": "nike-run-club",
+      "name": "Nike Run Club",
+      "category": "fitness",
+      "summary": "Run coaching. True-black canvas + Volt `#CCFF00` accent on the 280pt progress ring, 88pt Trade Gothic Heavy Condensed elapsed time, hexagonal achievement medals, white-pill primary CTA, heavy haptics on START RUN",
+      "accent": "#CCFF00",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27170
+        },
+        {
+          "k": "swiftui",
+          "b": 18385
+        },
+        {
+          "k": "expo",
+          "b": 18689
+        },
+        {
+          "k": "android",
+          "b": 28342
+        }
+      ],
+      "bytes": 92586
+    },
+    {
+      "slug": "noom",
+      "name": "Noom",
+      "category": "fitness",
+      "summary": "Psychology-led weight loss and food logging. Noom Blue `#2A5DF6` + Noom Teal `#1FC29B`, the bold blue→teal daily psychology lesson card, the sacred green/yellow/red food-color system (`#34C759` / `#FFC531` / `#FF5A52`), and a Coach Purple `#7B61FF` chat surface.",
+      "accent": "#2A5DF6",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25502
+        },
+        {
+          "k": "swiftui",
+          "b": 16106
+        },
+        {
+          "k": "expo",
+          "b": 16112
+        },
+        {
+          "k": "android",
+          "b": 22517
+        }
+      ],
+      "bytes": 80237
+    },
+    {
+      "slug": "notion",
+      "name": "Notion",
+      "category": "productivity",
+      "summary": "Block-based workspace. Pure white / `#191919` dark, block editor with `/` command palette, 9 muted pastel page backgrounds, user-switchable Inter / Lora / IBM Plex Mono",
+      "accent": "#191919",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28209
+        },
+        {
+          "k": "swiftui",
+          "b": 21079
+        },
+        {
+          "k": "expo",
+          "b": 20081
+        },
+        {
+          "k": "android",
+          "b": 27536
+        }
+      ],
+      "bytes": 96905
+    },
+    {
+      "slug": "nubank",
+      "name": "Nubank",
+      "category": "finance",
+      "summary": "Latin America's purple neobank. Full-bleed Nu Purple hero (`#820AD1`) over a calm tile stack on deep aubergine `#15101C`, the Roxinho credit card as a `#9B2BE0` gradient, pill buttons, and Pix-first quick actions with positive green `#2ED47A`.",
+      "accent": "#820AD1",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25183
+        },
+        {
+          "k": "swiftui",
+          "b": 16302
+        },
+        {
+          "k": "expo",
+          "b": 16491
+        },
+        {
+          "k": "android",
+          "b": 22062
+        }
+      ],
+      "bytes": 80038
+    },
+    {
+      "slug": "obsidian",
+      "name": "Obsidian",
+      "category": "productivity",
+      "summary": "Knowledge graph. Obsidian Purple `#7C3AED`/`#A78BFA` on charcoal `#1E1E1E`, the physics graph view, backlinks pane, markdown editor, Inter/JetBrains-Mono",
+      "accent": "#7C3AED",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 23607
+        },
+        {
+          "k": "swiftui",
+          "b": 16749
+        },
+        {
+          "k": "expo",
+          "b": 16101
+        },
+        {
+          "k": "android",
+          "b": 20746
+        }
+      ],
+      "bytes": 77203
+    },
+    {
+      "slug": "okcupid",
+      "name": "OkCupid",
+      "category": "dating",
+      "summary": "Question-based dating. OkCupid Magenta `#E2024F` + indigo `#0500FF`, the match-% badge with count-up, DoubleTake stack, question cards, playful illustration",
+      "accent": "#E2024F",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21683
+        },
+        {
+          "k": "swiftui",
+          "b": 13347
+        },
+        {
+          "k": "expo",
+          "b": 14704
+        },
+        {
+          "k": "android",
+          "b": 20892
+        }
+      ],
+      "bytes": 70626
+    },
+    {
+      "slug": "opentable",
+      "name": "OpenTable",
+      "category": "food",
+      "summary": "Restaurant reservations. A single disciplined OpenTable Red `#DA3743` (brightened to `#F2545B` on dark for the Reserve CTA/active tab/selected slot) on a bright white canvas (clean charcoal `#121212` dark), a tappable reservation time-slot grid (10pt chips, recommended slot filled red), a gold review star `#E8A33D`, a teal Dining Points accent `#1F8A8A` annotating 1,000-point off-peak slots, a diner-green `#2FA86A` Booked-N-times-today social-proof pill, fully-rounded pill controls, and a sticky red Reserve-for-time bar",
+      "accent": "#DA3743",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25692
+        },
+        {
+          "k": "swiftui",
+          "b": 13550
+        },
+        {
+          "k": "expo",
+          "b": 13795
+        },
+        {
+          "k": "android",
+          "b": 21384
+        }
+      ],
+      "bytes": 74421
+    },
+    {
+      "slug": "oura",
+      "name": "Oura",
+      "category": "fitness",
+      "summary": "Health ring. Cool-charcoal `#0B0B0F` instrument panel, tri-domain score rings (Readiness teal `#4FD1C5` / Sleep indigo `#7C6FF0` / Activity amber `#F5A623`), contributor bars",
+      "accent": "#0B0B0F",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21984
+        },
+        {
+          "k": "swiftui",
+          "b": 13044
+        },
+        {
+          "k": "expo",
+          "b": 14390
+        },
+        {
+          "k": "android",
+          "b": 18945
+        }
+      ],
+      "bytes": 68363
+    },
+    {
+      "slug": "overcast",
+      "name": "Overcast",
+      "category": "music",
+      "summary": "audio-first podcast player with Smart Speed. Overcast Orange `#FC7E0F` on warm paper-cream `#FBFAF6` (or true dark `#121212`), an outlined orange-ring play button, and first-class Smart Speed / Voice Boost toggles.",
+      "accent": "#FC7E0F",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25092
+        },
+        {
+          "k": "swiftui",
+          "b": 18582
+        },
+        {
+          "k": "expo",
+          "b": 16750
+        },
+        {
+          "k": "android",
+          "b": 24074
+        }
+      ],
+      "bytes": 84498
+    },
+    {
+      "slug": "pandora",
+      "name": "Pandora",
+      "category": "music",
+      "summary": "Music Genome radio. The thumb up/down is the product on a deep blue-navy canvas `#0B0F1C` from Pandora Blue `#224099`, with bright blue `#3668FF` as the constant accent, an asymmetric solid-up / hollow-down thumb, an album-art gradient Now Playing with no card frame, and the genome station list as home",
+      "accent": "#0B0F1C",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26130
+        },
+        {
+          "k": "swiftui",
+          "b": 19152
+        },
+        {
+          "k": "expo",
+          "b": 18071
+        },
+        {
+          "k": "android",
+          "b": 24839
+        }
+      ],
+      "bytes": 88192
+    },
+    {
+      "slug": "panera",
+      "name": "Panera",
+      "category": "food",
+      "summary": "Food and beverage ordering. Panera Green `#4C8B2B` as the single action color (brightened to `#6BBE45` on dark for CTAs/active tabs/rewards arc) on a bakery-warm cream canvas `#F4EFE1` (warm near-black `#14140F` dark), full-color soup/sandwich/salad photo cards at 14pt radius, a green-gradient MyPanera rewards card with a progress bar + Unlimited Sip Club status, a gold reward star `#F2B705`, fully-rounded pill buttons, a quantity stepper, a pickup/delivery toggle, and a sticky green checkout bar",
+      "accent": "#4C8B2B",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25022
+        },
+        {
+          "k": "swiftui",
+          "b": 15193
+        },
+        {
+          "k": "expo",
+          "b": 15188
+        },
+        {
+          "k": "android",
+          "b": 20767
+        }
+      ],
+      "bytes": 76170
+    },
+    {
+      "slug": "paramount-plus",
+      "name": "Paramount+",
+      "category": "video",
+      "summary": "Video streaming, midnight-navy dark. A dark-only `#0A0E2D` navy canvas lifting to `#0E1438` under a full-bleed hero billboard, with a network brand-hubs row, one electric Paramount+ Blue `#0064FF` action color, a sky-blue `#4D9DFF` active-tab tint, and broadcast live red `#FF2D46` badges.",
+      "accent": "#0A0E2D",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24474
+        },
+        {
+          "k": "swiftui",
+          "b": 14822
+        },
+        {
+          "k": "expo",
+          "b": 15402
+        },
+        {
+          "k": "android",
+          "b": 20964
+        }
+      ],
+      "bytes": 75662
+    },
+    {
+      "slug": "paypal",
+      "name": "PayPal",
+      "category": "finance",
+      "summary": "Online payments. Dual-blue P-P wordmark (Sky `#0070BA` + Blue `#003087`), PayPal Sans Big/Small, balance card anchor, soft-pill CTAs, circular activity icons color-coded by transaction type",
+      "accent": "#0070BA",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26234
+        },
+        {
+          "k": "swiftui",
+          "b": 17426
+        },
+        {
+          "k": "expo",
+          "b": 17831
+        },
+        {
+          "k": "android",
+          "b": 26105
+        }
+      ],
+      "bytes": 87596
+    },
+    {
+      "slug": "peacock",
+      "name": "Peacock",
+      "category": "video",
+      "summary": "Video streaming, indigo-black dark. A permanently-dark `#0A0A14` canvas warming to violet `#140E26` behind a full-bleed hero billboard, with the five-color peacock-feather swoosh (`#FACC15 → #F97316 → #EC4899 → #8B5CF6 → #2563EB`) as the only accent, a white `#FFFFFF` Play CTA, and NBC live red `#E5142B` badges.",
+      "accent": "#0A0A14",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25455
+        },
+        {
+          "k": "swiftui",
+          "b": 16827
+        },
+        {
+          "k": "expo",
+          "b": 16512
+        },
+        {
+          "k": "android",
+          "b": 22080
+        }
+      ],
+      "bytes": 80874
+    },
+    {
+      "slug": "peloton",
+      "name": "Peloton",
+      "category": "fitness",
+      "summary": "Boutique fitness streaming and live classes. Pure-black studio canvas `#000000` with a single Peloton Red accent `#DF1E2E` (brightened to `#FF4B57` on black), cinematic class cards, a pulsing red LIVE badge, the in-class output ring, fixed metric colors (Cadence `#E5402A`, Resistance `#F0A030`, Strive/HR `#3DB8E0`), and a real-time leaderboard with your row washed in red.",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25973
+        },
+        {
+          "k": "swiftui",
+          "b": 17495
+        },
+        {
+          "k": "expo",
+          "b": 17631
+        },
+        {
+          "k": "android",
+          "b": 22603
+        }
+      ],
+      "bytes": 83702
+    },
+    {
+      "slug": "perplexity",
+      "name": "Perplexity",
+      "category": "misc",
+      "summary": "Answer engine with citations. Dark canvas `#0A0A0A` + Perplexity Teal `#20B8CD` accent, brand-defining inline citation chips `[1][2][3]` paired with a horizontal source-card row above every answer, FK Grotesk + Inter encyclopedic register",
+      "accent": "#0A0A0A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 31573
+        },
+        {
+          "k": "swiftui",
+          "b": 24088
+        },
+        {
+          "k": "expo",
+          "b": 26564
+        },
+        {
+          "k": "android",
+          "b": 28513
+        }
+      ],
+      "bytes": 110738
+    },
+    {
+      "slug": "pinterest",
+      "name": "Pinterest",
+      "category": "social",
+      "summary": "Visual discovery. Pinterest Red `#E60023`, masonry 2-column grid with variable heights, floating Save-button morph, Pinterest Sans",
+      "accent": "#E60023",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 29592
+        },
+        {
+          "k": "swiftui",
+          "b": 17713
+        },
+        {
+          "k": "expo",
+          "b": 16295
+        },
+        {
+          "k": "android",
+          "b": 25079
+        }
+      ],
+      "bytes": 88679
+    },
+    {
+      "slug": "plenty-of-fish",
+      "name": "Plenty of Fish",
+      "category": "dating",
+      "summary": "Dating and social app. POF Blue (#0098DB to #00A6E2) on the logo, primary CTA, active tab and like button over a cool near-black canvas (#121417); a 2-column photo match grid, the Meet Me card, teal online dots (#00C9B7) and pink unread badges (#FF4F8B).",
+      "accent": "#0098DB",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25183
+        },
+        {
+          "k": "swiftui",
+          "b": 17257
+        },
+        {
+          "k": "expo",
+          "b": 16110
+        },
+        {
+          "k": "android",
+          "b": 21451
+        }
+      ],
+      "bytes": 80001
+    },
+    {
+      "slug": "plex",
+      "name": "Plex",
+      "category": "video",
+      "summary": "calm personal-media server platform. Cool charcoal canvas (#1F2326, never true black) with a single Plex Yellow accent (#E5A00D) and dark #1A1304 button text, an On Deck resume rail with yellow progress bars, and a multi-server status picker.",
+      "accent": "#1F2326",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24303
+        },
+        {
+          "k": "swiftui",
+          "b": 14212
+        },
+        {
+          "k": "expo",
+          "b": 13851
+        },
+        {
+          "k": "android",
+          "b": 19422
+        }
+      ],
+      "bytes": 71788
+    },
+    {
+      "slug": "pluto-tv",
+      "name": "Pluto TV",
+      "category": "video",
+      "summary": "Free ad-supported live TV. Navy canvas (#0B0F1F) built around a frozen-frame EPG channel guide where the \"On Now\" cell lifts to #1C2440 with a 3pt #FFE100 yellow left border; Pluto Blue #0048FF CTAs and a #FF3B5C live indicator.",
+      "accent": "#0B0F1F",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27093
+        },
+        {
+          "k": "swiftui",
+          "b": 17472
+        },
+        {
+          "k": "expo",
+          "b": 16563
+        },
+        {
+          "k": "android",
+          "b": 20299
+        }
+      ],
+      "bytes": 81427
+    },
+    {
+      "slug": "pocket-casts",
+      "name": "Pocket Casts",
+      "category": "music",
+      "summary": "premium podcast player with per-podcast theming. Pocket Casts Red `#F43E37` on near-black `#1A1A1A`, cover-art theme tint `#E0533C`, circular transport, and a reorderable Up Next queue.",
+      "accent": "#F43E37",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26208
+        },
+        {
+          "k": "swiftui",
+          "b": 19846
+        },
+        {
+          "k": "expo",
+          "b": 17656
+        },
+        {
+          "k": "android",
+          "b": 23792
+        }
+      ],
+      "bytes": 87502
+    },
+    {
+      "slug": "postman",
+      "name": "Postman",
+      "category": "misc",
+      "summary": "API client and testing console. The request builder IS the product: a neutral-grey #1A1A1A canvas, the HTTP-method color system (GET #6BDD9A, POST #FFE47A, PUT #74AEF6, DELETE #F79090) read before text everywhere a method appears, a single Postman Orange #FF6C37 reserved for the Send button and active tab, and a syntax-colored JSON viewer that sinks onto a darker #161616 surface.",
+      "accent": "#1A1A1A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26850
+        },
+        {
+          "k": "swiftui",
+          "b": 16333
+        },
+        {
+          "k": "expo",
+          "b": 15440
+        },
+        {
+          "k": "android",
+          "b": 22752
+        }
+      ],
+      "bytes": 81375
+    },
+    {
+      "slug": "prime-video",
+      "name": "Prime Video",
+      "category": "video",
+      "summary": "Video on demand. Prime Blue `#00A8E1` on Amazon blue-slate `#0F171E`, hero billboard, the X-Ray cast slide-up overlay, channel rows",
+      "accent": "#00A8E1",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 22559
+        },
+        {
+          "k": "swiftui",
+          "b": 14069
+        },
+        {
+          "k": "expo",
+          "b": 16009
+        },
+        {
+          "k": "android",
+          "b": 20492
+        }
+      ],
+      "bytes": 73129
+    },
+    {
+      "slug": "quora",
+      "name": "Quora",
+      "category": "social",
+      "summary": "Q&A knowledge. Quora Red `#B92B27`, serif-question / sans-answer split (Georgia + Inter), blue `#2E69FF` upvote pill, credential bylines, Spaces",
+      "accent": "#B92B27",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21994
+        },
+        {
+          "k": "swiftui",
+          "b": 14848
+        },
+        {
+          "k": "expo",
+          "b": 14431
+        },
+        {
+          "k": "android",
+          "b": 23334
+        }
+      ],
+      "bytes": 74607
+    },
+    {
+      "slug": "raya",
+      "name": "Raya",
+      "category": "dating",
+      "summary": "Members-only dating, uncompromisingly monochrome. Pure black canvas `#000000` + pure white `#FFFFFF` as the only accent, a music-scored slideshow profile with segmented `#FFFFFF` story bars, a white music ticker + equalizer, and an editorial caption over a `→ rgba(0,0,0,0.92)` scrim; depth is a 1px `#2E2E2E` hairline, never a shadow.",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26928
+        },
+        {
+          "k": "swiftui",
+          "b": 16274
+        },
+        {
+          "k": "expo",
+          "b": 16940
+        },
+        {
+          "k": "android",
+          "b": 21064
+        }
+      ],
+      "bytes": 81206
+    },
+    {
+      "slug": "reddit",
+      "name": "Reddit",
+      "category": "social",
+      "summary": "Communities & discussion. Reddit Orange-Red `#FF4500`, upvote-orange `#FF8717` / downvote `#7193FF` vote column, flat post cards, 10pt-per-level comment indentation",
+      "accent": "#FF4500",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28003
+        },
+        {
+          "k": "swiftui",
+          "b": 19708
+        },
+        {
+          "k": "expo",
+          "b": 20290
+        },
+        {
+          "k": "android",
+          "b": 28092
+        }
+      ],
+      "bytes": 96093
+    },
+    {
+      "slug": "resy",
+      "name": "Resy",
+      "category": "food",
+      "summary": "Restaurant reservations. A black-first editorial system on a pure-black canvas `#000000` where Playfair-style display-serif restaurant names contrast with clean Inter UI, a single disciplined Resy Red `#C73E3A` (brightened to `#E2504B` for the active tab on black) drives booking, available reservation slots are red-OUTLINED while the primary slot is SOLID red, sold-out times become dashed amber `#D99A2B` Notify (waitlist) chips, a muted gold `#C9A24B` carries the /10 rating + Hit List, and hairline `#262626` borders replace shadows",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26575
+        },
+        {
+          "k": "swiftui",
+          "b": 14501
+        },
+        {
+          "k": "expo",
+          "b": 14781
+        },
+        {
+          "k": "android",
+          "b": 22135
+        }
+      ],
+      "bytes": 77992
+    },
+    {
+      "slug": "revolut",
+      "name": "Revolut",
+      "category": "finance",
+      "summary": "Neobank. Violet→purple gradient `#5B6BFF → #9C6BFF` on cool near-black `#0A0A0F`, metal-card hero with sheen, multi-currency tiles, spend-analytics donut",
+      "accent": "#5B6BFF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 20534
+        },
+        {
+          "k": "swiftui",
+          "b": 14242
+        },
+        {
+          "k": "expo",
+          "b": 15761
+        },
+        {
+          "k": "android",
+          "b": 19527
+        }
+      ],
+      "bytes": 70064
+    },
+    {
+      "slug": "robinhood",
+      "name": "Robinhood",
+      "category": "finance",
+      "summary": "Investing. White canvas + true black text, Capsule Sans tabular-nums, portfolio chart in `#00C805` up / `#FF5000` down with draggable scrubber, black Trade CTA (green/orange reserved for Buy/Sell)",
+      "accent": "#00C805",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25278
+        },
+        {
+          "k": "swiftui",
+          "b": 17865
+        },
+        {
+          "k": "expo",
+          "b": 17891
+        },
+        {
+          "k": "android",
+          "b": 29060
+        }
+      ],
+      "bytes": 90094
+    },
+    {
+      "slug": "runna",
+      "name": "Runna",
+      "category": "fitness",
+      "summary": "Structured running training plans. Two-color brand of Runna Indigo `#4F46E5` (structure) + electric Lime `#C2F94E` (go), a color-coded plan week strip, the Indigo guided run-session card (`#4F46E5 → #3A33B8`), and a warm-up→cooldown structure bar on an Indigo-tinted `#0E0E16` canvas.",
+      "accent": "#4F46E5",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26554
+        },
+        {
+          "k": "swiftui",
+          "b": 17648
+        },
+        {
+          "k": "expo",
+          "b": 17531
+        },
+        {
+          "k": "android",
+          "b": 23756
+        }
+      ],
+      "bytes": 85489
+    },
+    {
+      "slug": "shazam",
+      "name": "Shazam",
+      "category": "music",
+      "summary": "Music recognition. Radial-blue gradient `#0050FF → #0088FF`, giant central pulsing tap-to-listen button with concentric rings, glass result card, no tab bar",
+      "accent": "#0050FF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21657
+        },
+        {
+          "k": "swiftui",
+          "b": 15517
+        },
+        {
+          "k": "expo",
+          "b": 13981
+        },
+        {
+          "k": "android",
+          "b": 20120
+        }
+      ],
+      "bytes": 71275
+    },
+    {
+      "slug": "signal",
+      "name": "Signal",
+      "category": "messaging",
+      "summary": "Privacy-first messaging. Single Signal Blue `#3A76F0` accent, disappearing-message timer chips, sealed-sender glyphs, zero-vanity minimalism, light + `#1B1B1B` dark",
+      "accent": "#3A76F0",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 22381
+        },
+        {
+          "k": "swiftui",
+          "b": 13753
+        },
+        {
+          "k": "expo",
+          "b": 13669
+        },
+        {
+          "k": "android",
+          "b": 21330
+        }
+      ],
+      "bytes": 71133
+    },
+    {
+      "slug": "skype",
+      "name": "Skype",
+      "category": "messaging",
+      "summary": "Microsoft's call-first messenger. Cloud-blue brand (bright #00AFF0 buttons/FABs, deep #0078D4 outgoing bubble), gray incoming (#EBEBEF / #2A2A30), inline call cards, a gradient video-call grid with circular controls, presence dots (green #2DC26B / away #FFC400), and a neutral near-black (#16161A) dark canvas.",
+      "accent": "#00AFF0",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26983
+        },
+        {
+          "k": "swiftui",
+          "b": 16536
+        },
+        {
+          "k": "expo",
+          "b": 17060
+        },
+        {
+          "k": "android",
+          "b": 19540
+        }
+      ],
+      "bytes": 80119
+    },
+    {
+      "slug": "skyscanner",
+      "name": "Skyscanner",
+      "category": "travel",
+      "summary": "Flight search and price comparison. Single Sky Blue action `#0770E3`, traffic-light price grid (cheap `#00A698`, average `#FFB81C`, expensive `#E5392E`), Everywhere destination, on a cool navy-black `#0B0F14` dark canvas.",
+      "accent": "#0770E3",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27104
+        },
+        {
+          "k": "swiftui",
+          "b": 17962
+        },
+        {
+          "k": "expo",
+          "b": 17485
+        },
+        {
+          "k": "android",
+          "b": 22450
+        }
+      ],
+      "bytes": 85001
+    },
+    {
+      "slug": "slack",
+      "name": "Slack",
+      "category": "messaging",
+      "summary": "Work chat. Aubergine `#4A154B` sidebar (workspace-customizable), rounded-square avatars, Huddles banner, reaction pill chips, Slack Lato",
+      "accent": "#4A154B",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 29849
+        },
+        {
+          "k": "swiftui",
+          "b": 23651
+        },
+        {
+          "k": "expo",
+          "b": 23005
+        },
+        {
+          "k": "android",
+          "b": 32306
+        }
+      ],
+      "bytes": 108811
+    },
+    {
+      "slug": "sleep-cycle",
+      "name": "Sleep Cycle",
+      "category": "fitness",
+      "summary": "Sleep tracking with a smart alarm. Indigo→night gradient `#2A2D5A → #3B4371` over a deep `#14152E` canvas, the signature glowing aqua hypnogram wave (`#7FE3F0` over `#6C7BFF` fill), a score-banded sleep-quality ring, and color-coded stages (Deep `#3D4ABF`, REM `#4FD1E6`).",
+      "accent": "#2A2D5A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24503
+        },
+        {
+          "k": "swiftui",
+          "b": 17105
+        },
+        {
+          "k": "expo",
+          "b": 16361
+        },
+        {
+          "k": "android",
+          "b": 20908
+        }
+      ],
+      "bytes": 78877
+    },
+    {
+      "slug": "snapchat",
+      "name": "Snapchat",
+      "category": "social",
+      "summary": "Camera-first social. Snap Yellow `#FFFC00`, 5-screen swipe nav, 82pt yellow capture button, color-coded snap types, Avenir Next",
+      "accent": "#FFFC00",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 33468
+        },
+        {
+          "k": "swiftui",
+          "b": 20837
+        },
+        {
+          "k": "expo",
+          "b": 19981
+        },
+        {
+          "k": "android",
+          "b": 31700
+        }
+      ],
+      "bytes": 105986
+    },
+    {
+      "slug": "sofi",
+      "name": "SoFi",
+      "category": "finance",
+      "summary": "All-in-one fintech. A dark-native brand: electric SoFi Blue `#00A0DF` (brightened to `#29C2FF` for accents/links/active tabs) on deep navy `#0A0E27`, a signature `#00A0DF → #1B53C4 → #0A0E27` member-hero gradient with net worth in white at 40pt 800 plus a green month-change pill, a consolidated 2-column account/product tile grid with colored sub-stats, cross-sell product cards, color-coded performance (gain-green `#2FD08A`, loss-coral `#FF6B6B`, rewards-gold `#F2C14E`), and fully pill-shaped buttons over lifted navy surfaces `#121736` / `#1B2147`",
+      "accent": "#00A0DF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25765
+        },
+        {
+          "k": "swiftui",
+          "b": 16925
+        },
+        {
+          "k": "expo",
+          "b": 16478
+        },
+        {
+          "k": "android",
+          "b": 22629
+        }
+      ],
+      "bytes": 81797
+    },
+    {
+      "slug": "soundcloud",
+      "name": "SoundCloud",
+      "category": "music",
+      "summary": "Creator audio. SoundCloud Orange `#FF5500`, commentable waveform scrubber with inline timestamped avatars, repost feed, up-next queue",
+      "accent": "#FF5500",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21205
+        },
+        {
+          "k": "swiftui",
+          "b": 15671
+        },
+        {
+          "k": "expo",
+          "b": 14665
+        },
+        {
+          "k": "android",
+          "b": 21506
+        }
+      ],
+      "bytes": 73047
+    },
+    {
+      "slug": "southwest",
+      "name": "Southwest",
+      "category": "travel",
+      "summary": "Open-seating airline. The Heart tri-color (Southwest Blue `#304CB2`, Bold Red `#E51D23`, Warm Yellow `#F9B612`) over a deep navy canvas `#0E1726`, with the giant A/B/C boarding position as the hero, a 24-hour check-in countdown ring, and the Wanna Get Away fare ladder",
+      "accent": "#304CB2",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28504
+        },
+        {
+          "k": "swiftui",
+          "b": 18404
+        },
+        {
+          "k": "expo",
+          "b": 17383
+        },
+        {
+          "k": "android",
+          "b": 22614
+        }
+      ],
+      "bytes": 86905
+    },
+    {
+      "slug": "spotify",
+      "name": "Spotify",
+      "category": "music",
+      "summary": "Music streaming. Dark `#121212` canvas, Spotify Green `#1DB954` as the single accent, album-art-driven Now Playing gradient via dynamic color extraction",
+      "accent": "#121212",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 20940
+        },
+        {
+          "k": "swiftui",
+          "b": 11582
+        },
+        {
+          "k": "expo",
+          "b": 11623
+        },
+        {
+          "k": "android",
+          "b": 18857
+        }
+      ],
+      "bytes": 63002
+    },
+    {
+      "slug": "starbucks",
+      "name": "Starbucks",
+      "category": "food",
+      "summary": "Coffee + rewards. Starbucks Green `#00704A`, gold Stars progress ring, Short/Tall/Grande/Venti/Trenta size selector, QR pay, SoDo Sans",
+      "accent": "#00704A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26242
+        },
+        {
+          "k": "swiftui",
+          "b": 18338
+        },
+        {
+          "k": "expo",
+          "b": 18767
+        },
+        {
+          "k": "android",
+          "b": 28605
+        }
+      ],
+      "bytes": 91952
+    },
+    {
+      "slug": "strava",
+      "name": "Strava",
+      "category": "fitness",
+      "summary": "Activity tracking + social. Strava Orange `#FC4C02` as the single accent, 4pt route polyline with halo, 3-up DISTANCE/TIME/PACE grid, tabular numerals everywhere, center Record button protruding 8pt with orange glow, coal-black dark mode `#0F0F0F`",
+      "accent": "#FC4C02",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28517
+        },
+        {
+          "k": "swiftui",
+          "b": 18707
+        },
+        {
+          "k": "expo",
+          "b": 19814
+        },
+        {
+          "k": "android",
+          "b": 30998
+        }
+      ],
+      "bytes": 98036
+    },
+    {
+      "slug": "strong",
+      "name": "Strong",
+      "category": "fitness",
+      "summary": "Minimalist workout logger built around the set-log table. Single-accent Strong Blue `#2F80ED` on a flat neutral-grey canvas `#1A1A1A`, logged sets filling green `#27AE60`, a slim auto-running rest-timer bar, flat borderless cards, and an amber `#F2C94C` PR flag on records.",
+      "accent": "#2F80ED",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27400
+        },
+        {
+          "k": "swiftui",
+          "b": 16044
+        },
+        {
+          "k": "expo",
+          "b": 16864
+        },
+        {
+          "k": "android",
+          "b": 23418
+        }
+      ],
+      "bytes": 83726
+    },
+    {
+      "slug": "substack",
+      "name": "Substack",
+      "category": "misc",
+      "summary": "newsletters & long-form publishing. A clean white serif reading page (`#FFFFFF` light, soft charcoal `#121212` dark) with reading ink `#1F1F1F`, the single rationed Substack Orange `#FF6719` for the Subscribe CTA / active tab / unread dot / liked heart, an orange-tint paywall card, a chronological subscription inbox, and a 1.65 editorial reading rhythm.",
+      "accent": "#FFFFFF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24643
+        },
+        {
+          "k": "swiftui",
+          "b": 17153
+        },
+        {
+          "k": "expo",
+          "b": 17223
+        },
+        {
+          "k": "android",
+          "b": 22827
+        }
+      ],
+      "bytes": 81846
+    },
+    {
+      "slug": "swiggy",
+      "name": "Swiggy",
+      "category": "food",
+      "summary": "appetite-driving food delivery and quick-commerce platform. A single Swiggy Orange accent (#FC8019) over a near-black canvas (#121212), photo-forward restaurant cards with a #000-fading bottom scrim and bold offer text, a green rating chip (#48C479), and a floating ADD button that morphs into a stepper.",
+      "accent": "#FC8019",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27462
+        },
+        {
+          "k": "swiftui",
+          "b": 19567
+        },
+        {
+          "k": "expo",
+          "b": 18298
+        },
+        {
+          "k": "android",
+          "b": 26261
+        }
+      ],
+      "bytes": 91588
+    },
+    {
+      "slug": "taco-bell",
+      "name": "Taco Bell",
+      "category": "food",
+      "summary": "neon, dark-first build-your-box QSR ordering platform. A purple-to-magenta brand gradient (#702082 → #C72BC8) over a violet-tinted near-black canvas (#0E0A14), with a Hot Sauce Yellow value highlight (#FFC700), a gradient box-preview hero, numbered step pills, and magenta single-select controls.",
+      "accent": "#702082",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27610
+        },
+        {
+          "k": "swiftui",
+          "b": 18314
+        },
+        {
+          "k": "expo",
+          "b": 18156
+        },
+        {
+          "k": "android",
+          "b": 24906
+        }
+      ],
+      "bytes": 88986
+    },
+    {
+      "slug": "telegram",
+      "name": "Telegram",
+      "category": "messaging",
+      "summary": "Fast, themeable chat. Telegram Blue `#0088CC`, 17pt bubbles with 6pt notch tails, silent-send long-press, Lottie animated emoji, floating voice mini-player",
+      "accent": "#0088CC",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27487
+        },
+        {
+          "k": "swiftui",
+          "b": 19395
+        },
+        {
+          "k": "expo",
+          "b": 21369
+        },
+        {
+          "k": "android",
+          "b": 32311
+        }
+      ],
+      "bytes": 100562
+    },
+    {
+      "slug": "the-league",
+      "name": "The League",
+      "category": "dating",
+      "summary": "Dating and social. A black-tie members-club system on a near-true-black canvas `#0A0A0A` (dark-native, no light mode in spirit) where a single rationed gold `#C8A35A` (bright `#DBBA71`, deep `#A8863F`) does ALL accent work — crest, hairlines, one CTA, credential marks — and depth comes entirely from 1px gold-tinted hairline borders `#2A2620` with zero drop shadows, the prospect card reads like an embossed calling card with a Cormorant-style display-serif name over a clean Jost-style sans credential stack (the serif/sans split IS the hierarchy), the concierge is a recurring character speaking in italic serif behind a 2px gold left rule, scarcity is made visual via a finite daily \"Today's Batch · 7 Prospects\" banner, corner radii stay sharp (2-6pt) with no pills, labels are quiet letter-spaced uppercase, the Heart action is a gold OUTLINE not a fill, and a match is a drawn champagne `#E8DCC0` wax seal, not confetti",
+      "accent": "#0A0A0A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27480
+        },
+        {
+          "k": "swiftui",
+          "b": 17315
+        },
+        {
+          "k": "expo",
+          "b": 16595
+        },
+        {
+          "k": "android",
+          "b": 22629
+        }
+      ],
+      "bytes": 84019
+    },
+    {
+      "slug": "things-3",
+      "name": "Things 3",
+      "category": "productivity",
+      "summary": "Serene tasks. Things Blue `#4F97FF` on pure-white, circular checkbox fill spring, the Magic-Plus, the `#FFD60A` Today star, generous calm whitespace",
+      "accent": "#4F97FF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 22637
+        },
+        {
+          "k": "swiftui",
+          "b": 14632
+        },
+        {
+          "k": "expo",
+          "b": 14927
+        },
+        {
+          "k": "android",
+          "b": 19448
+        }
+      ],
+      "bytes": 71644
+    },
+    {
+      "slug": "threads",
+      "name": "Threads",
+      "category": "social",
+      "summary": "Text-forward Meta social. Pure black canvas, Instagram-coral like heart, thread-line indentation, no hashtags/trending, Instagram Sans",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28222
+        },
+        {
+          "k": "swiftui",
+          "b": 19324
+        },
+        {
+          "k": "expo",
+          "b": 18395
+        },
+        {
+          "k": "android",
+          "b": 28887
+        }
+      ],
+      "bytes": 94828
+    },
+    {
+      "slug": "threema",
+      "name": "Threema",
+      "category": "messaging",
+      "summary": "Secure messaging. Single Threema Green `#088A29` accent (brightened to `#1FA53C` on dark) + the signature red/orange/green trust-level three-dot indicator `#E5453A` / `#EF8B2C` / `#15A33A`, no phone number, monospace Threema ID, QR-first in-person verification, soft-green outgoing bubbles `#D6F0DC` / `#0C5E22`",
+      "accent": "#088A29",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27597
+        },
+        {
+          "k": "swiftui",
+          "b": 18291
+        },
+        {
+          "k": "expo",
+          "b": 17437
+        },
+        {
+          "k": "android",
+          "b": 23532
+        }
+      ],
+      "bytes": 86857
+    },
+    {
+      "slug": "tidal",
+      "name": "TIDAL",
+      "category": "music",
+      "summary": "Hi-fi music. Pure-black `#000000` canvas, cyan `#00FFFF` HiFi accents, MASTER/HiFi quality badges, radically flat square-art tonal-elevation layout",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 20814
+        },
+        {
+          "k": "swiftui",
+          "b": 12946
+        },
+        {
+          "k": "expo",
+          "b": 13190
+        },
+        {
+          "k": "android",
+          "b": 18234
+        }
+      ],
+      "bytes": 65184
+    },
+    {
+      "slug": "tiktok",
+      "name": "TikTok",
+      "category": "social",
+      "summary": "Short-form video. Full-bleed vertical FYP, chromatic-aberration logo (cyan + red), right-side action rail, signature glitch aesthetic",
+      "accent": "#25F4EE",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26595
+        },
+        {
+          "k": "swiftui",
+          "b": 21182
+        },
+        {
+          "k": "expo",
+          "b": 22531
+        },
+        {
+          "k": "android",
+          "b": 31226
+        }
+      ],
+      "bytes": 101534
+    },
+    {
+      "slug": "tinder",
+      "name": "Tinder",
+      "category": "dating",
+      "summary": "Dating swipe cards. Tinder Gradient `#FD267A → #FF6036`, rotated LIKE/NOPE stamps on swipe, 5-button action bar (Rewind / Nope / Super Like / Like / Boost), match-screen pink takeover",
+      "accent": "#FD267A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26746
+        },
+        {
+          "k": "swiftui",
+          "b": 18949
+        },
+        {
+          "k": "expo",
+          "b": 19346
+        },
+        {
+          "k": "android",
+          "b": 31232
+        }
+      ],
+      "bytes": 96273
+    },
+    {
+      "slug": "todoist",
+      "name": "Todoist",
+      "category": "productivity",
+      "summary": "Tasks + projects. Todoist Red `#DC4C3E` for FAB + P1 flag + brand, tinted-red FAB shadow, four-tier priority via checkbox stroke (P1 red, P2 `#EB8909`, P3 `#246FE0`, P4 gray), 52pt edge-to-edge task rows, SF Pro system font",
+      "accent": "#DC4C3E",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28649
+        },
+        {
+          "k": "swiftui",
+          "b": 21903
+        },
+        {
+          "k": "expo",
+          "b": 21135
+        },
+        {
+          "k": "android",
+          "b": 33244
+        }
+      ],
+      "bytes": 104931
+    },
+    {
+      "slug": "trello",
+      "name": "Trello",
+      "category": "productivity",
+      "summary": "Kanban projects. Trello Blue `#0C66E4`, board-background as canvas, horizontal kanban lists, the card drag-lift, label color rows, no bottom tab bar",
+      "accent": "#0C66E4",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21982
+        },
+        {
+          "k": "swiftui",
+          "b": 14433
+        },
+        {
+          "k": "expo",
+          "b": 14203
+        },
+        {
+          "k": "android",
+          "b": 19604
+        }
+      ],
+      "bytes": 70222
+    },
+    {
+      "slug": "tripadvisor",
+      "name": "Tripadvisor",
+      "category": "travel",
+      "summary": "Travel reviews. Tripadvisor Green `#34E0A1` + owl black, the 5-circle bubble rating, traveler-photo place cards, Travelers' Choice badge",
+      "accent": "#34E0A1",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 20458
+        },
+        {
+          "k": "swiftui",
+          "b": 11869
+        },
+        {
+          "k": "expo",
+          "b": 12179
+        },
+        {
+          "k": "android",
+          "b": 19249
+        }
+      ],
+      "bytes": 63755
+    },
+    {
+      "slug": "tubi",
+      "name": "Tubi",
+      "category": "video",
+      "summary": "Free ad-supported streaming. Indigo-black canvas (#0A0A2A) with the signature purple-to-magenta gradient (#7408FF -> #FF00FF), white #FFFFFF Play button, dense 2:3 poster rows, and a yellow #FFD400 \"FREE\" tag.",
+      "accent": "#0A0A2A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26842
+        },
+        {
+          "k": "swiftui",
+          "b": 18072
+        },
+        {
+          "k": "expo",
+          "b": 17384
+        },
+        {
+          "k": "android",
+          "b": 20281
+        }
+      ],
+      "bytes": 82579
+    },
+    {
+      "slug": "tumblr",
+      "name": "Tumblr",
+      "category": "social",
+      "summary": "Creative blogging social. Deep-navy `#001935` canvas, multi-accent trio (blue `#00B8FF` / green `#00CF35` / pink `#FF4930`), reblog chains, tag bar, notes count",
+      "accent": "#001935",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 20337
+        },
+        {
+          "k": "swiftui",
+          "b": 14782
+        },
+        {
+          "k": "expo",
+          "b": 14959
+        },
+        {
+          "k": "android",
+          "b": 21456
+        }
+      ],
+      "bytes": 71534
+    },
+    {
+      "slug": "turo",
+      "name": "Turo",
+      "category": "travel",
+      "summary": "Peer-to-peer car sharing. The vehicle photo is the product on a near-black canvas `#0F0F12`, with Turo Purple `#593BFB` as the single booking action, Turo Teal `#5CE0B8` as the trust/value accent (All-Star Host, instant-book), a teal-iconed specs strip, and a sticky price + Book bar",
+      "accent": "#0F0F12",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27039
+        },
+        {
+          "k": "swiftui",
+          "b": 20390
+        },
+        {
+          "k": "expo",
+          "b": 19728
+        },
+        {
+          "k": "android",
+          "b": 24891
+        }
+      ],
+      "bytes": 92048
+    },
+    {
+      "slug": "twitch",
+      "name": "Twitch",
+      "category": "video",
+      "summary": "Live streaming. Twitch Purple `#9146FF` action + Live Red `#EB0400` liveness-only, LIVE pills, docked chat column, theater overlay, emotes",
+      "accent": "#9146FF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 22945
+        },
+        {
+          "k": "swiftui",
+          "b": 13529
+        },
+        {
+          "k": "expo",
+          "b": 14775
+        },
+        {
+          "k": "android",
+          "b": 19899
+        }
+      ],
+      "bytes": 71148
+    },
+    {
+      "slug": "uber",
+      "name": "Uber",
+      "category": "travel",
+      "summary": "Ride-hailing + delivery. Stark monochrome (black/white), Uber Move font, map-as-hero layout, Base design system tokens",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 22821
+        },
+        {
+          "k": "swiftui",
+          "b": 18109
+        },
+        {
+          "k": "expo",
+          "b": 19863
+        },
+        {
+          "k": "android",
+          "b": 30223
+        }
+      ],
+      "bytes": 91016
+    },
+    {
+      "slug": "uber-eats",
+      "name": "Uber Eats",
+      "category": "food",
+      "summary": "Food delivery. Uber Eats Green `#06C167`, clean white canvas, photo-first restaurant cards, category pills, sticky cart bar, live map order tracking",
+      "accent": "#06C167",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24443
+        },
+        {
+          "k": "swiftui",
+          "b": 16608
+        },
+        {
+          "k": "expo",
+          "b": 17711
+        },
+        {
+          "k": "android",
+          "b": 22839
+        }
+      ],
+      "bytes": 81601
+    },
+    {
+      "slug": "united-airlines",
+      "name": "United",
+      "category": "travel",
+      "summary": "Airline travel app, flight-detail-first. Two-blue brand (United Blue `#002244` + Rhapsody Blue `#1414FF`), perforated boarding pass, interactive seat map, Premier gold `#C2A14D`.",
+      "accent": "#002244",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25576
+        },
+        {
+          "k": "swiftui",
+          "b": 20176
+        },
+        {
+          "k": "expo",
+          "b": 17661
+        },
+        {
+          "k": "android",
+          "b": 24139
+        }
+      ],
+      "bytes": 87552
+    },
+    {
+      "slug": "venmo",
+      "name": "Venmo",
+      "category": "finance",
+      "summary": "Social payments. Venmo Blue `#008CFF`, public emoji-laden transaction feed, Pay/Request split pill, animated sent-checkmark",
+      "accent": "#008CFF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26184
+        },
+        {
+          "k": "swiftui",
+          "b": 17719
+        },
+        {
+          "k": "expo",
+          "b": 18674
+        },
+        {
+          "k": "android",
+          "b": 32256
+        }
+      ],
+      "bytes": 94833
+    },
+    {
+      "slug": "vercel",
+      "name": "Vercel",
+      "category": "misc",
+      "summary": "developer deployment platform. The deployments list IS the product: a true-black #000000 canvas (not charcoal), a status traffic-light (Ready #0CCE6B, Building #F5A623, Error #E5484D) as the only systemic color, Geist Mono for every URL and commit hash, hairline #2E2E2E borders instead of shadows, and a white #EDEDED fill button with no brand accent.",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25412
+        },
+        {
+          "k": "swiftui",
+          "b": 15918
+        },
+        {
+          "k": "expo",
+          "b": 15488
+        },
+        {
+          "k": "android",
+          "b": 21588
+        }
+      ],
+      "bytes": 78406
+    },
+    {
+      "slug": "vero",
+      "name": "Vero",
+      "category": "social",
+      "summary": "calm, no-algorithm chronological social. Pure true-black canvas (#000000) with a single teal-to-blue brand gradient (#00D1C1 to #0079D3), flat teal accents (#00C2B8), and a 7 first-class post-type selector.",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24768
+        },
+        {
+          "k": "swiftui",
+          "b": 15776
+        },
+        {
+          "k": "expo",
+          "b": 16149
+        },
+        {
+          "k": "android",
+          "b": 23576
+        }
+      ],
+      "bytes": 80269
+    },
+    {
+      "slug": "viber",
+      "name": "Viber",
+      "category": "messaging",
+      "summary": "Rakuten's call-first messenger. Single-brand Viber Purple (#7360F2) outgoing bubbles, gray incoming (#EDEBF5 / #26232F), the three-state check receipt (gray → gray → violet #8F7DF7 seen), a purple→deep-violet (#59267C) free-call banner, and an aubergine-tinted (#121118) dark canvas.",
+      "accent": "#7360F2",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25854
+        },
+        {
+          "k": "swiftui",
+          "b": 16369
+        },
+        {
+          "k": "expo",
+          "b": 16713
+        },
+        {
+          "k": "android",
+          "b": 18548
+        }
+      ],
+      "bytes": 77484
+    },
+    {
+      "slug": "vimeo",
+      "name": "Vimeo",
+      "category": "social",
+      "summary": "cinematic creator video platform. Near-black screening-room canvas (#0D0E12) with a single Vimeo Blue accent (#00ADEF), the iconic Staff Pick gold star (#FFD24C), and a 14pt-corner auto-fading player.",
+      "accent": "#0D0E12",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25414
+        },
+        {
+          "k": "swiftui",
+          "b": 16752
+        },
+        {
+          "k": "expo",
+          "b": 15263
+        },
+        {
+          "k": "android",
+          "b": 22540
+        }
+      ],
+      "bytes": 79969
+    },
+    {
+      "slug": "vrbo",
+      "name": "Vrbo",
+      "category": "travel",
+      "summary": "Vacation rentals. Vrbo Blue `#245ABC` primary action (brightened to `#4F8BF0` on dark for links/pins/outline) + Sky Blue `#1D6FB8` support + one gold review star `#F2B01E`, full-bleed swipeable photo galleries with a \"1 / 42\" counter, a sticky heavy-price Book now bar, whole-home framing, and blue/gray/gold map price pins on a cool blue-charcoal `#101317` dark canvas",
+      "accent": "#245ABC",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25752
+        },
+        {
+          "k": "swiftui",
+          "b": 18227
+        },
+        {
+          "k": "expo",
+          "b": 17674
+        },
+        {
+          "k": "android",
+          "b": 24692
+        }
+      ],
+      "bytes": 86345
+    },
+    {
+      "slug": "vsco",
+      "name": "VSCO",
+      "category": "social",
+      "summary": "film-grade photo & video editor. Pure-black darkroom canvas (`#000000`), monochrome chrome with hairline bipolar sliders on a `#3A3A3A` track, a white-ringed film-preset carousel, and UPPERCASE wide-tracked Inter labels — zero brand accent, the photo is the only color.",
+      "accent": "#000000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27431
+        },
+        {
+          "k": "swiftui",
+          "b": 18802
+        },
+        {
+          "k": "expo",
+          "b": 16624
+        },
+        {
+          "k": "android",
+          "b": 23015
+        }
+      ],
+      "bytes": 85872
+    },
+    {
+      "slug": "walmart",
+      "name": "Walmart",
+      "category": "finance",
+      "summary": "Big-box retail. Walmart Blue `#0071DC` + Spark Yellow `#FFC220`, the blue-on-yellow Rollback price tag, spark logo, category grid, pickup/delivery toggle",
+      "accent": "#0071DC",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21210
+        },
+        {
+          "k": "swiftui",
+          "b": 14372
+        },
+        {
+          "k": "expo",
+          "b": 14779
+        },
+        {
+          "k": "android",
+          "b": 20110
+        }
+      ],
+      "bytes": 70471
+    },
+    {
+      "slug": "waze",
+      "name": "Waze",
+      "category": "travel",
+      "summary": "Community navigation. Waze Purple `#7E55BE` + Cyan `#33CCFF` electric duo, speech-bubble hazard reports with triangular tails, cyan arrow puck (not a dot), bright cyan water + mint parks, Boing typography with SF Pro Rounded fallback",
+      "accent": "#7E55BE",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 29060
+        },
+        {
+          "k": "swiftui",
+          "b": 22952
+        },
+        {
+          "k": "expo",
+          "b": 22336
+        },
+        {
+          "k": "android",
+          "b": 35309
+        }
+      ],
+      "bytes": 109657
+    },
+    {
+      "slug": "webull",
+      "name": "Webull",
+      "category": "finance",
+      "summary": "Dark-native retail trading terminal. A near-black canvas `#0B0E11` with the Webull blue→cyan gradient `#1B9EFB → #20D5C4`, a full-bleed candlestick chart, a depth-bar order-book ladder, an options chain, and pervasive saturated up `#00C076` / down `#FA5252` color on a split Buy/Sell docked pair.",
+      "accent": "#0B0E11",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 25796
+        },
+        {
+          "k": "swiftui",
+          "b": 18434
+        },
+        {
+          "k": "expo",
+          "b": 17474
+        },
+        {
+          "k": "android",
+          "b": 21972
+        }
+      ],
+      "bytes": 83676
+    },
+    {
+      "slug": "wechat",
+      "name": "WeChat",
+      "category": "messaging",
+      "summary": "Super-app messaging. WeChat Green `#07C160`, gray `#EDEDED` system canvas, tailed `#95EC69` bubbles, the Discover grouped-list hub, Moments, red-packet card",
+      "accent": "#07C160",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 24127
+        },
+        {
+          "k": "swiftui",
+          "b": 16505
+        },
+        {
+          "k": "expo",
+          "b": 16414
+        },
+        {
+          "k": "android",
+          "b": 24687
+        }
+      ],
+      "bytes": 81733
+    },
+    {
+      "slug": "whatsapp",
+      "name": "WhatsApp",
+      "category": "messaging",
+      "summary": "Encrypted chat. WhatsApp Green `#25D366`, mint-leaf outgoing bubbles `#D9FDD3`, voice-message waveform, blue double-check read receipts",
+      "accent": "#25D366",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 27077
+        },
+        {
+          "k": "swiftui",
+          "b": 17933
+        },
+        {
+          "k": "expo",
+          "b": 17818
+        },
+        {
+          "k": "android",
+          "b": 26847
+        }
+      ],
+      "bytes": 89675
+    },
+    {
+      "slug": "whoop",
+      "name": "WHOOP",
+      "category": "fitness",
+      "summary": "Recovery + strain coaching. Pitch-black canvas `#0A0A0A`, neon Strain Green `#00FF7B`, Recovery ring that interpolates red → yellow → green by score, DIN 2014 ALL CAPS typography, tabular numerals everywhere, neon glows replace shadows",
+      "accent": "#0A0A0A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26901
+        },
+        {
+          "k": "swiftui",
+          "b": 21255
+        },
+        {
+          "k": "expo",
+          "b": 20911
+        },
+        {
+          "k": "android",
+          "b": 29450
+        }
+      ],
+      "bytes": 98517
+    },
+    {
+      "slug": "wise",
+      "name": "Wise",
+      "category": "finance",
+      "summary": "Multi-currency money. Wise Bright Green `#9FE870` + forest `#163300`, multi-currency flag balances, the transparent fee-breakdown card, mid-market rate",
+      "accent": "#9FE870",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21102
+        },
+        {
+          "k": "swiftui",
+          "b": 14168
+        },
+        {
+          "k": "expo",
+          "b": 14523
+        },
+        {
+          "k": "android",
+          "b": 19305
+        }
+      ],
+      "bytes": 69098
+    },
+    {
+      "slug": "x-twitter",
+      "name": "X (Twitter)",
+      "category": "social",
+      "summary": "Real-time text-first social. Pure black OLED canvas, X Blue `#1D9BF0` reserved for links, Chirp font, column-centered feed, per-action color micro-animations",
+      "accent": "#1D9BF0",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28127
+        },
+        {
+          "k": "swiftui",
+          "b": 17392
+        },
+        {
+          "k": "expo",
+          "b": 16612
+        },
+        {
+          "k": "android",
+          "b": 30248
+        }
+      ],
+      "bytes": 92379
+    },
+    {
+      "slug": "yelp",
+      "name": "Yelp",
+      "category": "food",
+      "summary": "Local business reviews. One rationed Yelp Red `#FF1A1A` (logo `#D32323`) for the primary CTA + active tab, a warm orange-red five-star rating `#F25C05` (identical light and dark, half-star increments) as the brand asset, a full-bleed business photo header with a \"1 / 248 photos\" counter, Recommended Reviews cards with Useful/Funny/Cool votes, 8px gray `#F0F0F0` / dark `#0C0C0C` section bands instead of cards, and green/red `#2DA44E`/`#E03E3E` open-closed status on a near-black `#161616` dark canvas",
+      "accent": "#FF1A1A",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26700
+        },
+        {
+          "k": "swiftui",
+          "b": 16104
+        },
+        {
+          "k": "expo",
+          "b": 16026
+        },
+        {
+          "k": "android",
+          "b": 23005
+        }
+      ],
+      "bytes": 81835
+    },
+    {
+      "slug": "youtube",
+      "name": "YouTube",
+      "category": "video",
+      "summary": "Video platform. YouTube Red `#FF0000`, 16:9 thumbnails with duration tag, Subscribe morph, mini-player drag-down, Shorts rail, YouTube Sans + Roboto",
+      "accent": "#FF0000",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 30499
+        },
+        {
+          "k": "swiftui",
+          "b": 19091
+        },
+        {
+          "k": "expo",
+          "b": 17729
+        },
+        {
+          "k": "android",
+          "b": 33405
+        }
+      ],
+      "bytes": 100724
+    },
+    {
+      "slug": "youtube-music",
+      "name": "YouTube Music",
+      "category": "music",
+      "summary": "Music streaming, immersive dark. Near-black `#030303` canvas with a blurred album-art glow behind the player, YT red `#FF0000` chrome, and a white `#FFFFFF` play button — the signature Song/Video toggle sits under the art.",
+      "accent": "#030303",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 23301
+        },
+        {
+          "k": "swiftui",
+          "b": 17477
+        },
+        {
+          "k": "expo",
+          "b": 16503
+        },
+        {
+          "k": "android",
+          "b": 22190
+        }
+      ],
+      "bytes": 79471
+    },
+    {
+      "slug": "zalo",
+      "name": "Zalo",
+      "category": "messaging",
+      "summary": "Messaging super-app. Single Zalo Blue anchor (`#0068FF`) on every header, CTA, and active tab, white canvas over a calm blue-grey chat backdrop (`#E8ECF1`), asymmetric clipped-tail bubbles (incoming `#FFFFFF`, outgoing `#DBEBFF`), and a mini-app service launcher grid.",
+      "accent": "#0068FF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 26529
+        },
+        {
+          "k": "swiftui",
+          "b": 18601
+        },
+        {
+          "k": "expo",
+          "b": 16962
+        },
+        {
+          "k": "android",
+          "b": 24230
+        }
+      ],
+      "bytes": 86322
+    },
+    {
+      "slug": "zomato",
+      "name": "Zomato",
+      "category": "food",
+      "summary": "Food delivery and dining. Zomato Red `#E23744` for brand, primary action and \"ADD\" (pressed `#C42531`), a semantic color-coded rating pill — green `#267E3E` great, amber `#DB7C38` average, red `#E23744` poor — the India-mandated veg/non-veg mark (green dot vs maroon `#B91C1C` triangle), a bordered red ADD button that morphs into a stepper, and a Delivery / Dining Out toggle re-theming a hero-plus-pull-up-card detail screen over a warm `#121212` dark canvas",
+      "accent": "#E23744",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 30224
+        },
+        {
+          "k": "swiftui",
+          "b": 17701
+        },
+        {
+          "k": "expo",
+          "b": 17970
+        },
+        {
+          "k": "android",
+          "b": 25619
+        }
+      ],
+      "bytes": 91514
+    },
+    {
+      "slug": "zoom",
+      "name": "Zoom",
+      "category": "productivity",
+      "summary": "Video meetings. Zoom Blue `#2D8CFF` in a committed dark `#1A1A1A` theater, the gallery video grid, floating in-call control bar, active-speaker highlight",
+      "accent": "#2D8CFF",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 21642
+        },
+        {
+          "k": "swiftui",
+          "b": 14635
+        },
+        {
+          "k": "expo",
+          "b": 14392
+        },
+        {
+          "k": "android",
+          "b": 18850
+        }
+      ],
+      "bytes": 69519
+    },
+    {
+      "slug": "zwift",
+      "name": "Zwift",
+      "category": "fitness",
+      "summary": "Virtual cycling built around a full-bleed 3D world with a glassmorphic ride HUD. Zwift Orange `#FC6719` brand action over `rgba(12,12,12,0.6)` glass tiles, a fixed metric color mapping (power orange, cadence yellow `#E8C547`, HR red `#F0413E`, W/kg cyan `#2BD4D9`), tall condensed Barlow numerals, and an orange route-progress banner.",
+      "accent": "#FC6719",
+      "flavours": [
+        {
+          "k": "neutral",
+          "b": 28162
+        },
+        {
+          "k": "swiftui",
+          "b": 15959
+        },
+        {
+          "k": "expo",
+          "b": 16346
+        },
+        {
+          "k": "android",
+          "b": 19336
+        }
+      ],
+      "bytes": 79803
+    }
+  ],
+  "categories": [
+    {
+      "slug": "dating",
+      "label": "Dating",
+      "count": 12
+    },
+    {
+      "slug": "finance",
+      "label": "Finance",
+      "count": 22
+    },
+    {
+      "slug": "fitness",
+      "label": "Fitness",
+      "count": 19
+    },
+    {
+      "slug": "food",
+      "label": "Food & drink",
+      "count": 16
+    },
+    {
+      "slug": "messaging",
+      "label": "Messaging",
+      "count": 16
+    },
+    {
+      "slug": "music",
+      "label": "Music",
+      "count": 14
+    },
+    {
+      "slug": "misc",
+      "label": "Other",
+      "count": 20
+    },
+    {
+      "slug": "productivity",
+      "label": "Productivity",
+      "count": 22
+    },
+    {
+      "slug": "social",
+      "label": "Social",
+      "count": 23
+    },
+    {
+      "slug": "travel",
+      "label": "Travel",
+      "count": 20
+    },
+    {
+      "slug": "video",
+      "label": "Video",
+      "count": 16
+    }
+  ],
+  "counts": {
+    "apps": 200,
+    "specs": 800,
+    "bytes": 16690526
+  }
+}

@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "data": "node scripts/build-data.mjs",
+    "data": "node scripts/build-data.mjs && node scripts/build-design-md.mjs",
     "dev": "next dev",
-    "build": "node scripts/build-data.mjs && next build",
+    "build": "npm run data && next build",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",

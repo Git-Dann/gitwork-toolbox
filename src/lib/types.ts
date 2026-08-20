@@ -17,7 +17,7 @@ export type Added = {
 };
 
 export type RecentEntry = {
-  kind: "tool" | "starter" | "resource";
+  kind: "tool" | "starter" | "resource" | "design";
   slug: string;
   name: string;
   descriptor: string;
@@ -113,7 +113,7 @@ export type ShortlistSection = {
 };
 
 export type SearchEntry = {
-  kind: "tool" | "starter" | "resource";
+  kind: "tool" | "starter" | "resource" | "design";
   slug: string;
   name: string;
   blurb: string;
@@ -178,4 +178,33 @@ export type AdminItem = {
   recommended: boolean;
   approved: boolean;
   note: string;
+};
+
+/* ------------------------------------------------------------------ DESIGN.md */
+
+export type DesignFlavourKey = "neutral" | "swiftui" | "expo" | "android";
+
+export type DesignFlavourMeta = {
+  key: DesignFlavourKey;
+  file: string;
+  label: string;
+  for: string;
+};
+
+export type DesignApp = {
+  slug: string;
+  name: string;
+  category: string;
+  summary: string;
+  accent: string | null;
+  /** Keyed and byte-sized only — labels and paths are derived, see design-md.json. */
+  flavours: { k: DesignFlavourKey; b: number }[];
+  bytes: number;
+};
+
+export type DesignIndex = {
+  flavours: DesignFlavourMeta[];
+  apps: DesignApp[];
+  categories: { slug: string; label: string; count: number }[];
+  counts: { apps: number; specs: number; bytes: number };
 };

@@ -1,0 +1,18 @@
+# Hevy — iOS design spec
+
+Workout logger built around the live set table. Single-accent Hevy Blue `#1E6FFF` on a near-black training canvas `#0E1116`, completed sets washing green `#2FBF71`, an auto-starting rest-timer pill, and a gold `#F5B83D` PR badge that fires when you beat a record.
+
+The complete **Hevy** design system — free. The framework-neutral `DESIGN.md` plus SwiftUI, Expo, and Jetpack Compose companions: screen-by-screen breakdown, full color & type system, component specs, motion curves, haptics, and a ready-to-paste AI-agent implementation prompt.
+
+## Files
+
+- [`DESIGN.md`](DESIGN.md) — Framework-neutral spec
+- [`DESIGN-swiftui.md`](DESIGN-swiftui.md) — SwiftUI implementation guide
+- [`DESIGN-expo.md`](DESIGN-expo.md) — Expo / React Native guide
+- [`DESIGN-android.md`](DESIGN-android.md) — Jetpack Compose (Android) guide
+
+Live preview of every screen, rendered in the browser: **[www.spectr.to/gallery/hevy](https://www.spectr.to/gallery/hevy)**
+
+---
+
+**Category:** [Fitness](https://www.spectr.to/gallery/fitness) &nbsp;·&nbsp; **Index:** [Awesome iOS DESIGN.md](https://github.com/Meliwat/awesome-ios-design-md) — 200 production-grade mobile design systems.

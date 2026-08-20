@@ -8,12 +8,14 @@ const HREF: Record<SearchEntry["kind"], string> = {
   tool: "/tools/",
   starter: "/starters/",
   resource: "/resources/",
+  design: "/design-md/",
 };
 
 const KIND_LABEL: Record<SearchEntry["kind"], string> = {
   tool: "Tool",
   starter: "Starter",
   resource: "Resource",
+  design: "DESIGN.md",
 };
 
 function score(entry: SearchEntry, query: string) {

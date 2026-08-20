@@ -1,9 +1,12 @@
+import designMdJson from "@/data/generated/design-md.json";
 import metaJson from "@/data/generated/meta.json";
 import resourcesJson from "@/data/generated/resources.json";
 import shortlistJson from "@/data/generated/shortlist.json";
 import startersJson from "@/data/generated/starters.json";
 import toolsJson from "@/data/generated/tools.json";
 import type {
+  DesignApp,
+  DesignIndex,
   Meta,
   Resource,
   ShortlistSection,
@@ -128,3 +131,23 @@ export function relatedStarters(starter: Starter, limit = 6) {
  * lists whatever the current selection holds, so a rare tag needs its label too.
  */
 export const starterTags = meta.tags.filter((tag) => tag.tag !== "prompt-library");
+
+/* ------------------------------------------------------------------ DESIGN.md */
+
+export const designIndex = designMdJson as DesignIndex;
+export const designApps = designIndex.apps;
+export const designCategories = designIndex.categories;
+export const designFlavours = designIndex.flavours;
+
+const designBySlug = new Map(designApps.map((app) => [app.slug, app]));
+export const getDesignApp = (slug: string) => designBySlug.get(slug);
+
+export const designFlavour = (key: string) =>
+  designFlavours.find((flavour) => flavour.key === key);
+
+/** Where a spec sits under public/, and therefore its URL. */
+export const designSpecPath = (app: DesignApp, key: string) =>
+  `/design-md/${app.category}/${app.slug}/${designFlavour(key)?.file ?? "DESIGN.md"}`;
+
+export const designCategoryLabel = (slug: string) =>
+  designCategories.find((category) => category.slug === slug)?.label ?? slug;
