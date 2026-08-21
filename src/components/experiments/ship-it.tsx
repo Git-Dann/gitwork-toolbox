@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { Confetti } from "@/components/confetti";
 import type { RoomTool } from "./room-data";
 
 type Brick = { x: number; y: number; w: number; h: number; tool: RoomTool; alive: boolean };
@@ -33,6 +34,7 @@ export function ShipIt({ tools }: { tools: RoomTool[] }) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [state, setState] = useState({ shipped: 0, lives: LIVES, total: 0, done: "" });
+  const [burst, setBurst] = useState<{ x: number; y: number } | null>(null);
   const [round, setRound] = useState(0);
   const [seeded, setSeeded] = useState(false);
   const launchRef = useRef<(() => void) | null>(null);
@@ -41,7 +43,10 @@ export function ShipIt({ tools }: { tools: RoomTool[] }) {
   // and the browser disagreed about which tools were on the board.
   useEffect(() => setSeeded(true), []);
 
-  const restart = useCallback(() => setRound((value) => value + 1), []);
+  const restart = useCallback(() => {
+    setBurst(null);
+    setRound((value) => value + 1);
+  }, []);
 
   useEffect(() => {
     if (!seeded) return;
@@ -168,7 +173,18 @@ export function ShipIt({ tools }: { tools: RoomTool[] }) {
         const length = Math.hypot(ball.vx, ball.vy) || 1;
         ball.vx = (ball.vx / length) * speed;
         ball.vy = (ball.vy / length) * speed;
-        if (!bricks.some((item) => item.alive)) over = "Shipped the lot";
+        if (!bricks.some((item) => item.alive)) {
+          over = "Shipped the lot";
+          // Clearing the board is the one thing in here worth celebrating; the confetti
+          // is the same one the footer counter throws at 2100.
+          const rect = canvas.getBoundingClientRect();
+          const quiet = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          if (!quiet) {
+            setBurst({ x: rect.left + rect.width / 2, y: rect.top + rect.height * 0.62 });
+          }
+          // Park the ball, or it carries on flying and the announcement never shows.
+          resetBall();
+        }
         setState({ shipped, lives, total: bricks.length, done: over });
         return;
       }
@@ -274,13 +290,26 @@ export function ShipIt({ tools }: { tools: RoomTool[] }) {
         ctx.fillText(flash.text.toUpperCase(), box.w / 2, box.h - 76);
       }
       if (!ball.live) {
-        ctx.fillStyle = colours.faint;
-        ctx.font = '500 11px "JetBrains Mono", ui-monospace, monospace';
-        ctx.fillText(
-          over ? `${over.toUpperCase()} — CLICK TO GO AGAIN` : "CLICK OR PRESS SPACE TO SERVE",
-          box.w / 2,
-          box.h * 0.55,
-        );
+        if (over === "Shipped the lot") {
+          ctx.fillStyle = colours.accent;
+          ctx.font = `700 ${Math.min(96, box.w / 9)}px "Playfair Display", Georgia, serif`;
+          ctx.fillText("Shipped the lot.", box.w / 2, box.h * 0.48);
+          ctx.fillStyle = colours.faint;
+          ctx.font = '500 11px "JetBrains Mono", ui-monospace, monospace';
+          ctx.fillText(
+            `ALL ${bricks.length} OF THEM — CLICK FOR A NEW BOARD`,
+            box.w / 2,
+            box.h * 0.48 + 52,
+          );
+        } else {
+          ctx.fillStyle = colours.faint;
+          ctx.font = '500 11px "JetBrains Mono", ui-monospace, monospace';
+          ctx.fillText(
+            over ? `${over.toUpperCase()} — CLICK TO GO AGAIN` : "CLICK OR PRESS SPACE TO SERVE",
+            box.w / 2,
+            box.h * 0.55,
+          );
+        }
       }
       ctx.textAlign = "left";
     };
@@ -348,6 +377,7 @@ export function ShipIt({ tools }: { tools: RoomTool[] }) {
         className="block h-full w-full cursor-none"
         onClick={() => launchRef.current?.()}
       />
+      {burst ? <Confetti at={burst} onDone={() => setBurst(null)} /> : null}
       <div className="pointer-events-none absolute inset-x-0 top-0 flex items-start justify-between gap-3 p-5">
         <p className="label text-mute">
           {state.shipped}/{state.total} shipped ·{" "}

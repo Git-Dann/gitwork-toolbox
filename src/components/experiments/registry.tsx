@@ -3,6 +3,8 @@
 import type { ReactNode } from "react";
 import { AsciiMirror } from "./ascii-mirror";
 import { Constellation } from "./constellation";
+import { EasingLab } from "./easing-lab";
+import { GuessTheTool } from "./guess-the-tool";
 import { HeadsExperiment } from "./heads-experiment";
 import { PosterPress } from "./poster-press";
 import { Sand } from "./sand";
@@ -106,5 +108,23 @@ export const EXPERIMENTS: Experiment[] = [
       "One oscillator through a low-pass filter and a gain: across the screen for pitch, up it for brightness. The pitch snaps to a pentatonic scale over three octaves, which is the whole difference between an instrument and a siren — wherever you put the pointer sounds deliberate. The line you see is an analyser reading the actual output rather than a drawn sine, and the audio graph is only built on the first press, because a browser will not start an AudioContext until someone asks it to.",
     credits: [{ label: "Web Audio, no samples" }],
     render: () => <Theremin />,
+  },
+  {
+    slug: "easing",
+    name: "Easing lab",
+    blurb: "Drag a cubic-bézier and watch four things move to it",
+    note:
+      "The curve on the left and four properties moving to it on the right, so the number and the feel are on screen together — translate, width, scale and rotate, opacity, all driven by the same playhead. Drag either handle above the box or below it for an overshoot; x stays inside because CSS requires it. Solving x for t is done by bisection rather than Newton, which is exact enough for a screen and cannot diverge on an overshooting curve. Copy CSS puts the cubic-bezier() on the clipboard.",
+    credits: [{ label: "the only one of these that is actually useful" }],
+    render: () => <EasingLab />,
+  },
+  {
+    slug: "guess",
+    name: "Guess the tool",
+    blurb: "A write-up with the name blanked out — which one is it?",
+    note:
+      "A real sentence from a real entry with the name blanked wherever it gives itself away, and three decoys drawn from the same area as the answer, so it is a genuine question rather than spot-the-odd-one-out. Streak and best kept in this browser, 1 to 4 to answer, enter for the next. It only rewards having read the list, which is the entire idea.",
+    credits: [{ label: "239 tools, four at a time" }],
+    render: (data) => <GuessTheTool posters={data.posters} />,
   },
 ];
