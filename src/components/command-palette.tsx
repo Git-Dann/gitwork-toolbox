@@ -2,6 +2,8 @@
 
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
+import { lockScroll } from "@/lib/scroll-lock";
 import type { SearchEntry } from "@/lib/types";
 
 const HREF: Record<SearchEntry["kind"], string> = {
@@ -28,7 +30,11 @@ function score(entry: SearchEntry, query: string) {
   return 0;
 }
 
-export function CommandPalette({ variant = "sidebar" }: { variant?: "sidebar" | "icon" }) {
+export function CommandPalette({
+  variant = "sidebar",
+}: {
+  variant?: "sidebar" | "icon";
+}) {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
@@ -59,9 +65,14 @@ export function CommandPalette({ variant = "sidebar" }: { variant?: "sidebar" | 
       const target = event.target as HTMLElement | null;
       const typing =
         target &&
-        (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.isContentEditable);
+        (target.tagName === "INPUT" ||
+          target.tagName === "TEXTAREA" ||
+          target.isContentEditable);
 
-      if ((event.key === "k" || event.key === "K") && (event.metaKey || event.ctrlKey)) {
+      if (
+        (event.key === "k" || event.key === "K") &&
+        (event.metaKey || event.ctrlKey)
+      ) {
         event.preventDefault();
         setOpen((value) => !value);
         return;
@@ -81,10 +92,10 @@ export function CommandPalette({ variant = "sidebar" }: { variant?: "sidebar" | 
     if (!open) return;
     setActive(0);
     const frame = requestAnimationFrame(() => inputRef.current?.focus());
-    document.body.style.overflow = "hidden";
+    const unlock = lockScroll();
     return () => {
       cancelAnimationFrame(frame);
-      document.body.style.overflow = "";
+      unlock();
     };
   }, [open]);
 
@@ -95,7 +106,10 @@ export function CommandPalette({ variant = "sidebar" }: { variant?: "sidebar" | 
     return entries
       .map((entry) => ({ entry, value: score(entry, q) }))
       .filter((row) => row.value > 0)
-      .sort((a, b) => b.value - a.value || a.entry.name.length - b.entry.name.length)
+      .sort(
+        (a, b) =>
+          b.value - a.value || a.entry.name.length - b.entry.name.length,
+      )
       .slice(0, 24)
       .map((row) => row.entry);
   }, [entries, query]);
@@ -161,75 +175,93 @@ export function CommandPalette({ variant = "sidebar" }: { variant?: "sidebar" | 
         </button>
       )}
 
-      {open ? (
-        <div className="fixed inset-0 z-[60] flex items-start justify-center px-4 pt-[10vh] sm:pt-[14vh]">
-          <button
-            type="button"
-            aria-label="Close search"
-            className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"
-            onClick={() => setOpen(false)}
-          />
-          <div
-            className="surface relative z-10 w-full max-w-xl overflow-hidden"
-            style={{ boxShadow: "var(--shadow-card)" }}
-          >
-            <div
-              className="flex items-center gap-3 border-b px-4 py-3"
-              style={{ borderColor: "var(--border)" }}
-            >
-              <SearchIcon />
-              <input
-                ref={inputRef}
-                value={query}
-                onChange={(event) => {
-                  setQuery(event.target.value);
-                  setActive(0);
-                }}
-                onKeyDown={onKeyDown}
-                placeholder="Search the toolbox…"
-                className="w-full bg-transparent text-sm outline-none placeholder:text-[var(--text-mute)]"
+      {open
+        ? createPortal(
+            <div className="fixed inset-0 z-[60] flex items-start justify-center px-4 pt-[10vh] sm:pt-[14vh]">
+              <button
+                type="button"
+                aria-label="Close search"
+                className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"
+                onClick={() => setOpen(false)}
               />
-              <kbd
-                className="label rounded border px-1.5 py-0.5 text-[10px] text-mute"
-                style={{ borderColor: "var(--border)" }}
+              <div
+                className="surface relative z-10 w-full max-w-xl overflow-hidden"
+                style={{ boxShadow: "var(--shadow-card)" }}
               >
-                Esc
-              </kbd>
-            </div>
+                <div
+                  className="flex items-center gap-3 border-b px-4 py-3"
+                  style={{ borderColor: "var(--border)" }}
+                >
+                  <SearchIcon />
+                  <input
+                    ref={inputRef}
+                    value={query}
+                    onChange={(event) => {
+                      setQuery(event.target.value);
+                      setActive(0);
+                    }}
+                    onKeyDown={onKeyDown}
+                    placeholder="Search the toolbox…"
+                    className="w-full bg-transparent text-sm outline-none placeholder:text-[var(--text-mute)]"
+                  />
+                  <kbd
+                    className="label rounded border px-1.5 py-0.5 text-[10px] text-mute"
+                    style={{ borderColor: "var(--border)" }}
+                  >
+                    Esc
+                  </kbd>
+                </div>
 
-            {entries === null ? (
-              <p className="px-4 py-6 text-sm text-mute">Loading the index…</p>
-            ) : results.length === 0 ? (
-              <p className="px-4 py-6 text-sm text-mute">
-                No matches for “{query}”.
-              </p>
-            ) : (
-              <ul ref={listRef} className="max-h-[52vh] overflow-y-auto py-1">
-                {!query.trim() ? (
-                  <li className="label px-4 py-2 text-mute">Recommended</li>
-                ) : null}
-                {results.map((entry, index) => (
-                  <li key={`${entry.kind}-${entry.slug}`}>
-                    <button
-                      type="button"
-                      onClick={() => go(entry)}
-                      onMouseEnter={() => setActive(index)}
-                      className="flex w-full items-center gap-3 px-4 py-2.5 text-left"
-                      style={index === active ? { background: "var(--accent-wash)" } : undefined}
-                    >
-                      <span className="min-w-0 flex-1">
-                        <span className="block truncate text-sm font-medium">{entry.name}</span>
-                        <span className="block truncate text-xs text-mute">{entry.blurb}</span>
-                      </span>
-                      <span className="label shrink-0 text-mute">{KIND_LABEL[entry.kind]}</span>
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        </div>
-      ) : null}
+                {entries === null ? (
+                  <p className="px-4 py-6 text-sm text-mute">
+                    Loading the index…
+                  </p>
+                ) : results.length === 0 ? (
+                  <p className="px-4 py-6 text-sm text-mute">
+                    No matches for “{query}”.
+                  </p>
+                ) : (
+                  <ul
+                    ref={listRef}
+                    className="max-h-[52vh] overflow-y-auto py-1"
+                  >
+                    {!query.trim() ? (
+                      <li className="label px-4 py-2 text-mute">Recommended</li>
+                    ) : null}
+                    {results.map((entry, index) => (
+                      <li key={`${entry.kind}-${entry.slug}`}>
+                        <button
+                          type="button"
+                          onClick={() => go(entry)}
+                          onMouseEnter={() => setActive(index)}
+                          className="flex w-full items-center gap-3 px-4 py-2.5 text-left"
+                          style={
+                            index === active
+                              ? { background: "var(--accent-wash)" }
+                              : undefined
+                          }
+                        >
+                          <span className="min-w-0 flex-1">
+                            <span className="block truncate text-sm font-medium">
+                              {entry.name}
+                            </span>
+                            <span className="block truncate text-xs text-mute">
+                              {entry.blurb}
+                            </span>
+                          </span>
+                          <span className="label shrink-0 text-mute">
+                            {KIND_LABEL[entry.kind]}
+                          </span>
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </div>,
+            document.body,
+          )
+        : null}
     </>
   );
 }

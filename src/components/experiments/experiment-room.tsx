@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { lockScroll } from "@/lib/scroll-lock";
 import { EXPERIMENTS } from "./registry";
 import type { RoomData } from "./room-data";
 
@@ -17,13 +18,7 @@ export function ExperimentRoom({ data }: { data: RoomData }) {
   const current = EXPERIMENTS.find((item) => item.slug === slug) ?? EXPERIMENTS[0];
 
   // The canvas fills the viewport, so the page behind must not scroll under it.
-  useEffect(() => {
-    const previous = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = previous;
-    };
-  }, []);
+  useEffect(() => lockScroll(), []);
 
   useEffect(() => {
     if (!open) return;
