@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { AsciiMirror } from "./ascii-mirror";
 import { Constellation } from "./constellation";
 import { HeadsExperiment } from "./heads-experiment";
+import { PosterPress } from "./poster-press";
 import { ShipIt } from "./ship-it";
 import { TypingRace } from "./typing-race";
 import type { RoomData } from "./room-data";
@@ -76,5 +77,14 @@ export const EXPERIMENTS: Experiment[] = [
       "The camera frame is drawn into an offscreen canvas one pixel per character — the browser's own downscaler does the averaging — and each row is painted as a single string, because a monospace row aligns itself and nine thousand fillText calls a frame does not. Rec. 601 luma picks the glyph. It asks before it opens the camera, keeps nothing, uploads nothing, and stops the stream the moment you leave.",
     credits: [{ label: "your camera, your browser, nowhere else" }],
     render: () => <AsciiMirror />,
+  },
+  {
+    slug: "poster-press",
+    name: "Poster press",
+    blurb: "Any tool on the list, printed as a poster you can keep",
+    note:
+      "Four Swiss grids, a colour taken from the tool's own area, and every word on the sheet — the sentence, the price, the verdict, the domain — is what the entry actually says. It draws at 1600 by 2400 into an offscreen canvas and scales that down for the screen, so the PNG it hands you is a real poster rather than a screenshot of one. It waits for the display serif to load before drawing, because the first draw in Georgia looks like a different design.",
+    credits: [{ label: "type: Playfair Display and JetBrains Mono" }],
+    render: (data) => <PosterPress posters={data.posters} />,
   },
 ];

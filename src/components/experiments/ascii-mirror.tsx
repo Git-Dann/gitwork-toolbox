@@ -80,9 +80,15 @@ export function AsciiMirror() {
     if (!sctx) return;
 
     const font = SIZES[size].font;
-    // A monospace cell is about six tenths as wide as it is tall.
-    const cellW = font * 0.6;
+    const face = `${font}px "JetBrains Mono", ui-monospace, monospace`;
+    // Measured rather than assumed: if the mono font has not loaded, the fallback's
+    // advance width is different and everything below depends on this number.
+    ctx.font = face;
+    const cellW = ctx.measureText("0").width || font * 0.6;
     const cellH = font * 1.02;
+    // A cell is about six tenths as wide as it is tall, so a grid of them is not square.
+    // Without this the picture comes out stretched vertically by about 1.7.
+    const cellAspect = cellH / cellW;
     let cols = 0;
     let rows = 0;
     let ink = "#f2ede4";
@@ -116,10 +122,14 @@ export function AsciiMirror() {
       last = now;
       if (!video.videoWidth) return;
 
-      // Cover the grid rather than stretch to it, so a face is not a rectangle.
-      const scale = Math.max(cols / video.videoWidth, rows / video.videoHeight);
-      const dw = video.videoWidth * scale;
-      const dh = video.videoHeight * scale;
+      // Cover the grid, in cell space rather than pixel space: the video is treated as
+      // `cellAspect` times wider than it is so that one sampled pixel per non-square cell
+      // still comes out in proportion.
+      const wide = video.videoWidth * cellAspect;
+      const tall = video.videoHeight;
+      const scale = Math.max(cols / wide, rows / tall);
+      const dw = wide * scale;
+      const dh = tall * scale;
       sctx.save();
       if (mirror) {
         sctx.translate(cols, 0);
@@ -132,7 +142,7 @@ export function AsciiMirror() {
       ctx.fillStyle = bg;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.fillStyle = ink;
-      ctx.font = `${font}px "JetBrains Mono", ui-monospace, monospace`;
+      ctx.font = face;
       ctx.textBaseline = "top";
 
       for (let y = 0; y < rows; y++) {

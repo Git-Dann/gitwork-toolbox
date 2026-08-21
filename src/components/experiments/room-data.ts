@@ -15,8 +15,21 @@ export type RoomTool = {
 /** A sentence from a tool's own write-up, for anything that needs real copy to type. */
 export type RoomLine = { text: string; source: string };
 
+/** Everything the poster press prints. */
+export type RoomPoster = {
+  name: string;
+  slug: string;
+  category: string;
+  group: string;
+  pricing: string;
+  verdict: string;
+  domain: string;
+  what: string;
+};
+
 export type RoomData = {
   tools: RoomTool[];
   groups: { slug: string; name: string }[];
   lines: RoomLine[];
+  posters: RoomPoster[];
 };

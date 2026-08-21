@@ -38,6 +38,17 @@ const data: RoomData = {
         /^[A-Z]/.test(line.text),
     )
     .slice(0, 160),
+  // The poster press needs a little more of each row than a star on a map does.
+  posters: tools.map((tool) => ({
+    name: tool.name,
+    slug: tool.slug,
+    category: tool.category,
+    group: tool.group,
+    pricing: tool.pricing,
+    verdict: tool.usefulness,
+    domain: tool.domain,
+    what: tool.what.split(/(?<=[.?!])\s+/)[0] ?? tool.what,
+  })),
 };
 
 export default function ExperimentsPage() {
