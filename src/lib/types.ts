@@ -175,6 +175,14 @@ export type AdminItem = {
   slug: string;
   name: string;
   meta: string;
+  /**
+   * The one filter dimension the portal offers per tab: the area for tools and resources,
+   * the type for starters. Starters have tags rather than an area, and a tag filter over
+   * 150 topics is no use to someone working through a list.
+   */
+  bucket: string;
+  bucketLabel: string;
+  addedAt?: string;
   recommended: boolean;
   approved: boolean;
   note: string;

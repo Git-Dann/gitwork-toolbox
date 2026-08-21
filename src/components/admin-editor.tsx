@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { SearchField } from "@/components/filter-ui";
+import { SearchField, Select } from "@/components/filter-ui";
 import { Badge } from "@/components/ui";
 import type { AdminItem } from "@/lib/types";
 
@@ -15,6 +15,30 @@ const TABS: { kind: AdminItem["kind"]; label: string }[] = [
 
 const key = (item: { kind: string; slug: string }) => `${item.kind}:${item.slug}`;
 
+/** The filter dimension is the area for tools and resources, the type for starters. */
+const BUCKET_LABEL: Record<AdminItem["kind"], string> = {
+  tools: "area",
+  starters: "type",
+  resources: "area",
+};
+
+type Flag = "" | "recommended" | "approved" | "unflagged" | "noted" | "changed";
+
+type Sort = "flagged" | "name" | "added" | "bucket";
+
+const SORTS: { value: Sort; label: string }[] = [
+  { value: "flagged", label: "Flagged first" },
+  { value: "name", label: "A–Z" },
+  { value: "added", label: "Newest" },
+  { value: "bucket", label: "Grouped" },
+];
+
+const HREF: Record<AdminItem["kind"], string> = {
+  tools: "/tools",
+  starters: "/starters",
+  resources: "/resources",
+};
+
 export function AdminEditor({
   items,
   canSave,
@@ -26,7 +50,9 @@ export function AdminEditor({
 }) {
   const [kind, setKind] = useState<AdminItem["kind"]>("tools");
   const [query, setQuery] = useState("");
-  const [flaggedOnly, setFlaggedOnly] = useState(false);
+  const [bucket, setBucket] = useState("");
+  const [flag, setFlag] = useState<Flag>("");
+  const [sort, setSort] = useState<Sort>("flagged");
   const [drafts, setDrafts] = useState<Record<string, Draft>>({});
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<{ ok: boolean; message: string; url?: string } | null>(null);
@@ -64,27 +90,101 @@ export function AdminEditor({
 
   const changeCount = Object.keys(drafts).length;
 
+  // One predicate, so the option counts and the list can never disagree. Flags read the
+  // draft rather than the saved value — tick something and it stays where you can see it.
+  const matches = useMemo(
+    () =>
+      (item: AdminItem, over: { bucket?: string; flag?: Flag } = {}) => {
+        if (item.kind !== kind) return false;
+        const b = over.bucket ?? bucket;
+        const f = over.flag ?? flag;
+        if (b && item.bucket !== b) return false;
+        const draft = current(item);
+        if (f === "recommended" && !draft.recommended) return false;
+        if (f === "approved" && !draft.approved) return false;
+        if (f === "unflagged" && (draft.recommended || draft.approved)) return false;
+        if (f === "noted" && !draft.note.trim()) return false;
+        if (f === "changed" && !drafts[key(item)]) return false;
+        return true;
+      },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [items, kind, bucket, flag, drafts],
+  );
+
   const visible = useMemo(() => {
     const q = query.trim().toLowerCase();
+    const rank = (item: AdminItem) => {
+      const draft = current(item);
+      return Number(draft.recommended) * 2 + Number(draft.approved);
+    };
     return items
-      .filter((item) => item.kind === kind)
-      .filter((item) => {
-        const draft = current(item);
-        if (flaggedOnly && !draft.recommended && !draft.approved) return false;
-        if (!q) return true;
-        return item.name.toLowerCase().includes(q) || item.meta.toLowerCase().includes(q);
-      })
+      .filter((item) => matches(item))
+      .filter(
+        (item) =>
+          !q || item.name.toLowerCase().includes(q) || item.meta.toLowerCase().includes(q),
+      )
       .sort((a, b) => {
-        const da = current(a);
-        const db = current(b);
-        return (
-          Number(db.recommended) - Number(da.recommended) ||
-          Number(db.approved) - Number(da.approved) ||
-          a.name.localeCompare(b.name)
-        );
+        if (sort === "name") return a.name.localeCompare(b.name);
+        if (sort === "added") {
+          // Anything imported before we started stamping dates sorts last, then A–Z.
+          return (
+            (Date.parse(b.addedAt ?? "") || 0) - (Date.parse(a.addedAt ?? "") || 0) ||
+            a.name.localeCompare(b.name)
+          );
+        }
+        if (sort === "bucket") {
+          return a.bucketLabel.localeCompare(b.bucketLabel) || a.name.localeCompare(b.name);
+        }
+        return rank(b) - rank(a) || a.name.localeCompare(b.name);
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [items, kind, query, flaggedOnly, drafts]);
+  }, [items, matches, query, sort, drafts]);
+
+  const countWith = (over: { bucket?: string; flag?: Flag }) =>
+    items.filter((item) => matches(item, over)).length;
+
+  // Only buckets that exist inside the current tab and flag filter, counted within them,
+  // so picking one can never land on an empty list.
+  const bucketOptions = useMemo(() => {
+    const seen = new Map<string, string>();
+    for (const item of items) {
+      if (item.kind === kind && item.bucket) seen.set(item.bucket, item.bucketLabel);
+    }
+    const options = [...seen.entries()]
+      .map(([value, label]) => ({ value, label, n: countWith({ bucket: value }) }))
+      .filter((option) => option.n > 0 || bucket === option.value)
+      .map((option) => ({ value: option.value, label: `${option.label} (${option.n})` }))
+      .sort((a, b) => a.label.localeCompare(b.label));
+    return [
+      { value: "", label: `All ${BUCKET_LABEL[kind]}s (${countWith({ bucket: "" })})` },
+      ...options,
+    ];
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [items, kind, bucket, flag, drafts]);
+
+  const flagOptions = useMemo(() => {
+    const options: { value: Flag; label: string }[] = [
+      { value: "unflagged", label: "Not yet flagged" },
+      { value: "recommended", label: "Recommended" },
+      { value: "approved", label: "Approved" },
+      { value: "noted", label: "Has a note" },
+      { value: "changed", label: "Unsaved" },
+    ];
+    return [
+      { value: "", label: `Any state (${countWith({ flag: "" })})` },
+      ...options
+        .map((option) => ({ ...option, n: countWith({ flag: option.value }) }))
+        .filter((option) => option.n > 0 || flag === option.value)
+        .map((option) => ({ value: option.value, label: `${option.label} (${option.n})` })),
+    ];
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [items, kind, bucket, flag, drafts]);
+
+  // A bucket belongs to one tab, so switching tab drops it rather than emptying the list.
+  const selectKind = (next: AdminItem["kind"]) => {
+    setKind(next);
+    setBucket("");
+  };
 
   const save = async () => {
     setBusy(true);
@@ -145,7 +245,7 @@ export function AdminEditor({
             <button
               key={tab.kind}
               type="button"
-              onClick={() => setKind(tab.kind)}
+              onClick={() => selectKind(tab.kind)}
               className="rounded-full px-3.5 py-2 text-sm transition-colors"
               style={
                 kind === tab.kind
@@ -169,22 +269,47 @@ export function AdminEditor({
         </div>
       </div>
 
-      <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center">
-        <div className="flex-1">
-          <SearchField value={query} onChange={setQuery} placeholder="Find an item…" />
+      <div className="mt-5 flex flex-col gap-3">
+        <SearchField value={query} onChange={setQuery} placeholder="Find an item…" />
+        <div className="flex flex-wrap gap-2">
+          <Select
+            ariaLabel={BUCKET_LABEL[kind] === "type" ? "Type" : "Area"}
+            value={bucket}
+            onChange={setBucket}
+            options={bucketOptions}
+          />
+          <Select
+            ariaLabel="State"
+            value={flag}
+            onChange={(value) => setFlag(value as Flag)}
+            options={flagOptions}
+          />
+          <Select
+            ariaLabel="Sort"
+            value={sort}
+            onChange={(value) => setSort(value as Sort)}
+            options={SORTS.map((option) => ({ ...option, label: `Sort: ${option.label}` }))}
+          />
         </div>
-        <button
-          type="button"
-          onClick={() => setFlaggedOnly((value) => !value)}
-          className="label rounded-full border px-3.5 py-2.5"
-          style={
-            flaggedOnly
-              ? { borderColor: "var(--accent)", color: "var(--accent-soft)" }
-              : { borderColor: "var(--border)", color: "var(--text-mute)" }
-          }
-        >
-          Flagged only
-        </button>
+      </div>
+
+      <div className="mt-4 flex flex-wrap items-center gap-2">
+        <p className="label text-mute">
+          {visible.length} of {items.filter((item) => item.kind === kind).length}
+        </p>
+        {bucket || flag || query.trim() ? (
+          <button
+            type="button"
+            onClick={() => {
+              setBucket("");
+              setFlag("");
+              setQuery("");
+            }}
+            className="label text-accent hover:underline"
+          >
+            Clear
+          </button>
+        ) : null}
       </div>
 
       <div className="surface mt-5 overflow-hidden">
@@ -214,7 +339,14 @@ export function AdminEditor({
                 }}
               >
                 <div className="min-w-0 flex-1">
-                  <p className="truncate text-sm font-medium">{item.name}</p>
+                  <a
+                    href={`${HREF[item.kind]}/${item.slug}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block truncate text-sm font-medium hover:text-[var(--accent)]"
+                  >
+                    {item.name}
+                  </a>
                   <p className="truncate font-mono text-[11px] text-mute">{item.meta}</p>
                 </div>
 

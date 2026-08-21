@@ -5,7 +5,7 @@ import { AdminLogin } from "@/components/admin-login";
 import { ProposalQueue, type QueueItem } from "@/components/proposal-queue";
 import { Container, PageHeader, Panel } from "@/components/page-shell";
 import { COOKIE, authConfigured, githubConfigured, readToken } from "@/lib/admin";
-import { resources, starters, tools } from "@/lib/data";
+import { groups, resources, starters, tools } from "@/lib/data";
 import type { AdminItem } from "@/lib/types";
 import proposalsJson from "@/../data/proposals.json";
 import type { ProposalsFile } from "@/lib/proposals";
@@ -15,12 +15,17 @@ export const metadata: Metadata = { title: "Admin" };
 // Reads a cookie, so it is never prerendered.
 export const dynamic = "force-dynamic";
 
+const areaName = (slug: string) => groups.find((group) => group.slug === slug)?.name ?? slug;
+
 const items: AdminItem[] = [
   ...tools.map((tool) => ({
     kind: "tools" as const,
     slug: tool.slug,
     name: tool.name,
     meta: `${tool.pricing} · ${tool.category}`,
+    bucket: tool.group,
+    bucketLabel: areaName(tool.group),
+    addedAt: tool.addedAt,
     recommended: tool.recommended,
     approved: tool.approved,
     note: tool.adminNote,
@@ -30,6 +35,9 @@ const items: AdminItem[] = [
     slug: starter.slug,
     name: starter.name,
     meta: `${starter.typeLabel} · ${starter.tags.filter((tag) => tag !== "prompt-library").slice(0, 2).join(", ")}`,
+    bucket: starter.type,
+    bucketLabel: starter.typeLabel,
+    addedAt: starter.addedAt,
     recommended: starter.recommended,
     approved: starter.approved,
     note: starter.adminNote,
@@ -39,6 +47,9 @@ const items: AdminItem[] = [
     slug: resource.slug,
     name: resource.name,
     meta: `${resource.resourceType} · ${resource.category}`,
+    bucket: resource.group,
+    bucketLabel: areaName(resource.group),
+    addedAt: resource.addedAt,
     recommended: resource.recommended,
     approved: resource.approved,
     note: resource.adminNote,
