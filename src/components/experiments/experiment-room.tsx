@@ -106,6 +106,9 @@ export function ExperimentRoom() {
             >
               <p className="label mb-2 text-mute">How it works</p>
               <p className="text-xs leading-relaxed text-soft">{current.note}</p>
+              <p className="label mt-3 leading-relaxed text-mute">
+                {current.credits.map((credit) => credit.label).join(" · ")}
+              </p>
               <Link
                 href="/"
                 className="label mt-3 inline-block text-mute hover:text-[var(--accent)]"
@@ -115,20 +118,6 @@ export function ExperimentRoom() {
             </div>
           </div>
         ) : null}
-      </div>
-
-      <div
-        className="pointer-events-none absolute right-5 top-5 z-10 hidden max-w-[min(22rem,calc(100vw-2.5rem))] rounded-[var(--radius-card)] border px-4 py-3 backdrop-blur-md sm:block"
-        style={{
-          borderColor: "var(--border)",
-          background: "color-mix(in srgb, var(--bg) 88%, transparent)",
-        }}
-      >
-        <p className="display text-base leading-tight">{current.name}</p>
-        <p className="mt-1.5 text-xs leading-relaxed text-soft">{current.blurb}</p>
-        <p className="label mt-2 leading-relaxed text-mute">
-          {current.credits.map((credit) => credit.label).join(" · ")}
-        </p>
       </div>
     </div>
   );

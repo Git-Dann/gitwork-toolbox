@@ -25,7 +25,7 @@ export const EXPERIMENTS: Experiment[] = [
     name: "All my friends are made of JavaScript",
     blurb: "A contact sheet of generated faces that watch the cursor",
     note:
-      "Every head is recomputed from one integer, so a sheet of nine costs nine numbers and none of them is stored. Who the head is (skull, features, ink) is kept apart from what it is doing (turn, blink, gaze, mouth) and from how both get drawn — which is why the drawing code works nothing out for itself. Line art on canvas, no libraries.",
+      "Every head is recomputed from one integer, so a sheetful costs one number a head and not one of them is stored anywhere. Who the head is (skull, features, ink) is kept apart from what it is doing (turn, blink, gaze, mouth) and from how both get drawn — which is why the drawing code works nothing out for itself. Line art on canvas, no libraries.",
     credits: [
       {
         label: "after Nikolaj Sokolowski's version",

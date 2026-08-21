@@ -64,8 +64,8 @@ export function HeadsExperiment() {
       canvas.style.height = `${box.h}px`;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-      const cols = Math.max(2, Math.min(5, Math.round(box.w / 300)));
-      const rows = Math.max(2, Math.min(4, Math.round(box.h / 300)));
+      const cols = Math.max(2, Math.min(8, Math.round(box.w / 230)));
+      const rows = Math.max(2, Math.min(6, Math.round(box.h / 230)));
       if (cols !== sheet.cols || rows !== sheet.rows) {
         const cells: Cell[] = [];
         for (let i = 0; i < cols * rows; i++) cells.push(makeCell(base + i * 7919));
