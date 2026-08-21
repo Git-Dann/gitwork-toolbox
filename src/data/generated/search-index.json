@@ -2079,6 +2079,78 @@
     "pick": true
   },
   {
+    "kind": "tool",
+    "slug": "agentation",
+    "name": "Agentation",
+    "blurb": "Dev-only React overlay that turns a click on any element of your running app into context an agent can act on: CSS selector, sour…",
+    "meta": "AI coding / visual feedback",
+    "badge": "Free",
+    "pick": true
+  },
+  {
+    "kind": "tool",
+    "slug": "svelte-agentation",
+    "name": "Svelte Agentation",
+    "blurb": "Svelte port of Agentation's annotate-and-paste loop: mount it in development, press `i`, click an element, write a note, copy str…",
+    "meta": "AI coding / visual feedback",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "svelte-shadcn-blocks",
+    "name": "Svelte Shadcn Blocks",
+    "blurb": "Marketing and UI blocks for shadcn-svelte — heroes, pricing, logo clouds, testimonials, footers, auth — installed with the jsrepo…",
+    "meta": "Design engineering / component libraries",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "svelte-qblocks",
+    "name": "Svelte QBlocks",
+    "blurb": "shadcn-svelte blocks organised by primitive with a variant count against each — accordion 4, alert dialog 2, avatars 14 — so you…",
+    "meta": "Design engineering / component libraries",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "svelte-dot-matrix",
+    "name": "Svelte Dot Matrix",
+    "blurb": "Dot-matrix loaders for Svelte 5 in TypeScript and Tailwind — Hex Orbit, Braille Beat, Lemniscate Pulse, Radar Arc, Binary Bloom —…",
+    "meta": "Design engineering / motion",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "svelte-efferd-blocks",
+    "name": "Svelte Efferd Blocks",
+    "blurb": "Thirty categories of shadcn-svelte page blocks — hero, header, logo cloud, features, integrations, testimonials, CTA, pricing, bl…",
+    "meta": "Design engineering / component libraries",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "svelte-datatables-examples",
+    "name": "Svelte Datatables Examples",
+    "blurb": "Worked examples of TanStack Table v9 in Svelte — filtering, sorting, pagination — split into filter components, documentation and…",
+    "meta": "Design engineering / component libraries",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "svelte-animations",
+    "name": "Svelte Animations",
+    "blurb": "50+ animated components and effects for Svelte 5 built on Motion SV — ports of the Magic UI, Spell UI and Fancy Components sets —…",
+    "meta": "Design engineering / motion",
+    "badge": "Free",
+    "pick": false
+  },
+  {
     "kind": "starter",
     "slug": "humanizer",
     "name": "Humanizer",
