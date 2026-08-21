@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import { Constellation } from "./constellation";
 import { HeadsExperiment } from "./heads-experiment";
+import { TypingRace } from "./typing-race";
 import type { RoomData } from "./room-data";
 
 export type Experiment = {
@@ -46,5 +47,14 @@ export const EXPERIMENTS: Experiment[] = [
       "Every tool on the site is a star, pulled towards its area and pushed off its neighbours by a small force simulation, so the six areas settle into clusters without anyone placing them. A line is drawn between two tools only when they share a category and have drifted close enough to reach — which is why the picture is a constellation rather than a hairball. Recommended tools carry their names; hover any other star to read it, click to open it.",
     credits: [{ label: "our own data, 239 tools and 52 categories" }],
     render: (data) => <Constellation tools={data.tools} groups={data.groups} />,
+  },
+  {
+    slug: "typing",
+    name: "Type the toolbox",
+    blurb: "A typing test written out of our own tool descriptions",
+    note:
+      "The corpus is the site: every line is a real sentence from a real entry, and the entry is only named once you have typed it, so you cannot race through without reading. Live words a minute and first-attempt accuracy — backspacing fixes the line but not the score — and your best is kept in this browser. Tab for another line.",
+    credits: [{ label: "corpus: our own write-ups" }],
+    render: (data) => <TypingRace lines={data.lines} />,
   },
 ];
