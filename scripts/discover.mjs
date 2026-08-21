@@ -78,6 +78,42 @@ const CATEGORY_WEIGHT = {
   "E-commerce": -2,
 };
 
+/**
+ * The open feeds — Show HN, Reddit, Product Hunt — are mostly not for us. These score a
+ * title and URL so a launch has to look like a tool a design-and-build studio would touch
+ * before it earns a place in the reading queue.
+ */
+const RELEVANT = [
+  "design", "figma", "ui ", " ui", "component", "tailwind", "react", "svelte", "vue",
+  "next.js", "css", "svg", "icon", "font", "typeface", "typography", "palette", "colour",
+  "color", "animation", "motion", "prototyp", "mockup", "screenshot", "diagram", "canvas",
+  "agent", "mcp", "claude", "llm", "prompt", "coding", "developer", "devtool", "cli",
+  "terminal", "diff", "code review", "self-host", "open source", "open-source", "api",
+  "design system", "design tokens", "accessib", "wireframe", "landing page", "dashboard",
+];
+
+const IRRELEVANT = [
+  "crypto", "web3", "nft", "token price", "trading bot", "casino", "betting", "onlyfans",
+  "nsfw", "girlfriend", "dating app", "weight loss", "supplement", "dropship", "affiliate",
+  "seo backlink", "instagram follower", "tiktok follower", "resume builder", "cover letter",
+  "essay writer", "homework", "e-book", "course launch", "newsletter growth",
+];
+
+/** A label for the queue: the title if it reads like a name, otherwise the host. */
+function shortName(title, url) {
+  const head = title.split(/[—–|:]/)[0].trim();
+  if (head && head.length <= 40 && head.split(/\s+/).length <= 5) return head;
+  return hostOf(url) ?? head.slice(0, 60);
+}
+
+function relevance(text) {
+  const t = ` ${text.toLowerCase()} `;
+  if (IRRELEVANT.some((word) => t.includes(word))) return -20;
+  const hits = RELEVANT.filter((word) => t.includes(word)).length;
+  // Two independent signals before it is worth a fetch; one keyword is a coincidence.
+  return hits >= 2 ? 3 : hits === 1 ? 1 : -20;
+}
+
 const LINK_PENALTY = {
   OK: 0,
   "Blocked bot check (likely OK)": -1,
@@ -161,6 +197,120 @@ const sources = {
       needsResolve: true,
       signal: 1,
     }));
+  },
+
+  /**
+   * Recently-pushed, well-starred repos in the topics we actually work in. Unauthenticated
+   * on purpose — this is the public search endpoint, read the same way as any other public
+   * page, and it rate-limits rather than failing hard.
+   */
+  async github() {
+    const topics = [
+      "design-system", "design-tokens", "figma-plugin", "tailwindcss", "react-component",
+      "ai-agent", "mcp-server", "coding-agent", "design-engineering", "svg",
+    ];
+    const since = new Date(Date.now() - 60 * 86400000).toISOString().slice(0, 10);
+    const out = [];
+    for (const topic of topics) {
+      const query = `topic:${topic}+stars:>300+pushed:>${since}`;
+      const response = await get(
+        `https://api.github.com/search/repositories?q=${query}&sort=stars&order=desc&per_page=8`,
+        14000,
+      );
+      if (response.status !== 200) {
+        console.log(`  github: ${topic} → ${response.status}, skipped`);
+        continue;
+      }
+      try {
+        for (const repo of JSON.parse(response.text).items ?? []) {
+          if (repo.archived) continue;
+          out.push({
+            url: repo.homepage?.startsWith("http") ? repo.homepage : repo.html_url,
+            name: repo.name,
+            source: "github",
+            sourceCategory: `GitHub / ${topic}`,
+            claim: repo.description ?? null,
+            // Stars order the reading queue; they never decide what gets published.
+            signal: 2 + Math.min(2, Math.floor(repo.stargazers_count / 5000)),
+          });
+        }
+      } catch {
+        /* a malformed page is skipped rather than crashing the sweep */
+      }
+    }
+    return out;
+  },
+
+  /** Show HN — where a lot of genuinely good developer tools land first. */
+  async ["show-hn"]() {
+    const response = await get(
+      "https://hn.algolia.com/api/v1/search_by_date?tags=show_hn&hitsPerPage=100",
+      14000,
+    );
+    if (response.status !== 200) return [];
+    const out = [];
+    try {
+      for (const hit of JSON.parse(response.text).hits ?? []) {
+        const url = hit.url;
+        if (!url || !hostOf(url)) continue;
+        const score = relevance(`${hit.title ?? ""} ${url}`);
+        if (score < 1) continue;
+        out.push({
+          url,
+          // A Show HN title is often a sentence ("I built an open source video editor…").
+          // The host makes a better label; the sentence is kept as the claim.
+          name: shortName((hit.title ?? "").replace(/^Show HN:\s*/i, ""), url),
+          source: "show-hn",
+          sourceCategory: "Show HN",
+          claim: hit.title ?? null,
+          signal: score + (hit.points >= 100 ? 1 : 0),
+        });
+      }
+    } catch {
+      /* ignore a bad payload */
+    }
+    return out;
+  },
+
+  /**
+   * The subreddits where side projects and design tools get posted. Blocked by this
+   * session's egress policy, so it is untested from here and returns nothing rather than
+   * failing the sweep — it is expected to work in the GitHub Actions run, which has no
+   * such policy.
+   */
+  async reddit() {
+    const subs = ["SideProject", "webdev", "FigmaDesign", "InternetIsBeautiful"];
+    const out = [];
+    for (const sub of subs) {
+      const response = await get(
+        `https://www.reddit.com/r/${sub}/top.json?t=week&limit=50`,
+        14000,
+      );
+      if (response.status !== 200) {
+        console.log(`  reddit: r/${sub} → ${response.status}, skipped`);
+        continue;
+      }
+      try {
+        for (const child of JSON.parse(response.text).data?.children ?? []) {
+          const post = child.data ?? {};
+          const url = post.url_overridden_by_dest ?? post.url;
+          if (!url || !hostOf(url) || /reddit\.com|redd\.it|imgur/.test(url)) continue;
+          const score = relevance(`${post.title ?? ""} ${post.selftext ?? ""} ${url}`);
+          if (score < 1) continue;
+          out.push({
+            url,
+            name: shortName(post.title ?? "", url),
+            source: "reddit",
+            sourceCategory: `r/${sub}`,
+            claim: post.title ?? null,
+            signal: score + (post.ups >= 300 ? 1 : 0),
+          });
+        }
+      } catch {
+        /* ignore a bad payload */
+      }
+    }
+    return out;
   },
 
   /** A directory built by one design engineer, so the hit rate is high. */

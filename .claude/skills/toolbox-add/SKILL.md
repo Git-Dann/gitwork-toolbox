@@ -17,6 +17,17 @@ because nobody had read those rows. So do not write a listing from a name and a
 guess. **Open the page.** If you cannot open it, say so and stop; do not fill the
 fields from what you assume the product does.
 
+## When the input is a screenshot
+
+Dan shares screenshots of Reddit, X and Instagram constantly. Extract every product name
+and URL in the image — including ones in captions, bylines and link previews — then treat
+each as a pasted link. Two specifics that come up every time:
+
+- **Truncated URLs.** Feeds cut paths off. Test candidates against the real thing rather
+  than guessing; `git ls-remote` settles a repo name in seconds.
+- **Demo pages.** A post often links a demo, not the product. If a page serves another
+  tool's metadata, the listing belongs to that tool, with the demo noted inside it.
+
 ## Steps
 
 1. **Get the current timestamp.** Run `date -u +%Y-%m-%dT%H:%M:%S.000Z`. Use it for
@@ -159,8 +170,10 @@ Match the existing entries; read a few in `src/data/generated/tools.json` first.
   pasted link is one of those, say why you skipped it.
 - One commit per batch, and only touch `data/additions.json` unless a new category
   needs adding to the build script.
-- If a duplicate already exists (check `src/data/generated/tools.json` and the other
-  generated files by name and by domain), do not add a second entry. Say it is
-  already there and offer to update it instead.
+- **A duplicate is the same product, not a similar one.** If the exact thing is already
+  listed (check `src/data/generated/tools.json` and the other generated files by name and
+  by domain), say so and offer to update that entry instead of adding a second row.
+  Something that overlaps an existing listing is not a duplicate — several good options in
+  a category is the point, so judge it on whether it is good.
 - If the page cannot be read — bot protection, login wall, dead link — do not guess.
   Report it and let the human paste the content.
