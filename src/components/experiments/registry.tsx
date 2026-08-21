@@ -5,6 +5,8 @@ import { AsciiMirror } from "./ascii-mirror";
 import { Constellation } from "./constellation";
 import { HeadsExperiment } from "./heads-experiment";
 import { PosterPress } from "./poster-press";
+import { Sand } from "./sand";
+import { Theremin } from "./theremin";
 import { ShipIt } from "./ship-it";
 import { TypingRace } from "./typing-race";
 import type { RoomData } from "./room-data";
@@ -86,5 +88,23 @@ export const EXPERIMENTS: Experiment[] = [
       "Four Swiss grids, a colour taken from the tool's own area, and every word on the sheet — the sentence, the price, the verdict, the domain — is what the entry actually says. It draws at 1600 by 2400 into an offscreen canvas and scales that down for the screen, so the PNG it hands you is a real poster rather than a screenshot of one. It waits for the display serif to load before drawing, because the first draw in Georgia looks like a different design.",
     credits: [{ label: "type: Playfair Display and JetBrains Mono" }],
     render: (data) => <PosterPress posters={data.posters} />,
+  },
+  {
+    slug: "sand",
+    name: "Sand",
+    blurb: "Pour the six area colours and watch them pile up",
+    note:
+      "One rule: a grain moves down, or failing that down-left or down-right. Piles, slopes and hourglass behaviour all fall out of that, and the scan direction alternates each frame so the heaps do not all lean the same way. The grid is a byte per grain painted into an ImageData at one pixel each and blown up with smoothing off — drawing sixty-odd thousand little rectangles a frame is the obvious version, and it cannot hold sixty frames a second.",
+    credits: [{ label: "palette: the six areas" }],
+    render: () => <Sand />,
+  },
+  {
+    slug: "theremin",
+    name: "Theremin",
+    blurb: "Press and drag to play; the room finally makes a noise",
+    note:
+      "One oscillator through a low-pass filter and a gain: across the screen for pitch, up it for brightness. The pitch snaps to a pentatonic scale over three octaves, which is the whole difference between an instrument and a siren — wherever you put the pointer sounds deliberate. The line you see is an analyser reading the actual output rather than a drawn sine, and the audio graph is only built on the first press, because a browser will not start an AudioContext until someone asks it to.",
+    credits: [{ label: "Web Audio, no samples" }],
+    render: () => <Theremin />,
   },
 ];
