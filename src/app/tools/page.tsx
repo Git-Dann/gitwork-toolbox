@@ -26,6 +26,7 @@ const listItems: ToolListItem[] = tools.map((tool) => ({
   domain: tool.domain,
   recommended: tool.recommended,
   approved: tool.approved,
+  pinned: tool.pinned,
   addedAt: tool.addedAt,
   icon: tool.icon,
   preview: tool.preview,

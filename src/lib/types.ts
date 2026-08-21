@@ -41,6 +41,8 @@ export type Tool = AdminFlags &
   linkLabel: string;
   usefulness: Usefulness;
   buildVerdict: string;
+  /** First in every list it appears in. One thing at a time, set by hand. */
+  pinned: boolean;
   notes: string[];
   website: string;
   domain: string;
@@ -58,6 +60,8 @@ export type Resource = AdminFlags &
   takeaway: string;
   usefulness: Usefulness;
   whatToDo: string;
+  /** First in every list it appears in. One thing at a time, set by hand. */
+  pinned: boolean;
   notes: string[];
   cost: string;
   link: string;
@@ -150,6 +154,7 @@ export type ToolListItem = Pick<
   | "domain"
   | "recommended"
   | "approved"
+  | "pinned"
   | "addedAt"
   | "icon"
   | "preview"

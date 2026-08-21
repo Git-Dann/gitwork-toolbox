@@ -61,14 +61,18 @@ export const getGroup = (slug: string) => groupIndex.get(slug);
 export const isPick = (item: { recommended: boolean; usefulness: string }) =>
   item.recommended || item.usefulness === "High";
 
+/** Pinned first, then whatever order the list already had. */
+const pinnedFirst = <T extends { pinned?: boolean }>(items: T[]) =>
+  [...items].sort((a, b) => Number(Boolean(b.pinned)) - Number(Boolean(a.pinned)));
+
 export const picks = {
-  tools: tools.filter(isPick),
-  resources: resources.filter(isPick),
+  tools: pinnedFirst(tools.filter(isPick)),
+  resources: pinnedFirst(resources.filter(isPick)),
 };
 
 export const recommended = {
-  tools: tools.filter((tool) => tool.recommended),
-  resources: resources.filter((resource) => resource.recommended),
+  tools: pinnedFirst(tools.filter((tool) => tool.recommended)),
+  resources: pinnedFirst(resources.filter((resource) => resource.recommended)),
   starters: starters.filter((starter) => starter.recommended),
 };
 
@@ -77,6 +81,7 @@ const USEFULNESS_ORDER = ["High", "Medium", "Low", "None", "Unknown", "Not asses
 /** Every tool, best verdict first — recommended ones lead. */
 export const rankedTools = [...tools].sort(
   (a, b) =>
+    Number(b.pinned) - Number(a.pinned) ||
     Number(b.recommended) - Number(a.recommended) ||
     USEFULNESS_ORDER.indexOf(a.usefulness) - USEFULNESS_ORDER.indexOf(b.usefulness) ||
     a.name.localeCompare(b.name),

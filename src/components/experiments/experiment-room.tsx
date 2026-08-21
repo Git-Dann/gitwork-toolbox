@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { EXPERIMENTS } from "./registry";
+import type { RoomData } from "./room-data";
 
 /**
  * The room behind the footer counter. It takes the whole viewport rather than sitting in
  * the site's usual frame — no sidebar, no footer, nothing to click back to except the one
  * link — because a room you had to unlock should not look like another page of the list.
  */
-export function ExperimentRoom() {
+export function ExperimentRoom({ data }: { data: RoomData }) {
   const [slug, setSlug] = useState(EXPERIMENTS[0].slug);
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -42,7 +43,7 @@ export function ExperimentRoom() {
 
   return (
     <div className="fixed inset-0 z-50 overflow-hidden" style={{ background: "var(--bg)" }}>
-      <div className="absolute inset-0">{current.render()}</div>
+      <div className="absolute inset-0">{current.render(data)}</div>
 
       <div ref={menuRef} className="absolute left-5 top-5 z-10 w-[min(22rem,calc(100vw-2.5rem))]">
         <button

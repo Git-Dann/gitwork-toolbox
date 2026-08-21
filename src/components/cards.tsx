@@ -48,15 +48,26 @@ function Marks({
   recommended,
   approved,
   addedAt,
+  pinned,
 }: {
   recommended?: boolean;
   approved?: boolean;
   addedAt?: string;
+  pinned?: boolean;
 }) {
   const fresh = isNew(addedAt);
-  if (!recommended && !approved && !fresh) return null;
+  if (!recommended && !approved && !fresh && !pinned) return null;
   return (
     <span className="ml-1.5 inline-flex shrink-0 items-center gap-1">
+      {pinned ? (
+        <span
+          className="label rounded-full px-1.5 py-0.5"
+          style={{ background: "var(--accent)", color: "var(--on-accent)" }}
+          title="Start here"
+        >
+          1
+        </span>
+      ) : null}
       {fresh ? (
         <span className="label text-accent" title="Added recently">
           New
@@ -99,7 +110,12 @@ export function ToolCard({ tool }: { tool: ToolListItem }) {
         <div className="min-w-0 flex-1">
           <div className="flex min-w-0 items-center">
             <h3 className={NAME}>{tool.name}</h3>
-            <Marks recommended={tool.recommended} approved={tool.approved} addedAt={tool.addedAt} />
+            <Marks
+              recommended={tool.recommended}
+              approved={tool.approved}
+              addedAt={tool.addedAt}
+              pinned={tool.pinned}
+            />
           </div>
           <p className="mt-0.5 truncate font-mono text-[11px] text-mute">
             {tool.domain || tool.category}
@@ -144,7 +160,12 @@ export function ResourceCard({ resource }: { resource: Resource }) {
         <div className="min-w-0 flex-1">
           <div className="flex min-w-0 items-center">
             <h3 className={NAME}>{resource.name}</h3>
-            <Marks recommended={resource.recommended} approved={resource.approved} addedAt={resource.addedAt} />
+            <Marks
+              recommended={resource.recommended}
+              approved={resource.approved}
+              addedAt={resource.addedAt}
+              pinned={resource.pinned}
+            />
           </div>
           <p className="mt-0.5 truncate font-mono text-[11px] text-mute">{resource.domain}</p>
         </div>

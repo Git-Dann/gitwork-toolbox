@@ -15,7 +15,9 @@ const ORDER = ["High", "Medium", "Low", "None", "Unknown", "Not assessed"];
 export default function ResourcesPage() {
   const sorted = [...resources].sort(
     (a, b) =>
-      ORDER.indexOf(a.usefulness) - ORDER.indexOf(b.usefulness) || a.name.localeCompare(b.name),
+      Number(b.pinned) - Number(a.pinned) ||
+      ORDER.indexOf(a.usefulness) - ORDER.indexOf(b.usefulness) ||
+      a.name.localeCompare(b.name),
   );
   const lead = sorted.filter(
     (resource) => resource.recommended || resource.usefulness === "High",

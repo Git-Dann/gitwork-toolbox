@@ -4518,6 +4518,15 @@
     "pick": false
   },
   {
+    "kind": "resource",
+    "slug": "claude-academy",
+    "name": "Claude Academy",
+    "blurb": "Anthropic's own course catalogue: 289 courses, tutorials and use cases in one filterable list. The ones that matter to us are Cla…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": true
+  },
+  {
     "kind": "design",
     "slug": "acorns",
     "name": "Acorns",

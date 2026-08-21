@@ -1,7 +1,9 @@
 "use client";
 
 import type { ReactNode } from "react";
+import { Constellation } from "./constellation";
 import { HeadsExperiment } from "./heads-experiment";
+import type { RoomData } from "./room-data";
 
 export type Experiment = {
   slug: string;
@@ -11,7 +13,7 @@ export type Experiment = {
   /** What it is and how it works, shown once it is open. */
   note: string;
   credits: { label: string; href?: string }[];
-  render: () => ReactNode;
+  render: (data: RoomData) => ReactNode;
 };
 
 /**
@@ -35,5 +37,14 @@ export const EXPERIMENTS: Experiment[] = [
       { label: "built here from scratch" },
     ],
     render: () => <HeadsExperiment />,
+  },
+  {
+    slug: "constellation",
+    name: "The toolbox as a night sky",
+    blurb: "All 239 tools as drifting stars, wired up where they share a category",
+    note:
+      "Every tool on the site is a star, pulled towards its area and pushed off its neighbours by a small force simulation, so the six areas settle into clusters without anyone placing them. A line is drawn between two tools only when they share a category and have drifted close enough to reach — which is why the picture is a constellation rather than a hairball. Recommended tools carry their names; hover any other star to read it, click to open it.",
+    credits: [{ label: "our own data, 239 tools and 52 categories" }],
+    render: (data) => <Constellation tools={data.tools} groups={data.groups} />,
   },
 ];

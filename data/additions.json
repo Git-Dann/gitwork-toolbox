@@ -4287,6 +4287,28 @@
       ],
       "addedAt": "2026-08-21T14:48:08.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Claude Academy",
+      "slug": "claude-academy",
+      "link": "https://academy.claude.com/all",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / training",
+      "takeaway": "Anthropic's own course catalogue: 289 courses, tutorials and use cases in one filterable list. The ones that matter to us are Claude Code 101 (12 lessons on what it is and the core workflows), Claude Code in Action (9 lessons on long hands-off sessions — plan mode, steering compaction, the rewind menu, autonomous loops, verification), Introduction to agent skills (6 lessons from a first skill to team distribution), Claude subagents (4 lessons on orchestrating them deterministically), Introduction to MCP, Introduction to Claude Cowork (14 lessons) and Building with the Claude API (67 lessons covering tool use, RAG, agents and production patterns).",
+      "whatToDo": "Training. Action: everyone does Claude Code in Action and Introduction to agent skills — they are an hour each and they cover exactly the things people are currently guessing at, from compaction to skill distribution. Then Building with the Claude API for whoever is next on an agent build.",
+      "cost": "Free",
+      "usefulness": "High",
+      "recommended": true,
+      "pinned": true,
+      "note": "Start here. Everything else on this site assumes you already know what Claude Code can do.",
+      "notes": [
+        "This is the answer to most of the \"how do I make it stop doing that\" questions: plan mode, directing compaction so a summary keeps what matters, rewinding a session, when to hand over to a loop. All of it documented by the people who built it rather than inferred from a thread.",
+        "Courses open without an account — \"Start course\" works, and signing in only saves progress and completion badges. Free, © 2026 Anthropic PBC, and the catalogue is filterable by product.",
+        "Most of the 289 entries are not for us: the AI Fluency family (builders, educators, nonprofits, small businesses, students, pK–12) and the Bedrock and Vertex courses are 65-plus lessons each. Filter to the Claude Code and skills material and ignore the rest until there is a reason."
+      ],
+      "addedAt": "2026-08-21T15:01:35.000Z",
+      "addedBy": "Dan"
     }
   ]
 }
