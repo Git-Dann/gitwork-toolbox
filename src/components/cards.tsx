@@ -27,7 +27,12 @@ function Preview({
   return (
     <span
       className="relative mb-3.5 grid aspect-[16/10] w-full place-items-center overflow-hidden rounded-lg border"
-      style={{ borderColor: "var(--border)", background: "var(--bg-input)" }}
+      style={{
+        borderColor: "var(--border)",
+        // Without an image this is the whole top of the card, so it gets a wash rather
+        // than a flat panel — on the light theme a white block reads as a failed load.
+        background: src ? "var(--bg-input)" : "var(--accent-wash)",
+      }}
     >
       {src ? (
         <Image
@@ -35,6 +40,9 @@ function Preview({
           alt={`${name} preview`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
+          // The files are pre-sized to 1000px WebP by scripts/shrink-previews.mjs, so
+          // there is nothing left to optimise and no transformation quota to spend.
+          unoptimized
           className="object-cover"
         />
       ) : (

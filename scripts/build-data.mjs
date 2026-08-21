@@ -403,6 +403,7 @@ for (const entry of additionsByKind.tool) {
     website,
     domain: domainOf(website),
     icon: iconFor(slug),
+    preview: previewFor(slug),
     addedAt: entry.addedAt,
     addedBy: clean(entry.addedBy),
     // Flags can be set inline on the entry, and the portal can still override them.

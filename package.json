@@ -13,7 +13,8 @@
     "assess": "node scripts/assess.mjs",
     "foundry-sync": "node scripts/foundry-sync.mjs",
     "icons": "node scripts/fetch-icons.mjs",
-    "previews": "node scripts/fetch-previews.mjs"
+    "previews": "node scripts/fetch-previews.mjs && node scripts/shrink-previews.mjs",
+    "shrink": "node scripts/shrink-previews.mjs"
   },
   "dependencies": {
     "next": "^16.3.0",
