@@ -52,10 +52,22 @@ to the list.
 | `scripts/assess.mjs` | Pipe 3 — reads each candidate into `proposals.json`. |
 | `scripts/build-design-md.mjs` | Indexes the 200-app DESIGN.md library. |
 | `.claude/skills/toolbox-add/` | The schema, the house voice, the editorial rules. |
+| `src/experiments/` + `src/components/experiments/` | The experiments room at `/experiments`. |
 
 `npm run data` is the validator and runs as the first half of `npm run build`, so a
 malformed entry cannot reach the site. After adding entries, run `npm run icons` and
 `npm run previews` so the new cards have artwork.
+
+## The experiments room
+
+`/experiments` is an easter egg. The only way to it is the footer copyright year: click or
+hold it from 2026 to 2100 and the link appears, kept in `localStorage`. Do not link it from
+the nav, the footer columns or a collection — unlocking it is the point.
+
+Adding one is a single entry in `src/components/experiments/registry.tsx`; the accordion
+picks it up. Anything with an animation loop needs a `prefers-reduced-motion` path that
+still draws a full frame, and needs redrawing on resize, because setting `canvas.width`
+blanks it.
 
 ## Verify before saying it works
 

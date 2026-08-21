@@ -2,8 +2,7 @@ import Link from "next/link";
 import { OutboundLink } from "@/components/cards";
 import { Container } from "@/components/page-shell";
 import { counts, groups } from "@/lib/data";
-
-const YEAR = 2026;
+import { YearCounter } from "@/components/year-counter";
 
 export function SiteFooter() {
   const starterTypes = [
@@ -58,7 +57,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-12 flex flex-wrap items-center justify-between gap-3 border-t border-hair pt-6">
-          <p className="label text-mute">© {YEAR} Gitwork</p>
+          <YearCounter />
           <p className="label text-mute">Internal · not indexed</p>
         </div>
       </Container>
