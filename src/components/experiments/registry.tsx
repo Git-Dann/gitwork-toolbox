@@ -1,6 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
+import { AsciiMirror } from "./ascii-mirror";
 import { Constellation } from "./constellation";
 import { HeadsExperiment } from "./heads-experiment";
 import { ShipIt } from "./ship-it";
@@ -66,5 +67,14 @@ export const EXPERIMENTS: Experiment[] = [
       "Every brick is a real tool, tinted by its area, and knocking one out ships it. Three attempts, the ball speeds up with every brick, and where it lands on the paddle steers it. The only interesting line in it is the one that moves the ball in substeps of four pixels rather than one jump a frame — at 700 pixels a second a single step is wider than a brick and it tunnels straight through.",
     credits: [{ label: "bricks: 239 tools" }, { label: "no useful purpose whatsoever" }],
     render: (data) => <ShipIt tools={data.tools} />,
+  },
+  {
+    slug: "ascii-mirror",
+    name: "ASCII mirror",
+    blurb: "Your own face in the mono font, nothing leaving the browser",
+    note:
+      "The camera frame is drawn into an offscreen canvas one pixel per character — the browser's own downscaler does the averaging — and each row is painted as a single string, because a monospace row aligns itself and nine thousand fillText calls a frame does not. Rec. 601 luma picks the glyph. It asks before it opens the camera, keeps nothing, uploads nothing, and stops the stream the moment you leave.",
+    credits: [{ label: "your camera, your browser, nowhere else" }],
+    render: () => <AsciiMirror />,
   },
 ];
