@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import { Constellation } from "./constellation";
 import { HeadsExperiment } from "./heads-experiment";
+import { ShipIt } from "./ship-it";
 import { TypingRace } from "./typing-race";
 import type { RoomData } from "./room-data";
 
@@ -56,5 +57,14 @@ export const EXPERIMENTS: Experiment[] = [
       "The corpus is the site: every line is a real sentence from a real entry, and the entry is only named once you have typed it, so you cannot race through without reading. Live words a minute and first-attempt accuracy — backspacing fixes the line but not the score — and your best is kept in this browser. Tab for another line.",
     credits: [{ label: "corpus: our own write-ups" }],
     render: (data) => <TypingRace lines={data.lines} />,
+  },
+  {
+    slug: "ship-it",
+    name: "Ship It",
+    blurb: "Breakout, where the bricks are tools off the list",
+    note:
+      "Every brick is a real tool, tinted by its area, and knocking one out ships it. Three attempts, the ball speeds up with every brick, and where it lands on the paddle steers it. The only interesting line in it is the one that moves the ball in substeps of four pixels rather than one jump a frame — at 700 pixels a second a single step is wider than a brick and it tunnels straight through.",
+    credits: [{ label: "bricks: 239 tools" }, { label: "no useful purpose whatsoever" }],
+    render: (data) => <ShipIt tools={data.tools} />,
   },
 ];
