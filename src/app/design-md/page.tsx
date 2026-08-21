@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { DesignBrowser } from "@/components/design-browser";
-import { Container, PageHeader, Panel } from "@/components/page-shell";
+import { Container, PageHeader } from "@/components/page-shell";
 import { Badge } from "@/components/ui";
 import { designApps, designCategories, designIndex } from "@/lib/data";
 
@@ -29,24 +29,9 @@ export default function DesignMdPage() {
       />
 
       <Container className="py-8">
-        <Panel tone="flag" title="Read this before it reaches a client build">
-          <p className="text-sm leading-relaxed text-soft">
-            These are other companies&rsquo; design systems, reverse-engineered — exact brand
-            hexes, proprietary typefaces, iconography. Use them for structure, hierarchy and
-            motion, which is where the value is. Lifting Bumble&rsquo;s yellow and hexagons into a
-            dating app for a client is trade dress, not inspiration, and the typefaces named in
-            these specs (Brando, Uber Move, Airbnb Cereal and the rest) are licensed separately
-            and are not ours to ship.
-          </p>
-        </Panel>
-
-        <div className="mt-8">
-          <Suspense
-            fallback={<p className="label py-12 text-center text-mute">Loading the specs…</p>}
-          >
-            <DesignBrowser apps={designApps} categories={designCategories} />
-          </Suspense>
-        </div>
+        <Suspense fallback={<p className="label py-12 text-center text-mute">Loading the specs…</p>}>
+          <DesignBrowser apps={designApps} categories={designCategories} />
+        </Suspense>
       </Container>
     </>
   );

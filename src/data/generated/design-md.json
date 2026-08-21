@@ -31,6 +31,7 @@
       "name": "Acorns",
       "category": "finance",
       "summary": "Micro-investing with spare change. Dual brand Acorns Oak `#5A2B82` + Acorn Green `#6FBF4E`, a sweeping multi-segment allocation donut, the purple Round-Ups card (`#5A2B82 → #7B43A8`), and a Found Money cashback feed on deep aubergine `#14121A`.",
+      "descriptor": "Micro-investing with spare change",
       "accent": "#5A2B82",
       "flavours": [
         {
@@ -57,6 +58,7 @@
       "name": "Airbnb",
       "category": "travel",
       "summary": "Stays + Experiences. Rausch / `#FF385C` coral, Airbnb Cereal font, photography-first stay cards, category chip rail, subtle card shadows",
+      "descriptor": "Stays + Experiences",
       "accent": "#FF385C",
       "flavours": [
         {
@@ -83,6 +85,7 @@
       "name": "AllTrails",
       "category": "fitness",
       "summary": "Hiking + trails. AllTrails Green `#428000`, topo-map base, trail cards with the difficulty color scale (easy/moderate/hard) + length/elevation stats, route-trace draw",
+      "descriptor": "Hiking + trails",
       "accent": "#428000",
       "flavours": [
         {
@@ -109,6 +112,7 @@
       "name": "Amazon",
       "category": "misc",
       "summary": "E-commerce. Amazon Yellow `#FF9900` Add-to-Cart, Deep Navy `#131921` top nav, PDP price block with superscript cents, Prime badge, Amazon Ember",
+      "descriptor": "E-commerce",
       "accent": "#FF9900",
       "flavours": [
         {
@@ -135,6 +139,7 @@
       "name": "Amazon Music",
       "category": "music",
       "summary": "Music streaming, deep teal dark. A teal-navy `#0C1B22` canvas with the signature X-Ray synced-lyrics panel (current line in bright cyan `#25D1DA`) and a cyan `#00A8E1` glow play button on a top-down player gradient.",
+      "descriptor": "Music streaming, deep teal dark",
       "accent": "#0C1B22",
       "flavours": [
         {
@@ -161,6 +166,7 @@
       "name": "Apple Fitness",
       "category": "fitness",
       "summary": "Activity tracking and Fitness+ streaming. True-black canvas `#000000` with the three Activity rings as the entire brand (Move `#FA114F`, Exercise `#92E82A`, Stand `#1EE4E1`) on 22%-opacity tracks, grouped system cards `#1C1C1E`, Apple’s label-opacity text ramp, a Move-pink chrome accent `#FF375F`, and a cinematic Fitness+ shelf with frosted-glass overlays.",
+      "descriptor": "Activity tracking and Fitness+ streaming",
       "accent": "#000000",
       "flavours": [
         {
@@ -187,6 +193,7 @@
       "name": "Apple Maps",
       "category": "travel",
       "summary": "Apple's native navigation. Cream parchment cartography `#F6F1E6` land + `#B9D9EB` water, Maps Blue `#0A84FF` directions polyline, pulsing current-location puck, `.regularMaterial` blur on the sliding search card (88/50/full detents), SF Pro tabular figures",
+      "descriptor": "Apple's native navigation",
       "accent": "#F6F1E6",
       "flavours": [
         {
@@ -213,6 +220,7 @@
       "name": "Apple Music",
       "category": "music",
       "summary": "Music + lyrics. Apple Music Red `#FA2D48`, SF Pro native, time-synced word-by-word lyrics, Dolby Atmos badge, `.regularMaterial` tab bar",
+      "descriptor": "Music + lyrics",
       "accent": "#FA2D48",
       "flavours": [
         {
@@ -239,6 +247,7 @@
       "name": "Apple Notes",
       "category": "productivity",
       "summary": "The calmest note-taker. Warm Notes Cream canvas `#FFFBED`, Notes Orange `#F09A38` FAB + folder stroke, yellow folder glyph `#F5D773`, SF Pro 34pt Heavy nav, 17pt 400 body with 1.5 line-height, no tab bar",
+      "descriptor": "The calmest note-taker",
       "accent": "#FFFBED",
       "flavours": [
         {
@@ -265,6 +274,7 @@
       "name": "Apple TV",
       "category": "video",
       "summary": "Video streaming, true-black minimal. A pure `#000000` OLED canvas with an inset rounded floating hero, the Up Next rail of 16:9 thumbnails with white resume bars, one system-blue `#0A84FF` accent for links and the active tab, a white Play CTA, and MLS Season Pass hot-pink `#ED1A6F`.",
+      "descriptor": "Video streaming, true-black minimal",
       "accent": "#000000",
       "flavours": [
         {
@@ -291,6 +301,7 @@
       "name": "Apple Wallet",
       "category": "finance",
       "summary": "Cards + passes. True-black canvas, 80pt-peek vertical card stack with 10pt-radius envelopes, Apple Card titanium gradient `#E8E8EB → #3D3D3F`, SF Pro Display/Text, no tab bar — the stack is the whole app",
+      "descriptor": "Cards + passes",
       "accent": "#E8E8EB",
       "flavours": [
         {
@@ -317,6 +328,7 @@
       "name": "Asana",
       "category": "productivity",
       "summary": "project & task management. The task list IS the product: 20pt completion circles that fill green (#62D26F) on tap, a single coral accent (#F06A6A) for the FAB and active tab, multicolor object pills as ~16% tints (plum #4573D2, aqua #4ECBC4), and a charcoal dark canvas (#1E1F21).",
+      "descriptor": "Project & task management",
       "accent": "#62D26F",
       "flavours": [
         {
@@ -343,6 +355,7 @@
       "name": "Audible",
       "category": "music",
       "summary": "Audiobooks. Audible Orange `#FF9900` on warm charcoal `#1A1A1A`, Playfair/Inter pairing, progress-ring cover, speed-dial + 30s-skip player, Captions",
+      "descriptor": "Audiobooks",
       "accent": "#FF9900",
       "flavours": [
         {
@@ -369,6 +382,7 @@
       "name": "Bandcamp",
       "category": "music",
       "summary": "Music marketplace, paper editorial. Light #FFFFFF and #F4F4F4 canvas where big square album art is the hero and a scarce Bandcamp Teal #1DA0C3 marks artist links, the buy price, and the collection; the signature is the album page with a name-your-price buy-and-support card and a social fan-collection feed.",
+      "descriptor": "Music marketplace, paper editorial",
       "accent": "#FFFFFF",
       "flavours": [
         {
@@ -395,6 +409,7 @@
       "name": "Bear",
       "category": "productivity",
       "summary": "Markdown notes and writing app. Calm charcoal canvas (#21252B) with live in-place Markdown, inline #hashtag tokens and a single red-to-orange brand gradient (#E0566F to #FF8A65); every interactive glyph is Bear Orange (#FF8A65).",
+      "descriptor": "Markdown notes and writing app",
       "accent": "#21252B",
       "flavours": [
         {
@@ -421,6 +436,7 @@
       "name": "BeReal",
       "category": "social",
       "summary": "Authentic dual-camera social. Stark pure-black `#000000` canvas, no brand accent (white-only), dual front+back composite card, 2-minute countdown, RealMojis, zero vanity metrics",
+      "descriptor": "Authentic dual-camera social",
       "accent": "#000000",
       "flavours": [
         {
@@ -447,6 +463,7 @@
       "name": "Binance",
       "category": "finance",
       "summary": "Dark-native crypto exchange terminal. Single Binance Yellow `#F0B90B` accent on a near-black `#0B0E11` canvas, absolute market green `#0ECB81` / red `#F6465D`, a dense markets list with colored percentage pills, and a depth-shaded order book over IBM Plex Mono tabular figures.",
+      "descriptor": "Dark-native crypto exchange terminal",
       "accent": "#F0B90B",
       "flavours": [
         {
@@ -473,6 +490,7 @@
       "name": "Bluesky",
       "category": "social",
       "summary": "Custom-feeds social. Bluesky Blue `#1185FE`, butterfly mark, switchable pinned custom feeds, reply-control chips, three themes (light / dim `#1E2936` / dark `#0B0F14`)",
+      "descriptor": "Custom-feeds social",
       "accent": "#1185FE",
       "flavours": [
         {
@@ -499,6 +517,7 @@
       "name": "Booking.com",
       "category": "travel",
       "summary": "Travel booking. Booking navy `#003580` + bright-blue `#0071C2` action + yellow `#FEBB02`, the review-score badge, dense property cards, Genius banner",
+      "descriptor": "Travel booking",
       "accent": "#003580",
       "flavours": [
         {
@@ -525,6 +544,7 @@
       "name": "Bumble",
       "category": "dating",
       "summary": "Women-first dating. Bumble Yellow `#FFC629` + pure-black-on-yellow text, hexagon iconography for matches and mode toggles, big confident Brando 500/700/900, 24-hour countdown chip mechanic",
+      "descriptor": "Women-first dating",
       "accent": "#FFC629",
       "flavours": [
         {
@@ -551,6 +571,7 @@
       "name": "Cal AI",
       "category": "misc",
       "summary": "AI calorie tracking. Near-black `#0A0A0A` canvas, white-on-black CTAs, macro trio accents (blue/amber/pink), capture FAB with subtle glow",
+      "descriptor": "AI calorie tracking",
       "accent": "#0A0A0A",
       "flavours": [
         {
@@ -577,6 +598,7 @@
       "name": "Calm",
       "category": "fitness",
       "summary": "Meditation + sleep. Calm Blue `#2A6FD6` night-sky gradient, nature-photo backdrops, the 4-7-8 breathe bubble, Daily Calm card, Lora serif + Inter, sleep-story rows",
+      "descriptor": "Meditation + sleep",
       "accent": "#2A6FD6",
       "flavours": [
         {
@@ -603,6 +625,7 @@
       "name": "Canva",
       "category": "productivity",
       "summary": "Design and creativity tool. Bright workspace (#FFFFFF / dark #18191B) with the cyan-to-purple brand gradient (#00C4CC to #7D2AE8) on the logo, primary CTA and a centered lifted create FAB; full-color template galleries with gold Pro badges (#FFC24B).",
+      "descriptor": "Design and creativity tool",
       "accent": "#FFFFFF",
       "flavours": [
         {
@@ -629,6 +652,7 @@
       "name": "Cash App",
       "category": "finance",
       "summary": "Mobile money. Pure-black canvas + single Cash Green `#00D632` accent, Cash Sans / Cash Sans Mono, 96pt $-amount keypad, icon-only tab bar, matte black Cash Card",
+      "descriptor": "Mobile money",
       "accent": "#00D632",
       "flavours": [
         {
@@ -655,6 +679,7 @@
       "name": "Character.AI",
       "category": "misc",
       "summary": "Immersive conversation with an AI persona. Near-black canvas `#0F0F10`, asymmetric bubbles set apart by a 4pt tucked corner (AI `#1C1C1F` / user `#26262A`) rather than color, italic `*roleplay actions*` in muted `#9A9AA2`, and a single rationed accent blue `#3A7BFD` on the send button and CTAs.",
+      "descriptor": "Immersive conversation with an AI persona",
       "accent": "#0F0F10",
       "flavours": [
         {
@@ -681,6 +706,7 @@
       "name": "Charles Schwab",
       "category": "finance",
       "summary": "Confident full-service brokerage and trading. Schwab Blue `#009DDC` (with dark-navy `#002233` on-color text) on a maritime-navy canvas `#0A1622`, a navy-gradient `#003B5C → #002A42` Total Value hero, flat hairline account rows, the segmented Buy/Sell trade ticket centerpiece, and sacred gain `#18B07B` / loss `#E2564E` tabular numerals.",
+      "descriptor": "Confident full-service brokerage and trading",
       "accent": "#009DDC",
       "flavours": [
         {
@@ -707,6 +733,7 @@
       "name": "ChatGPT",
       "category": "misc",
       "summary": "AI chat. Monochromatic canvas, 32pt black/white circular send button, user-bubble vs inline-assistant asymmetry, full-screen pulsing blue voice-mode sphere, Söhne",
+      "descriptor": "AI chat",
       "accent": "#FFFFFF",
       "flavours": [
         {
@@ -733,6 +760,7 @@
       "name": "Chime",
       "category": "finance",
       "summary": "Mobile banking. Chime Mint `#1EC677` / `#00D67E` as the entire brand personality, a full `#1EC677 → #12A862` gradient balance hero with the amount at 44pt 700 in near-black mint ink `#062014` plus a mint-glow shadow, a SpotMe fee-free-overdraft banner, slide-down instant transaction alerts with a solid-mint check icon, spending kept neutral ink (red `#FF6B6B` only for declined/negative), Posted/Pending/SpotMe/Declined status chips, and heavily rounded geometry on a deep green-charcoal `#0E1411` dark canvas",
+      "descriptor": "Mobile banking",
       "accent": "#1EC677",
       "flavours": [
         {
@@ -759,6 +787,7 @@
       "name": "Chipotle",
       "category": "food",
       "summary": "QSR ordering. Chipotle Red `#A81612` on cream kraft `#FFF5E1`, build-your-burrito ingredient stepper, ALL-CAPS Archivo headers, rewards ring",
+      "descriptor": "QSR ordering",
       "accent": "#A81612",
       "flavours": [
         {
@@ -785,6 +814,7 @@
       "name": "Citymapper",
       "category": "travel",
       "summary": "Multimodal transit and live navigation. Theme-invariant mode colors (walk `#00B894`, bus `#E8453C`, tube `#2B5BFF`), the colored leg strip, and the shape-locked green GO pill `#00C281`, on a deep blue-black `#0C0E14` dark canvas.",
+      "descriptor": "Multimodal transit and live navigation",
       "accent": "#00B894",
       "flavours": [
         {
@@ -811,6 +841,7 @@
       "name": "Claude",
       "category": "misc",
       "summary": "AI assistant by Anthropic. Warm cream paper canvas + Claude Orange terracotta + Tiempos serif assistant body (the brand's central typographic decision) / Styrene sans for user and chrome, asterisk-star logomark on every message, streaming orange cursor",
+      "descriptor": "AI assistant by Anthropic",
       "accent": "#F8F4ED",
       "flavours": [
         {
@@ -837,6 +868,7 @@
       "name": "ClickUp",
       "category": "productivity",
       "summary": "all-in-one productivity & project management. The 3-stop brand gradient (purple #7B68EE → pink #FD71AF → blue #49CCF9) is reserved for the squircle FAB, primary CTA, and AI surfaces; the task list groups by solid custom-status pills, priority is a colored flag triangle, all over a deep blue-violet canvas (#1B1B2E).",
+      "descriptor": "All-in-one productivity & project management",
       "accent": "#7B68EE",
       "flavours": [
         {
@@ -863,6 +895,7 @@
       "name": "Clubhouse",
       "category": "social",
       "summary": "live-audio social rooms. Warm cream \"hallway\" canvas (`#F2EFE4`) with DM Serif room titles, a grid of circular speaker avatars, and an emerald speaking-pulse ring (`#38B569` + `rgba(56,181,105,0.18)` halo) — all-pill controls, warm `#1A1A1A` dark mode, no blue anywhere.",
+      "descriptor": "Live-audio social rooms",
       "accent": "#F2EFE4",
       "flavours": [
         {
@@ -889,6 +922,7 @@
       "name": "Coffee Meets Bagel",
       "category": "dating",
       "summary": "curated dating & relationships. A cozy coffee-house palette — brew-brown (#A0522D) + bagel-orange (#F4623A) + cream (#F3E4CF) over a roasted brown-black canvas (#14100D); one curated Today's Bagel card at a time (24pt radius, full-bleed photo) with a noticeably oversized bagel-orange Like, a roasted-brown Pass, and a brew-brown Send a Bagel; cream replaces pure white everywhere and a match fires an orange→brown takeover with bagel confetti.",
+      "descriptor": "Curated dating & relationships",
       "accent": "#A0522D",
       "flavours": [
         {
@@ -915,6 +949,7 @@
       "name": "Coinbase",
       "category": "finance",
       "summary": "Crypto exchange. Coinbase Blue `#0052FF` + geometric C-mark, Coinbase Sans/Display/Mono (Frere-Jones, 2021), brand-color asset icons (BTC orange, ETH purple), mini sparklines, 4-up Buy/Sell/Send/Receive quad",
+      "descriptor": "Crypto exchange",
       "accent": "#0052FF",
       "flavours": [
         {
@@ -941,6 +976,7 @@
       "name": "Craft",
       "category": "productivity",
       "summary": "docs & notes editor. The blue→purple gradient (#2F5BEA → #6E56CF) carries every primary action and the rounded-square FAB; structural blocks render as soft-shadowed cards with tinted icon chips on a warm canvas (#FCFCFD light / #1A1A1E dark), titles in Inter 28pt extrabold, plus a first-class Daily Note card.",
+      "descriptor": "Docs & notes editor",
       "accent": "#2F5BEA",
       "flavours": [
         {
@@ -967,6 +1003,7 @@
       "name": "Crunchyroll",
       "category": "video",
       "summary": "cinematic anime streaming platform. True-black OLED canvas (#000000) with a single Crunchyroll Orange accent (#F47521), full-bleed key-art heroes with a #000-fading scrim, and a resume-aware episode list with orange progress bars and Sub | Dub badges.",
+      "descriptor": "Cinematic anime streaming platform",
       "accent": "#000000",
       "flavours": [
         {
@@ -993,6 +1030,7 @@
       "name": "Crypto.com",
       "category": "finance",
       "summary": "Premium navy crypto super-app. A two-blue system (brand navy `#002D74` / `#103F68` for hero, electric `#1199FA` for interaction) on a navy-tinted `#03060F` canvas, the brushed-metal tiered Visa card with gold `#C8A24A` embossing, and a floating center Trade tab over Roboto Mono money.",
+      "descriptor": "Premium navy crypto super-app",
       "accent": "#002D74",
       "flavours": [
         {
@@ -1019,6 +1057,7 @@
       "name": "DeepSeek",
       "category": "misc",
       "summary": "AI reasoning chat assistant. A near-black canvas (#0E0E10) with exactly one accent — DeepSeek Blue (#4D6BFE) on the whale mark, user bubble, and active DeepThink/Search toggles; the signature is the reasoning trace: a recessed #16171A panel (darker than the canvas) with a 2pt blue left-bar holding the R1 chain-of-thought in dimmed italic #8A8B90, subordinate to an upright #ECECEC answer.",
+      "descriptor": "AI reasoning chat assistant",
       "accent": "#0E0E10",
       "flavours": [
         {
@@ -1045,6 +1084,7 @@
       "name": "Deezer",
       "category": "music",
       "summary": "Music streaming, gradient dark. Violet near-black #0F0D13 canvas with a scarce purple-to-pink gradient (#A238FF to #FF0092) lighting only the 68pt circular play button, the scrubber fill, and the Flow badge; the signature is the living-gradient Flow artwork with an embedded white equalizer and pink now-playing rows.",
+      "descriptor": "Music streaming, gradient dark",
       "accent": "#0F0D13",
       "flavours": [
         {
@@ -1071,6 +1111,7 @@
       "name": "Deliveroo",
       "category": "food",
       "summary": "Food delivery. One brand color — Deliveroo Teal `#00CCBC` (pressed `#00A99C`) — for the kangaroo logo, every button, ratings, Plus and the active tab, with deep Teal Ink `#003733` labels on teal fills, wide 5:3 restaurant photo cards, a signature delivery-fee pill, a floating teal `+` on menu thumbnails, and promo gold `#FFC100` for deals only, over a warm `#121212` dark canvas",
+      "descriptor": "Food delivery",
       "accent": "#00CCBC",
       "flavours": [
         {
@@ -1097,6 +1138,7 @@
       "name": "Delta",
       "category": "travel",
       "summary": "Airline travel concierge, boarding-pass-first. Navy→red boarding pass (Delta Blue `#003268` → widget red `#C8102E`), on-time green `#1E8E5A` status timeline, SkyMiles gold `#C99700`.",
+      "descriptor": "Airline travel concierge, boarding-pass-first",
       "accent": "#003268",
       "flavours": [
         {
@@ -1123,6 +1165,7 @@
       "name": "Discord",
       "category": "messaging",
       "summary": "Community chat. Blurple `#5865F2`, three-gray surface system `#1E1F22`/`#2B2D31`/`#313338`, server rail with squircle-morph on active, role-colored usernames, gg sans",
+      "descriptor": "Community chat",
       "accent": "#5865F2",
       "flavours": [
         {
@@ -1149,6 +1192,7 @@
       "name": "Disney+",
       "category": "video",
       "summary": "Premium streaming. Deep space-navy `#0A0E2A` starfield, Disney Blue `#0063E5` + glow `#1A75FF`, brand-portal tile row (Disney/Pixar/Marvel/Star Wars/Nat Geo), 16:9 rails",
+      "descriptor": "Premium streaming",
       "accent": "#0A0E2A",
       "flavours": [
         {
@@ -1175,6 +1219,7 @@
       "name": "Domino's",
       "category": "food",
       "summary": "Pizza ordering. Domino's Red `#E31837` action + Blue `#006491` info, 5-stage pizza tracker, build-your-pizza topping layout, deal cards",
+      "descriptor": "Pizza ordering",
       "accent": "#E31837",
       "flavours": [
         {
@@ -1201,6 +1246,7 @@
       "name": "DoorDash",
       "category": "food",
       "summary": "On-demand delivery. DoorDash Red `#EB1700` for every checkout, photo-first 16:10 merchant cards, floating pill CTA, TT Norms Pro bold hierarchy",
+      "descriptor": "On-demand delivery",
       "accent": "#EB1700",
       "flavours": [
         {
@@ -1227,6 +1273,7 @@
       "name": "Dropbox",
       "category": "productivity",
       "summary": "Cloud storage. Dropbox Blue `#0061FF` on warm paper-white, colored file-type rows, preview thumbnail grid, the upload FAB, share sheet",
+      "descriptor": "Cloud storage",
       "accent": "#0061FF",
       "flavours": [
         {
@@ -1253,6 +1300,7 @@
       "name": "Duolingo",
       "category": "misc",
       "summary": "Language learning. Feather Green `#58CC02`, Feather Bold font, mascot-driven gamification, streak + gems + hearts currency",
+      "descriptor": "Language learning",
       "accent": "#58CC02",
       "flavours": [
         {
@@ -1279,6 +1327,7 @@
       "name": "eBay",
       "category": "finance",
       "summary": "Auction marketplace. Four-color identity (red `#E53238` / blue `#0064D2` / yellow `#F5AF02` / green `#86B817`), bid-vs-Buy-It-Now badges, watch heart, time-left countdown",
+      "descriptor": "Auction marketplace",
       "accent": "#E53238",
       "flavours": [
         {
@@ -1305,6 +1354,7 @@
       "name": "ESPN",
       "category": "video",
       "summary": "fast live-first sports scoreboard platform. Near-black canvas (#0E0F11, never pure black) with a single ESPN Red accent (#D50A0A), a pinned horizontal scores ticker, pulsing #FF1A1A LIVE badges, and the winning team's score in green (#1FAA59) with tabular numerals.",
+      "descriptor": "Fast live-first sports scoreboard platform",
       "accent": "#0E0F11",
       "flavours": [
         {
@@ -1331,6 +1381,7 @@
       "name": "Etsy",
       "category": "finance",
       "summary": "Handmade marketplace. Etsy Orange `#F1641E` on warm-cream `#FAF5EF`, handmade product cards, the favorite-heart bounce, shop-front banners, review stars",
+      "descriptor": "Handmade marketplace",
       "accent": "#F1641E",
       "flavours": [
         {
@@ -1357,6 +1408,7 @@
       "name": "Evernote",
       "category": "productivity",
       "summary": "note-taking & knowledge capture. Calm neutral canvas (near-white light, true near-black `#1C1C1E` dark) with the single brand Evernote Green `#00A82D` for FAB/checkboxes/links, warm ink `#1C2B33`, green tag pills, and a 1.6 reading rhythm.",
+      "descriptor": "Note-taking & knowledge capture",
       "accent": "#1C1C1E",
       "flavours": [
         {
@@ -1383,6 +1435,7 @@
       "name": "Expedia",
       "category": "travel",
       "summary": "Travel booking. Expedia Yellow `#FFC94D` savings accent + Action Blue `#1668E3` + navy `#00355F` review-score badge, the search-and-results loop, Bundle + Save, One Key gold `#F5C518` earn lines",
+      "descriptor": "Travel booking",
       "accent": "#FFC94D",
       "flavours": [
         {
@@ -1409,6 +1462,7 @@
       "name": "Facebook",
       "category": "social",
       "summary": "Social network. Facebook Blue `#1877F2`, `#F0F2F5` feed background, 7-emoji Reactions popover with drag-select, profile cover hero",
+      "descriptor": "Social network",
       "accent": "#1877F2",
       "flavours": [
         {
@@ -1435,6 +1489,7 @@
       "name": "Feeld",
       "category": "dating",
       "summary": "Open-minded dating, dark-native. True-black canvas `#000000` with one rationed acid-yellow `#E8FF63` accent, desire pink `#FF5C8A`, a full-bleed 28pt Discover card with couple-aware names and a heavy `rgba(0,0,0,0.72)→0.92` gradient, plus the three-state Desire chip system.",
+      "descriptor": "Open-minded dating, dark-native",
       "accent": "#000000",
       "flavours": [
         {
@@ -1461,6 +1516,7 @@
       "name": "Fidelity",
       "category": "finance",
       "summary": "Institutional brokerage and portfolio tracking. Fidelity Green `#368727` + Heritage Green `#00754A` on a calm evergreen dark canvas `#0E1411`, a 34pt tabular account-value hero with sparkline and range tabs, flat hairline holding rows, and sacred gain `#15B374` / loss `#E5544B` numerals with a sticky green Trade bar.",
+      "descriptor": "Institutional brokerage and portfolio tracking",
       "accent": "#368727",
       "flavours": [
         {
@@ -1487,6 +1543,7 @@
       "name": "Figma",
       "category": "productivity",
       "summary": "Design + collaboration. Five iconic brand cubes (`#F24E1E` `#FF7262` `#A259FF` `#1ABCFE` `#0ACF83`) for avatars/thumbnails/cursors, Action Blue `#0D99FF` for the real CTA, Inter at 11–16pt density, `#1E1E1E` dark canvas matching the Editor",
+      "descriptor": "Design + collaboration",
       "accent": "#F24E1E",
       "flavours": [
         {
@@ -1513,6 +1570,7 @@
       "name": "Fitbit",
       "category": "fitness",
       "summary": "Supportive health dashboard. Fitbit Teal `#00B0B9` (brightening to `#21D9CE` on dark) on a teal-black `#001017` canvas, a per-metric color system (heart-rate coral `#FF6B81`, sleep purple `#7C5CFF`, readiness lime `#B8E986`), and the steps progress-ring hero with big-number-first DM Sans tiles.",
+      "descriptor": "Supportive health dashboard",
       "accent": "#00B0B9",
       "flavours": [
         {
@@ -1539,6 +1597,7 @@
       "name": "Flickr",
       "category": "social",
       "summary": "Photo sharing & community. Near-black gallery canvas (`#0C0D0E`), justified photo mosaic with 3pt gutters, twin brand dots (Pink `#FF0084` + Blue `#0063DC`), and a monospace EXIF camera-detail table.",
+      "descriptor": "Photo sharing & community",
       "accent": "#0C0D0E",
       "flavours": [
         {
@@ -1565,6 +1624,7 @@
       "name": "Flighty",
       "category": "travel",
       "summary": "Flight tracking. Flighty Blue `#0A84FF` on deep-black `#0B0B0F`, live great-circle flight arc, on-time stats, Live-Activity status bar, delay timeline",
+      "descriptor": "Flight tracking",
       "accent": "#0A84FF",
       "flavours": [
         {
@@ -1591,6 +1651,7 @@
       "name": "Flo",
       "category": "fitness",
       "summary": "Cycle tracking. Flo Coral `#FF6B81` + lavender `#C5B3E6`, the rotating cycle-phase wheel, symptom-log chips, reassuring prediction cards, soft rounded surfaces",
+      "descriptor": "Cycle tracking",
       "accent": "#FF6B81",
       "flavours": [
         {
@@ -1617,6 +1678,7 @@
       "name": "Garmin Connect",
       "category": "fitness",
       "summary": "Fitness tracking and activity analysis. True-black canvas `#000000` with a single Garmin Blue accent `#007CC3` (brightened to `#2A9FD6` on black), a glowing GPS route line, a condensed tabular stat grid, Training Status ring, Body Battery gauge `#2EA8E0`, and the green-to-red HR-zone ramp (`#4CAF50 → #E5402A`).",
+      "descriptor": "Fitness tracking and activity analysis",
       "accent": "#000000",
       "flavours": [
         {
@@ -1643,6 +1705,7 @@
       "name": "Gas",
       "category": "social",
       "summary": "joyful anonymous compliments for schools. Full-bleed indigo-to-purple gradient (#6C5CE7 to #A06CFF) behind a big white poll card, four fixed festive choice colors, and the flame #FF7A45 currency loop.",
+      "descriptor": "Joyful anonymous compliments for schools",
       "accent": "#6C5CE7",
       "flavours": [
         {
@@ -1669,6 +1732,7 @@
       "name": "GitHub",
       "category": "misc",
       "summary": "Developer tooling, the Primer system on mobile. Dark default canvas `#0D1117` with one accent blue `#2F81F7` and a reserved green `#238636` for Code/Merge only, the iconic contributions heatmap (`#161B22 → #39D353`), semantic state pills (open `#3FB950` / merged `#A371F7` / closed `#F85149`), and a monospace code browser + diff viewer.",
+      "descriptor": "Developer tooling, the Primer system on mobile",
       "accent": "#0D1117",
       "flavours": [
         {
@@ -1695,6 +1759,7 @@
       "name": "Gmail",
       "category": "misc",
       "summary": "Email. Google multicolor logo, Gmail Red `#D93025` Compose FAB (16pt squircle), Material You active-indicator pill, swipe archive/delete, Google Sans + Roboto",
+      "descriptor": "Email",
       "accent": "#D93025",
       "flavours": [
         {
@@ -1721,6 +1786,7 @@
       "name": "Goodreads",
       "category": "misc",
       "summary": "books, reviews & reading tracking. Warm tan paper canvas (`#F4F1EA` light, ink-brown `#161310` dark) with literary brown `#382110` chrome, full-color cover grids, the load-bearing amber five-star rating `#E9A100`, a green Want-to-Read CTA `#409D69`, teal links `#00635D`, and a serif 1.6 reading rhythm.",
+      "descriptor": "Books, reviews & reading tracking",
       "accent": "#F4F1EA",
       "flavours": [
         {
@@ -1747,6 +1813,7 @@
       "name": "Google Calendar",
       "category": "productivity",
       "summary": "Scheduling. Material on iOS: Google Blue `#1A73E8` FAB at Material Level 6, Material primaries (Blue/Red/Yellow/Green) + 24-color user palette, Google Sans Display + SF Pro Text hybrid, 36pt Schedule banners with today as filled blue circle",
+      "descriptor": "Scheduling",
       "accent": "#1A73E8",
       "flavours": [
         {
@@ -1773,6 +1840,7 @@
       "name": "Google Gemini",
       "category": "misc",
       "summary": "AI assistant. Gemini gradient `#4285F4 → #9B72CB → #D96570`, the sparkle mark, document-not-feed conversation (user chip / assistant text), streaming shimmer",
+      "descriptor": "AI assistant",
       "accent": "#4285F4",
       "flavours": [
         {
@@ -1799,6 +1867,7 @@
       "name": "Google Maps",
       "category": "travel",
       "summary": "Navigation. Google Blue `#4285F4` route polyline, map-as-hero with floating bottom sheet drawer, color-coded pins, turn-by-turn immersive mode",
+      "descriptor": "Navigation",
       "accent": "#4285F4",
       "flavours": [
         {
@@ -1825,6 +1894,7 @@
       "name": "Grammarly",
       "category": "productivity",
       "summary": "writing assistant & grammar checker. One brand accent — Grammarly Green (#15C39A → #11A683) — carries every CTA, the animated document score ring, and the assistant orb; suggestion underlines are color-coded by category (Correctness red #E5484D, Clarity blue #3B82F6, Engagement green #16A34A, Delivery purple #8B5CF6); the suggestion card slides up from the bottom over a warm charcoal canvas (#121212).",
+      "descriptor": "Writing assistant & grammar checker",
       "accent": "#15C39A",
       "flavours": [
         {
@@ -1851,6 +1921,7 @@
       "name": "Grindr",
       "category": "dating",
       "summary": "Proximity dating. Grindr Yellow `#FFDE00` on true black, the dense proximity thumbnail cascade, online dots, distance overlays, profile sheet, Taps",
+      "descriptor": "Proximity dating",
       "accent": "#FFDE00",
       "flavours": [
         {
@@ -1877,6 +1948,7 @@
       "name": "Grok",
       "category": "misc",
       "summary": "Real-time AI chat. True-black `#000000` monochrome conversation, link-blue `#1D9BF0` as the only chroma, real-time X citation card, regular/fun mode toggle, streaming cursor",
+      "descriptor": "Real-time AI chat",
       "accent": "#000000",
       "flavours": [
         {
@@ -1903,6 +1975,7 @@
       "name": "GroupMe",
       "category": "messaging",
       "summary": "Friendly group-messaging design system. Solid GroupMe-Blue chat nav bar (`#00AFF0`), blue outbound bubbles with neutral inbound (`#F0F0F0` / `#2A2A2C`), a docked heart-like count pill (`#FF3B5C`), circular gradient avatars, and per-group color themes.",
+      "descriptor": "Friendly group-messaging design system",
       "accent": "#00AFF0",
       "flavours": [
         {
@@ -1929,6 +2002,7 @@
       "name": "Grubhub",
       "category": "food",
       "summary": "Food delivery. Grubhub Red `#F63440` primary action (pressed `#D2202B`) + Grubhub Orange `#FF8000` for deals and savings + a gold `#FFB81C` Grubhub+ Perks badge, wide 16:9 restaurant photography in 14pt rounded cards, a green rating star `#18A957`, and a live order-tracking timeline on a calm Track Blue `#00A0DF` accent over a warm `#121212` dark canvas",
+      "descriptor": "Food delivery",
       "accent": "#F63440",
       "flavours": [
         {
@@ -1955,6 +2029,7 @@
       "name": "happn",
       "category": "dating",
       "summary": "Crossed-paths dating, timeline-first. happn pink `#FF4865` fading to magenta `#E91E63` as connective tissue across a connector-line Crossings feed, location+time stamps, the one-tap Charm heart (shadow `rgba(255,72,101,0.5)`), teardrop map pins, and a reserved Crush gold `#FFC24B` celebration on a graphite `#0E0E12` canvas.",
+      "descriptor": "Crossed-paths dating, timeline-first",
       "accent": "#FF4865",
       "flavours": [
         {
@@ -1981,6 +2056,7 @@
       "name": "Headspace",
       "category": "fitness",
       "summary": "Meditation + sleep. Butter-cream canvas `#FFF7E7`, Marigold `#FF6B35` primary + Aurora gradient (peach → butter → marigold) wash, 234pt breathing meditation sphere on a 12s 4-2-4-2 ease-in-out cycle, Apercu/Nunito title case with 1.5 line-height",
+      "descriptor": "Meditation + sleep",
       "accent": "#FFF7E7",
       "flavours": [
         {
@@ -2007,6 +2083,7 @@
       "name": "Hevy",
       "category": "fitness",
       "summary": "Workout logger built around the live set table. Single-accent Hevy Blue `#1E6FFF` on a near-black training canvas `#0E1116`, completed sets washing green `#2FBF71`, an auto-starting rest-timer pill, and a gold `#F5B83D` PR badge that fires when you beat a record.",
+      "descriptor": "Workout logger built around the live set table",
       "accent": "#1E6FFF",
       "flavours": [
         {
@@ -2033,6 +2110,7 @@
       "name": "Hinge",
       "category": "dating",
       "summary": "Relationship-intent dating. Cream paper + warm Hinge Black + sacred Rose Gold accent for Standouts/Roses, vertical-scroll profiles with prompt cards in Sailec 24pt Bold, 44pt heart-tap on every reactive surface",
+      "descriptor": "Relationship-intent dating",
       "accent": "#1A1A1A",
       "flavours": [
         {
@@ -2059,6 +2137,7 @@
       "name": "Hopper",
       "category": "travel",
       "summary": "Price-prediction travel. Hopper Red `#FA4747` + bunny, the buy/wait price-prediction calendar heatmap, watch-price toggle, fare cards",
+      "descriptor": "Price-prediction travel",
       "accent": "#FA4747",
       "flavours": [
         {
@@ -2085,6 +2164,7 @@
       "name": "Hulu",
       "category": "video",
       "summary": "Content-dense streaming. Electric Hulu Green `#1CE783` Watch CTA on near-black `#0B0C0F`, 16:9 tiles, hub chips, continue-watching progress",
+      "descriptor": "Content-dense streaming",
       "accent": "#1CE783",
       "flavours": [
         {
@@ -2111,6 +2191,7 @@
       "name": "iHeartRadio",
       "category": "music",
       "summary": "Live radio & podcasts, warm dark. Maroon-black #120A0E canvas with a scarce red-to-magenta system (#C6002B to #E40A5D, coral #F23A2F) lighting the 68pt circular play button and a pulsing LIVE badge; the signature is the live-station player with a heart-logomark tile and an indeterminate scanning bar instead of a scrubber (live radio cannot seek).",
+      "descriptor": "Live radio & podcasts, warm dark",
       "accent": "#120A0E",
       "flavours": [
         {
@@ -2137,6 +2218,7 @@
       "name": "iMessage",
       "category": "messaging",
       "summary": "Apple's system messaging surface. Blue/gray bubble pair with outgoing iMessage Blue (#007AFF), SMS Green (#34C759) fallback, incoming gray (#E9E9EB / #26262A), the six-glyph tapback strip, pulsing typing dots, and true-black (#000000) OLED dark mode.",
+      "descriptor": "Apple's system messaging surface",
       "accent": "#007AFF",
       "flavours": [
         {
@@ -2163,6 +2245,7 @@
       "name": "Instacart",
       "category": "food",
       "summary": "Grocery delivery. Instacart Green `#0AAD0A` + carrot `#FF7009`, aisle browse, the − n + qty stepper, replacement-preference flow, green cart bar",
+      "descriptor": "Grocery delivery",
       "accent": "#0AAD0A",
       "flavours": [
         {
@@ -2189,6 +2272,7 @@
       "name": "Instagram",
       "category": "social",
       "summary": "Photo & video social. Monochrome chrome, 10-stop brand gradient reserved for Stories + Create, icon-only tab bar, true-black OLED dark mode",
+      "descriptor": "Photo & video social",
       "accent": "#833AB4",
       "flavours": [
         {
@@ -2215,6 +2299,7 @@
       "name": "Jira",
       "category": "productivity",
       "summary": "project & issue tracking. Atlassian-neutral canvas (light `#FFFFFF`/`#F7F8F9`, dark `#1D2125`) with the single brand Jira Blue `#0052CC` for actions, Navy `#172B4D` ink, semantic status lozenges, and the drag-to-transition sprint board.",
+      "descriptor": "Project & issue tracking",
       "accent": "#FFFFFF",
       "flavours": [
         {
@@ -2241,6 +2326,7 @@
       "name": "KakaoTalk",
       "category": "messaging",
       "summary": "Korea’s super-app messenger design system. Kakao Yellow outbound bubbles (`#FEE500`) on Kakao Brown text (`#3C1E1E`), the iconic side-docked yellow unread \"N\", rounded-square avatars, and a blue-gray chat backdrop (`#B2C7DA` / `#1E2A33`).",
+      "descriptor": "Korea’s super-app messenger design system",
       "accent": "#FEE500",
       "flavours": [
         {
@@ -2267,6 +2353,7 @@
       "name": "KAYAK",
       "category": "travel",
       "summary": "Travel metasearch. KAYAK Orange `#FF690F` as the single scarce accent over a near-neutral canvas, the color-coded price calendar (green `#1E9E5A` / red `#E5484D`), forecast banner, fare-compare matrix, and Hacker Fares",
+      "descriptor": "Travel metasearch",
       "accent": "#FF690F",
       "flavours": [
         {
@@ -2293,6 +2380,7 @@
       "name": "Kick",
       "category": "video",
       "summary": "Creator-first live streaming. Near-black canvas (#0E0E10) with one screaming electric-green brand color (#53FC18) on every CTA; signature video-plus-streamer-bar-plus-chat watch page with role-colored usernames (mod #3EA6FF, sub #FFC700, VIP #FF4FD8) and a red #FF1F44 LIVE pill.",
+      "descriptor": "Creator-first live streaming",
       "accent": "#0E0E10",
       "flavours": [
         {
@@ -2319,6 +2407,7 @@
       "name": "Kik",
       "category": "messaging",
       "summary": "Username-first anonymous messenger. Modern Kik Blue (#00B0F0) outgoing bubbles with dark-cyan ink (#002A36), gray incoming (#E9EAEC / #25282D), the single-letter S/D/R receipt (Read turns #00B0F0), first-class bots, circular Kik Code plates, and a neutral near-black (#121316) dark canvas (heritage Kik Green #82BC23 noted).",
+      "descriptor": "Username-first anonymous messenger",
       "accent": "#00B0F0",
       "flavours": [
         {
@@ -2345,6 +2434,7 @@
       "name": "Kindle",
       "category": "misc",
       "summary": "e-reading & digital library. A chrome-free reading page (default Sepia paper `#FBF0D9` / warm ink `#5F4B32`, five user themes incl. dark `#2A2A2A` / black `#000000`) with the single Amazon Orange `#FF9900` accent for CTAs and progress, a cover-grid library with orange progress bars, the Aa panel, and a justified 1.72 reading rhythm.",
+      "descriptor": "E-reading & digital library",
       "accent": "#FBF0D9",
       "flavours": [
         {
@@ -2371,6 +2461,7 @@
       "name": "Klarna",
       "category": "finance",
       "summary": "Buy now, pay later. Klarna Pink `#FFB3C7` + near-black text, the pay-in-4 schedule timeline, in-app shopping browser, very-soft 28pt radii",
+      "descriptor": "Buy now, pay later",
       "accent": "#FFB3C7",
       "flavours": [
         {
@@ -2397,6 +2488,7 @@
       "name": "Lemon8",
       "category": "social",
       "summary": "Lifestyle & social discovery. Bright editorial white canvas (`#FFFFFF`), two-column staggered masonry feed of magazine-cover cards, sparing Lemon8 Yellow (`#FFE600`) paired only with ink `#1A1A1A`, and a pastel topic-tag system (mint `#E4F5EC`, blush `#FCE8EE`, sky `#E6F0FB`).",
+      "descriptor": "Lifestyle & social discovery",
       "accent": "#FFFFFF",
       "flavours": [
         {
@@ -2423,6 +2515,7 @@
       "name": "Life360",
       "category": "misc",
       "summary": "family safety and location sharing. The family map IS the product: a deep-violet night canvas (#161325) behind a dark-styled map (#1A2138) so colored member pins pop, a fixed per-member identity color (amber #F2A33C, teal #2DD4BF, pink #F472B6) used on every pin, avatar and trail, Life360 Purple #7E57C2 as the brand spine for Circles and Places, and SOS red #FF6B6B rationed strictly for real safety events.",
+      "descriptor": "Family safety and location sharing",
       "accent": "#161325",
       "flavours": [
         {
@@ -2449,6 +2542,7 @@
       "name": "LINE",
       "category": "messaging",
       "summary": "Sticker-first messaging. LINE Green `#06C755`, periwinkle `#8CABD9` chat backdrop, oversized bubble-less stickers, official-account badges, super-app tabs",
+      "descriptor": "Sticker-first messaging",
       "accent": "#06C755",
       "flavours": [
         {
@@ -2475,6 +2569,7 @@
       "name": "Linear",
       "category": "productivity",
       "summary": "Fast issue tracker. Linear Purple `#5E6AD2` on near-OLED `#08090A`, ultra-dense issue list, the Cmd+K command menu, cycle bars, drawn status iconography",
+      "descriptor": "Fast issue tracker",
       "accent": "#5E6AD2",
       "flavours": [
         {
@@ -2501,6 +2596,7 @@
       "name": "LinkedIn",
       "category": "social",
       "summary": "Professional network. Cream canvas `#F3F2EF`, LinkedIn Blue `#0A66C2`, 6-reaction picker, Premium gold avatar frame, Open-to-Work green ring",
+      "descriptor": "Professional network",
       "accent": "#F3F2EF",
       "flavours": [
         {
@@ -2527,6 +2623,7 @@
       "name": "Locket",
       "category": "social",
       "summary": "warm, widget-first photos from your closest friends. Cream-gold world (#FFF7EC / #FFB02E) with a square full-bleed friend photo, a big white capture button with a gold ring, and a 4-up photo-history grid.",
+      "descriptor": "Warm, widget-first photos from your closest friends",
       "accent": "#FFF7EC",
       "flavours": [
         {
@@ -2553,6 +2650,7 @@
       "name": "Lyft",
       "category": "travel",
       "summary": "Ride-hailing. Single Lyft Pink `#FF00BF` accent, map-as-hero with no tab bar, very-rounded springy ride-type selector sheet (Wait & Save / Standard / XL / Lux Black)",
+      "descriptor": "Ride-hailing",
       "accent": "#FF00BF",
       "flavours": [
         {
@@ -2579,6 +2677,7 @@
       "name": "Marriott Bonvoy",
       "category": "travel",
       "summary": "Hotel loyalty. Deep Bonvoy navy `#16264A` / near-black `#1C1C1C` base with disciplined gold `#B3852A` (brightened to `#D2A23E` on dark) reserved for member value only — points balances, elite tiers, redemption, the gold Book CTA — plus big hotel heros with gold small-caps sub-brand eyebrows, points-aware rate cards, and the navy+gold Mobile Key on a `#121214` dark canvas",
+      "descriptor": "Hotel loyalty",
       "accent": "#16264A",
       "flavours": [
         {
@@ -2605,6 +2704,7 @@
       "name": "Mastodon",
       "category": "social",
       "summary": "Federated social. Mastodon Purple `#6364FF`, `@user@instance` handles, content-warning spoilers, home/local/federated timelines, boost-with-spin, light + `#191B22` dark",
+      "descriptor": "Federated social",
       "accent": "#6364FF",
       "flavours": [
         {
@@ -2631,6 +2731,7 @@
       "name": "Match",
       "category": "dating",
       "summary": "Dating and social. A full-bleed profile-photo system on a warm near-black canvas `#141414` where the entire screen is one person and a bottom `rgba(20,20,20,0.95)` gradient scrim carries the name/age/chips, a single disciplined Match Red `#E92434` (energized to `#F0203E` for the Like button and active tab on dark) drives every action, the solid-red circular Like is deliberately the loudest object in a five-button floating action dock, functional accents stay strict (green `#2ECC71` presence, blue `#1FB6FF` Super Like/verified, gold `#D6A75B` Premium, purple `#B36BD8` Boost), the profile name is bold 700 with the age a lighter 500 beside it, interest chips are frosted translucent pills, the \"It's a Match!\" moment is a full-screen maroon-to-ink `#2A1418 → #1A1A1A` celebration, and a heavy blur is the Likes You paywall",
+      "descriptor": "Dating and social",
       "accent": "#141414",
       "flavours": [
         {
@@ -2657,6 +2758,7 @@
       "name": "Max",
       "category": "video",
       "summary": "Prestige streaming. Gradient wordmark `#0046FF → #7B2FF7` on deep-purple `#12053A`, auto-trailer billboard, prestige rows, profile gate",
+      "descriptor": "Prestige streaming",
       "accent": "#0046FF",
       "flavours": [
         {
@@ -2683,6 +2785,7 @@
       "name": "McDonald's",
       "category": "food",
       "summary": "bold, deal-driven QSR loyalty and mobile-order platform. A two-color Golden Arches Yellow (#FFC72C, always with #1A1A1A text) and McDonald's Red (#DA291C) system over a near-black canvas (#121212), with a points-hero rewards card, a product-photo deals grid, and an elevated yellow Order FAB.",
+      "descriptor": "Bold, deal-driven QSR loyalty and mobile-order platform",
       "accent": "#FFC72C",
       "flavours": [
         {
@@ -2709,6 +2812,7 @@
       "name": "Messenger",
       "category": "messaging",
       "summary": "Rich chat. Multi-stop brand gradient `#0A7CFF → #9D4EDD → #FF5CA0` conversation-anchored bubbles, chat-head avatars, 6-emoji reactions popover, active dots",
+      "descriptor": "Rich chat",
       "accent": "#0A7CFF",
       "flavours": [
         {
@@ -2735,6 +2839,7 @@
       "name": "Microsoft Copilot",
       "category": "misc",
       "summary": "AI companion. Copilot gradient `#FF6F61 → #FFB900` + Fluent Blue `#0078D4`, the flourish logo, Fluent acrylic surfaces, tone selector, prompt chips",
+      "descriptor": "AI companion",
       "accent": "#FF6F61",
       "flavours": [
         {
@@ -2761,6 +2866,7 @@
       "name": "Microsoft Teams",
       "category": "productivity",
       "summary": "Work collaboration. Teams Purple `#6264A7`/`#5B5FC7`, the Teams→Channels tree, activity feed, presence dots, meeting join bar, dual light/dark",
+      "descriptor": "Work collaboration",
       "accent": "#6264A7",
       "flavours": [
         {
@@ -2787,6 +2893,7 @@
       "name": "Midjourney",
       "category": "misc",
       "summary": "AI image generation, gallery-first. A true-black OLED canvas (#000000) with no brand accent — white (#FFFFFF) is the only primary; the 2x2 image grid carries 100% of the color while chrome stays a grey ramp (#A1A1A1 / #6E6E6E); prompts render in monospace and the Discord-heritage U1-U4 (white) / V1-V4 (dark #1A1A1A) chip grammar drives every refinement.",
+      "descriptor": "AI image generation, gallery-first",
       "accent": "#000000",
       "flavours": [
         {
@@ -2813,6 +2920,7 @@
       "name": "Miro",
       "category": "productivity",
       "summary": "collaboration whiteboard. An infinite pinch-zoom canvas with a zoom-scaled dotted grid; Miro Yellow (#FFD02F) on Miro Ink (#050038) is the brand, while Miro Blue (#4262FF) is reserved for selection; tight 4pt-radius pastel sticky notes (default #FEF3B6) lift off the board with soft shadows, and a floating toolbar fills the active tool yellow.",
+      "descriptor": "Collaboration whiteboard",
       "accent": "#FFD02F",
       "flavours": [
         {
@@ -2839,6 +2947,7 @@
       "name": "monday.com",
       "category": "productivity",
       "summary": "work management & project OS. The colorful board IS the product: full-bleed saturated status cells (Done #00C875, Working on it #FDAB3D, Stuck #E2445C), a 6pt leading group-color stripe on every row, blue (#0073EA) as the only action color, and a deep-indigo night canvas (#181B34).",
+      "descriptor": "Work management & project OS",
       "accent": "#00C875",
       "flavours": [
         {
@@ -2865,6 +2974,7 @@
       "name": "Monzo",
       "category": "finance",
       "summary": "Neobank with the iconic Hot Coral card. Coral-and-navy palette (`#FF3464` card hero on `#14233C` navy), round Pot coins with savings goals, and a day-grouped emoji transaction feed with income in green `#2FCB8F`.",
+      "descriptor": "Neobank with the iconic Hot Coral card",
       "accent": "#FF3464",
       "flavours": [
         {
@@ -2891,6 +3001,7 @@
       "name": "MyFitnessPal",
       "category": "fitness",
       "summary": "Calorie + macro tracking. White canvas + MFP Blue `#005DAA` heritage + Lake Blue `#0072CE` action, 220pt calorie ring that color-flips green → blue → amber → red, locked macro trio (Carbs `#FF9F1C` / Fat `#A463F2` / Protein `#19C37D`)",
+      "descriptor": "Calorie + macro tracking",
       "accent": "#005DAA",
       "flavours": [
         {
@@ -2917,6 +3028,7 @@
       "name": "Netflix",
       "category": "video",
       "summary": "Streaming. Netflix Red `#E50914` on `#141414` canvas, hero trailer auto-play, Top 10 numeral row, Continue Watching progress bar, Netflix Sans",
+      "descriptor": "Streaming",
       "accent": "#E50914",
       "flavours": [
         {
@@ -2943,6 +3055,7 @@
       "name": "Nextdoor",
       "category": "social",
       "summary": "Hyperlocal community. Nextdoor Green `#00B246`, warm cream `#FAF9F6` canvas, neighborhood feed, map-with-pins, verified-neighbor badge, Lato",
+      "descriptor": "Hyperlocal community",
       "accent": "#00B246",
       "flavours": [
         {
@@ -2969,6 +3082,7 @@
       "name": "Nike Run Club",
       "category": "fitness",
       "summary": "Run coaching. True-black canvas + Volt `#CCFF00` accent on the 280pt progress ring, 88pt Trade Gothic Heavy Condensed elapsed time, hexagonal achievement medals, white-pill primary CTA, heavy haptics on START RUN",
+      "descriptor": "Run coaching",
       "accent": "#CCFF00",
       "flavours": [
         {
@@ -2995,6 +3109,7 @@
       "name": "Noom",
       "category": "fitness",
       "summary": "Psychology-led weight loss and food logging. Noom Blue `#2A5DF6` + Noom Teal `#1FC29B`, the bold blue→teal daily psychology lesson card, the sacred green/yellow/red food-color system (`#34C759` / `#FFC531` / `#FF5A52`), and a Coach Purple `#7B61FF` chat surface.",
+      "descriptor": "Psychology-led weight loss and food logging",
       "accent": "#2A5DF6",
       "flavours": [
         {
@@ -3021,6 +3136,7 @@
       "name": "Notion",
       "category": "productivity",
       "summary": "Block-based workspace. Pure white / `#191919` dark, block editor with `/` command palette, 9 muted pastel page backgrounds, user-switchable Inter / Lora / IBM Plex Mono",
+      "descriptor": "Block-based workspace",
       "accent": "#191919",
       "flavours": [
         {
@@ -3047,6 +3163,7 @@
       "name": "Nubank",
       "category": "finance",
       "summary": "Latin America's purple neobank. Full-bleed Nu Purple hero (`#820AD1`) over a calm tile stack on deep aubergine `#15101C`, the Roxinho credit card as a `#9B2BE0` gradient, pill buttons, and Pix-first quick actions with positive green `#2ED47A`.",
+      "descriptor": "Latin America's purple neobank",
       "accent": "#820AD1",
       "flavours": [
         {
@@ -3073,6 +3190,7 @@
       "name": "Obsidian",
       "category": "productivity",
       "summary": "Knowledge graph. Obsidian Purple `#7C3AED`/`#A78BFA` on charcoal `#1E1E1E`, the physics graph view, backlinks pane, markdown editor, Inter/JetBrains-Mono",
+      "descriptor": "Knowledge graph",
       "accent": "#7C3AED",
       "flavours": [
         {
@@ -3099,6 +3217,7 @@
       "name": "OkCupid",
       "category": "dating",
       "summary": "Question-based dating. OkCupid Magenta `#E2024F` + indigo `#0500FF`, the match-% badge with count-up, DoubleTake stack, question cards, playful illustration",
+      "descriptor": "Question-based dating",
       "accent": "#E2024F",
       "flavours": [
         {
@@ -3125,6 +3244,7 @@
       "name": "OpenTable",
       "category": "food",
       "summary": "Restaurant reservations. A single disciplined OpenTable Red `#DA3743` (brightened to `#F2545B` on dark for the Reserve CTA/active tab/selected slot) on a bright white canvas (clean charcoal `#121212` dark), a tappable reservation time-slot grid (10pt chips, recommended slot filled red), a gold review star `#E8A33D`, a teal Dining Points accent `#1F8A8A` annotating 1,000-point off-peak slots, a diner-green `#2FA86A` Booked-N-times-today social-proof pill, fully-rounded pill controls, and a sticky red Reserve-for-time bar",
+      "descriptor": "Restaurant reservations",
       "accent": "#DA3743",
       "flavours": [
         {
@@ -3151,6 +3271,7 @@
       "name": "Oura",
       "category": "fitness",
       "summary": "Health ring. Cool-charcoal `#0B0B0F` instrument panel, tri-domain score rings (Readiness teal `#4FD1C5` / Sleep indigo `#7C6FF0` / Activity amber `#F5A623`), contributor bars",
+      "descriptor": "Health ring",
       "accent": "#0B0B0F",
       "flavours": [
         {
@@ -3177,6 +3298,7 @@
       "name": "Overcast",
       "category": "music",
       "summary": "audio-first podcast player with Smart Speed. Overcast Orange `#FC7E0F` on warm paper-cream `#FBFAF6` (or true dark `#121212`), an outlined orange-ring play button, and first-class Smart Speed / Voice Boost toggles.",
+      "descriptor": "Audio-first podcast player with Smart Speed",
       "accent": "#FC7E0F",
       "flavours": [
         {
@@ -3203,6 +3325,7 @@
       "name": "Pandora",
       "category": "music",
       "summary": "Music Genome radio. The thumb up/down is the product on a deep blue-navy canvas `#0B0F1C` from Pandora Blue `#224099`, with bright blue `#3668FF` as the constant accent, an asymmetric solid-up / hollow-down thumb, an album-art gradient Now Playing with no card frame, and the genome station list as home",
+      "descriptor": "Music Genome radio",
       "accent": "#0B0F1C",
       "flavours": [
         {
@@ -3229,6 +3352,7 @@
       "name": "Panera",
       "category": "food",
       "summary": "Food and beverage ordering. Panera Green `#4C8B2B` as the single action color (brightened to `#6BBE45` on dark for CTAs/active tabs/rewards arc) on a bakery-warm cream canvas `#F4EFE1` (warm near-black `#14140F` dark), full-color soup/sandwich/salad photo cards at 14pt radius, a green-gradient MyPanera rewards card with a progress bar + Unlimited Sip Club status, a gold reward star `#F2B705`, fully-rounded pill buttons, a quantity stepper, a pickup/delivery toggle, and a sticky green checkout bar",
+      "descriptor": "Food and beverage ordering",
       "accent": "#4C8B2B",
       "flavours": [
         {
@@ -3255,6 +3379,7 @@
       "name": "Paramount+",
       "category": "video",
       "summary": "Video streaming, midnight-navy dark. A dark-only `#0A0E2D` navy canvas lifting to `#0E1438` under a full-bleed hero billboard, with a network brand-hubs row, one electric Paramount+ Blue `#0064FF` action color, a sky-blue `#4D9DFF` active-tab tint, and broadcast live red `#FF2D46` badges.",
+      "descriptor": "Video streaming, midnight-navy dark",
       "accent": "#0A0E2D",
       "flavours": [
         {
@@ -3281,6 +3406,7 @@
       "name": "PayPal",
       "category": "finance",
       "summary": "Online payments. Dual-blue P-P wordmark (Sky `#0070BA` + Blue `#003087`), PayPal Sans Big/Small, balance card anchor, soft-pill CTAs, circular activity icons color-coded by transaction type",
+      "descriptor": "Online payments",
       "accent": "#0070BA",
       "flavours": [
         {
@@ -3307,6 +3433,7 @@
       "name": "Peacock",
       "category": "video",
       "summary": "Video streaming, indigo-black dark. A permanently-dark `#0A0A14` canvas warming to violet `#140E26` behind a full-bleed hero billboard, with the five-color peacock-feather swoosh (`#FACC15 → #F97316 → #EC4899 → #8B5CF6 → #2563EB`) as the only accent, a white `#FFFFFF` Play CTA, and NBC live red `#E5142B` badges.",
+      "descriptor": "Video streaming, indigo-black dark",
       "accent": "#0A0A14",
       "flavours": [
         {
@@ -3333,6 +3460,7 @@
       "name": "Peloton",
       "category": "fitness",
       "summary": "Boutique fitness streaming and live classes. Pure-black studio canvas `#000000` with a single Peloton Red accent `#DF1E2E` (brightened to `#FF4B57` on black), cinematic class cards, a pulsing red LIVE badge, the in-class output ring, fixed metric colors (Cadence `#E5402A`, Resistance `#F0A030`, Strive/HR `#3DB8E0`), and a real-time leaderboard with your row washed in red.",
+      "descriptor": "Boutique fitness streaming and live classes",
       "accent": "#000000",
       "flavours": [
         {
@@ -3359,6 +3487,7 @@
       "name": "Perplexity",
       "category": "misc",
       "summary": "Answer engine with citations. Dark canvas `#0A0A0A` + Perplexity Teal `#20B8CD` accent, brand-defining inline citation chips `[1][2][3]` paired with a horizontal source-card row above every answer, FK Grotesk + Inter encyclopedic register",
+      "descriptor": "Answer engine with citations",
       "accent": "#0A0A0A",
       "flavours": [
         {
@@ -3385,6 +3514,7 @@
       "name": "Pinterest",
       "category": "social",
       "summary": "Visual discovery. Pinterest Red `#E60023`, masonry 2-column grid with variable heights, floating Save-button morph, Pinterest Sans",
+      "descriptor": "Visual discovery",
       "accent": "#E60023",
       "flavours": [
         {
@@ -3411,6 +3541,7 @@
       "name": "Plenty of Fish",
       "category": "dating",
       "summary": "Dating and social app. POF Blue (#0098DB to #00A6E2) on the logo, primary CTA, active tab and like button over a cool near-black canvas (#121417); a 2-column photo match grid, the Meet Me card, teal online dots (#00C9B7) and pink unread badges (#FF4F8B).",
+      "descriptor": "Dating and social app",
       "accent": "#0098DB",
       "flavours": [
         {
@@ -3437,6 +3568,7 @@
       "name": "Plex",
       "category": "video",
       "summary": "calm personal-media server platform. Cool charcoal canvas (#1F2326, never true black) with a single Plex Yellow accent (#E5A00D) and dark #1A1304 button text, an On Deck resume rail with yellow progress bars, and a multi-server status picker.",
+      "descriptor": "Calm personal-media server platform",
       "accent": "#1F2326",
       "flavours": [
         {
@@ -3463,6 +3595,7 @@
       "name": "Pluto TV",
       "category": "video",
       "summary": "Free ad-supported live TV. Navy canvas (#0B0F1F) built around a frozen-frame EPG channel guide where the \"On Now\" cell lifts to #1C2440 with a 3pt #FFE100 yellow left border; Pluto Blue #0048FF CTAs and a #FF3B5C live indicator.",
+      "descriptor": "Free ad-supported live TV",
       "accent": "#0B0F1F",
       "flavours": [
         {
@@ -3489,6 +3622,7 @@
       "name": "Pocket Casts",
       "category": "music",
       "summary": "premium podcast player with per-podcast theming. Pocket Casts Red `#F43E37` on near-black `#1A1A1A`, cover-art theme tint `#E0533C`, circular transport, and a reorderable Up Next queue.",
+      "descriptor": "Premium podcast player with per-podcast theming",
       "accent": "#F43E37",
       "flavours": [
         {
@@ -3515,6 +3649,7 @@
       "name": "Postman",
       "category": "misc",
       "summary": "API client and testing console. The request builder IS the product: a neutral-grey #1A1A1A canvas, the HTTP-method color system (GET #6BDD9A, POST #FFE47A, PUT #74AEF6, DELETE #F79090) read before text everywhere a method appears, a single Postman Orange #FF6C37 reserved for the Send button and active tab, and a syntax-colored JSON viewer that sinks onto a darker #161616 surface.",
+      "descriptor": "API client and testing console",
       "accent": "#1A1A1A",
       "flavours": [
         {
@@ -3541,6 +3676,7 @@
       "name": "Prime Video",
       "category": "video",
       "summary": "Video on demand. Prime Blue `#00A8E1` on Amazon blue-slate `#0F171E`, hero billboard, the X-Ray cast slide-up overlay, channel rows",
+      "descriptor": "Video on demand",
       "accent": "#00A8E1",
       "flavours": [
         {
@@ -3567,6 +3703,7 @@
       "name": "Quora",
       "category": "social",
       "summary": "Q&A knowledge. Quora Red `#B92B27`, serif-question / sans-answer split (Georgia + Inter), blue `#2E69FF` upvote pill, credential bylines, Spaces",
+      "descriptor": "Q&A knowledge",
       "accent": "#B92B27",
       "flavours": [
         {
@@ -3593,6 +3730,7 @@
       "name": "Raya",
       "category": "dating",
       "summary": "Members-only dating, uncompromisingly monochrome. Pure black canvas `#000000` + pure white `#FFFFFF` as the only accent, a music-scored slideshow profile with segmented `#FFFFFF` story bars, a white music ticker + equalizer, and an editorial caption over a `→ rgba(0,0,0,0.92)` scrim; depth is a 1px `#2E2E2E` hairline, never a shadow.",
+      "descriptor": "Members-only dating, uncompromisingly monochrome",
       "accent": "#000000",
       "flavours": [
         {
@@ -3619,6 +3757,7 @@
       "name": "Reddit",
       "category": "social",
       "summary": "Communities & discussion. Reddit Orange-Red `#FF4500`, upvote-orange `#FF8717` / downvote `#7193FF` vote column, flat post cards, 10pt-per-level comment indentation",
+      "descriptor": "Communities & discussion",
       "accent": "#FF4500",
       "flavours": [
         {
@@ -3645,6 +3784,7 @@
       "name": "Resy",
       "category": "food",
       "summary": "Restaurant reservations. A black-first editorial system on a pure-black canvas `#000000` where Playfair-style display-serif restaurant names contrast with clean Inter UI, a single disciplined Resy Red `#C73E3A` (brightened to `#E2504B` for the active tab on black) drives booking, available reservation slots are red-OUTLINED while the primary slot is SOLID red, sold-out times become dashed amber `#D99A2B` Notify (waitlist) chips, a muted gold `#C9A24B` carries the /10 rating + Hit List, and hairline `#262626` borders replace shadows",
+      "descriptor": "Restaurant reservations",
       "accent": "#000000",
       "flavours": [
         {
@@ -3671,6 +3811,7 @@
       "name": "Revolut",
       "category": "finance",
       "summary": "Neobank. Violet→purple gradient `#5B6BFF → #9C6BFF` on cool near-black `#0A0A0F`, metal-card hero with sheen, multi-currency tiles, spend-analytics donut",
+      "descriptor": "Neobank",
       "accent": "#5B6BFF",
       "flavours": [
         {
@@ -3697,6 +3838,7 @@
       "name": "Robinhood",
       "category": "finance",
       "summary": "Investing. White canvas + true black text, Capsule Sans tabular-nums, portfolio chart in `#00C805` up / `#FF5000` down with draggable scrubber, black Trade CTA (green/orange reserved for Buy/Sell)",
+      "descriptor": "Investing",
       "accent": "#00C805",
       "flavours": [
         {
@@ -3723,6 +3865,7 @@
       "name": "Runna",
       "category": "fitness",
       "summary": "Structured running training plans. Two-color brand of Runna Indigo `#4F46E5` (structure) + electric Lime `#C2F94E` (go), a color-coded plan week strip, the Indigo guided run-session card (`#4F46E5 → #3A33B8`), and a warm-up→cooldown structure bar on an Indigo-tinted `#0E0E16` canvas.",
+      "descriptor": "Structured running training plans",
       "accent": "#4F46E5",
       "flavours": [
         {
@@ -3749,6 +3892,7 @@
       "name": "Shazam",
       "category": "music",
       "summary": "Music recognition. Radial-blue gradient `#0050FF → #0088FF`, giant central pulsing tap-to-listen button with concentric rings, glass result card, no tab bar",
+      "descriptor": "Music recognition",
       "accent": "#0050FF",
       "flavours": [
         {
@@ -3775,6 +3919,7 @@
       "name": "Signal",
       "category": "messaging",
       "summary": "Privacy-first messaging. Single Signal Blue `#3A76F0` accent, disappearing-message timer chips, sealed-sender glyphs, zero-vanity minimalism, light + `#1B1B1B` dark",
+      "descriptor": "Privacy-first messaging",
       "accent": "#3A76F0",
       "flavours": [
         {
@@ -3801,6 +3946,7 @@
       "name": "Skype",
       "category": "messaging",
       "summary": "Microsoft's call-first messenger. Cloud-blue brand (bright #00AFF0 buttons/FABs, deep #0078D4 outgoing bubble), gray incoming (#EBEBEF / #2A2A30), inline call cards, a gradient video-call grid with circular controls, presence dots (green #2DC26B / away #FFC400), and a neutral near-black (#16161A) dark canvas.",
+      "descriptor": "Microsoft's call-first messenger",
       "accent": "#00AFF0",
       "flavours": [
         {
@@ -3827,6 +3973,7 @@
       "name": "Skyscanner",
       "category": "travel",
       "summary": "Flight search and price comparison. Single Sky Blue action `#0770E3`, traffic-light price grid (cheap `#00A698`, average `#FFB81C`, expensive `#E5392E`), Everywhere destination, on a cool navy-black `#0B0F14` dark canvas.",
+      "descriptor": "Flight search and price comparison",
       "accent": "#0770E3",
       "flavours": [
         {
@@ -3853,6 +4000,7 @@
       "name": "Slack",
       "category": "messaging",
       "summary": "Work chat. Aubergine `#4A154B` sidebar (workspace-customizable), rounded-square avatars, Huddles banner, reaction pill chips, Slack Lato",
+      "descriptor": "Work chat",
       "accent": "#4A154B",
       "flavours": [
         {
@@ -3879,6 +4027,7 @@
       "name": "Sleep Cycle",
       "category": "fitness",
       "summary": "Sleep tracking with a smart alarm. Indigo→night gradient `#2A2D5A → #3B4371` over a deep `#14152E` canvas, the signature glowing aqua hypnogram wave (`#7FE3F0` over `#6C7BFF` fill), a score-banded sleep-quality ring, and color-coded stages (Deep `#3D4ABF`, REM `#4FD1E6`).",
+      "descriptor": "Sleep tracking with a smart alarm",
       "accent": "#2A2D5A",
       "flavours": [
         {
@@ -3905,6 +4054,7 @@
       "name": "Snapchat",
       "category": "social",
       "summary": "Camera-first social. Snap Yellow `#FFFC00`, 5-screen swipe nav, 82pt yellow capture button, color-coded snap types, Avenir Next",
+      "descriptor": "Camera-first social",
       "accent": "#FFFC00",
       "flavours": [
         {
@@ -3931,6 +4081,7 @@
       "name": "SoFi",
       "category": "finance",
       "summary": "All-in-one fintech. A dark-native brand: electric SoFi Blue `#00A0DF` (brightened to `#29C2FF` for accents/links/active tabs) on deep navy `#0A0E27`, a signature `#00A0DF → #1B53C4 → #0A0E27` member-hero gradient with net worth in white at 40pt 800 plus a green month-change pill, a consolidated 2-column account/product tile grid with colored sub-stats, cross-sell product cards, color-coded performance (gain-green `#2FD08A`, loss-coral `#FF6B6B`, rewards-gold `#F2C14E`), and fully pill-shaped buttons over lifted navy surfaces `#121736` / `#1B2147`",
+      "descriptor": "All-in-one fintech",
       "accent": "#00A0DF",
       "flavours": [
         {
@@ -3957,6 +4108,7 @@
       "name": "SoundCloud",
       "category": "music",
       "summary": "Creator audio. SoundCloud Orange `#FF5500`, commentable waveform scrubber with inline timestamped avatars, repost feed, up-next queue",
+      "descriptor": "Creator audio",
       "accent": "#FF5500",
       "flavours": [
         {
@@ -3983,6 +4135,7 @@
       "name": "Southwest",
       "category": "travel",
       "summary": "Open-seating airline. The Heart tri-color (Southwest Blue `#304CB2`, Bold Red `#E51D23`, Warm Yellow `#F9B612`) over a deep navy canvas `#0E1726`, with the giant A/B/C boarding position as the hero, a 24-hour check-in countdown ring, and the Wanna Get Away fare ladder",
+      "descriptor": "Open-seating airline",
       "accent": "#304CB2",
       "flavours": [
         {
@@ -4009,6 +4162,7 @@
       "name": "Spotify",
       "category": "music",
       "summary": "Music streaming. Dark `#121212` canvas, Spotify Green `#1DB954` as the single accent, album-art-driven Now Playing gradient via dynamic color extraction",
+      "descriptor": "Music streaming",
       "accent": "#121212",
       "flavours": [
         {
@@ -4035,6 +4189,7 @@
       "name": "Starbucks",
       "category": "food",
       "summary": "Coffee + rewards. Starbucks Green `#00704A`, gold Stars progress ring, Short/Tall/Grande/Venti/Trenta size selector, QR pay, SoDo Sans",
+      "descriptor": "Coffee + rewards",
       "accent": "#00704A",
       "flavours": [
         {
@@ -4061,6 +4216,7 @@
       "name": "Strava",
       "category": "fitness",
       "summary": "Activity tracking + social. Strava Orange `#FC4C02` as the single accent, 4pt route polyline with halo, 3-up DISTANCE/TIME/PACE grid, tabular numerals everywhere, center Record button protruding 8pt with orange glow, coal-black dark mode `#0F0F0F`",
+      "descriptor": "Activity tracking + social",
       "accent": "#FC4C02",
       "flavours": [
         {
@@ -4087,6 +4243,7 @@
       "name": "Strong",
       "category": "fitness",
       "summary": "Minimalist workout logger built around the set-log table. Single-accent Strong Blue `#2F80ED` on a flat neutral-grey canvas `#1A1A1A`, logged sets filling green `#27AE60`, a slim auto-running rest-timer bar, flat borderless cards, and an amber `#F2C94C` PR flag on records.",
+      "descriptor": "Minimalist workout logger built around the set-log table",
       "accent": "#2F80ED",
       "flavours": [
         {
@@ -4113,6 +4270,7 @@
       "name": "Substack",
       "category": "misc",
       "summary": "newsletters & long-form publishing. A clean white serif reading page (`#FFFFFF` light, soft charcoal `#121212` dark) with reading ink `#1F1F1F`, the single rationed Substack Orange `#FF6719` for the Subscribe CTA / active tab / unread dot / liked heart, an orange-tint paywall card, a chronological subscription inbox, and a 1.65 editorial reading rhythm.",
+      "descriptor": "Newsletters & long-form publishing",
       "accent": "#FFFFFF",
       "flavours": [
         {
@@ -4139,6 +4297,7 @@
       "name": "Swiggy",
       "category": "food",
       "summary": "appetite-driving food delivery and quick-commerce platform. A single Swiggy Orange accent (#FC8019) over a near-black canvas (#121212), photo-forward restaurant cards with a #000-fading bottom scrim and bold offer text, a green rating chip (#48C479), and a floating ADD button that morphs into a stepper.",
+      "descriptor": "Appetite-driving food delivery and quick-commerce platform",
       "accent": "#FC8019",
       "flavours": [
         {
@@ -4165,6 +4324,7 @@
       "name": "Taco Bell",
       "category": "food",
       "summary": "neon, dark-first build-your-box QSR ordering platform. A purple-to-magenta brand gradient (#702082 → #C72BC8) over a violet-tinted near-black canvas (#0E0A14), with a Hot Sauce Yellow value highlight (#FFC700), a gradient box-preview hero, numbered step pills, and magenta single-select controls.",
+      "descriptor": "Neon, dark-first build-your-box QSR ordering platform",
       "accent": "#702082",
       "flavours": [
         {
@@ -4191,6 +4351,7 @@
       "name": "Telegram",
       "category": "messaging",
       "summary": "Fast, themeable chat. Telegram Blue `#0088CC`, 17pt bubbles with 6pt notch tails, silent-send long-press, Lottie animated emoji, floating voice mini-player",
+      "descriptor": "Fast, themeable chat",
       "accent": "#0088CC",
       "flavours": [
         {
@@ -4217,6 +4378,7 @@
       "name": "The League",
       "category": "dating",
       "summary": "Dating and social. A black-tie members-club system on a near-true-black canvas `#0A0A0A` (dark-native, no light mode in spirit) where a single rationed gold `#C8A35A` (bright `#DBBA71`, deep `#A8863F`) does ALL accent work — crest, hairlines, one CTA, credential marks — and depth comes entirely from 1px gold-tinted hairline borders `#2A2620` with zero drop shadows, the prospect card reads like an embossed calling card with a Cormorant-style display-serif name over a clean Jost-style sans credential stack (the serif/sans split IS the hierarchy), the concierge is a recurring character speaking in italic serif behind a 2px gold left rule, scarcity is made visual via a finite daily \"Today's Batch · 7 Prospects\" banner, corner radii stay sharp (2-6pt) with no pills, labels are quiet letter-spaced uppercase, the Heart action is a gold OUTLINE not a fill, and a match is a drawn champagne `#E8DCC0` wax seal, not confetti",
+      "descriptor": "Dating and social",
       "accent": "#0A0A0A",
       "flavours": [
         {
@@ -4243,6 +4405,7 @@
       "name": "Things 3",
       "category": "productivity",
       "summary": "Serene tasks. Things Blue `#4F97FF` on pure-white, circular checkbox fill spring, the Magic-Plus, the `#FFD60A` Today star, generous calm whitespace",
+      "descriptor": "Serene tasks",
       "accent": "#4F97FF",
       "flavours": [
         {
@@ -4269,6 +4432,7 @@
       "name": "Threads",
       "category": "social",
       "summary": "Text-forward Meta social. Pure black canvas, Instagram-coral like heart, thread-line indentation, no hashtags/trending, Instagram Sans",
+      "descriptor": "Text-forward Meta social",
       "accent": "#000000",
       "flavours": [
         {
@@ -4295,6 +4459,7 @@
       "name": "Threema",
       "category": "messaging",
       "summary": "Secure messaging. Single Threema Green `#088A29` accent (brightened to `#1FA53C` on dark) + the signature red/orange/green trust-level three-dot indicator `#E5453A` / `#EF8B2C` / `#15A33A`, no phone number, monospace Threema ID, QR-first in-person verification, soft-green outgoing bubbles `#D6F0DC` / `#0C5E22`",
+      "descriptor": "Secure messaging",
       "accent": "#088A29",
       "flavours": [
         {
@@ -4321,6 +4486,7 @@
       "name": "TIDAL",
       "category": "music",
       "summary": "Hi-fi music. Pure-black `#000000` canvas, cyan `#00FFFF` HiFi accents, MASTER/HiFi quality badges, radically flat square-art tonal-elevation layout",
+      "descriptor": "Hi-fi music",
       "accent": "#000000",
       "flavours": [
         {
@@ -4347,6 +4513,7 @@
       "name": "TikTok",
       "category": "social",
       "summary": "Short-form video. Full-bleed vertical FYP, chromatic-aberration logo (cyan + red), right-side action rail, signature glitch aesthetic",
+      "descriptor": "Short-form video",
       "accent": "#25F4EE",
       "flavours": [
         {
@@ -4373,6 +4540,7 @@
       "name": "Tinder",
       "category": "dating",
       "summary": "Dating swipe cards. Tinder Gradient `#FD267A → #FF6036`, rotated LIKE/NOPE stamps on swipe, 5-button action bar (Rewind / Nope / Super Like / Like / Boost), match-screen pink takeover",
+      "descriptor": "Dating swipe cards",
       "accent": "#FD267A",
       "flavours": [
         {
@@ -4399,6 +4567,7 @@
       "name": "Todoist",
       "category": "productivity",
       "summary": "Tasks + projects. Todoist Red `#DC4C3E` for FAB + P1 flag + brand, tinted-red FAB shadow, four-tier priority via checkbox stroke (P1 red, P2 `#EB8909`, P3 `#246FE0`, P4 gray), 52pt edge-to-edge task rows, SF Pro system font",
+      "descriptor": "Tasks + projects",
       "accent": "#DC4C3E",
       "flavours": [
         {
@@ -4425,6 +4594,7 @@
       "name": "Trello",
       "category": "productivity",
       "summary": "Kanban projects. Trello Blue `#0C66E4`, board-background as canvas, horizontal kanban lists, the card drag-lift, label color rows, no bottom tab bar",
+      "descriptor": "Kanban projects",
       "accent": "#0C66E4",
       "flavours": [
         {
@@ -4451,6 +4621,7 @@
       "name": "Tripadvisor",
       "category": "travel",
       "summary": "Travel reviews. Tripadvisor Green `#34E0A1` + owl black, the 5-circle bubble rating, traveler-photo place cards, Travelers' Choice badge",
+      "descriptor": "Travel reviews",
       "accent": "#34E0A1",
       "flavours": [
         {
@@ -4477,6 +4648,7 @@
       "name": "Tubi",
       "category": "video",
       "summary": "Free ad-supported streaming. Indigo-black canvas (#0A0A2A) with the signature purple-to-magenta gradient (#7408FF -> #FF00FF), white #FFFFFF Play button, dense 2:3 poster rows, and a yellow #FFD400 \"FREE\" tag.",
+      "descriptor": "Free ad-supported streaming",
       "accent": "#0A0A2A",
       "flavours": [
         {
@@ -4503,6 +4675,7 @@
       "name": "Tumblr",
       "category": "social",
       "summary": "Creative blogging social. Deep-navy `#001935` canvas, multi-accent trio (blue `#00B8FF` / green `#00CF35` / pink `#FF4930`), reblog chains, tag bar, notes count",
+      "descriptor": "Creative blogging social",
       "accent": "#001935",
       "flavours": [
         {
@@ -4529,6 +4702,7 @@
       "name": "Turo",
       "category": "travel",
       "summary": "Peer-to-peer car sharing. The vehicle photo is the product on a near-black canvas `#0F0F12`, with Turo Purple `#593BFB` as the single booking action, Turo Teal `#5CE0B8` as the trust/value accent (All-Star Host, instant-book), a teal-iconed specs strip, and a sticky price + Book bar",
+      "descriptor": "Peer-to-peer car sharing",
       "accent": "#0F0F12",
       "flavours": [
         {
@@ -4555,6 +4729,7 @@
       "name": "Twitch",
       "category": "video",
       "summary": "Live streaming. Twitch Purple `#9146FF` action + Live Red `#EB0400` liveness-only, LIVE pills, docked chat column, theater overlay, emotes",
+      "descriptor": "Live streaming",
       "accent": "#9146FF",
       "flavours": [
         {
@@ -4581,6 +4756,7 @@
       "name": "Uber",
       "category": "travel",
       "summary": "Ride-hailing + delivery. Stark monochrome (black/white), Uber Move font, map-as-hero layout, Base design system tokens",
+      "descriptor": "Ride-hailing + delivery",
       "accent": "#000000",
       "flavours": [
         {
@@ -4607,6 +4783,7 @@
       "name": "Uber Eats",
       "category": "food",
       "summary": "Food delivery. Uber Eats Green `#06C167`, clean white canvas, photo-first restaurant cards, category pills, sticky cart bar, live map order tracking",
+      "descriptor": "Food delivery",
       "accent": "#06C167",
       "flavours": [
         {
@@ -4633,6 +4810,7 @@
       "name": "United",
       "category": "travel",
       "summary": "Airline travel app, flight-detail-first. Two-blue brand (United Blue `#002244` + Rhapsody Blue `#1414FF`), perforated boarding pass, interactive seat map, Premier gold `#C2A14D`.",
+      "descriptor": "Airline travel app, flight-detail-first",
       "accent": "#002244",
       "flavours": [
         {
@@ -4659,6 +4837,7 @@
       "name": "Venmo",
       "category": "finance",
       "summary": "Social payments. Venmo Blue `#008CFF`, public emoji-laden transaction feed, Pay/Request split pill, animated sent-checkmark",
+      "descriptor": "Social payments",
       "accent": "#008CFF",
       "flavours": [
         {
@@ -4685,6 +4864,7 @@
       "name": "Vercel",
       "category": "misc",
       "summary": "developer deployment platform. The deployments list IS the product: a true-black #000000 canvas (not charcoal), a status traffic-light (Ready #0CCE6B, Building #F5A623, Error #E5484D) as the only systemic color, Geist Mono for every URL and commit hash, hairline #2E2E2E borders instead of shadows, and a white #EDEDED fill button with no brand accent.",
+      "descriptor": "Developer deployment platform",
       "accent": "#000000",
       "flavours": [
         {
@@ -4711,6 +4891,7 @@
       "name": "Vero",
       "category": "social",
       "summary": "calm, no-algorithm chronological social. Pure true-black canvas (#000000) with a single teal-to-blue brand gradient (#00D1C1 to #0079D3), flat teal accents (#00C2B8), and a 7 first-class post-type selector.",
+      "descriptor": "Calm, no-algorithm chronological social",
       "accent": "#000000",
       "flavours": [
         {
@@ -4737,6 +4918,7 @@
       "name": "Viber",
       "category": "messaging",
       "summary": "Rakuten's call-first messenger. Single-brand Viber Purple (#7360F2) outgoing bubbles, gray incoming (#EDEBF5 / #26232F), the three-state check receipt (gray → gray → violet #8F7DF7 seen), a purple→deep-violet (#59267C) free-call banner, and an aubergine-tinted (#121118) dark canvas.",
+      "descriptor": "Rakuten's call-first messenger",
       "accent": "#7360F2",
       "flavours": [
         {
@@ -4763,6 +4945,7 @@
       "name": "Vimeo",
       "category": "social",
       "summary": "cinematic creator video platform. Near-black screening-room canvas (#0D0E12) with a single Vimeo Blue accent (#00ADEF), the iconic Staff Pick gold star (#FFD24C), and a 14pt-corner auto-fading player.",
+      "descriptor": "Cinematic creator video platform",
       "accent": "#0D0E12",
       "flavours": [
         {
@@ -4789,6 +4972,7 @@
       "name": "Vrbo",
       "category": "travel",
       "summary": "Vacation rentals. Vrbo Blue `#245ABC` primary action (brightened to `#4F8BF0` on dark for links/pins/outline) + Sky Blue `#1D6FB8` support + one gold review star `#F2B01E`, full-bleed swipeable photo galleries with a \"1 / 42\" counter, a sticky heavy-price Book now bar, whole-home framing, and blue/gray/gold map price pins on a cool blue-charcoal `#101317` dark canvas",
+      "descriptor": "Vacation rentals",
       "accent": "#245ABC",
       "flavours": [
         {
@@ -4815,6 +4999,7 @@
       "name": "VSCO",
       "category": "social",
       "summary": "film-grade photo & video editor. Pure-black darkroom canvas (`#000000`), monochrome chrome with hairline bipolar sliders on a `#3A3A3A` track, a white-ringed film-preset carousel, and UPPERCASE wide-tracked Inter labels — zero brand accent, the photo is the only color.",
+      "descriptor": "Film-grade photo & video editor",
       "accent": "#000000",
       "flavours": [
         {
@@ -4841,6 +5026,7 @@
       "name": "Walmart",
       "category": "finance",
       "summary": "Big-box retail. Walmart Blue `#0071DC` + Spark Yellow `#FFC220`, the blue-on-yellow Rollback price tag, spark logo, category grid, pickup/delivery toggle",
+      "descriptor": "Big-box retail",
       "accent": "#0071DC",
       "flavours": [
         {
@@ -4867,6 +5053,7 @@
       "name": "Waze",
       "category": "travel",
       "summary": "Community navigation. Waze Purple `#7E55BE` + Cyan `#33CCFF` electric duo, speech-bubble hazard reports with triangular tails, cyan arrow puck (not a dot), bright cyan water + mint parks, Boing typography with SF Pro Rounded fallback",
+      "descriptor": "Community navigation",
       "accent": "#7E55BE",
       "flavours": [
         {
@@ -4893,6 +5080,7 @@
       "name": "Webull",
       "category": "finance",
       "summary": "Dark-native retail trading terminal. A near-black canvas `#0B0E11` with the Webull blue→cyan gradient `#1B9EFB → #20D5C4`, a full-bleed candlestick chart, a depth-bar order-book ladder, an options chain, and pervasive saturated up `#00C076` / down `#FA5252` color on a split Buy/Sell docked pair.",
+      "descriptor": "Dark-native retail trading terminal",
       "accent": "#0B0E11",
       "flavours": [
         {
@@ -4919,6 +5107,7 @@
       "name": "WeChat",
       "category": "messaging",
       "summary": "Super-app messaging. WeChat Green `#07C160`, gray `#EDEDED` system canvas, tailed `#95EC69` bubbles, the Discover grouped-list hub, Moments, red-packet card",
+      "descriptor": "Super-app messaging",
       "accent": "#07C160",
       "flavours": [
         {
@@ -4945,6 +5134,7 @@
       "name": "WhatsApp",
       "category": "messaging",
       "summary": "Encrypted chat. WhatsApp Green `#25D366`, mint-leaf outgoing bubbles `#D9FDD3`, voice-message waveform, blue double-check read receipts",
+      "descriptor": "Encrypted chat",
       "accent": "#25D366",
       "flavours": [
         {
@@ -4971,6 +5161,7 @@
       "name": "WHOOP",
       "category": "fitness",
       "summary": "Recovery + strain coaching. Pitch-black canvas `#0A0A0A`, neon Strain Green `#00FF7B`, Recovery ring that interpolates red → yellow → green by score, DIN 2014 ALL CAPS typography, tabular numerals everywhere, neon glows replace shadows",
+      "descriptor": "Recovery + strain coaching",
       "accent": "#0A0A0A",
       "flavours": [
         {
@@ -4997,6 +5188,7 @@
       "name": "Wise",
       "category": "finance",
       "summary": "Multi-currency money. Wise Bright Green `#9FE870` + forest `#163300`, multi-currency flag balances, the transparent fee-breakdown card, mid-market rate",
+      "descriptor": "Multi-currency money",
       "accent": "#9FE870",
       "flavours": [
         {
@@ -5023,6 +5215,7 @@
       "name": "X (Twitter)",
       "category": "social",
       "summary": "Real-time text-first social. Pure black OLED canvas, X Blue `#1D9BF0` reserved for links, Chirp font, column-centered feed, per-action color micro-animations",
+      "descriptor": "Real-time text-first social",
       "accent": "#1D9BF0",
       "flavours": [
         {
@@ -5049,6 +5242,7 @@
       "name": "Yelp",
       "category": "food",
       "summary": "Local business reviews. One rationed Yelp Red `#FF1A1A` (logo `#D32323`) for the primary CTA + active tab, a warm orange-red five-star rating `#F25C05` (identical light and dark, half-star increments) as the brand asset, a full-bleed business photo header with a \"1 / 248 photos\" counter, Recommended Reviews cards with Useful/Funny/Cool votes, 8px gray `#F0F0F0` / dark `#0C0C0C` section bands instead of cards, and green/red `#2DA44E`/`#E03E3E` open-closed status on a near-black `#161616` dark canvas",
+      "descriptor": "Local business reviews",
       "accent": "#FF1A1A",
       "flavours": [
         {
@@ -5075,6 +5269,7 @@
       "name": "YouTube",
       "category": "video",
       "summary": "Video platform. YouTube Red `#FF0000`, 16:9 thumbnails with duration tag, Subscribe morph, mini-player drag-down, Shorts rail, YouTube Sans + Roboto",
+      "descriptor": "Video platform",
       "accent": "#FF0000",
       "flavours": [
         {
@@ -5101,6 +5296,7 @@
       "name": "YouTube Music",
       "category": "music",
       "summary": "Music streaming, immersive dark. Near-black `#030303` canvas with a blurred album-art glow behind the player, YT red `#FF0000` chrome, and a white `#FFFFFF` play button — the signature Song/Video toggle sits under the art.",
+      "descriptor": "Music streaming, immersive dark",
       "accent": "#030303",
       "flavours": [
         {
@@ -5127,6 +5323,7 @@
       "name": "Zalo",
       "category": "messaging",
       "summary": "Messaging super-app. Single Zalo Blue anchor (`#0068FF`) on every header, CTA, and active tab, white canvas over a calm blue-grey chat backdrop (`#E8ECF1`), asymmetric clipped-tail bubbles (incoming `#FFFFFF`, outgoing `#DBEBFF`), and a mini-app service launcher grid.",
+      "descriptor": "Messaging super-app",
       "accent": "#0068FF",
       "flavours": [
         {
@@ -5153,6 +5350,7 @@
       "name": "Zomato",
       "category": "food",
       "summary": "Food delivery and dining. Zomato Red `#E23744` for brand, primary action and \"ADD\" (pressed `#C42531`), a semantic color-coded rating pill — green `#267E3E` great, amber `#DB7C38` average, red `#E23744` poor — the India-mandated veg/non-veg mark (green dot vs maroon `#B91C1C` triangle), a bordered red ADD button that morphs into a stepper, and a Delivery / Dining Out toggle re-theming a hero-plus-pull-up-card detail screen over a warm `#121212` dark canvas",
+      "descriptor": "Food delivery and dining",
       "accent": "#E23744",
       "flavours": [
         {
@@ -5179,6 +5377,7 @@
       "name": "Zoom",
       "category": "productivity",
       "summary": "Video meetings. Zoom Blue `#2D8CFF` in a committed dark `#1A1A1A` theater, the gallery video grid, floating in-call control bar, active-speaker highlight",
+      "descriptor": "Video meetings",
       "accent": "#2D8CFF",
       "flavours": [
         {
@@ -5205,6 +5404,7 @@
       "name": "Zwift",
       "category": "fitness",
       "summary": "Virtual cycling built around a full-bleed 3D world with a glassmorphic ride HUD. Zwift Orange `#FC6719` brand action over `rgba(12,12,12,0.6)` glass tiles, a fixed metric color mapping (power orange, cadence yellow `#E8C547`, HR red `#F0413E`, W/kg cyan `#2BD4D9`), tall condensed Barlow numerals, and an orange route-progress banner.",
+      "descriptor": "Virtual cycling built around a full-bleed 3D world with a glassmorphic ride HUD",
       "accent": "#FC6719",
       "flavours": [
         {

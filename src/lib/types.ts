@@ -196,6 +196,8 @@ export type DesignApp = {
   name: string;
   category: string;
   summary: string;
+  /** The opening descriptor, without the hex-and-typeface detail. Used on cards. */
+  descriptor: string;
   accent: string | null;
   /** Keyed and byte-sized only — labels and paths are derived, see design-md.json. */
   flavours: { k: DesignFlavourKey; b: number }[];

@@ -75,6 +75,17 @@ for (const category of readdirSync(SRC).sort()) {
     const name = (/^#\s+(.+?)(?:\s+[—–-]\s+.*)?$/m.exec(readme)?.[1] ?? titleCase(slug)).trim();
     const summary = (readme.split("\n").find((line, i) => i > 1 && line.trim() && !line.startsWith("#")) ?? "").trim();
 
+    /**
+     * Every sketch opens with a plain descriptor — "Micro-investing with spare change",
+     * "Stays + Experiences" — and then runs into hexes and typeface names. The cards want
+     * the descriptor; the full sketch stays for the detail page, where the detail helps.
+     */
+    const plain = summary.replace(/`/g, "");
+    const firstSentence = /^(.*?[.!?])(?:\s|$)/.exec(plain)?.[1] ?? plain.slice(0, 90);
+    const descriptor = firstSentence
+      .replace(/[.\s]+$/, "")
+      .replace(/^[a-z]/, (c) => c.toUpperCase());
+
     // First hex in the summary is the brand colour the sketch leads with; failing that,
     // the first hex anywhere in the neutral spec.
     const hasNeutral = flavours.some((f) => f.k === "neutral");
@@ -86,6 +97,7 @@ for (const category of readdirSync(SRC).sort()) {
       name,
       category,
       summary,
+      descriptor,
       accent,
       flavours,
       bytes: flavours.reduce((total, f) => total + f.b, 0),

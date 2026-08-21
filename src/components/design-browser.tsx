@@ -125,8 +125,8 @@ export function DesignBrowser({
                     <span className="font-mono text-[10px] text-mute">{app.accent}</span>
                   ) : null}
                 </div>
-                <p className="prose-tight mt-2.5 line-clamp-4 text-[0.82rem] leading-relaxed text-soft">
-                  {app.summary.replace(/`/g, "")}
+                <p className="prose-tight mt-2.5 line-clamp-3 text-[0.82rem] leading-relaxed text-soft">
+                  {app.descriptor}
                 </p>
                 <p className="label mt-auto pt-3 text-mute">
                   {app.flavours.length} flavours · {Math.round(app.bytes / 1024)}KB
