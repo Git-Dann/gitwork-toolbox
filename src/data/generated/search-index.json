@@ -4509,6 +4509,15 @@
     "pick": false
   },
   {
+    "kind": "resource",
+    "slug": "ip-as-logo-library",
+    "name": "IP as Logo library",
+    "blurb": "The companion gallery to the IP as Logo skill already in the starter library: a searchable wall of finished mascots made with it,…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
     "kind": "design",
     "slug": "acorns",
     "name": "Acorns",

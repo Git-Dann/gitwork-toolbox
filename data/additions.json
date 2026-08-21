@@ -4267,6 +4267,26 @@
       "kind": "tool",
       "addedAt": "2026-08-21T14:31:20.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "IP as Logo library",
+      "slug": "ip-as-logo-library",
+      "link": "https://ipaslogo.com/",
+      "resourceType": "Directory",
+      "category": "Brand assets / free mascot logos",
+      "takeaway": "The companion gallery to the IP as Logo skill already in the starter library: a searchable wall of finished mascots made with it, each downloadable as its original PNG, with favourites and six UI languages. The skill's README states every logo is free for commercial use. Built as a Supabase and Cloudflare R2 front end, so it is a real library rather than a screenshot of one.",
+      "whatToDo": "Source. Action: pull two or three mascots as stand-in brand marks for Foundry pitch decks and early prototypes rather than generating from scratch, and run the skill itself (`npx skills@latest add s1dashu/ip-as-logo-skill`) when a client needs something of their own.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Not a client identity. Every visitor can download the same mascots, so treat this as placeholder and side-project material — the skill is what produces something a client can own.",
+        "PNG only: the download is the original raster, with no SVG, so anything that needs to scale or recolour has to be redrawn.",
+        "The commercial-use grant is a line in the GitHub README (MIT, s1dashu, 2026), not a licence file on the site itself. Keep a copy of that wording if a logo ever ends up in front of a client.",
+        "Single maintainer, a client-side app on Supabase with the publishable key in the bundle and assets on cdn.ipaslogo.com. Fine for what it is; download anything we rely on rather than hotlinking it."
+      ],
+      "addedAt": "2026-08-21T14:48:08.000Z",
+      "addedBy": "Dan"
     }
   ]
 }
