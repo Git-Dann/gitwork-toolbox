@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import { AsciiMirror } from "./ascii-mirror";
 import { Constellation } from "./constellation";
 import { EasingLab } from "./easing-lab";
-import { GuessTheTool } from "./guess-the-tool";
+import { DoubleUp } from "./double-up";
 import { HeadsExperiment } from "./heads-experiment";
 import { PosterPress } from "./poster-press";
 import { Sand } from "./sand";
@@ -119,12 +119,12 @@ export const EXPERIMENTS: Experiment[] = [
     render: () => <EasingLab />,
   },
   {
-    slug: "guess",
-    name: "Guess the tool",
-    blurb: "A write-up with the name blanked out — which one is it?",
+    slug: "double-up",
+    name: "Double up",
+    blurb: "The merge game, in the six area colours",
     note:
-      "A real sentence from a real entry with the name blanked wherever it gives itself away, and three decoys drawn from the same area as the answer, so it is a genuine question rather than spot-the-odd-one-out. Streak and best kept in this browser, 1 to 4 to answer, enter for the next. It only rewards having read the list, which is the entire idea.",
-    credits: [{ label: "239 tools, four at a time" }],
-    render: (data) => <GuessTheTool posters={data.posters} />,
+      "Arrows, WASD or a swipe; everything doubles; 2048 gets confetti and you carry on playing. The value ladder walks up through the palette so the board turns from grey to violet to green to amber as it fills, with 2 and 4 left quiet because most of the board is 2s and 4s and colouring those makes it unreadable. The one fiddly rule is the one every version of this gets wrong at least once: a tile may only merge once per move, so 2 2 4 slides to 4 4 rather than collapsing to 8.",
+    credits: [{ label: "after Gabriele Cirulli's 2048" }, { label: "no knowledge of anything required" }],
+    render: () => <DoubleUp />,
   },
 ];
