@@ -114,7 +114,7 @@ export const EXPERIMENTS: Experiment[] = [
     name: "Easing lab",
     blurb: "Drag a cubic-bézier and watch four things move to it",
     note:
-      "The curve on the left and four properties moving to it on the right, so the number and the feel are on screen together — translate, width, scale and rotate, opacity, all driven by the same playhead. Drag either handle above the box or below it for an overshoot; x stays inside because CSS requires it. Solving x for t is done by bisection rather than Newton, which is exact enough for a screen and cannot diverge on an overshooting curve. Copy CSS puts the cubic-bezier() on the clipboard.",
+      "The curve on the left and four properties moving to it on the right, so the number and the feel are on screen together — translate, width, scale and rotate, opacity, all driven by the same playhead. Nothing moves unless you ask it to: the demos hold their finished state, changing the curve plays it once, and dragging a handle loops it so the change can be felt as it is made. Drag either handle above the box or below it for an overshoot; x stays inside because CSS requires it. Solving x for t is done by bisection rather than Newton, which is exact enough for a screen and cannot diverge on an overshooting curve. Copy CSS puts the cubic-bezier() on the clipboard.",
     credits: [{ label: "the only one of these that is actually useful" }],
     render: () => <EasingLab />,
   },

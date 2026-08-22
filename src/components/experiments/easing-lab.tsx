@@ -13,8 +13,9 @@ const PRESETS: { name: string; curve: Curve }[] = [
   { name: "linear", curve: [0, 0, 1, 1] },
 ];
 
-const CYCLE = 1800;
-const DWELL = 0.22;
+const MOTION = 900;
+/** Only in loop mode: the beat between runs, so the eye can reset. */
+const DWELL = 500;
 
 /** The cubic Bézier the CSS property describes: P0 (0,0), P1, P2, P3 (1,1). */
 const bezier = (a: number, b: number, c: number, d: number) => {
@@ -44,8 +45,21 @@ export function EasingLab() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [curve, setCurve] = useState<Curve>(PRESETS[2].curve);
   const [copied, setCopied] = useState(false);
+  const [looping, setLooping] = useState(false);
+  /** Bumped by anything that should trigger one run of the demos. */
+  const [cue, setCue] = useState(0);
   const curveRef = useRef(curve);
   curveRef.current = curve;
+  const playRef = useRef<((mode: "once" | "loop") => void) | null>(null);
+  const loopingRef = useRef(looping);
+  loopingRef.current = looping;
+
+  // Nothing moves until something asks it to: changing the curve plays it once, and the
+  // demos sit at rest in between. Constant animation next to a number you are trying to
+  // read is just noise.
+  useEffect(() => {
+    playRef.current?.(loopingRef.current ? "loop" : "once");
+  }, [cue, looping]);
 
   const css = `cubic-bezier(${curve.map((n) => Math.round(n * 100) / 100).join(", ")})`;
 
@@ -71,6 +85,14 @@ export function EasingLab() {
     let colours = { bg: "#0c0c18", ink: "#f2ede4", accent: "#6b52ff", faint: "#7c7a8c", card: "#14141f", border: "#262635" };
     let dragging: 1 | 2 | null = null;
     let frame = 0;
+    // null means settled. Otherwise: when this run started, and whether it repeats.
+    let run: number | null = null;
+    let mode: "once" | "loop" = "once";
+    const play = (next: "once" | "loop") => {
+      mode = next;
+      run = performance.now();
+    };
+    playRef.current = play;
 
     const readPalette = () => {
       const style = getComputedStyle(document.documentElement);
@@ -164,9 +186,19 @@ export function EasingLab() {
         ctx.fill();
       }
 
-      // The playhead, and the same progress driving everything on the right.
-      const loop = (now % CYCLE) / CYCLE;
-      const progress = loop < 1 - DWELL ? loop / (1 - DWELL) : 1;
+      // The playhead, and the same progress driving everything on the right. At rest that
+      // is 1: the demos hold their finished state rather than twitching.
+      let progress = 1;
+      if (run !== null) {
+        const elapsed = now - run;
+        if (elapsed < MOTION) {
+          progress = elapsed / MOTION;
+        } else if (mode === "loop") {
+          if (elapsed > MOTION + DWELL) run = now;
+        } else {
+          run = null;
+        }
+      }
       const value = ease(progress);
       ctx.fillStyle = colours.faint;
       ctx.beginPath();
@@ -249,6 +281,9 @@ export function EasingLab() {
 
     const onDown = (event: PointerEvent) => {
       dragging = near(event);
+      // Loop while a handle is being dragged, so the change can be felt as it is made.
+      // Anywhere else is a request to play it once.
+      play(dragging ? "loop" : "once");
     };
     const onMove = (event: PointerEvent) => {
       if (!dragging) {
@@ -266,6 +301,7 @@ export function EasingLab() {
       canvas.style.cursor = "grabbing";
     };
     const onUp = () => {
+      if (dragging) play(loopingRef.current ? "loop" : "once");
       dragging = null;
       canvas.style.cursor = "default";
     };
@@ -280,6 +316,7 @@ export function EasingLab() {
       canvas.removeEventListener("pointerdown", onDown);
       canvas.removeEventListener("pointermove", onMove);
       window.removeEventListener("pointerup", onUp);
+      playRef.current = null;
     };
   }, []);
 
@@ -295,14 +332,17 @@ export function EasingLab() {
         }}
       >
         <p className="label text-mute">
-          {css} · drag either handle, past the box for an overshoot
+          {css} · drag either handle, past the box for an overshoot · click to play
         </p>
         <div className="pointer-events-auto flex flex-wrap items-center gap-2">
           {PRESETS.map((preset) => (
             <button
               key={preset.name}
               type="button"
-              onClick={() => setCurve(preset.curve)}
+              onClick={() => {
+                setCurve(preset.curve);
+                setCue((value) => value + 1);
+              }}
               className="label rounded-full border px-3 py-2"
               style={
                 preset.curve.join() === curve.join()
@@ -313,6 +353,26 @@ export function EasingLab() {
               {preset.name}
             </button>
           ))}
+          <button
+            type="button"
+            onClick={() => setCue((value) => value + 1)}
+            className="label rounded-full border px-3.5 py-2.5"
+            style={{ borderColor: "var(--border)", color: "var(--text-mute)" }}
+          >
+            Play
+          </button>
+          <button
+            type="button"
+            onClick={() => setLooping((value) => !value)}
+            className="label rounded-full border px-3.5 py-2.5"
+            style={
+              looping
+                ? { borderColor: "var(--accent)", color: "var(--accent-soft)" }
+                : { borderColor: "var(--border)", color: "var(--text-mute)" }
+            }
+          >
+            {looping ? "Looping" : "Loop"}
+          </button>
           <button
             type="button"
             onClick={copy}
