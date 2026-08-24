@@ -16925,6 +16925,2142 @@
       "repo": null,
       "status": "pending",
       "assessedAt": "2026-08-17T07:55:58.409Z"
+    },
+    {
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "host": "github.com",
+      "name": "Agent-Reach",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / ai-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/Panniantong/Agent-Reach",
+        "finalUrl": "https://github.com/Panniantong/Agent-Reach",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - Panniantong/Agent-Reach: Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. · GitHub",
+        "description": "Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. - Panniantong/Agent-Reach",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - Panniantong/Agent-Reach: Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "Panniantong/Agent-Reach",
+        "stars": 74589,
+        "licence": "MIT",
+        "pushedAt": "2026-08-12T03:39:49Z",
+        "archived": false,
+        "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees."
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:36.170Z"
+    },
+    {
+      "url": "https://github.com/bojieli/ai-agent-book",
+      "host": "github.com",
+      "name": "ai-agent-book",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / coding-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/bojieli/ai-agent-book",
+        "finalUrl": "https://github.com/bojieli/ai-agent-book",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - bojieli/ai-agent-book: 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码 · GitHub",
+        "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码 - bojieli/ai-agent-book",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "Apache-2.0",
+        "body": "GitHub - bojieli/ai-agent-book: 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码 · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation ",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "bojieli/ai-agent-book",
+        "stars": 41482,
+        "licence": "Apache-2.0",
+        "pushedAt": "2026-08-24T03:19:51Z",
+        "archived": false,
+        "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码"
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:36.021Z"
+    },
+    {
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "host": "github.com",
+      "name": "awesome-claude-code",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / coding-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/hesreallyhim/awesome-claude-code",
+        "finalUrl": "https://github.com/hesreallyhim/awesome-claude-code",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - hesreallyhim/awesome-claude-code: A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unsto",
+        "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins - hesreallyhim/awesome-claude-code",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "GitHub - hesreallyhim/awesome-claude-code: A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan ",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "hesreallyhim/awesome-claude-code",
+        "stars": 52895,
+        "licence": "NOASSERTION",
+        "pushedAt": "2026-08-24T06:14:50Z",
+        "archived": false,
+        "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins"
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:36.338Z"
+    },
+    {
+      "url": "https://getdesign.md/",
+      "host": "getdesign.md",
+      "name": "awesome-design-md",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-system",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://getdesign.md/",
+        "finalUrl": "https://getdesign.md/",
+        "status": 200,
+        "reachable": true,
+        "title": "getdesign.md — DESIGN.md collection for AI coding agents",
+        "description": "Browse independent design system analyses from popular websites. Drop one into your project as design reference for your coding agent.",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "getdesign.md — DESIGN.md collection for AI coding agents Website Starter Kit Build landing pages and full web apps with AI. Mobile App Starter Kit Build iOS and Android mobile apps with AI. get design .md Request a DESIGN.md Browse website catalog 300+ Affiliate Program New ... Sign in Private DESIGN.md Website catalog Catalog Pass Backgrounds Video templates Pro templates Website Starter Kit New Mobile App Starter Kit New Vibecoder tools Add your tool AI social media management EveryFeed.ai posts to 35+ channels on autopilot. Try free Give AI-built websites a real design with DESIGN.md Give your coding agent a reusable design reference: colors, type, spacing, components, and the reasoning b",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:35.834Z"
+    },
+    {
+      "url": "https://cal.diy",
+      "host": "cal.diy",
+      "name": "cal.diy",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / tailwindcss",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Scheduling infrastructure for absolutely everyone.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://cal.diy",
+        "finalUrl": "https://www.cal.diy/",
+        "status": 200,
+        "reachable": true,
+        "title": "Cal.diy Self-Hosting Documentation",
+        "description": "Cal.diy self-hosting documentation",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Cal.diy Self-Hosting Documentation Skip to Content CTRL K CTRL K Introduction Getting Started Installation Database Migrations Upgrading Docker Apps Google Microsoft Zoom Daily HubSpot Sendgrid Stripe Twilio Zoho Deployments Deployments AWS Azure Elestio GCP Northflank Railway Render Vercel Troubleshooting Light Introduction Getting Started Installation Database Migrations Upgrading Docker Apps Google Microsoft Zoom Daily HubSpot Sendgrid Stripe Twilio Zoho Deployments Deployments AWS Azure Elestio GCP Northflank Railway Render Vercel Troubleshooting Light On This Page Getting Started Deployments Differences between Cal.diy and Cal.com Question? Give us feedback Edit this page Scroll to top ",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:36.514Z"
+    },
+    {
+      "url": "https://career-ops.org",
+      "host": "career-ops.org",
+      "name": "career-ops",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / ai-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Open-source AI job search: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://career-ops.org",
+        "finalUrl": "https://career-ops.org/",
+        "status": 200,
+        "reachable": true,
+        "title": "Open-source AI job search agent, local-first | career-ops",
+        "description": "Open source AI-powered job search system. Runs in your CLI on your machine. CLI-agnostic, MIT-licensed, local-first. Evaluate jobs, generate tailored CVs, track applications.",
+        "priceSource": "homepage",
+        "figures": [
+          {
+            "figure": "$20/mo",
+            "context": " — career-ops never locks you to one provider. A typical job search runs on Claude Pro at $20/month, but the choice is yours. Ready to filter offers, not get filtered? Your turn Or"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "Open-source AI job search agent, local-first | career-ops co career-ops , your career operations hub Search ⌘ K EN ES FR You got the job, and it didn't cost you a thing . Open source AI-powered job search. Runs in your CLI. Your data, your machine. Run it now View source Featured in “ Companies use AI to filter candidates . I just gave candidates AI to choose companies .” Santiago Fernández de Valderrama Aparicio , 16-year operator and Head of Applied AI Now a signed manifesto · Read it → What is career-ops ? &gt;_ /career-ops --describe career-ops is an open-source AI-powered job search system that runs locally on your machine inside any AI coding CLI — Claude Code, OpenCode, Codex, GitHub ",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:35.925Z"
+    },
+    {
+      "url": "https://chakra-ui.com",
+      "host": "chakra-ui.com",
+      "name": "chakra-ui",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-system",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Chakra UI is a component system for building SaaS products with speed ⚡️",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://chakra-ui.com",
+        "finalUrl": "https://chakra-ui.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Chakra UI",
+        "description": "Simple, Modular &amp; Accessible UI Components for your React Applications",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Chakra UI Build faster with Premium Chakra UI Components 💎 Learn more Docs Showcase Spotlight Blog Guides Chakra Shipped is live Chakra UI is a component system for building products with speed Accessible React components for building high-quality web apps and design systems. Works with Next.js RSC Start Building npm i @chakra-ui/react Slider Pin Input Chakra Ark Zag Chakra UI is a component library for building web applications. Ark UI is a headless library for building reusable, scalable design systems Zag.js provides a set of UI components powered by Finite State Machines Tabs Open Menu Menu Switch Built for modern product teams. From next-gen startups to established enterprises. Design ",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:35.920Z"
+    },
+    {
+      "url": "https://cherryai.com",
+      "host": "cherryai.com",
+      "name": "cherry-studio",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / ai-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://cherryai.com",
+        "finalUrl": "https://cherryai.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Cherry Studio - The All-in-One AI Workstation",
+        "description": "Cherry Studio is an open-source, free, and powerful AI desktop client. It includes AI agents, AI chat, AI image generation, knowledge base, and more, supports all major LLMs, runs on Windows/macOS/Linux, stores data locally, and is built for heavy AI users.",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Cherry Studio - The All-in-One AI Workstation",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:35.772Z"
+    },
+    {
+      "url": "https://npmjs.org/package/chrome-devtools-mcp",
+      "host": "npmjs.org",
+      "name": "chrome-devtools-mcp",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / mcp-server",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Chrome DevTools for coding agents",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://npmjs.org/package/chrome-devtools-mcp",
+        "finalUrl": "https://www.npmjs.com/package/chrome-devtools-mcp",
+        "status": 403,
+        "reachable": false,
+        "title": "Just a moment...",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Just a moment... Enable JavaScript and cookies to continue",
+        "blocked": true,
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:35.990Z"
+    },
+    {
+      "url": "https://codewhale.net/",
+      "host": "codewhale.net",
+      "name": "CodeWhale",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / coding-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Open-source coding agent for your terminal, built in Rust and on a journey of continuous community improvement. Issues and PRs welcome.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://codewhale.net/",
+        "finalUrl": "https://codewhale.net/en",
+        "status": 200,
+        "reachable": true,
+        "title": "Codewhale — dives into the deep so you don&#x27;t have to.",
+        "description": "Codewhale dives into the deep so you don&#x27;t have to — an open-source terminal coding agent. Bring your own model. Runs on your machine. Rust, MIT.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": "MIT",
+        "body": "Codewhale — dives into the deep so you don't have to. Skip to main content Issue 2026-08-24 · Monday, August 24 codewhale.net v0.9.11 深 Codewhale any model, on your machine Docs Start Install FAQ Community Contribute English 中文 日本語 (partial) Tiếng Việt (partial) 한국어 (partial) Русский (partial) Українська (partial) Español (partial) Português (BR) (partial) Français (partial) Deutsch (partial) Català (partial) Bahasa Indonesia (partial) हिन्दी (partial) Türkçe (partial) Italiano (partial) Polski (partial) العربية (partial) ★ 40.8k Sign in Register Install → Open source · Bring your own model · Runs in your terminal Codewhale dives into the deep so you don't have to. Codewhale is an open-sourc",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:37.917Z"
+    },
+    {
+      "url": "https://context7.com",
+      "host": "context7.com",
+      "name": "context7",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / mcp-server",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://context7.com",
+        "finalUrl": "https://context7.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Context7 - Up-to-date documentation for LLMs and AI code editors",
+        "description": "Pull up-to-date, version-specific documentation and code examples for any library directly into Cursor, Claude Code, Codex, Devin Desktop, Antigravity and other AI coding tools.",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Context7 - Up-to-date documentation for LLMs and AI code editors Guides Pricing Enterprise More More Try Live Rankings Install Blog Add Docs © 2026 , Context7 is an Upstash project Status About Learn Contact Legal Follow on X",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:36.183Z"
+    },
+    {
+      "url": "https://stenciljs.com",
+      "host": "stenciljs.com",
+      "name": "core",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-system",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "A toolchain for building scalable, enterprise-ready component systems on top of TypeScript and Web Component standards. Stencil components can be distributed natively to React, Angular, Vue, (+ more) and traditional web applications from a single, framework-agnostic codebase.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://stenciljs.com",
+        "finalUrl": "https://stenciljs.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Stencil",
+        "description": "Build. Customize. Distribute. Adopt.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "Stencil Important Announcement: The Future of Ionic’s Commercial Products → Docs Resources Community Blog ⋮ Docs Resources Community Blog Enterprise Stencil 4 is here! Read all about what’s new in latest major release Read the Blog → Build. Customize. Distribute. Adopt. Stencil is a library for building reusable, scalable component libraries. Generate small, blazing fast Web Components that run everywhere. Get started → npm init stencil Simple With intentionally small tooling, a tiny API, and out-of-the-box configuration, Stencil gets out of the way and lets you focus. Performant A tiny runtime and the raw power of native Web Components make Stencil one of the fastest compilers around. Futur",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:36.470Z"
+    },
+    {
+      "url": "https://primer.style/css",
+      "host": "primer.style",
+      "name": "css",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-system",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Primer is GitHub's design system. This is the CSS implementation",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://primer.style/css",
+        "finalUrl": "https://primer.style/css/storybook/",
+        "status": 200,
+        "reachable": true,
+        "title": "@storybook/cli - Storybook",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "@storybook/cli - Storybook",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:38.429Z"
+    },
+    {
+      "url": "https://dsa.zhulinsen.tech",
+      "host": "dsa.zhulinsen.tech",
+      "name": "daily_stock_analysis",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / ai-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://dsa.zhulinsen.tech",
+        "finalUrl": "https://dsa.zhulinsen.tech/",
+        "status": 200,
+        "reachable": true,
+        "title": "DSA - LLM 驱动的 A股/港股/美股智能股票分析系统",
+        "description": "DSA 是一个 LLM 驱动的智能股票分析系统，支持 A股、港股、美股，整合行情、新闻舆情、技术面与基本面，生成每日个股决策报告和大盘复盘。",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "DSA - LLM 驱动的 A股/港股/美股智能股票分析系统 DSA Daily Stock Analysis 概览 能力 产出 启动 文档 简体中文 English ☀ ☾ GitHub LLM-DRIVEN STOCK ANALYSIS LLM 驱动的 智能股票分析系统 DSA 面向 A 股、港股、美股，用 LLM 整合多源行情、新闻舆情、技术面与基本面，每个交易日生成个股决策报告与大盘复盘，并支持随时发起多策略问股。 打开 DSA GitHub 阅读文档 A股 / 港股 / 美股 多数据源回退 WebUI 与多渠道通知 CAPABILITIES 核心能力 围绕自选股研究链路组织能力：行情数据、新闻舆情、LLM 决策、Agent 问股、回测复盘与多渠道推送。 01 跨市场行情数据 覆盖 A 股、港股、美股与常见 ETF，接入 TickFlow、AkShare、Tushare、YFinance、Longbridge 等数据源，并保留回退链路。 02 新闻舆情与事件 聚合新闻、公告、搜索结果与社交舆情，为财报、题材、资金流和风险事件提供上下文。 03 LLM 决策报告 将行情、新闻、技术面和基本面汇总成结构化结论，输出评分、趋势、操作建议、风险警报与检查清单。 04 Agent 策略问股 支持均线、缠论、波浪、多头趋势等策略视角，可在 Web、CLI 或 Bot 场景下对单只标的发起追问。 05 回测与复盘 历史报告写入 SQLite，支持方向准确率、模拟收益、持仓回看和大盘复盘，用来检验策略纪律。 06 多渠道推送 支持企业微信、飞书、Telegram、Discord、Sla",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:36.101Z"
+    },
+    {
+      "url": "https://daisyui.com",
+      "host": "daisyui.com",
+      "name": "daisyui",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-system",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "🌼 🌼 🌼 🌼 🌼  The most popular, free and open-source Tailwind CSS component library",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://daisyui.com",
+        "finalUrl": "https://daisyui.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "daisyUI - Tailwind CSS Component Library",
+        "description": "Tailwind CSS component library by daisyUI. Build faster with semantic components, built-in themes, and reusable UI blocks.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "daisyUI - Tailwind CSS Component Library daisyUI MCP v1.6: Generate unique UIs now! 5.7.22 Changelog v5 release notes v5 upgrade guide Version 4.x Version 3.x Version 2.x Version 1.x Roadmap Docs Components Templates MCP More Skills Charts Figma Library Theme Generator Blog Playground T-shirts UI design trends Search… ⌘ K Theme light dark cupcake bumblebee emerald corporate synthwave retro cyberpunk valentine halloween garden forest aqua lofi pastel fantasy wireframe black luxury dracula cmyk autumn business acid lemonade night coffee winter dim nord sunset caramellatte abyss silk Make your theme! EN English AR العربية BN বাংলা CA Català CS Čeština DE Deutsch EL Ελληνικά ES Español FA فارسی ",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:36.490Z"
+    },
+    {
+      "url": "http://reasonix.io/",
+      "host": "reasonix.io",
+      "name": "DeepSeek-Reasonix",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / coding-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "http://reasonix.io/",
+        "finalUrl": "https://reasonix.io/",
+        "status": 403,
+        "reachable": false,
+        "title": "Just a moment...",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Just a moment... Enable JavaScript and cookies to continue",
+        "blocked": true,
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:36.817Z"
+    },
+    {
+      "url": "https://cathrynlavery.github.io/diagram-design/",
+      "host": "cathrynlavery.github.io",
+      "name": "diagram-design",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / svg",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://cathrynlavery.github.io/diagram-design/",
+        "finalUrl": "https://cathrynlavery.github.io/diagram-design/",
+        "status": 200,
+        "reachable": true,
+        "title": "Diagram Design · Gallery",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Diagram Design · Gallery Diagram Design · gallery icon library ↗ open in new tab ↗ 01 Architecture 02 Flowchart 03 Sequence 04 State 05 ER 06 Timeline 07 Swimlane 08 Quadrant 09 Nested 10 Tree 11 Org chart 12 Layers 13 Venn 14 Pyramid 15 Radar 16 Polar 17 Loop 18 Data lake 19 Bar 20 Line 21 Gantt 22 Scatter 22 Scatter · bubble 23 Medallion 24 High-Level 25 Process 27 Data flow 28 DP integration 29 High-Level / Parametric 30 Treemap 30 Line · slopegraph 20 Line · ridgeline 33 DP security matrix 34 IT current-state 35 Sankey 36 Fishbone 37 Wardley map 38 Kanban 39 User journey 40 Deployment 41 Dependency graph 42 UML class 43 Story map 44 Database schema 45 Sequence · OAuth 46 Import · draw.io",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:36.697Z"
+    },
+    {
+      "url": "https://drawdb.app",
+      "host": "drawdb.app",
+      "name": "drawdb",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / tailwindcss",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Free, simple, and intuitive online database diagram editor and SQL generator.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://drawdb.app",
+        "finalUrl": "https://www.drawdb.app/",
+        "status": 200,
+        "reachable": true,
+        "title": "drawDB — Online Database Diagram Editor &amp; SQL Generator",
+        "description": "drawDB is a free online database schema design tool. Draw entity-relationship diagrams, generate SQL for PostgreSQL, MySQL, SQLite, MariaDB, SQL Server &amp; Oracle, import/export DBML, and collaborate on your data models in real time.",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "drawDB — Online Database Diagram Editor & SQL Generator You need to enable JavaScript to run this app.",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:36.695Z"
+    },
+    {
+      "url": "https://echarts.apache.org",
+      "host": "echarts.apache.org",
+      "name": "echarts",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / svg",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Apache ECharts is a powerful, interactive charting and data visualization library for browser",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://echarts.apache.org",
+        "finalUrl": "https://echarts.apache.org/en/index.html",
+        "status": 200,
+        "reachable": true,
+        "title": "Apache ECharts",
+        "description": "Apache ECharts, a powerful, interactive charting and visualization library for browser",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Apache ECharts We're sorry, but Apache ECharts website doesn't work properly without JavaScript enabled. Please enable it to continue. Please visit the official Apache ECharts Website at https://echarts.apache.org Visit Official Website x Toggle navigation Home Docs Features Handbook API Chart Configuration Changelog FAQ V6 Upgrade Guide Download Download Download Themes Download Custom Series Download Extensions Examples Resources Spread Sheet Tool Theme Builder Cheat Sheet More Resources Community Events Committers Mailing List How to Contribute Dependencies Code Standard Source Code (GitHub) Issues (GitHub) ASF Apache Software Foundation Security License Events Sponsorship Thanks 中文 Apach",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:37.391Z"
+    },
+    {
+      "url": "https://frontendchecklist.io",
+      "host": "frontendchecklist.io",
+      "name": "Front-End-Checklist",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / ai-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "🗂 The essential checklist for modern web development, for humans and AI agents",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://frontendchecklist.io",
+        "finalUrl": "https://frontendchecklist.io/",
+        "status": 200,
+        "reachable": true,
+        "title": "Front-End Checklist - Web Development Best Practices | Front-End Checklist",
+        "description": "Trusted front-end quality rules for humans and AI agents. Browse hundreds of rules, run curated workflows, and use MCP for structured AI reviews.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "Front-End Checklist - Web Development Best Practices | Front-End Checklist Skip to main content Beta: Front-End Checklist is currently in beta. Some issues are still being fixed. Thanks for your patience. Front-End Checklist Rules Checklists Guides GitHub 73.6k X Search ⌘ K Lists Loading Trusted front-end quality rules for humans and AI agents The essential checklist for modern web development, with 350+ rules across launch, review, accessibility, performance, security, privacy, and SEO workflows. Browse the corpus, start with curated checklists, or connect the same standards to AI tools with MCP. Start a Curated Checklist Browse All Rules GitHub GitHub · 73.6k Vercel Skills.sh MCP Server Ca",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:37.138Z"
+    },
+    {
+      "url": "https://github.com/fastapi/full-stack-fastapi-template",
+      "host": "github.com",
+      "name": "full-stack-fastapi-template",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / tailwindcss",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Full-stack web application template with FastAPI, React, SQLModel, PostgreSQL, Vite, Tailwind CSS, shadcn/ui, FastAPI Cloud, and Docker Compose.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/fastapi/full-stack-fastapi-template",
+        "finalUrl": "https://github.com/fastapi/full-stack-fastapi-template",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - fastapi/full-stack-fastapi-template: Full-stack web application template with FastAPI, React, SQLModel, PostgreSQL, Vite, Tailwind CSS, shadcn/ui, FastAPI Cloud, and Docker Compose. · GitHub",
+        "description": "Full-stack web application template with FastAPI, React, SQLModel, PostgreSQL, Vite, Tailwind CSS, shadcn/ui, FastAPI Cloud, and Docker Compose. - fastapi/full-stack-fastapi-template",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - fastapi/full-stack-fastapi-template: Full-stack web application template with FastAPI, React, SQLModel, PostgreSQL, Vite, Tailwind CSS, shadcn/ui, FastAPI Cloud, and Docker Compose. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure you",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "fastapi/full-stack-fastapi-template",
+        "stars": 45055,
+        "licence": "MIT",
+        "pushedAt": "2026-08-21T19:41:30Z",
+        "archived": false,
+        "description": "Full-stack web application template with FastAPI, React, SQLModel, PostgreSQL, Vite, Tailwind CSS, shadcn/ui, FastAPI Cloud, and Docker Compose."
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:37.228Z"
+    },
+    {
+      "url": "https://geminicli.com",
+      "host": "geminicli.com",
+      "name": "gemini-cli",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / mcp-server",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://geminicli.com",
+        "finalUrl": "https://geminicli.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Build, debug & deploy with AI | Gemini CLI",
+        "description": "",
+        "priceSource": "/plans",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Build, debug & deploy with AI | Gemini CLI Skip to content Unpaid tier and Google One users: Gemini CLI will be replaced by Antigravity CLI on June 18th. To learn more, see our blog post . Gemini CLI Home Plans Extensions Browse extensions About Extensions Docs Reference Resources Changelog Search Ctrl K Cancel Feedback GitHub GitHub Select theme Dark Light Auto Build, debug & deploy with AI Copy as Markdown Copied! Build debug & deploy with AI Query and edit large codebases, generate apps from images or PDFs, and automate complex workflows—all from your terminal with Gemini 3. npm install -g @google/gemini-cli More install options This website uses cookies from Google to deliver and enhance",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:37.076Z"
+    },
+    {
+      "url": "https://hermes-agent.nousresearch.com",
+      "host": "hermes-agent.nousresearch.com",
+      "name": "hermes-agent",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / ai-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "The agent that grows with you",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://hermes-agent.nousresearch.com",
+        "finalUrl": "https://hermes-agent.nousresearch.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Hermes Agent — Open-Source AI Agent That Grows With You | Nous Research",
+        "description": "Hermes Agent is the open-source, self-hosted AI agent by Nous Research. Persistent memory, self-created skills, and a messaging gateway for Telegram, Discord, Slack, and more. Download Hermes Desktop for macOS and Windows, or install via terminal on Linux — free under the MIT license.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "Hermes Agent — Open-Source AI Agent That Grows With You | Nous Research Nous Docs Hermes Agent Products Install Open Source • MIT License The Agent That Grows With You Download Hermes Desktop App /\\-_=+|&lt; -/= ~:*-/ Install via terminal macOS / Linux Windows curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash Native App Hermes Desktop for macOS, Windows & Linux macOS 12+ Mac OS Download desktop app Windows 10/11 Windows Download desktop app Any distro Linux Install via terminal Feature Preview #1 Connect Lives Everywhere Telegram, Discord, Slack, WhatsApp, Signal, Email, CLI — and a growing list of platforms.",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:37.112Z"
+    },
+    {
+      "url": "https://hyperui.dev",
+      "host": "hyperui.dev",
+      "name": "hyperui",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-system",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Free Tailwind CSS v4 components for your next project, designed to enhance your web development with the latest features and styles 🚀",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://hyperui.dev",
+        "finalUrl": "https://hyperui.dev/",
+        "status": 403,
+        "reachable": false,
+        "title": "Just a moment...",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Just a moment... Enable JavaScript and cookies to continue",
+        "blocked": true,
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:37.141Z"
+    },
+    {
+      "url": "https://jcode.sh",
+      "host": "jcode.sh",
+      "name": "jcode",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / coding-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "The most RAM efficient harness",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://jcode.sh",
+        "finalUrl": "https://jcode.sh/",
+        "status": 200,
+        "reachable": true,
+        "title": "jcode - open-source AI coding agent for the terminal",
+        "description": "jcode is an open-source AI coding agent for the terminal, written in Rust. Durable memory, background tasks, and agent swarms, installed with one command.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$0",
+            "context": "or work with us on deployment, billing, and support for your organization. Jcode software $0 with your own model access The full open-source coding agent has no feature gates. Brin"
+          },
+          {
+            "figure": "$10",
+            "context": "local models through Ollama or LM Studio MIT licensed Install Jcode Hosted inference From $10 per month Monthly prices $10 $20 $50 $100 $200 $1,000 Subscription Recurring $10 charg"
+          },
+          {
+            "figure": "$20",
+            "context": " Studio MIT licensed Install Jcode Hosted inference From $10 per month Monthly prices $10 $20 $50 $100 $200 $1,000 Subscription Recurring $10 charge each month while subscribed. Mo"
+          },
+          {
+            "figure": "$50",
+            "context": "dio MIT licensed Install Jcode Hosted inference From $10 per month Monthly prices $10 $20 $50 $100 $200 $1,000 Subscription Recurring $10 charge each month while subscribed. Monthl"
+          },
+          {
+            "figure": "$100",
+            "context": "MIT licensed Install Jcode Hosted inference From $10 per month Monthly prices $10 $20 $50 $100 $200 $1,000 Subscription Recurring $10 charge each month while subscribed. Monthly cr"
+          },
+          {
+            "figure": "$200",
+            "context": "icensed Install Jcode Hosted inference From $10 per month Monthly prices $10 $20 $50 $100 $200 $1,000 Subscription Recurring $10 charge each month while subscribed. Monthly credit "
+          },
+          {
+            "figure": "$1,000",
+            "context": "ed Install Jcode Hosted inference From $10 per month Monthly prices $10 $20 $50 $100 $200 $1,000 Subscription Recurring $10 charge each month while subscribed. Monthly credit Every"
+          },
+          {
+            "figure": "$40,",
+            "context": " New usage stops at the cap. Email warnings Start at $20 of monthly usage, then double to $40, $80, and onward for thresholds at or below your cap. Subscribe for $10/month Enterpri"
+          },
+          {
+            "figure": "$80,",
+            "context": "usage stops at the cap. Email warnings Start at $20 of monthly usage, then double to $40, $80, and onward for thresholds at or below your cap. Subscribe for $10/month Enterprise Cu"
+          },
+          {
+            "figure": "$10/mo",
+            "context": "e, then double to $40, $80, and onward for thresholds at or below your cap. Subscribe for $10/month Enterprise Custom for your organization For teams that need Jcode to fit their i"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "jcode - open-source AI coding agent for the terminal jcode An open source terminal coding agent, written in Rust. curl -fsSL https://jcode.sh/install | bash copy macOS Linux Windows All builds · Docs · Pricing · GitHub See the complete onboarding flow → GitHub stargazer history Show commit history Hide commit history GitHub commit history Backed by Combinator Mission Jcode is built on three bets. Parallelism is the biggest lever on coding productivity. You should never wait while coding. Every moment an agent is working is a moment you could be handing out the next task: spin up another session instead of watching this one finish, and your throughput becomes as many tasks as you can give out",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:37.563Z"
+    },
+    {
+      "url": "https://learn.shareai.run",
+      "host": "learn.shareai.run",
+      "name": "learn-claude-code",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / ai-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://learn.shareai.run",
+        "finalUrl": "https://learn.shareai.run/",
+        "status": 200,
+        "reachable": true,
+        "title": "",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:37.521Z"
+    },
+    {
+      "url": "https://mui.com/material-ui/",
+      "host": "mui.com",
+      "name": "material-ui",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-system",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Material UI: Comprehensive React component library that implements Google's Material Design. Free forever.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://mui.com/material-ui/",
+        "finalUrl": "https://mui.com/material-ui/",
+        "status": 200,
+        "reachable": true,
+        "title": "Material UI: React components that implement Material Design",
+        "description": "Material UI is an open-source React component library that implements Google&#x27;s Material Design. It&#x27;s comprehensive and can be used in production out of the box.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$299 / year",
+            "context": "ponents Pro Best for professional developers or startups building data-rich applications. $299 / year / dev Equivalent to $ 24.92 / month / dev Buy now Multi App License Use MUI X "
+          },
+          {
+            "figure": "$ 24.92 / mo",
+            "context": "l developers or startups building data-rich applications. $299 / year / dev Equivalent to $ 24.92 / month / dev Buy now Multi App License Use MUI X across multiple apps within your"
+          },
+          {
+            "figure": "$599 / year",
+            "context": "remium The most advanced features for data-rich applications along with standard support. $599 / year / dev Equivalent to $ 49.92 / month / dev Buy now Multi App License Use MUI X "
+          },
+          {
+            "figure": "$ 49.92 / mo",
+            "context": "s for data-rich applications along with standard support. $599 / year / dev Equivalent to $ 49.92 / month / dev Buy now Multi App License Use MUI X across multiple apps within your"
+          },
+          {
+            "figure": "$1,399 / year",
+            "context": "prise All features of Premium coupled with enterprise-grade support and customer success. $1,399 / year / dev Equivalent to $ 116.58 / month / dev Contact Sales Everything in Premi"
+          },
+          {
+            "figure": "$ 116.58 / mo",
+            "context": "led with enterprise-grade support and customer success. $1,399 / year / dev Equivalent to $ 116.58 / month / dev Contact Sales Everything in Premium plan and... Priority support Mu"
+          },
+          {
+            "figure": "$12,000",
+            "context": "hours Issue escalation Security questionnaire & custom agreements Available for orders of $12,000 and above Available for orders of $12,000 and above Paid plans Key information abo"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "Material UI: React components that implement Material Design Skip to content 🚀 Material UI and MUI X v9 are out! Check out the announcement blogpost → Products Docs Pricing About us Blog Search… Products MUI Core Ready-to-use foundational React components, free forever. MUI X Advanced and powerful components for complex use cases. Templates Fully built templates for your application. Design Kits Material UI components in your favorite design tool. Docs Material UI Component library that implements Google's Material Design. Base UI Unstyled components for building accessible UIs. MUI System CSS utilities for rapidly laying out custom designs. MUI X Advanced components for complex use cases. ",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:37.892Z"
+    },
+    {
+      "url": "https://material-web.dev",
+      "host": "material-web.dev",
+      "name": "material-web",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-system",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Material Design Web Components",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://material-web.dev",
+        "finalUrl": "https://material-web.dev/",
+        "status": 200,
+        "reachable": true,
+        "title": "Material Web",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Material Web menu menu_open Material Web Skip to main content palette Theme Controls content_copy check Hex Source Color Hue 0 Chroma 0 Tone 0 dark_mode brightness_medium light_mode Material Web @material/web is a library of web components that helps build beautiful and accessible web applications. Note: MWC is in maintenance mode pending new maintainers. About Introduction Quick Start Roadmap Support Bundle Sizes Theming Material Theming Color Typography Shape Components Buttons Checkbox Chips Dialogs Floating action button (FAB) Icon Buttons Lists Menus Progress indicators Radio Ripple Select Sliders Switch Tabs Text field",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:37.670Z"
+    },
+    {
+      "url": "http://openinterpreter.com/",
+      "host": "openinterpreter.com",
+      "name": "openinterpreter",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / coding-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "A coding agent for open models like Kimi K3",
+      "claimedTier": null,
+      "evidence": {
+        "url": "http://openinterpreter.com/",
+        "finalUrl": "https://www.openinterpreter.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Open Interpreter | Coding agent for open models",
+        "description": "An open-source coding agent built for low-cost and open-weight models.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Open Interpreter | Coding agent for open models",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:38.395Z"
+    },
+    {
+      "url": "https://hugohe3.github.io/ppt-master-examples/",
+      "host": "hugohe3.github.io",
+      "name": "ppt-master",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / ai-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://hugohe3.github.io/ppt-master-examples/",
+        "finalUrl": "https://hugohe3.github.io/ppt-master-examples/",
+        "status": 200,
+        "reachable": true,
+        "title": "PPT Master — AI generates natively editable PPTX from any document",
+        "description": "Drop in a PDF, DOCX, URL, or Markdown — get back a natively editable PowerPoint with real shapes, not images. Open source templates and live examples.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": "MIT",
+        "body": "PPT Master — AI generates natively editable PPTX from any document \"> Open source · MIT PPT Master AI generates natively editable PPTX from any document — real PowerPoint shapes, not images. Star on GitHub Get Started ... Examples ... Pages ... Templates All Consulting General Creative Editorial GitHub Quick Start FAQ Discussions PPT Master © 2025–2026 · Built by Hugo He",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:37.745Z"
+    },
+    {
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
+      "host": "qwenlm.github.io",
+      "name": "qwen-code",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / coding-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "An open-source AI coding agent that lives in your terminal.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
+        "finalUrl": "https://qwenlm.github.io/qwen-code-docs/en/users/overview/",
+        "status": 200,
+        "reachable": true,
+        "title": "Qwen Code overview | Qwen Code Docs",
+        "description": "[](https://npm-compare.com/@qwen-code/qwen-code) [](https://www.npmjs.com/package/@qwen-code/qwen-code)",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Qwen Code overview | Qwen Code Docs Skip to Content Qwen Code User Guide Developer Guide Showcase Blog English Qwen Code Documentation Blog Showcase GitHub Language 🇺🇸 English ✓ 🇨🇳 中文 🇩🇪 Deutsch 🇫🇷 Français 🇷🇺 Русский 🇯🇵 日本語 🇧🇷 Português (BR) 🇰🇷 한국어 User Guide Getting started Overview QuickStart Command Workflows Outside of the terminal Visual Studio Code Zed IDE JetBrains IDEs Github Actions Code with Qwen Code Features Commands Code Review Followup Suggestions Tool-Use Summaries SubAgents Agent Arena Skills Memory Headless Mode Dual Output Approval Mode MCP LSP (Language Server Protocol) Token Caching Sandboxing i18n Channels Overview Telegram WeChat DingTalk Plugins Feishu",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:38.000Z"
+    },
+    {
+      "url": "https://Cognitum.One",
+      "host": "cognitum.one",
+      "name": "ruflo",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / mcp-server",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://Cognitum.One",
+        "finalUrl": "https://cognitum.one/",
+        "status": 200,
+        "reachable": true,
+        "title": "Cognitum.One — Intelligence Where the Physical World Happens",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Cognitum.One — Intelligence Where the Physical World Happens is owned by react-helmet-async on each route (all content pages set their own). A static description here would duplicate it in the rendered ; intentionally omitted. --> COGNITUM",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:37.815Z"
+    },
+    {
+      "url": "https://scrapling.readthedocs.io/en/latest/",
+      "host": "scrapling.readthedocs.io",
+      "name": "Scrapling",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / mcp-server",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://scrapling.readthedocs.io/en/latest/",
+        "finalUrl": "https://scrapling.readthedocs.io/en/latest/",
+        "status": 200,
+        "reachable": true,
+        "title": "Index - Scrapling",
+        "description": "Scrapling - Effortless Web Scraping for the Modern Web!",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": "BSD",
+        "body": "Index - Scrapling Skip to content Scrapling Index Search D4Vinci/Scrapling Scrapling D4Vinci/Scrapling Introduction Introduction On this page Top Sponsors Key Features Spiders - A Full Crawling Framework Advanced Websites Fetching with Session Support Adaptive Scraping AI Features High-Performance & battle-tested Architecture Developer/Web Scraper Friendly Experience Star History Installation Optional Dependencies Docker How the documentation is organized Support License Overview Performance Benchmarks User Guide User Guide Parsing Parsing Querying elements Main classes Adaptive scraping Fetching Fetching Fetchers basics HTTP requests Dynamic websites Dynamic websites with hard protections S",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:38.660Z"
+    },
+    {
+      "url": "https://semi.design",
+      "host": "semi.design",
+      "name": "semi-design",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / figma-plugin",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "🚀A modern, comprehensive, flexible design system and React UI library, AI-friendly built-in.🎨Provide 3000+ Design Tokens, easy to build your design system. Make Semi Design to Any Design.🧑🏻‍💻 Design to Code in one click",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://semi.design",
+        "finalUrl": "https://semi.design/",
+        "status": 200,
+        "reachable": true,
+        "title": "Semi Design",
+        "description": "An easy-to-customize modern design system that helps designers and developers create high-quality products. 由抖音前端与 UED 团队维护，易于定制的现代化设计系统，帮助设计师与开发者打造高质量产品。 ",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Semi Design 跳转到: 跳转到主内容 跳转到页脚 EN 连接设计师与开发者 由抖音前端与 UED 团队维护，易于定制的现代化设计系统，帮助设计师与开发者打造高质量产品。 开始使用 GitHub 9.9k Remix Logo Nextjs 已服务 10 万 + 用户 Bytedance SSO 先进的开发者体验 开箱即用的底层能力支持，为开发者节省精力，避免重造 设计稿转代码 Semi 提供高效的 design to code 能力，3-5s，一键点击，从 Figma 设计稿生成真实代码 A11y 无障碍友好 Semi 遵循 W3C 标准为所有组件提供键盘交互、焦点管理和语义化支持 国际化与多语言 Semi 提供完备的多语言、多时区、RTL 支持，助你轻松打造全球化应用 Live Code 组件 LiveCode 允许你使用在线代码编辑器即时演示你的 UI 组件 稳定的质量保障 Semi 稳定迭代 5 年+，使用了单元测试、E2E 测试、视觉对比测试等多种方法保证组件的稳定和质量，测试覆盖率达到 90% 支持 SSR Semi 组件库支持 SSR 场景，可以在 Next.js、Gatsby 和 Remix 等框架中使用 易于贡献的 FA 架构 Semi 基于 FA 架构设计，主逻辑抽象为 Foundation 包，源码清晰易读，易于迁移到其他框架 轻松兼容 web components 提供完整的适配方案，所有的组件在 shadow DOM 中均可正常工作，更适合用于构建 SDK、浏览器插件等需要 DOM 隔离的场景 百变主题 提供高达 3000+ Design To",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:39.534Z"
+    },
+    {
+      "url": "https://sharp.pixelplumbing.com",
+      "host": "sharp.pixelplumbing.com",
+      "name": "sharp",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / svg",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, AVIF and TIFF images. Uses the libvips library.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://sharp.pixelplumbing.com",
+        "finalUrl": "https://sharp.pixelplumbing.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "High performance Node.js image processing | sharp",
+        "description": "High performance Node.js image processing. The fastest module to resize JPEG, PNG, WebP and TIFF images.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "High performance Node.js image processing | sharp Skip to content sharp Search Ctrl K Cancel Open Collective GitHub Select theme Dark Light Auto Home Installation API Constructor Input metadata Output options Resizing images Compositing images Image operations Colour manipulation Channel manipulation Global properties Performance Changelog v0.35.3 - 1st July 2026 v0.35.2 - 19th June 2026 v0.35.1 - 11th June 2026 v0.35.0 - 10th June 2026 v0.34.5 - 6th November 2025 v0.34.4 - 17th September 2025 v0.34.3 - 10th July 2025 v0.34.2 - 20th May 2025 v0.34.1 - 7th April 2025 v0.34.0 - 4th April 2025 v0.33.5 - 16th August 2024 v0.33.4 - 16th May 2024 v0.33.3 - 23rd March 2024 v0.33.2 - 12th January 20",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:38.185Z"
+    },
+    {
+      "url": "https://shields.io",
+      "host": "shields.io",
+      "name": "shields",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / svg",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Concise, consistent, and legible badges in SVG and raster format",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://shields.io",
+        "finalUrl": "https://shields.io/",
+        "status": 200,
+        "reachable": true,
+        "title": "Shields.io",
+        "description": "Concise, consistent, and legible badges",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Shields.io Skip to main content Shields.io Badges Documentation Donate Community Blog GitHub Shields.io Concise, consistent, and legible badges Get started Dynamic badges Show metrics for your project. We've got badges for hundreds of services. Static Badges Create a badge with Badge-Maker NPM library Render badges in your own application using our NPM library npm install badge-maker Host your own instance Host a shields instance behind your firewall with our docker image Love Shields? Please consider donating to sustain our activities Spread the word Increase the project's visibility by adding a star to its GitHub repository Community GitHub Open Collective Discord Awesome Badges Endpoint B",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:38.478Z"
+    },
+    {
+      "url": "https://simpleicons.org",
+      "host": "simpleicons.org",
+      "name": "simple-icons",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / svg",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "SVG icons for popular brands",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://simpleicons.org",
+        "finalUrl": "https://simpleicons.org/",
+        "status": 403,
+        "reachable": false,
+        "title": "Just a moment...",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Just a moment... Enable JavaScript and cookies to continue",
+        "blocked": true,
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:38.320Z"
+    },
+    {
+      "url": "https://tailwindcss.com/",
+      "host": "tailwindcss.com",
+      "name": "tailwindcss",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / tailwindcss",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "A utility-first CSS framework for rapid UI development.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://tailwindcss.com/",
+        "finalUrl": "https://tailwindcss.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.",
+        "description": "Tailwind CSS is a utility-first CSS framework for rapidly building modern websites without ever leaving your HTML.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Tailwind CSS - Rapidly build modern websites without ever leaving your HTML. v 4.3 ⌘K Ctrl K Docs Blog Showcase Partners Plus text-4xl text-5xl text-6xl text-8xl text-gray-950 text-white tracking-tighter text-balance Rapidly build modern websites without ever leaving your HTML. text-lg text-gray-950 text-white font-medium A utility-first CSS framework packed with classes like flex , pt-4 , text-center and rotate-90 that can be composed to build any design, directly in your markup. Get started Get started Quick search ⌘ K Ctrl K &lt; div class = \"flex flex-col items-center rounded-2xl\" &gt; &lt; div &gt; &lt; img class = \"size-48 shadow-xl \" alt = \"\" src = \"/img/cover.png\" /&gt; &lt;/ div &gt",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:38.804Z"
+    },
+    {
+      "url": "https://threejs.org/",
+      "host": "threejs.org",
+      "name": "three.js",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / svg",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "JavaScript 3D Library.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://threejs.org/",
+        "finalUrl": "https://threejs.org/",
+        "status": 200,
+        "reachable": true,
+        "title": "Three.js – JavaScript 3D Library",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Three.js – JavaScript 3D Library three.js r185 docs examples Learn examples documentation Tools devtools editor Community questions discord forum twitter Code github download Resources Three.js Journey Three.js Game Development Three.js Resources Needle devtools Merch T-Shirts submit project --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> --> -->",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:38.735Z"
+    },
+    {
+      "url": "https://trendradar.sandev.cc",
+      "host": "trendradar.sandev.cc",
+      "name": "TrendRadar",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / mcp-server",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://trendradar.sandev.cc",
+        "finalUrl": "https://trendradar.sandev.cc/",
+        "status": 200,
+        "reachable": true,
+        "title": "TrendRadar 官方网站 - 开源 AI 舆情监控与热点聚合推送工具",
+        "description": "开源 AI 舆情监控与热点聚合工具，最快 30 秒部署：聚合全网热搜与 RSS 订阅，AI 智能筛选、分析与翻译，简报直推微信、Telegram、钉钉、飞书等渠道，告别无效刷屏。",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "\" /> TrendRadar 官方网站 - 开源 AI 舆情监控与热点聚合推送工具 TrendRadar TrendRadar 是开源的 AI 热点聚合工具，最快 30 秒部署，聚合全网热搜与 RSS 订阅， AI 智能分析与筛选，支持微信、Telegram、钉钉、飞书等多渠道精准推送。 TrendRadar is an open-source AI-powered trend aggregator. Deploy in 30 seconds. Aggregate hot topics & RSS feeds, AI-powered filtering, push to WeChat, Telegram, Slack & more. GitHub · Config Editor · Docker Hub",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:38.529Z"
+    },
+    {
+      "url": "https://www.uupm.cc/",
+      "host": "uupm.cc",
+      "name": "ui-ux-pro-max-skill",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / tailwindcss",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.uupm.cc/",
+        "finalUrl": "https://www.uupm.cc/",
+        "status": 200,
+        "reachable": true,
+        "title": "UI/UX Pro Max - AI-Powered Design Intelligence",
+        "description": "AI-powered design intelligence toolkit. Searchable database of UI styles, color palettes, font pairings, chart types, and UX guidelines. Build beautiful interfaces with AI-powered design recommendations.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "UI/UX Pro Max - AI-Powered Design Intelligence UI UX Pro Max Features Stacks Styles Toggle theme ... Claude Code Cursor Windsurf Antigravity GitHub Copilot Kiro Codex Qoder UI UX Pro Max Design Intelligence Searchable database of UI styles, color palettes, font pairings, chart types, and UX guidelines. Build beautiful interfaces with AI-powered design recommendations. $ ▋ How it Works View Demos 57 UI Styles 95 Color Palettes 56 Font Pairings 8 Tech Stacks 24 Chart Types 29 Landing Patterns Everything You Need for Beautiful UI Comprehensive design intelligence at your fingertips. Search, discover, and implement stunning interfaces with AI-powered recommendations. Design Styles Glassmorphism,",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:39.831Z"
+    },
+    {
+      "url": "https://worldmonitor.app",
+      "host": "worldmonitor.app",
+      "name": "worldmonitor",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / mcp-server",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://worldmonitor.app",
+        "finalUrl": "https://www.worldmonitor.app/",
+        "status": 200,
+        "reachable": true,
+        "title": "World Monitor — Free Real-Time Global Intelligence Dashboard",
+        "description": "By the time it",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": "AGPL",
+        "body": "World Monitor — Free Real-Time Global Intelligence Dashboard WORLD MONITOR by Someone.ceo Correlations First 5 min Depth For AI agents Sources Pricing FAQ Blog Docs Menu Correlations First 5 min Depth For AI agents Sources Pricing FAQ Blog Docs Launch Dashboard Free global intelligence dashboard · live now By the time it's news, you already knew. Headlines are the lag. World Monitor streams the world's raw signals — ships, jets, sirens, cables, markets — onto one live map, with AI that flags when they converge into something that matters. Launch the dashboard See how people use it ↓ Free · No signup · Loads in seconds Shared Map layers Curated Curated feeds Attributed Sources 5 Independent a",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:38.907Z"
+    },
+    {
+      "url": "https://cult-ui.com",
+      "host": "cult-ui.com",
+      "name": "cult-ui",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Components crafted for Design Engineers. Styled using Tailwind CSS, fully compatible with Shadcn, and easy to integrate—just copy and paste. MIT 🤌",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://cult-ui.com",
+        "finalUrl": "https://cult-ui.com/",
+        "status": 429,
+        "reachable": false,
+        "title": "Vercel Security Checkpoint",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Vercel Security Checkpoint We're verifying your browser Website owner? Click here to fix Vercel Security Checkpoint | pdx1::1787558438-yzvOZnq0h5jTGNk3RnQc3nymglnXYMLv Enable JavaScript to continue Vercel Security Checkpoint | pdx1::1787558438-yzvOZnq0h5jTGNk3RnQc3nymglnXYMLv",
+        "blocked": true,
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:38.803Z"
+    },
+    {
+      "url": "https://netanel-haber.github.io/gibbous/",
+      "host": "netanel-haber.github.io",
+      "name": "Gibbous",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Gibbous – Hide the useless parts of GitHub UI",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://netanel-haber.github.io/gibbous/",
+        "finalUrl": "https://netanel-haber.github.io/gibbous/",
+        "status": 200,
+        "reachable": true,
+        "title": "Gibbous — GitHub, minus the clutter",
+        "description": "Gibbous is a lean Chrome extension that removes GitHub clutter and adds focused repository controls.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Gibbous — GitHub, minus the clutter gibbous 🌔 A Chrome extension for hiding the useless parts of GitHub UI. download .zip source ⇐ 1. Dashboard OFF 🌘 ON Removes the Copilot prompt, changelog, and Home / Feed navigation. 2. Repository navigation OFF 🌘 ON Hides unused tabs and links upstream repositories to your fork. 3. Pull request shortcuts OFF 🌘 ON Adds direct links to your open and closed pull requests beside the repository tab. 4. Files and folders OFF 🌘 ON Hides top-level entries on hover. Restore them from the eyes menu. The list persists per fork network. ⇒",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:38.933Z"
+    },
+    {
+      "url": "https://github.com/ptmrio/harness-subagent",
+      "host": "github.com",
+      "name": "github.com",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Ever Wanted to Call Codex from Claude Code? My Harness Orchestrator",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/ptmrio/harness-subagent",
+        "finalUrl": "https://github.com/ptmrio/harness-subagent",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - ptmrio/harness-subagent: Dispatch Claude Code, Codex, or Grok as a one-shot subagent, then synthesize. · GitHub",
+        "description": "Dispatch Claude Code, Codex, or Grok as a one-shot subagent, then synthesize. - ptmrio/harness-subagent",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - ptmrio/harness-subagent: Dispatch Claude Code, Codex, or Grok as a one-shot subagent, then synthesize. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why ",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "ptmrio/harness-subagent",
+        "stars": 4,
+        "licence": "MIT",
+        "pushedAt": "2026-08-23T14:36:17Z",
+        "archived": false,
+        "description": "Dispatch Claude Code, Codex, or Grok as a one-shot subagent, then synthesize."
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:39.269Z"
+    },
+    {
+      "url": "https://github.com/baturyilmaz/readingisfun",
+      "host": "github.com",
+      "name": "github.com",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: ePub reader that lets your coding agent read along",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/baturyilmaz/readingisfun",
+        "finalUrl": "https://github.com/baturyilmaz/readingisfun",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - baturyilmaz/readingisfun: EPUB reader that lets your coding agent read along · GitHub",
+        "description": "EPUB reader that lets your coding agent read along - baturyilmaz/readingisfun",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - baturyilmaz/readingisfun: EPUB reader that lets your coding agent read along · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog ",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "baturyilmaz/readingisfun",
+        "stars": 5,
+        "licence": "MIT",
+        "pushedAt": "2026-03-22T14:19:07Z",
+        "archived": false,
+        "description": "EPUB reader that lets your coding agent read along"
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:39.470Z"
+    },
+    {
+      "url": "https://github.com/pawaca/dsh-edge",
+      "host": "github.com",
+      "name": "github.com",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Running a full AI coding agent inside Cloudflare Durable Object",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/pawaca/dsh-edge",
+        "finalUrl": "https://github.com/pawaca/dsh-edge",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - pawaca/dsh-edge: Your DeepSeek Harness, anywhere — deploy a persistent personal coding agent to Cloudflare Workers in one command. · GitHub",
+        "description": "Your DeepSeek Harness, anywhere — deploy a persistent personal coding agent to Cloudflare Workers in one command. - pawaca/dsh-edge",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - pawaca/dsh-edge: Your DeepSeek Harness, anywhere — deploy a persistent personal coding agent to Cloudflare Workers in one command. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks be",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "pawaca/dsh-edge",
+        "stars": 8,
+        "licence": "MIT",
+        "pushedAt": "2026-08-23T14:25:53Z",
+        "archived": false,
+        "description": "Your DeepSeek Harness, anywhere — deploy a persistent personal coding agent to Cloudflare Workers in one command."
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:39.573Z"
+    },
+    {
+      "url": "https://larsenwork.com/easing-gradients/",
+      "host": "larsenwork.com",
+      "name": "larsenwork.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://larsenwork.com/easing-gradients/",
+        "finalUrl": "https://larsenwork.com/easing-gradients/",
+        "status": 200,
+        "reachable": true,
+        "title": "Easing Gradients",
+        "description": "Supercharge your gradients with non-linear color mix and custom color spaces.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Easing Gradients Easing Gradients Linear gradients often have hard edges where they start and/or end. We can avoid those by controlling the color mix with easing functions. It's currently a CSSWG proposal and you can use the Editor PostCSS plugin Sketch plugin Examples Gradients under text/ui are used to increase contrast but should often be as invisible as possible. The examples below have the same amount of blackness behind the text. Linear Easing When transitioning between colors the edges become prominent if we don't ease-in-out of it. The image fade-out on my frontpage uses this technique too. Linear Easing I believe that there are many designs out there that could benefit from this app",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:39.638Z"
+    },
+    {
+      "url": "https://layers.to/explore",
+      "host": "layers.to",
+      "name": "layers.to",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://layers.to/explore",
+        "finalUrl": "https://layers.to/explore",
+        "status": 200,
+        "reachable": true,
+        "title": "Explore | Layers",
+        "description": "Explore the latest design layers from the community",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Explore | Layers Log in Join for free Hot All Explore Designs Hot All Recent jobs View all Recent signups Follow Follow Follow Log in Join for free",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:40.520Z"
+    },
+    {
+      "url": "https://github.com/gojiplus/layoutlens",
+      "host": "github.com",
+      "name": "LayoutLens",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: LayoutLens: AI-Powered Visual UI Testing",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/gojiplus/layoutlens",
+        "finalUrl": "https://github.com/gojiplus/layoutlens",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - gojiplus/layoutlens: AI-assisted UI testing: natural-language visual checks plus deterministic WCAG accessibility audits via axe-core · GitHub",
+        "description": "AI-assisted UI testing: natural-language visual checks plus deterministic WCAG accessibility audits via axe-core - gojiplus/layoutlens",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - gojiplus/layoutlens: AI-assisted UI testing: natural-language visual checks plus deterministic WCAG accessibility audits via axe-core · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "gojiplus/layoutlens",
+        "stars": 13,
+        "licence": "MIT",
+        "pushedAt": "2026-08-23T02:38:33Z",
+        "archived": false,
+        "description": "AI-assisted UI testing: natural-language visual checks plus deterministic WCAG accessibility audits via axe-core"
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:39.754Z"
+    },
+    {
+      "url": "https://linear.app/",
+      "host": "linear.app",
+      "name": "linear.app",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://linear.app/",
+        "finalUrl": "https://linear.app/",
+        "status": 200,
+        "reachable": true,
+        "title": "Linear – The system for product development",
+        "description": "Purpose-built for planning and building products with AI agents.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$0",
+            "context": "Product Resources Customers Pricing Now Contact Docs Open app Log in Sign up Pricing Free $0 Free for everyone Unlimited members 2 teams 250 issues Agent platform Linear Agent Get "
+          },
+          {
+            "figure": "$10",
+            "context": "ited members 2 teams 250 issues Agent platform Linear Agent Get started Get started Basic $10 per user/month :host{display:inline-block;direction:ltr;white-space:nowrap;line-height"
+          },
+          {
+            "figure": "$ 1",
+            "context": "digit{padding:calc(var(--number-flow-mask-height, 0.25em) / 2) 0}.symbol{white-space:pre} $ 1 0 per user/month $10 per user/month Billed yearly All Free features + 5 teams Unlimite"
+          },
+          {
+            "figure": "$16",
+            "context": "eams Unlimited issues Unlimited file uploads Admin roles Get started Get started Business $16 per user/month :host{display:inline-block;direction:ltr;white-space:nowrap;line-height"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Linear – The system for product development Skip to content → Product Resources Customers Pricing Now Contact Docs Open app Log in Sign up The product development system for teams and agents The product development system for teams and agents The product development system for teams and agents Purpose-built for planning and building products. Designed for the AI era. New Coding Sessions → New Coding Sessions → Linear Inbox My issues Reviews Pulse Workspace Initiatives Projects More Favorites Faster app launch Agent tasks UI Refresh Agents Insights Faster app launch 02 / 145 Faster app launch Render UI before vehicle_state sync when minimum required state is present, instead of blocking on fu",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:39.701Z"
+    },
+    {
+      "url": "https://loadmo.re/",
+      "host": "loadmo.re",
+      "name": "loadmo.re",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://loadmo.re/",
+        "finalUrl": "https://loadmo.re/",
+        "status": 200,
+        "reachable": true,
+        "title": "loadmo.re — Mobile Web Design Archive by Kim Boutin",
+        "description": "A curated archive of distinctive mobile websites and unconventional digital experiences, by Kim Boutin (Kim Lê Boutin). Exploring alternative approaches to mobile-first interface design since 2021.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "loadmo.re — Mobile Web Design Archive by Kim Boutin loadmo.re mobile website design inspiration gallery Support About Submit Design inspiration for alternative mobile websites. Care to receive a digest of non-boring websites in your inbox? Subscribe to our newsletter: Enter a valid e-mail. You're on the list. See you in your inbox! Featured sabrinazeltner.com Textured, layered portfolio website that feels like an interactive poster. Portfolio Glitches All 3D AI & Generative Animation Arts&culture Brutalist Colorful Digital Exhibition E-Commerce Editorial Educational Event Fashion Game Glitches Graphic Design Illustration Immersive Minimal Music Net.Art Online Magazine Participative Photograp",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:40.927Z"
+    },
+    {
+      "url": "https://github.com/HarjjotSinghh/locum",
+      "host": "github.com",
+      "name": "Locum",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Locum – Grok Bot delegates tasks to Claude/Codex CLI on your machine",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/HarjjotSinghh/locum",
+        "finalUrl": "https://github.com/HarjjotSinghh/locum",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - HarjjotSinghh/locum: Delegate Grok Bot coding work to your own local Claude Code / Codex CLIs via a custom MCP connector · GitHub",
+        "description": "Delegate Grok Bot coding work to your own local Claude Code / Codex CLIs via a custom MCP connector - HarjjotSinghh/locum",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "Apache-2.0",
+        "body": "GitHub - HarjjotSinghh/locum: Delegate Grok Bot coding work to your own local Claude Code / Codex CLIs via a custom MCP connector · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they ",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "HarjjotSinghh/locum",
+        "stars": 2,
+        "licence": "Apache-2.0",
+        "pushedAt": "2026-08-22T14:17:57Z",
+        "archived": false,
+        "description": "Delegate Grok Bot coding work to your own local Claude Code / Codex CLIs via a custom MCP connector"
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:40.693Z"
+    },
+    {
+      "url": "https://lottiefiles.com/lottie-creator",
+      "host": "lottiefiles.com",
+      "name": "lottiefiles.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://lottiefiles.com/lottie-creator",
+        "finalUrl": "https://lottiefiles.com/lottie-creator",
+        "status": 403,
+        "reachable": false,
+        "title": "Just a moment...",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Just a moment... Enable JavaScript and cookies to continue",
+        "blocked": true,
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:39.757Z"
+    },
+    {
+      "url": "https://makeemoji.com/",
+      "host": "makeemoji.com",
+      "name": "makeemoji.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://makeemoji.com/",
+        "finalUrl": "https://makeemoji.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Emoji Maker – Create Custom Emojis Online | MakeEmoji",
+        "description": "Create custom emojis and emotes online. Turn any image into an emoji, make Discord, Slack, and Twitch emotes, or start from scratch with MakeEmoji.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Emoji Maker – Create Custom Emojis Online | MakeEmoji Editor Studio BETA Pack Makers Sign In Make AI animated emoji Home Make AI animated emoji Emojis Emoji Packs Emoji Makers More Earn Credits Tools Guides Pro Blog FAQ Compare Emoji Packs Emoji Makers Discord Account Sign In Emojis Emoji Packs Emoji Makers More The #1 Free Online Custom Emoji Maker Over 2 million creators use MakeEmoji to create animated emojis and custom emotes from any image in seconds for Discord, Slack, Twitch, Teams, and everywhere else. Tap to add image or GIF Drop image or GIF here Upload Saved Images Or try it out with these images Speed Normal Direction ➡️ Right Size ⬜ 112px Color Normal Format 📁 GIF S Quality ⚡ S",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:41.036Z"
+    },
+    {
+      "url": "https://www.marvelousdesigner.com/",
+      "host": "marvelousdesigner.com",
+      "name": "marvelousdesigner.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.marvelousdesigner.com/",
+        "finalUrl": "https://www.marvelousdesigner.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "The Ultimate Digital Cloth Creation Tool - Marvelous Designer",
+        "description": "Design and simulate 3D virtual clothing with Academy Award-winning Marvelous Designer. The industry standard for Games, Animation &amp; VFX. Start for free today.",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "The Ultimate Digital Cloth Creation Tool - Marvelous Designer",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:41.087Z"
+    },
+    {
+      "url": "https://meetless.ai",
+      "host": "meetless.ai",
+      "name": "meetless.ai",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Active Source of Truth for Your Coding Agents",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://meetless.ai",
+        "finalUrl": "https://meetless.ai/",
+        "status": 200,
+        "reachable": true,
+        "title": "Meetless | The active source of truth for AI coding agents",
+        "description": "MLA watches your Claude Code and Codex sessions, captures decisions as work happens, detects stale or conflicting instructions, and steers each agent before it acts. You review only the changes that require human judgment.",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": "Apache-2.0",
+        "body": "Meetless | The active source of truth for AI coding agents Beta How it works Research Teams Docs Pricing Log in Install Install The active source of truth for AI coding agents Ensure every coding agent acts on your current decisions . MLA watches your coding sessions, captures decisions as work happens, detects stale or conflicting instructions, and proactively steers each agent before it acts. You review only the changes that require human judgment. Built for solo builders and software teams. Works across Claude Code and Codex. Install MLA See it in action You are still the architect. Nothing an agent proposes becomes project truth until a human approves it. Claude Code and Codex · Open-sou",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:40.020Z"
+    },
+    {
+      "url": "https://www.microphone.computer/",
+      "host": "microphone.computer",
+      "name": "microphone.computer",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Self-Hosted Social Media Agents with Raspberry Pi",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.microphone.computer/",
+        "finalUrl": "https://www.microphone.computer/",
+        "status": 200,
+        "reachable": true,
+        "title": "Meet your audience",
+        "description": "How to test a startup idea with ads, turn a voice memo into a campaign, and find your first audience on social — before you spend months building.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$29.99 /mo",
+            "context": "hannels through social media subagents. Plus For founders running their first real tests. $29.99 /month 500 platform credits/month Voice memos Apple Notes integration Real-time voi"
+          },
+          {
+            "figure": "$64.99 /mo",
+            "context": "h Generate ads Create ad campaigns Pro For founders seeding channels. Save 10% on credits $64.99 /month 1,200 platform credits/month Voice memos Apple Notes integration Real-time v"
+          },
+          {
+            "figure": "$119.99 /mo",
+            "context": "al media subagent routines Ultra For founders testing multiple ideas. Save 20% on credits $119.99 /month 2,500 platform credits/month Voice memos Apple Notes integration Real-time "
+          },
+          {
+            "figure": "$29.99",
+            "context": "credits After you subscribe, buy extra platform credits anytime. 500 credits Never expire $29.99 1,500 credits Never expire $71.99 3,000 credits Never expire $129.99 Instagram Thre"
+          },
+          {
+            "figure": "$71.99",
+            "context": "xtra platform credits anytime. 500 credits Never expire $29.99 1,500 credits Never expire $71.99 3,000 credits Never expire $129.99 Instagram Threads X TikTok Facebook Reddit Linke"
+          },
+          {
+            "figure": "$129.99",
+            "context": " credits Never expire $29.99 1,500 credits Never expire $71.99 3,000 credits Never expire $129.99 Instagram Threads X TikTok Facebook Reddit LinkedIn Meet your audience. Email Get "
+          }
+        ],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Meet your audience",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:40.059Z"
+    },
+    {
+      "url": "https://mifi.no/losslesscut/",
+      "host": "mifi.no",
+      "name": "mifi.no",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://mifi.no/losslesscut/",
+        "finalUrl": "https://mifi.no/losslesscut/",
+        "status": 200,
+        "reachable": true,
+        "title": "LosslessCut - Moved to losslesscut.app",
+        "description": "LosslessCut - Moved to losslesscut.app",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "LosslessCut - Moved to losslesscut.app LosslessCut LosslessCut has moved to a new website: LosslessCut.app a mifi.no app",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:41.543Z"
+    },
+    {
+      "url": "https://minimal.gallery/",
+      "host": "minimal.gallery",
+      "name": "minimal.gallery",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://minimal.gallery/",
+        "finalUrl": "https://minimal.gallery/",
+        "status": 200,
+        "reachable": true,
+        "title": "Minimal Gallery – Hand-picked web design inspiration, premium templates, tools and more",
+        "description": "Get inspiration from the best modern website designs, submitted by talented designers worldwide. Discover new sites daily, plus premium Framer & Webflow templates and useful tools for creatives",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Minimal Gallery – Hand-picked web design inspiration, premium templates, tools and more Websites Templates Tools Minimal Gallery Search About Submit Bookmarks Submit Websites Templates Tools Subscribe Site About Submit to gallery Sponsorship Contact Social X/Twitter Pinterest Bluesky --> Instagram LinkedIn --> Legal & privacy For the love of beautiful & functional websites Receive a weekly digest via email Thanks, check your email to confirm. Published once per week, unsubscribe anytime AI Portfolio Personal Startup One page Agency E-commerce Branding Tools Fashion SAAS Finance Type foundry Non-profit & charity Crypto & web3 Architecture & interior design Animation Consulting Programming Sof",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-24T08:00:44.224Z"
     }
   ]
 }
