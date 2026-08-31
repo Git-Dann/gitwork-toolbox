@@ -19061,6 +19061,2152 @@
       "repo": null,
       "status": "pending",
       "assessedAt": "2026-08-24T08:00:44.224Z"
+    },
+    {
+      "url": "https://blog.crossui.com/2026/08/drill-down-all-the-way",
+      "host": "blog.crossui.com",
+      "name": "blog.crossui.com",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Clicking a React element shouldn't stop at the first component",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://blog.crossui.com/2026/08/drill-down-all-the-way",
+        "finalUrl": "https://blog.crossui.com/2026/08/drill-down-all-the-way",
+        "status": 200,
+        "reachable": true,
+        "title": "Drill down. All the way — even when the real code is five files away - CrossUI Studio — Symmetric Visual IDE",
+        "description": "Click a card on screen and it should just take you to the code. Most tools stop at the first wrapper, the first re-export, the first .map(). Here&amp;#039;s what it takes not to stop.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Drill down. All the way — even when the real code is five files away - CrossUI Studio — Symmetric Visual IDE CrossUI Studio — Symmetric Visual IDE Home About Docs Community Open Studio → Home About Docs Community Open Studio → Posted on 30 August 2026 • Engineering Drill down. All the way — even when the real code is five files away Author User linb Posts by this author Posts by this author ~7 min read · Engineering You click a card on the dashboard. Looks like nothing — one component, right there in the file you're already looking at. It isn't. It's one of several produced by a .map() . It's the branch of a conditional that happens to be on screen — the other branch is one state change away",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:39.248Z"
+    },
+    {
+      "url": "https://fellowgeek.github.io/mcp-speak/",
+      "host": "fellowgeek.github.io",
+      "name": "fellowgeek.github.io",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: What Happens When You Give Your AI Agents a Voice and an Attitude",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://fellowgeek.github.io/mcp-speak/",
+        "finalUrl": "https://fellowgeek.github.io/mcp-speak/",
+        "status": 200,
+        "reachable": true,
+        "title": "MCP // SPEAK — Neural Audio Synthesizer Interface for AI Agents",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": "MIT",
+        "body": "MCP // SPEAK — Neural Audio Synthesizer Interface for AI Agents SIGNAL ACQUIRED // BUFFER COPIED MCP // SPEAK MACOS MPS NEURAL ENGINE 01 CONSOLE 02 SETUP 03 INTEGRATIONS 04 VOICE MATRIX 05 PROMPT DECK GITHUB SYSTEM: ONLINE | APPLE SILICON MPS LOADED We gave the agents a voice. Sorry in advance. A specialized Model Context Protocol server for macOS that synthesizes real-time speech via OmniVoice and native macOS say. AI agents proactively announce status updates, ask clarifying questions, and deliver vocal feedback during pairing sessions. INITIALIZE SERVER AUDITION PERSONAS Synthesis Engine OmniVoice + Say Audio Queue Non-Overlapping FIFO Latency Profile Sub-Second MPS OSCILLOSCOPE // TRACE ",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:38.668Z"
+    },
+    {
+      "url": "https://github.com/yevhens-hue/claude-skills-starter-kit",
+      "host": "github.com",
+      "name": "github.com",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: JIT Skill Architecture for AI Agents (Without Context Decay)",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/yevhens-hue/claude-skills-starter-kit",
+        "finalUrl": "https://github.com/yevhens-hue/claude-skills-starter-kit",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - yevhens-hue/claude-skills-starter-kit: 20 free production-ready domain skills for Claude Code, Antigravity &amp; AI agents — LangGraph, RAG, GEO/AEO, MCP, security · GitHub",
+        "description": "20 free production-ready domain skills for Claude Code, Antigravity &amp; AI agents — LangGraph, RAG, GEO/AEO, MCP, security - yevhens-hue/claude-skills-starter-kit",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - yevhens-hue/claude-skills-starter-kit: 20 free production-ready domain skills for Claude Code, Antigravity & AI agents — LangGraph, RAG, GEO/AEO, MCP, security · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Se",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "yevhens-hue/claude-skills-starter-kit",
+        "stars": 4,
+        "licence": "MIT",
+        "pushedAt": "2026-08-30T11:25:42Z",
+        "archived": false,
+        "description": "20 free production-ready domain skills for Claude Code, Antigravity & AI agents — LangGraph, RAG, GEO/AEO, MCP, security"
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:39.428Z"
+    },
+    {
+      "url": "https://github.com/betocmn/preseason",
+      "host": "github.com",
+      "name": "github.com",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: I asked LLMs to choose between popular developer tools",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/betocmn/preseason",
+        "finalUrl": "https://github.com/betocmn/preseason",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - betocmn/preseason: Open-source benchmark that measures which developer tools LLMs recommend when asked to build real web apps. · GitHub",
+        "description": "Open-source benchmark that measures which developer tools LLMs recommend when asked to build real web apps. - betocmn/preseason",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - betocmn/preseason: Open-source benchmark that measures which developer tools LLMs recommend when asked to build real web apps. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "betocmn/preseason",
+        "stars": 4,
+        "licence": "MIT",
+        "pushedAt": "2026-08-21T01:53:13Z",
+        "archived": false,
+        "description": "Open-source benchmark that measures which developer tools LLMs recommend when asked to build real web apps."
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:39.472Z"
+    },
+    {
+      "url": "https://github.com/gsttm/norms",
+      "host": "github.com",
+      "name": "github.com",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Manage coding norms across your AI agents",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/gsttm/norms",
+        "finalUrl": "https://github.com/gsttm/norms",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - gsttm/norms: Lightweight shared coding rules for your AI agent. · GitHub",
+        "description": "Lightweight shared coding rules for your AI agent. - gsttm/norms",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "GitHub - gsttm/norms: Lightweight shared coding rules for your AI agent. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Mar",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "gsttm/norms",
+        "stars": 3,
+        "licence": null,
+        "pushedAt": "2026-08-30T07:23:45Z",
+        "archived": false,
+        "description": "Lightweight shared coding rules for your AI agent."
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:39.411Z"
+    },
+    {
+      "url": "https://github.com/doofzoff/SIMURG",
+      "host": "github.com",
+      "name": "github.com",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Simurg open-source web search for AI agents that aborts hallucinations",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/doofzoff/SIMURG",
+        "finalUrl": "https://github.com/doofzoff/SIMURG",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - doofzoff/SIMURG: Zero-leak online detection of LLM decoding corruption and Free Web Search for your AI agents! Catch repetition loops, language drift and garbage mid-stream, before the user s",
+        "description": "Zero-leak online detection of LLM decoding corruption and Free Web Search for your AI agents! Catch repetition loops, language drift and garbage mid-stream, before the user sees a bad token. Works with any OpenAI-compatible API. - doofzoff/SIMURG",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "Apache-2.0",
+        "body": "GitHub - doofzoff/SIMURG: Zero-leak online detection of LLM decoding corruption and Free Web Search for your AI agents! Catch repetition loops, language drift and garbage mid-stream, before the user sees a bad token. Works with any OpenAI-compatible API. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advance",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "doofzoff/SIMURG",
+        "stars": 39,
+        "licence": "Apache-2.0",
+        "pushedAt": "2026-08-29T18:47:59Z",
+        "archived": false,
+        "description": "Zero-leak online detection of LLM decoding corruption and Free Web Search for your AI agents! Catch repetition loops, language drift and garbage mid-stream, before the user sees a bad token. Works with any OpenAI-compatible API."
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:39.419Z"
+    },
+    {
+      "url": "https://github.com/harleensahni/MaCcyP",
+      "host": "github.com",
+      "name": "MaCcyP",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: MaCcyP – coding agents push text to a clipboard manager's Agents view",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/harleensahni/MaCcyP",
+        "finalUrl": "https://github.com/harleensahni/MaCcyP",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - harleensahni/MaCcyP: Maccy fork with an Agents view: Claude Code and other coding agents push commands, snippets and drafts into your clipboard manager — without touching your clipboard. · Gi",
+        "description": "Maccy fork with an Agents view: Claude Code and other coding agents push commands, snippets and drafts into your clipboard manager — without touching your clipboard. - harleensahni/MaCcyP",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - harleensahni/MaCcyP: Maccy fork with an Agents view: Claude Code and other coding agents push commands, snippets and drafts into your clipboard manager — without touching your clipboard. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secur",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "harleensahni/MaCcyP",
+        "stars": 2,
+        "licence": "NOASSERTION",
+        "pushedAt": "2026-08-31T02:58:31Z",
+        "archived": false,
+        "description": "Maccy fork with an Agents view: Claude Code and other coding agents push commands, snippets and drafts into your clipboard manager — without touching your clipboard."
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:39.489Z"
+    },
+    {
+      "url": "https://mnmm.xyz/",
+      "host": "mnmm.xyz",
+      "name": "mnmm.xyz",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://mnmm.xyz/",
+        "finalUrl": "https://desengs.com/minimum/",
+        "status": 200,
+        "reachable": true,
+        "title": "Minimal Website Design Directory — DesEngs",
+        "description": "Browse 172 curated minimal websites with restrained typography, thoughtful layouts, and clear visual design.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Minimal Website Design Directory — DesEngs The Directory of Super Minimal Websites. 172 curated minimal websites. antoine foucault antoinefoucault.com Flower Computer Company flowercomputer.com Daniel Howells danielhowells.com Cormac Hayden cormac.so designcult.us designcult.us Internet internetlabs.co Paul Faivret paulfaivret.com Instinct instinct.co Rohan Kadakia rokadakia.com Sanyam Punia sanyam.sh Xchyler Drenth xchyler.works Florian Höller flohoeller.com Eduard Wieandt eduardwieandt.com Aniket Kumar aniket.fyi Benjamin Akar benja.dev Lorenzo de Lijser lorenzodelijser.com Nils Eller nilseller.com George Vanjek vanjek.co Sai Vamshi Gannoju saivamshi.aethoscompany.in nachi. nachi.design Lo",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:39.106Z"
+    },
+    {
+      "url": "https://www.mozilla.org/firefox/new/",
+      "host": "mozilla.org",
+      "name": "mozilla.org",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.mozilla.org/firefox/new/",
+        "finalUrl": "https://www.firefox.com/en-US/?redirect_source=mozilla-org",
+        "status": 200,
+        "reachable": true,
+        "title": "Firefox: The fast, private browser that keeps you safe — Firefox.com",
+        "description": "The independent browser that has your back. Firefox blocks trackers, has a free built-in VPN, puts you in control of AI, and never sells your personal data.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Firefox: The fast, private browser that keeps you safe — Firefox.com Browser Mobile Enterprise What’s New What’s Next Extensions & Themes Support Download Firefox Features Protection Control Focus About Firefox features View all Firefox Features Resources Data Protection Blog Podcast Newsletter Release Notes Get Firefox Get Firefox Menu Menu Browser Mobile Enterprise What’s New What’s Next Extensions & Themes Support Download Firefox Features Protection Control Focus About Firefox features View all Firefox Features Resources Data Protection Blog Podcast Newsletter Release Notes Find your way back to a better internet The web was meant to expand your world, not limit it. Firefox helps you sha",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:41.042Z"
+    },
+    {
+      "url": "https://museapp.com/",
+      "host": "museapp.com",
+      "name": "museapp.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://museapp.com/",
+        "finalUrl": "https://allume.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Allume — dive into big ideas",
+        "description": "Allume is a cozy space for deep thinking. Let your ideas branch and grow inside nested boards. Available for iPad and Mac.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$9.99 /mo",
+            "context": "llaborators Priority email support Warm fuzzy feeling for supporting independent software $9.99 /month $99.99 /year Setapp Mac * , iPad, and iPhone Huge board size Unlimited worksp"
+          },
+          {
+            "figure": "$99.99 /year",
+            "context": "riority email support Warm fuzzy feeling for supporting independent software $9.99 /month $99.99 /year Setapp Mac * , iPad, and iPhone Huge board size Unlimited workspaces Unlimite"
+          },
+          {
+            "figure": "$14.99 /mo",
+            "context": "es Unlimited cards 5 collaborators Warm fuzzy feeling for supporting independent software $14.99 /month Students and teachers can contact us at hello@allume.com for an education di"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Allume — dive into big ideas Allume (formerly Muse) 🌙 ↓ Download Allume Use cases Pricing Memos Updates Community 🌙 ↓ Download Allume What's new in v4.0! Muse is now Allume ! Liquid Glass, AI support with MCP, and so much more ! ✨ Think deeper than one page Allume (formerly Muse) is a cozy space for deep thinking. Let your ideas branch and grow inside nested boards. Download for iPad & iPhone. Download for iPad & iPhone. Also available on Mac. Download for Mac. Mac iPad Join the conversation. Email updates roughly once a month. Join our Discord community for in-progress work, feature requests, and conversation with other Allume users. Thanks. Check your email to confirm your subscription. ",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:39.875Z"
+    },
+    {
+      "url": "https://nodes.io/",
+      "host": "nodes.io",
+      "name": "nodes.io",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://nodes.io/",
+        "finalUrl": "https://nodes.io/",
+        "status": 200,
+        "reachable": true,
+        "title": "Home · Nodes – a new way to create with code | https://nodes.io",
+        "description": "Nodes is a new way to create with code.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Home · Nodes – a new way to create with code | https://nodes.io Nodes Home Story Documentation Playground Download 1.0.0-beta Windows MacOs Linux Nodes is your thinking space for exploring ideas with code. What if programming was about ideas, not semicolons? Compose, abstract, generalise. Start from top down or bottom up and refine as you go. With Nodes, programming feels like sketching on a canvas. Zoom in and out of problems, experiment on the side and easily re-use parts of other projects. Nodes is created by variable.io , a generative design and data visualisation studio. LEARN THE STORY Download Nodes Visual programming made simple Write reusable code blocks - Nodes Combine them into la",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:39.977Z"
+    },
+    {
+      "url": "https://nodetoy.co/",
+      "host": "nodetoy.co",
+      "name": "nodetoy.co",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://nodetoy.co/",
+        "finalUrl": "https://nodetoy.co/",
+        "status": 200,
+        "reachable": true,
+        "title": "NodeToy | Create and share shader graphs with the world",
+        "description": "Create and share shader graphs with the world",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "NodeToy | Create and share shader graphs with the world Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Public Beta Access Open App Now Publ",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:39.788Z"
+    },
+    {
+      "url": "https://notebooklm.google/",
+      "host": "notebooklm.google",
+      "name": "notebooklm.google",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://notebooklm.google/",
+        "finalUrl": "https://notebook.google/",
+        "status": 200,
+        "reachable": true,
+        "title": "Gemini Notebook | AI Research Tool & Thinking Partner",
+        "description": "Meet Gemini Notebook, the AI research tool and thinking partner that can analyze your sources, turn complexity into clarity and transform your content.",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Gemini Notebook | AI Research Tool & Thinking Partner",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:39.895Z"
+    },
+    {
+      "url": "https://www.nvidia.com/en-us/software/nvidia-app/#shadowplay",
+      "host": "nvidia.com",
+      "name": "nvidia.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.nvidia.com/en-us/software/nvidia-app/#shadowplay",
+        "finalUrl": "https://www.nvidia.com/en-us/software/nvidia-app/",
+        "status": 200,
+        "reachable": true,
+        "title": "Download NVIDIA App for Gamers and Creators | NVIDIA",
+        "description": "The essential companion for PC gamers and creators. Keep your PC up to date with the latest NVIDIA drivers and technology.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Download NVIDIA App for Gamers and Creators | NVIDIA NVIDIA Home NVIDIA Home Menu Menu icon Menu Menu icon Close Close icon Close Close icon Close Close icon Caret down icon Accordion is closed, click to open. Caret down icon Accordion is closed, click to open. Caret up icon Accordion is open, click to close. Caret right icon Click to expand Caret right icon Click to expand Caret right icon Click to expand menu. Caret left icon Click to collapse menu. Caret left icon Click to collapse menu. Caret left icon Click to collapse menu. Shopping Cart Click to see cart items Search icon Click to search Visit your regional NVIDIA website for local content, pricing, and where to buy partners specific ",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:40.505Z"
+    },
+    {
+      "url": "https://obsidian.md/",
+      "host": "obsidian.md",
+      "name": "obsidian.md",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://obsidian.md/",
+        "finalUrl": "https://obsidian.md/",
+        "status": 200,
+        "reachable": true,
+        "title": "Obsidian - Sharpen your thinking",
+        "description": "The free and flexible app for your private thoughts.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$4",
+            "context": "Optional add-on services make it easy to sync and publish your notes. Yearly Monthly Sync $4 USD Per user, per month, billed annually $5 USD Per user, per month, billed monthly Sig"
+          },
+          {
+            "figure": "$5",
+            "context": "c and publish your notes. Yearly Monthly Sync $4 USD Per user, per month, billed annually $5 USD Per user, per month, billed monthly Sign up Learn more Sync notes across devices En"
+          },
+          {
+            "figure": "$8",
+            "context": "d-to-end encryption Version history Collaborate on shared vaults Priority support Publish $8 USD Per site, per month, billed annually $10 USD Per site, per month, billed monthly Si"
+          },
+          {
+            "figure": "$10",
+            "context": "ate on shared vaults Priority support Publish $8 USD Per site, per month, billed annually $10 USD Per site, per month, billed monthly Sign up Learn more Publish notes to the web No"
+          },
+          {
+            "figure": "$25",
+            "context": "pported. Optional licenses help support the independent development of Obsidian. Catalyst $25 USD One-time payment Support Obsidian Learn more Early access to beta versions Communi"
+          },
+          {
+            "figure": "$50",
+            "context": "n Learn more Early access to beta versions Community badges Exclusive channels Commercial $50 USD Per user, per year Support Obsidian Learn more Support development Become a featur"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Obsidian - Sharpen your thinking Download Pricing Sync Publish Enterprise English العربية বাংলা Deutsch Español Français Italiano 日本語 한국어 Polski Português (Brasil) Română Русский Svenska 简体中文 Community Account English العربية বাংলা Deutsch Español Français Italiano 日本語 한국어 Polski Português (Brasil) Română Русский Svenska 简体中文 Download Account Sync Publish Pricing Plugins Enterprise Web Clipper Learn more Help About Blog Discord Changelog Community Roadmap Security Merch store Privacy Sharpen your thinking. The free and flexible app for your private thoughts. Get Obsidian for Windows More platforms Writing is telepathy Evergreen notes Graph of Writing is t... Clippings Daily Ideas Writing is ",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:39.702Z"
+    },
+    {
+      "url": "https://obsproject.com/",
+      "host": "obsproject.com",
+      "name": "obsproject.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://obsproject.com/",
+        "finalUrl": "https://obsproject.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Open Broadcaster Software | OBS",
+        "description": "OBS (Open Broadcaster Software) is free and open source software for video recording and live streaming. Stream to Twitch, YouTube and many other providers or record your own videos with high quality H264 / AAC encoding.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Open Broadcaster Software | OBS --> OBS Open Broadcaster Software ®️ Discord Twitter Mastodon GitHub Community Chat --> Contribute Home Download News Help Forum OBS Studio Latest Release 32.2.2 - August 14th Windows Supports Windows 10 and Windows 11 macOS Supports macOS 12.0 or newer Linux Select macOS Version ‹ macOS (Intel) macOS (Apple Silicon) Free and open source software for video recording and live streaming. Download and start streaming quickly and easily on Windows, Mac or Linux. The OBS Project is made possible thanks to generous contributions from our sponsors and backers. Learn more about how you can become a sponsor . PREMIER TIER SPONSORS DIAMOND TIER SPONSORS GOLD TIER SPONSO",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:40.364Z"
+    },
+    {
+      "url": "https://opencut.app/",
+      "host": "opencut.app",
+      "name": "opencut.app",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://opencut.app/",
+        "finalUrl": "https://opencut.app/",
+        "status": 200,
+        "reachable": true,
+        "title": "OpenCut",
+        "description": "A simple but powerful video editor that gets the job done. In your browser.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "OpenCut Contributors Sponsors Blog 70k+ stars Projects Dark The open source Video editor A simple but powerful video editor that gets the job done. Works on any platform. Try early beta OpenCut The privacy-first video editor that feels simple to use. Resources Changelog Blog Privacy Terms of use Company Contributors Sponsors Brand About © 2026 OpenCut, All Rights Reserved",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:40.005Z"
+    },
+    {
+      "url": "https://panda-css.com",
+      "host": "panda-css.com",
+      "name": "panda",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-tokens",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "🐼 Universal, Type-Safe, CSS-in-JS Framework for Design Systems ⚡️",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://panda-css.com",
+        "finalUrl": "https://panda-css.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Panda CSS - Build modern websites using build time and type-safe CSS-in-JS",
+        "description": "Build modern websites using build time and type-safe CSS-in-JS",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Panda CSS - Build modern websites using build time and type-safe CSS-in-JS Want to skip the docs? Watch the official Panda course Docs Blog Team Showcase Playground CSS-in-JS with build time generated styles, RSC compatible, multi-variant support, and best-in-class developer experience Write type-safe styles with ease using panda Get Started Learn Panda $ npm i -D @pandacss/dev Styling library you’ll enjoy using 🐼 style-functions.tsx style-props.tsx style-recipes.ts import { css } from \" ./styled-system/css \"; import { circle , stack } from \" ./styled-system/patterns \"; function App () { return ( &lt; div className = { stack ( { direction : \" row \", p : \" 4 \" } ) } &gt; &lt; div className =",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:40.383Z"
+    },
+    {
+      "url": "https://parsec.app/",
+      "host": "parsec.app",
+      "name": "parsec.app",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://parsec.app/",
+        "finalUrl": "https://parsec.app/",
+        "status": 200,
+        "reachable": true,
+        "title": "Connect to Work or Games from Anywhere | Parsec",
+        "description": "Parsec is a remote desktop you&#x27;ll actually love. Connect to work, games, or projects wherever you are, whenever you want.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 9.99",
+            "context": "the displayed plan price. Currently set to Annually . Monthly Annually Individuals (Warp) $ 9.99 $ 8.33 per user/month, paid annually Start Trial Connect to your computer with prof"
+          },
+          {
+            "figure": "$ 8.33",
+            "context": "played plan price. Currently set to Annually . Monthly Annually Individuals (Warp) $ 9.99 $ 8.33 per user/month, paid annually Start Trial Connect to your computer with professiona"
+          },
+          {
+            "figure": "$ 35",
+            "context": "r mode Virtual monitors Privacy mode Full Wacom tablet support with pressure + tilt Teams $ 35 $ 30 per user/month, paid annually Start Trial Connect a team to their computers, and"
+          },
+          {
+            "figure": "$ 30",
+            "context": "e Virtual monitors Privacy mode Full Wacom tablet support with pressure + tilt Teams $ 35 $ 30 per user/month, paid annually Start Trial Connect a team to their computers, and keep"
+          },
+          {
+            "figure": "$ 45",
+            "context": "st app features and settings Team computer management Audit logs (last 7 days) Enterprise $ 45 per user/month, paid annually only Start Trial Deploy Parsec across large organizatio"
+          },
+          {
+            "figure": "$8.33",
+            "context": "ce. Currently set to Annually . Monthly Annually Personal Use Free Try it Out Individuals $8.33 per user/month, paid annually Start Trial Teams $30 per user/month, paid annually St"
+          },
+          {
+            "figure": "$30",
+            "context": "nal Use Free Try it Out Individuals $8.33 per user/month, paid annually Start Trial Teams $30 per user/month, paid annually Start Trial Enterprise * $45 per user/month, paid annual"
+          },
+          {
+            "figure": "$45",
+            "context": "aid annually Start Trial Teams $30 per user/month, paid annually Start Trial Enterprise * $45 per user/month, paid annually only Start Trial Parsec Core Features Low latency, 60 FP"
+          },
+          {
+            "figure": "$25",
+            "context": "s Single sign-on (SSO) integration No No Yes Yes Yes Yes Guest Access for external users ($25 per invitation) No No Yes Yes Audit logs (last 7 days) No No Yes Yes Advanced Teams AP"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Connect to Work or Games from Anywhere | Parsec Skip to main content Product Pricing Solutions Resources Download Login Let's Talk Try Parsec Now Connect to your from anywhere Remote desktop reimagined – a seamless 4k experience at up to 60 frames per second with near-zero latency. Secure, flexible, effortless access to whatever you do, at any time, from wherever you go. Find the right Parsec for you This section compares Parsec with other streaming apps in terms of image quality, smooth motion, and frame stability. The comparison is shown through overlaid videos or images. This video demonstrates the experience when using other streaming apps compared to Parsec. It begins with a few seconds",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:40.028Z"
+    },
+    {
+      "url": "https://pinterest.com/",
+      "host": "pinterest.com",
+      "name": "pinterest.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://pinterest.com/",
+        "finalUrl": "https://www.pinterest.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Pinterest",
+        "description": "Discover recipes, home ideas, style inspiration and other ideas to try.",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Pinterest Oh no! Pinterest doesn't work unless you turn on JavaScript.",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:43.761Z"
+    },
+    {
+      "url": "https://github.com/solodynamo/Ration",
+      "host": "github.com",
+      "name": "Ration",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Ration – see your Claude usage across terminals and brag usage",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/solodynamo/Ration",
+        "finalUrl": "https://github.com/solodynamo/Ration",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - solodynamo/Ration: A mac app, with fries · GitHub",
+        "description": "A mac app, with fries. Contribute to solodynamo/Ration development by creating an account on GitHub.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "GitHub - solodynamo/Ration: A mac app, with fries · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all featu",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "solodynamo/Ration",
+        "stars": 1,
+        "licence": null,
+        "pushedAt": "2026-08-30T22:08:28Z",
+        "archived": false,
+        "description": "A mac app, with fries"
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:40.577Z"
+    },
+    {
+      "url": "https://daypicker.dev",
+      "host": "daypicker.dev",
+      "name": "react-day-picker",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / react-component",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "DayPicker is a customizable date picker component for React. Add date pickers, calendars, and date inputs to your web applications.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://daypicker.dev",
+        "finalUrl": "https://daypicker.dev/",
+        "status": 200,
+        "reachable": true,
+        "title": "Date Picker Component for React | React DayPicker",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": "MIT",
+        "body": "Date Picker Component for React | React DayPicker Skip to main content React DayPicker 10.0.1 10.0.1 9.14.0 8.10.2 7.4.10 Changelog Documentation Playground API Reference Support GitHub Search Introduction Getting Started Upgrading Guide Upgrading to v10 Upgrading from v8 Customization DayPicker Anatomy Styling and Appearance Customization Props Caption and Navigation Layouts Grid and Months Week Numbers and Footer Months Navigation Selecting Days Selection Modes Single Mode Multiple Mode Range Mode Disabling Dates Localization Changing the Locale Setting the Time Zone ISO and Broadcast Calendars Persian Calendar Hijri Calendar Buddhist (Thai) Calendar Ethiopic Calendar Hebrew Calendar Guide",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:40.462Z"
+    },
+    {
+      "url": "https://unlayer.com/",
+      "host": "unlayer.com",
+      "name": "react-email-editor",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / react-component",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Drag-n-Drop Email Editor Component for React.js",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://unlayer.com/",
+        "finalUrl": "https://unlayer.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Build content creation into your app | Unlayer",
+        "description": "Unlayer is a developer platform for embedding visual builders, AI workflows, templates, code-first Elements, and export APIs into your product.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 250 /mo",
+            "context": " available. Free Paid plans Enterprise Credits Compare all Monthly Yearly Save 10% Launch $ 250 /mo 14-day free trial Includes 1 TB bandwidth. AI credit, export, & bandwidth add-on"
+          },
+          {
+            "figure": "$ 750 /mo",
+            "context": "obile Design Mode Cloud API Premium Tools AI Assistant AI Template Importer Popular Scale $ 750 /mo 14-day free trial Includes 1 TB bandwidth. AI credit, export, & bandwidth add-on"
+          },
+          {
+            "figure": "$ 2,000 /mo",
+            "context": "laboration Built-in Themes Header & Footer Custom Image Library Smart Merge Tags Optimize $ 2,000 /mo 14-day free trial Includes 1 TB bandwidth. All credit add-ons available. Start"
+          },
+          {
+            "figure": "$ 0",
+            "context": " Get started with the email, page, popup, and document builders. No credit card required. $ 0 Forever free Included with Free Email Builder Page Builder Popup Builder Document Buil"
+          },
+          {
+            "figure": "$50/mo",
+            "context": " Add-Ons Need more capacity ? Add recurring credit packs to any paid plan. Packs start at $50/month, scale up to $2,000/month, and reset every billing period. AI Credits Power AI A"
+          },
+          {
+            "figure": "$2,000/mo",
+            "context": "city ? Add recurring credit packs to any paid plan. Packs start at $50/month, scale up to $2,000/month, and reset every billing period. AI Credits Power AI Assistant, AI Template I"
+          },
+          {
+            "figure": "$50,",
+            "context": " for hosted images and assets. 500 GB per $50/mo Available on paid plans only. Six tiers: $50, $100, $200, $500, $1,000, or $2,000/month. Credits reset each billing period — manage"
+          },
+          {
+            "figure": "$100,",
+            "context": "hosted images and assets. 500 GB per $50/mo Available on paid plans only. Six tiers: $50, $100, $200, $500, $1,000, or $2,000/month. Credits reset each billing period — manage anyt"
+          },
+          {
+            "figure": "$200,",
+            "context": " images and assets. 500 GB per $50/mo Available on paid plans only. Six tiers: $50, $100, $200, $500, $1,000, or $2,000/month. Credits reset each billing period — manage anytime fr"
+          },
+          {
+            "figure": "$500,",
+            "context": "s and assets. 500 GB per $50/mo Available on paid plans only. Six tiers: $50, $100, $200, $500, $1,000, or $2,000/month. Credits reset each billing period — manage anytime from Con"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Build content creation into your app | Unlayer Platform AI Solutions Developers Resources Pricing Sign In Get Started Build content creation into your app Give your users beautiful builders for emails , pages , and documents . Backed by templates, AI, code-first creation, and developer APIs to power the full content workflow. Get Started → Documentation POST /v1/designs/:id/export SDKs APIs CLI Skills Events Developer Platform Developer Platform ✦ Make this section punchier AI Assistant AI AI Templates Templates &lt;Section&gt; &lt;Heading/&gt; &lt;Text/&gt; &lt;Button/&gt; &lt;/Section&gt; React Angular Vue Elements Elements CTA Email Page Document Builders Builders The Unlayer builder, emb",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:40.410Z"
+    },
+    {
+      "url": "https://react-joyride.com/",
+      "host": "react-joyride.com",
+      "name": "react-joyride",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / react-component",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Create guided tours in your apps",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://react-joyride.com/",
+        "finalUrl": "https://react-joyride.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "React Joyride",
+        "description": "Create guided tours and walkthroughs for your React apps",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "React Joyride open navigation menu React Joyride Documentation Demos Search React Joyride Create guided tours for your apps. Showcase features to new users or explain functionality with interactive walkthroughs. Get Started View Demos npm pnpm yarn bun $ npm install react-joyride Easy Setup Add guided tours to your React app with minimal configuration. Just define your steps and go. Fully Customizable Custom components, styles, and behaviors. Use your own beacon, tooltip, or overlay. Accessible Built-in focus trap, keyboard navigation, and ARIA attributes for screen readers. Event-Driven Rich event system for full control over tour flow. Build controlled or uncontrolled tours.",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:40.987Z"
+    },
+    {
+      "url": "https://www.rebrand.gallery/",
+      "host": "rebrand.gallery",
+      "name": "rebrand.gallery",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.rebrand.gallery/",
+        "finalUrl": "https://www.rebrand.gallery/",
+        "status": 200,
+        "reachable": true,
+        "title": "Rebrand — A curated gallery of rebrands and visual identities",
+        "description": "Explore the best new design systems, identity launches, and rebrand reveal videos.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "€0 / mo",
+            "context": "rt finding. Monthly Yearly -30% Free For browsing the gallery and saving your first finds €0 / month Get started free Over 140 brands 1 collection Over 4,000 shots All styles, feel"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Rebrand — A curated gallery of rebrands and visual identities Intros Bentos Shots About Pricing Sign in Try Pro Intros Bentos Shots About Pricing Intros Bentos Shots About Pricing Intros Bentos Shots About Pricing Intros A curated gallery of rebrands and visual identities Explore the best new design systems, identity launches, and rebrand reveal videos. The curated reference library for brand designers. Company About Us Pricing X / Twitter Instagram Privacy Policy Terms of Service Copyright Shots Billboard & OOH Packaging Brand guidelines Signage Merch Editorial Stationery Industries Fintech AI Hospitality Food Healthcare Sports Culture Styles Geometric 3D Gradient Pattern Wordmark Typograph",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:41.638Z"
+    },
+    {
+      "url": "https://recordly.dev/",
+      "host": "recordly.dev",
+      "name": "recordly.dev",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://recordly.dev/",
+        "finalUrl": "https://recordly.dev/",
+        "status": 200,
+        "reachable": true,
+        "title": "Recordly - Open-source app for incredible screen recordings.",
+        "description": "Recordly is an open‑source screen recorder for MacOS/Windows/Linux with auto-zoom, motion blur animated cursors, and minimal interface. Used to create product demos, guided walkthroughs and more. A free alternative to Screen Studio.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Recordly - Open-source app for incredible screen recordings. Recordly Discord Twitter Contact Donate Blog Recordly - Open-source app for incredible screen recordings. GitHub Recordly Make beautiful screen recordings Recordly is your open-source tool for demos, walkthroughs, and product videos. Includes built-in auto-zooms, smooth cursor, and much more. Download for Windows Download for Windows Backed by the community Backed by the community Backed by the community Auto-zoom, silky cursor & beautiful backgrounds Recordly adds beautiful cursor animations and auto-zooming plus a background to your recordings so you can spend less time editing and more time shipping. Dynamic webcam bubble overla",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:40.925Z"
+    },
+    {
+      "url": "https://regexr.com/",
+      "host": "regexr.com",
+      "name": "regexr.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://regexr.com/",
+        "finalUrl": "https://regexr.com/",
+        "status": 403,
+        "reachable": false,
+        "title": "Just a moment...",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Just a moment... Enable JavaScript and cookies to continue",
+        "blocked": true,
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:41.020Z"
+    },
+    {
+      "url": "https://same.energy/",
+      "host": "same.energy",
+      "name": "same.energy",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://same.energy/",
+        "finalUrl": "https://same.energy/",
+        "status": 200,
+        "reachable": true,
+        "title": "Same Energy | Visual Search Engine",
+        "description": "Find beautiful images.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Same Energy | Visual Search Engine Drop image(s) anywhere Press to search for Creative Commons images (specifically, CC-BY). These images can be used for free in both commercial and non-commercial work, provided you give attribution. Right click or long press on an image to see information about the license and the creator. Upload an image to search. Log in ... Home About Settings Give feedback Collections",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:41.062Z"
+    },
+    {
+      "url": "https://searchsystem.co/",
+      "host": "searchsystem.co",
+      "name": "searchsystem.co",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://searchsystem.co/",
+        "finalUrl": "https://searchsystem.co/",
+        "status": 200,
+        "reachable": true,
+        "title": "SearchSystem™",
+        "description": "An ever-growing collection of references and tools for designers. Curated by Julien Van Havere, founder of DesignPractice&trade; and TypeFoundry&trade;.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "SearchSystem™ menu vimeo instagram facebook linkedin twitter Search System Archive Index Info Shop Random Theme     Menu Archive Index Info Shop Random Theme An ever-growing collection of references and tools for designers. Curated by Julien Van Havere, founder of DesignPractice™ and TypeFoundry™.",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:41.293Z"
+    },
+    {
+      "url": "https://seenshot.app/",
+      "host": "seenshot.app",
+      "name": "seenshot.app",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Free, Fast Screenshot App for macOS with One-Click Screenshot Sharing",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://seenshot.app/",
+        "finalUrl": "https://seenshot.app/",
+        "status": 200,
+        "reachable": true,
+        "title": "SeenShot",
+        "description": "SeenShot for MacOS. Download the latest release.",
+        "priceSource": "homepage",
+        "figures": [
+          {
+            "figure": "$29 / year",
+            "context": "ia link 10 MB screenshot storage. Watermarked screenshots Download for MacOS arm64 Member $29 / year Everything in Free. All tools stay free. Member adds 1 GB screenshot storage. E"
+          },
+          {
+            "figure": "$29",
+            "context": " storage. Everything in Free. Screenshots without watermarks Enterprise licence included. $29 per seat 1 GB screenshot storage Download for MacOS arm64 Blog Releases Privacy Terms "
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "SeenShot SeenShot.app Free, Fast, Secure Screenshot App for MacOS. Sign In img ─────────────────────────────────────────────────────── --> Seen it? Shot it! Send It ↗ cmd+shift+2 Why: Landing subtitle must show the shortcut in bold Date: 2026-08-27 Related: [AT-0261] public/index.html, [AT-0237] public/js/releases.js ─────────────────────────────────────────────────────── --> Free, Fast, Secure Screenshot app for MacOS. Make Screenshot via cmd+shift+2 at your MacOS, annotate it, share it. Download for MacOS arm64 Loading releases… Alex Ign @aleksey_ignatov Hey, this Alex im serial indiehacker and solofounder. I use this app to anotatne and share screenshot with friends and anyone in internet",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:41.258Z"
+    },
+    {
+      "url": "https://www.seesaw.website/",
+      "host": "seesaw.website",
+      "name": "seesaw.website",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.seesaw.website/",
+        "finalUrl": "https://www.seesaw.website/",
+        "status": 200,
+        "reachable": true,
+        "title": "SEESAW  ✦  Design Inspiration",
+        "description": "Curation of the best web design inspiration, updated daily.",
+        "priceSource": "homepage",
+        "figures": [
+          {
+            "figure": "$1",
+            "context": "e App Earn interest every second with industry-leading rates and balance protection up to $1M. COLLINS Rewrite your worth. Bonside Defining the brick and mortar economy. GTE The fa"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "SEESAW ✦ Design Inspiration see Magic Icon saw Search for websites, fonts, categories... ⌘ K Submit Subscribe Magic Icon All Agency AI Crypto Design Design Tools Developer Tools E-Commerce Fintech Hardware Marketing Portfolios Productivity Social Sponsor us hi@seesaw.website © 2026 SEESAW The best web design inspiration Browse the best of the internet. Hand-picked and updated daily. Subscribe for free 94 joined today DialKit Tune interfaces in real time. Brand My Mac Your brand, on a founder's Mac. Ledger Capture information once during real work, then report it automatically to funders and partner systems. Beside The AI operating system that runs your local business. Nachoz Movies and TV sh",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:41.432Z"
+    },
+    {
+      "url": "https://www.shadertoy.com/",
+      "host": "shadertoy.com",
+      "name": "shadertoy.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.shadertoy.com/",
+        "finalUrl": "https://www.shadertoy.com/",
+        "status": 403,
+        "reachable": false,
+        "title": "",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Bad request",
+        "blocked": true,
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:41.348Z"
+    },
+    {
+      "url": "https://spiral.soot.com/spiral",
+      "host": "spiral.soot.com",
+      "name": "spiral.soot.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://spiral.soot.com/spiral",
+        "finalUrl": "https://spiral.soot.com/spiral",
+        "status": 200,
+        "reachable": true,
+        "title": "SOOT SPIRAL",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "SOOT SPIRAL",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:41.726Z"
+    },
+    {
+      "url": "https://splice.com/features/sounds",
+      "host": "splice.com",
+      "name": "splice.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://splice.com/features/sounds",
+        "finalUrl": "https://splice.com/sounds",
+        "status": 200,
+        "reachable": true,
+        "title": "Royalty-Free Samples, One Shots, Sound Effects &amp; More | Splice",
+        "description": "Discover royalty-free samples, loops, presets, and one shots across genres, instruments, and curated packs. Start creating your next sound on Splice.",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Royalty-Free Samples, One Shots, Sound Effects & More | Splice Drop your next banger: Get 200 credits a month and premium INSTRUMENT sounds for $4.99 . Subscribe now Open main navigation Close Main Navigation Menu Home Sounds Sounds Back Splice Sounds 100% royalty-free samples Search all Create a stack Browse catalog Instruments Genres Presets Try now Splice Sounds works with all DAWs Splice apps Apps for any workflow Sounds Plugin Splice—in your DAW. Desktop Browse, save, and download sounds. DAW integrations Ableton Live 12.3+ Studio Pro 8+ Pro Tools 2025.6+ Studio One Pro 7 Subscriptions from $4.99 INSTRUMENT INSTRUMENT Back Splice INSTRUMENT The most accessible, creator-first virtual ins",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:41.843Z"
+    },
+    {
+      "url": "https://www.supahero.io/",
+      "host": "supahero.io",
+      "name": "supahero.io",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.supahero.io/",
+        "finalUrl": "https://supahero.io/",
+        "status": 200,
+        "reachable": true,
+        "title": "Supahero - Website hero section library",
+        "description": "A handpicked library of stunning website hero sections designed to captivate and engage.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$79",
+            "context": ", and entrepreneurs. 40,000+ monthly page views. 40% newsletter open rate. Featured Badge $79 / 30 days ✓ Top rows of Hero section ✓ 20K-30K impressions ✓ 500-800 clicks ✓ Newslett"
+          },
+          {
+            "figure": "$149",
+            "context": "ion ✓ 20K-30K impressions ✓ 500-800 clicks ✓ Newsletter feature Get Featured Premium Spot $149 / 30 days ✓ Homepage premium section (4 spots max) ✓ 30K-40K impressions ✓ ~1,000 cli"
+          },
+          {
+            "figure": "$279",
+            "context": " max) ✓ 30K-40K impressions ✓ ~1,000 clicks ✓ Newsletter feature Go Premium Featured Spot $279 / 30 days ✓ All pages (Home, Templates, Tools) ✓ 40K-50K impressions ✓ 1K-2K clicks ✓"
+          }
+        ],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Supahero - Website hero section library supahero is now part of screensdesign 🎉 the biggest UX app library in the world. Create high converting apps in seconds. Supahero UX Apps Library Make Killer Apps Search Website hero section library Curated collection of beautiful website hero sections. Anubi Better Stack eddie Lando Norris Zed 35mm Wope Treize grammes Did Global Cinema Spectrum.Life Eric Jordan Tigran Azatyan Shaga Odyssey IntegratedBio Dream Design Laboratory Dialweb Dribbble Casa Lunara Modify Red Antler KARO Uigraphic Gallereee Haptikos Fourseven EventBeds bychudy Colabs GRINK Habito Royal Beverage Superpower Lax Chee Yucca Packing Payy Madar Exat Easyfast Maggie App End Speciesis",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:41.734Z"
+    },
+    {
+      "url": "https://superspl.at/editor",
+      "host": "superspl.at",
+      "name": "superspl.at",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://superspl.at/editor",
+        "finalUrl": "https://superspl.at/editor",
+        "status": 200,
+        "reachable": true,
+        "title": "SuperSplat Editor",
+        "description": "SuperSplat is an advanced browser-based editor for manipulating and optimizing 3D Gaussian Splats. It is open source and engine agnostic.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "SuperSplat Editor SuperSplat Toggle Sidebar Toggle Sidebar Explore Editor Convert Send feedback GitHub Discord Sign Up Login SuperSplat Toggle Sidebar",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:42.184Z"
+    },
+    {
+      "url": "https://www.theatrejs.com/",
+      "host": "theatrejs.com",
+      "name": "theatrejs.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.theatrejs.com/",
+        "finalUrl": "https://www.theatrejs.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Theatre.js - animation toolbox for the web",
+        "description": "Theatre.js is an animation editor with a visual interface.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Theatre.js - animation toolbox for the web Theatre.js Docs Blog Jobs Github Discord Powerful motion design in the browser Theatre.js is a javascript animation library with a professional motion design toolset. It helps you create any animation, from cinematic scenes in THREE.js, to delightful UI interactions. Video showing a 3D scene with a flying butterfly whose position/rotation is being controlled by a set of keyframes in a sequence editor. Get started with Theatre.js Iterate with ease Block out your sequence in seconds with our cutting-edge sequence editor. Use presets to add quick flare. When you are ready, dive into the graph editor and fine-tune every frame. Video showing a 3D scene w",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:42.120Z"
+    },
+    {
+      "url": "https://www.unrealengine.com/en-US/realityscan",
+      "host": "unrealengine.com",
+      "name": "unrealengine.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.unrealengine.com/en-US/realityscan",
+        "finalUrl": "https://www.unrealengine.com/en-US/realityscan",
+        "status": 403,
+        "reachable": false,
+        "title": "",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Enable JavaScript and cookies to continue : a33ce511aa6bd300 : 132.196.82.6",
+        "blocked": true,
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:41.775Z"
+    },
+    {
+      "url": "https://viewer.needle.tools/",
+      "host": "viewer.needle.tools",
+      "name": "viewer.needle.tools",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://viewer.needle.tools/",
+        "finalUrl": "https://viewer.needle.tools/",
+        "status": 200,
+        "reachable": true,
+        "title": "Needle Viewer",
+        "description": "Professional powerhouse for 3D file viewing and editing on the web.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Needle Viewer Needle Viewer",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:43.433Z"
+    },
+    {
+      "url": "https://womp.com/",
+      "host": "womp.com",
+      "name": "womp.com",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://womp.com/",
+        "finalUrl": "https://womp.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Free 3D Modeling Software, Online in Your Browser | Womp",
+        "description": "Womp is a free, browser-based 3D modeling platform and on-demand 3D printing service. Model, generate with AI, then get it printed and shipped. Free to start.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$19/mo",
+            "context": "Pricing: Start free, Pro plans from $19/mo: Womp Skip to main content 3D Printing Solutions Resources Store Pricing Log in Con"
+          },
+          {
+            "figure": "$9.99 / mo",
+            "context": "s (multiple formats) Pro Most popular Create faster with advanced tools and more credits. $9.99 / month Billed annually at $119.88 / year Start a free trial Everything in Free , pl"
+          },
+          {
+            "figure": "$119.88 / year",
+            "context": "ular Create faster with advanced tools and more credits. $9.99 / month Billed annually at $119.88 / year Start a free trial Everything in Free , plus: Freehand draw · Advanced shap"
+          },
+          {
+            "figure": "$19.99 / seat",
+            "context": "or lighter, cheaper prints Team Create together with shared libraries and admin controls. $19.99 / seat / month Billed annually at $239.88 per seat / year Get Womp teams Everything"
+          },
+          {
+            "figure": "$239.88",
+            "context": "gether with shared libraries and admin controls. $19.99 / seat / month Billed annually at $239.88 per seat / year Get Womp teams Everything in Pro , plus: Unlimited team members Po"
+          },
+          {
+            "figure": "$119.99 / seat",
+            "context": "ce Slack support Enterprise Tailored for your business. Secure 3D for organizations. from $119.99 / seat / month Custom pricing: contact sales Contact sales Everything in Team , pl"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Free 3D Modeling Software, Online in Your Browser | Womp Skip to main content 3D Printing Solutions Resources Store Pricing Log in Contact sales Get started for free Physical products, built at the speed of software. Get started Womp is free, browser-based 3D modeling software. Turn ideas into real objects: design, generate, and order production from one canvas. OR START FROM A TEMPLATE Customize and order your own Keychains Customize and order your own Keycaps Customize and order your own Shoe Charms Build a 3D avatar and learn Womp's tools Turn your logo or SVG into 3D instantly Estimate and order 3D prints from Womp Play with every material in Womp FOR TEAMS The next go-to-market channel ",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:42.093Z"
+    },
+    {
+      "url": "https://zen-browser.app/",
+      "host": "zen-browser.app",
+      "name": "zen-browser.app",
+      "discoveredVia": "designengineer",
+      "sourceCategory": "Design engineering",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://zen-browser.app/",
+        "finalUrl": "https://zen-browser.app/",
+        "status": 200,
+        "reachable": true,
+        "title": "Zen Browser",
+        "description": "Beautifully designed, privacy-focused, and packed with features.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Zen Browser Zen Browser Getting Started Zen Mods Customize your browsing experience with Zen Mods. Try Zen Mods Release Notes Stay up to date with the latest features and improvements. Discord Join our community on Discord to chat with other Zen users! Useful Links Donate ❤️ Support the development of Zen with a donation. About Us 🌟 Learn more about the team behind Zen. Documentation Learn how to use Zen with our documentation. GitHub Contribute to the development of Zen on GitHub. Mods Download Menu Close menu Getting Started Zen Mods Release Notes Discord Useful Links Donate ❤️ About Us 🌟 Documentation GitHub Mods Download welcome to a calmer internet Beautifully designed, privacy-focuse",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:42.215Z"
+    },
+    {
+      "url": "https://autoform.vantezzen.io",
+      "host": "autoform.vantezzen.io",
+      "name": "autoform",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / react-component",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "🌟 Automatically render forms for your existing data schema",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://autoform.vantezzen.io",
+        "finalUrl": "https://autoform.vantezzen.io/",
+        "status": 200,
+        "reachable": true,
+        "title": "AutoForm - Instant forms for your schemas",
+        "description": "Automatically render usable forms from Zod, Yup, Joi, and other schemas.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "AutoForm - Instant forms for your schemas AutoForm Docs Instant forms from your existing schemas. AutoForm turns validation schemas into working forms with labels, defaults, field types, and validation wired in. Quick start Browse docs What AutoForm handles Keep the schema as the source of truth. Customize when the form needs it. Start building Validation Realtime validation from the schema Use your form library normally. AutoForm connects the rendered fields to schema validation and the form state you configure. View docs Email * Password * Create Account schema.ts const realtimeSchema = z.object({ email: z.email(\"Enter a valid email\"), password: z.string().min(8, \"Use at least 8 characters",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:42.692Z"
+    },
+    {
+      "url": "https://canvasui.dev/",
+      "host": "canvasui.dev",
+      "name": "canvas-ui",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-engineering",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "A library of creative canvas components. Real HTML with WebGL effects running over it. React, Vue, Svelte, vanilla.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://canvasui.dev/",
+        "finalUrl": "https://canvasui.dev/",
+        "status": 200,
+        "reachable": true,
+        "title": "Canvas UI: Creative Canvas and WebGL Component Library",
+        "description": "An open source component library of creative html-in-canvas and WebGL effects for React, Solid, Preact, Vue, Svelte, and vanilla JS. Creative effects running over live HTML.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "Canvas UI: Creative Canvas and WebGL Component Library Docs Components Playground GitHub Docs Components Playground Creative components, in a new dimension. An open source library of tasteful html-in-canvas & WebGL components. Framework agnostic. Copy, paste, ship. Get started Browse components Components 35 And counting Open source 100% Free forever Install One command npx shadcn@latest add @canvas-ui/particle-reveal-react The library Every component, alive on canvas. Browse all Community Featured on YouTube See Canvas UI in action in these awesome videos. Hyperplexed tests Canvas UI in an interactive music player packed with HTML-in-Canvas effects. Better Stack showcases Canvas UI's GPU-po",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:42.197Z"
+    },
+    {
+      "url": "https://www.designtokens.org/TR/drafts/",
+      "host": "designtokens.org",
+      "name": "community-group",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-tokens",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "This is the official DTCG repository for the design tokens site and specification.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.designtokens.org/TR/drafts/",
+        "finalUrl": "https://www.designtokens.org/tr/drafts/",
+        "status": 200,
+        "reachable": true,
+        "title": "Design Tokens Technical Reports 2025.10",
+        "description": "Design tokens are indivisible pieces of a design system such as colors,\n        spacing, typography scale.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Design Tokens Technical Reports 2025.10 Design Tokens Technical Reports 2025.10 Draft Community Group Report 30 July 2026 Latest published version: https://www.designtokens.org/TR/2025.10/ Editors: Louis Chenais Mike Kamminga Kathleen McMahon Drew Powers Matthew Ström-Awn Donna Vitan Authors: Daniel Banks Esther Cheran Andrew L’Homme Ayesha Mazrana (Mazumdar) James Nash Adekunle Oduye Kevin Powell Lilith Wittmann Feedback: GitHub design-tokens/community-group ( pull requests , new issue , open issues ) Abstract Design tokens are indivisible pieces of a design system such as colors, spacing, typography scale. Design tokens were created by the Salesforce design system team, and the name comes ",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:42.816Z"
+    },
+    {
+      "url": "http://dembrandt.com/",
+      "host": "dembrandt.com",
+      "name": "dembrandt",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-tokens",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "Extract any website’s design system into tokens in seconds: logo, colors, typography, borders & more. One command.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "http://dembrandt.com/",
+        "finalUrl": "https://www.dembrandt.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Dembrandt | Extract, Track and Compare Design Systems",
+        "description": "Extract design systems from any website with one command. Track token drift, compare snapshots over time, and audit your design system. Colors, typography, spacing, shadows and more.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": "MIT",
+        "body": "Dembrandt | Extract, Track and Compare Design Systems Skip to main content Getting started Skills App MCP Recipes Explorer Articles App --- stars --- downloads/month dl/mo Extract Design Systems from any URL. Generate DESIGN.md in seconds. Run your design system like a CI/CD pipeline. Works with Claude Code, Cursor, v0, Figma Make, and any AI-native workflow. $ npm i -g dembrandt Copy Getting started View on GitHub Terminal $ dembrandt dembrandt.com Colors #ea580c primary #38bdf8 accent #000000 background #ffffff text +8 more in JSON Typography ui-sans-serif, JetBrains Mono 48 styles, 96 → 12px, weights 500–700 Spacing 8px system: 4, 8, 16, 24, 56px Breakpoints 1200 → 992 → 768 → 700 → 576px",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:43.354Z"
+    },
+    {
+      "url": "https://www.designlang.app",
+      "host": "designlang.app",
+      "name": "design-extract",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-tokens",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "Extract any website's complete design system with one command. DTCG tokens, semantic+primitive+composite, MCP server for Claude Code/Cursor/Windsurf, multi-platform emitters (iOS SwiftUI, Android Compose, Flutter, WordPress), Tailwind v4, Figma variables, shadcn/ui, CSS health audit, WCAG remediation, Chrome extension. MIT, Playwright, Node 20+.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.designlang.app",
+        "finalUrl": "https://www.designlang.app/",
+        "status": 200,
+        "reachable": true,
+        "title": "designlang — Open-source design extractor (design-extractor.com alternative). Tokens, Tailwind, Figma, MCP, iOS, Android, Flutter, WordPress.",
+        "description": "designlang is the open-source design extractor that turns any URL into a complete design system in seconds. A free, MIT-licensed alternative to design-extractor.com — same DESIGN.md output, no signup, scriptable CLI, plus W3C DTCG tokens (primitive · semantic · composite), Tailwind config, CSS variables, Figma variables, shadcn/ui theme, React / Vue / Svelte themes, iOS SwiftUI, Android Jetpack Co",
+        "priceSource": "homepage",
+        "figures": [
+          {
+            "figure": "$0",
+            "context": " runtime, and your AI editor. 26 capabilities / 11 output formats / 3 MCP-aware editors / $0 · MIT tokens W3C DTCG tokens, fully linked. Primitive · semantic · composite. Drop-in f"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "designlang — Open-source design extractor (design-extractor.com alternative). Tokens, Tailwind, Figma, MCP, iOS, Android, Flutter, WordPress. designlang Watch Features Gallery Studio Motion Spec vs 4.0k npm i designlang ↗ Reverse-engineer any website’s design system. One command. DTCG tokens, Tailwind, CSS vars, Figma variables, iOS, Android, Flutter, WordPress, plus a stdio MCP for Claude Code and Cursor — back in seconds. Watch it read a site View source $ npx designlang stripe.com copy — no install, no account $ npx designlang stripe.com --pdf walking dom resolving palette reading type measuring rhythm clustering components auditing contrast rendering pdf Brand book · 42 tokens · 3 fonts ",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:42.801Z"
+    },
+    {
+      "url": "https://dnd.hellopangea.com",
+      "host": "dnd.hellopangea.com",
+      "name": "dnd",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / react-component",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "💅 Beautiful and accessible drag and drop for lists with React. ⭐️ Star to support our work!",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://dnd.hellopangea.com",
+        "finalUrl": "https://www.chromatic.com/login?redirect=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJyZWRpcmVjdFVybCI6Imh0dHBzOi8vZG5kLmhlbGxvcGFuZ2VhLmNvbS8ifQ.KN-AhhrxIj0_-NOQDc07IlNR-p-XEwaShNcJbvB5qmQFsw9i8yFlJhqOdOA3oKl1X-L8IFo9HeXUiIeQgWJKdh196OkyB5rr_H0S1qTWM_kGLUQ26V0dDhChbBkZAT115x_RzSC-B7WZWDIY8-z_DRqdBLnskzfynmoor0iaYZhs_SwU_G8XMzmtKSS0OjnqPioB-T5iVdnm5C__97h41NvaEljjWbNf_aNVcOkN63L70wX5jgcCafY1VILhNcLD8u-VC8JqiMZ2EBqU8F-6dcMmsx-CVIpfOgvk_0pcEBjGfXc83A51rmGwB0aqkWm6ucaGmmBq8NgT869qMFn3_RhHsBfV_FPTu9ID3eWetAayRXuSKX1mhnZMQV4SlGhTRZw6Of4fugKKAorpUASQY6dk7zYq8agwg62Wjn1dUapjUj8g-OC3Bve_0Lp_hT3cX1WhpHtU6Rz88GYu_SKWwMZ_ivy65aBASe7hX9r04vX-nxaLOPGVfja7eBkTR6Y5F1rb6qwLYm7vu-10hVUmC6XFqCjMuvw4__Fw4HErBDSE8OtWoHb4J50R9g-cc27jQCK0KQLJwjiP_Oe2yxrc8t5DTyhk4CjV8cdbzWmyHVdw-pgmo78tyERB5sGbdeZBOsJe-puU-LGyff4ycWmirEpyhe2kZAe_vhE_PMfOP6w",
+        "status": 401,
+        "reachable": false,
+        "title": "Sign in",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$0 / mo",
+            "context": "control, and coverage as you grow. Book a demo Free No credit card required Start testing $0 / month 5,000 billed snapshots Equivalent to 25k turbosnaps Test on Chrome Unlimited pr"
+          },
+          {
+            "figure": "$179 / mo",
+            "context": "s Git and CI integrations UI version tracking Starter Expand test coverage Start for free $179 / month 35,000 billed snapshots Equivalent to 175k turbosnaps Everything in Free Extr"
+          },
+          {
+            "figure": "$0.008",
+            "context": " billed snapshots Equivalent to 175k turbosnaps Everything in Free Extra billed snapshots $0.008 Test on Safari, Firefox, Edge Pro Ship bug-free at scale Start for free $399 / mont"
+          },
+          {
+            "figure": "$399 / mo",
+            "context": " snapshots $0.008 Test on Safari, Firefox, Edge Pro Ship bug-free at scale Start for free $399 / month 85,000 billed snapshots Equivalent to 425k turbosnaps Everything in Starter C"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Sign in Sign in Connect with GitHub Connect with Bitbucket Connect with GitLab Or Work email Password Show Sign in Forgot your password? Reset it By continuing you agree to our Terms of Service and Privacy Policy",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:45.383Z"
+    },
+    {
+      "url": "https://github.com/awdr74100/figwright",
+      "host": "github.com",
+      "name": "figwright",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / figma-plugin",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "Free, two-way Figma MCP server. Turn designs into framework-aware code, and push code back to the canvas. Works with Claude Code, Cursor, Codex, and any MCP client.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/awdr74100/figwright",
+        "finalUrl": "https://github.com/awdr74100/figwright",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - awdr74100/figwright: Free, two-way Figma MCP server. Turn designs into framework-aware code, and push code back to the canvas. Works with Claude Code, Cursor, Codex, and any MCP client. · Git",
+        "description": "Free, two-way Figma MCP server. Turn designs into framework-aware code, and push code back to the canvas. Works with Claude Code, Cursor, Codex, and any MCP client. - awdr74100/figwright",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - awdr74100/figwright: Free, two-way Figma MCP server. Turn designs into framework-aware code, and push code back to the canvas. Works with Claude Code, Cursor, Codex, and any MCP client. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "awdr74100/figwright",
+        "stars": 641,
+        "licence": "MIT",
+        "pushedAt": "2026-08-31T01:00:58Z",
+        "archived": false,
+        "description": "Free, two-way Figma MCP server. Turn designs into framework-aware code, and push code back to the canvas. Works with Claude Code, Cursor, Codex, and any MCP client."
+      },
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:42.943Z"
+    },
+    {
+      "url": "https://omgovich.github.io/react-colorful",
+      "host": "omgovich.github.io",
+      "name": "react-colorful",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / react-component",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "🎨 A tiny (2,8 KB) color picker component for React and Preact apps",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://omgovich.github.io/react-colorful",
+        "finalUrl": "https://omgovich.github.io/react-colorful/",
+        "status": 200,
+        "reachable": true,
+        "title": "react-colorful",
+        "description": "A tiny (1,9 KB) color picker component for React and Preact apps",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "react-colorful",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:43.097Z"
+    },
+    {
+      "url": "https://www.davidhu.io/react-spinners",
+      "host": "davidhu.io",
+      "name": "react-spinners",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / react-component",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "A collection of loading spinner components for react",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.davidhu.io/react-spinners",
+        "finalUrl": "https://www.davidhu.io/react-spinners/",
+        "status": 200,
+        "reachable": true,
+        "title": "React Spinners",
+        "description": "A collection of react loading spinners",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "React Spinners React Spinners by David Hu yarn add react-spinners Loading Loading Loading Loading Loading Loading Github Repo Personal Blog My Company Fork me on GitHub",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:43.177Z"
+    },
+    {
+      "url": "https://shadergradient.co",
+      "host": "shadergradient.co",
+      "name": "shadergradient",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / figma-plugin",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "Create beautiful moving gradients on Framer, Figma and React",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://shadergradient.co",
+        "finalUrl": "https://shadergradient.co/",
+        "status": 200,
+        "reachable": true,
+        "title": "Shader Gradient",
+        "description": "Create beautiful moving gradients on Framer, Figma and React",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Shader Gradient",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:43.193Z"
+    },
+    {
+      "url": "https://styledictionary.com",
+      "host": "styledictionary.com",
+      "name": "style-dictionary",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-tokens",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "A build system for creating cross-platform styles.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://styledictionary.com",
+        "finalUrl": "https://styledictionary.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Style Dictionary | Style Dictionary",
+        "description": "Export your Design Tokens to any platform. iOS, Android, CSS, JS, HTML, sketch files, style documentation, or anything you can think of. Forward-compatible with Design Token Community Group spec.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Style Dictionary | Style Dictionary Skip to content Style Dictionary Search Ctrl K Cancel Github Slack Select theme Dark Light Auto Style Dictionary Export your Design Tokens to any platform - iOS, Android, CSS, JS, HTML, sketch files, style documentation, or anything you can think of. Forward-compatible with Design Tokens Community Group spec . Documentation Migration to Version 4 GitHub v3 docs Live Demo Section titled “Live Demo” Below is a showcase of how a set of DTCG tokens would be exported to CSS: Upload your JSON or ZIP of tokens and convert them to DTCG format: Read more about DTCG Edit page",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:43.444Z"
+    },
+    {
+      "url": "https://inokawa.github.io/virtua/",
+      "host": "inokawa.github.io",
+      "name": "virtua",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / react-component",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "A zero-config, fast and small (~3kB) virtual list (and grid) component for React, Vue, Solid, Svelte and Angular.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://inokawa.github.io/virtua/",
+        "finalUrl": "https://inokawa.github.io/virtua/",
+        "status": 200,
+        "reachable": true,
+        "title": "storybook - Storybook",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "storybook - Storybook",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:43.427Z"
+    },
+    {
+      "url": "https://webgradients.com",
+      "host": "webgradients.com",
+      "name": "webgradients",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-tokens",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "180 free CSS3, Figma, Sketch & PSD gradients — plus a JSON dataset for design tools, generators, and AI agents.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://webgradients.com",
+        "finalUrl": "https://webgradients.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "WebGradients — Free CSS Gradient Backgrounds &amp; UI Gradients",
+        "description": "180 free CSS gradient backgrounds for websites and UI. Copy the CSS code instantly, or open the Generator to build your own gradient.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "WebGradients — Free CSS Gradient Backgrounds & UI Gradients Advertise on WebGradients — reach designers & frontend developers. Learn more palette New generators about advertise .sketch .psd Figma WebGradients - Free CSS Gradients for Backgrounds and UI by itmeo Free for commercial or personal use by Dima Braven . WebGradients is a free collection of 180 CSS gradients that you can use as content backdrops in any part of your website. Easy copy CSS3 crossbrowser code and use it in a moment! Try the new Color Palette tool to see a color system in a real landing page. As a bonus, there are packs for Sketch , Photoshop & Figma . X Post Star 2,470 WebGradients gradient collection Warm Flame ✌️ Suc",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:43.574Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "21st dev",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:44.273Z"
+    },
+    {
+      "url": "https://academa.ai/",
+      "host": "academa.ai",
+      "name": "Academa",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": "Show HN: Academa – Long-form STEM lecture videos generated by LLMs",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://academa.ai/",
+        "finalUrl": "https://academa.ai/",
+        "status": 200,
+        "reachable": true,
+        "title": "Technical Knowledge, Explained Visually | Academa",
+        "description": "Explore hand-maintained technical lecture videos, chat alongside each video, or ask Academa to create a new lecture about any technical topic.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$0 / mo",
+            "context": "r more video generations and chat, or Enterprise for multilingual creation at scale. Free $0 / month Watch every lecture Limited chat with videos 1 video generation each month Get "
+          },
+          {
+            "figure": "$20 / mo",
+            "context": "tch every lecture Limited chat with videos 1 video generation each month Get started Plus $20 / month Watch every lecture Extensive chat with videos 10 video generations each month"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "Technical Knowledge, Explained Visually | Academa Academa Why the quadratic formula works Technical knowledge. Explained visually. Ask for something technical. Get a lecture video made for you in ~25 minutes. Or, enjoy our hand maintained content: Subjects Everything 66 Computer Science 9 Economics 8 Engineering 8 Machine Learning 10 Mathematics 13 Physics 10 Statistics 8 Showing a preview of 66 lectures Duration 12:57 The Method of Characteristics 129 views Duration 18:04 Linear Regression as Geometry 97 views Duration 16:58 The Bootstrap: Measuring How Much Your Estimate Could Have Wobbled 36 views Duration 22:21 Boundary Layers and Drag: From No-Slip to the Drag Crisis 32 views Duration 9",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:45.093Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "admire the web",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:44.419Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "adobe photoshop",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:44.386Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "affinity",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:44.675Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "affonso",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-08-31T14:58:44.605Z"
     }
   ]
 }
