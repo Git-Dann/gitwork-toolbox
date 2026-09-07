@@ -21207,6 +21207,2029 @@
       "repo": null,
       "status": "pending",
       "assessedAt": "2026-08-31T14:58:44.605Z"
+    },
+    {
+      "url": "https://developer.chrome.com/docs/devtools/agents",
+      "host": "developer.chrome.com",
+      "name": "chrome-devtools-mcp",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / mcp-server",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Chrome DevTools for coding agents",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://developer.chrome.com/docs/devtools/agents",
+        "finalUrl": "https://developer.chrome.com/docs/devtools/agents",
+        "status": 200,
+        "reachable": true,
+        "title": "Chrome DevTools for agents &nbsp;|&nbsp; Chrome for Developers",
+        "description": "Give the power of DevTools to agents through MCP or the CLI. Validate agent code by interacting with a real Chrome instance, run Lighthouse audits, and more.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Chrome DevTools for agents | Chrome for Developers Skip to main content Docs Build with Chrome Learn how Chrome works, participate in origin trials, and build with Chrome everywhere. Web Platform Isolated Web Apps (IWA) Capabilities Automation and testing ChromeDriver Extensions Chrome Web Store Chromium Web on Android Origin trials Release notes Productivity Create the best experience for your users with the web s best tools. DevTools Lighthouse Chrome UX Report Accessibility Modern Web Guidance Get things done quicker and neater, with our ready-made libraries. Workbox Puppeteer Experience Design a beautiful and performant web with Chrome. AI Performance CSS and UI Identity Payments Privacy",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:36.453Z"
+    },
+    {
+      "url": "https://github.com/0xmmo/crew/",
+      "host": "github.com",
+      "name": "Crew",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Crew — Let Claude/Codex/OpenCode agents talk to each other",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/0xmmo/crew/",
+        "finalUrl": "https://github.com/0xmmo/crew/",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - 0xmmo/crew: Let your agents talk to each other. · GitHub",
+        "description": "Let your agents talk to each other. Contribute to 0xmmo/crew development by creating an account on GitHub.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - 0xmmo/crew: Let your agents talk to each other. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View al",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "0xmmo/crew",
+        "stars": 21,
+        "licence": "MIT",
+        "pushedAt": "2026-08-31T00:38:46Z",
+        "archived": false,
+        "description": "Let your agents talk to each other."
+      },
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:36.831Z"
+    },
+    {
+      "url": "https://github.com/MaxFleur/ros2_utils_tool/",
+      "host": "github.com",
+      "name": "github.com",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: The ros2_utils_tool v1.0, a tool for ROS2 activies with full UI support",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/MaxFleur/ros2_utils_tool/",
+        "finalUrl": "https://github.com/MaxFleur/ros2_utils_tool/",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - MaxFleur/ros2_utils_tool: A simple, but powerful toolset for various ROS2 utilities, with full UI and partial CLI support. · GitHub",
+        "description": "A simple, but powerful toolset for various ROS2 utilities, with full UI and partial CLI support.  - GitHub - MaxFleur/ros2_utils_tool: A simple, but powerful toolset for various ROS2 utilities, with full UI and partial CLI support.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "GitHub - MaxFleur/ros2_utils_tool: A simple, but powerful toolset for various ROS2 utilities, with full UI and partial CLI support. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before the",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "MaxFleur/ros2_utils_tool",
+        "stars": 100,
+        "licence": "EUPL-1.2",
+        "pushedAt": "2026-09-07T09:44:09Z",
+        "archived": false,
+        "description": "A simple, but powerful toolset for various ROS2 utilities, with full UI and partial CLI support. "
+      },
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:36.840Z"
+    },
+    {
+      "url": "https://github.com/everest-an/Awareness-Market",
+      "host": "github.com",
+      "name": "github.com",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Open-source agent memory layer, 96% on LongMemEval, local-first",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/everest-an/Awareness-Market",
+        "finalUrl": "https://github.com/everest-an/Awareness-Market",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - everest-an/Awareness-Market: Local-first AI agent memory — one command, works offline, no account needed. Give your Claude Code, Cursor, Windsurf, OpenClaw agent persistent memory. Markdown s",
+        "description": "Local-first AI agent memory — one command, works offline, no account needed. Give your Claude Code, Cursor, Windsurf, OpenClaw agent persistent memory. Markdown storage, hybrid search (FTS5 + embedding), MCP protocol, Web dashboard. - everest-an/Awareness-Market",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - everest-an/Awareness-Market: Local-first AI agent memory — one command, works offline, no account needed. Give your Claude Code, Cursor, Windsurf, OpenClaw agent persistent memory. Markdown storage, hybrid search (FTS5 + embedding), MCP protocol, Web dashboard. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURIT",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "everest-an/Awareness-Market",
+        "stars": 10,
+        "licence": "MIT",
+        "pushedAt": "2026-08-28T19:01:19Z",
+        "archived": false,
+        "description": "Local-first AI agent memory — one command, works offline, no account needed. Give your Claude Code, Cursor, Windsurf, OpenClaw agent persistent memory. Markdown storage, hybrid search (FTS5 + embedding), MCP protocol, Web dashboard."
+      },
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:36.835Z"
+    },
+    {
+      "url": "https://github.com/mukundzha/hazzel",
+      "host": "github.com",
+      "name": "Hazzel",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Hazzel – terminal coding agent, BYOK, undo-everything",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/mukundzha/hazzel",
+        "finalUrl": "https://github.com/mukundzha/hazzel",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - mukundzha/hazzel: Hazzel — a small terminal coding agent that works on your code · GitHub",
+        "description": "Hazzel — a small terminal coding agent that works on your code - mukundzha/hazzel",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "AGPL",
+        "body": "GitHub - mukundzha/hazzel: Hazzel — a small terminal coding agent that works on your code · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation B",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "mukundzha/hazzel",
+        "stars": 0,
+        "licence": "AGPL-3.0",
+        "pushedAt": "2026-09-07T12:25:04Z",
+        "archived": false,
+        "description": "Hazzel — a small terminal coding agent that works on your code"
+      },
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:36.820Z"
+    },
+    {
+      "url": "https://github.com/nafeeur/MaskShift",
+      "host": "github.com",
+      "name": "MaskShift",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: MaskShift – a maximalist coding agent with zero NPM dependencies",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/nafeeur/MaskShift",
+        "finalUrl": "https://github.com/nafeeur/MaskShift",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - nafeeur/MaskShift: Maximalist coding harness · GitHub",
+        "description": "Maximalist coding harness . Contribute to nafeeur/MaskShift development by creating an account on GitHub.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "GPL",
+        "body": "GitHub - nafeeur/MaskShift: Maximalist coding harness · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all f",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "nafeeur/MaskShift",
+        "stars": 2,
+        "licence": "GPL-3.0",
+        "pushedAt": "2026-09-06T18:08:16Z",
+        "archived": false,
+        "description": "Maximalist coding harness "
+      },
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:36.818Z"
+    },
+    {
+      "url": "https://github.com/kalpovskii/quiz-ui",
+      "host": "github.com",
+      "name": "Quiz-UI",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Quiz-UI – Shadcn-style components for building quiz funnels",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/kalpovskii/quiz-ui",
+        "finalUrl": "https://github.com/kalpovskii/quiz-ui",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - kalpovskii/quiz-ui: Headless, Radix-based components for building quiz funnels (multi-step forms with branching, progress, and a result screen). · GitHub",
+        "description": "Headless, Radix-based components for building quiz funnels (multi-step forms with branching, progress, and a result screen). - kalpovskii/quiz-ui",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - kalpovskii/quiz-ui: Headless, Radix-based components for building quiz funnels (multi-step forms with branching, progress, and a result screen). · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "kalpovskii/quiz-ui",
+        "stars": 2,
+        "licence": null,
+        "pushedAt": "2026-09-06T17:56:13Z",
+        "archived": false,
+        "description": "Headless, Radix-based components for building quiz funnels (multi-step forms with branching, progress, and a result screen)."
+      },
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:36.838Z"
+    },
+    {
+      "url": "https://getvodforge.com/",
+      "host": "getvodforge.com",
+      "name": "VODForge",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: VODForge – a free local desktop UI for YouTube video/playlist downloads",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://getvodforge.com/",
+        "finalUrl": "https://getvodforge.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "VODForge — Free YouTube downloader for macOS and Windows",
+        "description": "VODForge is a free, open-source YouTube downloader for macOS and Windows. Save local MP4 video or MP3 audio with quality, queue, metadata, and cover-art controls.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "VODForge — Free YouTube downloader for macOS and Windows VODForge Downloads VODForge Cloud Changelog GitHub Download Download VODForge VODForge Cloud Changelog GitHub Free, open-source YouTube downloader Video and audio, forged locally. Turn YouTube videos and playlists into clean MP4 video or production-ready MP3 audio—with quality, queue, metadata, and cover-art controls instead of a converter site or command line. MIT licensed. No desktop account. Your downloads stay on your computer. Choose your download See the app Watch playlist walkthrough Developer ID signed and notarized on macOS · Authenticode signed on Windows MP4 + MP3 Video and audio 4K Up to 4K Quality ceiling Playlist queue Se",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:36.065Z"
+    },
+    {
+      "url": "https://github.com/wissemb11/wb-flow",
+      "host": "github.com",
+      "name": "Wb-Flow",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Wb-Flow – Agentic Coding with Planned, Parallel Waves",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/wissemb11/wb-flow",
+        "finalUrl": "https://github.com/wissemb11/wb-flow",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - wissemb11/wb-flow: Zero-dependency CLI that bootstraps an agentic AI workflow system into any repo. Verbs over Personas. · GitHub",
+        "description": "Zero-dependency CLI that bootstraps an agentic AI workflow system into any repo. Verbs over Personas. - wissemb11/wb-flow",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - wissemb11/wb-flow: Zero-dependency CLI that bootstraps an agentic AI workflow system into any repo. Verbs over Personas. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they ",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "wissemb11/wb-flow",
+        "stars": 2,
+        "licence": "MIT",
+        "pushedAt": "2026-09-06T01:53:16Z",
+        "archived": false,
+        "description": "Zero-dependency CLI that bootstraps an agentic AI workflow system into any repo. Verbs over Personas."
+      },
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:37.070Z"
+    },
+    {
+      "url": "https://yaireo.github.io/tagify/",
+      "host": "yaireo.github.io",
+      "name": "tagify",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / react-component",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "🔖 lightweight, efficient Tags input component in Vanilla JS / React / Angular / Vue",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://yaireo.github.io/tagify/",
+        "finalUrl": "https://yaireo.github.io/tagify/",
+        "status": 200,
+        "reachable": true,
+        "title": "Tagify - Tags input Component",
+        "description": "Converts HTML input/textarea into Tags component",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Tagify - Tags input Component 🔖 \"> basic Passing the input element as a parameter to Tagify will transform it into a tags-component. Without any settings, the user will be allowed to create any tags they want, without a count limit. If the input element has a pre-defined value attribute, tags will be created from it. ( Try Double-clicking a tag to edit it ) Code HTML &lt;input name= basic value= tag1, tag2 autofocus&gt; JAVASCRIPT // The DOM element you wish to replace with Tagify var input = document.querySelector( input[name=basic] ); // initialize Tagify on the above input node reference new Tagify(input) Text Input In this example: Tagify instance with initial settings Object Only allow",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:36.794Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "21st dev",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:38.604Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "admire the web",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:38.598Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "adobe photoshop",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:38.569Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "affinity",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:38.583Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "affonso",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:38.701Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "agency gallery",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:38.609Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "ai camera movements",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:38.693Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "alcove",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:38.621Z"
+    },
+    {
+      "url": "https://alternaterealities.lol",
+      "host": "alternaterealities.lol",
+      "name": "AlternateRealities.lol",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": "Show HN: AlternateRealities.lol – Create any kind of poing and click story",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://alternaterealities.lol",
+        "finalUrl": "https://alternaterealities.lol/",
+        "status": 200,
+        "reachable": true,
+        "title": "Alternate Realities",
+        "description": "Create and explore cinematic, branching worlds from a prompt, photo, or video.",
+        "priceSource": "homepage",
+        "figures": [
+          {
+            "figure": "$10.",
+            "context": " birds 50 % off wallet top-ups with EARLYBIRD Keep the full scene credit. Minimum payment $10. Offer ends in 05 days 08 hours 34 minutes 38 seconds Use EARLYBIRD Generative worlds,"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Alternate Realities Opening Alternate Realities… Loading page… Alternate Realities Explore Sign in to create Sign in An invitation for early birds 50 % off wallet top-ups with EARLYBIRD Keep the full scene credit. Minimum payment $10. Offer ends in 05 days 08 hours 34 minutes 38 seconds Use EARLYBIRD Generative worlds, shaped by curiosity Step into the unseen. Alternate Realities lets you begin with an idea, a photograph, or a final frame. Choose a marked detail or describe what happens next. Watch a world unfold around you. Sign in to create Explore the archive Worlds in motion A glimpse of what’s possible Every world begins with a what if. Your imagination. The next scene. Loading saved pr",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:41.694Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "amie",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:39.653Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "amplift",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:39.543Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "animos",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:39.506Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "annot",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:39.817Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "anthony boyd graphics",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:39.504Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "anything",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:39.647Z"
+    },
+    {
+      "url": "https://aofp.github.io/yume/",
+      "host": "aofp.github.io",
+      "name": "aofp.github.io",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": "Show HN: Yume, a desktop workspace for Claude Code sessions",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://aofp.github.io/yume/",
+        "finalUrl": "https://aofp.github.io/yume/",
+        "status": 200,
+        "reachable": true,
+        "title": "yume - claude code, like a dream",
+        "description": "the native desktop app for claude code. orchestration flow, live interleaved thinking, 4 parallel background agents, plugins, multi-provider support. free demo, pro from $4/mo. mac, windows, linux.",
+        "priceSource": "homepage",
+        "figures": [
+          {
+            "figure": "$4/mo",
+            "context": "zero flicker &lt;50ms input 24hr crash recovery live thinking 4 parallel agents free demo $4/mo or $49 designed for long coding sessions oled-black theme by default. easy on your e"
+          },
+          {
+            "figure": "$49",
+            "context": "ker &lt;50ms input 24hr crash recovery live thinking 4 parallel agents free demo $4/mo or $49 designed for long coding sessions oled-black theme by default. easy on your eyes. ever"
+          },
+          {
+            "figure": "$4 /mo",
+            "context": "ons per panel. pricing demo is free. pick a tier when you outgrow it. monthly pro monthly $4 /mo cancel anytime. access until period ends. ✓ 99 tabs ✓ 99 panes ✓ 99 windows ✓ all f"
+          },
+          {
+            "figure": "$20",
+            "context": "r adds a markup on tokens. ide-style tools (cursor, windsurf, …) bundle model access into $20+/mo plans; yume keeps your ai billing where it already is. releases download the lates"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "yume - claude code, like a dream yume orchestration features agents tech pricing docs releases discord download claude code, supercharged orchestration. interleaved thinking. background agents. 50+ features on top of the cli. mac, windows, linux. same claude, zero compromises. download for mac (apple silicon) download for mac (intel) download for windows download for linux zero flicker &lt;50ms input 24hr crash recovery live thinking 4 parallel agents free demo $4/mo or $49 designed for long coding sessions oled-black theme by default. easy on your eyes. every pixel intentional. main interface analytics settings themes let claude manage itself you describe what. yume figures out how. underst",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:39.021Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "apollo",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:40.008Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "appgrowkit",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:40.420Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "applaunchpad",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:40.528Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "appshot gallery",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:40.680Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "appshots",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:40.683Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "appthetics",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:40.493Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "arcade",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:40.712Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "arq",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:40.979Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "artboard studio",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:41.385Z"
+    },
+    {
+      "url": "https://assemblyai.com",
+      "host": "assemblyai.com",
+      "name": "AssemblyAI",
+      "discoveredVia": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": "Speech AI models and API",
+      "claimedTier": "Freemium",
+      "evidence": {
+        "url": "https://assemblyai.com",
+        "finalUrl": "https://www.assemblyai.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "AssemblyAI | AI models to transcribe and understand speech",
+        "description": "With AssemblyAI",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$0.21",
+            "context": "s 18 languages, with native code switching and our most accurate speaker diarization yet. $0.21 /hr Get custom rate limits, enhanced concurrency, and enterprise-grade flexibility t"
+          },
+          {
+            "figure": "$0.15",
+            "context": "illion hours of audio data. Supports 99 languages. Exceptional accuracy at a lower price. $0.15 /hr Models Pay as you go Universal-3.5 Pro The most accurate async speech-to-text mo"
+          },
+          {
+            "figure": "$0.05",
+            "context": " to 1000 words or phrases (maximum 6 words per phrase) to improve transcription accuracy. $0.05 /hr Included Prompting Describe your audio in plain language to improve transcriptio"
+          },
+          {
+            "figure": "$0.02",
+            "context": "n audio files and segment the transcript into utterances, showing what each speaker said. $0.02 /hr $0.02 /hr Medical Mode New Optimize transcription for medical terminology and he"
+          },
+          {
+            "figure": "$0.45",
+            "context": "18 languages with self-correcting speaker labels, voice isolation, and keyterm prompting. $0.45 /hr Get custom rate limits, enhanced concurrency, and enterprise-grade flexibility t"
+          },
+          {
+            "figure": "$0.04",
+            "context": "words or phrases (maximum 6 words per phrase) to improve transcription accuracy. Included $0.04 /hr Speaker Diarization Detect multiple speakers in audio files and segment the tran"
+          },
+          {
+            "figure": "$0.12",
+            "context": "n audio files and segment the transcript into utterances, showing what each speaker said. $0.12 /hr $0.12 /hr Prompting Describe your audio in plain language to improve transcripti"
+          },
+          {
+            "figure": "$0.10",
+            "context": "Hear the speaker, not the room. Isolate the primary speaker and suppress everything else. $0.10 /hr Not supported Add-on features Keyterms Prompting Provide up to 100 words or phra"
+          },
+          {
+            "figure": "$4.50",
+            "context": "roduction voice agents. Low latency, reliable at scale, and priced for production volume. $4.50/hr ($0.075/min) Get volume discounts, a dedicated Forward Deployed Engineer to take "
+          },
+          {
+            "figure": "$0.075",
+            "context": "voice agents. Low latency, reliable at scale, and priced for production volume. $4.50/hr ($0.075/min) Get volume discounts, a dedicated Forward Deployed Engineer to take you live, "
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "AssemblyAI | AI models to transcribe and understand speech New Universal-3.5 Pro is here. Learn more: Async Realtime x Close menu Products platform Platform overview Models, APIs, and infrastructure in one place. Build voice into any product, on any stack. transcribe Pre-recorded Speech-to-Text API Realtime Speech-to-Text API Sync Speech-to-Text API understand Speech Understanding API Guardrails and Safety LLM Gateway build Voice Agents inference Self Hosted Voice AI Cloud use cases Voice Agents AI Notetakers Call Analytics Medical Transcription Dictation Agent Assist AI Scribes languages English Spanish Portuguese French German Russian Hindi Dutch Japanese Italian All 99 Languages Enterpris",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:40.913Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "autodraw",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:41.674Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "autosana 1",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:41.595Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "avec",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:41.708Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "banani",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:41.973Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "base44",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:41.806Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "bear",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:41.922Z"
+    },
+    {
+      "url": "https://beatoven.ai",
+      "host": "beatoven.ai",
+      "name": "Beatoven",
+      "discoveredVia": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": "Royalty free AI music",
+      "claimedTier": "Freemium",
+      "evidence": {
+        "url": "https://beatoven.ai",
+        "finalUrl": "https://www.beatoven.ai/",
+        "status": 200,
+        "reachable": true,
+        "title": "Beatoven.ai: Royalty Free AI Music Generator",
+        "description": "Create royalty-free, background music with the power of AI. Recommended for videos, podcasts &amp; games. Try now!",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Beatoven.ai: Royalty Free AI Music Generator SFX Artists API API OFFERINGS Zero Cost Upskilling Futurense US Pathway Futurense ExEd Futurense Uni Zero - Cost Upskilling1 The Only Indian Company that provides FREE Upskilling and Salary! 40 -80% HIKE Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do FREE ACCOMMODATION & FOOD Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do GUARANTEED PATH TO FORTUNE 500 COMPANIES Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do IN-PERSON TRAINING Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Zero - Cost Upskilling2 The Only Indian Company that provides FREE Upskilling and Salary! 40 -80% HIKE Lorem ",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:42.426Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "beautiful ai 1",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:42.535Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "beui",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:42.614Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "beyond ui",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:42.778Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "bio",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:42.704Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "blink 1",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:42.763Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "blitzit",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:42.812Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "bloom",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:42.966Z"
+    },
+    {
+      "url": "https://blueprintr.io",
+      "host": "blueprintr.io",
+      "name": "Blueprintr",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": "Show HN: Blueprintr – Diagram-first knowledge base with live cloud import",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://blueprintr.io",
+        "finalUrl": "https://blueprintr.io/",
+        "status": 200,
+        "reachable": true,
+        "title": "Blueprintr — diagram-first architecture documentation",
+        "description": "Draw your architecture, publish one live link, and write the detail inside the shapes. Or point Continuum at AWS or Azure and diagram what is already running.",
+        "priceSource": "homepage",
+        "figures": [
+          {
+            "figure": "$0",
+            "context": "ee. Free to start. Predictable as you scale. Contact Sales for tailored pricing. Personal $0 / forever For homelabs, OSS docs, and people who like to think in pictures. Unlimited p"
+          },
+          {
+            "figure": "$10 / mo",
+            "context": "ibraries Personal portfolio at / username Embed live diagrams anywhere Start free Premium $10 / month For solo authors who want their portfolio on their own subdomain — and live co"
+          },
+          {
+            "figure": "$100 / year",
+            "context": "ellum diagrams Footer-free embeds (no Blueprintr branding) Engagement analytics dashboard $100 / year — two months free Get started Team $29 / seat / month For platform, devex, and"
+          },
+          {
+            "figure": "$29 / seat",
+            "context": "r branding) Engagement analytics dashboard $100 / year — two months free Get started Team $29 / seat / month For platform, devex, and SA teams who own the source of truth. Everythi"
+          },
+          {
+            "figure": "$290 / seat",
+            "context": "workflow for governed teams Shared team icon-pack libraries Password-protected blueprints $290 / seat / year — two months free Get started Enterprise Generate a quote For orgs that"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Blueprintr — diagram-first architecture documentation We’d like to use analytics cookies to understand how this site is used, so we can make it better. Decline and nothing is stored on your device. Privacy policy Accept analytics Decline Product Features Blueprints Diagram-first documents that never drift. Vellum Sketch or formal diagrams, the best of both worlds. Stratum Layered detail behind every shape. Continuum Scan your cloud, link the systems that run it. F Folium Long-form doc spaces alongside your diagrams. Podium Diagrams meet slides… slidagrams? Atrium A members-only knowledge base for your org. AI Features Draw, import and explain with AI. Every integration — cloud, alerting, web",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:44.620Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "bolt new",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:43.612Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "bookmarkify",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:43.543Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "boom for mac",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:43.835Z"
+    },
+    {
+      "url": "https://boomy.com",
+      "host": "boomy.com",
+      "name": "Boomy",
+      "discoveredVia": "workbook",
+      "sourceCategory": "Audio & Voice",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": "Make songs in seconds",
+      "claimedTier": "Freemium",
+      "evidence": {
+        "url": "https://boomy.com",
+        "finalUrl": "https://boomy.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Boomy - Make Generative Music with Artificial Intelligence",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Boomy - Make Generative Music with Artificial Intelligence We're sorry but boomy doesn't work properly without JavaScript enabled. Please enable it to continue.",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:43.116Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "border beam",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:43.808Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "botconsole",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:43.941Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "botprompts",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:43.864Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "boxicons",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:44.330Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "brand logo",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-09-07T13:25:44.481Z"
     }
   ]
 }
