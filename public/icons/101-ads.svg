@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 90">
+  <path d="M40 2L4 14V44C4 66 40 88 40 88C40 88 76 66 76 44V14L40 2Z" fill="#1a1a1a"/>
+  <path d="M40 8L10 18V44C10 62 40 82 40 82C40 82 70 62 70 44V18L40 8Z" fill="none" stroke="white" stroke-width="2.5"/>
+  <rect x="10" y="26" width="60" height="14" fill="white"/>
+  <text x="40" y="37" text-anchor="middle" fill="#1a1a1a" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="9" letter-spacing="0.5">CALIFORNIA</text>
+  <text x="40" y="68" text-anchor="middle" fill="white" font-family="Arial Narrow, Arial, sans-serif" font-weight="900" font-size="32" letter-spacing="-1">101</text>
+</svg>

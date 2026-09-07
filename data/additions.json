@@ -4309,6 +4309,596 @@
       ],
       "addedAt": "2026-08-21T15:01:35.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "name": "Beautiful UI",
+      "website": "https://www.beautifului.dev/",
+      "what": "Twenty copy-paste React primitives for the parts of an agent interface nobody has a pattern for yet: loading and thinking states with expandable traces, streaming text with inline sources and follow-ups, human-in-the-loop approval cards, tool-call chips, live task rows, diff and filter tables, and a full agent screen.",
+      "category": "Generative UI / AI interfaces",
+      "pricing": "Free",
+      "priceDetail": "Free to copy. No accounts, no package — the components are lifted out of the site. Built by Turbo, a product design studio, as a shop window for their own work.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "This is the vocabulary we keep reinventing on every agent build — what a thinking state looks like, how a tool call reads, where the approval sits. Having twenty of them drawn properly is worth more than any component library of buttons.",
+        "Copy-paste means no version to upgrade and no vendor to outlive, but it also means no fixes arrive: whatever we take becomes ours to maintain. Check each one against our own tokens rather than pasting the studio's styling."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Generative Loaders",
+      "website": "https://generativeloaders.com/",
+      "what": "React loading states for generative interfaces: sixteen animated text reveals (decode, typewriter, cascade, redact, line-by-line, dissolve), eighteen compact inline activity indicators, and twelve image-generation placeholders. One npm package, accessible by design.",
+      "category": "Generative UI / AI interfaces",
+      "pricing": "Free",
+      "priceDetail": "Free and open source, MIT. `npm install generative-loaders`, React 18 and newer.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The waiting state is most of an AI interface's perceived quality, and it is the bit that always gets a spinner. Sixteen text reveals with a live gallery to pick from saves an afternoon per project.",
+        "Single maintainer (Kasturi Khanke), CI on the repo, docs and an issue template — tidier than most. Bundle it rather than adopting the whole thing if only two of the forty-six get used."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Is Agentic",
+      "website": "https://is-agentic.com/",
+      "what": "Scores how much of a website an AI agent can actually discover, retrieve, understand and use, then hands back the evidence. `npx is-agentic [domain]`. Essential checks carry the weight — server-rendered content, correct HTTP behaviour, document structure, recoverable errors, usable controls — and API, OAuth, GraphQL, MCP or commerce checks only activate when a scan finds those surfaces.",
+      "category": "AEO / agent readiness",
+      "pricing": "Free",
+      "priceDetail": "Free to scan, run from the CLI or the site. Scans are run by Ora; the site publishes a rolling leaderboard, which is worth knowing before pointing it at a client domain.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "This is the audit we have been describing to clients without a number attached. It is also a sales tool: netflix.com scores 43 and salesforce.com 46 on their own leaderboard, which is a conversation opener with anyone who thinks their site is modern.",
+        "Checks that do not apply are excluded rather than failed, so a brochure site is not punished for having no API — that is the detail that makes the score usable on client work.",
+        "Public leaderboard: it rotates recent scores hourly. Scan a staging domain if a client would object to their score appearing on someone else's homepage."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "deepsec",
+      "website": "https://deepsec.sh",
+      "what": "Agent-powered vulnerability scanner from Vercel Labs that you run in your own infrastructure, aimed at on-demand review of every file in a large existing repo. `npx deepsec init`. Work fans out across worker machines, and an interrupted run resumes by skipping the files it already analysed.",
+      "category": "AI coding / code review",
+      "pricing": "Free",
+      "priceDetail": "Apache-2.0, free to install — the cost is the model usage. Their own README says a large codebase can run to thousands or tens of thousands of dollars, tunable with `--thinking-level`.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Worth knowing exists, and worth reaching for once on a project we have inherited and cannot read. It is configured for the best models at maximum thinking, which is why it finds things a linter never will and why the bill is what it is.",
+        "Read the cost warning as written, not as marketing modesty: this is not a tool to point at a repo casually. Scope it to a directory and set the thinking level before anyone runs it.",
+        "Vercel Labs, Apache-2.0, resumable — the engineering around it is sound. The judgement call is entirely about spend."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "CodeBurn",
+      "website": "https://github.com/getagentseal/codeburn",
+      "what": "Works out where AI coding spend actually goes across 41 providers and shows it three ways: `npx codeburn` in the terminal, `npx codeburn web` for a dashboard, and `codeburn menubar` for a macOS menu bar or Windows tray readout.",
+      "category": "AI coding / cost tracking",
+      "pricing": "Free",
+      "priceDetail": "Free and open source, MIT, on npm as `codeburn`. 11k GitHub stars and 816 forks at the time of adding. Sponsorship funds keeping the integrations current.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "We have no idea what a given client project costs us in agent time, and the provider dashboards do not add up across four accounts. Forty-one integrations in one readout is exactly the missing number.",
+        "Its own pages disagree on the count: the README talks about keeping 41 integrations honest while the repo's social card says 37 tools and agents. Either way it is more than any single provider dashboard, but treat the figures it reports as a working estimate until they have been checked against one real month's invoice."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Boop",
+      "website": "https://github.com/chrisgreg/boop",
+      "what": "A self-hosted notification inbox for developers: POST a JSON event from any server and it arrives on your phone. One Go binary, one SQLite file, one Docker container, pushing straight to Apple's APNs — no hosted relay, no account system, no telemetry.",
+      "category": "Productivity / notifications",
+      "pricing": "Free",
+      "priceDetail": "Free and open source, MIT — 737 GitHub stars, 35 forks and three contributors at the time of adding. Go server plus an iOS app; you run the server and pair it with your own APNs credentials.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The right shape for build alerts, deploy notices and cron failures on client infrastructure: the events never leave our own boxes, which is the objection every hosted alerting service runs into on a client audit.",
+        "Self-hosting is the price — an APNs key, a container and a certificate to remember. Fine for Foundry, harder to hand to a client as a supported thing."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Matte",
+      "website": "https://matte.app/",
+      "what": "Native macOS recorder and editor for product demos: capture the iOS simulator, a live device or any app window, then add device frames, backgrounds, animations and captions and export. Version 2.0, in open beta, adds full 3D.",
+      "category": "Video & capture / screen recording",
+      "pricing": "Freemium",
+      "priceDetail": "2.0 beta is free with no account, macOS 15+. Pro is $10/mo, $39/yr (about $3.25 a month) or $149 one-time, each covering 4K export, no watermark and up to three Macs, with a 15-day money-back window.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "App Store screenshots and client demo videos are a recurring half-day. This is the tool that turns that into twenty minutes, and the frames and backgrounds are good enough to ship without a designer touching them.",
+        "$149 once for three Macs is the version to buy if it survives a first project; the beta is free and needs no account, so it can be tried on real work first."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Ditther",
+      "website": "https://www.ditther.com/",
+      "what": "Browser image and video effects editor with 75+ stackable effects — dither, halftone, ASCII, pixel and voxel, distortion, print, retro, colour and light — over layers, text and shapes, with animation for motion output.",
+      "category": "Creative ops / image effects",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier covers the core effects, 1080p video and 100+ backgrounds. Pro $8/mo (down from $15), or Pro+ lifetime $69 one-time (down from $139), for all effects, saved custom looks and weekly background drops.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The fastest route to the dithered, halftoned, ASCII look that keeps turning up in brand work, without setting up a shader pipeline. Free tier is enough to know within ten minutes whether it earns the $69.",
+        "In-browser and stackable means it is a playground rather than a repeatable pipeline: nothing here is version-controlled, so treat the output as an asset and keep the source file."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Ultramock",
+      "website": "https://www.ultramock.io/",
+      "what": "Turns product screens into presentation visuals: customisable videos, still visuals and 3D mockups of UI, websites and apps.",
+      "category": "Design engineering / marketing assets",
+      "pricing": "Freemium",
+      "priceDetail": "Its own pitch says free; the Design Minis listing has it as freemium, and the pricing page is client-rendered so no figure could be read from a static fetch.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Pitch decks and case studies need a screen in a frame on a background, and doing it by hand in Figma is an hour we bill to nobody.",
+        "The pricing page would not render for a static read, so what a paid tier costs is unverified — check before anyone builds a deck around it."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Reelfolio",
+      "website": "https://reelfolio.io/",
+      "what": "Turns a folder of screenshots, mockups and screen recordings into a portfolio showreel: 263+ shot styles with the cinematography, timing and polish pre-designed, backgrounds and framing controls, and cloud rendering to 16:9, 1:1, 9:16 and 4K.",
+      "category": "Video & capture / generation",
+      "pricing": "Paid",
+      "priceDetail": "One-time purchase per its own homepage; the figure is on a client-rendered pricing page and could not be read from a static fetch. Found via the Design Minis listing, which has it as paid.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "A case-study reel from a folder of screenshots, with no After Effects and no timeline, is worth having the week before a pitch.",
+        "Templated cinematography looks templated at volume — good for a portfolio piece, wrong for anything that has to carry a client's brand.",
+        "The URL Dan sent was the Design Minis listing rather than the product; reelfolio.com is a blank page, the real site is reelfolio.io."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Amicons",
+      "website": "https://amicons.design/",
+      "what": "760 hand-drawn icons in 3,040 variants — two fills and two styles each, on a 24px grid with a 2px stroke — organised into 43 categories, shipped as Figma and optimised SVG.",
+      "category": "Design engineering / icons",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier is 300 icons and 1,200 variants with no updates. Pro is priced by company size and paid once: $89 for one person, $199 up to 10 staff, $449 up to 50, $899 up to 250, $1,799 up to 1,000, then enterprise.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "A warmer alternative to Phosphor and Lucide when a product needs personality without going illustrative, and four variants per icon covers dark UI and data-dense dashboards from one set.",
+        "The licence is per company size, so a Gitwork licence at $199 does not cover a client's own team — worth pricing into a project rather than discovering later."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Libraries.dev",
+      "website": "https://libraries.dev/gooey",
+      "what": "Jakub Antalik's collection of React effect libraries under one roof — Gooey (`liquid-gooey`), where touching elements merge and morph like jelly while text stays crisp, plus Border beam, Thinking orbs, Metal and Image — each with a playground, install instructions and a copyable prompt.",
+      "category": "Design engineering / component libraries",
+      "pricing": "Freemium",
+      "priceDetail": "Free to install from npm; a Pro tier and a Studio for tuning sit behind sign-in, with no figure published on the pages read.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Gooey is the liquid-metal merge effect everyone has been asking for since Apple shipped it, done as SVG filters over real DOM so text and images stay sharp.",
+        "The URL Dan sent (gooey.jakubantalik.com) is now just a redirect notice — the product moved to libraries.dev, and the npm package name is unchanged."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "COBE",
+      "website": "https://cobe.vercel.app/",
+      "what": "A 5KB WebGL globe with no dependencies: markers, arcs and any DOM element bound to a point on the surface, so CSS transitions, filters and interactivity work on labels and stickers. v2 adds satellites, flights, live badges and analytics overlays.",
+      "category": "Design engineering / component libraries",
+      "pricing": "Free",
+      "priceDetail": "Free and open source, MIT. `npm i cobe`, works with React, Vue, Svelte or vanilla.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The spinning globe is a landing-page cliché precisely because it works, and this is the version that does not cost 500KB of three.js to get.",
+        "By Shu Ding at Vercel, MIT, zero dependencies — about as safe as a client-work dependency gets."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "ShipSwift (SwiftUI library)",
+      "website": "https://github.com/signerlabs/ShipSwift",
+      "what": "AI-native SwiftUI component library: production-ready components plus an MCP server and a skills repo, so an agent can be handed the whole set and build a real iOS app against it. Demo app on the App Store, iOS 18+, Swift 5+.",
+      "category": "Mobile & app dev",
+      "pricing": "Free",
+      "priceDetail": "Free and open source, MIT. Installed as a Swift package; the MCP server is how an agent reads it.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The interesting part is the shape, not the components: a component library with an MCP server in front of it, so the agent gets real source instead of inventing SwiftUI. Worth copying for our own Foundry components.",
+        "The URL Dan sent (shipswift.app) is the marketing site for Signer Labs, an agency selling custom builds at $5K for four weeks — the library is the open-source half of a funnel. Listed here as the library, which is the part we would actually use."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "genart (Claude Code plugin)",
+      "website": "https://github.com/camilleroux/genart-skill",
+      "what": "Claude Code plugin that teaches the working knowledge of long-form generative art: seeding a PRNG from a token hash, rendering the same composition at any resolution, trait and rarity design, preview capture signalling, and export for print and pen plotters. Covers Canvas 2D, p5.js, three.js/WebGL and SVG, and ships runnable tools.",
+      "category": "AI coding / agent skills",
+      "pricing": "Free",
+      "priceDetail": "Free and open source, MIT, versioned as a Claude Code plugin with CI on the repo.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Deterministic hash-seeded rendering is the whole craft of generative work and it is the bit an agent gets wrong unaided. This is also the closest thing to a worked example of a plugin that teaches a discipline rather than wrapping a tool.",
+        "Aimed at onchain platforms — Art Blocks, 256ART, Verse, Highlight, Plottables — so parts of it are irrelevant to us. The seeding, resolution-independence and plotter export are the transferable half."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "watermarks-remover",
+      "website": "https://github.com/guillaumemeyer/watermarks-remover",
+      "what": "Agent skill plus a standard-library Python service that strips multi-vendor AI provenance marks — invisible characters and metadata — from text and files. The skill is a thin client that drives the service.",
+      "category": "AI coding / agent skills",
+      "pricing": "Free",
+      "priceDetail": "Free and open source, MIT, with CI and tagged releases.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The real use for us is hygiene: model output carries zero-width characters and metadata that break diffs, CMS fields and copy-paste into client systems. This strips them in one pass.",
+        "Its own framing is content you own, and that is the line to hold — using it to pass model output off as hand-written is a different thing, and not something we would do on client work."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "VibeUI",
+      "website": "https://vibeui.online/",
+      "what": "92 layout prompts for AI UI generation across 15 categories — auth forms, pricing tables, hero sections, bento grids, nav, testimonials, dashboards, onboarding — each describing a structure to paste into a builder so it lays out the page rather than inventing one.",
+      "category": "AI coding / prompt libraries",
+      "pricing": "Free",
+      "priceDetail": "Free to browse and copy. The site upsells GlowUp UI, a paid product from the same people, for generating variants across models.",
+      "usefulness": "Medium",
+      "buildVerdict": "Weekend build",
+      "notes": [
+        "Structure prompts are the missing half of vibe coding: models default to one hero and one pricing table, and naming the layout is what breaks them out of it. Ninety-two of them, categorised, is a decent starting bank.",
+        "This is a prompt library, so it is ours to fork the moment it is useful — worth lifting the good ones into the Foundry starter library rather than depending on someone's marketing site."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "OGFolio",
+      "website": "https://www.ogfolio.com/",
+      "what": "A library of nearly 900 Open Graph images collected from real products, with an OG image analyser that checks a URL's dimensions, file size and meta tags. From the people behind Toolfolio.",
+      "category": "Design engineering / marketing assets",
+      "pricing": "Free",
+      "priceDetail": "Free to browse; no pricing published on the pages read.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The OG image is the one asset every client project needs and nobody designs — 900 real examples plus a checker is the fastest way to get one right rather than guessing at 1200×630.",
+        "Same stable as Toolfolio, already on the list, so expect the same directory-with-affiliate-links model."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Grainient",
+      "website": "https://grainient.supply/",
+      "what": "Around 1,450 background assets in one subscription: 375 grainy gradients, 450 smooth blends, 90 animated gradients and 538 AI-generated backgrounds, plus a shader tool for making your own.",
+      "category": "Creative ops / background assets",
+      "pricing": "Paid",
+      "priceDetail": "$149 a year (billed annually, about $13 a month) or $299 once for lifetime access, both including a commercial licence. No usable free tier — the collections are behind sign-in.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Hero backgrounds are a recurring half-day of nudging blur and noise. A commercial licence across 1,450 of them at $299 once is cheaper than the time, and the shader tool covers the case where none of them fit.",
+        "Check the licence terms against client work specifically — a commercial licence held by us is not always a licence the client inherits when they take the site over."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Codenotch",
+      "website": "https://hivinz.com/download/codenotch",
+      "what": "Mac utility that parks your LLM usage in the notch: a running readout of what the coding agents have burned through, without opening a dashboard.",
+      "category": "Mac software / menu bar utility",
+      "pricing": "Free",
+      "priceDetail": "Free. v1.5.0 at the time of adding, universal binary, macOS 26 and newer.",
+      "usefulness": "Medium",
+      "buildVerdict": "Weekend build",
+      "notes": [
+        "The number that matters during a build is the one you can see without stopping, and the notch is dead space. Pair it with CodeBurn, which does the same job properly across 41 providers but needs a command.",
+        "macOS 26+ only, by a solo designer (@hivinz_), with no licence or source published — fine for a personal machine, not something to standardise on."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "BetterMouse",
+      "website": "https://better-mouse.com/",
+      "what": "macOS mouse utility meant to replace Logitech Options and friends: configurable smooth and discrete scrolling, cursor acceleration split from speed, per-button and per-gesture mapping to shortcuts and system actions, drag panning, and hardware settings for supported Logi mice including DPI, onboard profiles and thumbwheel.",
+      "category": "Mac software / input devices",
+      "pricing": "Paid",
+      "priceDetail": "$7.99 one-time for life, with a 7-day full-functionality trial and five reusable activations per licence.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Anyone on an MX Master and a Mac knows the Logi driver is 300MB of background processes to bind two buttons. This is the lightweight, privacy-safe replacement, and $7.99 once is not a decision.",
+        "Only worth it for a third-party mouse — on a trackpad it solves nothing."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Imageory",
+      "website": "https://www.imageory.in/",
+      "what": "A personal gallery of AI images with the prompt that made each one, sorted into collections — gradients, landscapes, abstract, surreal, celestial, noise — so a prompt can be lifted rather than rewritten.",
+      "category": "AI asset generation",
+      "pricing": "Free",
+      "priceDetail": "Free to browse; an account saves favourites. No pricing published. Built by one person, Palak (@palakonweb).",
+      "usefulness": "Low",
+      "buildVerdict": "Weekend build",
+      "notes": [
+        "Prompt-with-image is the useful pairing — most galleries show the output and hide the recipe. Worth a look when a brief needs a texture or a background and nobody wants to spend an hour prompting.",
+        "The URL Dan sent was the signup page; this is the product. Small, personal and one maintainer, so treat it as a reference rather than a dependency."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "laurie",
+      "website": "https://play.laurie.fm/",
+      "what": "Turns a laptop keyboard into a chord instrument: rich chords on keys 1–7, strumming on the trackpad, and live MIDI out to a DAW.",
+      "category": "Audio / production",
+      "pricing": "Free",
+      "priceDetail": "Free to play in the browser; no pricing published, and the page is client-rendered so there is nothing else to read from it.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "No use on client work whatsoever. It is here because trackpad strumming into a DAW is a genuinely clever bit of interface design, and it takes ten seconds to try.",
+        "Everything beyond the pitch is behind client-side rendering — no platform notes, no licence, no team."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Parafield AI",
+      "website": "https://parafield.ai/",
+      "what": "Pitched as a personalised 3D sound experience for productivity, mindfulness and imagination. The site is a single client-rendered page and publishes nothing beyond that line — no product detail, no platform, no pricing, no team.",
+      "category": "Audio / production",
+      "pricing": "Free",
+      "priceDetail": "Nothing published. Listed here as unassessed rather than assessed as good.",
+      "usefulness": "Unknown",
+      "buildVerdict": "N/A",
+      "notes": [
+        "Read and found to be a landing page with a tagline and no product behind it that could be verified. Kept on the list because Dan sent it, marked Unknown so nobody mistakes that for a recommendation.",
+        "Worth a second look if it ships something — as it stands there is nothing to judge."
+      ],
+      "kind": "tool",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Interfaces",
+      "link": "https://interfaces.dev/",
+      "resourceType": "Newsletter/PDF",
+      "category": "Design engineering / magazine",
+      "takeaway": "Jakub Krehel's design engineering magazine, issued rather than blogged: animation, typography, layout and colour worked through in depth, with live demos in the page — issue 12 is a typography manual for the web. His argument is that when anything can be replicated with a prompt, building fast stops being an advantage and only care shows.",
+      "whatToDo": "Reference. Action: read issue 12's typography manual against our own type scale, and put the interaction-detail pieces in front of whoever is next on a component build.",
+      "cost": "Paid",
+      "usefulness": "High",
+      "notes": [
+        "The nearest thing to a curriculum for what we call design engineering, written by someone doing it rather than describing it.",
+        "Subscription-gated — the price is not published on the pages that render without an account, and /subscribe 404s to a static fetch."
+      ],
+      "kind": "resource",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "jmswrnr.com (James Warner)",
+      "link": "https://jmswrnr.com/",
+      "resourceType": "Article/blog post",
+      "category": "Design engineering / techniques",
+      "takeaway": "A design engineer's site that doubles as a technique bank: nine 'artifacts' with working code — smooth circle pointer, floating hover cursor, React hex viewer, dynamic image contrast, image glitch shader, hero shader, one-time password input, draggable scroll area, 3D ASCII head — alongside write-ups on canvas-to-LED streaming, protecting Next.js API routes and building a 3D site header.",
+      "whatToDo": "Reference. Action: lift the one-time password input and the draggable scroll area next time either comes up, and read the shader artifacts before anyone writes a hero effect from scratch.",
+      "cost": "Free",
+      "usefulness": "High",
+      "notes": [
+        "Each artifact is a small, self-contained implementation rather than a tutorial, which is the useful format. No licence stated on the page, so ask before shipping his code verbatim."
+      ],
+      "kind": "resource",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Design Minis",
+      "link": "https://www.designminis.com/",
+      "resourceType": "Directory",
+      "category": "Tool discovery",
+      "takeaway": "A directory of small tools made by designers, each doing one job properly — colour pickers, type scales, easing curves, shadow generators, dither and halftone effects — filterable by category, platform and price. Where Reelfolio, Ultramock and a dozen other one-job tools surface first.",
+      "whatToDo": "Source. Action: check it before building a one-off utility; the odds are it exists and is free.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Submission-driven and sponsor-funded, so listings are what people sent rather than what is best — the filters do the work.",
+        "It carries an Easings cubic-bézier editor, which is the same job as the easing lab in our own experiments room."
+      ],
+      "kind": "resource",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Sidebar",
+      "link": "https://sidebar.io/",
+      "resourceType": "Newsletter/PDF",
+      "category": "Design engineering / curated list",
+      "takeaway": "Five design links a weekday, chosen and tagged, running for over a decade. Typical day mixes a product-management essay, a typography piece, a small tool and a piece of criticism — the closest thing the field has to a daily paper.",
+      "whatToDo": "Reference. Action: put it in a shared channel rather than one person's inbox, so the good links reach the whole studio.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "One sponsored slot at the top each day, marked as such."
+      ],
+      "kind": "resource",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "SEESAW",
+      "link": "https://www.seesaw.website/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / websites",
+      "takeaway": "Hand-picked web design inspiration updated daily, searchable by site, font or category — agency, AI, crypto, design tools, developer tools, fintech, portfolios, productivity. Each entry carries a one-line description of what the product does, so it reads as competitor research as much as inspiration.",
+      "whatToDo": "Source. Action: search it by category at the start of a client project rather than trawling Dribbble.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Sponsor-funded with a newsletter attached. Overlaps Recent, Saaspo and Frontpages, already on the list — the difference is the font search and the descriptions."
+      ],
+      "kind": "resource",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Inspora",
+      "link": "https://www.inspora.design/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / websites",
+      "takeaway": "A curated archive of recent visual and creative work, updated hourly, split into web, branding, product, motion, illustration, 3D and print. Broader than the site galleries — branding and print sit alongside interface work.",
+      "whatToDo": "Source. Action: use the branding and print cuts when a project needs identity references rather than UI ones, which the other galleries do not cover.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Client-rendered, so the archive itself will not show up in a text scrape — it has to be browsed."
+      ],
+      "kind": "resource",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Catalog",
+      "link": "https://catalog.design/",
+      "resourceType": "Directory",
+      "category": "Design engineering / curated list",
+      "takeaway": "Studio Offgrid's library of design resources, sorted into apps, foundries, inspiration, mockups, publications, skills, studios and tools. The foundries and publications sections are the parts other directories do not have.",
+      "whatToDo": "Source. Action: use the foundries list when a project needs type beyond the usual free families, and the studios list as a reference for positioning work.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Curated by one studio, so it reflects their taste rather than aiming at coverage. Client-rendered."
+      ],
+      "kind": "resource",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "local.ai",
+      "link": "https://local.ai/",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / local models",
+      "takeaway": "Independent benchmarks for running models locally, comparing intelligence, speed and energy use across Apple silicon and NVIDIA GPUs, with live data and an energy wall.",
+      "whatToDo": "Reference. Action: check it before quoting a client on on-device inference, and before anyone specs a Mac for local models.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "In early access, and the data tables are client-rendered — the figures could not be read from a static fetch, so treat the site as the source rather than anything quoted second-hand.",
+        "Energy use per token is the number nobody else publishes, and it is the one that decides whether local inference is actually cheaper."
+      ],
+      "kind": "resource",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Creating Web Widgets Using the Document Picture-in-Picture API",
+      "link": "https://css-tricks.com/creating-web-widgets-using-the-document-picture-in-picture-api/",
+      "resourceType": "Article/blog post",
+      "category": "Design engineering / browser APIs",
+      "takeaway": "Firefox 151 shipped the Document Picture-in-Picture API, so any HTML, CSS and JavaScript can now be put in a floating always-on-top window — tickers, live chat, playlists, to-do lists, notes. Daniel Schwarz walks through cloning a component into the window and the media queries and pseudo-classes for styling it, and makes the point that lifting a component out of its context breaks its CSS.",
+      "whatToDo": "Reference. Action: consider it for the next client dashboard that needs a always-visible readout, and read the CSS-context warning before anyone reuses a component in one.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Published 27 August 2026. It is now in Firefox and Chromium, not Safari, so anything built on it needs a fallback for Mac users."
+      ],
+      "kind": "resource",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "101 Ads",
+      "link": "https://101ads.org/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / advertising",
+      "takeaway": "Every billboard on Highway 101 through the Bay Area, mapped and categorised, as a snapshot of what Silicon Valley is currently selling itself. The build is the interesting part: the author had Claude write an iOS app that used Vision to snap, crop and OCR billboards while he drove, then publish to the site, and vibe-coded the site itself.",
+      "whatToDo": "Reference. Action: read it as a worked example of an agent-built data pipeline — camera to OCR to published site with almost no manual input — and as a read on how the AI market is positioning itself.",
+      "cost": "Free",
+      "usefulness": "Low",
+      "notes": [
+        "A personal project, refreshed roughly monthly by its author's own account. No use on client work; genuinely instructive about what one person plus an agent can assemble."
+      ],
+      "kind": "resource",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "name": "Mike Barton (mikes.cv)",
+      "link": "https://www.mikes.cv/",
+      "resourceType": "Social account",
+      "category": "Design inspiration / portfolios",
+      "takeaway": "Portfolio of a multidisciplinary software designer in Manchester. Sent twice, so worth keeping as a reference point for how a UK design engineer positions and presents themselves.",
+      "whatToDo": "Reference. Action: use it as a benchmark when we next rewrite our own case studies — and as a name to know locally.",
+      "cost": "Free",
+      "usefulness": "Low",
+      "notes": [
+        "The whole site is client-rendered: nothing beyond the name and the one-line description could be read from a static fetch, so the work itself has not been assessed here."
+      ],
+      "kind": "resource",
+      "addedAt": "2026-09-07T10:49:00.000Z",
+      "addedBy": "Dan"
     }
   ]
 }

@@ -53,6 +53,21 @@ async function get(url) {
 }
 
 /** Icon URLs declared in the page head, best first. */
+/**
+ * An href read straight out of the HTML still carries entities. That matters twice: a
+ * query string written `?a=1&amp;b=2` fetches the wrong URL, and an inline
+ * `data:image/svg+xml,&lt;svg …` downloads the escaped text rather than an SVG — which is
+ * how public/icons/cobe.svg ended up as a file no browser could parse.
+ */
+const unescapeHtml = (value) =>
+  value
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#0?39;/g, "'")
+    .replace(/&apos;/g, "'")
+    .replace(/&amp;/g, "&");
+
 async function declaredIcons(siteUrl) {
   const response = await get(siteUrl);
   if (!response) return [];
@@ -64,8 +79,9 @@ async function declaredIcons(siteUrl) {
   for (const tag of links) {
     const rel = /rel=["']([^"']+)["']/i.exec(tag)?.[1]?.toLowerCase() ?? "";
     if (!/icon/.test(rel)) continue;
-    const href = /href=["']([^"']+)["']/i.exec(tag)?.[1];
-    if (!href) continue;
+    const raw = /href=["']([^"']+)["']/i.exec(tag)?.[1];
+    if (!raw) continue;
+    const href = unescapeHtml(raw);
     const sizes = /sizes=["']([^"']+)["']/i.exec(tag)?.[1] ?? "";
     const px = Number.parseInt(sizes, 10) || (rel.includes("apple") ? 180 : 0);
     // Prefer apple-touch-icon and large declared sizes; they are the crisp ones.
@@ -88,6 +104,8 @@ async function download(candidates, slug) {
     if (!buffer.length || buffer.length > MAX_BYTES) continue;
     // A 1x1 or near-empty file is a placeholder, not an icon.
     if (buffer.length < 100) continue;
+    // And an SVG that is not actually markup is no use to a browser, however it got here.
+    if (ext === "svg" && !buffer.subarray(0, 400).toString("utf8").includes("<svg")) continue;
 
     writeFileSync(join(OUT, `${slug}.${ext}`), buffer);
     return `${slug}.${ext}`;

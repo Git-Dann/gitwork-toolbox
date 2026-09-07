@@ -2151,6 +2151,222 @@
     "pick": false
   },
   {
+    "kind": "tool",
+    "slug": "beautiful-ui",
+    "name": "Beautiful UI",
+    "blurb": "Twenty copy-paste React primitives for the parts of an agent interface nobody has a pattern for yet: loading and thinking states…",
+    "meta": "Generative UI / AI interfaces",
+    "badge": "Free",
+    "pick": true
+  },
+  {
+    "kind": "tool",
+    "slug": "generative-loaders",
+    "name": "Generative Loaders",
+    "blurb": "React loading states for generative interfaces: sixteen animated text reveals (decode, typewriter, cascade, redact, line-by-line,…",
+    "meta": "Generative UI / AI interfaces",
+    "badge": "Free",
+    "pick": true
+  },
+  {
+    "kind": "tool",
+    "slug": "is-agentic",
+    "name": "Is Agentic",
+    "blurb": "Scores how much of a website an AI agent can actually discover, retrieve, understand and use, then hands back the evidence. `npx…",
+    "meta": "AEO / agent readiness",
+    "badge": "Free",
+    "pick": true
+  },
+  {
+    "kind": "tool",
+    "slug": "deepsec",
+    "name": "deepsec",
+    "blurb": "Agent-powered vulnerability scanner from Vercel Labs that you run in your own infrastructure, aimed at on-demand review of every…",
+    "meta": "AI coding / code review",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "codeburn",
+    "name": "CodeBurn",
+    "blurb": "Works out where AI coding spend actually goes across 41 providers and shows it three ways: `npx codeburn` in the terminal, `npx c…",
+    "meta": "AI coding / cost tracking",
+    "badge": "Free",
+    "pick": true
+  },
+  {
+    "kind": "tool",
+    "slug": "boop",
+    "name": "Boop",
+    "blurb": "A self-hosted notification inbox for developers: POST a JSON event from any server and it arrives on your phone. One Go binary, o…",
+    "meta": "Productivity / notifications",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "matte",
+    "name": "Matte",
+    "blurb": "Native macOS recorder and editor for product demos: capture the iOS simulator, a live device or any app window, then add device f…",
+    "meta": "Video & capture / screen recording",
+    "badge": "Freemium",
+    "pick": true
+  },
+  {
+    "kind": "tool",
+    "slug": "ditther",
+    "name": "Ditther",
+    "blurb": "Browser image and video effects editor with 75+ stackable effects — dither, halftone, ASCII, pixel and voxel, distortion, print,…",
+    "meta": "Creative ops / image effects",
+    "badge": "Freemium",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "ultramock",
+    "name": "Ultramock",
+    "blurb": "Turns product screens into presentation visuals: customisable videos, still visuals and 3D mockups of UI, websites and apps.",
+    "meta": "Design engineering / marketing assets",
+    "badge": "Freemium",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "reelfolio",
+    "name": "Reelfolio",
+    "blurb": "Turns a folder of screenshots, mockups and screen recordings into a portfolio showreel: 263+ shot styles with the cinematography,…",
+    "meta": "Video & capture / generation",
+    "badge": "Paid",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "amicons",
+    "name": "Amicons",
+    "blurb": "760 hand-drawn icons in 3,040 variants — two fills and two styles each, on a 24px grid with a 2px stroke — organised into 43 cate…",
+    "meta": "Design engineering / icons",
+    "badge": "Freemium",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "libraries-dev",
+    "name": "Libraries.dev",
+    "blurb": "Jakub Antalik's collection of React effect libraries under one roof — Gooey (`liquid-gooey`), where touching elements merge and m…",
+    "meta": "Design engineering / component libraries",
+    "badge": "Freemium",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "cobe",
+    "name": "COBE",
+    "blurb": "A 5KB WebGL globe with no dependencies: markers, arcs and any DOM element bound to a point on the surface, so CSS transitions, fi…",
+    "meta": "Design engineering / component libraries",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "shipswift-swiftui-library",
+    "name": "ShipSwift (SwiftUI library)",
+    "blurb": "AI-native SwiftUI component library: production-ready components plus an MCP server and a skills repo, so an agent can be handed…",
+    "meta": "Mobile & app dev",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "genart-claude-code-plugin",
+    "name": "genart (Claude Code plugin)",
+    "blurb": "Claude Code plugin that teaches the working knowledge of long-form generative art: seeding a PRNG from a token hash, rendering th…",
+    "meta": "AI coding / agent skills",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "watermarks-remover",
+    "name": "watermarks-remover",
+    "blurb": "Agent skill plus a standard-library Python service that strips multi-vendor AI provenance marks — invisible characters and metada…",
+    "meta": "AI coding / agent skills",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "vibeui",
+    "name": "VibeUI",
+    "blurb": "92 layout prompts for AI UI generation across 15 categories — auth forms, pricing tables, hero sections, bento grids, nav, testim…",
+    "meta": "AI coding / prompt libraries",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "ogfolio",
+    "name": "OGFolio",
+    "blurb": "A library of nearly 900 Open Graph images collected from real products, with an OG image analyser that checks a URL's dimensions,…",
+    "meta": "Design engineering / marketing assets",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "grainient",
+    "name": "Grainient",
+    "blurb": "Around 1,450 background assets in one subscription: 375 grainy gradients, 450 smooth blends, 90 animated gradients and 538 AI-gen…",
+    "meta": "Creative ops / background assets",
+    "badge": "Paid",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "codenotch",
+    "name": "Codenotch",
+    "blurb": "Mac utility that parks your LLM usage in the notch: a running readout of what the coding agents have burned through, without open…",
+    "meta": "Mac software / menu bar utility",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "bettermouse",
+    "name": "BetterMouse",
+    "blurb": "macOS mouse utility meant to replace Logitech Options and friends: configurable smooth and discrete scrolling, cursor acceleratio…",
+    "meta": "Mac software / input devices",
+    "badge": "Paid",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "imageory",
+    "name": "Imageory",
+    "blurb": "A personal gallery of AI images with the prompt that made each one, sorted into collections — gradients, landscapes, abstract, su…",
+    "meta": "AI asset generation",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "laurie",
+    "name": "laurie",
+    "blurb": "Turns a laptop keyboard into a chord instrument: rich chords on keys 1–7, strumming on the trackpad, and live MIDI out to a DAW.",
+    "meta": "Audio / production",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "parafield-ai",
+    "name": "Parafield AI",
+    "blurb": "Pitched as a personalised 3D sound experience for productivity, mindfulness and imagination. The site is a single client-rendered…",
+    "meta": "Audio / production",
+    "badge": "Free",
+    "pick": false
+  },
+  {
     "kind": "starter",
     "slug": "humanizer",
     "name": "Humanizer",
@@ -4525,6 +4741,105 @@
     "meta": "Docs & reference",
     "badge": "Resource",
     "pick": true
+  },
+  {
+    "kind": "resource",
+    "slug": "interfaces",
+    "name": "Interfaces",
+    "blurb": "Jakub Krehel's design engineering magazine, issued rather than blogged: animation, typography, layout and colour worked through i…",
+    "meta": "Newsletter/PDF",
+    "badge": "Resource",
+    "pick": true
+  },
+  {
+    "kind": "resource",
+    "slug": "jmswrnr-com-james-warner",
+    "name": "jmswrnr.com (James Warner)",
+    "blurb": "A design engineer's site that doubles as a technique bank: nine 'artifacts' with working code — smooth circle pointer, floating h…",
+    "meta": "Article/blog post",
+    "badge": "Resource",
+    "pick": true
+  },
+  {
+    "kind": "resource",
+    "slug": "design-minis",
+    "name": "Design Minis",
+    "blurb": "A directory of small tools made by designers, each doing one job properly — colour pickers, type scales, easing curves, shadow ge…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "sidebar",
+    "name": "Sidebar",
+    "blurb": "Five design links a weekday, chosen and tagged, running for over a decade. Typical day mixes a product-management essay, a typogr…",
+    "meta": "Newsletter/PDF",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "seesaw",
+    "name": "SEESAW",
+    "blurb": "Hand-picked web design inspiration updated daily, searchable by site, font or category — agency, AI, crypto, design tools, develo…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "inspora",
+    "name": "Inspora",
+    "blurb": "A curated archive of recent visual and creative work, updated hourly, split into web, branding, product, motion, illustration, 3D…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "catalog",
+    "name": "Catalog",
+    "blurb": "Studio Offgrid's library of design resources, sorted into apps, foundries, inspiration, mockups, publications, skills, studios an…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "local-ai",
+    "name": "local.ai",
+    "blurb": "Independent benchmarks for running models locally, comparing intelligence, speed and energy use across Apple silicon and NVIDIA G…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "creating-web-widgets-using-the-document-picture-in-picture-api",
+    "name": "Creating Web Widgets Using the Document Picture-in-Picture API",
+    "blurb": "Firefox 151 shipped the Document Picture-in-Picture API, so any HTML, CSS and JavaScript can now be put in a floating always-on-t…",
+    "meta": "Article/blog post",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "101-ads",
+    "name": "101 Ads",
+    "blurb": "Every billboard on Highway 101 through the Bay Area, mapped and categorised, as a snapshot of what Silicon Valley is currently se…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "mike-barton-mikes-cv",
+    "name": "Mike Barton (mikes.cv)",
+    "blurb": "Portfolio of a multidisciplinary software designer in Manchester. Sent twice, so worth keeping as a reference point for how a UK…",
+    "meta": "Social account",
+    "badge": "Resource",
+    "pick": false
   },
   {
     "kind": "design",
