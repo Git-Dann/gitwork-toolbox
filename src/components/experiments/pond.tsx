@@ -14,9 +14,14 @@ type Koi = {
   gap: number;
   size: number;
   heading: number;
-  wander: number;
+  /** Where this fish reads the noise field for its course — its own lane through it. */
+  lane: number;
   speed: number;
   cruise: number;
+  /** How hard it is working right now: koi beat, then coast, they do not cruise. */
+  drive: number;
+  want: number;
+  until: number;
   stroke: number;
   waves: number;
   spook: number;
@@ -104,10 +109,18 @@ const curve = (c: Path2D, pts: Pt[]) => {
 };
 
 /**
- * A koi pond. The fish are not animated — each one is a chain of twelve joints, and every
- * joint is dragged to a fixed distance behind the one in front of it with a limit on how
- * far it may turn. Swimming is one line: the head's heading gets a sine wiggle, and the
- * body's whole undulation is that wiggle arriving down the chain a joint at a time.
+ * A koi pond.
+ *
+ * One water surface drives everything: drifting gradient noise plus a travelling ring per
+ * tap make a height field, the caustics are its curvature, and each fish is displaced by
+ * the slope above it.
+ *
+ * The fish are not animated. Each is a chain of twelve joints dragged along behind the
+ * head, with a swimming wave laid across that chain — amplitude a fortieth of a body
+ * length at the nose and a fifth of one at the tail, travelling head to tail at whatever
+ * rate fits about one wave along the body at the speed the fish is going. Course comes
+ * off the same noise field as the water, and the speed bursts and glides, because a fish
+ * held at one speed on a jittering heading reads as a wind-up toy sliding sideways.
  *
  * Tap the water to drop feed, tap a koi to scare it.
  */
@@ -271,11 +284,17 @@ export function Pond() {
         gap,
         size,
         heading,
-        wander: 0,
-        speed: cruise,
+        lane: rand() * 900,
+        speed: cruise * 0.6,
+        drive: 0.5,
+        want: 0.5,
+        until: rand() * 2,
         cruise,
         stroke: rand() * Math.PI * 2,
-        waves: 1.05 + rand() * 0.35,
+        // Under one wavelength along the body. A carp is carangiform — it pushes with the
+        // back third and holds a single travelling curve. A full wave or more through the
+        // whole body is an eel, which is what asking for more undulation first produced.
+        waves: 0.56 + rand() * 0.22,
         spook: 0,
         flee: heading,
         base: skin.base,
@@ -549,9 +568,11 @@ export function Pond() {
               eaten += 1;
             }
           } else {
-            // A slow random walk on the turn rate, so a koi curves rather than jinking.
-            k.wander = clamp(k.wander + (rand() - 0.5) * 3.4 * dt, -0.75, 0.75);
-            vote(k.heading + k.wander, 0.9);
+            // Course drift read out of the same noise field as the water, on this fish's
+            // own lane through it. A random walk — which is what this was — jitters, and
+            // a fish chasing a jittering target swerves at its turn limit for ever, which
+            // is what made these look like they were sliding left and right.
+            vote(k.heading + noise(k.lane, clock * 0.09) * 2.2, 1.1);
           }
         }
 
@@ -575,13 +596,23 @@ export function Pond() {
         if (head.y > box.h - margin) by -= (head.y - (box.h - margin)) / margin;
         if (bx !== 0 || by !== 0) vote(Math.atan2(by, bx), 3.2 * Math.min(1.4, Math.hypot(bx, by)));
 
-        // One turn, capped. A fish cannot pivot faster than this however hard the votes
-        // pull, which is the difference between a startled koi and a compass needle.
-        const rate = (k.spook > 0 ? 3.6 : 1.9) * dt;
+        // One turn, capped — and a cruising koi turns at about thirty degrees a second,
+        // not a hundred. Measured, because the first two attempts at this both sat pinned
+        // at the limit and swerved.
+        const rate = (k.spook > 0 ? 3.2 : 0.6) * dt;
         k.heading += clamp(wrap(Math.atan2(wy, wx) - k.heading), -rate, rate);
 
-        const burst = 1 + k.spook * 1.7;
-        k.speed += (k.cruise * burst - k.speed) * Math.min(1, 3.4 * dt);
+        // Burst and glide. A koi beats for a second or two and then coasts, and a fish
+        // held at one speed for ever is the thing that reads as a wind-up toy.
+        k.until -= dt;
+        if (k.until <= 0) {
+          const push = rand() < 0.55;
+          k.want = push ? 0.82 + rand() * 0.18 : 0.2 + rand() * 0.2;
+          k.until = push ? 1.2 + rand() * 1.7 : 1 + rand() * 2.2;
+        }
+        k.drive += (k.want - k.drive) * Math.min(1, 1.5 * dt);
+        const target = k.cruise * (0.3 + 0.85 * k.drive) * (1 + k.spook * 1.7);
+        k.speed += (target - k.speed) * Math.min(1, 2 * dt);
 
         // The head travels straight along its heading. Everything you read as swimming
         // happens behind it — drive the head sideways instead, as the first version did,
@@ -612,13 +643,16 @@ export function Pond() {
         const span = k.gap * (JOINTS - 1);
         k.stroke += (k.speed / span) * k.waves * Math.PI * 2 * 1.15 * dt;
         const lag = (Math.PI * 2 * k.waves) / (JOINTS - 1);
-        const swing = k.size * (0.95 + k.spook * 0.45);
+        const swing = k.size * (0.8 + 1.5 * k.drive + k.spook * 0.5);
         for (let i = 0; i < JOINTS; i++) {
-          // Amplitude grows as the square of how far down the body you are: nothing at
-          // the nose, about a fifth of a body length at the tail. That ratio is the
-          // whole difference between a fish swimming and a worm wriggling.
+          // The amplitude envelope down the body: about a fifth of a body length at the
+          // tail, a thirtieth at the nose. Squared, as this first had it, leaves the
+          // middle dead and only the last two joints moving — a plank with a waggling
+          // tip; too flat and the whole fish ripples like an eel. The nose term is small
+          // but has to be there, or the head looks bolted to a rail.
           const along = i / (JOINTS - 1);
-          const wave = Math.sin(k.stroke - i * lag) * swing * along * along;
+          const wave =
+            Math.sin(k.stroke - i * lag) * swing * (0.03 + 0.97 * Math.pow(along, 1.85));
           const side = spine[i] + Math.PI / 2;
           k.body[i].x = k.joints[i].x + Math.cos(side) * wave;
           k.body[i].y = k.joints[i].y + Math.sin(side) * wave;
@@ -1024,7 +1058,7 @@ export function Pond() {
           if (k !== hit && d > wake) continue;
           k.spook = k === hit ? 1 : 0.55 * (1 - d / wake);
           k.flee = Math.atan2(k.joints[0].y - y, k.joints[0].x - x);
-          k.wander = 0;
+          k.drive = 1;
         }
       } else {
         pellets.push({ x, y, age: 0, drift: rand() * Math.PI * 2 });
