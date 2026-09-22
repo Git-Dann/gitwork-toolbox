@@ -4899,6 +4899,24 @@
       "kind": "resource",
       "addedAt": "2026-09-07T10:49:00.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "The Twelve-Factor App",
+      "link": "https://12factor.net/",
+      "resourceType": "Docs & reference",
+      "category": "Engineering practice / production readiness",
+      "takeaway": "Twelve rules for building an app that can be deployed repeatedly without hand-holding, written by Adam Wiggins at Heroku in 2011 from watching a few hundred thousand apps rot. The ones that still catch people: config lives in the environment and never in the repo, dev and production are kept as alike as possible, logs are an unbuffered stream the app writes to stdout rather than files it manages, processes hold no state between requests, dependencies are declared explicitly rather than assumed present, and build, release and run are three separate stages so a deploy can be rolled back to an exact artefact.",
+      "whatToDo": "Reference and shared vocabulary. Action: use factors III (config), V (build/release/run), X (dev/prod parity) and XI (logs) as the checklist when taking on an inherited client app or handing one back, and check they line up with what Pulse already scans for.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "The text on the site has not been touched since 2017 and was written for Heroku dynos in 2011, so it predates containers as a default, Kubernetes, serverless and edge runtimes. Port binding (VII) and scaling via the process model (VIII) are Heroku assumptions rather than laws, and there is nothing in it about secrets management, observability beyond logs, or build caching.",
+        "Not abandoned though: it was open-sourced in late 2024 and a replacement is being written in the open at github.com/twelve-factor/twelve-factor under CC BY 4.0, with a Discord, a mailing list and posts through 2025. The site you would send someone to is nine years behind that work.",
+        "Value to us is as a checklist and a shared vocabulary for readiness and handover conversations, not as a methodology to follow literally. Copyright now sits with Salesforce; the manifesto text in the new repo is CC BY 4.0."
+      ],
+      "addedAt": "2026-09-22T15:35:26.000Z",
+      "addedBy": "Dan"
     }
   ]
 }

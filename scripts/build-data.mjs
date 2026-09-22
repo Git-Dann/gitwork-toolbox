@@ -202,6 +202,7 @@ const GROUPS = [
     categories: [
       "Tool discovery",
       "Research / tools",
+      "Engineering practice / production readiness",
       "Funding & credits",
       "Newsletter lead magnet",
       "Unknown",

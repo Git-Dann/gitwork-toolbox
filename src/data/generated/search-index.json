@@ -4842,6 +4842,15 @@
     "pick": false
   },
   {
+    "kind": "resource",
+    "slug": "the-twelve-factor-app",
+    "name": "The Twelve-Factor App",
+    "blurb": "Twelve rules for building an app that can be deployed repeatedly without hand-holding, written by Adam Wiggins at Heroku in 2011…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
     "kind": "design",
     "slug": "acorns",
     "name": "Acorns",
