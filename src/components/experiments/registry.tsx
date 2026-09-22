@@ -6,6 +6,7 @@ import { Constellation } from "./constellation";
 import { EasingLab } from "./easing-lab";
 import { DoubleUp } from "./double-up";
 import { HeadsExperiment } from "./heads-experiment";
+import { Pond } from "./pond";
 import { PosterPress } from "./poster-press";
 import { Sand } from "./sand";
 import { Theremin } from "./theremin";
@@ -81,6 +82,18 @@ export const EXPERIMENTS: Experiment[] = [
       "The camera frame is drawn into an offscreen canvas one pixel per character — the browser's own downscaler does the averaging — and each row is painted as a single string, because a monospace row aligns itself and nine thousand fillText calls a frame does not. Rec. 601 luma picks the glyph. It asks before it opens the camera, keeps nothing, uploads nothing, and stops the stream the moment you leave.",
     credits: [{ label: "your camera, your browser, nowhere else" }],
     render: () => <AsciiMirror />,
+  },
+  {
+    slug: "pond",
+    name: "Koi pond",
+    blurb: "Feed the fish and watch them turn; nothing else to do",
+    note:
+      "There is one water surface in this and everything is read off it. Two octaves of drifting gradient noise, plus a travelling ring for every tap, make a height field; the bright web on the floor is that field's curvature — light focuses where the surface is concave, so the brightness is the reciprocal of how far it stretches, which is what makes caustics filaments rather than cloud; and each koi is shifted by how far the water above it tips, so under a passing ring a fish swims out from under itself. The koi themselves are not animated either: each is a chain of twelve joints, every joint dragged to a fixed distance behind the one in front and stopped from turning more than a quarter radian against it, and the entire undulation is one sine wiggle on the head arriving down the chain a joint at a time. The tail beat is not chosen — it is whatever fits about one wave along the body at the speed the fish is going, which is why a startled koi beats faster without anything saying so. Tap the water to drop feed; tap a koi and it bolts.",
+    credits: [
+      { label: "after the pond on shwn.design", href: "https://www.shwn.design/" },
+      { label: "procedural, not keyframed — no libraries" },
+    ],
+    render: () => <Pond />,
   },
   {
     slug: "poster-press",
