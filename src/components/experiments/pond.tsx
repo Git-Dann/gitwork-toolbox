@@ -5,7 +5,10 @@ import { useCallback, useEffect, useRef, useState } from "react";
 type Pt = { x: number; y: number };
 
 type Koi = {
+  /** The path the fish is travelling: a follow-the-leader chain, no undulation in it. */
   joints: Pt[];
+  /** What you see: the spine with the swimming wave laid across it. */
+  body: Pt[];
   /** Forward-facing angle at each joint, recomputed each step so drawing works nothing out. */
   facing: number[];
   gap: number;
@@ -16,8 +19,8 @@ type Koi = {
   cruise: number;
   stroke: number;
   waves: number;
-  flick: number;
   spook: number;
+  flee: number;
   base: string;
   marks: { at: number; lat: number; r: number; tone: number }[];
   ink: string[];
@@ -42,10 +45,13 @@ const SHADE = 3;
 const BED = 2;
 const FOLD = 20;
 const FILAMENT = 0.07;
+const SHEEN = 2.2;
 /** Half-width down the body: widest just behind the head, tapering to the wrist of the tail. */
 const PROFILE = [0.62, 0.86, 0.95, 0.94, 0.88, 0.79, 0.68, 0.57, 0.46, 0.35, 0.25, 0.16];
 const MAX_KOI = 24;
-const RING_LIFE = 1.9;
+const RING_LIFE = 3.4;
+/** Beyond this the oldest ring is dropped: the surface pass costs one test a ring a cell. */
+const MAX_RINGS = 7;
 const PELLET_LIFE = 14;
 
 const WATER = {
@@ -240,8 +246,10 @@ export function Pond() {
       const gap = size * 0.82;
       const heading = rand() * Math.PI * 2;
       const joints: Pt[] = [];
+      const body: Pt[] = [];
       for (let i = 0; i < JOINTS; i++) {
         joints.push({ x: x - Math.cos(heading) * gap * i, y: y - Math.sin(heading) * gap * i });
+        body.push({ x: joints[i].x, y: joints[i].y });
       }
       const skin = dress(Math.floor(rand() * 5));
       const marks: Koi["marks"] = [];
@@ -258,6 +266,7 @@ export function Pond() {
       const cruise = gap * (JOINTS - 1) * (0.42 + rand() * 0.3);
       return {
         joints,
+        body,
         facing: new Array(JOINTS).fill(heading),
         gap,
         size,
@@ -267,8 +276,8 @@ export function Pond() {
         cruise,
         stroke: rand() * Math.PI * 2,
         waves: 1.05 + rand() * 0.35,
-        flick: 0,
         spook: 0,
+        flee: heading,
         base: skin.base,
         ink: skin.ink,
         eye: skin.eye,
@@ -357,6 +366,11 @@ export function Pond() {
       wctx.fillRect(0, 0, w, h);
     };
 
+    const ripple = (x: number, y: number, force: number) => {
+      rings.push({ x, y, age: 0, force });
+      if (rings.length > MAX_RINGS) rings.shift();
+    };
+
     const nearestPellet = (k: Koi) => {
       const head = k.joints[0];
       let best: Pellet | null = null;
@@ -369,10 +383,6 @@ export function Pond() {
         }
       }
       return best;
-    };
-
-    const steer = (k: Koi, want: number, rate: number, dt: number) => {
-      k.heading += wrap(want - k.heading) * Math.min(1, rate * dt);
     };
 
     /**
@@ -437,7 +447,12 @@ export function Pond() {
           // folds over itself, dark everywhere else. A ramp instead of a reciprocal is
           // what turns caustics into cloud.
           const fold = 1 + (l + r + u + d - 4 * height[i]) * FOLD;
-          soft[i] = Math.min(1, FILAMENT / Math.abs(fold));
+          // Sheen off the surface itself, as distinct from light landing on the floor:
+          // how steeply the water tilts, cubed so only the flank of a real wave shows and
+          // the ambient swell stays dark.
+          const tilt = (r - l) * (r - l) + (d - u) * (d - u);
+          const sheen = Math.min(1, tilt * SHEEN);
+          soft[i] = Math.min(1, FILAMENT / Math.abs(fold) + sheen * sheen * sheen * 0.75);
         }
       }
       // Smoothed here, on eleven thousand grid cells, rather than with ctx.filter on two
@@ -445,13 +460,16 @@ export function Pond() {
       for (let y = 1; y < rows - 1; y++) {
         for (let x = 1; x < cols - 1; x++) {
           const i = y * cols + x;
+          // A full 3×3 rather than a plus: the diagonals are what stop a crest running
+          // at an angle to the grid from breaking up into beads.
           const v =
             (soft[i] * 4 +
-              soft[i - 1] +
-              soft[i + 1] +
-              soft[i - cols] +
-              soft[i + cols]) /
-            8;
+              (soft[i - 1] + soft[i + 1] + soft[i - cols] + soft[i + cols]) * 2 +
+              soft[i - cols - 1] +
+              soft[i - cols + 1] +
+              soft[i + cols - 1] +
+              soft[i + cols + 1]) /
+            16;
           const at = i * 4;
           data[at] = 255;
           data[at + 1] = 255;
@@ -462,15 +480,29 @@ export function Pond() {
       surfCtx.putImageData(caustic, 0, 0);
     };
 
-    /** How far the surface tips at a point, in grid units — the fish ride this. */
+    /**
+     * How far the surface tips at a point. Interpolated between cells, not snapped to the
+     * nearest one: a fish drawn from a nearest-cell lookup jumps ten pixels sideways every
+     * time it crosses a cell boundary, which is most of what looks unsmooth.
+     */
     const slopeAt = (px: number, py: number) => {
-      const x = clamp(Math.round(px / SURFACE), 1, cols - 2);
-      const y = clamp(Math.round(py / SURFACE), 1, rows - 2);
-      const i = y * cols + x;
-      return {
-        x: (height[i + 1] - height[i - 1]) * 0.5,
-        y: (height[i + cols] - height[i - cols]) * 0.5,
+      const gx = clamp(px / SURFACE, 1, cols - 2.001);
+      const gy = clamp(py / SURFACE, 1, rows - 2.001);
+      const x = Math.floor(gx);
+      const y = Math.floor(gy);
+      const fx = gx - x;
+      const fy = gy - y;
+      const at = (cx: number, cy: number) => {
+        const i = cy * cols + cx;
+        return { x: (height[i + 1] - height[i - 1]) * 0.5, y: (height[i + cols] - height[i - cols]) * 0.5 };
       };
+      const a = at(x, y);
+      const b = at(x + 1, y);
+      const c = at(x, y + 1);
+      const d = at(x + 1, y + 1);
+      const top = { x: a.x + (b.x - a.x) * fx, y: a.y + (b.y - a.y) * fx };
+      const bot = { x: c.x + (d.x - c.x) * fx, y: c.y + (d.y - c.y) * fx };
+      return { x: top.x + (bot.x - top.x) * fy, y: top.y + (bot.y - top.y) * fy };
     };
 
     const step = (dt: number) => {
@@ -492,20 +524,35 @@ export function Pond() {
 
       for (const k of koi) {
         const head = k.joints[0];
-        k.spook = Math.max(0, k.spook - dt);
+        k.spook = Math.max(0, k.spook - dt / 1.3);
 
-        const food = nearestPellet(k);
-        if (food) {
-          steer(k, Math.atan2(food.y - head.y, food.x - head.x), 2.4, dt);
-          if (Math.hypot(food.x - head.x, food.y - head.y) < k.size * 1.1) {
-            pellets.splice(pellets.indexOf(food), 1);
-            rings.push({ x: food.x, y: food.y, age: 0, force: 0.5 });
-            eaten += 1;
-          }
+        // Every influence is a weighted vote on which way to face, summed before anything
+        // is applied. Steering on each in turn, as this first did, lets two of them fight
+        // inside a single frame — which is what a shoal converging on one pellet does,
+        // and it reads as the fish shaking.
+        let wx = Math.cos(k.heading);
+        let wy = Math.sin(k.heading);
+        const vote = (angle: number, weight: number) => {
+          wx += Math.cos(angle) * weight;
+          wy += Math.sin(angle) * weight;
+        };
+
+        if (k.spook > 0) {
+          vote(k.flee, 4.5 * k.spook);
         } else {
-          // A slow random walk on the turn rate, so a koi curves rather than jinking.
-          k.wander = clamp(k.wander + (rand() - 0.5) * 3.4 * dt, -0.9, 0.9);
-          k.heading += k.wander * dt;
+          const food = nearestPellet(k);
+          if (food) {
+            vote(Math.atan2(food.y - head.y, food.x - head.x), 1.7);
+            if (Math.hypot(food.x - head.x, food.y - head.y) < k.size * 1.1) {
+              pellets.splice(pellets.indexOf(food), 1);
+              ripple(food.x, food.y, 0.32);
+              eaten += 1;
+            }
+          } else {
+            // A slow random walk on the turn rate, so a koi curves rather than jinking.
+            k.wander = clamp(k.wander + (rand() - 0.5) * 3.4 * dt, -0.75, 0.75);
+            vote(k.heading + k.wander, 0.9);
+          }
         }
 
         // Keep out of each other's way — weak and short-range, or the shoal shears apart.
@@ -515,9 +562,7 @@ export function Pond() {
           const dy = head.y - other.joints[0].y;
           const d = Math.hypot(dx, dy);
           const room = (k.size + other.size) * 2.4;
-          if (d > 0.01 && d < room) {
-            steer(k, Math.atan2(dy, dx), (1 - d / room) * 3.2, dt);
-          }
+          if (d > 0.01 && d < room) vote(Math.atan2(dy, dx), (1 - d / room) * 1.6);
         }
 
         // The bank: the margin scales with the fish, so a big koi turns earlier.
@@ -528,35 +573,27 @@ export function Pond() {
         if (head.x > box.w - margin) bx -= (head.x - (box.w - margin)) / margin;
         if (head.y < margin) by += (margin - head.y) / margin;
         if (head.y > box.h - margin) by -= (head.y - (box.h - margin)) / margin;
-        if (bx !== 0 || by !== 0) {
-          steer(k, Math.atan2(by, bx), 3.2 * Math.min(1.4, Math.hypot(bx, by)), dt);
-        }
+        if (bx !== 0 || by !== 0) vote(Math.atan2(by, bx), 3.2 * Math.min(1.4, Math.hypot(bx, by)));
 
-        const burst = 1 + k.spook * 2.6;
-        k.speed += (k.cruise * burst - k.speed) * Math.min(1, 3 * dt);
+        // One turn, capped. A fish cannot pivot faster than this however hard the votes
+        // pull, which is the difference between a startled koi and a compass needle.
+        const rate = (k.spook > 0 ? 3.6 : 1.9) * dt;
+        k.heading += clamp(wrap(Math.atan2(wy, wx) - k.heading), -rate, rate);
 
-        // The tail beat is not a chosen frequency: it is whatever fits about one wave
-        // along the body at the speed the fish is going, which is why a startled koi
-        // beats faster without anything saying so. Phase is accumulated rather than read
-        // off the clock, so a change of speed bends the wave instead of snapping it.
-        const body = k.gap * (JOINTS - 1);
-        const beat = (k.speed / body) * k.waves * Math.PI * 2;
-        k.stroke += beat * dt;
-        k.flick = Math.cos(k.stroke);
-        // Sideways velocity is the derivative of the sine the head is tracing, so the
-        // amplitude holds at half a body width however fast or slow the fish is moving.
-        const lateral = k.flick * k.size * 0.78 * beat;
-        const side = k.heading + Math.PI / 2;
-        const vx = Math.cos(k.heading) * k.speed + Math.cos(side) * lateral;
-        const vy = Math.sin(k.heading) * k.speed + Math.sin(side) * lateral;
-        head.x = clamp(head.x + vx * dt, 4, box.w - 4);
-        head.y = clamp(head.y + vy * dt, 4, box.h - 4);
-        const aim = Math.atan2(vy, vx);
+        const burst = 1 + k.spook * 1.7;
+        k.speed += (k.cruise * burst - k.speed) * Math.min(1, 3.4 * dt);
 
-        // The chain: each joint pulled to a fixed distance behind the last, and not
-        // allowed to turn more than a quarter radian against it, so the body cannot fold.
-        let back = aim + Math.PI;
-        k.facing[0] = aim;
+        // The head travels straight along its heading. Everything you read as swimming
+        // happens behind it — drive the head sideways instead, as the first version did,
+        // and the whole fish shimmies like a struck tuning fork.
+        head.x = clamp(head.x + Math.cos(k.heading) * k.speed * dt, 4, box.w - 4);
+        head.y = clamp(head.y + Math.sin(k.heading) * k.speed * dt, 4, box.h - 4);
+
+        // The spine: each joint pulled to a fixed distance behind the last, and not
+        // allowed to turn more than a quarter radian against it, so it cannot fold.
+        let back = k.heading + Math.PI;
+        const spine = k.facing;
+        spine[0] = k.heading;
         for (let i = 1; i < JOINTS; i++) {
           const prev = k.joints[i - 1];
           const here = k.joints[i];
@@ -564,8 +601,33 @@ export function Pond() {
           const ang = back + clamp(wrap(raw - back), -0.26, 0.26);
           here.x = prev.x + Math.cos(ang) * k.gap;
           here.y = prev.y + Math.sin(ang) * k.gap;
-          k.facing[i] = ang + Math.PI;
+          spine[i] = ang + Math.PI;
           back = ang;
+        }
+
+        // The tail beat is not a chosen frequency: it is whatever fits about one wave
+        // along the body at the speed the fish is going, which is why a startled koi
+        // beats faster without anything saying so. Phase accumulates rather than being
+        // read off the clock, so a change of speed bends the wave instead of snapping it.
+        const span = k.gap * (JOINTS - 1);
+        k.stroke += (k.speed / span) * k.waves * Math.PI * 2 * 1.15 * dt;
+        const lag = (Math.PI * 2 * k.waves) / (JOINTS - 1);
+        const swing = k.size * (0.95 + k.spook * 0.45);
+        for (let i = 0; i < JOINTS; i++) {
+          // Amplitude grows as the square of how far down the body you are: nothing at
+          // the nose, about a fifth of a body length at the tail. That ratio is the
+          // whole difference between a fish swimming and a worm wriggling.
+          const along = i / (JOINTS - 1);
+          const wave = Math.sin(k.stroke - i * lag) * swing * along * along;
+          const side = spine[i] + Math.PI / 2;
+          k.body[i].x = k.joints[i].x + Math.cos(side) * wave;
+          k.body[i].y = k.joints[i].y + Math.sin(side) * wave;
+        }
+        // Facings come off the drawn body, not the spine, so fins and scales sit square
+        // to the shape on screen rather than to the path it is following.
+        k.facing[0] = Math.atan2(k.body[0].y - k.body[1].y, k.body[0].x - k.body[1].x);
+        for (let i = 1; i < JOINTS; i++) {
+          k.facing[i] = Math.atan2(k.body[i - 1].y - k.body[i].y, k.body[i - 1].x - k.body[i].x);
         }
       }
     };
@@ -573,25 +635,25 @@ export function Pond() {
     const bodyPath = (k: Koi, dx: number, dy: number) => {
       const c = new Path2D();
       const pts: Pt[] = [];
-      const nose = k.joints[0];
+      const nose = k.body[0];
       pts.push({
         x: nose.x + Math.cos(k.facing[0]) * k.size * 0.55 + dx,
         y: nose.y + Math.sin(k.facing[0]) * k.size * 0.55 + dy,
       });
       for (let i = 0; i < JOINTS; i++) {
         const w = PROFILE[i] * k.size;
-        const p = k.joints[i];
+        const p = k.body[i];
         const perp = k.facing[i] + Math.PI / 2;
         pts.push({ x: p.x + Math.cos(perp) * w + dx, y: p.y + Math.sin(perp) * w + dy });
       }
-      const tail = k.joints[JOINTS - 1];
+      const tail = k.body[JOINTS - 1];
       pts.push({
         x: tail.x - Math.cos(k.facing[JOINTS - 1]) * k.size * 0.3 + dx,
         y: tail.y - Math.sin(k.facing[JOINTS - 1]) * k.size * 0.3 + dy,
       });
       for (let i = JOINTS - 1; i >= 0; i--) {
         const w = PROFILE[i] * k.size;
-        const p = k.joints[i];
+        const p = k.body[i];
         const perp = k.facing[i] - Math.PI / 2;
         pts.push({ x: p.x + Math.cos(perp) * w + dx, y: p.y + Math.sin(perp) * w + dy });
       }
@@ -607,8 +669,8 @@ export function Pond() {
      */
     const finPath = (k: Koi, dx: number, dy: number) => {
       const c = new Path2D();
-      const wrist = k.joints[JOINTS - 4];
-      const tip = k.joints[JOINTS - 1];
+      const wrist = k.body[JOINTS - 4];
+      const tip = k.body[JOINTS - 1];
       const lag = Math.cos(k.stroke - 0.9);
       const dir = k.facing[JOINTS - 1] + lag * 0.26;
       const bx = Math.cos(dir);
@@ -639,7 +701,7 @@ export function Pond() {
     };
 
     const pectorals = (c: CanvasRenderingContext2D, k: Koi, ox: number, oy: number) => {
-      const at = { x: k.joints[2].x + ox, y: k.joints[2].y + oy };
+      const at = { x: k.body[2].x + ox, y: k.body[2].y + oy };
       const dir = k.facing[2];
       const flap = Math.cos(k.stroke * 2) * 0.3;
       for (const side of [1, -1]) {
@@ -671,7 +733,7 @@ export function Pond() {
       ctx.clip(body);
       for (const mark of k.marks) {
         const i = Math.floor(mark.at);
-        const p = k.joints[i];
+        const p = k.body[i];
         const w = PROFILE[i] * k.size;
         const perp = k.facing[i] + Math.PI / 2;
         ctx.beginPath();
@@ -692,7 +754,7 @@ export function Pond() {
       ctx.strokeStyle = "rgb(20 22 26 / 0.13)";
       ctx.lineWidth = Math.max(0.5, k.size * 0.07);
       for (let i = 1; i < JOINTS - 2; i++) {
-        const p = k.joints[i];
+        const p = k.body[i];
         const w = PROFILE[i] * k.size;
         const f = k.facing[i];
         const perp = f + Math.PI / 2;
@@ -716,8 +778,8 @@ export function Pond() {
       ctx.stroke(body);
 
       // Light off the shoulders, which is what stops a flat fill reading as a cut-out.
-      const nose = { x: k.joints[0].x + ox, y: k.joints[0].y + oy };
-      const sh = k.joints[2];
+      const nose = { x: k.body[0].x + ox, y: k.body[0].y + oy };
+      const sh = k.body[2];
       ctx.fillStyle = "rgb(255 255 255 / 0.13)";
       ctx.beginPath();
       ctx.ellipse(
@@ -939,12 +1001,12 @@ export function Pond() {
       const rect = canvas.getBoundingClientRect();
       const x = event.clientX - rect.left;
       const y = event.clientY - rect.top;
-      rings.push({ x, y, age: 0, force: 1 });
+      ripple(x, y, 1);
 
       let hit: Koi | null = null;
       for (const k of koi) {
         for (let i = 0; i < JOINTS; i++) {
-          const p = k.joints[i];
+          const p = k.body[i];
           if (Math.hypot(p.x - x, p.y - y) < PROFILE[i] * k.size + 12) {
             hit = k;
             break;
@@ -954,10 +1016,16 @@ export function Pond() {
       }
 
       if (hit) {
-        const head = hit.joints[0];
-        hit.spook = 1.5;
-        hit.heading = Math.atan2(head.y - y, head.x - x);
-        hit.wander = 0;
+        // The one you touched bolts, and so does anything close enough to have felt it —
+        // a startled koi is the loudest thing in a pond and nothing near it ignores that.
+        const wake = 150 * box.scale;
+        for (const k of koi) {
+          const d = Math.hypot(k.joints[0].x - x, k.joints[0].y - y);
+          if (k !== hit && d > wake) continue;
+          k.spook = k === hit ? 1 : 0.55 * (1 - d / wake);
+          k.flee = Math.atan2(k.joints[0].y - y, k.joints[0].x - x);
+          k.wander = 0;
+        }
       } else {
         pellets.push({ x, y, age: 0, drift: rand() * Math.PI * 2 });
       }
