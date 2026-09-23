@@ -3,16 +3,20 @@ import { Sidebar } from "@/components/sidebar";
 import { SiteFooter } from "@/components/site-footer";
 import { ThemeScript } from "@/components/theme-toggle";
 import { counts, designIndex } from "@/lib/data";
+import { shareMeta, siteUrl } from "@/lib/share";
 import "./globals.css";
 
+const TITLE = "Gitwork Toolbox — tools, prompts and kits for the studio";
+const LEAD =
+  "The studio's working reference: the tools Gitwork has actually assessed, the Foundry starter library, and the verdict on what to use, what to build and what to leave alone.";
+
 export const metadata: Metadata = {
-  title: {
-    default: "Gitwork Toolbox — tools, prompts and kits for the studio",
-    template: "%s — Gitwork Toolbox",
-  },
-  description:
-    "The studio's working reference: the tools Gitwork has actually assessed, the Foundry starter library, and the verdict on what to use, what to build and what to leave alone.",
+  // Absolute, or every share card resolves against whatever host pasted the link.
+  metadataBase: new URL(siteUrl),
+  title: { default: TITLE, template: "%s — Gitwork Toolbox" },
+  description: LEAD,
   applicationName: "Gitwork Toolbox",
+  ...shareMeta({ title: TITLE, description: LEAD }),
   // An internal studio reference with candid verdicts in it, so it stays out of
   // search results until someone decides otherwise.
   robots: { index: false, follow: false },

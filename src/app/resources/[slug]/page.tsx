@@ -12,6 +12,7 @@ import {
   UsefulnessBadge,
 } from "@/components/ui";
 import { getResource, resources } from "@/lib/data";
+import { shareMeta } from "@/lib/share";
 
 export function generateStaticParams() {
   return resources.map((resource) => ({ slug: resource.slug }));
@@ -25,7 +26,12 @@ export async function generateMetadata({
   const { slug } = await params;
   const resource = getResource(slug);
   if (!resource) return { title: "Resource not found" };
-  return { title: resource.name, description: resource.takeaway.slice(0, 180) };
+  const description = resource.takeaway.slice(0, 180);
+  return {
+    title: resource.name,
+    description,
+    ...shareMeta({ title: resource.name, description, kind: "resources", slug: resource.slug }),
+  };
 }
 
 export default async function ResourcePage({ params }: { params: Promise<{ slug: string }> }) {

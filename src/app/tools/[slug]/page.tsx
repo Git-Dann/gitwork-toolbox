@@ -14,6 +14,7 @@ import {
   UsefulnessBadge,
 } from "@/components/ui";
 import { getGroup, getTool, relatedTools, tools } from "@/lib/data";
+import { shareMeta } from "@/lib/share";
 
 export function generateStaticParams() {
   return tools.map((tool) => ({ slug: tool.slug }));
@@ -27,7 +28,12 @@ export async function generateMetadata({
   const { slug } = await params;
   const tool = getTool(slug);
   if (!tool) return { title: "Tool not found" };
-  return { title: tool.name, description: tool.what.slice(0, 180) };
+  const description = tool.what.slice(0, 180);
+  return {
+    title: tool.name,
+    description,
+    ...shareMeta({ title: tool.name, description, kind: "tools", slug: tool.slug }),
+  };
 }
 
 export default async function ToolPage({ params }: { params: Promise<{ slug: string }> }) {

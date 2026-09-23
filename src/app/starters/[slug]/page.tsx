@@ -6,6 +6,7 @@ import { CopyButton } from "@/components/copy-button";
 import { BackLink, Container, Panel, Section } from "@/components/page-shell";
 import { ApprovedBadge, Badge, Eyebrow, RecommendedBadge, SectionHeading } from "@/components/ui";
 import { getStarter, relatedStarters, starters } from "@/lib/data";
+import { shareMeta } from "@/lib/share";
 import { Markdown } from "@/lib/markdown";
 
 export function generateStaticParams() {
@@ -20,7 +21,12 @@ export async function generateMetadata({
   const { slug } = await params;
   const starter = getStarter(slug);
   if (!starter) return { title: "Starter not found" };
-  return { title: starter.name, description: starter.summary.slice(0, 180) };
+  const description = starter.summary.slice(0, 180);
+  return {
+    title: starter.name,
+    description,
+    ...shareMeta({ title: starter.name, description, kind: "starters", slug: starter.slug }),
+  };
 }
 
 export default async function StarterPage({ params }: { params: Promise<{ slug: string }> }) {
