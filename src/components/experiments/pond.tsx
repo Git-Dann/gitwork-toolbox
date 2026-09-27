@@ -35,10 +35,31 @@ type Koi = {
   waves: number;
   spook: number;
   flee: number;
+  skin: Variety;
+};
+
+/**
+ * A koi variety: four flat colours and a set of markings placed by hand.
+ *
+ * There is no lighting anywhere in here on purpose. The reference this is chasing has
+ * none either — no rim light, no specular, no gradient on the body; its only colour
+ * operation on a fish is a depth tint. What makes a koi read is a clean flat base, a
+ * marking colour that is properly dark rather than grey, and patches that sit where a
+ * breeder would recognise them. Shading on top of that does not add realism, it adds mud.
+ */
+type Variety = {
   base: string;
-  marks: { at: number; lat: number; r: number; tone: number }[];
-  ink: string[];
+  /** Duller and cooler than the body: a fin is thinner tissue, not the same sheet. */
+  fin: string;
+  accent: string;
+  marking: string;
   eye: string;
+  /**
+   * at: how far down the body, 0 nose to 1 tail. long: half-length as a fraction of the
+   * whole fish. wide: half-width as a fraction of the body's width at that point.
+   * off: how far off the centreline, in local half-widths.
+   */
+  patches: { at: number; long: number; wide: number; off: number; ink: boolean }[];
 };
 
 /**
@@ -282,23 +303,89 @@ export function Pond() {
       water = luma(hex(get("--bg", "#0c0c18"), "#0c0c18")) < 0.5 ? WATER.dark : WATER.light;
     };
 
-    /** Five real koi varieties, two of them recoloured into the house palette. */
-    const dress = (pick: number) => {
-      const white = "#f4efe6";
-      const charcoal = "#26262f";
-      switch (pick) {
-        case 0:
-          return { base: white, ink: [house.flag], eye: charcoal }; // kohaku
-        case 1:
-          return { base: white, ink: [house.flag, charcoal], eye: charcoal }; // showa
-        case 2:
-          return { base: house.amber, ink: ["#f6dfa8"], eye: "#4a3714" }; // ogon
-        case 3:
-          return { base: white, ink: [house.violet], eye: charcoal };
-        default:
-          return { base: white, ink: [house.green, charcoal], eye: charcoal };
-      }
-    };
+    /**
+     * Six varieties: four traditional, two recoloured into the house palette so the site
+     * is in the pond somewhere. Markings are placed, not scattered — a kohaku is three
+     * red patches at particular stations down a white fish, and a shoal of randomly
+     * spotted fish never reads as koi however carefully the spots are drawn.
+     */
+    const varieties = (): Variety[] => [
+      {
+        // Kohaku: white with red. The one everybody pictures.
+        base: "#f1eadb",
+        fin: "#e4dbc7",
+        accent: "#d4472c",
+        marking: "#27251f",
+        eye: "#1c1a16",
+        patches: [
+          { at: 0.17, long: 0.175, wide: 0.78, off: 0.04, ink: false },
+          { at: 0.46, long: 0.21, wide: 0.72, off: -0.14, ink: false },
+          { at: 0.74, long: 0.158, wide: 0.64, off: 0.16, ink: false },
+        ],
+      },
+      {
+        // Sanke: kohaku with a scatter of black over the top.
+        base: "#f2ebdc",
+        fin: "#e5dcc9",
+        accent: "#d9502f",
+        marking: "#20211f",
+        eye: "#1c1a16",
+        patches: [
+          { at: 0.2, long: 0.175, wide: 0.72, off: 0.05, ink: false },
+          { at: 0.56, long: 0.193, wide: 0.68, off: -0.15, ink: false },
+          { at: 0.38, long: 0.088, wide: 0.32, off: 0.4, ink: true },
+          { at: 0.77, long: 0.079, wide: 0.3, off: -0.38, ink: true },
+        ],
+      },
+      {
+        // Showa: black fish with red and white on it, so the ink runs big.
+        base: "#ece4d3",
+        fin: "#cdc3ad",
+        accent: "#d3462c",
+        marking: "#1e201c",
+        eye: "#131310",
+        patches: [
+          { at: 0.26, long: 0.263, wide: 0.9, off: -0.1, ink: true },
+          { at: 0.44, long: 0.175, wide: 0.7, off: 0.18, ink: false },
+          { at: 0.68, long: 0.228, wide: 0.82, off: 0.06, ink: true },
+          { at: 0.85, long: 0.105, wide: 0.5, off: -0.2, ink: false },
+        ],
+      },
+      {
+        // Ogon: one solid metallic colour, no markings at all.
+        base: "#e0a634",
+        fin: "#cf922c",
+        accent: "#cf7626",
+        marking: "#7a4520",
+        eye: "#3d2410",
+        patches: [{ at: 0.3, long: 0.28, wide: 0.55, off: 0.1, ink: false }],
+      },
+      {
+        // House violet, in the shape of a tancho: one patch, on the head.
+        base: "#f1eadb",
+        fin: "#e2d9c6",
+        accent: house.violet,
+        marking: "#26242c",
+        eye: "#1c1a16",
+        patches: [
+          { at: 0.11, long: 0.131, wide: 0.66, off: 0, ink: false },
+          { at: 0.55, long: 0.175, wide: 0.6, off: -0.16, ink: false },
+        ],
+      },
+      {
+        // House green, marked like a shiro with the ink swapped for colour.
+        base: "#eae5da",
+        fin: "#d6d1c5",
+        accent: house.green,
+        marking: "#242a28",
+        eye: "#161a18",
+        patches: [
+          { at: 0.3, long: 0.21, wide: 0.74, off: 0.08, ink: false },
+          { at: 0.62, long: 0.14, wide: 0.5, off: -0.24, ink: true },
+          { at: 0.8, long: 0.131, wide: 0.55, off: 0.14, ink: false },
+        ],
+      },
+    ];
 
     const spawn = (x: number, y: number): Koi => {
       // A carp seen from above is a broad fish: about two and a half to three times as
@@ -314,17 +401,8 @@ export function Pond() {
         joints.push({ x: x - Math.cos(heading) * gap * i, y: y - Math.sin(heading) * gap * i });
         body.push({ x: joints[i].x, y: joints[i].y });
       }
-      const skin = dress(Math.floor(rand() * 5));
-      const marks: Koi["marks"] = [];
-      const count = 3 + Math.floor(rand() * 3);
-      for (let i = 0; i < count; i++) {
-        marks.push({
-          at: 1 + rand() * (JOINTS - 4),
-          lat: (rand() - 0.5) * 0.9,
-          r: 0.42 + rand() * 0.46,
-          tone: Math.floor(rand() * skin.ink.length),
-        });
-      }
+      const breeds = varieties();
+      const skin = breeds[Math.floor(rand() * breeds.length)];
       // Cruise in body lengths a second, not pixels — a big koi should look unhurried.
       const cruise = gap * (JOINTS - 1) * (0.42 + rand() * 0.3);
       return {
@@ -352,10 +430,7 @@ export function Pond() {
         waves: 0.56 + rand() * 0.22,
         spook: 0,
         flee: heading,
-        base: skin.base,
-        ink: skin.ink,
-        eye: skin.eye,
-        marks,
+        skin,
       };
     };
 
@@ -996,43 +1071,53 @@ export function Pond() {
     };
 
     const drawKoi = (k: Koi, ox = 0, oy = 0) => {
+      const skin = k.skin;
       const fin = finPath(k, ox, oy);
       const veil = ctx.createLinearGradient(fin.wrist.x, fin.wrist.y, fin.bx, fin.by);
-      veil.addColorStop(0, rgba(k.base, 0.85));
-      veil.addColorStop(1, rgba(k.base, 0.46));
+      veil.addColorStop(0, rgba(skin.fin, 0.92));
+      veil.addColorStop(1, rgba(skin.fin, 0.5));
       ctx.fillStyle = veil;
       ctx.fill(fin.path);
-      ctx.fillStyle = rgba(k.base, 0.5);
+      ctx.fillStyle = rgba(skin.fin, 0.62);
       pectorals(ctx, k, ox, oy);
       pelvics(ctx, k, ox, oy);
 
       const body = bodyPath(k, ox, oy);
-      ctx.fillStyle = k.base;
+      ctx.fillStyle = skin.base;
       ctx.fill(body);
 
       ctx.save();
       ctx.clip(body);
-      for (const mark of k.marks) {
-        const i = Math.floor(mark.at);
-        const p = k.body[i];
-        const w = PROFILE[i] * k.size;
-        const perp = k.facing[i] + Math.PI / 2;
+      // Markings: an ellipse laid along the body at each of the variety's stations, its
+      // length a fraction of the whole fish and its width a fraction of the body at that
+      // point. Sizing both axes off the width, as this did, gives round spots — and a
+      // koi's markings are patches that run down it, not polka dots.
+      const span = k.gap * (JOINTS - 1);
+      for (const patch of skin.patches) {
+        const t = patch.at * (JOINTS - 1);
+        const i = Math.min(JOINTS - 2, Math.floor(t));
+        const f = t - i;
+        const cx = k.body[i].x + (k.body[i + 1].x - k.body[i].x) * f + ox;
+        const cy = k.body[i].y + (k.body[i + 1].y - k.body[i].y) * f + oy;
+        const ang = k.facing[i];
+        const w = (PROFILE[i] + (PROFILE[i + 1] - PROFILE[i]) * f) * k.size;
+        const perp = ang + Math.PI / 2;
         ctx.beginPath();
         ctx.ellipse(
-          p.x + Math.cos(perp) * w * mark.lat + ox,
-          p.y + Math.sin(perp) * w * mark.lat + oy,
-          w * mark.r,
-          w * mark.r * 0.85,
-          k.facing[i],
+          cx + Math.cos(perp) * w * patch.off,
+          cy + Math.sin(perp) * w * patch.off,
+          span * patch.long,
+          w * patch.wide,
+          ang,
           0,
           Math.PI * 2,
         );
-        ctx.fillStyle = k.ink[mark.tone] ?? k.ink[0];
+        ctx.fillStyle = patch.ink ? skin.marking : skin.accent;
         ctx.fill();
       }
       // Scales: an arc a scale, staggered row to row, at a tenth opacity. Individually
       // invisible; together they are the difference between a fish and a vinyl sticker.
-      ctx.strokeStyle = "rgb(20 22 26 / 0.085)";
+      ctx.strokeStyle = "rgb(20 22 26 / 0.06)";
       ctx.lineWidth = Math.max(0.5, box.scale);
       for (let i = 1; i < JOINTS - 2; i++) {
         const p = k.body[i];
@@ -1061,15 +1146,17 @@ export function Pond() {
         }
       }
 
-      // A dark rim painted inside the outline: the cheapest way to give a flat fill a back.
-      ctx.lineWidth = k.size * 0.85;
-      ctx.strokeStyle = "rgb(8 14 18 / 0.22)";
+      // An edge, not a band. At 0.85 of the half-width this laid six pixels of dark
+      // inside each side of a thirty-pixel fish — two fifths of the animal — and that,
+      // not the shape, was what made the shoal look grey and dirty.
+      ctx.lineWidth = Math.max(1, k.size * 0.17);
+      ctx.strokeStyle = "rgb(12 18 22 / 0.2)";
       ctx.stroke(body);
 
       // Light off the shoulders, which is what stops a flat fill reading as a cut-out.
       const nose = { x: k.body[0].x + ox, y: k.body[0].y + oy };
       const sh = k.body[2];
-      ctx.fillStyle = "rgb(255 255 255 / 0.13)";
+      ctx.fillStyle = "rgb(255 255 255 / 0.09)";
       ctx.beginPath();
       ctx.ellipse(
         sh.x + ox,
@@ -1093,7 +1180,7 @@ export function Pond() {
 
       ctx.restore();
 
-      ctx.fillStyle = k.eye;
+      ctx.fillStyle = skin.eye;
       for (const side of [1, -1]) {
         const perp = k.facing[0] + (Math.PI / 2) * side;
         ctx.beginPath();
