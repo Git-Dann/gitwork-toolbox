@@ -18,10 +18,19 @@ type Koi = {
   lane: number;
   speed: number;
   cruise: number;
-  /** How hard it is working right now: koi beat, then coast, they do not cruise. */
-  drive: number;
-  want: number;
+  /** What it is doing right now. Five states, not a dial — see SWIM. */
+  state: Swim;
   until: number;
+  /** Committed turn while pivoting, so a sharp turn goes somewhere rather than wobbling. */
+  turnTo: number;
+  /** 0 at the surface, 1 on the bed. Drives tint, shadow and how far the water bends it. */
+  depth: number;
+  sink: number;
+  dive: number;
+  /** Seconds before this fish notices the last disturbance. Distance plus temperament. */
+  notice: number;
+  /** What it will do once it has. */
+  pending: { flee: number; force: number } | null;
   stroke: number;
   waves: number;
   spook: number;
@@ -31,6 +40,30 @@ type Koi = {
   ink: string[];
   eye: string;
 };
+
+/**
+ * Koi do not have a throttle, they have gears. Five states, each with its own speed, turn
+ * rate and tail effort, is what stops a shoal reading as one animation at different
+ * volumes — and it is why one fish can hang still while the one beside it bolts.
+ */
+type Swim = "glide" | "coast" | "hover" | "burst" | "pivot";
+
+const SWIM: Record<Swim, { speed: number; turn: number; swing: number; hold: [number, number]; odds: number }> = {
+  glide: { speed: 1, turn: 1, swing: 1, hold: [2.2, 5], odds: 0.34 },
+  coast: { speed: 0.42, turn: 0.75, swing: 0.4, hold: [1.2, 3], odds: 0.26 },
+  hover: { speed: 0.12, turn: 0.45, swing: 0.28, hold: [1, 2.6], odds: 0.12 },
+  burst: { speed: 2.3, turn: 1.5, swing: 1.75, hold: [0.5, 1.1], odds: 0.14 },
+  pivot: { speed: 0.5, turn: 3.4, swing: 1.15, hold: [0.7, 1.4], odds: 0.14 },
+};
+
+/**
+ * A shoal of fry. They are not koi with smaller numbers — they hold station around a
+ * drifting centre, flee anything that disturbs the water instead of coming to look, and
+ * are drawn as two-pixel slivers. Their whole job is scale: without something small in
+ * it, a pond reads as a table with fish on it.
+ */
+type Fry = { x: number; y: number; vx: number; vy: number; flee: number; ox: number; oy: number; lane: number };
+type Shoal = { cx: number; cy: number; heading: number; lane: number; fry: Fry[]; tint: string; depth: number };
 
 type Pellet = { x: number; y: number; age: number; drift: number };
 type Ring = { x: number; y: number; age: number; force: number };
@@ -119,8 +152,14 @@ const curve = (c: Path2D, pts: Pt[]) => {
  * head, with a swimming wave laid across that chain — amplitude a fortieth of a body
  * length at the nose and a fifth of one at the tail, travelling head to tail at whatever
  * rate fits about one wave along the body at the speed the fish is going. Course comes
- * off the same noise field as the water, and the speed bursts and glides, because a fish
- * held at one speed on a jittering heading reads as a wind-up toy sliding sideways.
+ * off the same noise field as the water.
+ *
+ * A koi has gears rather than a throttle: five swim states, each with its own speed, turn
+ * rate and tail effort. It also has a depth, which decides its tint, how far the water
+ * bends it, what its shadow looks like and what it passes in front of. And nothing in the
+ * pond reacts to a tap at the same moment — each fish has its own delay, so an alarm
+ * crosses the shoal as a wave rather than on one frame. Shoals of fry hold station below
+ * it all and flee anything that disturbs the water, which is what gives the pond a scale.
  *
  * Tap the water to drop feed, tap a koi to scare it.
  */
@@ -219,6 +258,7 @@ export function Pond() {
     let last = 0;
 
     const koi: Koi[] = [];
+    const shoals: Shoal[] = [];
     const pellets: Pellet[] = [];
     const rings: Ring[] = [];
     let pads: Pad[] = [];
@@ -286,9 +326,14 @@ export function Pond() {
         heading,
         lane: rand() * 900,
         speed: cruise * 0.6,
-        drive: 0.5,
-        want: 0.5,
+        state: "glide",
         until: rand() * 2,
+        turnTo: heading,
+        depth: rand() * 0.7,
+        sink: rand() * 0.75,
+        dive: 2 + rand() * 6,
+        notice: 0,
+        pending: null,
         cruise,
         stroke: rand() * Math.PI * 2,
         // Under one wavelength along the body. A carp is carangiform — it pushes with the
@@ -349,6 +394,41 @@ export function Pond() {
             ),
           );
         }
+        for (let n = 0; n < 3; n++) {
+          const fry: Fry[] = [];
+          // Spread across the pond at the outset rather than dropped at random, which
+          // lands two of three on top of each other about as often as not.
+          const cx = (0.2 + (n / 3) * 0.6 + rand() * 0.14) * box.w;
+          const cy = (0.22 + rand() * 0.56) * box.h;
+          for (let i = 0; i < 22 + Math.floor(rand() * 12); i++) {
+            // Each fry keeps its own station in the shoal rather than being packed in by
+            // repulsion alone — separation on its own settles into a crystal lattice,
+            // which is the one thing a shoal never looks like.
+            const a = rand() * Math.PI * 2;
+            const r = Math.sqrt(rand()) * 52 * box.scale;
+            fry.push({
+              x: cx + Math.cos(a) * r,
+              y: cy + Math.sin(a) * r,
+              vx: 0,
+              vy: 0,
+              flee: 0,
+              ox: Math.cos(a) * r,
+              oy: Math.sin(a) * r,
+              lane: rand() * 900,
+            });
+          }
+          shoals.push({
+            cx,
+            cy,
+            heading: rand() * Math.PI * 2,
+            lane: rand() * 900,
+            fry,
+            // Never amber: the feed is amber dots, and a shoal of amber fry at this size
+            // is indistinguishable from a scattering of pellets.
+            tint: n === 0 ? "#cfd8d2" : n === 1 ? house.flag : "#9fb8c4",
+            depth: 0.25 + rand() * 0.4,
+          });
+        }
         pads = [];
         const want = clamp(Math.round((box.w * box.h) / 360000), 2, 5);
         for (let tries = 0; pads.length < want && tries < 60; tries++) {
@@ -388,6 +468,101 @@ export function Pond() {
     const ripple = (x: number, y: number, force: number) => {
       rings.push({ x, y, age: 0, force });
       if (rings.length > MAX_RINGS) rings.shift();
+    };
+
+    /** Everything small scatters from a disturbance; only the koi come to look. */
+    const scatterTiny = (x: number, y: number) => {
+      for (const shoal of shoals) {
+        for (const f of shoal.fry) {
+          const d = Math.hypot(f.x - x, f.y - y);
+          if (d < 260 * box.scale) f.flee = Math.max(f.flee, 1 - d / (260 * box.scale));
+        }
+      }
+    };
+
+    const stepShoals = (dt: number) => {
+      for (const shoal of shoals) {
+        // The centre wanders on its own lane through the noise field, same as a koi does.
+        shoal.heading += wrap(noise(shoal.lane, clock * 0.08) * 2.4 - shoal.heading) * 0.5 * dt;
+        const margin = 120 * box.scale;
+        if (shoal.cx < margin || shoal.cx > box.w - margin || shoal.cy < margin || shoal.cy > box.h - margin) {
+          shoal.heading += wrap(Math.atan2(box.h / 2 - shoal.cy, box.w / 2 - shoal.cx) - shoal.heading) * 1.6 * dt;
+        }
+        // Shoals keep off each other, or three of them end up as one indistinct smudge.
+        for (const other of shoals) {
+          if (other === shoal) continue;
+          const dx = shoal.cx - other.cx;
+          const dy = shoal.cy - other.cy;
+          const d = Math.hypot(dx, dy);
+          const room = 260 * box.scale;
+          if (d > 0.01 && d < room) {
+            shoal.heading += wrap(Math.atan2(dy, dx) - shoal.heading) * (1 - d / room) * 2.2 * dt;
+          }
+        }
+
+        const drift = 52 * box.scale;
+        shoal.cx = clamp(shoal.cx + Math.cos(shoal.heading) * drift * dt, 20, box.w - 20);
+        shoal.cy = clamp(shoal.cy + Math.sin(shoal.heading) * drift * dt, 20, box.h - 20);
+
+        for (const f of shoal.fry) {
+          f.flee = Math.max(0, f.flee - dt * 0.7);
+          // Station keeping: its own place in the shoal, wandering a little on its own
+          // lane through the noise field so the formation breathes instead of setting.
+          const sway = 16 * box.scale;
+          const tx = shoal.cx + f.ox + noise(f.lane, clock * 0.5) * sway;
+          const ty = shoal.cy + f.oy + noise(f.lane + 51, clock * 0.5) * sway;
+          let ax = (tx - f.x) * 3.4;
+          let ay = (ty - f.y) * 3.4;
+
+          // Anything big that comes near shoves them out of the way.
+          for (const k of koi) {
+            const dx = f.x - k.joints[0].x;
+            const dy = f.y - k.joints[0].y;
+            const d = Math.hypot(dx, dy);
+            const room = 62 * box.scale;
+            if (d > 0.01 && d < room) {
+              const push = (1 - d / room) * 700;
+              ax += (dx / d) * push;
+              ay += (dy / d) * push;
+            }
+          }
+          if (f.flee > 0) {
+            ax += (f.x - shoal.cx) * 11 * f.flee;
+            ay += (f.y - shoal.cy) * 11 * f.flee;
+          }
+          f.vx = (f.vx + ax * dt) * 0.86;
+          f.vy = (f.vy + ay * dt) * 0.86;
+          const cap = (70 + f.flee * 150) * box.scale;
+          const sp = Math.hypot(f.vx, f.vy);
+          if (sp > cap) {
+            f.vx = (f.vx / sp) * cap;
+            f.vy = (f.vy / sp) * cap;
+          }
+          f.x = clamp(f.x + f.vx * dt, 4, box.w - 4);
+          f.y = clamp(f.y + f.vy * dt, 4, box.h - 4);
+        }
+      }
+    };
+
+    const drawShoals = () => {
+      for (const shoal of shoals) {
+        ctx.fillStyle = rgba(shoal.tint, 0.72 - shoal.depth * 0.34);
+        const len = 3 * box.scale;
+        // One path a shoal, one fill. ellipse() takes its own rotation, so none of this
+        // needs a transform — and a save/translate/rotate/restore per fry, which is what
+        // it cost before, is most of a millisecond a frame for eighty-odd slivers.
+        ctx.beginPath();
+        for (const f of shoal.fry) {
+          // Facing comes from the shoal unless the fry is actually moving somewhere of
+          // its own: a sliver with near-zero velocity otherwise points at random, and a
+          // shoal of those reads as scattered rice.
+          const sp = Math.hypot(f.vx, f.vy);
+          const a = sp > 14 * box.scale ? Math.atan2(f.vy, f.vx) : shoal.heading;
+          ctx.moveTo(f.x + Math.cos(a) * len, f.y + Math.sin(a) * len);
+          ctx.ellipse(f.x, f.y, len, len * 0.42, a, 0, Math.PI * 2);
+        }
+        ctx.fill();
+      }
     };
 
     const nearestPellet = (k: Koi) => {
@@ -533,6 +708,7 @@ export function Pond() {
       }
       buildSurface();
       causticLayer();
+      stepShoals(dt);
       for (let i = pellets.length - 1; i >= 0; i--) {
         const p = pellets[i];
         p.age += dt;
@@ -544,6 +720,18 @@ export function Pond() {
       for (const k of koi) {
         const head = k.joints[0];
         k.spook = Math.max(0, k.spook - dt / 1.3);
+        // Nothing in the pond reacts to a disturbance until it has noticed it.
+        if (k.notice > 0) {
+          k.notice = Math.max(0, k.notice - dt);
+          if (k.notice === 0 && k.pending) {
+            k.spook = k.pending.force;
+            k.flee = k.pending.flee;
+            k.state = "burst";
+            k.until = 0.9;
+            k.pending = null;
+          }
+        }
+        const food = k.spook > 0 || k.notice > 0 ? null : nearestPellet(k);
 
         // Every influence is a weighted vote on which way to face, summed before anything
         // is applied. Steering on each in turn, as this first did, lets two of them fight
@@ -559,7 +747,6 @@ export function Pond() {
         if (k.spook > 0) {
           vote(k.flee, 4.5 * k.spook);
         } else {
-          const food = nearestPellet(k);
           if (food) {
             vote(Math.atan2(food.y - head.y, food.x - head.x), 1.7);
             if (Math.hypot(food.x - head.x, food.y - head.y) < k.size * 1.1) {
@@ -596,23 +783,54 @@ export function Pond() {
         if (head.y > box.h - margin) by -= (head.y - (box.h - margin)) / margin;
         if (bx !== 0 || by !== 0) vote(Math.atan2(by, bx), 3.2 * Math.min(1.4, Math.hypot(bx, by)));
 
+        if (k.state === "pivot") vote(k.turnTo, 2.6);
+
         // One turn, capped — and a cruising koi turns at about thirty degrees a second,
         // not a hundred. Measured, because the first two attempts at this both sat pinned
-        // at the limit and swerved.
-        const rate = (k.spook > 0 ? 3.2 : 0.6) * dt;
+        // at the limit and swerved. A pivot is allowed more; a hover much less.
+        const rate = (k.spook > 0 ? 3.2 : 0.6 * SWIM[k.state].turn) * dt;
         k.heading += clamp(wrap(Math.atan2(wy, wx) - k.heading), -rate, rate);
 
-        // Burst and glide. A koi beats for a second or two and then coasts, and a fish
-        // held at one speed for ever is the thing that reads as a wind-up toy.
+        // Change of gear. The next state is drawn by weight and never repeats itself, so
+        // a fish cannot glide twice in a row and sit at one speed for ten seconds.
         k.until -= dt;
         if (k.until <= 0) {
-          const push = rand() < 0.55;
-          k.want = push ? 0.82 + rand() * 0.18 : 0.2 + rand() * 0.2;
-          k.until = push ? 1.2 + rand() * 1.7 : 1 + rand() * 2.2;
+          // Renormalised over the states it is not already in. Rolling against the full
+          // table and falling through to a default quietly hands the current state's
+          // share to glide, which is how a "never repeats" rule repeats.
+          const open = (Object.keys(SWIM) as Swim[]).filter((name) => name !== k.state);
+          let roll = rand() * open.reduce((sum, name) => sum + SWIM[name].odds, 0);
+          let next = open[open.length - 1];
+          for (const name of open) {
+            roll -= SWIM[name].odds;
+            if (roll <= 0) {
+              next = name;
+              break;
+            }
+          }
+          k.state = next;
+          const [lo, hi] = SWIM[next].hold;
+          k.until = lo + rand() * (hi - lo);
+          // A pivot commits to somewhere. Without a target it just wobbles at a high
+          // turn rate, which is the swerving the measurements caught the first time.
+          if (next === "pivot") {
+            k.turnTo = k.heading + (rand() < 0.5 ? -1 : 1) * (0.8 + rand() * 1.5);
+          }
         }
-        k.drive += (k.want - k.drive) * Math.min(1, 1.5 * dt);
-        const target = k.cruise * (0.3 + 0.85 * k.drive) * (1 + k.spook * 1.7);
-        k.speed += (target - k.speed) * Math.min(1, 2 * dt);
+        const gear = SWIM[k.state];
+        const target = k.cruise * gear.speed * (1 + k.spook * 1.5);
+        k.speed += (target - k.speed) * Math.min(1, 2.4 * dt);
+
+        // Depth. Koi hang at a level for a while and then change it, and where a fish is
+        // in the water is most of what stops a pond looking like stickers on a table.
+        k.dive -= dt;
+        if (k.dive <= 0) {
+          k.sink = rand() * 0.8;
+          k.dive = 3 + rand() * 7;
+        }
+        // Anything that has just been startled or has food in front of it comes up.
+        const wanted = k.spook > 0 ? 0.08 : food ? 0.16 : k.sink;
+        k.depth += (wanted - k.depth) * Math.min(1, 0.7 * dt);
 
         // The head travels straight along its heading. Everything you read as swimming
         // happens behind it — drive the head sideways instead, as the first version did,
@@ -643,7 +861,7 @@ export function Pond() {
         const span = k.gap * (JOINTS - 1);
         k.stroke += (k.speed / span) * k.waves * Math.PI * 2 * 1.15 * dt;
         const lag = (Math.PI * 2 * k.waves) / (JOINTS - 1);
-        const swing = k.size * (0.8 + 1.5 * k.drive + k.spook * 0.5);
+        const swing = k.size * 1.55 * SWIM[k.state].swing * (1 + k.spook * 0.35);
         for (let i = 0; i < JOINTS; i++) {
           // The amplitude envelope down the body: about a fifth of a body length at the
           // tail, a thirtieth at the nose. Squared, as this first had it, leaves the
@@ -827,6 +1045,15 @@ export function Pond() {
       );
       ctx.fill();
 
+      // The water between you and the fish, painted once over everything inside the
+      // outline. Tinting each element separately would mean recolouring the base, every
+      // marking and every scale stroke; one veil over the lot keeps them consistent and
+      // costs a single fill.
+      if (k.depth > 0.02) {
+        ctx.fillStyle = rgba(water.deep, 0.42 * k.depth);
+        ctx.fill(body);
+      }
+
       ctx.restore();
 
       ctx.fillStyle = k.eye;
@@ -935,13 +1162,19 @@ export function Pond() {
 
       if (sctx) {
         // Shadows a third of size, laid into the bed at half size: blurred twice over by
-        // the two upscales, for no filter and no full-size pass.
+        // the two upscales, for no filter and no full-size pass. A shallow fish throws a
+        // tight dark shadow close under it; a deep one throws a faint one further off,
+        // which is the cue that tells you which of two overlapping fish is nearer.
         sctx.setTransform(1 / SHADE, 0, 0, 1 / SHADE, 0, 0);
         sctx.clearRect(0, 0, box.w, box.h);
         sctx.fillStyle = "#000";
-        const drop = 6 * box.scale;
-        for (const k of koi) sctx.fill(bodyPath(k, drop, drop * 1.3));
-        bctx.globalAlpha = water === WATER.light ? 0.22 : 0.34;
+        for (const k of koi) {
+          const drop = (4 + k.depth * 16) * box.scale;
+          sctx.globalAlpha = 0.95 - k.depth * 0.55;
+          sctx.fill(bodyPath(k, drop, drop * 1.25));
+        }
+        sctx.globalAlpha = 1;
+        bctx.globalAlpha = water === WATER.light ? 0.24 : 0.36;
         bctx.drawImage(shade, 0, 0, bw, bh);
         bctx.globalAlpha = 1;
       }
@@ -959,12 +1192,18 @@ export function Pond() {
         ctx.globalAlpha = 1;
       }
 
-      for (const k of koi) {
+      drawShoals();
+
+      // Deepest first, so a shallow fish passes over a deep one rather than under it.
+      // One sort a frame, and it does more for depth than the tint does.
+      for (const k of [...koi].sort((a, b) => b.depth - a.depth)) {
         // Refraction, for the price of one lookup: the whole fish is shifted by how far
-        // the water above it is tipped. Under a passing ring it swims out from under
+        // the water above it is tipped — and further the deeper it is, because that is
+        // more water to bend through. Under a passing ring it swims out from under
         // itself, which is what looking into a pond actually does.
         const tip = slopeAt(k.joints[0].x, k.joints[0].y);
-        drawKoi(k, tip.x * 34 * box.scale, tip.y * 34 * box.scale);
+        const bend = (16 + k.depth * 42) * box.scale;
+        drawKoi(k, tip.x * bend, tip.y * bend);
       }
 
       for (const pad of pads) drawPad(pad);
@@ -1052,16 +1291,32 @@ export function Pond() {
       if (hit) {
         // The one you touched bolts, and so does anything close enough to have felt it —
         // a startled koi is the loudest thing in a pond and nothing near it ignores that.
-        const wake = 150 * box.scale;
+        // But not all at once: each fish gets its own delay, so the alarm crosses the
+        // shoal as a wave. A pond where every fish turns on the same frame is a pond
+        // with one animal in it.
+        const wake = 360 * box.scale;
         for (const k of koi) {
           const d = Math.hypot(k.joints[0].x - x, k.joints[0].y - y);
           if (k !== hit && d > wake) continue;
-          k.spook = k === hit ? 1 : 0.55 * (1 - d / wake);
-          k.flee = Math.atan2(k.joints[0].y - y, k.joints[0].x - x);
-          k.drive = 1;
+          k.notice = k === hit ? 0 : d / (520 * box.scale) + rand() * 0.3;
+          k.pending = { flee: Math.atan2(k.joints[0].y - y, k.joints[0].x - x), force: k === hit ? 1 : 0.6 * (1 - d / wake) };
+          if (k.notice <= 0) {
+            k.spook = k.pending.force;
+            k.flee = k.pending.flee;
+            k.state = "burst";
+            k.until = 0.9;
+            k.pending = null;
+          }
         }
+        scatterTiny(x, y);
       } else {
         pellets.push({ x, y, age: 0, drift: rand() * Math.PI * 2 });
+        // Same for food: the near fish turn first and the far ones follow them in.
+        for (const k of koi) {
+          const d = Math.hypot(k.joints[0].x - x, k.joints[0].y - y);
+          k.notice = Math.max(k.notice, d / (760 * box.scale) + rand() * 0.3);
+        }
+        scatterTiny(x, y);
       }
       nudge(36);
     };
