@@ -36,6 +36,7 @@ type Koi = {
   spook: number;
   flee: number;
   skin: Variety;
+  blotches: Blotch[];
 };
 
 /**
@@ -60,6 +61,17 @@ type Variety = {
    * off: how far off the centreline, in local half-widths.
    */
   patches: { at: number; long: number; wide: number; off: number; ink: boolean }[];
+};
+
+/** A per-fish wobble on each patch, so no two kohaku in the pond are the same fish. */
+type Blotch = {
+  at: number;
+  long: number;
+  wide: number;
+  off: number;
+  ink: boolean;
+  /** Radius multipliers round the rim of the patch: what stops it being an ellipse. */
+  rim: number[];
 };
 
 /**
@@ -113,6 +125,8 @@ const SHEEN = 2.2;
  * reads as a tadpole however good the proportions are.
  */
 const PROFILE = [0.73, 0.87, 1.0, 0.92, 0.83, 0.75, 0.65, 0.56, 0.45, 0.34, 0.21, 0.03];
+/** Points round a marking's rim. Twelve is enough to look torn and cheap to walk. */
+const RIM = 12;
 const MAX_KOI = 24;
 const RING_LIFE = 3.4;
 /** Beyond this the oldest ring is dropped: the surface pass costs one test a ring a cell. */
@@ -403,6 +417,17 @@ export function Pond() {
       }
       const breeds = varieties();
       const skin = breeds[Math.floor(rand() * breeds.length)];
+      // Every patch is nudged off its variety's ideal and given a ragged rim. A koi
+      // marking has a torn edge and no two fish carry the same one; a perfect ellipse
+      // repeated down a shoal is the single clearest tell that these are shapes.
+      const blotches: Blotch[] = skin.patches.map((patch) => ({
+        at: clamp(patch.at + (rand() - 0.5) * 0.07, 0.05, 0.92),
+        long: patch.long * (0.82 + rand() * 0.4),
+        wide: patch.wide * (0.85 + rand() * 0.32),
+        off: patch.off + (rand() - 0.5) * 0.22,
+        ink: patch.ink,
+        rim: Array.from({ length: RIM }, () => 0.74 + rand() * 0.5),
+      }));
       // Cruise in body lengths a second, not pixels — a big koi should look unhurried.
       const cruise = gap * (JOINTS - 1) * (0.42 + rand() * 0.3);
       return {
@@ -431,6 +456,7 @@ export function Pond() {
         spook: 0,
         flee: heading,
         skin,
+        blotches,
       };
     };
 
@@ -971,6 +997,14 @@ export function Pond() {
       }
     };
 
+    /** A point on the body's own outline. Fins hang off these, not off the spine. */
+    const edgeAt = (k: Koi, i: number, side: number, dx: number, dy: number) => {
+      const p = k.body[i];
+      const perp = k.facing[i] + (Math.PI / 2) * side;
+      const w = PROFILE[i] * k.size;
+      return { x: p.x + Math.cos(perp) * w + dx, y: p.y + Math.sin(perp) * w + dy };
+    };
+
     const bodyPath = (k: Koi, dx: number, dy: number) => {
       const c = new Path2D();
       const pts: Pt[] = [];
@@ -1039,48 +1073,69 @@ export function Pond() {
       return { path: c, wrist: start, bx: (up.x + down.x) / 2, by: (up.y + down.y) / 2 };
     };
 
-    const pectorals = (c: CanvasRenderingContext2D, k: Koi, ox: number, oy: number) => {
-      const at = { x: k.body[2].x + ox, y: k.body[2].y + oy };
-      const dir = k.facing[2];
-      const flap = Math.cos(k.stroke * 2) * 0.3;
+    /**
+     * A fin is a flap of the fish, not a shape parked beside it. Both of its base corners
+     * are points on the body's own outline and the tip reaches out from between them, so
+     * it grows out of the silhouette — an ellipse floating near the spine, which is what
+     * this was, reads as a separate blob every time.
+     */
+    const fin = (
+      c: CanvasRenderingContext2D,
+      k: Koi,
+      front: number,
+      mid: number,
+      back: number,
+      reach: number,
+      sweep: number,
+      ox: number,
+      oy: number,
+    ) => {
       for (const side of [1, -1]) {
-        c.save();
-        c.translate(at.x, at.y);
-        c.rotate(dir + side * (1.05 + flap));
+        const a = edgeAt(k, front, side, ox, oy);
+        const b = edgeAt(k, back, side, ox, oy);
+        const root = edgeAt(k, mid, side, ox, oy);
+        const out = k.facing[mid] + (Math.PI / 2) * side;
+        const along = k.facing[mid];
+        const tip = {
+          x: root.x + Math.cos(out) * reach - Math.cos(along) * sweep,
+          y: root.y + Math.sin(out) * reach - Math.sin(along) * sweep,
+        };
         c.beginPath();
-        c.ellipse(0, 0, k.size * 0.72, k.size * 0.26, 0, 0, Math.PI * 2);
+        c.moveTo(a.x, a.y);
+        c.quadraticCurveTo(
+          root.x + Math.cos(out) * reach * 0.9 + Math.cos(along) * sweep * 0.3,
+          root.y + Math.sin(out) * reach * 0.9 + Math.sin(along) * sweep * 0.3,
+          tip.x,
+          tip.y,
+        );
+        c.quadraticCurveTo(
+          root.x + Math.cos(out) * reach * 0.55 - Math.cos(along) * sweep * 1.1,
+          root.y + Math.sin(out) * reach * 0.55 - Math.sin(along) * sweep * 1.1,
+          b.x,
+          b.y,
+        );
+        c.closePath();
         c.fill();
-        c.restore();
-      }
-    };
-
-    /** The small pair two thirds of the way down. Barely visible, and missed if absent. */
-    const pelvics = (c: CanvasRenderingContext2D, k: Koi, ox: number, oy: number) => {
-      const at = k.body[6];
-      const dir = k.facing[6];
-      const flap = Math.cos(k.stroke * 2 - 1.1) * 0.24;
-      for (const side of [1, -1]) {
-        c.save();
-        c.translate(at.x + ox, at.y + oy);
-        c.rotate(dir + side * (1.15 + flap));
-        c.beginPath();
-        c.ellipse(0, 0, k.size * 0.5, k.size * 0.18, 0, 0, Math.PI * 2);
-        c.fill();
-        c.restore();
       }
     };
 
     const drawKoi = (k: Koi, ox = 0, oy = 0) => {
       const skin = k.skin;
-      const fin = finPath(k, ox, oy);
-      const veil = ctx.createLinearGradient(fin.wrist.x, fin.wrist.y, fin.bx, fin.by);
+      const tail = finPath(k, ox, oy);
+      const veil = ctx.createLinearGradient(tail.wrist.x, tail.wrist.y, tail.bx, tail.by);
       veil.addColorStop(0, rgba(skin.fin, 0.92));
       veil.addColorStop(1, rgba(skin.fin, 0.5));
       ctx.fillStyle = veil;
-      ctx.fill(fin.path);
+      ctx.fill(tail.path);
       ctx.fillStyle = rgba(skin.fin, 0.62);
-      pectorals(ctx, k, ox, oy);
-      pelvics(ctx, k, ox, oy);
+      // Pectorals behind the shoulders, pelvics two thirds down, both swinging a little
+      // out of phase with the body so they paddle rather than sit.
+      // Reach is measured out from the outline, so it is small: about two thirds of a
+      // half-width for the pectorals and a third for the pelvics, over a base of two
+      // joints. Longer than that, over a base twice the length, and the fish grows spikes.
+      const paddle = Math.cos(k.stroke * 2) * 0.12;
+      fin(ctx, k, 3, 4, 5, k.size * (0.6 + paddle), k.size * 0.26, ox, oy);
+      fin(ctx, k, 7, 8, 9, k.size * (0.28 + paddle * 0.4), k.size * 0.12, ox, oy);
 
       const body = bodyPath(k, ox, oy);
       ctx.fillStyle = skin.base;
@@ -1093,7 +1148,7 @@ export function Pond() {
       // point. Sizing both axes off the width, as this did, gives round spots — and a
       // koi's markings are patches that run down it, not polka dots.
       const span = k.gap * (JOINTS - 1);
-      for (const patch of skin.patches) {
+      for (const patch of k.blotches) {
         const t = patch.at * (JOINTS - 1);
         const i = Math.min(JOINTS - 2, Math.floor(t));
         const f = t - i;
@@ -1102,18 +1157,28 @@ export function Pond() {
         const ang = k.facing[i];
         const w = (PROFILE[i] + (PROFILE[i + 1] - PROFILE[i]) * f) * k.size;
         const perp = ang + Math.PI / 2;
-        ctx.beginPath();
-        ctx.ellipse(
-          cx + Math.cos(perp) * w * patch.off,
-          cy + Math.sin(perp) * w * patch.off,
-          span * patch.long,
-          w * patch.wide,
-          ang,
-          0,
-          Math.PI * 2,
-        );
+        const mx = cx + Math.cos(perp) * w * patch.off;
+        const my = cy + Math.sin(perp) * w * patch.off;
+        const rx = span * patch.long;
+        const ry = w * patch.wide;
+        // Walked as a ring of points with a jittered radius and smoothed through, rather
+        // than laid down as an ellipse. Same silhouette, torn edge.
+        const edge: Pt[] = [];
+        for (let n = 0; n < RIM; n++) {
+          const a = (n / RIM) * Math.PI * 2;
+          const r = patch.rim[n];
+          const ex = Math.cos(a) * rx * r;
+          const ey = Math.sin(a) * ry * r;
+          edge.push({
+            x: mx + ex * Math.cos(ang) - ey * Math.sin(ang),
+            y: my + ex * Math.sin(ang) + ey * Math.cos(ang),
+          });
+        }
+        const blot = new Path2D();
+        curve(blot, edge);
+        blot.closePath();
         ctx.fillStyle = patch.ink ? skin.marking : skin.accent;
-        ctx.fill();
+        ctx.fill(blot);
       }
       // Scales: an arc a scale, staggered row to row, at a tenth opacity. Individually
       // invisible; together they are the difference between a fish and a vinyl sticker.
