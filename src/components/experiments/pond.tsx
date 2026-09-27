@@ -84,8 +84,14 @@ const BED = 2;
 const FOLD = 20;
 const FILAMENT = 0.07;
 const SHEEN = 2.2;
-/** Half-width down the body: widest just behind the head, tapering to the wrist of the tail. */
-const PROFILE = [0.62, 0.86, 0.95, 0.94, 0.88, 0.79, 0.68, 0.57, 0.46, 0.35, 0.25, 0.16];
+/**
+ * Half-width down the body: a blunt nose at three quarters of full width, widest a fifth
+ * of the way back, then a taper that holds through the middle and closes to almost
+ * nothing at the tail. The last number is the one that matters — stopping at 0.16, as
+ * this did, leaves the body ending in a stump with a fin stuck on it, and the whole fish
+ * reads as a tadpole however good the proportions are.
+ */
+const PROFILE = [0.73, 0.87, 1.0, 0.92, 0.83, 0.75, 0.65, 0.56, 0.45, 0.34, 0.21, 0.03];
 const MAX_KOI = 24;
 const RING_LIFE = 3.4;
 /** Beyond this the oldest ring is dropped: the surface pass costs one test a ring a cell. */
@@ -295,8 +301,12 @@ export function Pond() {
     };
 
     const spawn = (x: number, y: number): Koi => {
-      const size = (6.4 + rand() * 4.2) * box.scale;
-      const gap = size * 0.82;
+      // A carp seen from above is a broad fish: about two and a half to three times as
+      // long as it is wide. This was nearly five to one, which is an anchovy, and is most
+      // of why the shoal looked wrong however well it swam. size is the half-width unit;
+      // gap sets the length, and the two are no longer tied together.
+      const size = (12.5 + rand() * 5) * box.scale;
+      const gap = size * 0.48;
       const heading = rand() * Math.PI * 2;
       const joints: Pt[] = [];
       const body: Pt[] = [];
@@ -306,12 +316,12 @@ export function Pond() {
       }
       const skin = dress(Math.floor(rand() * 5));
       const marks: Koi["marks"] = [];
-      const count = 2 + Math.floor(rand() * 3);
+      const count = 3 + Math.floor(rand() * 3);
       for (let i = 0; i < count; i++) {
         marks.push({
           at: 1 + rand() * (JOINTS - 4),
-          lat: (rand() - 0.5) * 0.8,
-          r: 0.75 + rand() * 0.75,
+          lat: (rand() - 0.5) * 0.9,
+          r: 0.42 + rand() * 0.46,
           tone: Math.floor(rand() * skin.ink.length),
         });
       }
@@ -379,7 +389,7 @@ export function Pond() {
       soft = new Float32Array(cols * rows);
 
       if (first) {
-        const start = clamp(Math.round((box.w * box.h) / 72000), 11, 18);
+        const start = clamp(Math.round((box.w * box.h) / 105000), 9, 15);
         // Laid out on a jittered grid rather than scattered at random: pure random
         // clumps, and the first second of a pond is the one anybody judges it on.
         const across = Math.ceil(Math.sqrt((start * box.w) / box.h));
@@ -769,12 +779,12 @@ export function Pond() {
           const dx = head.x - other.joints[0].x;
           const dy = head.y - other.joints[0].y;
           const d = Math.hypot(dx, dy);
-          const room = (k.size + other.size) * 2.4;
+          const room = (k.gap + other.gap) * (JOINTS - 1) * 0.5;
           if (d > 0.01 && d < room) vote(Math.atan2(dy, dx), (1 - d / room) * 1.6);
         }
 
         // The bank: the margin scales with the fish, so a big koi turns earlier.
-        const margin = 70 * box.scale + k.size * 3;
+        const margin = 60 * box.scale + k.gap * (JOINTS - 1) * 0.6;
         let bx = 0;
         let by = 0;
         if (head.x < margin) bx += (margin - head.x) / margin;
@@ -861,7 +871,9 @@ export function Pond() {
         const span = k.gap * (JOINTS - 1);
         k.stroke += (k.speed / span) * k.waves * Math.PI * 2 * 1.15 * dt;
         const lag = (Math.PI * 2 * k.waves) / (JOINTS - 1);
-        const swing = k.size * 1.55 * SWIM[k.state].swing * (1 + k.spook * 0.35);
+        // Amplitude off the body's length, not its width. Tied to width, widening the
+        // fish would have doubled how hard it thrashes.
+        const swing = span * 0.172 * SWIM[k.state].swing * (1 + k.spook * 0.35);
         for (let i = 0; i < JOINTS; i++) {
           // The amplitude envelope down the body: about a fifth of a body length at the
           // tail, a thirtieth at the nose. Squared, as this first had it, leaves the
@@ -929,8 +941,8 @@ export function Pond() {
       const by = Math.sin(dir);
       const px = Math.cos(dir + Math.PI / 2);
       const py = Math.sin(dir + Math.PI / 2);
-      const len = k.size * 1.6;
-      const spread = k.size * (0.85 + Math.abs(lag) * 0.2);
+      const len = k.size * 1.45;
+      const spread = k.size * (0.6 + Math.abs(lag) * 0.16);
       const at = (along: number, across: number) => ({
         x: tip.x - bx * len * along + px * spread * across + dx,
         y: tip.y - by * len * along + py * spread * across + dy,
@@ -961,7 +973,23 @@ export function Pond() {
         c.translate(at.x, at.y);
         c.rotate(dir + side * (1.05 + flap));
         c.beginPath();
-        c.ellipse(0, 0, k.size * 0.62, k.size * 0.2, 0, 0, Math.PI * 2);
+        c.ellipse(0, 0, k.size * 0.72, k.size * 0.26, 0, 0, Math.PI * 2);
+        c.fill();
+        c.restore();
+      }
+    };
+
+    /** The small pair two thirds of the way down. Barely visible, and missed if absent. */
+    const pelvics = (c: CanvasRenderingContext2D, k: Koi, ox: number, oy: number) => {
+      const at = k.body[6];
+      const dir = k.facing[6];
+      const flap = Math.cos(k.stroke * 2 - 1.1) * 0.24;
+      for (const side of [1, -1]) {
+        c.save();
+        c.translate(at.x + ox, at.y + oy);
+        c.rotate(dir + side * (1.15 + flap));
+        c.beginPath();
+        c.ellipse(0, 0, k.size * 0.5, k.size * 0.18, 0, 0, Math.PI * 2);
         c.fill();
         c.restore();
       }
@@ -971,11 +999,12 @@ export function Pond() {
       const fin = finPath(k, ox, oy);
       const veil = ctx.createLinearGradient(fin.wrist.x, fin.wrist.y, fin.bx, fin.by);
       veil.addColorStop(0, rgba(k.base, 0.85));
-      veil.addColorStop(1, rgba(k.base, 0.3));
+      veil.addColorStop(1, rgba(k.base, 0.46));
       ctx.fillStyle = veil;
       ctx.fill(fin.path);
-      ctx.fillStyle = rgba(k.base, 0.42);
+      ctx.fillStyle = rgba(k.base, 0.5);
       pectorals(ctx, k, ox, oy);
+      pelvics(ctx, k, ox, oy);
 
       const body = bodyPath(k, ox, oy);
       ctx.fillStyle = k.base;
@@ -1003,22 +1032,30 @@ export function Pond() {
       }
       // Scales: an arc a scale, staggered row to row, at a tenth opacity. Individually
       // invisible; together they are the difference between a fish and a vinyl sticker.
-      ctx.strokeStyle = "rgb(20 22 26 / 0.13)";
-      ctx.lineWidth = Math.max(0.5, k.size * 0.07);
+      ctx.strokeStyle = "rgb(20 22 26 / 0.085)";
+      ctx.lineWidth = Math.max(0.5, box.scale);
       for (let i = 1; i < JOINTS - 2; i++) {
         const p = k.body[i];
         const w = PROFILE[i] * k.size;
         const f = k.facing[i];
         const perp = f + Math.PI / 2;
-        for (let c = -1; c <= 1; c++) {
-          const across = ((c + (i % 2 ? 0.5 : 0)) / 1.5) * w;
+        // The number of scales across follows the width, so widening the fish adds
+        // scales rather than inflating the ones it has into chainmail.
+        // Radius well under the spacing, or the arcs overlap into a net and the koi
+        // comes out wearing a fishnet stocking. They want to read as a texture you only
+        // notice up close, not as a pattern.
+        const cols = clamp(Math.round(w / (5 * box.scale)), 1, 4);
+        const step = w / cols;
+        for (let c = -cols; c <= cols; c++) {
+          const across = (c + (i % 2 ? 0.5 : 0)) * step;
+          if (Math.abs(across) > w * 0.86) continue;
           ctx.beginPath();
           ctx.arc(
             p.x + Math.cos(perp) * across + ox,
             p.y + Math.sin(perp) * across + oy,
-            w * 0.34,
-            f - 2.1,
-            f + 2.1,
+            step * 0.5,
+            f - 1.9,
+            f + 1.9,
           );
           ctx.stroke();
         }
