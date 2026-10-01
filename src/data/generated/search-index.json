@@ -4851,6 +4851,15 @@
     "pick": false
   },
   {
+    "kind": "resource",
+    "slug": "dive-radio",
+    "name": "Dive Radio",
+    "blurb": "The landing page for a weekly live design show, built as a working vintage radio set. You drag a tuning dial through static to fi…",
+    "meta": "Article/blog post",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
     "kind": "design",
     "slug": "acorns",
     "name": "Acorns",

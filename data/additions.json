@@ -4917,6 +4917,25 @@
       ],
       "addedAt": "2026-09-22T15:35:26.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Dive Radio",
+      "link": "https://dive.radio/",
+      "resourceType": "Article/blog post",
+      "category": "Design inspiration / websites",
+      "takeaway": "The landing page for a weekly live design show, built as a working vintage radio set. You drag a tuning dial through static to find 92.6 MHz and lock the signal; other frequencies hold hidden stations playing archive recordings. Behind it sits a Morse-timing mini-game called Byte Dial — four packets to intercept, tap on a solid light and hold on a hollow ring, scored perfect/clean/missed with a server-validated leaderboard and a prize draw. Roughly 80KB of vanilla JavaScript: no framework, no WebGL, no animation library.",
+      "whatToDo": "Reference for a launch or campaign page that has to earn attention rather than ask for it. Action: pull it apart before the next time a client asks for a teaser site, and note how little code the whole thing takes.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "The audio is the interesting part: static and the tuning sweep are synthesised live in Web Audio — buffer sources, a dozen gain nodes, two biquad filters, one oscillator, playback-rate bending — while the stations themselves are sampled. The same graph shape as a synth, used as set dressing.",
+        "Everything in it is a day or two of work each except the contest, which carries real weight: an API that validates tap timings server-side, entry forms, official rules and a draw. Copy the radio, not the sweepstake, unless someone is prepared to own the legal side.",
+        "The hidden stations lean on historical recordings. NASA audio and anything pre-1930 is almost certainly clear, but not everything of that kind is, so a version of this would need the provenance checked per clip rather than assumed.",
+        "No licence and no repo — it is a product site, so it is reference for how it is made, not something to lift from."
+      ],
+      "addedAt": "2026-10-01T17:16:05.000Z",
+      "addedBy": "Dan"
     }
   ]
 }
