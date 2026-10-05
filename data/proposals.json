@@ -29336,6 +29336,2061 @@
       "repo": null,
       "status": "pending",
       "assessedAt": "2026-09-28T15:13:41.364Z"
+    },
+    {
+      "url": "https://onlook.com",
+      "host": "onlook.com",
+      "name": "onlook",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-system",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "The Developer Tool for Designers • An Open-Source AI-First Design tool • Visually build, style, and edit your code with AI • World's best, top-most agent recommended #1 Developer tool for Designers to design with Real Code.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://onlook.com",
+        "finalUrl": "https://www.onlook.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "Onlook — The Developer Tool for Designers",
+        "description": "Onlook is a free, local-first editor where designers craft exceptional experiences in code.",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Onlook — The Developer Tool for Designers 25.8k Product Resources About 25.8k Book a Demo Log In The Developer Tool for Designers Onlook is a free, local-first editor where designers craft exceptional experiences in code Book a Demo Sign Up Villainterest - Product Notes Implement evil pin creation (mwahaha) Add 'light mode' (begrudgingly) Build villain-to-villain messaging (evil DMs) Create villain collaboration boards Add villain lair location sharing (evil meetups) Create devious recommendation page Home — desktop V Brutalist lair decor Save Save Save Save Save Save Save Save Save Save Save Save Save Members only Join the syndicate Unlimited lairs, private boards, and first look at every n",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:14.728Z"
+    },
+    {
+      "url": "https://gilded-laurel-c7nj.here.now/",
+      "host": "gilded-laurel-c7nj.here.now",
+      "name": "planning-with-files",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / coding-agent",
+      "kindHint": "tool",
+      "signal": 4,
+      "claim": "Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown plans, session recovery after /clear and compaction, per-turn re-injection against context rot, deterministic completion gate. Manus-style. Install from npm, the Claude Code plugin marketplace, or npx skills. Codex, Cursor, OpenCode, 60+ agents.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://gilded-laurel-c7nj.here.now/",
+        "finalUrl": "https://gilded-laurel-c7nj.here.now/",
+        "status": 200,
+        "reachable": true,
+        "title": "Planning with Files · Context resets. The plan stays.",
+        "description": "Keep your coding agent",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Planning with Files · Context resets. The plan stays. Skip to content planning with files Menu ＋ How it works Contribute ☆ Star on GitHub ↗ Open source · v3.22.0 ↗ Your AI Agent Says 'Done.' It's Lying. The patch is written. The boundary tests aren’t. Give the next session a plan it can pick up. Keep the plan ↗ ▷ See how it works A planning skill for coding agents. Three files. In your project. Context resets. The plan stays. Try clearing the conversation Interactive illustration State saved to the project Current session “Implementation done.” ◷ Expiry boundary tests still pending write it down progress.md findings.md task_plan.md ✓ saved Ship the expiry fix ✓ Find the cause ✓ Write the pat",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:14.311Z"
+    },
+    {
+      "url": "https://github.com/AcruxCore/AcruxCore",
+      "host": "github.com",
+      "name": "AcruxCore",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: AcruxCore – version and trace the prompts and tools your agents use",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/AcruxCore/AcruxCore",
+        "finalUrl": "https://github.com/AcruxCore/AcruxCore",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - AcruxCore/AcruxCore: Open-source LLMOps platform with prompt management, an OpenAI-compatible AI gateway, OpenTelemetry tracing, a versioned tool catalog, and LLM evaluation. Use hosted or se",
+        "description": "Open-source LLMOps platform with prompt management, an OpenAI-compatible AI gateway, OpenTelemetry tracing, a versioned tool catalog, and LLM evaluation. Use hosted or self-host with TypeScript and Python SDKs. - AcruxCore/AcruxCore",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "Apache-2.0",
+        "body": "GitHub - AcruxCore/AcruxCore: Open-source LLMOps platform with prompt management, an OpenAI-compatible AI gateway, OpenTelemetry tracing, a versioned tool catalog, and LLM evaluation. Use hosted or self-host with TypeScript and Python SDKs. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Fin",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "AcruxCore/AcruxCore",
+        "stars": 9,
+        "licence": "Apache-2.0",
+        "pushedAt": "2026-10-05T09:59:02Z",
+        "archived": false,
+        "description": "Open-source LLMOps platform with prompt management, an OpenAI-compatible AI gateway, OpenTelemetry tracing, a versioned tool catalog, and LLM evaluation. Use hosted or self-host with TypeScript and Python SDKs."
+      },
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:14.961Z"
+    },
+    {
+      "url": "https://github.com/yuyalapis/agentic-telemetry",
+      "host": "github.com",
+      "name": "Agentic Telemetry",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Agentic Telemetry – Simple Observability Tool for Agentic System",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/yuyalapis/agentic-telemetry",
+        "finalUrl": "https://github.com/yuyalapis/agentic-telemetry",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - yuyalapis/agentic-telemetry: Observability for Agentic System · GitHub",
+        "description": "Observability for Agentic System. Contribute to yuyalapis/agentic-telemetry development by creating an account on GitHub.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "GitHub - yuyalapis/agentic-telemetry: Observability for Agentic System · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marke",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "yuyalapis/agentic-telemetry",
+        "stars": 0,
+        "licence": null,
+        "pushedAt": "2026-10-05T15:11:26Z",
+        "archived": false,
+        "description": "Observability for Agentic System"
+      },
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:14.960Z"
+    },
+    {
+      "url": "https://github.com/getcarve/carve",
+      "host": "github.com",
+      "name": "Carve",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Carve – An open-source Mac agent with a choice of models",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/getcarve/carve",
+        "finalUrl": "https://github.com/getcarve/carve",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - getcarve/carve: A Mac agent on a short leash. · GitHub",
+        "description": "A Mac agent on a short leash. Contribute to getcarve/carve development by creating an account on GitHub.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "AGPL",
+        "body": "GitHub - getcarve/carve: A Mac agent on a short leash. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentation Blog Changelog Marketplace View all ",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "getcarve/carve",
+        "stars": 0,
+        "licence": "AGPL-3.0",
+        "pushedAt": "2026-10-04T02:48:32Z",
+        "archived": false,
+        "description": "A Mac agent on a short leash."
+      },
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:14.975Z"
+    },
+    {
+      "url": "https://getdevboard.app/",
+      "host": "getdevboard.app",
+      "name": "DevBoard",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: DevBoard – a simpler ClickUp for small dev teams, native apps and MCP",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://getdevboard.app/",
+        "finalUrl": "https://getdevboard.app/",
+        "status": 200,
+        "reachable": true,
+        "title": "devBoard — a deliberately simpler tracker for small dev teams",
+        "description": "Project tracking for freelancers and small dev teams. Boards, epics, releases and time tracking in native apps for iOS, Android and macOS, with Windows and Linux coming soon. Keyboard-first, realtime, no web tab.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "devBoard — a deliberately simpler tracker for small dev teams devBoard Why Features Keyboard AI Platforms FAQ in production Everything a small team needs to ship. Nothing else. devBoard is project tracking for freelancers and small dev teams — boards, epics, releases and time tracking in a native app that opens instantly and answers to your keyboard. No browser tab. No forty-field configuration screen you fill in once and never look at again. Download on the App Store Get it on Google Play iOS Android macOS Windows Linux devBoard — Apollo / Board App Tube ▾ My Work ⌘1 Projects ⌘2 Settings Apollo ▾ Board Epics Releases Labels Board live Todo 4 DEV-142 Onboarding Invite flow drops the workspac",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:14.276Z"
+    },
+    {
+      "url": "https://www.editui.app/",
+      "host": "editui.app",
+      "name": "EditUI",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: EditUI – Cursor/Claude Design-style UI editing directly in the browser",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.editui.app/",
+        "finalUrl": "https://www.editui.app/",
+        "status": 200,
+        "reachable": true,
+        "title": "EditUI — Point at your UI. Tell your coding agent what to change.",
+        "description": "Point at your UI. Tell your coding agent what to change. Click elements in Chrome, collect the edits, and copy one prompt for Claude Code, Cursor, or any coding agent.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "EditUI — Point at your UI. Tell your coding agent what to change. Skip to content EditUI Extension Claude Code Cursor Blog Add to Chrome Menu Extension Claude Code Cursor Blog Add to Chrome EditUI Point at your UI. Tell your coding agent what to change. Review your running app in Chrome. Click any element, leave an edit, collect as many as you want, then send them all to Claude Code, Cursor or your coding agent. Add to Chrome Free · No repo setup Demo Pause usercall.co 1 Customer interviews, without the calendar chase A running app, reviewed in Chrome. Click a part of the page and leave the change you want. Schedule Send a link. They pick a time that already fits. Capture The call, the quote",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:14.328Z"
+    },
+    {
+      "url": "https://github.com/cw12574/abralo-workspace",
+      "host": "github.com",
+      "name": "github.com",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Open source Slack for agents and people",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/cw12574/abralo-workspace",
+        "finalUrl": "https://github.com/cw12574/abralo-workspace",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - cw12574/abralo-workspace: A local, open-source workspace for people and coding agents · GitHub",
+        "description": "A local, open-source workspace for people and coding agents - cw12574/abralo-workspace",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "Apache-2.0",
+        "body": "GitHub - cw12574/abralo-workspace: A local, open-source workspace for people and coding agents · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protection Stop leaks before they start EXPLORE Why GitHub Documentat",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "cw12574/abralo-workspace",
+        "stars": 3,
+        "licence": "Apache-2.0",
+        "pushedAt": "2026-10-05T15:37:19Z",
+        "archived": false,
+        "description": "A local, open-source workspace for people and coding agents"
+      },
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:14.980Z"
+    },
+    {
+      "url": "https://github.com/kballenegger/usermods",
+      "host": "github.com",
+      "name": "github.com",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Usermods, an extension that runs an a coding agent to build userscripts",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/kballenegger/usermods",
+        "finalUrl": "https://github.com/kballenegger/usermods",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - kballenegger/usermods: Vibe-code userscripts in place: customize any website by chatting with any LLM. A Tampermonkey-compatible userscript manager. · GitHub",
+        "description": "Vibe-code userscripts in place: customize any website by chatting with any LLM. A Tampermonkey-compatible userscript manager. - kballenegger/usermods",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - kballenegger/usermods: Vibe-code userscripts in place: customize any website by chatting with any LLM. A Tampermonkey-compatible userscript manager. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build Secret protec",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "kballenegger/usermods",
+        "stars": 2,
+        "licence": "MIT",
+        "pushedAt": "2026-09-30T11:32:43Z",
+        "archived": false,
+        "description": "Vibe-code userscripts in place: customize any website by chatting with any LLM. A Tampermonkey-compatible userscript manager."
+      },
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:14.966Z"
+    },
+    {
+      "url": "https://github.com/imshaikot/browsentic",
+      "host": "github.com",
+      "name": "github.com",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Browsentic Open-source Claude for Chrome alternative for any agent CLI",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/imshaikot/browsentic",
+        "finalUrl": "https://github.com/imshaikot/browsentic",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - imshaikot/browsentic: An agentic browser harness: an AI side panel &amp; orb in your own logged-in Chrome, Edge, Arc, Brave or even Firefox run by the agent you already use (Claude Code, Code",
+        "description": "An agentic browser harness: an AI side panel &amp; orb in your own logged-in Chrome, Edge, Arc, Brave or even Firefox run by the agent you already use (Claude Code, Codex, Antigravity). Free, open source, no API key. Also an MCP server. - imshaikot/browsentic",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "Apache-2.0",
+        "body": "GitHub - imshaikot/browsentic: An agentic browser harness: an AI side panel & orb in your own logged-in Chrome, Edge, Arc, Brave or even Firefox run by the agent you already use (Claude Code, Codex, Antigravity). Free, open source, no API key. Also an MCP server. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHu",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "imshaikot/browsentic",
+        "stars": 30,
+        "licence": "Apache-2.0",
+        "pushedAt": "2026-10-04T16:10:45Z",
+        "archived": false,
+        "description": "An agentic browser harness: an AI side panel & orb in your own logged-in Chrome, Edge, Arc, Brave or even Firefox run by the agent you already use (Claude Code, Codex, Antigravity). Free, open source, no API key. Also an MCP server."
+      },
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:14.992Z"
+    },
+    {
+      "url": "https://gmaterni.github.io/agnochat/",
+      "host": "gmaterni.github.io",
+      "name": "gmaterni.github.io",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Agnochat ppure client-side LLM chat, no server, no account",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://gmaterni.github.io/agnochat/",
+        "finalUrl": "https://gmaterni.github.io/agnochat/",
+        "status": 200,
+        "reachable": true,
+        "title": "agnochat",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "--> agnochat Apri agnochat Apri agnochat -->",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:14.766Z"
+    },
+    {
+      "url": "https://github.com/Perpeer/lazychat",
+      "host": "github.com",
+      "name": "Lazychat",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Lazychat – A lazygit-style TUI for running Claude Code and Codex",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/Perpeer/lazychat",
+        "finalUrl": "https://github.com/Perpeer/lazychat",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - Perpeer/lazychat: One terminal for all your AI coding agents. Run Claude Code and Codex side by side, see which one needs you, with Git and a shell one key away. · GitHub",
+        "description": "One terminal for all your AI coding agents. Run Claude Code and Codex side by side, see which one needs you, with Git and a shell one key away.  - GitHub - Perpeer/lazychat: One terminal for all your AI coding agents. Run Claude Code and Codex side by side, see which one needs you, with Git and a shell one key away.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "AGPL",
+        "body": "GitHub - Perpeer/lazychat: One terminal for all your AI coding agents. Run Claude Code and Codex side by side, see which one needs you, with Git and a shell one key away. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure your code as you build ",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "Perpeer/lazychat",
+        "stars": 20,
+        "licence": "AGPL-3.0",
+        "pushedAt": "2026-10-05T15:32:22Z",
+        "archived": false,
+        "description": "One terminal for all your AI coding agents. Run Claude Code and Codex side by side, see which one needs you, with Git and a shell one key away. "
+      },
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:15.315Z"
+    },
+    {
+      "url": "https://pfoerringer.gumroad.com/free-claude-prompt-cold-email",
+      "host": "pfoerringer.gumroad.com",
+      "name": "pfoerringer.gumroad.com",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Free Claude prompt that decides if a cold email should be sent at all",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://pfoerringer.gumroad.com/free-claude-prompt-cold-email",
+        "finalUrl": "https://pfoerringer.gumroad.com/free-claude-prompt-cold-email",
+        "status": 200,
+        "reachable": true,
+        "title": "A free Claude prompt that decides whether a cold email should be sent — Sebastian Pfoerringer",
+        "description": "",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "A free Claude prompt that decides whether a cold email should be sent — Sebastian Pfoerringer",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:15.417Z"
+    },
+    {
+      "url": "https://github.com/bkraad47/ramen",
+      "host": "github.com",
+      "name": "Ramen",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Ramen – self-hosted multi-zone MCP server for Kubernetes(Rust & Python)",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/bkraad47/ramen",
+        "finalUrl": "https://github.com/bkraad47/ramen",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - bkraad47/ramen: Self-hosted, multi-zone, highly available MCP server (Model Context Protocol) for Kubernetes on GKE and EKS. A git repo of Python tools becomes canary-deployed Rust + Python w",
+        "description": "Self-hosted, multi-zone, highly available MCP server (Model Context Protocol) for Kubernetes on GKE and EKS. A git repo of Python tools becomes canary-deployed Rust + Python workers behind one load balancer, with OAuth 2.1 sign-in, per-group roles, secrets, IP rules, throttling and audit. - bkraad47/ramen",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "BSD",
+        "body": "GitHub - bkraad47/ramen: Self-hosted, multi-zone, highly available MCP server (Model Context Protocol) for Kubernetes on GKE and EKS. A git repo of Python tools becomes canary-deployed Rust + Python workers behind one load balancer, with OAuth 2.1 sign-in, per-group roles, secrets, IP rules, throttling and audit. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality ",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "bkraad47/ramen",
+        "stars": 2,
+        "licence": "BSD-3-Clause",
+        "pushedAt": "2026-10-05T11:16:00Z",
+        "archived": false,
+        "description": "Self-hosted, multi-zone, highly available MCP server (Model Context Protocol) for Kubernetes on GKE and EKS. A git repo of Python tools becomes canary-deployed Rust + Python workers behind one load balancer, with OAuth 2.1 sign-in, per-group roles, secrets, IP rules, throttling and audit."
+      },
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:15.615Z"
+    },
+    {
+      "url": "https://www.sortbot.io",
+      "host": "sortbot.io",
+      "name": "Sortbot.io",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Sortbot.io – Your physical inventory, with an API and MCP access",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.sortbot.io",
+        "finalUrl": "https://www.sortbot.io/",
+        "status": 200,
+        "reachable": true,
+        "title": "Sortbot — Physical Inventory Organizer",
+        "description": "A place for everything. Turn a photo into organized inventory.",
+        "priceSource": "homepage",
+        "figures": [
+          {
+            "figure": "$0",
+            "context": "as much as you need. Unlimited items. Every feature. Choose the allowance that fits. Free $0 For everyday things. 30 captures / 30 days 30 Ask Sortbot messages / 30 days 3 photos p"
+          },
+          {
+            "figure": "$6 / mo",
+            "context": "tures / 30 days 30 Ask Sortbot messages / 30 days 3 photos per item Start for free Member $6 / month Or $49 a year. For a growing inventory. 300 captures / 30 days 300 Ask Sortbot "
+          },
+          {
+            "figure": "$49",
+            "context": "s 30 Ask Sortbot messages / 30 days 3 photos per item Start for free Member $6 / month Or $49 a year. For a growing inventory. 300 captures / 30 days 300 Ask Sortbot messages / 30 "
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Sortbot — Physical Inventory Organizer Skip to content How it works Your agent Pricing Sign in An agent for your physical world Your stuff. Sorted. Take a photo. Add a little context. Let AI turn it into inventory you can actually use. Start sorting No email needed. Try your first 5 items. Tools & parts Everyday gear That box in the garage One item. One photo. Example Details recognized “Garage tool case. The chuck sticks sometimes.” AI filled in the details Cordless drill Orange cordless drill with a black grip and battery. The chuck sometimes sticks. tools cordless home repairs Image details Orange housing, rubber grip, battery attached. Cordless drill Garage drill Orange power drill Garag",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:15.400Z"
+    },
+    {
+      "url": "https://stackkit.website/",
+      "host": "stackkit.website",
+      "name": "StackKit",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: StackKit – Open-source and self-hosted alternatives to SaaS tools",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://stackkit.website/",
+        "finalUrl": "https://stackkit.website/",
+        "status": 200,
+        "reachable": true,
+        "title": "Home | StackKit",
+        "description": "Minimalist breakdowns and curated comparisons of self-hosted developer stack alternatives.",
+        "priceSource": "homepage",
+        "figures": [],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "Home | StackKit StackKit Home About StackKit Minimalist breakdowns and curated comparisons of self-hosted developer stack alternatives. Track MRR and Churn Without Baremetrics: 5 Open-Source Tools Compute MRR, churn, and LTV from your own Stripe, Lago, or Kill Bill data with five open-source tools that replace Baremetrics and ProfitWell. Tidemill Kill Bill +3 Open Server-Side Tagging Without Stape s Per-Request Fees Stape bills per request once you outgrow its free tier. These open-source tag managers give you server-side tracking on infrastructure you control. walkerOS OSSTag +3 Open Typeform & Qualtrics Alternatives Without the Response Caps Typeform caps your responses and Qualtrics hides",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:15.715Z"
+    },
+    {
+      "url": "https://vibivibi.com/",
+      "host": "vibivibi.com",
+      "name": "Vibivibi",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 3,
+      "claim": "Show HN: Vibivibi – End-to-end encrypted sharing of Coding Agent sessions",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://vibivibi.com/",
+        "finalUrl": "https://vibivibi.com/",
+        "status": 200,
+        "reachable": true,
+        "title": "vibivibi: encrypted coding agent session backup and sharing",
+        "description": "Back up, sync and share Claude Code, Codex CLI, OpenCode and Pi sessions between your machines and your teammates, end-to-end encrypted. vibivibi stores ciphertext it cannot read.",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$0",
+            "context": "he limits are about how much of it we keep and move for you. Free Try it on two machines. $0 per month 200 MB of encrypted sessions Sessions up to 50 MB 2 machines Unlimited sends "
+          },
+          {
+            "figure": "$8",
+            "context": "of each session 5 GB of downloads a month Get started free Pro Every machine you work on. $8 per month or $6 / month billed yearly 20 GB of encrypted sessions Sessions up to 200 MB"
+          },
+          {
+            "figure": "$6 / mo",
+            "context": "5 GB of downloads a month Get started free Pro Every machine you work on. $8 per month or $6 / month billed yearly 20 GB of encrypted sessions Sessions up to 200 MB Unlimited machi"
+          },
+          {
+            "figure": "$72",
+            "context": "sends Full version history 50 GB of downloads a month Start Pro monthly Start Pro yearly ($72) Team A shared pool for the whole team. $15 per member / month or $12 / month billed y"
+          },
+          {
+            "figure": "$15",
+            "context": "s a month Start Pro monthly Start Pro yearly ($72) Team A shared pool for the whole team. $15 per member / month or $12 / month billed yearly 100 GB per member, pooled across the t"
+          },
+          {
+            "figure": "$12 / mo",
+            "context": "y Start Pro yearly ($72) Team A shared pool for the whole team. $15 per member / month or $12 / month billed yearly 100 GB per member, pooled across the team Sessions up to 200 MB "
+          },
+          {
+            "figure": "$144",
+            "context": "activity log 200 GB of downloads a month per member Start Team monthly Start Team yearly ($144) Paid plans start with a 14-day free trial. Yearly billing is two months free. By sub"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": null,
+        "body": "End-to-end encrypted · zero-access storage Encrypted coding agent session backup & sharing Push a Claude Code, Codex CLI, OpenCode, or Pi session from the machine you are on, pull it onto any other and resume where you left off, or send it to a teammate. It is encrypted on your machine with keys only you and your recipient hold. Vibivibi stores ciphertext it cannot read. Create a free account Sign in Free for two machines and 200 MB . No card needed. zsh — vibi ❯ vibi enroll K7PQ-2M4X Encryption X25519 · AES-256-GCM · scrypt Server access to content None. Ciphertext only. Works with Claude Code · Codex CLI · OpenCode · Pi Client one CLI, vibi, on every machine To another machine Start on the",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:15.476Z"
+    },
+    {
+      "url": "https://github.com/zanwei/design-dna",
+      "host": "github.com",
+      "name": "design-dna",
+      "discoveredVia": "github",
+      "sourceCategory": "GitHub / design-tokens",
+      "kindHint": "tool",
+      "signal": 2,
+      "claim": "Turn reference UIs (images, screenshots, URLs) into quantified Design DNA JSON—tokens, qualitative style, visual effects—then generate matching UI from your content.",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://github.com/zanwei/design-dna",
+        "finalUrl": "https://github.com/zanwei/design-dna",
+        "status": 200,
+        "reachable": true,
+        "title": "GitHub - zanwei/design-dna: Turn reference UIs (images, screenshots, URLs) into quantified Design DNA JSON—tokens, qualitative style, visual effects—then generate matching UI from your content. · GitH",
+        "description": "Turn reference UIs (images, screenshots, URLs) into quantified Design DNA JSON—tokens, qualitative style, visual effects—then generate matching UI from your content. - zanwei/design-dna",
+        "priceSource": "/pricing",
+        "figures": [
+          {
+            "figure": "$ 0",
+            "context": "vanced Security. Start free for 30 days Free The basics for individuals and organizations $ 0 USD per month $ 0 USD per month forever Join for free Unlimited public/private reposit"
+          },
+          {
+            "figure": "$ 4",
+            "context": " Show features Most popular Team Advanced collaboration for individuals and organizations $ 4 USD per user/month $ 4 USD per user/month for the first 12 months * Continue with Team"
+          },
+          {
+            "figure": "$0.18",
+            "context": "rate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. "
+          },
+          {
+            "figure": "$0.07",
+            "context": "ser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month. Uh oh! There was an error while loading. Please reload this page . Rep"
+          },
+          {
+            "figure": "$ 21",
+            "context": "features Recommended Enterprise Security, compliance, and flexible deployment Starting at $ 21 USD per user/month $ 21 USD per user/month for the first 12 months * Start a free tri"
+          },
+          {
+            "figure": "$5",
+            "context": "ows in isolated, resumable cloud environments. See pricing details Git Large File Storage $5 per month for 50 GB bandwidth and 50 GB of storage. Learn more Create a custom estimate"
+          },
+          {
+            "figure": "$0",
+            "context": ". Please reload this page . Unlimited Unlimited Unlimited Code workflow GitHub Codespaces $0 spend limit With policies and controls Ability to increase spend limit Ability to incre"
+          }
+        ],
+        "mentionsFree": true,
+        "licence": "MIT",
+        "body": "GitHub - zanwei/design-dna: Turn reference UIs (images, screenshots, URLs) into quantified Design DNA JSON—tokens, qualitative style, visual effects—then generate matching UI from your content. · GitHub Skip to content Navigation Menu Sign in Appearance settings Platform AI CODE CREATION GitHub Copilot Write better code with AI GitHub Copilot app Direct agents from issue to merge MCP Registry Integrate external tools DEVELOPER WORKFLOWS Actions Automate any workflow Codespaces Instant dev environments Issues Plan and track work Code Review Manage code changes Code Quality Enforce quality at merge APPLICATION SECURITY GitHub Advanced Security Find and fix vulnerabilities Code security Secure ",
+        "openSource": true
+      },
+      "repo": {
+        "status": 200,
+        "fullName": "zanwei/design-dna",
+        "stars": 1888,
+        "licence": "MIT",
+        "pushedAt": "2026-08-28T01:58:49Z",
+        "archived": false,
+        "description": "Turn reference UIs (images, screenshots, URLs) into quantified Design DNA JSON—tokens, qualitative style, visual effects—then generate matching UI from your content."
+      },
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:15.556Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "21st dev",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:16.451Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "23rd",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:16.783Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "absurd design",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:17.619Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "admire the web",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:17.390Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "adobe photoshop",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:17.332Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "affonso",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:17.654Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "after design",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:17.101Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "agency gallery",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:17.575Z"
+    },
+    {
+      "url": "https://agentunicorn.ai/research/decision-models-production",
+      "host": "agentunicorn.ai",
+      "name": "agentunicorn.ai",
+      "discoveredVia": "show-hn",
+      "sourceCategory": "Show HN",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": "Show HN: Decision models remove training, not production ML Engineering",
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://agentunicorn.ai/research/decision-models-production",
+        "finalUrl": "https://agentunicorn.ai/research/decision-models-production",
+        "status": 200,
+        "reachable": true,
+        "title": "Jev-like Decision Models Make Prototyping Trivial. Production Still Requires ML Engineering | AgentUnicorn.AI Research",
+        "description": "A reusable decision model can remove task-specific training from the critical path. It cannot remove task specification, representative evidence, calibration, selective automation, replay, monitoring, or change control. What actually changes in the ML lifecycle — and what does not.",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "Jev-like Decision Models Make Prototyping Trivial. Production Still Requires ML Engineering | AgentUnicorn.AI Research AgentUnicorn .AI Enterprise Industries Fintech Retail & E-commerce Airlines Telecom Insurance Marketplaces Real Estate Travel & Hospitality Automotive Clinics & Dental All industries → Research & Insights About us Book a meeting Request pricing Research & Insights Decision models Updated 3 October 2026 25 min read Jev-like Decision Models Make Prototyping Trivial. Production Still Requires ML Engineering A reusable decision model can remove task-specific training from the critical path. It cannot remove task specification, representative evidence, calibration, selective auto",
+        "openSource": true
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:17.683Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "ai camera movements",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:19.174Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "alcove",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:18.444Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "amicons",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:18.690Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "amie",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:19.968Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "amplift",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:19.570Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "animos",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:19.709Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "anything",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:19.028Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "anyvids 1",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:18.915Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "appgrowkit",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:20.928Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "applaunchpad",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:20.124Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "appshot gallery",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:20.524Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "appshots",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:20.458Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "appthetics",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:20.392Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "arc",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:22.680Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "arcade",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:21.021Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "arq",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:21.728Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "artboard studio",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:21.656Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "askmyads",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:21.999Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "audio ui",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:22.310Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "audiocn",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:21.797Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "autodraw",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:22.050Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "banani",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:23.089Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "base44",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:23.317Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "bean heads",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:24.293Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "bear",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:23.371Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "beautiful ai 1",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:23.362Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "beautiful ui",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:23.446Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "bencho",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:23.692Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "beui",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:25.507Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "beyond ui",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:24.338Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "bg0",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:24.719Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "bio",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day Dudu from Toolfolio toolfolio 134 212 3660 Just Google Toolfolio",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:25.303Z"
+    },
+    {
+      "url": "https://www.tiktok.com/@toolfolio",
+      "host": "tiktok.com",
+      "name": "blink 1",
+      "discoveredVia": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "kindHint": "tool",
+      "signal": 1,
+      "claim": null,
+      "claimedTier": null,
+      "evidence": {
+        "url": "https://www.tiktok.com/@toolfolio",
+        "finalUrl": "https://www.tiktok.com/@toolfolio",
+        "status": 200,
+        "reachable": true,
+        "title": "TikTok - Make Your Day",
+        "description": "",
+        "priceSource": "/pricing",
+        "figures": [],
+        "mentionsFree": false,
+        "licence": null,
+        "body": "TikTok - Make Your Day",
+        "openSource": false
+      },
+      "repo": null,
+      "status": "pending",
+      "assessedAt": "2026-10-05T15:47:24.877Z"
     }
   ]
 }
