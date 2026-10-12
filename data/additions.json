@@ -4936,6 +4936,192 @@
       ],
       "addedAt": "2026-10-01T17:16:05.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Arc UI",
+      "website": "https://uiarc.dev/",
+      "what": "157 React components and 91 composed blocks with the motion already in them — a line chart you scrub, a select that morphs into its list, a number field that pushes back at its limit. Installs through the shadcn CLI, and ships an MCP server so an agent can read the catalogue and build from it rather than being told what exists.",
+      "category": "Design engineering / component libraries",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier of components. Pro is $199 once for lifetime access to everything, including the blocks.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Closest fit to how we already work of anything in this batch: shadcn CLI, Next.js, components we own the source of once they are installed. The MCP server is the differentiator — the agent can see the library instead of guessing at class names.",
+        "Blocks are the part that saves real time: whole flows (scheduling, triage, onboarding) rather than single controls.",
+        "Every example on the site is live rather than a recording, which is the right way to publish a motion library and makes it quick to judge before paying."
+      ],
+      "addedAt": "2026-10-12T08:13:47.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Tenor",
+      "website": "https://tenor.design/",
+      "what": "A canvas for refining React interfaces by conversation: bring in the UI a coding agent produced or a reference for what you meant, compare variants side by side, then carry on in Codex, Claude or Cursor, or export the React.",
+      "category": "Design engineering / design-to-code",
+      "pricing": "Paid",
+      "priceDetail": "Pro $22/month billed annually. A custom plan for studios bringing it into client work is priced by conversation — no figure published. Mac app listed as coming soon.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The pitch that separates it from the rest of this crowded category is the handoff: it is meant to sit between the agent that wrote the first pass and the agent that finishes it, not to replace either.",
+        "No free tier published, so judging it means paying for a month first.",
+        "Included AI usage refreshes monthly with no number attached to it, which is the thing to pin down before putting it anywhere near a client deadline."
+      ],
+      "addedAt": "2026-10-12T08:13:47.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Liquid Glass (Glass SDK)",
+      "website": "https://liquid-glass.glassapp.dev/",
+      "what": "Apple's Liquid Glass material as React components for the web and Electron — the Clear and Regular variants, progressive blur, edge refraction — built on WebGPU with WGSL shaders rather than stacked CSS filters.",
+      "category": "Design engineering / component libraries",
+      "pricing": "Free",
+      "priceDetail": "MIT licensed, published as @glass-sdk/liquid-glass.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Version 0.0.2, first published days ago. MIT and open, but that version number is the headline: do not put it on the critical path of anything with a deadline.",
+        "WebGPU and WGSL under the hood, so support is the question to answer before adopting — a fallback path matters more here than the material does.",
+        "Worth watching rather than reaching for. If Liquid Glass keeps spreading through client briefs, having a real implementation rather than a CSS pastiche will matter."
+      ],
+      "addedAt": "2026-10-12T08:13:47.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Anatomy",
+      "website": "https://skills.wheresryan.sh/anatomy",
+      "what": "A Claude Code skill that answers 'how does this work' by building the machine that does it: name an idea in one line and it draws a live isometric figure of hundreds of small parts you can turn, press and read, where every number on screen comes from the same model that moves it. Installs with `npx skills add wheresryan`; also runs in OpenCode and Codex.",
+      "category": "AI coding / agent skills",
+      "pricing": "Free",
+      "priceDetail": "MIT licensed, source at github.com/wheresryan22/anatomy.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The argument behind it is the useful part: boxes and arrows tell you the parts exist but not what they do, and leave the reader to imagine the motion. Worth stealing for how we explain architecture in a proposal whether or not we run the skill.",
+        "Not fast. The worked example — a mechanical watch movement — took just under two hours of agent time in one pass, so this is a considered deliverable, not something to run mid-call.",
+        "Output is SVG, WebGL and 3D, so a figure drops into a page or a doc rather than needing a tool to view it."
+      ],
+      "addedAt": "2026-10-12T08:13:47.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "OpenRouter",
+      "website": "https://openrouter.ai/",
+      "what": "One API and one bill in front of 500+ models from most of the providers, with automatic routing and failover between them, prompt caching, bring-your-own-key, and routing you can pin to EU or US regions.",
+      "category": "AI coding / model providers",
+      "pricing": "Freemium",
+      "priceDetail": "Free tier: 25+ free models, 4 free providers, 50 requests a day, community support. Standard is pay-as-you-go on a 5.5% platform fee; Business 8% and adds SSO/SAML, admin controls, policy-based routing and contractual SLAs; Enterprise is by contract.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The reason to care on client work is the boring one: a single vendor relationship and one invoice across providers, plus failover when a provider has a bad afternoon.",
+        "The platform fee is a real line in a margin — 5.5% or 8% on top of token cost — so for a project pinned to one model it is cheaper to go direct. It earns its keep where you are switching models or hedging.",
+        "In-region routing and a DPA above the free tier are what make it answerable to a client's procurement, which most aggregator layers cannot do."
+      ],
+      "addedAt": "2026-10-12T08:13:47.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Sindre Sorhus — Apps",
+      "link": "https://sindresorhus.com/apps",
+      "resourceType": "Directory",
+      "category": "Mac software / tool discovery",
+      "takeaway": "One developer's catalogue of 61 Mac, iOS, Watch and Vision apps built over eleven years, filtered by platform and by free, paid or Setapp. Most are single-purpose and tiny — menu bar spacing, a .DS_Store inspector, world clocks, copying text that will not select — and a good number are open source.",
+      "whatToDo": "Reference and a source of small fixes. Action: run the free menu-bar utilities past the team as a kit, and read the Tiny Apps section before anyone proposes building an internal tool that already exists here.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Also the clearest working argument for the one-job app: 61 of them, 6M+ users, sustained by one person, with a stated 10,000 support emails answered. Worth showing to a client who wants everything in version one."
+      ],
+      "addedAt": "2026-10-12T08:13:47.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "404s.design",
+      "link": "https://www.404s.design/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / websites",
+      "takeaway": "A gallery of error pages worth landing on, tagged three ways: style (brutalist, editorial, hand-drawn, large type), interaction (animated, custom cursor, game, scroll-driven) and industry, so you can pull the ones from agencies or fintech specifically. Keyboard shortcuts for grid and a random pick; submissions open.",
+      "whatToDo": "Reference for the page everyone leaves to last. Action: pick two from the Game and Interactive tags next time a 404 is in scope, rather than shipping the default.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "The industry filter is what makes it more than a mood board — it is quick to find what a competitor in a client's sector did."
+      ],
+      "addedAt": "2026-10-12T08:13:47.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Expo demos",
+      "link": "https://expo.dev/demos",
+      "resourceType": "Directory",
+      "category": "Mobile & app dev",
+      "takeaway": "Thirty worked demos of things built with Expo, each credited to the person who made it and tagged by technique — WebGPU model viewers and bird flocks, Skia shaders, iOS liquid-glass curved tab bars, dynamic island scroll-collapse, native paste inputs, SwiftUI interop, gesture work.",
+      "whatToDo": "Reference when scoping React Native work. Action: check this before quoting on a native-feeling interaction — several of the things clients assume need a native build are demonstrated here running in Expo.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Useful as evidence as much as reference: it is a short answer to 'can React Native do that properly', with a named author to each one."
+      ],
+      "addedAt": "2026-10-12T08:13:47.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Treatments.gallery",
+      "link": "https://treatments.gallery/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / advertising",
+      "takeaway": "4,884 App Store product page headers alongside years of Google Play feature graphics, searchable by app, developer, category or colour, on an endless canvas that wraps in every direction. Curated by The Screenshot First Company, a studio that does App Store screenshots for a living.",
+      "whatToDo": "Reference for app store creative, which usually gets designed last and worst. Action: search the client's category before drawing a store header, and use the Play feature graphics as the head start they are — Play has run that format for years, Apple's header is new.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Colour search is the genuinely useful filter: it finds the headers that will sit next to a client's brand rather than ones that merely look good alone."
+      ],
+      "addedAt": "2026-10-12T08:13:47.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Spotted in Prod",
+      "link": "https://www.spottedinprod.com/",
+      "resourceType": "Directory",
+      "category": "Design research / iOS UI patterns",
+      "takeaway": "Standout iOS interactions, captured as clips and tagged more finely than anything comparable: by style, by the gesture that triggers it (scrub, pull, flick, gyroscope, long press), by the screen it lives on (paywall, empty state, permissions, onboarding), by the pattern (bottom sheet, shared element, card stack) and by the size of company that shipped it. Carries a jobs board too.",
+      "whatToDo": "Reference with a real search behind it. Action: when a client asks for a specific feel, search the gesture or the screen type rather than scrolling a feed, and take the clip into the kickoff as the shared reference.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "The 'Startup / Indie / Big Co / Small Co' filter is quietly the most useful one — it keeps you from pitching an interaction that took a platform team a quarter."
+      ],
+      "addedAt": "2026-10-12T08:13:47.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Victor Murea",
+      "link": "https://www.victormurea.com/",
+      "resourceType": "Social account",
+      "category": "Design inspiration / portfolios",
+      "takeaway": "A freelance brand designer's site, built around a small number of case studies rather than a wall of work — a divorce law firm and a YC-backed data engineering tool among them — with client testimonials carrying most of the persuading.",
+      "whatToDo": "Reference for how a solo brand practice presents itself. Action: compare the case-study-plus-testimonial structure against how our own work pages are built before the next site refresh.",
+      "cost": "Free",
+      "usefulness": "Low",
+      "notes": [
+        "Filed as portfolio inspiration. If it was sent as a possible collaborator or hire rather than as reference, it belongs in the CRM and not on this site — say so and I will pull it."
+      ],
+      "addedAt": "2026-10-12T08:13:47.000Z",
+      "addedBy": "Dan"
     }
   ]
 }

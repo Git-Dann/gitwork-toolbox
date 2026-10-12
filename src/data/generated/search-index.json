@@ -2367,6 +2367,51 @@
     "pick": false
   },
   {
+    "kind": "tool",
+    "slug": "arc-ui",
+    "name": "Arc UI",
+    "blurb": "157 React components and 91 composed blocks with the motion already in them — a line chart you scrub, a select that morphs into i…",
+    "meta": "Design engineering / component libraries",
+    "badge": "Freemium",
+    "pick": true
+  },
+  {
+    "kind": "tool",
+    "slug": "tenor",
+    "name": "Tenor",
+    "blurb": "A canvas for refining React interfaces by conversation: bring in the UI a coding agent produced or a reference for what you meant…",
+    "meta": "Design engineering / design-to-code",
+    "badge": "Paid",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "liquid-glass-glass-sdk",
+    "name": "Liquid Glass (Glass SDK)",
+    "blurb": "Apple's Liquid Glass material as React components for the web and Electron — the Clear and Regular variants, progressive blur, ed…",
+    "meta": "Design engineering / component libraries",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "anatomy",
+    "name": "Anatomy",
+    "blurb": "A Claude Code skill that answers 'how does this work' by building the machine that does it: name an idea in one line and it draws…",
+    "meta": "AI coding / agent skills",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "openrouter",
+    "name": "OpenRouter",
+    "blurb": "One API and one bill in front of 500+ models from most of the providers, with automatic routing and failover between them, prompt…",
+    "meta": "AI coding / model providers",
+    "badge": "Freemium",
+    "pick": true
+  },
+  {
     "kind": "starter",
     "slug": "humanizer",
     "name": "Humanizer",
@@ -4856,6 +4901,60 @@
     "name": "Dive Radio",
     "blurb": "The landing page for a weekly live design show, built as a working vintage radio set. You drag a tuning dial through static to fi…",
     "meta": "Article/blog post",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "sindre-sorhus-apps",
+    "name": "Sindre Sorhus — Apps",
+    "blurb": "One developer's catalogue of 61 Mac, iOS, Watch and Vision apps built over eleven years, filtered by platform and by free, paid o…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "404s-design",
+    "name": "404s.design",
+    "blurb": "A gallery of error pages worth landing on, tagged three ways: style (brutalist, editorial, hand-drawn, large type), interaction (…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "expo-demos",
+    "name": "Expo demos",
+    "blurb": "Thirty worked demos of things built with Expo, each credited to the person who made it and tagged by technique — WebGPU model vie…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "treatments-gallery",
+    "name": "Treatments.gallery",
+    "blurb": "4,884 App Store product page headers alongside years of Google Play feature graphics, searchable by app, developer, category or c…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "spotted-in-prod",
+    "name": "Spotted in Prod",
+    "blurb": "Standout iOS interactions, captured as clips and tagged more finely than anything comparable: by style, by the gesture that trigg…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "victor-murea",
+    "name": "Victor Murea",
+    "blurb": "A freelance brand designer's site, built around a small number of case studies rather than a wall of work — a divorce law firm an…",
+    "meta": "Social account",
     "badge": "Resource",
     "pick": false
   },
