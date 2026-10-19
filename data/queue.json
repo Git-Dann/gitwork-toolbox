@@ -1,103 +1,95 @@
 {
   "$comment": "Written by scripts/discover.mjs. Candidates only — nothing here has been read. scripts/assess.mjs turns these into proposals.",
-  "generatedAt": "2026-10-12T16:38:22.533Z",
+  "generatedAt": "2026-10-19T14:31:41.092Z",
   "counts": {
-    "collected": 1350,
-    "queued": 759,
+    "collected": 1351,
+    "queued": 757,
     "dropped": {
-      "alreadyKnown": 569,
+      "alreadyKnown": 572,
       "duplicate": 6,
       "dead": 16
     }
   },
   "entries": [
     {
-      "url": "https://diagramdesign.dev",
-      "name": "diagram-design",
+      "url": "https://tasteskill.dev",
+      "name": "taste-skill",
       "source": "github",
-      "sourceCategory": "GitHub / svg",
-      "claim": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "sourceCategory": "GitHub / design-system",
+      "claim": "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages",
       "signal": 4
     },
     {
-      "url": "https://github.com/mishafyi/Apple-Docs-2.0-MCP",
-      "name": "Apple Docs 2.0 MCP",
+      "url": "https://github.com/ulrischa/agentic-coding-biolerplate",
+      "name": "Agentic-Coding-Biolerplate",
       "source": "show-hn",
       "sourceCategory": "Show HN",
-      "claim": "Show HN: Apple Docs 2.0 MCP – Apple's developer docs and WWDC for coding agents",
+      "claim": "Show HN: Agentic-Coding-Biolerplate",
       "signal": 3
     },
     {
-      "url": "https://github.com/cluedata/cluecdc",
-      "name": "ClueCDC",
+      "url": "https://apistack.online/mcp",
+      "name": "apistack.online",
       "source": "show-hn",
       "sourceCategory": "Show HN",
-      "claim": "Show HN: ClueCDC – Open-Source UI for Managing Debezium and Kafka CDC Pipelines",
+      "claim": "Show HN: A free MCP server for facts LLMs get wrong (time zones, holidays, FX)",
       "signal": 3
     },
     {
-      "url": "https://github.com/agustind/dbjoy",
-      "name": "DBJoy",
+      "url": "https://github.com/atgreen/cadr-mono",
+      "name": "CADR Mono",
       "source": "show-hn",
       "sourceCategory": "Show HN",
-      "claim": "Show HN: DBJoy – An open-source AI-first PostgreSQL client for macOS",
+      "claim": "Show HN: CADR Mono – a programming font designed in Lisp",
       "signal": 3
     },
     {
-      "url": "https://github.com/tester-army/e2e",
-      "name": "E2E",
+      "url": "https://github.com/RayenMlayeh/gsearch",
+      "name": "Gsearch",
       "source": "show-hn",
       "sourceCategory": "Show HN",
-      "claim": "Show HN: E2E – Open-source agentic testing framework for web, iOS and Android",
+      "claim": "Show HN: Gsearch – Real Google Search for AI Agents, via a Real Firefox (MCP)",
       "signal": 3
     },
     {
-      "url": "https://github.com/AryanDinakaran/EpochGo",
-      "name": "EpochGo",
+      "url": "https://hypereffect.dev",
+      "name": "hypereffect.dev",
       "source": "show-hn",
       "sourceCategory": "Show HN",
-      "claim": "Show HN: EpochGo – Local-first multi-agent AutoML on Ollama ($0 API costs)",
+      "claim": "Show HN: Hypereffect, a hypermedia protocol that renders reactive UIs everywhere",
       "signal": 3
     },
     {
-      "url": "https://github.com/plimsollmark/plimsoll",
+      "url": "https://github.com/openfilm/openfilm",
+      "name": "OpenFilm",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: OpenFilm – Turn any coding agent into a video editor",
+      "signal": 3
+    },
+    {
+      "url": "https://uidesigneditor.com/",
+      "name": "uidesigneditor.com",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Free design canvas for your AI (open source)",
+      "signal": 3
+    },
+    {
+      "url": "https://github.com/finereli/whatsapp-mcp",
       "name": "github.com",
       "source": "show-hn",
       "sourceCategory": "Show HN",
-      "claim": "Show HN: Plimsoll, a self-hosted sandbox for code your AI agent writes",
-      "signal": 3
+      "claim": "Show HN: WhatsApp MCP running free on Cloudflare",
+      "signal": 2
     },
     {
-      "url": "https://llmspy.org",
-      "name": "Llms.py",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Llms.py – Lightweight, self-hosted ChatGPT alternative to OpenWebUI",
-      "signal": 3
-    },
-    {
-      "url": "https://onlang.io/login?next=%2Fapp",
-      "name": "onlang.io",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Test UI Hypotheses for Mobile Paywalls",
-      "signal": 3
-    },
-    {
-      "url": "https://scaledthought.com/go/org-hn",
-      "name": "scaledthought.com",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: An OpenAI-compatible API that coding agents sign up for themselves",
-      "signal": 3
-    },
-    {
-      "url": "https://tellcut.app/studio",
-      "name": "Tellcut",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Tellcut – motion videos written as code by Claude, edited by chat",
-      "signal": 3
+      "url": "https://plugin87.github.io/ux-ui-agent-skills/",
+      "name": "ux-ui-agent-skills",
+      "source": "github",
+      "sourceCategory": "GitHub / design-tokens",
+      "claim": "Turn Claude into a senior design architect: DTCG tokens, 52 components, WCAG 2.2 AA-AAA, 138 design systems, any-framework code, and 50 objective gates that fail the build instead of faking success.",
+      "signal": 2
     },
     {
       "url": "https://toolfolio.com/tools/21st-dev",
@@ -164,14 +156,6 @@
       "signal": 1
     },
     {
-      "url": "https://airlock.sorrel.systems",
-      "name": "airlock.sorrel.systems",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: I built Airlock, to sandbox your AI agent and know what it's doing",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/alcove",
       "name": "alcove",
       "source": "toolfolio",
@@ -206,6 +190,14 @@
     {
       "url": "https://toolfolio.com/tools/animos",
       "name": "animos",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/anthony-boyd-graphics",
+      "name": "anthony boyd graphics",
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
@@ -324,14 +316,6 @@
       "signal": 1
     },
     {
-      "url": "https://github.com/SaarthurR/atticus-mac",
-      "name": "Atticus",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Atticus – Hold-to-talk voice assistant for macOS that runs on Claude -p",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/audio-ui",
       "name": "audio ui",
       "source": "toolfolio",
@@ -356,11 +340,11 @@
       "signal": 1
     },
     {
-      "url": "https://github.com/selviarora/baa",
-      "name": "Baa",
+      "url": "https://awesomemap.dev/",
+      "name": "AwesomeMap",
       "source": "show-hn",
       "sourceCategory": "Show HN",
-      "claim": "Show HN: Baa – a menu bar app that frees RAM your AI agents forgot about",
+      "claim": "Show HN: AwesomeMap – Discover rising open-source projects before they get big",
       "signal": 1
     },
     {
@@ -412,14 +396,6 @@
       "signal": 1
     },
     {
-      "url": "https://www.beeuni.ai/",
-      "name": "Beeuni",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Beeuni – An AI-native computer for agents",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/bencho",
       "name": "bencho",
       "source": "toolfolio",
@@ -446,6 +422,14 @@
     {
       "url": "https://toolfolio.com/tools/bg0",
       "name": "bg0",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/black-illustrations",
+      "name": "black illustrations",
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
@@ -596,6 +580,14 @@
       "signal": 1
     },
     {
+      "url": "https://github.com/iktakahiro/calendarpit",
+      "name": "Calendarpit",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Calendarpit – Local Google Calendar API and OAuth Server for Testing",
+      "signal": 1
+    },
+    {
       "url": "https://camb.ai",
       "name": "Camb.ai",
       "source": "workbook",
@@ -603,6 +595,14 @@
       "claimedTier": "Freemium",
       "claim": "AI dubbing and translation",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://canaryguard-402.onrender.com/bounty.html",
+      "name": "CanaryGuard",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: CanaryGuard – A <0.1ms deterministic AI prompt firewall with $5 bounty",
       "signal": 1
     },
     {
@@ -648,6 +648,14 @@
       "signal": 1
     },
     {
+      "url": "https://chalkbrain.com/labs/the-slate/",
+      "name": "chalkbrain.com",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Chalk, interactive labs for system design ideas",
+      "signal": 1
+    },
+    {
       "url": "https://toolfolio.com/tools/chatgpt",
       "name": "chatgpt",
       "source": "toolfolio",
@@ -661,6 +669,14 @@
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://chest.boringbar.app/",
+      "name": "Chest",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Chest – a tiny, open-source menu bar manager for macOS 27",
       "signal": 1
     },
     {
@@ -840,14 +856,6 @@
       "signal": 1
     },
     {
-      "url": "https://github.com/princejain756/ctxvitals",
-      "name": "Ctxvitals",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Ctxvitals – a vitals check for your AI agent stack (npx ctxvitals)",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/dafont",
       "name": "dafont",
       "source": "toolfolio",
@@ -970,11 +978,27 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/doodle-ipsum",
+      "name": "doodle ipsum",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://toolfolio.com/tools/drawably",
       "name": "drawably",
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://droplis.lalo.li/",
+      "name": "Droplis",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Droplis – A new kind of 1 click Logic Game",
       "signal": 1
     },
     {
@@ -1038,6 +1062,14 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/eskimoz",
+      "name": "eskimoz",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://toolfolio.com/tools/evendeals",
       "name": "evendeals",
       "source": "toolfolio",
@@ -1070,27 +1102,11 @@
       "signal": 1
     },
     {
-      "url": "https://github.com/kernelshard/expose",
-      "name": "Expose",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Expose – Self-hosted ngrok alternative in Go",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/fabric",
       "name": "fabric",
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
-      "signal": 1
-    },
-    {
-      "url": "https://fancanon.com/",
-      "name": "Fancanon",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Fancanon – A modern fanfiction platform built with SvelteKit",
       "signal": 1
     },
     {
@@ -1131,14 +1147,6 @@
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
-      "signal": 1
-    },
-    {
-      "url": "https://github.com/figranium/figranium",
-      "name": "Figranium",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Figranium – Build browser automations visually and run them as APIs",
       "signal": 1
     },
     {
@@ -1208,6 +1216,14 @@
       "signal": 1
     },
     {
+      "url": "https://wordpress.org/plugins/footloom/",
+      "name": "Footloom",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Footloom – Self-Hosted Google Analytics Alternative for WordPress",
+      "signal": 1
+    },
+    {
       "url": "https://toolfolio.com/tools/forgegui",
       "name": "forgegui",
       "source": "toolfolio",
@@ -1258,22 +1274,6 @@
       "signal": 1
     },
     {
-      "url": "https://github.com/frostbar/frost/",
-      "name": "Frost",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Frost – An open-source menu bar manager for macOS 26 and 27",
-      "signal": 1
-    },
-    {
-      "url": "https://fusebox.sifatsrk.workers.dev/",
-      "name": "Fusebox",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Fusebox – get emailed before an OpenAI API bill runs away",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/fyxer",
       "name": "fyxer",
       "source": "toolfolio",
@@ -1282,11 +1282,11 @@
       "signal": 1
     },
     {
-      "url": "https://toolfolio.com/tools/gatheros",
-      "name": "gatheros",
-      "source": "toolfolio",
-      "sourceCategory": "Directory listing",
-      "needsResolve": true,
+      "url": "https://testflight.apple.com/join/E6Hga72P",
+      "name": "Gemapix",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Gemapix – point your iPhone at a building and hear its story",
       "signal": 1
     },
     {
@@ -1324,35 +1324,19 @@
       "signal": 1
     },
     {
-      "url": "https://github.com/fus3r/lemma",
+      "url": "https://github.com/hanhanwu/Agentopia",
       "name": "github.com",
       "source": "show-hn",
       "sourceCategory": "Show HN",
-      "claim": "Show HN: Lemma, an IDE for reading mathematics (macOS, open source)",
+      "claim": "Show HN: Making agent-to-agent interactions observable, in a fun way",
       "signal": 1
     },
     {
-      "url": "https://github.com/cloudamqp/lavinmq-demos/tree/main/nodejs-clients-demo",
+      "url": "https://github.com/TriHerm/cutmark",
       "name": "github.com",
       "source": "show-hn",
       "sourceCategory": "Show HN",
-      "claim": "Show HN: I built a banking demo with LavinMQ to test messaging failures",
-      "signal": 1
-    },
-    {
-      "url": "https://github.com/hpdkhoa/gen-system",
-      "name": "github.com",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Gen-system, parser facts about source code for local LLMs",
-      "signal": 1
-    },
-    {
-      "url": "https://github.com/qufei1993/skills-hub",
-      "name": "github.com",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Skills Hub, a desktop app for managing AI agent skills",
+      "claim": "Show HN: Local-first macOS video recorder and editor with MCP support",
       "signal": 1
     },
     {
@@ -1486,6 +1470,14 @@
       "signal": 1
     },
     {
+      "url": "https://toolfolio.com/tools/handy-arrows",
+      "name": "handy arrows",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
       "url": "https://toolfolio.com/tools/hano",
       "name": "hano",
       "source": "toolfolio",
@@ -1528,14 +1520,6 @@
       "signal": 1
     },
     {
-      "url": "https://toolfolio.com/tools/heritage-type-co",
-      "name": "heritage type co",
-      "source": "toolfolio",
-      "sourceCategory": "Directory listing",
-      "needsResolve": true,
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/heroicons",
       "name": "heroicons",
       "source": "toolfolio",
@@ -1546,6 +1530,14 @@
     {
       "url": "https://toolfolio.com/tools/herokit",
       "name": "herokit",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/heyclicky",
+      "name": "heyclicky",
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
@@ -1636,6 +1628,14 @@
       "signal": 1
     },
     {
+      "url": "https://github.com/hybroai/hybro",
+      "name": "Hybro",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Hybro – an open interoperability engine for AI agents",
+      "signal": 1
+    },
+    {
       "url": "https://toolfolio.com/tools/hyperfxai",
       "name": "hyperfxai",
       "source": "toolfolio",
@@ -1688,32 +1688,8 @@
       "signal": 1
     },
     {
-      "url": "https://iconic.photos/",
-      "name": "iconic.photos",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Step inside history's most famous moments",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/icoon-co",
       "name": "icoon co",
-      "source": "toolfolio",
-      "sourceCategory": "Directory listing",
-      "needsResolve": true,
-      "signal": 1
-    },
-    {
-      "url": "https://github.com/gonzaroman/IHMT-MEMORY",
-      "name": "IHMT",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: IHMT – Infinite Hierarchical Memory Tree for AI Agents",
-      "signal": 1
-    },
-    {
-      "url": "https://toolfolio.com/tools/illlustrations",
-      "name": "illlustrations",
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
@@ -1776,6 +1752,14 @@
       "signal": 1
     },
     {
+      "url": "https://companyofcraft.com/ip-lookup",
+      "name": "IP Lookup API",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: IP Lookup API",
+      "signal": 1
+    },
+    {
       "url": "https://jasper.ai",
       "name": "Jasper",
       "source": "workbook",
@@ -1819,6 +1803,30 @@
       "claimedTier": "Paid",
       "claim": "AI writer for SEO blogs",
       "linkCheck": "OK",
+      "signal": 1
+    },
+    {
+      "url": "https://github.com/angelkurten/keel",
+      "name": "Keel",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Keel – One event-sourced context graph for all your agents",
+      "signal": 1
+    },
+    {
+      "url": "https://www.designinspiration.info/kernwise-a-free-kerning-game-for-designers/",
+      "name": "Kernwise",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Kernwise – Kerning Game for Designers",
+      "signal": 1
+    },
+    {
+      "url": "https://kilianc.github.io/fin/",
+      "name": "kilianc.github.io",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: CLI for your financial data (and Costco and Amazon)",
       "signal": 1
     },
     {
@@ -1978,6 +1986,14 @@
       "signal": 1
     },
     {
+      "url": "https://github.com/aleph-void/LLM-Usage-Desktop-Widget",
+      "name": "LLM Usage Desktop Widget",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: LLM Usage Desktop Widget",
+      "signal": 1
+    },
+    {
       "url": "https://toolfolio.com/tools/loftlyy",
       "name": "loftlyy",
       "source": "toolfolio",
@@ -2094,14 +2110,6 @@
       "signal": 1
     },
     {
-      "url": "https://toolfolio.com/tools/lukasz-adam",
-      "name": "lukasz adam",
-      "source": "toolfolio",
-      "sourceCategory": "Directory listing",
-      "needsResolve": true,
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/lunatask",
       "name": "lunatask",
       "source": "toolfolio",
@@ -2158,14 +2166,6 @@
       "signal": 1
     },
     {
-      "url": "https://github.com/mastro-hq/mastro-connect",
-      "name": "Mastro",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Mastro – Turn the browser session into a CLI for any web app",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/matext",
       "name": "matext",
       "source": "toolfolio",
@@ -2187,6 +2187,22 @@
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://toolfolio.com/tools/meltkit",
+      "name": "meltkit",
+      "source": "toolfolio",
+      "sourceCategory": "Directory listing",
+      "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://memoryhole.app/wiki-timeline",
+      "name": "memoryhole.app",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: See diffs of Wikipedia over time",
       "signal": 1
     },
     {
@@ -2390,14 +2406,6 @@
       "signal": 1
     },
     {
-      "url": "https://nabusql.nabu.work/",
-      "name": "NabuSQL",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: NabuSQL – Rust Database GUI for MySQL/MariaDB, Postgres, SQLite, Mssql",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/name-that-ui",
       "name": "name that ui",
       "source": "toolfolio",
@@ -2448,6 +2456,14 @@
       "signal": 1
     },
     {
+      "url": "https://www.neuronbot.in",
+      "name": "neuronbot.in",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Neuron, agents that set themselves up from your GitHub repo",
+      "signal": 1
+    },
+    {
       "url": "https://toolfolio.com/tools/nexlev",
       "name": "nexlev",
       "source": "toolfolio",
@@ -2469,14 +2485,6 @@
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
-      "signal": 1
-    },
-    {
-      "url": "https://noai.openaltfinder.com/",
-      "name": "noai.openaltfinder.com",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: I made an AI free version of my directory of open-source alternatives",
       "signal": 1
     },
     {
@@ -2514,14 +2522,6 @@
       "signal": 1
     },
     {
-      "url": "https://nyrion.ai/",
-      "name": "nyrion.ai",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Practice for the new AI-assisted coding interview format",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/obsidian",
       "name": "obsidian",
       "source": "toolfolio",
@@ -2546,6 +2546,14 @@
       "signal": 1
     },
     {
+      "url": "https://github.com/omnipty-terminal/omnipty",
+      "name": "OmniPTY",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: OmniPTY – Opinionated terminal emulator for macOS and Linux",
+      "signal": 1
+    },
+    {
       "url": "https://toolfolio.com/tools/op0",
       "name": "op0",
       "source": "toolfolio",
@@ -2567,6 +2575,14 @@
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://opendesk.sh/",
+      "name": "opendesk.sh",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: OpenDesk, an open-source alternative to Zendesk and Intercom",
       "signal": 1
     },
     {
@@ -2612,14 +2628,6 @@
       "signal": 1
     },
     {
-      "url": "https://orisift.com",
-      "name": "orisift.com",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Orisift, an API that screens signup phone, email, IP and domain",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/orshot",
       "name": "orshot",
       "source": "toolfolio",
@@ -2657,6 +2665,14 @@
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://www.panelfont.com/",
+      "name": "Panel Font-AI Manga Translator",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Panel Font-AI Manga Translator",
       "signal": 1
     },
     {
@@ -2828,14 +2844,6 @@
       "signal": 1
     },
     {
-      "url": "https://precisionnumerics.ai/blog/boole-1p7b",
-      "name": "precisionnumerics.ai",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Boole-1.7B, a 1-bit LLM that outperforms Bonsai-1.7B",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/presentify",
       "name": "presentify",
       "source": "toolfolio",
@@ -2968,14 +2976,6 @@
       "signal": 1
     },
     {
-      "url": "https://console.runpod.io/hub/listing/lateos-ai/reflex",
-      "name": "Reflex",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Reflex – A GGUF-native Rust/CUDA engine for scale-to-zero LLM routing",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/reloop",
       "name": "reloop",
       "source": "toolfolio",
@@ -3078,14 +3078,6 @@
       "signal": 1
     },
     {
-      "url": "https://github.com/lucianRME/rme-pdf-scanner",
-      "name": "RME",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: RME – open-source Android scanner with no INTERNET permission",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/rork",
       "name": "rork",
       "source": "toolfolio",
@@ -3099,6 +3091,14 @@
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
+      "signal": 1
+    },
+    {
+      "url": "https://github.com/YURIBEDRAN/rubi",
+      "name": "Rubi",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Rubi – A knowledge graph that cuts how much Claude Code re-reads",
       "signal": 1
     },
     {
@@ -3146,6 +3146,14 @@
       "signal": 1
     },
     {
+      "url": "https://github.com/lusingander/sauva",
+      "name": "Sauva",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Sauva – Terminal Unicode Explorer",
+      "signal": 1
+    },
+    {
       "url": "https://toolfolio.com/tools/saveday",
       "name": "saveday",
       "source": "toolfolio",
@@ -3180,11 +3188,11 @@
       "signal": 1
     },
     {
-      "url": "https://www.seodata.dev/",
-      "name": "seodata.dev",
+      "url": "https://seliseblocks.com",
+      "name": "Selise Blocks",
       "source": "show-hn",
       "sourceCategory": "Show HN",
-      "claim": "Show HN: Seodata.dev (1.1) Free search data for AI agents",
+      "claim": "Show HN: Selise Blocks – Scaffold an app, define schemas, deploy through one CLI",
       "signal": 1
     },
     {
@@ -3252,14 +3260,6 @@
       "signal": 1
     },
     {
-      "url": "https://shotie.app",
-      "name": "Shotie",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Shotie – App Store screenshots generated from your code",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/shots",
       "name": "shots",
       "source": "toolfolio",
@@ -3320,14 +3320,6 @@
     {
       "url": "https://toolfolio.com/tools/sleek-analytics",
       "name": "sleek analytics",
-      "source": "toolfolio",
-      "sourceCategory": "Directory listing",
-      "needsResolve": true,
-      "signal": 1
-    },
-    {
-      "url": "https://toolfolio.com/tools/slicetube",
-      "name": "slicetube",
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
@@ -3534,6 +3526,14 @@
       "signal": 1
     },
     {
+      "url": "https://github.com/strot-ai/Project-STROT",
+      "name": "Strot",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Strot – Compile an LLM's intent once, run decisions locally",
+      "signal": 1
+    },
+    {
       "url": "https://toolfolio.com/tools/stylokit",
       "name": "stylokit",
       "source": "toolfolio",
@@ -3722,6 +3722,14 @@
       "signal": 1
     },
     {
+      "url": "https://github.com/vestigecounty/thinkboard",
+      "name": "ThinkBoard",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: ThinkBoard – Summon an Obsidian canvas above your desktop with a hotkey",
+      "signal": 1
+    },
+    {
       "url": "https://toolfolio.com/tools/thinking-orbs",
       "name": "thinking orbs",
       "source": "toolfolio",
@@ -3824,14 +3832,6 @@
       "signal": 1
     },
     {
-      "url": "https://toolfolio.com/tools/umanmade",
-      "name": "umanmade",
-      "source": "toolfolio",
-      "sourceCategory": "Directory listing",
-      "needsResolve": true,
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/uncovr",
       "name": "uncovr",
       "source": "toolfolio",
@@ -3890,6 +3890,14 @@
       "signal": 1
     },
     {
+      "url": "https://ollie.md/verbs/",
+      "name": "Verbs",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Verbs – pixel-art loops for each of Claude Code's 188 spinner verbs",
+      "signal": 1
+    },
+    {
       "url": "https://toolfolio.com/tools/verva",
       "name": "verva",
       "source": "toolfolio",
@@ -3898,19 +3906,19 @@
       "signal": 1
     },
     {
+      "url": "https://videolabs.pages.dev/",
+      "name": "Videolabs",
+      "source": "show-hn",
+      "sourceCategory": "Show HN",
+      "claim": "Show HN: Videolabs – narrated terminal-style courses",
+      "signal": 1
+    },
+    {
       "url": "https://toolfolio.com/tools/viewtrack",
       "name": "viewtrack",
       "source": "toolfolio",
       "sourceCategory": "Directory listing",
       "needsResolve": true,
-      "signal": 1
-    },
-    {
-      "url": "https://github.com/VigilOSS/Vigil",
-      "name": "Vigil",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Vigil – Open-source AI pentesting and code audits",
       "signal": 1
     },
     {
@@ -3998,14 +4006,6 @@
       "signal": 1
     },
     {
-      "url": "https://github.com/blowhacker/clickyphus",
-      "name": "Weekend hack",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: Weekend hack – shoot away Cloudflare CAPTCHAs",
-      "signal": 1
-    },
-    {
       "url": "https://toolfolio.com/tools/wellmade",
       "name": "wellmade",
       "source": "toolfolio",
@@ -4021,14 +4021,6 @@
       "claimedTier": "Paid",
       "claim": "Studio AI voiceovers",
       "linkCheck": "OK",
-      "signal": 1
-    },
-    {
-      "url": "https://whatmodel.sh",
-      "name": "whatmodel.sh",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: An open source AI leaderboard of the best models your machine can run",
       "signal": 1
     },
     {
@@ -4123,14 +4115,6 @@
       "claimedTier": "Freemium",
       "claim": "SEO articles and ad copy generator",
       "linkCheck": "OK",
-      "signal": 1
-    },
-    {
-      "url": "https://yehuitang0316.github.io/gear-site/",
-      "name": "yehuitang0316.github.io",
-      "source": "show-hn",
-      "sourceCategory": "Show HN",
-      "claim": "Show HN: I made an agent can self-improving while working",
       "signal": 1
     },
     {
