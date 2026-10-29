@@ -5294,6 +5294,312 @@
       ],
       "addedAt": "2026-10-29T09:57:04.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Modulify",
+      "website": "https://modulify.ai/",
+      "what": "An AI site and app builder aimed at shipping rather than prototyping: describe what you want, get a working site or internal tool with a database, auth, realtime and analytics behind it, and a library of production templates you clone into your dashboard rather than download.",
+      "category": "AI coding / app builders",
+      "pricing": "Freemium",
+      "priceDetail": "Free: 35 one-off AI credits, 1 site, Modulify subdomain and branding. Starter $20/month billed yearly (20% saving) for 100 credits a month, custom domain and branding removed. Higher tiers and enterprise above that.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Credits rather than seats is the pricing model to watch — 100 a month is the number to sanity-check against a real project before committing.",
+        "The templates page is free to browse and clone, which is the cheapest way to judge the output quality before paying.",
+        "Worth knowing it sits at the centre of a cluster of design-resource sites that all link to it, including an 'independent' ranking that puts it first. That is marketing, not a verdict on the product — judge it on the build."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Wedoflow",
+      "website": "https://wedoflow.com/",
+      "what": "216 premium Webflow templates covering 1,300+ pages — agency, SaaS, portfolio, medical, finance, education — sold individually or as an all-access pass, with cloneable components alongside.",
+      "category": "Web templates / marketplaces",
+      "pricing": "Paid",
+      "priceDetail": "Individual templates $79–$169. An all-access pass to the whole library plus monthly releases is sold at a heavily and permanently discounted headline — the site was showing 95% off across everything, which is the real price rather than a sale.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Only relevant where a client is already on Webflow. For anything we build in Next.js it is reference at best.",
+        "The permanent-countdown, permanent-95%-off presentation is a flag on how the business is run, not on the templates, which look competent. Judge the files, ignore the banner.",
+        "Part of a cluster: every one of the sixteen sites sent over in this batch links out to Modulify, and this one, Landdding, LogoToUse, FontInLogo, Wonderlist and Wedoflow cross-link each other. Useful on its own terms; just do not read the cross-promotion as independent endorsement."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Wonderlist",
+      "website": "https://wonderlist.design/",
+      "what": "127 website designs delivered as Figma files rather than code — 1,137 pages across SaaS, agency, portfolio, finance, real estate and more, with a font pack and stated MIT-licensed images and fonts.",
+      "category": "Web templates / marketplaces",
+      "pricing": "Paid",
+      "priceDetail": "Lite $329 for 25 designs and 212 pages, single-user licence, unlimited projects. Higher bundles at $599 and $999. Sold as buy-once with live updates, discounted on a running promotion.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Figma rather than code is the point: these are a starting layout for a designer, not something to hand a developer.",
+        "It states that bundled images and fonts are MIT licensed and usable on unlimited projects under a single-user licence. Read the licence against how many of us would open the file before buying — single-user is the constraint that bites in a studio.",
+        "Part of a cluster: every one of the sixteen sites sent over in this batch links out to Modulify, and this one, Landdding, LogoToUse, FontInLogo, Wonderlist and Wedoflow cross-link each other. Useful on its own terms; just do not read the cross-promotion as independent endorsement."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Motion (motionin.design)",
+      "website": "https://motionin.design/",
+      "what": "Physics-based, cursor-responsive web sections — scatter walls, immersive heroes, product showcases — sold not as code but as prompts: you copy a long, very specific written spec and paste it into an AI model to generate the section.",
+      "category": "Design engineering / motion",
+      "pricing": "Freemium",
+      "priceDetail": "A free tier of sections alongside paid ones. Individual prices run from the mid-twenties up, with a bundle at $149.",
+      "usefulness": "Medium",
+      "buildVerdict": "Weekend build",
+      "notes": [
+        "The format is the interesting bit and the risk at once. What you buy is a prompt, so the output depends on your model and your luck, and two runs will not match. Read one of the free specs before paying for any of them.",
+        "The specs themselves are a lesson in writing motion briefs — they describe easing, bleed, loop and feel in a level of detail most of us never put in writing.",
+        "Part of a cluster: every one of the sixteen sites sent over in this batch links out to Modulify, and this one, Landdding, LogoToUse, FontInLogo, Wonderlist and Wedoflow cross-link each other. Useful on its own terms; just do not read the cross-promotion as independent endorsement."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "LogoToUse",
+      "website": "https://logotouse.com/",
+      "what": "A library of other companies' brand marks — colour, solid black and knockout white versions of several hundred recognisable logos — as SVG, PNG and editable Figma, for mockups, decks and template placeholders.",
+      "category": "Brand assets / company logos",
+      "pricing": "Freemium",
+      "priceDetail": "Free to browse with no account. Pro from $5/month adds SVG, Figma and bulk ZIP downloads.",
+      "usefulness": "Low",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Name the obvious risk: these are third-party trademarks, and no library can license you someone else's mark. The 'commercial licence on Pro' covers their service, not Nike's or PayPal's rights. Fine in an internal mockup; a conversation with legal the moment it appears in a client's 'trusted by' row or anything published.",
+        "What it is genuinely good for is the dummy logo wall in a pitch deck or template, where you need recognisable shapes at the right weight and would otherwise spend an hour on it.",
+        "Part of a cluster: every one of the sixteen sites sent over in this batch links out to Modulify, and this one, Landdding, LogoToUse, FontInLogo, Wonderlist and Wedoflow cross-link each other. Useful on its own terms; just do not read the cross-promotion as independent endorsement."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Ikonik",
+      "website": "https://ikonik.modulify.ai/",
+      "what": "50,000+ open-source icons gathered from 45-odd icon projects into one browser, with a built-in editor for size, stroke and colour, and copy-as-HTML or download-as-SVG on the spot.",
+      "category": "Design engineering / icons",
+      "pricing": "Free",
+      "priceDetail": "Free. The icons are the upstream projects' own, under whatever licence each carries.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "A search box across 45 icon sets is the useful thing here — it saves the usual round of opening four sites to find one glyph.",
+        "Because it aggregates other people's sets, the licence that matters is the source project's, not this site's. Check which pack an icon came from before it ships.",
+        "Part of a cluster: every one of the sixteen sites sent over in this batch links out to Modulify, and this one, Landdding, LogoToUse, FontInLogo, Wonderlist and Wedoflow cross-link each other. Useful on its own terms; just do not read the cross-promotion as independent endorsement."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Modulify Logo Maker",
+      "website": "https://logomaker.modulify.ai/",
+      "what": "Describe a business in one sentence and get a finished logo plus the print-ready files — PNG, SVG, PDF and EPS — with a public gallery of everything made with it.",
+      "category": "AI asset generation",
+      "pricing": "Freemium",
+      "priceDetail": "One free logo a day. $19 once to take a mark away with the vector files.",
+      "usefulness": "Low",
+      "buildVerdict": "N/A",
+      "notes": [
+        "Nothing here replaces identity work and it does not pretend to — it is aimed at founders and side projects without a budget.",
+        "Where it could earn a place with us is the throwaway mark: a placeholder for a prototype, a fake brand in a pitch deck, a logo for an internal tool. $19 and thirty seconds beats an hour of someone's time.",
+        "Generated marks carry no originality guarantee and the gallery is public by default, so nothing client-confidential should go near the brief box.",
+        "Part of a cluster: every one of the sixteen sites sent over in this batch links out to Modulify, and this one, Landdding, LogoToUse, FontInLogo, Wonderlist and Wedoflow cross-link each other. Useful on its own terms; just do not read the cross-promotion as independent endorsement."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "closeit.fast",
+      "website": "https://closeit.fast/",
+      "what": "Electronic signatures without the enterprise tax: drop in a PDF, place signature, initial and date fields, send a secure link, and get back a sealed, tamper-evident document with an audit trail.",
+      "category": "Agency ops / contracts",
+      "pricing": "Freemium",
+      "priceDetail": "Free to start. One plan at $12 per user per month, or $72 a year per user (an effective $6/month). Every feature in both, unlimited envelopes and recipients, nothing per signature.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The pricing is the pitch: per-signature charging is what makes the incumbents expensive for a studio sending a handful of SOWs a month.",
+        "Before it touches a real contract, check what its audit trail and seal actually amount to against eIDAS or whatever the client's counsel expects. 'Tamper-evident' is a claim, not a standard.",
+        "Unknown operator and no stated company behind it, which for the system holding signed client contracts is the question to answer first.",
+        "Part of a cluster: every one of the sixteen sites sent over in this batch links out to Modulify, and this one, Landdding, LogoToUse, FontInLogo, Wonderlist and Wedoflow cross-link each other. Useful on its own terms; just do not read the cross-promotion as independent endorsement."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Sent",
+      "website": "https://sent.dm/",
+      "what": "One API across SMS, WhatsApp and RCS that handles routing, formatting, compliance and delivery itself, with SDKs for Node, Python, Go and Ruby.",
+      "category": "Agency ops / messaging",
+      "pricing": "Freemium",
+      "priceDetail": "Per message, by channel and destination — the published rates run from about $0.0047 to $0.053 a message. No platform fee or seat cost published; enterprise by conversation.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "RCS alongside SMS and WhatsApp is the reason to look: verified branded messaging is what clients ask for once they have seen it, and wiring it up directly is weeks of work.",
+        "Compliance handled upstream matters more than it sounds — the sender registration regimes are the part that delays launches, not the sending.",
+        "Independent of the Modulify cluster the rest of this batch belongs to; it appears there only as a customer logo."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Paper Animation",
+      "website": "https://paperanimation.ai/",
+      "what": "Turns an uploaded image into short paper-craft animations — folded paper, animated newspaper clippings with justified columns and period typefaces, magazine cut-out lettering, fake press coverage — aimed at social clips.",
+      "category": "Motion / AI-generated animation",
+      "pricing": "Freemium",
+      "priceDetail": "Free to try in the browser with no card. Paid tiers from the low tens of dollars.",
+      "usefulness": "Low",
+      "buildVerdict": "N/A",
+      "notes": [
+        "Squarely a creator tool for TikTok and Reels, not a studio tool. Listed because the newspaper-clipping effect is a recognisable brief that occasionally lands, and this does it in seconds.",
+        "The fake-press-coverage output is the part to be careful with: a fabricated newspaper page about a real client is a reputational problem waiting to happen, however obviously stylised.",
+        "Part of a cluster: every one of the sixteen sites sent over in this batch links out to Modulify, and this one, Landdding, LogoToUse, FontInLogo, Wonderlist and Wedoflow cross-link each other. Useful on its own terms; just do not read the cross-promotion as independent endorsement."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "DomainGrowth",
+      "website": "https://domaingrowth.co/",
+      "what": "A paid backlink service: it sells contextual, permanent link placements on ten design and no-code websites the operator says they own and maintain, with domain ratings up to 70, sold in capped monthly batches.",
+      "category": "Marketing / link building",
+      "pricing": "Paid",
+      "priceDetail": "Sold as credit packages, with published figures running from around $110 up to $599. A free account exists to view the network.",
+      "usefulness": "None",
+      "buildVerdict": "N/A",
+      "notes": [
+        "This is a private blog network. Paying for links that pass ranking signal is against Google's link spam policy, and the consequence lands on the client's domain, not on the vendor's. Do not put this near client SEO work.",
+        "It is listed rather than skipped so there is a written answer when someone forwards it. The answer is no.",
+        "It also explains the rest of this batch: the ten sites it sells placements on match the design and no-code resource sites sent over alongside it, which is why they all cross-link. Read those cross-links as inventory, not endorsement."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Landdding",
+      "link": "https://landdding.com/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / websites",
+      "takeaway": "A daily-updated gallery of landing pages and website designs with community upvoting, sliced by a long list of industries from SaaS and fintech to charity, gaming and weather.",
+      "whatToDo": "Reference. Action: filter to the client's industry at concept stage; the industry list is finer-grained than most galleries manage.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Upvotes make it closer to a feed than a curation, so the top of it reflects what designers liked that week rather than what works.",
+        "Part of a cluster: every one of the sixteen sites sent over in this batch links out to Modulify, and this one, Landdding, LogoToUse, FontInLogo, Wonderlist and Wedoflow cross-link each other. Useful on its own terms; just do not read the cross-promotion as independent endorsement."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Iconly",
+      "link": "https://iconly.design/",
+      "resourceType": "Directory",
+      "category": "Design engineering / icons",
+      "takeaway": "An inspiration library of 2,400+ app, game and web app icons from real products — Spotify, Monzo, Strava, Revolut, Headspace — searchable by category, style and colour. Reference only, not a download library.",
+      "whatToDo": "Reference for app icon work, which is usually designed in a vacuum. Action: pull the set from the client's category before sketching, and use the colour filter to see what the shelf actually looks like.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "That it shows real shipped icons rather than dribbble concepts is the whole value: an app icon is judged next to its competitors at 60 pixels, and this is the only way to see that.",
+        "Part of a cluster: every one of the sixteen sites sent over in this batch links out to Modulify, and this one, Landdding, LogoToUse, FontInLogo, Wonderlist and Wedoflow cross-link each other. Useful on its own terms; just do not read the cross-promotion as independent endorsement."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Font In Logo",
+      "link": "https://fontinlogo.com/",
+      "resourceType": "Directory",
+      "category": "Typography / free fonts",
+      "takeaway": "Identifies the typefaces behind well-known brand, film and game logos, with a verified section for source-checked matches, grouped by industry and by typeface, plus a generator for previewing your own text in any of them.",
+      "whatToDo": "Reference for type direction conversations. Action: when a client says 'something like that logo', look it up here and put the actual typeface on the table instead of guessing.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "The verified-versus-unverified split is what makes it usable; most 'what font is that' sites do not distinguish a confirmed match from a guess.",
+        "Identifying a typeface is not licensing it — the font behind a famous logo is often custom or heavily modified, and the one named here may be the base rather than the final.",
+        "Part of a cluster: every one of the sixteen sites sent over in this batch links out to Modulify, and this one, Landdding, LogoToUse, FontInLogo, Wonderlist and Wedoflow cross-link each other. Useful on its own terms; just do not read the cross-promotion as independent endorsement."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "BestAIBuilder",
+      "link": "https://bestaibuilder.website/",
+      "resourceType": "Directory",
+      "category": "Tool discovery",
+      "takeaway": "An index of 101 AI website builders, each given the same brief and scored out of 100 on craft, speed, control and value, with 18 fully reviewed at the time of reading.",
+      "whatToDo": "Read the methodology, not the ranking. Action: use its identical-brief approach as a template for our own comparison when a client asks which AI builder to standardise on.",
+      "cost": "Free",
+      "usefulness": "Low",
+      "notes": [
+        "It states 'no sponsored slots and no affiliate ordering' and then ranks Modulify first of 101, ahead of Lovable and v0 — and it links to Modulify, as does every other site in the batch it arrived with. Treat the ordering as marketing for the thing at the top.",
+        "The method underneath is sound and worth borrowing: one identical brief, four named criteria, published scores. It is the independence claim that does not survive checking.",
+        "Index last refreshed July 2026 against a field that moves monthly."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Whipsaw — Work",
+      "link": "https://whipsaw.com/work-all",
+      "resourceType": "Directory",
+      "category": "Design inspiration / portfolios",
+      "takeaway": "The full project archive of Whipsaw, a long-running industrial design consultancy — 176 projects filterable by service (brand, digital, physical) and by industry from robotics and biotech to mobility and healthcare, each a real shipped product rather than a concept.",
+      "whatToDo": "Reference for how a mature consultancy presents hardware-plus-digital work. Action: read three case studies before writing the next proposal that spans physical and digital, and note how they scope the brand layer alongside both.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "The service filter is the useful part for us: seeing the same studio's brand, digital and physical work on one project is rare and is close to how our own cross-discipline jobs run.",
+        "Independent of the rest of this batch — a genuine consultancy portfolio, not part of the link network."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Mebius Free Charts",
+      "website": "https://mebius.design/freebies/charts",
+      "what": "62 free chart cards for dashboards and analytics, shipped twice over: a Figma file and animated React with TypeScript and Tailwind v4, installable through the shadcn CLI. By Keitoto Studio, whose paid UI kits sit alongside.",
+      "category": "Design engineering / component libraries",
+      "pricing": "Freemium",
+      "priceDetail": "The 62 charts are free. The wider dashboard, mobile and website UI kits are pay-once with every update included, sold through Polar.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Design and code of the same component from one source is the rare part — most chart libraries give you one or the other and leave someone to reconcile them.",
+        "shadcn CLI and Tailwind v4 means it drops straight into how we already build, with the source in our repo rather than a dependency.",
+        "Free preview before paying is stated plainly, so the kits can be judged on the charts.",
+        "Independent of the rest of this batch."
+      ],
+      "addedAt": "2026-10-29T15:48:48.000Z",
+      "addedBy": "Dan"
     }
   ]
 }

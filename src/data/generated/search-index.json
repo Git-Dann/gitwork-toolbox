@@ -2448,6 +2448,114 @@
     "pick": false
   },
   {
+    "kind": "tool",
+    "slug": "modulify",
+    "name": "Modulify",
+    "blurb": "An AI site and app builder aimed at shipping rather than prototyping: describe what you want, get a working site or internal tool…",
+    "meta": "AI coding / app builders",
+    "badge": "Freemium",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "wedoflow",
+    "name": "Wedoflow",
+    "blurb": "216 premium Webflow templates covering 1,300+ pages — agency, SaaS, portfolio, medical, finance, education — sold individually or…",
+    "meta": "Web templates / marketplaces",
+    "badge": "Paid",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "wonderlist",
+    "name": "Wonderlist",
+    "blurb": "127 website designs delivered as Figma files rather than code — 1,137 pages across SaaS, agency, portfolio, finance, real estate…",
+    "meta": "Web templates / marketplaces",
+    "badge": "Paid",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "motion-motionin-design",
+    "name": "Motion (motionin.design)",
+    "blurb": "Physics-based, cursor-responsive web sections — scatter walls, immersive heroes, product showcases — sold not as code but as prom…",
+    "meta": "Design engineering / motion",
+    "badge": "Freemium",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "logotouse",
+    "name": "LogoToUse",
+    "blurb": "A library of other companies' brand marks — colour, solid black and knockout white versions of several hundred recognisable logos…",
+    "meta": "Brand assets / company logos",
+    "badge": "Freemium",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "ikonik",
+    "name": "Ikonik",
+    "blurb": "50,000+ open-source icons gathered from 45-odd icon projects into one browser, with a built-in editor for size, stroke and colour…",
+    "meta": "Design engineering / icons",
+    "badge": "Free",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "modulify-logo-maker",
+    "name": "Modulify Logo Maker",
+    "blurb": "Describe a business in one sentence and get a finished logo plus the print-ready files — PNG, SVG, PDF and EPS — with a public ga…",
+    "meta": "AI asset generation",
+    "badge": "Freemium",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "closeit-fast",
+    "name": "closeit.fast",
+    "blurb": "Electronic signatures without the enterprise tax: drop in a PDF, place signature, initial and date fields, send a secure link, an…",
+    "meta": "Agency ops / contracts",
+    "badge": "Freemium",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "sent",
+    "name": "Sent",
+    "blurb": "One API across SMS, WhatsApp and RCS that handles routing, formatting, compliance and delivery itself, with SDKs for Node, Python…",
+    "meta": "Agency ops / messaging",
+    "badge": "Freemium",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "paper-animation",
+    "name": "Paper Animation",
+    "blurb": "Turns an uploaded image into short paper-craft animations — folded paper, animated newspaper clippings with justified columns and…",
+    "meta": "Motion / AI-generated animation",
+    "badge": "Freemium",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "domaingrowth",
+    "name": "DomainGrowth",
+    "blurb": "A paid backlink service: it sells contextual, permanent link placements on ten design and no-code websites the operator says they…",
+    "meta": "Marketing / link building",
+    "badge": "Paid",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "mebius-free-charts",
+    "name": "Mebius Free Charts",
+    "blurb": "62 free chart cards for dashboards and analytics, shipped twice over: a Figma file and animated React with TypeScript and Tailwin…",
+    "meta": "Design engineering / component libraries",
+    "badge": "Freemium",
+    "pick": true
+  },
+  {
     "kind": "starter",
     "slug": "humanizer",
     "name": "Humanizer",
@@ -5044,6 +5152,51 @@
     "slug": "insposite",
     "name": "Insposite",
     "blurb": "Five pages of links in three buckets — developer portfolios, inspiration galleries and web tools — each credited to the handle be…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "landdding",
+    "name": "Landdding",
+    "blurb": "A daily-updated gallery of landing pages and website designs with community upvoting, sliced by a long list of industries from Sa…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "iconly",
+    "name": "Iconly",
+    "blurb": "An inspiration library of 2,400+ app, game and web app icons from real products — Spotify, Monzo, Strava, Revolut, Headspace — se…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "font-in-logo",
+    "name": "Font In Logo",
+    "blurb": "Identifies the typefaces behind well-known brand, film and game logos, with a verified section for source-checked matches, groupe…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "bestaibuilder",
+    "name": "BestAIBuilder",
+    "blurb": "An index of 101 AI website builders, each given the same brief and scored out of 100 on craft, speed, control and value, with 18…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "whipsaw-work",
+    "name": "Whipsaw — Work",
+    "blurb": "The full project archive of Whipsaw, a long-running industrial design consultancy — 176 projects filterable by service (brand, di…",
     "meta": "Directory",
     "badge": "Resource",
     "pick": false
