@@ -127,6 +127,7 @@ const GROUPS = [
       "Portfolio tooling / personal sites",
       "Design inspiration / reference management",
       "Design inspiration / social posts",
+      "Design inspiration / page sections",
       "Design inspiration / micro-interactions",
       "Design inspiration / websites",
     ],

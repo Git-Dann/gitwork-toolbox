@@ -5122,6 +5122,178 @@
       ],
       "addedAt": "2026-10-12T08:13:47.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "CTA.gallery",
+      "link": "https://cta.gallery/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / page sections",
+      "takeaway": "A gallery of calls to action pulled off real sites, sorted by what the thing actually is — button, newsletter, pricing block, download, modal, navigation, call-to-buy — and filterable by industry and by light or dark. Carries CTA writing tips alongside the visuals.",
+      "whatToDo": "Reference for the component that decides whether a page works. Action: pull the pricing and newsletter sets before designing a conversion block, and filter by the client's industry rather than browsing the lot.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Sorting by CTA type rather than by site is what makes it quicker than a general gallery — you are looking for one component, not a whole page.",
+        "Heavily sponsored with template ads mixed into the grid, so the listings and the adverts need reading apart."
+      ],
+      "addedAt": "2026-10-29T09:57:04.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Footer.design",
+      "link": "https://footer.design/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / page sections",
+      "takeaway": "Sixty-five pages of website footers, tagged by type and style — typographic, illustrative, grid, animated, cards, large type, bright, dark — with an editor's pick running through it.",
+      "whatToDo": "Reference for the section that always gets designed last and least. Action: agree a footer direction from here at the same time as the hero, instead of improvising one the week before launch.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Narrow by design and better for it: one page section, properly tagged, rather than a thousand homepages you have to scroll past the fold of."
+      ],
+      "addedAt": "2026-10-29T09:57:04.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Supahero",
+      "link": "https://supahero.io/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / page sections",
+      "takeaway": "A hand-picked library of website hero sections — several hundred, mostly agency, SaaS and portfolio work — presented as a plain searchable grid.",
+      "whatToDo": "Reference for the first screen. Action: use it to put three hero directions in front of a client at kickoff rather than describing them.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "The site now announces that Supahero is part of Screensdesign, an app-UX library. Still live and still free at this URL, but treat it as a collection under new ownership rather than an actively growing product, and check it is still there before relying on it."
+      ],
+      "addedAt": "2026-10-29T09:57:04.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Dark",
+      "link": "https://dark.design/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / websites",
+      "takeaway": "Hand-picked dark-themed websites, sorted by sector — agency, AI, culture, education, hardware, personal, software, web3 — and by new or popular. A separate templates section sits alongside the gallery.",
+      "whatToDo": "Reference for when a brief lands on dark. Action: filter to the client's sector before the first concept, since dark done for a hardware brand and dark done for an agency are not the same decision.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Browsing is free; accounts exist for monthly picks. Run by Y5K LLC.",
+        "A narrow gallery that earns the narrowness — dark layouts fail in specific ways, and seeing a few dozen that work is more useful than a general feed."
+      ],
+      "addedAt": "2026-10-29T09:57:04.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Coolest",
+      "link": "https://coolest.design/",
+      "resourceType": "Directory",
+      "category": "Design inspiration / websites",
+      "takeaway": "Weekly hand-picked design work across websites, brand identity, motion and product, each with a written note explaining what the piece is and what is interesting about it rather than just a thumbnail.",
+      "whatToDo": "Reference and a weekly read. Action: put it in the team channel as a Friday link — the written notes make it discussable, which a wall of screenshots is not.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "The short write-up under each entry is the differentiator. Most galleries show you the picture and leave you to work out why it was chosen."
+      ],
+      "addedAt": "2026-10-29T09:57:04.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Yee",
+      "website": "https://yee.site/",
+      "what": "A link-in-bio that grows into an actual website: start from a template, then add a shop for digital products, bookings against your availability, contact forms, a blog and as many pages as you need, with submissions landing in one dashboard.",
+      "category": "Design tools / site builders",
+      "pricing": "Freemium",
+      "priceDetail": "Free forever: 1 live site, unlimited drafts, all themes, 50MB media, Yee branding. Pro $6/month or $49/year (a 32% saving): 3 live sites, own domain on each, shop, bookings, custom code, no branding, 1GB media. Checkout via Polar, prices exclude VAT.",
+      "usefulness": "Low",
+      "buildVerdict": "Weekend build",
+      "notes": [
+        "Not for client work — it is a hosted builder on someone else's domain model, and we build sites. Where it could earn its place is a one-page holding site or a personal page for someone in the team, done in an hour rather than a day.",
+        "The bookings and shop sections are the only parts that would be real work to replicate; the rest is a page builder.",
+        "50MB of media on the free tier is the limit that will bite first."
+      ],
+      "addedAt": "2026-10-29T09:57:04.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Backgrounds Supply",
+      "website": "https://backgrounds.supply/",
+      "what": "A library of backgrounds, wallpapers and gradients — part handcrafted, part AI-generated — for presentations, social, banners, websites and apps, with a gradient tool alongside it.",
+      "category": "Creative ops / background assets",
+      "pricing": "Freemium",
+      "priceDetail": "A freebies section, then $49 one-time for unlimited access to the full library. That is the figure the site serves; it publishes no tiers.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Useful for the job it names: the deck or landing page that needs a backdrop today and does not warrant commissioning one.",
+        "Part of the library is AI-generated and the site does not spell out the licence on the way in. Worth reading the terms before anything goes on a client's homepage rather than a pitch deck.",
+        "The marketing is loud — 'are you facing these issues' — which says more about who it is sold to than what it is. The assets are the thing; ignore the page."
+      ],
+      "addedAt": "2026-10-29T09:57:04.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Screen Movie",
+      "website": "https://screen.movie/",
+      "what": "A native macOS screen recorder with a real editor behind it: multiple timeline tracks and scenes, animated text, images and captions, device mockups, motion backgrounds, music and 4K export — aimed at product videos rather than bug reports.",
+      "category": "Video & capture / screen recording",
+      "pricing": "Paid",
+      "priceDetail": "$39 one-time. Version 1.3, updated 5 October 2026. Requires macOS 15 or later.",
+      "usefulness": "High",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "Fills the gap between a raw recording and an editing suite — the thing you actually need for a client demo, a release note or a case-study video.",
+        "One-time purchase and native, so no subscription and no Electron, which is the difference between using it and dreading it.",
+        "macOS 15+ and a small maker — stated as used by 150+ people — so it is a one-developer dependency. Fine for internal use, worth knowing before it becomes part of a delivery process."
+      ],
+      "addedAt": "2026-10-29T09:57:04.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "tool",
+      "name": "Icoon",
+      "website": "https://icoon.co/",
+      "what": "A library of 1,500+ AI-generated 3D icons, illustrations, characters, mockups and shapes in SVG, PNG and editable PSD, with a mockup generator alongside it.",
+      "category": "Design engineering / icons",
+      "pricing": "Freemium",
+      "priceDetail": "Freebies section, then $29 one-time (listed down from $59) for lifetime access to everything, stated as covering personal and client work under a commercial licence. Monthly options also offered.",
+      "usefulness": "Medium",
+      "buildVerdict": "Don't build - just use it",
+      "notes": [
+        "The commercial licence covering client work is stated plainly on the pricing page, which is more than most asset libraries manage — but it is the vendor's own assertion, so read the licence page before it goes in a deliverable.",
+        "Every asset is AI-generated. That is fine for a deck or an internal tool and a conversation with some clients' legal teams, so ask before it reaches a brand page.",
+        "Editable PSD alongside SVG and PNG is the useful part: a 3D icon you cannot recolour to a brand palette is a 3D icon you use once."
+      ],
+      "addedAt": "2026-10-29T09:57:04.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Insposite",
+      "link": "https://insposite.com/",
+      "resourceType": "Directory",
+      "category": "Tool discovery",
+      "takeaway": "Five pages of links in three buckets — developer portfolios, inspiration galleries and web tools — each credited to the handle behind it. A one-person index by Prasanjit Dey, meant as a replacement for a bookmarks folder.",
+      "whatToDo": "Reference, thinly. Action: skim the Portfolio bucket, which is the part we do not already cover, and ignore the rest.",
+      "cost": "Free",
+      "usefulness": "Low",
+      "notes": [
+        "It is a directory of directories: the Inspiration bucket lists Awwwards, Siteinspire and SEESAW, and the Tools bucket lists things we already carry. For us that makes most of it a layer we do not need, since this toolbox is the curated list.",
+        "The footer reads 2025 and the index is short, so treat it as a snapshot rather than something being kept current.",
+        "The developer portfolios are the one genuinely distinct part, and the only reason it is here rather than skipped."
+      ],
+      "addedAt": "2026-10-29T09:57:04.000Z",
+      "addedBy": "Dan"
     }
   ]
 }

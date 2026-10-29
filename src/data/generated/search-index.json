@@ -2412,6 +2412,42 @@
     "pick": true
   },
   {
+    "kind": "tool",
+    "slug": "yee",
+    "name": "Yee",
+    "blurb": "A link-in-bio that grows into an actual website: start from a template, then add a shop for digital products, bookings against yo…",
+    "meta": "Design tools / site builders",
+    "badge": "Freemium",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "backgrounds-supply",
+    "name": "Backgrounds Supply",
+    "blurb": "A library of backgrounds, wallpapers and gradients — part handcrafted, part AI-generated — for presentations, social, banners, we…",
+    "meta": "Creative ops / background assets",
+    "badge": "Freemium",
+    "pick": false
+  },
+  {
+    "kind": "tool",
+    "slug": "screen-movie",
+    "name": "Screen Movie",
+    "blurb": "A native macOS screen recorder with a real editor behind it: multiple timeline tracks and scenes, animated text, images and capti…",
+    "meta": "Video & capture / screen recording",
+    "badge": "Paid",
+    "pick": true
+  },
+  {
+    "kind": "tool",
+    "slug": "icoon",
+    "name": "Icoon",
+    "blurb": "A library of 1,500+ AI-generated 3D icons, illustrations, characters, mockups and shapes in SVG, PNG and editable PSD, with a moc…",
+    "meta": "Design engineering / icons",
+    "badge": "Freemium",
+    "pick": false
+  },
+  {
     "kind": "starter",
     "slug": "humanizer",
     "name": "Humanizer",
@@ -4955,6 +4991,60 @@
     "name": "Victor Murea",
     "blurb": "A freelance brand designer's site, built around a small number of case studies rather than a wall of work — a divorce law firm an…",
     "meta": "Social account",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "cta-gallery",
+    "name": "CTA.gallery",
+    "blurb": "A gallery of calls to action pulled off real sites, sorted by what the thing actually is — button, newsletter, pricing block, dow…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "footer-design",
+    "name": "Footer.design",
+    "blurb": "Sixty-five pages of website footers, tagged by type and style — typographic, illustrative, grid, animated, cards, large type, bri…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "supahero",
+    "name": "Supahero",
+    "blurb": "A hand-picked library of website hero sections — several hundred, mostly agency, SaaS and portfolio work — presented as a plain s…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "dark",
+    "name": "Dark",
+    "blurb": "Hand-picked dark-themed websites, sorted by sector — agency, AI, culture, education, hardware, personal, software, web3 — and by…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "coolest",
+    "name": "Coolest",
+    "blurb": "Weekly hand-picked design work across websites, brand identity, motion and product, each with a written note explaining what the…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "insposite",
+    "name": "Insposite",
+    "blurb": "Five pages of links in three buckets — developer portfolios, inspiration galleries and web tools — each credited to the handle be…",
+    "meta": "Directory",
     "badge": "Resource",
     "pick": false
   },
