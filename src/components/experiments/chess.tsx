@@ -48,6 +48,15 @@ type Game = {
   opponent: number;
 };
 
+/**
+ * How long the engine sits on a move before it plays it. A reply that lands the instant
+ * your own piece touches down does not read as an opponent thinking — it reads as a
+ * function returning. The floor scales with the engine's own clock, so a bullet game does
+ * not hand it a loss on time for pausing politely.
+ */
+const ponderFor = (left: number) =>
+  left === 0 ? 1100 : Math.min(1100, Math.max(320, left / 80));
+
 const STORE = "gitwork.chess";
 const START_RATING = 1200;
 const VALUE: Record<string, number> = { p: 1, n: 3, b: 3, r: 5, q: 9 };
@@ -92,6 +101,9 @@ export function Chess() {
   const ask = useRef(0);
   const posRef = useRef(pos);
   posRef.current = pos;
+  // Read inside the engine effect without making a clock tick restart its think.
+  const clocksRef = useRef(clocks);
+  clocksRef.current = clocks;
   const resultRef = useRef(result);
   resultRef.current = result;
 
@@ -210,16 +222,29 @@ export function Chess() {
     const id = ++ask.current;
     setThinking(true);
     const w = worker.current;
+    const asked = performance.now();
+    const ponder = ponderFor(control.ms === 0 ? 0 : clocksRef.current[side === "w" ? "b" : "w"]);
+    let held = 0;
     const onReply = (event: MessageEvent<{ id: number; move: { move: Move } | null }>) => {
       if (event.data.id !== id) return;
       w.removeEventListener("message", onReply);
-      setThinking(false);
-      if (event.data.move && !resultRef.current) play(event.data.move.move);
+      const reply = event.data.move;
+      held = window.setTimeout(
+        () => {
+          if (ask.current !== id) return;
+          setThinking(false);
+          if (reply && !resultRef.current) play(reply.move);
+        },
+        Math.max(0, ponder - (performance.now() - asked)),
+      );
     };
     w.addEventListener("message", onReply);
     w.postMessage({ id, pos, level: level.name });
-    return () => w.removeEventListener("message", onReply);
-  }, [level.name, play, pos, promoting, result, side]);
+    return () => {
+      w.removeEventListener("message", onReply);
+      window.clearTimeout(held);
+    };
+  }, [control.ms, level.name, play, pos, promoting, result, side]);
 
   // The clock. Ticks on the side to move and only while a real game is running.
   useEffect(() => {
@@ -299,8 +324,8 @@ export function Chess() {
 
   return (
     <div className="absolute inset-0 overflow-auto" style={{ background: "var(--bg)" }}>
-      <div className="mx-auto flex min-h-full w-full max-w-[72rem] flex-col gap-5 p-5 pt-20 lg:flex-row lg:items-start">
-        <div className="flex min-w-0 flex-1 flex-col items-center gap-3">
+      <div className="mx-auto grid min-h-full w-full max-w-[90rem] grid-cols-1 gap-6 p-5 pt-20 lg:grid-cols-3 lg:items-start">
+        <div className="flex min-w-0 flex-col items-center gap-3 lg:col-span-2">
           <Clock
             who="Engine"
             rating={level.rating}
@@ -311,10 +336,10 @@ export function Chess() {
           />
 
           <div
-            className="w-full max-w-[min(86vh,38rem)] overflow-hidden rounded-[8px] shadow-[0_22px_60px_rgb(0_0_0/0.5)]"
-            // A board seen at this angle is wider than it is deep, so a square frame leaves
-            // a band of empty table above and below it.
-            style={{ aspectRatio: "6 / 5" }}
+            // A board seen at this angle is wider than it is deep, so on a wide screen the
+            // frame is wider than tall and the board nearly fills it. On a phone the width
+            // is the scarce thing, so it goes back to a square and uses the height instead.
+            className="aspect-square w-full max-w-[min(94vh,58rem)] overflow-hidden rounded-[8px] shadow-[0_22px_60px_rgb(0_0_0/0.5)] lg:aspect-[7/5]"
           >
             <ChessBoard
               board={pos.board}
@@ -339,7 +364,7 @@ export function Chess() {
           />
         </div>
 
-        <aside className="flex w-full shrink-0 flex-col gap-3 lg:w-[22rem]">
+        <aside className="flex w-full min-w-0 flex-col gap-3">
           <div className="surface p-4">
             <p className="label mb-2 text-mute">Your rating</p>
             <p className="font-display text-4xl leading-none">{rating}</p>
@@ -557,7 +582,7 @@ function Clock({
   who: string; rating: number; ms: number; live: boolean; show: boolean; note?: string;
 }) {
   return (
-    <div className="flex w-full max-w-[min(86vh,38rem)] items-center justify-between gap-3">
+    <div className="flex w-full max-w-[min(94vh,58rem)] items-center justify-between gap-3">
       <p className="label truncate text-mute">
         {who} <span className="text-soft">{rating}</span>
         {note ? <span className="ml-2 text-mute">{note}</span> : null}

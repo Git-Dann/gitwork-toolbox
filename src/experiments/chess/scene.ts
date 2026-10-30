@@ -22,8 +22,18 @@ import { buildPiece, type PieceKind } from "./models";
 const LIGHT_SQUARE = "#c0ab86";
 const DARK_SQUARE = "#44584c";
 const LIGHT_PIECE = "#cdb88e";
-const DARK_PIECE = "#1c1816";
+/**
+ * The dark side is the brand's own deep violet rather than ebony. It is `--color-violet-deep`
+ * from globals.css; the accent itself (#6b52ff) is too light to read as the dark side on a
+ * board whose light squares are a warm tan.
+ */
+const DARK_PIECE = "#2a2176";
 const TRAY = "#3a2b20";
+
+/** How far the board can be turned and tilted — and so how much wider the frame must be. */
+const YAW_RANGE = 0.2;
+const PITCH_LOW = 0.86;
+const PITCH_HIGH = 0.99;
 
 export const worldOf = (square: number) => ({
   x: (square & 7) - 3.5,
@@ -104,10 +114,45 @@ function boardTexture(): HTMLCanvasElement {
   return canvas;
 }
 
+/** The board's coordinates, in Fraunces rather than a system face. */
+const COORD_FACE = 'Fraunces, "Playfair Display", Georgia, serif';
+const COORD_WEIGHT = 500;
+const COORD_SHEET =
+  "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&display=swap";
+
+/**
+ * Fetches Fraunces, once, when a board is first built. It is used by one canvas in a room
+ * you have to unlock, so it has no business on the critical path of every page — and the
+ * stylesheet the rest of the site loads is shared across the whole app.
+ */
+function coordFont(): Promise<unknown> {
+  if (typeof document === "undefined") return Promise.resolve(null);
+  // The stylesheet has to be parsed before the face it declares can be asked for. Calling
+  // fonts.load() straight after appending the link resolves instantly against no face at
+  // all, and the board then redraws in the fallback and never hears about the real one.
+  const parsed = new Promise<void>((resolve) => {
+    let link = document.querySelector<HTMLLinkElement>(`link[href="${COORD_SHEET}"]`);
+    if (link?.sheet) {
+      resolve();
+      return;
+    }
+    if (!link) {
+      link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = COORD_SHEET;
+      document.head.append(link);
+    }
+    link.addEventListener("load", () => resolve(), { once: true });
+    link.addEventListener("error", () => resolve(), { once: true });
+  });
+  return parsed.then(() =>
+    document.fonts?.load ? document.fonts.load(`${COORD_WEIGHT} 24px Fraunces`) : null,
+  );
+}
+
 /** The frame the board sits in: darker timber, grain running the long way, plus coordinates. */
-function trayTexture(): HTMLCanvasElement {
+function trayTexture(canvas = document.createElement("canvas")): HTMLCanvasElement {
   const size = 1024;
-  const canvas = document.createElement("canvas");
   canvas.width = canvas.height = size;
   const g = canvas.getContext("2d")!;
   const random = rng(0x1d0c);
@@ -130,8 +175,8 @@ function trayTexture(): HTMLCanvasElement {
   // Coordinates, set into the border either side of the playing surface.
   const inset = size * 0.0426; // the tray overhangs the 8-unit board by 0.4 of a square
   const play = size - inset * 2;
-  g.fillStyle = "rgb(226 214 186 / 0.62)";
-  g.font = `600 ${Math.round(size * 0.021)}px ui-sans-serif, system-ui, sans-serif`;
+  g.fillStyle = "rgb(230 219 193 / 0.72)";
+  g.font = `${COORD_WEIGHT} ${Math.round(size * 0.024)}px ${COORD_FACE}`;
   g.textAlign = "center";
   g.textBaseline = "middle";
   for (let i = 0; i < 8; i++) {
@@ -203,7 +248,8 @@ export function createScene(canvas: HTMLCanvasElement) {
   const board = new THREE.Group();
   scene.add(board);
 
-  const trayMap = new THREE.CanvasTexture(trayTexture());
+  const trayCanvas = trayTexture();
+  const trayMap = new THREE.CanvasTexture(trayCanvas);
   trayMap.colorSpace = THREE.SRGBColorSpace;
   trayMap.anisotropy = renderer.capabilities.getMaxAnisotropy();
   const trayGeo = new THREE.BoxGeometry(8.8, 0.34, 8.8);
@@ -451,7 +497,7 @@ export function createScene(canvas: HTMLCanvasElement) {
   let home = 0;
   let yaw = 0;
   let targetYaw = 0;
-  let pitch = 0.9;
+  let pitch = 0.92;
   let distance = 14;
   /** The height the camera is pointed at; `recentre` tunes it to the frame. */
   let aim = 0.35;
@@ -478,22 +524,45 @@ export function createScene(canvas: HTMLCanvasElement) {
     return out;
   })();
   const projected = new THREE.Vector3();
-  /** Checked where the camera is heading, so an orbit pulls back only as far as it must. */
-  function fits() {
-    const held = yaw;
-    yaw = targetYaw;
-    placeCamera();
-    camera.updateMatrixWorld();
+  /**
+   * Every camera the orbit can reach. The frame is cut to hold all of them at once, so the
+   * board keeps one size however you turn it — refitting as the camera moves makes it
+   * breathe in and out under the cursor, which is far worse than a slightly wider margin.
+   */
+  const ORBIT: [number, number][] = [];
+  for (const y of [-YAW_RANGE, 0, YAW_RANGE]) for (const p of [PITCH_LOW, PITCH_HIGH]) {
+    ORBIT.push([y, p]);
+  }
+
+  /** Runs `check` at every camera in the orbit, restoring where the camera actually is. */
+  function sweep(check: () => boolean) {
+    const heldYaw = yaw;
+    const heldPitch = pitch;
     let ok = true;
-    for (const c of CORNERS) {
-      projected.copy(c).project(camera);
-      if (Math.abs(projected.x) > 0.985 || Math.abs(projected.y) > 0.985) {
+    for (const [offset, angle] of ORBIT) {
+      yaw = home + offset;
+      pitch = angle;
+      placeCamera();
+      camera.updateMatrixWorld();
+      if (!check()) {
         ok = false;
         break;
       }
     }
-    yaw = held;
+    yaw = heldYaw;
+    pitch = heldPitch;
+    placeCamera();
     return ok;
+  }
+
+  function fits() {
+    return sweep(() => {
+      for (const c of CORNERS) {
+        projected.copy(c).project(camera);
+        if (Math.abs(projected.x) > 0.985 || Math.abs(projected.y) > 0.985) return false;
+      }
+      return true;
+    });
   }
   function bisect() {
     let near = 7;
@@ -511,18 +580,16 @@ export function createScene(canvas: HTMLCanvasElement) {
    * board is below the point being looked at and the pieces only reach up on one side.
    */
   function recentre() {
-    const held = yaw;
-    yaw = targetYaw;
-    placeCamera();
-    camera.updateMatrixWorld();
     let low = Infinity;
     let high = -Infinity;
-    for (const c of CORNERS) {
-      projected.copy(c).project(camera);
-      low = Math.min(low, projected.y);
-      high = Math.max(high, projected.y);
-    }
-    yaw = held;
+    sweep(() => {
+      for (const c of CORNERS) {
+        projected.copy(c).project(camera);
+        low = Math.min(low, projected.y);
+        high = Math.max(high, projected.y);
+      }
+      return true;
+    });
     aim = THREE.MathUtils.clamp(aim + ((low + high) / 2) * 1.4, -0.6, 1.8);
   }
   function fit() {
@@ -545,19 +612,16 @@ export function createScene(canvas: HTMLCanvasElement) {
   function faceSide(side: "w" | "b") {
     home = side === "w" ? 0 : Math.PI;
     targetYaw = home;
-    fit();
     if (reduced()) yaw = targetYaw;
     invalidate();
   }
   function nudgeYaw(delta: number) {
-    targetYaw = THREE.MathUtils.clamp(targetYaw + delta, home - 0.38, home + 0.38);
+    targetYaw = THREE.MathUtils.clamp(targetYaw + delta, home - YAW_RANGE, home + YAW_RANGE);
     if (reduced()) yaw = targetYaw;
-    fit();
     invalidate();
   }
   function nudgePitch(delta: number) {
-    pitch = THREE.MathUtils.clamp(pitch + delta, 0.66, 1.2);
-    fit();
+    pitch = THREE.MathUtils.clamp(pitch + delta, PITCH_LOW, PITCH_HIGH);
     invalidate();
   }
 
@@ -617,6 +681,20 @@ export function createScene(canvas: HTMLCanvasElement) {
     // Only keep the loop alive while something is actually moving.
     if (tween.length || fading.length || yaw !== targetYaw) invalidate();
   }
+
+  // Canvas 2D takes whatever the font stack resolves to at the moment it draws, and silently
+  // falls back if a webfont has not arrived — so the coordinates are drawn twice: once now,
+  // and once more when Fraunces is actually available.
+  coordFont()
+    .then(() => {
+      if (dead) return;
+      trayTexture(trayCanvas);
+      trayMap.needsUpdate = true;
+      invalidate();
+    })
+    .catch(() => {
+      // The fallback serif is already on the board; nothing to recover.
+    });
 
   resize();
 
