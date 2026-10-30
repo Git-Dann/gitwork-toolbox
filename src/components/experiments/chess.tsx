@@ -324,7 +324,7 @@ export function Chess() {
 
   return (
     <div className="absolute inset-0 overflow-auto" style={{ background: "var(--bg)" }}>
-      <div className="mx-auto grid min-h-full w-full max-w-[90rem] grid-cols-1 gap-6 p-5 pt-20 lg:grid-cols-3 lg:items-start">
+      <div className="mx-auto grid min-h-full w-full max-w-[112rem] grid-cols-1 gap-6 p-5 pt-20 lg:grid-cols-3 lg:items-start">
         <div className="flex min-w-0 flex-col items-center gap-3 lg:col-span-2">
           <Clock
             who="Engine"
@@ -336,10 +336,11 @@ export function Chess() {
           />
 
           <div
-            // A board seen at this angle is wider than it is deep, so on a wide screen the
-            // frame is wider than tall and the board nearly fills it. On a phone the width
-            // is the scarce thing, so it goes back to a square and uses the height instead.
-            className="aspect-square w-full max-w-[min(94vh,58rem)] overflow-hidden rounded-[8px] shadow-[0_22px_60px_rgb(0_0_0/0.5)] lg:aspect-[7/5]"
+            // The camera's vertical field of view is fixed, so a narrower frame does not
+            // crop the board — it spends more pixels on the same angle. 8:7 is where the
+            // width runs out at the same moment the height does, which is the largest the
+            // board can be; wider than that and the extra pixels go on empty table.
+            className="aspect-[8/7] w-full max-w-[min(88vh,74rem)] overflow-hidden rounded-[8px] shadow-[0_22px_60px_rgb(0_0_0/0.5)]"
           >
             <ChessBoard
               board={pos.board}
@@ -582,7 +583,7 @@ function Clock({
   who: string; rating: number; ms: number; live: boolean; show: boolean; note?: string;
 }) {
   return (
-    <div className="flex w-full max-w-[min(94vh,58rem)] items-center justify-between gap-3">
+    <div className="flex w-full max-w-[min(88vh,74rem)] items-center justify-between gap-3">
       <p className="label truncate text-mute">
         {who} <span className="text-soft">{rating}</span>
         {note ? <span className="ml-2 text-mute">{note}</span> : null}

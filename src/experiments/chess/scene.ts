@@ -31,9 +31,9 @@ const DARK_PIECE = "#2a2176";
 const TRAY = "#3a2b20";
 
 /** How far the board can be turned and tilted — and so how much wider the frame must be. */
-const YAW_RANGE = 0.2;
-const PITCH_LOW = 0.86;
-const PITCH_HIGH = 0.99;
+const YAW_RANGE = 0.12;
+const PITCH_LOW = 0.88;
+const PITCH_HIGH = 0.97;
 
 export const worldOf = (square: number) => ({
   x: (square & 7) - 3.5,
