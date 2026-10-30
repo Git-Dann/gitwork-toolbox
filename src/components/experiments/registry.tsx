@@ -53,10 +53,11 @@ export const EXPERIMENTS: Experiment[] = [
     name: "Chess",
     blurb: "A real board, a real clock, and an engine that will beat most of us",
     note:
-      "Written from the rules up rather than wired to a library, which means the fiddly parts are all in there: castling through an attacked square, en passant, under-promotion, the disambiguation rules for notation, and every way a game can be drawn. It is checked by perft — counting the legal positions at depth from known test positions and comparing against the published totals, which is how move-generation bugs get caught, since a board that is subtly wrong looks completely normal until the one game it ruins. The opponent is negamax with alpha-beta and a quiescence search, running on a worker thread so the clock keeps ticking while it thinks, and the two lower levels pick a worse move on purpose — an engine that is merely shallow still never hangs a queen, which makes it frustrating rather than easy. Your rating moves by Elo against the level you beat, and the record is kept in this browser.",
+      "Written from the rules up rather than wired to a library, which means the fiddly parts are all in there: castling through an attacked square, en passant, under-promotion, the disambiguation rules for notation, and every way a game can be drawn. It is checked by perft — counting the legal positions at depth from known test positions and comparing against the published totals, which is how move-generation bugs get caught, since a board that is subtly wrong looks completely normal until the one game it ruins. The opponent is negamax with alpha-beta and a quiescence search, running on a worker thread so the clock keeps ticking while it thinks, and the two lower levels pick a worse move on purpose — an engine that is merely shallow still never hangs a queen, which makes it frustrating rather than easy. Your rating moves by Elo against the level you beat, and the record is kept in this browser. The set is turned rather than drawn: each piece is a profile swept through a revolution, which is how a real one is made on a lathe, and the two carved pieces — the knight's head and the slit through the bishop's mitre — are done as a tapered extrusion and a halved lathe. three.js renders it against a generated room, because a material with no environment to reflect reads as a shape rather than an object.",
     credits: [
       { label: "after the chess lab on huozhi.im", href: "https://huozhi.im/lab/chess" },
-      { label: "rules, engine and pieces written here" },
+      { label: "rules, engine, pieces and board written here" },
+      { label: "three.js", href: "https://threejs.org/" },
     ],
     render: () => <Chess />,
   },

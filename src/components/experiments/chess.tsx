@@ -1,26 +1,32 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import dynamic from "next/dynamic";
 import {
   type Colour,
   type Move,
   type Outcome,
   type Position,
   colourOf,
-  fileOf,
   inCheck,
   kingSquare,
   legalMoves,
   makeMove,
-  nameOf,
   outcome,
   positionKey,
-  rankOf,
   startPosition,
   toSAN,
 } from "@/experiments/chess/rules";
 import { LEVELS, type Level } from "@/experiments/chess/engine";
-import { Piece } from "@/experiments/chess/pieces";
+
+/**
+ * The board is the only thing here that pulls in three.js, so it is loaded on demand —
+ * opening any other experiment should not cost a 3D renderer.
+ */
+const ChessBoard = dynamic(() => import("./chess-board").then((m) => m.ChessBoard), {
+  ssr: false,
+  loading: () => <div className="h-full w-full" style={{ background: "#0b0a0e" }} />,
+});
 
 type Control = { name: string; label: string; ms: number; inc: number };
 const CONTROLS: Control[] = [
@@ -270,11 +276,15 @@ export function Chess() {
     setPicked(piece && colourOf(piece) === pos.turn ? square : null);
   };
 
-  const order = useMemo(() => {
-    const squares: number[] = [];
-    for (let r = 7; r >= 0; r--) for (let f = 0; f < 8; f++) squares.push(r * 8 + f);
-    return flipped ? squares.slice().reverse() : squares;
-  }, [flipped]);
+  const markers = useMemo(
+    () => ({
+      moves: movesFrom.map((m) => ({ to: m.to, capture: Boolean(m.captured) })),
+      last: last ? ([last.from, last.to] as [number, number]) : null,
+      picked,
+      check: checked,
+    }),
+    [checked, last, movesFrom, picked],
+  );
 
   const record = useMemo(() => {
     const w = games.filter((g) => g.result === "win").length;
@@ -292,7 +302,7 @@ export function Chess() {
       <div className="mx-auto flex min-h-full w-full max-w-[72rem] flex-col gap-5 p-5 pt-20 lg:flex-row lg:items-start">
         <div className="flex min-w-0 flex-1 flex-col items-center gap-3">
           <Clock
-            who={side === "w" ? "Engine" : "Engine"}
+            who="Engine"
             rating={level.rating}
             ms={clocks[side === "w" ? "b" : "w"]}
             live={pos.turn !== side && !result && moves.length > 0 && control.ms > 0}
@@ -301,87 +311,23 @@ export function Chess() {
           />
 
           <div
-            className="grid w-full max-w-[min(78vh,34rem)] select-none overflow-hidden rounded-[6px] shadow-[0_18px_50px_rgb(0_0_0/0.45)]"
-            style={{ gridTemplateColumns: "repeat(8, 1fr)", aspectRatio: "1" }}
+            className="w-full max-w-[min(86vh,38rem)] overflow-hidden rounded-[8px] shadow-[0_22px_60px_rgb(0_0_0/0.5)]"
+            // A board seen at this angle is wider than it is deep, so a square frame leaves
+            // a band of empty table above and below it.
+            style={{ aspectRatio: "6 / 5" }}
           >
-            {order.map((square) => {
-              const dark = (fileOf(square) + rankOf(square)) % 2 === 0;
-              const target = movesFrom.find((m) => m.to === square);
-              const piece = pos.board[square];
-              const isLast = last && (last.from === square || last.to === square);
-              return (
-                <button
-                  key={square}
-                  type="button"
-                  onClick={() => onSquare(square)}
-                  aria-label={`${nameOf(square)}${piece ? `, ${piece}` : ""}`}
-                  className="relative flex items-center justify-center"
-                  style={{
-                    background: dark ? "#6b7f6e" : "#e7e2d4",
-                    cursor: pos.turn === side && !result ? "pointer" : "default",
-                  }}
-                >
-                  {isLast ? (
-                    <span
-                      className="pointer-events-none absolute inset-0"
-                      style={{ background: "rgb(226 184 61 / 0.34)" }}
-                    />
-                  ) : null}
-                  {square === checked ? (
-                    <span
-                      className="pointer-events-none absolute inset-0"
-                      style={{
-                        background:
-                          "radial-gradient(circle, rgb(255 90 80 / 0.85) 0%, rgb(255 90 80 / 0) 72%)",
-                      }}
-                    />
-                  ) : null}
-                  {picked === square ? (
-                    <span
-                      className="pointer-events-none absolute inset-0"
-                      style={{ background: "rgb(226 184 61 / 0.45)" }}
-                    />
-                  ) : null}
-                  {piece ? <Piece piece={piece} /> : null}
-                  {target ? (
-                    <span
-                      className="pointer-events-none absolute"
-                      style={
-                        target.captured
-                          ? {
-                              inset: "4%",
-                              borderRadius: "50%",
-                              border: "4px solid rgb(20 20 24 / 0.35)",
-                            }
-                          : {
-                              width: "26%",
-                              height: "26%",
-                              borderRadius: "50%",
-                              background: "rgb(20 20 24 / 0.28)",
-                            }
-                      }
-                    />
-                  ) : null}
-                  {fileOf(square) === (flipped ? 7 : 0) ? (
-                    <span
-                      className="pointer-events-none absolute left-[5%] top-[3%] text-[0.6rem] font-semibold"
-                      style={{ color: dark ? "#e7e2d4" : "#6b7f6e" }}
-                    >
-                      {rankOf(square) + 1}
-                    </span>
-                  ) : null}
-                  {rankOf(square) === (flipped ? 7 : 0) ? (
-                    <span
-                      className="pointer-events-none absolute bottom-[2%] right-[5%] text-[0.6rem] font-semibold"
-                      style={{ color: dark ? "#e7e2d4" : "#6b7f6e" }}
-                    >
-                      {"abcdefgh"[fileOf(square)]}
-                    </span>
-                  ) : null}
-                </button>
-              );
-            })}
+            <ChessBoard
+              board={pos.board}
+              move={last}
+              ply={moves.length}
+              markers={markers}
+              view={flipped ? "b" : "w"}
+              interactive={!result && !promoting && !thinking && pos.turn === side}
+              onPick={onSquare}
+            />
           </div>
+
+          <p className="label text-mute">Drag the board to look round it</p>
 
           <Clock
             who="You"
@@ -552,27 +498,33 @@ export function Chess() {
 
       {promoting ? (
         <div className="absolute inset-0 z-20 flex items-center justify-center" style={{ background: "rgb(0 0 0 / 0.55)" }}>
-          <div className="surface flex gap-2 p-3">
-            {["q", "r", "b", "n"].map((k) => {
-              const piece = side === "w" ? k.toUpperCase() : k;
-              return (
-                <button
-                  key={k}
-                  type="button"
-                  onClick={() => {
-                    const move = legal.find(
-                      (m) => m.from === promoting.from && m.to === promoting.to && m.promo === piece,
-                    );
-                    setPromoting(null);
-                    if (move) play(move);
-                  }}
-                  className="h-16 w-16 rounded-[4px]"
-                  style={{ background: "#e7e2d4" }}
-                >
-                  <Piece piece={piece} />
-                </button>
-              );
-            })}
+          <div className="surface flex flex-col gap-2 p-4">
+            <p className="label text-mute">Promote to</p>
+            <div className="flex flex-wrap gap-2">
+              {([["q", "Queen"], ["r", "Rook"], ["b", "Bishop"], ["n", "Knight"]] as const).map(
+                ([k, label]) => {
+                  const code = side === "w" ? k.toUpperCase() : k;
+                  return (
+                    <button
+                      key={k}
+                      type="button"
+                      onClick={() => {
+                        const move = legal.find(
+                          (m) =>
+                            m.from === promoting.from && m.to === promoting.to && m.promo === code,
+                        );
+                        setPromoting(null);
+                        if (move) play(move);
+                      }}
+                      className="label rounded-full border px-4 py-2.5"
+                      style={{ borderColor: "var(--border)", color: "var(--text)" }}
+                    >
+                      {label}
+                    </button>
+                  );
+                },
+              )}
+            </div>
           </div>
         </div>
       ) : null}
@@ -605,7 +557,7 @@ function Clock({
   who: string; rating: number; ms: number; live: boolean; show: boolean; note?: string;
 }) {
   return (
-    <div className="flex w-full max-w-[min(78vh,34rem)] items-center justify-between gap-3">
+    <div className="flex w-full max-w-[min(86vh,38rem)] items-center justify-between gap-3">
       <p className="label truncate text-mute">
         {who} <span className="text-soft">{rating}</span>
         {note ? <span className="ml-2 text-mute">{note}</span> : null}

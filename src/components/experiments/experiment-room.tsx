@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { lockScroll } from "@/lib/scroll-lock";
 import { EXPERIMENTS } from "./registry";
 import type { RoomData } from "./room-data";
@@ -11,6 +11,8 @@ import type { RoomData } from "./room-data";
  * the site's usual frame — no sidebar, no footer, nothing to click back to except the one
  * link — because a room you had to unlock should not look like another page of the list.
  */
+const PICKED = "gitwork.experiment";
+
 export function ExperimentRoom({ data }: { data: RoomData }) {
   const [slug, setSlug] = useState(EXPERIMENTS[0].slug);
   const [open, setOpen] = useState(false);
@@ -19,6 +21,46 @@ export function ExperimentRoom({ data }: { data: RoomData }) {
 
   // The canvas fills the viewport, so the page behind must not scroll under it.
   useEffect(() => lockScroll(), []);
+
+  /**
+   * Which experiment is open lives in the URL fragment, with the last choice in
+   * localStorage behind it. A refresh in the middle of a game used to drop you back on the
+   * first experiment in the list, and the fragment means a link to one can be passed round
+   * — which is as far as sharing goes, since the room itself still has to be unlocked.
+   */
+  const known = useCallback((value: string | null | undefined) => {
+    return value && EXPERIMENTS.some((item) => item.slug === value) ? value : null;
+  }, []);
+
+  useEffect(() => {
+    const fromHash = known(decodeURIComponent(window.location.hash.replace(/^#/, "")));
+    let stored: string | null = null;
+    try {
+      stored = known(localStorage.getItem(PICKED));
+    } catch {
+      // Blocked storage just means the list opens where it always did.
+    }
+    const start = fromHash ?? stored;
+    if (start) setSlug(start);
+
+    const onHash = () => {
+      const next = known(decodeURIComponent(window.location.hash.replace(/^#/, "")));
+      if (next) setSlug(next);
+    };
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, [known]);
+
+  const choose = useCallback((next: string) => {
+    setSlug(next);
+    setOpen(false);
+    try {
+      localStorage.setItem(PICKED, next);
+    } catch {
+      // The fragment still carries it for this tab.
+    }
+    window.history.replaceState(null, "", `#${next}`);
+  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -82,10 +124,7 @@ export function ExperimentRoom({ data }: { data: RoomData }) {
               <button
                 key={item.slug}
                 type="button"
-                onClick={() => {
-                  setSlug(item.slug);
-                  setOpen(false);
-                }}
+                onClick={() => choose(item.slug)}
                 className="block w-full border-b px-4 py-3 text-left last:border-0 transition-colors hover:bg-[var(--bg-card-hover)]"
                 style={{
                   borderColor: "var(--border)",
