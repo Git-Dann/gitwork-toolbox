@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import { AsciiMirror } from "./ascii-mirror";
+import { Chess } from "./chess";
 import { Constellation } from "./constellation";
 import { EasingLab } from "./easing-lab";
 import { DoubleUp } from "./double-up";
@@ -46,6 +47,18 @@ export const EXPERIMENTS: Experiment[] = [
       { label: "built here from scratch" },
     ],
     render: () => <HeadsExperiment />,
+  },
+  {
+    slug: "chess",
+    name: "Chess",
+    blurb: "A real board, a real clock, and an engine that will beat most of us",
+    note:
+      "Written from the rules up rather than wired to a library, which means the fiddly parts are all in there: castling through an attacked square, en passant, under-promotion, the disambiguation rules for notation, and every way a game can be drawn. It is checked by perft — counting the legal positions at depth from known test positions and comparing against the published totals, which is how move-generation bugs get caught, since a board that is subtly wrong looks completely normal until the one game it ruins. The opponent is negamax with alpha-beta and a quiescence search, running on a worker thread so the clock keeps ticking while it thinks, and the two lower levels pick a worse move on purpose — an engine that is merely shallow still never hangs a queen, which makes it frustrating rather than easy. Your rating moves by Elo against the level you beat, and the record is kept in this browser.",
+    credits: [
+      { label: "after the chess lab on huozhi.im", href: "https://huozhi.im/lab/chess" },
+      { label: "rules, engine and pieces written here" },
+    ],
+    render: () => <Chess />,
   },
   {
     slug: "constellation",
