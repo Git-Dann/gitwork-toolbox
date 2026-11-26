@@ -28,7 +28,7 @@ export default function StartersPage() {
   return (
     <>
       <PageHeader
-        eyebrow={`${counts.starters} from Foundry`}
+        eyebrow={`${counts.starters} written here`}
         title="The starter library"
         lead="Copy the text into any agent, or install the kit."
         meta={

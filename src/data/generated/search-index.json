@@ -4581,6 +4581,744 @@
     "pick": false
   },
   {
+    "kind": "starter",
+    "slug": "gw-market-research",
+    "name": "Market Research",
+    "blurb": "Design the market research below — a Gitwork prompt for marketing, written to name the failure modes rather than restate the obvi…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-product-marketing",
+    "name": "Product Marketing",
+    "blurb": "Build the product marketing work below — a Gitwork prompt for marketing, written to name the failure modes rather than restate th…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-creative-strategy",
+    "name": "Creative Strategy",
+    "blurb": "Build the creative strategy below — a Gitwork prompt for marketing, written to name the failure modes rather than restate the obv…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-email-marketing",
+    "name": "Email Marketing",
+    "blurb": "Design the email programme below — a Gitwork prompt for marketing, written to name the failure modes rather than restate the obvi…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-paid-social-ads",
+    "name": "Paid Social Ads",
+    "blurb": "Plan the paid social activity below — a Gitwork prompt for marketing, written to name the failure modes rather than restate the o…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-seo",
+    "name": "SEO",
+    "blurb": "Build the SEO plan below — a Gitwork prompt for marketing, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-public-relations",
+    "name": "Public Relations",
+    "blurb": "Plan the PR work below — a Gitwork prompt for marketing, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-conversion-rate-optimisation",
+    "name": "Conversion Rate Optimisation",
+    "blurb": "Plan the conversion work below — a Gitwork prompt for marketing, written to name the failure modes rather than restate the obviou…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-business-development",
+    "name": "Business Development",
+    "blurb": "Build the business development plan below — a Gitwork prompt for sales, written to name the failure modes rather than restate the…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-sdr-outreach",
+    "name": "SDR Outreach",
+    "blurb": "Design the outreach sequence below — a Gitwork prompt for sales, written to name the failure modes rather than restate the obviou…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-cold-email",
+    "name": "Cold Email",
+    "blurb": "Write the cold email sequence below — a Gitwork prompt for sales, written to name the failure modes rather than restate the obvio…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-cold-dm",
+    "name": "Cold DM",
+    "blurb": "Write the direct-message outreach below — a Gitwork prompt for sales, written to name the failure modes rather than restate the o…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-sales-automation",
+    "name": "Sales Automation",
+    "blurb": "Design the sales automation below — a Gitwork prompt for sales, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-competitor-analysis",
+    "name": "Competitor Analysis",
+    "blurb": "Analyse the competitors below — a Gitwork prompt for sales, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-executive-communication",
+    "name": "Executive Communication",
+    "blurb": "Write the executive communication below — a Gitwork prompt for writing, written to name the failure modes rather than restate the…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-thought-leadership",
+    "name": "Thought Leadership",
+    "blurb": "Write the thought leadership piece below — a Gitwork prompt for writing, written to name the failure modes rather than restate th…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-rewriting-and-polishing",
+    "name": "Rewriting and Polishing",
+    "blurb": "Rewrite the text below — a Gitwork prompt for writing, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-copywriting",
+    "name": "Copywriting",
+    "blurb": "Write the copy below — a Gitwork prompt for writing, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-content-strategy",
+    "name": "Content Strategy",
+    "blurb": "Build the content strategy below — a Gitwork prompt for writing, written to name the failure modes rather than restate the obviou…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-blogging-and-editorial",
+    "name": "Blogging and Editorial",
+    "blurb": "Plan or edit the editorial work below — a Gitwork prompt for writing, written to name the failure modes rather than restate the o…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-social-writing",
+    "name": "Social Writing",
+    "blurb": "Write the social content below — a Gitwork prompt for writing, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-brand-voice",
+    "name": "Brand Voice and Messaging",
+    "blurb": "Define the brand voice below — a Gitwork prompt for writing, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-product-strategy",
+    "name": "Product Strategy",
+    "blurb": "Build the product strategy below — a Gitwork prompt for product and UX, written to name the failure modes rather than restate the…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-ux-audit",
+    "name": "UX Audit",
+    "blurb": "Audit the experience below — a Gitwork prompt for product and UX, written to name the failure modes rather than restate the obvio…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-information-architecture",
+    "name": "Information Architecture",
+    "blurb": "Design the information architecture below — a Gitwork prompt for product and UX, written to name the failure modes rather than re…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-prioritisation-and-roadmapping",
+    "name": "Prioritisation and Roadmapping",
+    "blurb": "Prioritise the work below and build the roadmap — a Gitwork prompt for product and UX, written to name the failure modes rather t…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-ux-writing",
+    "name": "UX Writing",
+    "blurb": "Write the interface copy below — a Gitwork prompt for product and UX, written to name the failure modes rather than restate the o…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-user-research",
+    "name": "User Research",
+    "blurb": "Plan and run the research below — a Gitwork prompt for product and UX, written to name the failure modes rather than restate the…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-onboarding-and-activation",
+    "name": "Onboarding and Activation",
+    "blurb": "Design the onboarding below — a Gitwork prompt for product and UX, written to name the failure modes rather than restate the obvi…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-code-review",
+    "name": "Code Review",
+    "blurb": "Review the change below — a Gitwork prompt for engineering, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-engineering-onboarding",
+    "name": "Engineering Onboarding",
+    "blurb": "Design the engineering onboarding below — a Gitwork prompt for engineering, written to name the failure modes rather than restate…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-process-improvement",
+    "name": "Process Improvement",
+    "blurb": "Improve the process below — a Gitwork prompt for operations, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-meeting-and-workflow-design",
+    "name": "Meeting and Workflow Design",
+    "blurb": "Redesign the meetings or workflow below — a Gitwork prompt for operations, written to name the failure modes rather than restate…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-goal-and-kpi-systems",
+    "name": "Goal and KPI Systems",
+    "blurb": "Design the goal or KPI system below — a Gitwork prompt for operations, written to name the failure modes rather than restate the…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-sops-and-documentation",
+    "name": "SOPs and Documentation",
+    "blurb": "Write the procedure or documentation below — a Gitwork prompt for operations, written to name the failure modes rather than resta…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-customer-feedback-ops",
+    "name": "Customer Feedback Operations",
+    "blurb": "Design the feedback operation below — a Gitwork prompt for operations, written to name the failure modes rather than restate the…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-hiring-and-onboarding-ops",
+    "name": "Hiring and Onboarding Operations",
+    "blurb": "Design the hiring or onboarding operation below — a Gitwork prompt for operations, written to name the failure modes rather than…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-reporting-templates",
+    "name": "Reporting",
+    "blurb": "Build the report below — a Gitwork prompt for data and finance, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-kpi-and-dashboard-design",
+    "name": "KPI and Dashboard Design",
+    "blurb": "Design the dashboard below — a Gitwork prompt for data and finance, written to name the failure modes rather than restate the obv…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-budgeting-and-forecasting",
+    "name": "Budgeting and Forecasting",
+    "blurb": "Build the budget or forecast below — a Gitwork prompt for data and finance, written to name the failure modes rather than restate…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-financial-analysis",
+    "name": "Financial Analysis",
+    "blurb": "Analyse the financials below — a Gitwork prompt for data and finance, written to name the failure modes rather than restate the o…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-video-and-script-planning",
+    "name": "Video and Script Planning",
+    "blurb": "Plan the video below — a Gitwork prompt for creative and media, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-creative-briefs",
+    "name": "Creative Briefs",
+    "blurb": "Write the creative brief below — a Gitwork prompt for creative and media, written to name the failure modes rather than restate t…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-campaign-concepts",
+    "name": "Campaign Concepts",
+    "blurb": "Develop the campaign concepts below — a Gitwork prompt for creative and media, written to name the failure modes rather than rest…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-ugc-and-community-content",
+    "name": "UGC and Community Content",
+    "blurb": "Plan the user-generated or community content below — a Gitwork prompt for creative and media, written to name the failure modes r…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-brand-style-guides",
+    "name": "Brand Style Guides",
+    "blurb": "Build the brand guidelines below — a Gitwork prompt for creative and media, written to name the failure modes rather than restate…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-ticket-response",
+    "name": "Support Ticket Response",
+    "blurb": "Write the support response below — a Gitwork prompt for customer support, written to name the failure modes rather than restate t…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-de-escalation",
+    "name": "De-escalation",
+    "blurb": "Handle the escalated conversation below — a Gitwork prompt for customer support, written to name the failure modes rather than re…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-live-chat-support",
+    "name": "Live Chat Support",
+    "blurb": "Handle the live chat below — a Gitwork prompt for customer support, written to name the failure modes rather than restate the obv…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-retention-conversations",
+    "name": "Retention and Churn-Save",
+    "blurb": "Handle the cancellation or churn conversation below — a Gitwork prompt for customer support, written to name the failure modes ra…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-escalation-and-handoff",
+    "name": "Escalation and Cross-Team Handoff",
+    "blurb": "Write the escalation or handoff below — a Gitwork prompt for customer support, written to name the failure modes rather than rest…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-support-qa-and-knowledge",
+    "name": "Support QA and Knowledge Base",
+    "blurb": "Design the support QA or knowledge work below — a Gitwork prompt for customer support, written to name the failure modes rather t…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-job-descriptions",
+    "name": "Job Descriptions",
+    "blurb": "Write the job description below — a Gitwork prompt for hiring, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-candidate-screening",
+    "name": "Candidate Screening and Interview Design",
+    "blurb": "Design the screening and interview process below — a Gitwork prompt for hiring, written to name the failure modes rather than res…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-offer-and-compensation",
+    "name": "Offer and Compensation",
+    "blurb": "Prepare the offer below — a Gitwork prompt for hiring, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-performance-management",
+    "name": "Performance Management",
+    "blurb": "Prepare the performance conversation below — a Gitwork prompt for hiring, written to name the failure modes rather than restate t…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-inclusive-hiring",
+    "name": "Inclusive Hiring Process Design",
+    "blurb": "Review and redesign the hiring process below for fairness — a Gitwork prompt for hiring, written to name the failure modes rather…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-candidate-communication",
+    "name": "Candidate Communication",
+    "blurb": "Write the candidate communication below — a Gitwork prompt for hiring, written to name the failure modes rather than restate the…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-policy-drafting",
+    "name": "Policy Drafting",
+    "blurb": "Draft the policy below — a Gitwork prompt for legal and compliance, written to name the failure modes rather than restate the obv…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-data-handling",
+    "name": "Confidentiality and Data Handling",
+    "blurb": "Define the data handling approach below — a Gitwork prompt for legal and compliance, written to name the failure modes rather tha…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-compliance-checklists",
+    "name": "Compliance Checklists",
+    "blurb": "Build the compliance checklist below — a Gitwork prompt for legal and compliance, written to name the failure modes rather than r…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-internal-training",
+    "name": "Internal Training Materials",
+    "blurb": "Build the internal training below — a Gitwork prompt for legal and compliance, written to name the failure modes rather than rest…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-interview-prep",
+    "name": "Interview Preparation",
+    "blurb": "Prepare for the interview below — a Gitwork prompt for career, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-cv-and-resume",
+    "name": "CV and Résumé",
+    "blurb": "Write or rewrite the CV below — a Gitwork prompt for career, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-professional-networking",
+    "name": "Professional Networking",
+    "blurb": "Plan the networking approach below — a Gitwork prompt for career, written to name the failure modes rather than restate the obvio…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-career-planning",
+    "name": "Career Planning and Pivots",
+    "blurb": "Work through the career decision below — a Gitwork prompt for career, written to name the failure modes rather than restate the o…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-compensation-negotiation",
+    "name": "Compensation Negotiation",
+    "blurb": "Prepare the negotiation below — a Gitwork prompt for career, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-portfolio-and-personal-brand",
+    "name": "Portfolio and Personal Brand",
+    "blurb": "Build or review the portfolio below — a Gitwork prompt for career, written to name the failure modes rather than restate the obvi…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-cover-letters",
+    "name": "Cover Letters and Applications",
+    "blurb": "Write the application below — a Gitwork prompt for career, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-performance-reviews-self",
+    "name": "Performance Reviews and Promotion",
+    "blurb": "Prepare the review or promotion case below — a Gitwork prompt for career, written to name the failure modes rather than restate t…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-mindset-and-reflection",
+    "name": "Mindset and Reflection",
+    "blurb": "Work through the reflection below — a Gitwork prompt for coaching, written to name the failure modes rather than restate the obvi…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-communication-coaching",
+    "name": "Communication Coaching",
+    "blurb": "Improve the communication below — a Gitwork prompt for coaching, written to name the failure modes rather than restate the obviou…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-confidence-and-performance",
+    "name": "Confidence and Performance",
+    "blurb": "Prepare for the high-stakes situation below — a Gitwork prompt for coaching, written to name the failure modes rather than restat…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-goal-setting-and-accountability",
+    "name": "Goal Setting and Accountability",
+    "blurb": "Set the goals and accountability below — a Gitwork prompt for coaching, written to name the failure modes rather than restate the…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-habit-change",
+    "name": "Habit Change",
+    "blurb": "Design the habit change below — a Gitwork prompt for coaching, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-tutoring-and-explanation",
+    "name": "Tutoring and Explanation",
+    "blurb": "Explain the topic below — a Gitwork prompt for education, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-study-systems",
+    "name": "Study Systems",
+    "blurb": "Design the study system below — a Gitwork prompt for education, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-lesson-planning",
+    "name": "Lesson Planning",
+    "blurb": "Plan the lesson below — a Gitwork prompt for education, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-classroom-activities",
+    "name": "Classroom Activities",
+    "blurb": "Design the activity below — a Gitwork prompt for education, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-academic-writing-support",
+    "name": "Academic Writing Support",
+    "blurb": "Support the academic writing below — a Gitwork prompt for education, written to name the failure modes rather than restate the ob…",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-assessment-design",
+    "name": "Assessment Design",
+    "blurb": "Design the assessment below — a Gitwork prompt for education, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
+    "kind": "starter",
+    "slug": "gw-curriculum-mapping",
+    "name": "Curriculum Mapping",
+    "blurb": "Map the curriculum below — a Gitwork prompt for education, written to name the failure modes rather than restate the obvious.",
+    "meta": "Prompt",
+    "badge": "Prompt",
+    "pick": false
+  },
+  {
     "kind": "resource",
     "slug": "claude-model-and-effort-level-in-claude-code",
     "name": "Claude model and effort level in Claude Code",
