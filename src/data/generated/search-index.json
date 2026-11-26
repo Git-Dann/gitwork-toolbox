@@ -5202,6 +5202,159 @@
     "pick": false
   },
   {
+    "kind": "resource",
+    "slug": "superhuman-prompt-library",
+    "name": "Superhuman Prompt Library",
+    "blurb": "123 prompt packs across 14 disciplines, 1,076 prompts in total, free and with no sign-up or paywall. Every prompt is a fillable t…",
+    "meta": "Directory",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-web-development",
+    "name": "Web Development prompts (Superhuman)",
+    "blurb": "25 fillable ChatGPT prompts for web development, including “Build a Responsive Navigation System with Grid, Flexbox, and Mobile M…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": true
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-software-development",
+    "name": "Software Development prompts (Superhuman)",
+    "blurb": "20 fillable ChatGPT prompts for software development, including “Write Python Registration Validation with Structured Errors and…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": true
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-mobile-app-development",
+    "name": "Mobile App Development prompts (Superhuman)",
+    "blurb": "20 fillable ChatGPT prompts for mobile app development, including “Set Up a React Native Project with Expo for a Real Delivery Wo…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-quality-assurance-engineering",
+    "name": "Quality Assurance Engineering prompts (Superhuman)",
+    "blurb": "16 fillable ChatGPT prompts for quality assurance engineering, including “Create a Comprehensive Web Application Test Plan”, “Wri…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-cloud-computing-and-devops",
+    "name": "Cloud Computing and DevOps prompts (Superhuman)",
+    "blurb": "15 fillable ChatGPT prompts for cloud computing and devops, including “Design a Flask Deployment Model on Elastic Beanstalk with…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-data-engineering-and-databases",
+    "name": "Data Engineering and Databases prompts (Superhuman)",
+    "blurb": "15 fillable ChatGPT prompts for data engineering and databases, including “Build a CSV-to-MySQL ETL Pipeline with Validation and…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-networking-and-security",
+    "name": "Networking and Security prompts (Superhuman)",
+    "blurb": "15 fillable ChatGPT prompts for networking and security, including “Build a Network Traffic Monitoring Workflow with Baselines an…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-cybersecurity",
+    "name": "Cybersecurity prompts (Superhuman)",
+    "blurb": "15 fillable ChatGPT prompts for cybersecurity, including “Write a Script to Detect SQL Injection Vulnerabilities”, “Build a Port…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-data-science-and-machine-learning",
+    "name": "Data Science and Machine Learning prompts (Superhuman)",
+    "blurb": "18 fillable ChatGPT prompts for data science and machine learning, including “Build a Pandas Data Cleaning Pipeline with Rules, L…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-machine-learning-and-ai-development",
+    "name": "Machine Learning and AI Development prompts (Superhuman)",
+    "blurb": "15 fillable ChatGPT prompts for machine learning and ai development, including “Build a Customer Feedback Classifier with Label Q…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-experimentation-and-feedback-loops",
+    "name": "Experimentation and Feedback Loops prompts (Superhuman)",
+    "blurb": "10 fillable ChatGPT prompts for experimentation and feedback loops, including “Design a Better Product Experiment”, “Turn an A/B…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-hardware-engineering",
+    "name": "Hardware Engineering prompts (Superhuman)",
+    "blurb": "24 fillable ChatGPT prompts for hardware engineering, including “Design a Simple PCB for an Electronic Device”, “Develop a Test P…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-embedded-systems-and-iot",
+    "name": "Embedded Systems and IoT prompts (Superhuman)",
+    "blurb": "15 fillable ChatGPT prompts for embedded systems and iot, including “Interface a Temperature Sensor with Arduino and LCD”, “Send…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-systems-engineering",
+    "name": "Systems Engineering prompts (Superhuman)",
+    "blurb": "15 fillable ChatGPT prompts for systems engineering, including “Automate Linux User Account Management”, “Plan a Network Infrastr…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-robotics-and-automation",
+    "name": "Robotics and Automation prompts (Superhuman)",
+    "blurb": "15 fillable ChatGPT prompts for robotics and automation, including “Design a Precision Control Algorithm for a Robotic Arm”, “Dev…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
+    "kind": "resource",
+    "slug": "superhuman-prompts-design-and-product-engineering",
+    "name": "Design and Product Engineering prompts (Superhuman)",
+    "blurb": "15 fillable ChatGPT prompts for design and product engineering, including “Create a 3D CAD Model Specification for a Mechanical P…",
+    "meta": "Docs & reference",
+    "badge": "Resource",
+    "pick": false
+  },
+  {
     "kind": "design",
     "slug": "acorns",
     "name": "Acorns",

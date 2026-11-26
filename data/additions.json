@@ -5600,6 +5600,314 @@
       ],
       "addedAt": "2026-10-29T15:48:48.000Z",
       "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Superhuman Prompt Library",
+      "link": "https://www.superhuman.ai/prompts",
+      "resourceType": "Directory",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "123 prompt packs across 14 disciplines, 1,076 prompts in total, free and with no sign-up or paywall. Every prompt is a fillable template — a role line, bracketed context fields, numbered instructions, a fixed output format, a missing-information policy and a quality bar. Run by the Superhuman newsletter (Zain Kahn).",
+      "whatToDo": "Mine the Engineering category and ignore most of the rest. Action: read the web-development, software-development and QA packs, and lift their failure-mode lists into our own review checklists rather than running the prompts as written.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "The quality is two-tier, and it is measurable. Scoring every numbered instruction in all 123 packs for whether it names a concrete failure mode, Engineering comes out at 46% at an average of 148 characters a step. The next best of the other thirteen disciplines is Legal at 17%, and most sit between 5% and 15% at around 60 characters — 'avoid biased wording', 'keep language neutral'. Engineering is a quarter of the library by volume and almost all of its value.",
+        "No relation to Superhuman the email client (superhuman.com), which is already on this list. Different company, different product, same word — this one is Zain Kahn's newsletter at superhuman.ai.",
+        "Several non-engineering prompts are topic-locked rather than templated — the market-research one is written for the beauty industry, the SEO one for adventure travel — so you are rewriting the domain before you can use them anyway.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep.",
+        "Written for ChatGPT and shaped for it: a role line, bracketed fields, a fixed output format and a missing-information policy. They transfer to Claude unchanged but carry no tool use, no file context and no agent loop, so they are a starting draft rather than a skill."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan"
+    },
+    {
+      "kind": "resource",
+      "name": "Web Development prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/web-development",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "25 fillable ChatGPT prompts for web development, including “Build a Responsive Navigation System with Grid, Flexbox, and Mobile Menu States”, “Write a Reusable JavaScript Form Validation Module”, “Design a Theme Preference System with Persistence, Accessibility, and Rendering Safety”. Measured over the whole pack, 40% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 142 characters a step.",
+      "whatToDo": "Reference, and the best pack on the site. Action: read the navigation, Tailwind-adoption and WordPress-to-React prompts before the next front-end rebuild and lift the failure-mode lists into our own brief.",
+      "cost": "Free",
+      "usefulness": "High",
+      "notes": [
+        "The failure modes are the value, not the prompts: a mobile menu with no focus trap, sticky-header stacking-context conflicts, breakpoint logic duplicated between media queries and JS resize listeners, a hamburger missing aria-expanded. That is a review checklist we can use whether or not anyone runs the prompt.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-web-development"
+    },
+    {
+      "kind": "resource",
+      "name": "Software Development prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/software-development",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "20 fillable ChatGPT prompts for software development, including “Write Python Registration Validation with Structured Errors and Password Policy Checks”, “Design and Implement a Flask REST API with Resource Boundaries, Validation, and Production-Ready Basics”, “Design a Unit Test Strategy for a JavaScript Pricing Function with Edge-Case and Change-Risk Coverage”. Measured over the whole pack, 46% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 162 characters a step.",
+      "whatToDo": "Reference. Action: compare its version-control and unit-test-strategy prompts against our own Launch Kit rules and close any gap.",
+      "cost": "Free",
+      "usefulness": "High",
+      "notes": [
+        "Covers the unglamorous half — ESLint and Prettier with pre-commit hooks, Docker for a Node and Mongo dev environment, structured validation errors — which is where client handovers usually fail.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-software-development"
+    },
+    {
+      "kind": "resource",
+      "name": "Mobile App Development prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/mobile-app-development",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "20 fillable ChatGPT prompts for mobile app development, including “Set Up a React Native Project with Expo for a Real Delivery Workflow”, “Integrate Firebase Authentication in a Mobile App with Provider and Session Decisions”, “Plan a To-Do List Mobile App”. Measured over the whole pack, 43% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 158 characters a step.",
+      "whatToDo": "Reference. Action: read the offline-sync and Firebase-auth prompts before scoping the next React Native job.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "The offline-functionality prompt names sync and conflict handling explicitly, which is the part of a React Native estimate that normally gets missed.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-mobile-app-development"
+    },
+    {
+      "kind": "resource",
+      "name": "Quality Assurance Engineering prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/quality-assurance-engineering",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "16 fillable ChatGPT prompts for quality assurance engineering, including “Create a Comprehensive Web Application Test Plan”, “Write a Selenium Regression Test Script”, “Create a Mobile Security Testing Checklist”. Measured over the whole pack, 49% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 160 characters a step.",
+      "whatToDo": "Reference. Action: use the Jenkins unit-test-gate and JMeter load-test prompts as the outline for a QA section in the next SOW.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Strongest where it is most specific — a test gate with failure triage and branch protection, a load test with a traffic model and exit criteria. The generic 'comprehensive test plan' prompt is the weakest in the pack.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-quality-assurance-engineering"
+    },
+    {
+      "kind": "resource",
+      "name": "Cloud Computing and DevOps prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/cloud-computing-and-devops",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "15 fillable ChatGPT prompts for cloud computing and devops, including “Design a Flask Deployment Model on Elastic Beanstalk with Environment and Release Controls”, “Automate AWS Provisioning with Terraform Using Environment and State Boundaries”, “Create a Jenkins CI/CD Pipeline for a Node App”. Measured over the whole pack, 49% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 163 characters a step.",
+      "whatToDo": "Reference. Action: read the Terraform state-boundaries and Lambda idempotency prompts before the next infrastructure handover.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "AWS-centric throughout — Beanstalk, EKS, CloudWatch, Terraform. Nothing on Vercel, Cloudflare or Railway, which is most of what we actually deploy to.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-cloud-computing-and-devops"
+    },
+    {
+      "kind": "resource",
+      "name": "Data Engineering and Databases prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/data-engineering-and-databases",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "15 fillable ChatGPT prompts for data engineering and databases, including “Build a CSV-to-MySQL ETL Pipeline with Validation and Load Safety”, “Design an Ecommerce Database Schema”, “Create a PostgreSQL Indexing Strategy”. Measured over the whole pack, 56% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 156 characters a step.",
+      "whatToDo": "Reference. Action: use the indexing-strategy and multi-table-join prompts when a client site's queries start timing out.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "The ETL and join prompts ask for correctness and performance notes rather than just code, which is the right shape for work nobody will review line by line.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-data-engineering-and-databases"
+    },
+    {
+      "kind": "resource",
+      "name": "Networking and Security prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/networking-and-security",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "15 fillable ChatGPT prompts for networking and security, including “Build a Network Traffic Monitoring Workflow with Baselines and Alert Triage”, “Design a Secure OpenVPN Deployment for Remote Access”, “Design a Secure Data-in-Transit Protocol with SSL/TLS”. Measured over the whole pack, 49% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 162 characters a step.",
+      "whatToDo": "Reference. Action: read the OAuth 2.0 scope-and-token prompt before the next integration that needs third-party auth.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Mostly sysadmin territory — OpenVPN, Linux firewall rules, patch windows — but the OAuth and TLS prompts are directly useful on client integrations.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-networking-and-security"
+    },
+    {
+      "kind": "resource",
+      "name": "Cybersecurity prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/cybersecurity",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "15 fillable ChatGPT prompts for cybersecurity, including “Write a Script to Detect SQL Injection Vulnerabilities”, “Build a Port Scanning Tool”, “Design a Secure Password Hashing Mechanism”. Measured over the whole pack, 51% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 155 characters a step.",
+      "whatToDo": "Reference, with care. Action: use the password-hashing and MFA-rollout prompts as a checklist when a client asks what we do about security.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "Two prompts ask for offensive tooling (a port scanner, a SQL-injection detector). Fine for testing something you own; not something to run against a client estate without it being in the contract.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-cybersecurity"
+    },
+    {
+      "kind": "resource",
+      "name": "Data Science and Machine Learning prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/data-science-and-machine-learning",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "18 fillable ChatGPT prompts for data science and machine learning, including “Build a Pandas Data Cleaning Pipeline with Rules, Logging, and Output Guarantees”, “Build a Customer Churn Classification Workflow with Evaluation and Retention Context”, “Optimize a Model with Grid Search”. Measured over the whole pack, 43% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 166 characters a step.",
+      "whatToDo": "Reference. Action: skim before quoting on anything with a model in it, to price the evaluation work properly.",
+      "cost": "Free",
+      "usefulness": "Low",
+      "notes": [
+        "Classification, churn and feature-engineering work we rarely sell. Useful mainly as a sanity check on what a data scope should contain.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-data-science-and-machine-learning"
+    },
+    {
+      "kind": "resource",
+      "name": "Machine Learning and AI Development prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/machine-learning-and-ai-development",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "15 fillable ChatGPT prompts for machine learning and ai development, including “Build a Customer Feedback Classifier with Label Quality and Evaluation Discipline”, “Build a Text Preprocessing Pipeline for NLP Training with Reproducible Cleaning Rules”, “Build an Object Detection Model with TensorFlow and a Pretrained Backbone”. Measured over the whole pack, 49% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 169 characters a step.",
+      "whatToDo": "Reference. Action: read the deployment and monitoring prompts if we ever host a model rather than call an API.",
+      "cost": "Free",
+      "usefulness": "Low",
+      "notes": [
+        "Overlaps heavily with the data-science pack; the difference is deployment and serving rather than analysis.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-machine-learning-and-ai-development"
+    },
+    {
+      "kind": "resource",
+      "name": "Experimentation and Feedback Loops prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/experimentation-and-feedback-loops",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "10 fillable ChatGPT prompts for experimentation and feedback loops, including “Design a Better Product Experiment”, “Turn an A/B Test Readout into a Product Decision”, “Build a Product Feedback Loop for the Team”. Measured over the whole pack, 30% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 64 characters a step.",
+      "whatToDo": "Reference. Action: use its experiment-design prompt to write the measurement section of the next retainer proposal.",
+      "cost": "Free",
+      "usefulness": "Medium",
+      "notes": [
+        "The one pack outside Engineering that holds up — median prompt names two concrete failure modes, against zero for the rest of the site.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-experimentation-and-feedback-loops"
+    },
+    {
+      "kind": "resource",
+      "name": "Hardware Engineering prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/hardware-engineering",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "24 fillable ChatGPT prompts for hardware engineering, including “Design a Simple PCB for an Electronic Device”, “Develop a Test Procedure for a Microcontroller Circuit”, “Simulate Circuit Behavior with SPICE”. Measured over the whole pack, 51% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 164 characters a step.",
+      "whatToDo": "Skip unless a client brings hardware. Action: none for now — listed so nobody re-audits it.",
+      "cost": "Free",
+      "usefulness": "None",
+      "notes": [
+        "24 prompts on PCB layout, thermal design and tolerance stack-ups. Good work, nothing to do with what we build.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-hardware-engineering"
+    },
+    {
+      "kind": "resource",
+      "name": "Embedded Systems and IoT prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/embedded-systems-and-iot",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "15 fillable ChatGPT prompts for embedded systems and iot, including “Interface a Temperature Sensor with Arduino and LCD”, “Send Raspberry Pi Sensor Data to AWS IoT Core”, “Control an LED Matrix with ESP32 over Wi-Fi”. Measured over the whole pack, 53% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 165 characters a step.",
+      "whatToDo": "Skip unless a client brings firmware. Action: none for now.",
+      "cost": "Free",
+      "usefulness": "None",
+      "notes": [
+        "Firmware, RTOS and device provisioning. Listed so the gap is visible rather than rediscovered.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-embedded-systems-and-iot"
+    },
+    {
+      "kind": "resource",
+      "name": "Systems Engineering prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/systems-engineering",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "15 fillable ChatGPT prompts for systems engineering, including “Automate Linux User Account Management”, “Plan a Network Infrastructure Upgrade”, “Create a Server Health Monitoring System”. Measured over the whole pack, 52% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 160 characters a step.",
+      "whatToDo": "Skip. Action: none for now.",
+      "cost": "Free",
+      "usefulness": "None",
+      "notes": [
+        "Requirements traceability and V-model process for physical systems engineering, not software architecture.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-systems-engineering"
+    },
+    {
+      "kind": "resource",
+      "name": "Robotics and Automation prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/robotics-and-automation",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "15 fillable ChatGPT prompts for robotics and automation, including “Design a Precision Control Algorithm for a Robotic Arm”, “Develop an RPA Simulation Model”, “Write a Program for Autonomous Drone Movement”. Measured over the whole pack, 56% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 164 characters a step.",
+      "whatToDo": "Skip. Action: none for now.",
+      "cost": "Free",
+      "usefulness": "None",
+      "notes": [
+        "Motion planning, kinematics and industrial control. Out of scope entirely.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-robotics-and-automation"
+    },
+    {
+      "kind": "resource",
+      "name": "Design and Product Engineering prompts (Superhuman)",
+      "link": "https://www.superhuman.ai/prompts/design-and-product-engineering",
+      "resourceType": "Docs & reference",
+      "category": "AI coding / prompt libraries",
+      "takeaway": "15 fillable ChatGPT prompts for design and product engineering, including “Create a 3D CAD Model Specification for a Mechanical Part”, “Develop a Bridge Load Simulation Plan”, “Write a Consumer Electronics Design Specification”. Measured over the whole pack, 55% of the numbered instructions in a prompt name a concrete failure mode rather than a generic rule, at an average of 167 characters a step.",
+      "whatToDo": "Skip. Action: none — and do not let the name pull anyone in.",
+      "cost": "Free",
+      "usefulness": "None",
+      "notes": [
+        "NOT design engineering in our sense despite the name: it is mechanical and industrial design — 3D CAD part specifications, bridge load simulation, ergonomic workstation layouts. The only pack on the site whose title actively misleads.",
+        "Copyright Superhuman Newsletter, no licence published — these are linked, not copied. Lifting the text into the Foundry starter library would be republishing someone else's work, so treat them as reference and write our own version of anything we want to keep."
+      ],
+      "addedAt": "2026-11-26T12:14:59.000Z",
+      "addedBy": "Dan",
+      "slug": "superhuman-prompts-design-and-product-engineering"
     }
   ]
 }
